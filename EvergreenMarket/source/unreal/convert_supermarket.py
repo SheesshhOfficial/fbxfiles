@@ -173,7 +173,7 @@ for i,(aid,rec) in enumerate(sorted(assets.items())):
  if rec['collision']['strategy']=='box':
   mesh=mesh_for[aid];mins=[min(v.co[j] for v in mesh.vertices) for j in range(3)];maxs=[max(v.co[j] for v in mesh.vertices) for j in range(3)]
   verts=[(x,y,z) for x in (mins[0],maxs[0]) for y in (mins[1],maxs[1]) for z in (mins[2],maxs[2])]
-  faces=[(0,4,6,2),(1,3,7,5),(0,1,5,4),(2,6,7,3),(0,2,3,1),(4,5,7,6)]
+  faces=[(2,6,4,0),(5,7,3,1),(4,5,1,0),(3,7,6,2),(1,3,2,0),(6,7,5,4)]
   cm=bpy.data.meshes.new('Collision');cm.from_pydata(verts,[],faces);co=bpy.data.objects.new('UBX_'+aid+'_00',cm);exportscene.collection.objects.link(co);co.select_set(True)
  bpy.ops.export_scene.fbx(filepath=str(ROOT/rec['fbx_path']),use_selection=True,object_types={'MESH'},global_scale=1,apply_unit_scale=True,apply_scale_options='FBX_SCALE_NONE',axis_forward='Y',axis_up='Z',use_space_transform=True,bake_space_transform=False,use_mesh_modifiers=True,mesh_smooth_type='FACE',use_tspace=False,bake_anim=False,path_mode='RELATIVE',embed_textures=False,use_custom_props=False)
  rec['file_sha256']=hashlib.sha256((ROOT/rec['fbx_path']).read_bytes()).hexdigest()

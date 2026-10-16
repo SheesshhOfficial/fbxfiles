@@ -1,5 +1,9 @@
 # Evergreen Market
 
+## Geometry correction: inward cube faces
+
+The original handoff contains inward-wound box geometry. Use the versioned [normals repair guide](docs/NORMALS_REPAIR.md) and patch in `packages/normals_patch/` rather than enabling Two Sided globally or reimporting the complete scene. The patch preserves original maps/assets and creates a corrected copy, with a box/checkout sample before the full affected set. Existing original archives are retained for reproducibility and have not silently changed. The source box and UBX generators below now use outward winding.
+
 ## Importer update required
 
 After extracting the handoff ZIP, copy the current `source/unreal/import_supermarket_unreal.py` from this repository over the extracted package's `source/import_supermarket_unreal.py`. The archive retains its original version. This fixes the collision-enum error during sample assembly; see [hotfix and retry steps](docs/IMPORTER_HOTFIX.md).
