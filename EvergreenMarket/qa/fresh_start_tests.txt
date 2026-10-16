@@ -1,6 +1,6 @@
-...............................................................................................
+....................................................................................................................
 ----------------------------------------------------------------------
-Ran 95 tests in 10.257s
+Ran 116 tests in 9.235s
 
 OK
 Stage stopped. Keep the FIRST error/report and this state file. No automatic retry or old-report lookup.
@@ -15,7 +15,7 @@ Stage stopped. Keep the FIRST error/report and this state file. No automatic ret
   }
 }
 Already completed; no duplicate actors/maps created. Report: preview
-Stage verified: collision. State: /tmp/tmp276r2keq/run_state.json
+Stage verified: collision. State: /tmp/tmppe4h0n1h/run_state.json
 {
   "phase": "sample",
   "selected_asset_ids": [

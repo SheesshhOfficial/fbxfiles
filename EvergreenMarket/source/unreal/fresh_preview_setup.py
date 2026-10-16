@@ -100,8 +100,8 @@ def _api(u, plan):
     """All class, function, enum and property lookups happen before map mutation."""
     required={
         'LevelEditorSubsystem':('get_current_level','new_level_from_template','save_current_level','load_level','is_in_play_in_editor'),
-        'EditorActorSubsystem':('spawn_actor_from_class','get_all_level_actors'),
-        'Actor':('get_actor_transform','get_components_by_class','set_actor_label','set_actor_rotation'),
+        'EditorActorSubsystem':('spawn_actor_from_class','get_all_level_actors','set_actor_transform'),
+        'Actor':('get_actor_transform','get_components_by_class','set_actor_label','get_actor_label','get_path_name','get_class'),
         'DirectionalLightComponent':('set_intensity','set_light_color','set_mobility'),
         'PointLightComponent':('set_intensity','set_light_color','set_mobility','set_attenuation_radius','set_intensity_units','set_use_inverse_squared_falloff'),
         'EditorLoadingAndSavingUtils':('get_dirty_map_packages','get_dirty_content_packages'),
@@ -142,30 +142,63 @@ def _preflight(u,plan):
     check(not _tagged(u),'Preview actors already exist; this command never repeats or deletes them')
     if plan['player_start']:check(not any(isinstance(a,u.PlayerStart) for a in _actors(u)),'Existing PlayerStart found; refusing ambiguous extra start')
 
-def _spawn(u,item):
-    system=u.get_editor_subsystem(u.EditorActorSubsystem)
-    actor=system.spawn_actor_from_class(getattr(u,item['actor']),u.Vector(*item['location']),transient=False)
-    check(isinstance(actor,getattr(u,item['actor'])),'Preview actor spawn failed: '+item['key'])
-    actor.set_actor_label('EM_PREVIEW_'+item['key']);actor.set_editor_property('tags',[TAG,'EMPreview='+item['key']])
-    p,y,r=item['rotation'];actor.set_actor_rotation(u.Rotator(pitch=p,yaw=y,roll=r),teleport_physics=True)
+def _target_transform(u,item):
+    p,y,r=item['rotation']
+    return u.Transform(location=u.Vector(*item['location']),rotation=u.Rotator(pitch=p,yaw=y,roll=r),scale=u.Vector(1,1,1))
+
+def _transform_data(t):
+    # Unreal Transform uses a quaternion internally. Do not compare Euler wrapping.
+    return {'location_cm':[t.translation.x,t.translation.y,t.translation.z],
+            'quaternion_xyzw':[t.rotation.x,t.rotation.y,t.rotation.z,t.rotation.w],
+            'scale':[t.scale3d.x,t.scale3d.y,t.scale3d.z]}
+
+def _transform_diagnostic(actor,item,target):
+    actual=actor.get_actor_transform()
+    return dict(key=item['key'],actor_label=actor.get_actor_label(),actor_name=actor.get_name(),
+                expected=_transform_data(target),actual=_transform_data(actual),
+                matches=actual.is_near_equal(target,location_tolerance=0.1,rotation_tolerance=0.001,scale3d_tolerance=0.0001))
+
+def _checked_transform(u,actor,item):
+    target=_target_transform(u,item)
+    # The editor subsystem has a documented boolean return, unlike Actor's
+    # HitResult-or-None wrapper. Assign the full transform, including unit scale.
+    result=u.get_editor_subsystem(u.EditorActorSubsystem).set_actor_transform(actor,target)
+    details=_transform_diagnostic(actor,item,target)
+    details['setter_return_type']=type(result).__name__
+    check(result is True,'Preview transform setter failed: '+json.dumps(details))
+    check(details['matches'],'Preview transform changed after assignment: '+json.dumps(details))
+    return details
+
+def _configure(u,actor,item):
     component=_components(actor,getattr(u,item['component']))
+    if item['actor']!='PlayerStart':component.set_mobility(u.ComponentMobility.MOVABLE)
+    details=_checked_transform(u,actor,item)
     if item['actor']!='PlayerStart':
-        component.set_mobility(u.ComponentMobility.MOVABLE)
         component.set_light_color(u.LinearColor(1,1,1,1));component.set_intensity(item['intensity'])
         component.set_editor_property('cast_shadows',item['actor']=='DirectionalLight')
         if item['actor']=='PointLight':
             component.set_use_inverse_squared_falloff(True);component.set_intensity_units(u.LightUnits.LUMENS)
             component.set_attenuation_radius(item['radius']);component.set_intensity(item['intensity'])
+    return details
+
+def _spawn(u,item):
+    system=u.get_editor_subsystem(u.EditorActorSubsystem)
+    actor=system.spawn_actor_from_class(getattr(u,item['actor']),u.Vector(*item['location']),transient=False)
+    check(isinstance(actor,getattr(u,item['actor'])),'Preview actor spawn failed: '+item['key'])
+    actor.set_actor_label('EM_PREVIEW_'+item['key']);actor.set_editor_property('tags',[TAG,'EMPreview='+item['key']])
+    _configure(u,actor,item)
     return actor
 
-def _verify(u,plan):
+
+def _verify(u,plan,*,verify_transform=True):
+    check(verify_transform or (plan.get('mode')=='sample' and plan['player_start'] is None),'Transform deferral is allowed only during sample-light recovery preflight')
     expected={i['key']:i for i in plan['lights']+([plan['player_start']] if plan['player_start'] else [])};seen=set()
     for actor in _tagged(u):
         keys=[str(t)[10:] for t in actor.get_editor_property('tags') if str(t).startswith('EMPreview=')]
         check(len(keys)==1 and keys[0] in expected and keys[0] not in seen,'Unexpected/duplicate preview actor')
         key=keys[0];seen.add(key);item=expected[key];check(isinstance(actor,getattr(u,item['actor'])),'Preview actor class mismatch')
-        p,y,r=item['rotation'];target=u.Transform(location=u.Vector(*item['location']),rotation=u.Rotator(pitch=p,yaw=y,roll=r),scale=u.Vector(1,1,1))
-        check(actor.get_actor_transform().is_near_equal(target,location_tolerance=0.1,rotation_tolerance=0.001,scale3d_tolerance=0.0001),'Preview transform changed')
+        target=_target_transform(u,item);details=_transform_diagnostic(actor,item,target)
+        if verify_transform:check(details['matches'],'Preview transform changed: '+json.dumps(details))
         c=_components(actor,getattr(u,item['component']))
         if item['actor']=='PlayerStart':
             check(c.get_world_transform().is_near_equal(target,location_tolerance=0.1,rotation_tolerance=0.001,scale3d_tolerance=0.0001),'PlayerStart capsule not centered/upright')
@@ -180,7 +213,7 @@ def _verify(u,plan):
                 check(abs(c.get_editor_property('attenuation_radius')-item['radius'])<0.01,'Preview radius changed')
                 check(c.get_editor_property('intensity_units')==u.LightUnits.LUMENS and c.get_editor_property('use_inverse_squared_falloff'),'Preview light units/falloff changed')
     check(seen==set(expected),'Preview actor count changed')
-    return dict(lights=len(plan['lights']),player_starts=bool(plan['player_start']),transforms_components_and_settings_verified=True)
+    return dict(lights=len(plan['lights']),player_starts=bool(plan['player_start']),transforms_components_and_settings_verified=verify_transform)
 
 def _copy_pilot_plan(plan,target):
     out=copy.deepcopy(plan);source=out['source_map'];out['target_map']=target
@@ -245,6 +278,102 @@ def editor_preflight(plan,contract,report=None):
     if plan['mode']=='sample':em.verify_scene(u,report)
     else:ep.verify(u,plan['pilot_plan']);ec._check_original_collision(u,contract)
     return {'editor_available':True,'editor_checks_run':True}
+
+def _recovery_plan(contract,sample,failed):
+    plan=_sample_plan(contract,sample)
+    check(failed.get('schema')==SCHEMA and failed.get('status')=='failed_partial_preview'
+          and failed.get('mode')=='sample','Expected the exact failed sample-light preview report')
+    check(failed.get('package_fingerprint')==contract['fingerprint'] and failed.get('source_map')==plan['source_map']
+          and failed.get('target_map')==plan['source_map'],'Failed preview report belongs to another package/map')
+    old=failed.get('plan',{})
+    check(old.get('mode')=='sample' and old.get('source_map')==plan['source_map'] and old.get('target_map')==plan['source_map']
+          and old.get('lights')==plan['lights'] and old.get('player_start') is None,'Failed preview light plan changed; refusing to guess')
+    check(str(failed.get('error','')).startswith('Preview transform changed'),'Only the verified preview transform-check failure is recoverable here')
+    return plan
+
+def _existing_lights(u,plan):
+    expected={i['key']:i for i in plan['lights']};found={}
+    for a in _tagged(u):
+        tags=[str(t) for t in a.get_editor_property('tags')];keys=[t[10:] for t in tags if t.startswith('EMPreview=')]
+        check(len(keys)==1 and keys[0] in expected and keys[0] not in found,'Unknown/duplicate preview light identity')
+        key=keys[0];item=expected[key]
+        check(isinstance(a,getattr(u,item['actor'])) and a.get_actor_label()=='EM_PREVIEW_'+key,'Preview actor class/label differs')
+        prefix=plan['source_map']+'.'+plan['source_map'].rsplit('/',1)[-1]+':PersistentLevel.'
+        check(a.get_path_name().startswith(prefix),'Preview actor belongs to another map')
+        found[key]=a
+    check(set(found)==set(expected),'Expected all 11 existing preview lights exactly once; missing lights are never respawned')
+    return found
+
+def _non_preview_snapshot(u):
+    return {a.get_name():dict(path=a.get_path_name(),actor_class=a.get_class().get_path_name(),
+                             transform=_transform_data(a.get_actor_transform()),tags=sorted(str(t) for t in a.get_editor_property('tags')))
+            for a in _actors(u) if TAG not in [str(t) for t in a.get_editor_property('tags')]}
+
+def _recovery_preflight(u,contract,plan,sample,*,require_clean):
+    _api(u,plan);level=u.get_editor_subsystem(u.LevelEditorSubsystem)
+    check(not level.is_in_play_in_editor(),'Stop Play In Editor first')
+    check(_current(u)==plan['source_map'],'Open the exact failed sample map; recovery never loads another map')
+    dirty_maps=list(u.EditorLoadingAndSavingUtils.get_dirty_map_packages())
+    dirty_content=list(u.EditorLoadingAndSavingUtils.get_dirty_content_packages())
+    if require_clean:
+        check(not dirty_maps and not dirty_content,'Save all pending changes first to preserve manual edits before recovery')
+    lights=_existing_lights(u,plan)
+    # All settings, classes, memberships and geometry must already be correct.
+    # Only transform equality is deferred, and only for this recovery preflight.
+    _verify(u,plan,verify_transform=False);em.verify_scene(u,sample)
+    details=[_transform_diagnostic(lights[item['key']],item,_target_transform(u,item)) for item in plan['lights']]
+    # User diagnostics confirmed exactly one defect: the directional-light
+    # factory supplied uniform 2.5 scale. Recovery accepts no other drift.
+    check(all(d['matches'] for d in details if d['key']!='Sun'),'A point-light transform changed; recovery is limited to the confirmed Sun factory scale')
+    sun=next(i for i in plan['lights'] if i['key']=='Sun');p,y,r=sun['rotation']
+    legacy=u.Transform(location=u.Vector(*sun['location']),rotation=u.Rotator(pitch=p,yaw=y,roll=r),scale=u.Vector(2.5,2.5,2.5))
+    sun_ok=next(d['matches'] for d in details if d['key']=='Sun')
+    check(sun_ok or lights['Sun'].get_actor_transform().is_near_equal(legacy,location_tolerance=0.1,rotation_tolerance=0.001,scale3d_tolerance=0.0001),
+          'Sun has unexpected location/rotation/scale; only the observed uniform 2.5 factory scale can be recovered')
+    return lights,dict(source_map=plan['source_map'],target_map=plan['target_map'],mode='sample',
+                       transform_only_recovery=True,recovery_scope='Sun factory scale 2.5 to 1 only',diagnostics=details,
+                       requires_save_before_execute=bool(dirty_maps or dirty_content),
+                       mismatched_lights=[d['key'] for d in details if not d['matches']])
+
+def recover_sample(package_root,sample_import_report,failed_preview_report,*,execute=False,backup_confirmed=False):
+    """Repair existing lights from one exact failed sample preview. Never edits run state."""
+    contract=em.load_contract(package_root);sample=_read(sample_import_report)
+    failed_path=Path(failed_preview_report).expanduser().resolve();failed=_read(failed_path)
+    failed_hash=em._sha(failed_path);plan=_recovery_plan(contract,sample,failed)
+    import unreal as u
+    if execute:check(backup_confirmed is True,'Save/backup first, then pass backup_confirmed=True')
+    lights,summary=_recovery_preflight(u,contract,plan,sample,require_clean=execute)
+    summary.update(recovery_from=str(failed_path),failed_report_sha256=failed_hash)
+    if not execute:print(json.dumps(summary,indent=2));return summary
+    before=_non_preview_snapshot(u)
+    stamp=datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')+'_'+uuid.uuid4().hex[:8]
+    output=Path(u.Paths.project_saved_dir()).resolve()/'EvergreenHandoff'/('PreviewRecovery_'+stamp)
+    output.mkdir(parents=True,exist_ok=False);path=output/'preview_report.json'
+    result=dict(summary,schema=SCHEMA,status='started',package_fingerprint=contract['fingerprint'],plan=plan,
+                gameplay_verified=False,blueprint_modified=False,changed_light_keys=[])
+    def save():path.write_text(json.dumps(result,indent=2),encoding='utf-8')
+    save()
+    try:
+        for item in plan['lights']:
+            if item['key'] not in summary['mismatched_lights']:continue
+            actor=lights[item['key']];component=_components(actor,getattr(u,item['component']))
+            check(component.get_editor_property('mobility')==u.ComponentMobility.MOVABLE,'Light must already be Movable before transform-only recovery')
+            _checked_transform(u,actor,item);result['changed_light_keys'].append(item['key'])
+        result['before_save']=_verify(u,plan);em.verify_scene(u,sample)
+        check(_non_preview_snapshot(u)==before,'Untouched actor state changed; save stopped')
+        level=u.get_editor_subsystem(u.LevelEditorSubsystem)
+        check(level.save_current_level(),'Recovered preview map could not be saved')
+        check(not u.EditorLoadingAndSavingUtils.get_dirty_map_packages(),'Map remains dirty; reload stopped')
+        check(level.load_level(plan['target_map']),'Recovered preview map could not be reloaded')
+        check(_current(u)==plan['target_map'],'Wrong map after recovery reload')
+        result['after_reload']=_verify(u,plan);em.verify_scene(u,sample)
+        check(_non_preview_snapshot(u)==before,'Untouched actor state differs after reload')
+        check(em._sha(failed_path)==failed_hash,'Original failure report changed during recovery')
+        result.update(status='verified_preview_persistence',preserved_non_preview_actor_state=True);save()
+        u.log('Existing preview light transforms recovered and persisted. Report: '+str(path));return str(path)
+    except Exception as exc:
+        result.update(status='failed_partial_preview_recovery',error=str(exc));save()
+        u.log_error('Preview recovery stopped; no lights were respawned. Keep the recovery report: '+str(path));raise
 
 def light_sample(package_root,sample_import_report,*,execute=False,backup_confirmed=False):
     contract=em.load_contract(package_root);report=_read(sample_import_report);plan=_sample_plan(contract,report)

@@ -1,5 +1,7 @@
 # Evergreen Market
 
+If fresh sample lighting stopped with `Preview transform changed` and the Sun has scale 2.5, use the [scoped Sun-scale recovery](docs/LIGHTING_RECOVERY.md). It retains the sample and repairs the existing light without reimporting meshes.
+
 ## Fresh start with all corrected meshes
 
 For a new level, use the [fresh-start guide](docs/FRESH_START.md) and consolidated helpers in `packages/fresh_start/`. This prepares a separate corrected package before importing all 256 assets (178 corrected FBXs), then builds walking collision and four E-compatible pilot props. It does not depend on old maps/reports. Optional preview lighting and PlayerStart are provided; gameplay and visual checks remain required.

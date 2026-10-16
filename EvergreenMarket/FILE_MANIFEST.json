@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 4865,
-    "sha256": "ab0fbc76a96aa99539e668fbd85612d03e544197d4a1e555c2fcfd2f7f9b055e",
-    "git_blob_sha": "66eafff8c75a2daa067ec79ac225b54b87fd33fa"
+    "bytes": 5104,
+    "sha256": "786ffe113196d216426abe9551607e13a36566da379bfa08c9d5c7ff5021742f",
+    "git_blob_sha": "5bad5c275d36a3b0cb13a506097f8149028cb293"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -37,9 +37,9 @@
   },
   {
     "path": "docs/FRESH_START.md",
-    "bytes": 6533,
-    "sha256": "1ac6ca65930925dce5e786ed4e76586d3e42940ed448294e33bd601e2f20154e",
-    "git_blob_sha": "81c6a746dbbeabadcbc05b97cac043a8750a5139"
+    "bytes": 6957,
+    "sha256": "e3e381c00333ac7fc7713c5793c55a2bbf83c9d067f280300ec08aeeb95deff9",
+    "git_blob_sha": "3f5f875b865901f5e5982e55222fe8ae9130f07e"
   },
   {
     "path": "docs/HANDOFF_START_HERE.txt",
@@ -64,6 +64,12 @@
     "bytes": 1905,
     "sha256": "c2e7db523f9cb57255f18d7448f3c6e028280acc0013a61632390cb1884cd489",
     "git_blob_sha": "9e9f5c61436d2bb2e773cffc1c4f8ef980606ea8"
+  },
+  {
+    "path": "docs/LIGHTING_RECOVERY.md",
+    "bytes": 2769,
+    "sha256": "65db853f2e379f44402bc0622f68e49c56075e7861dbcef622453a8f0e52ebd7",
+    "git_blob_sha": "f96a6c97393cb7800e1a0132b25538b941a85b42"
   },
   {
     "path": "docs/NORMALS_REPAIR.md",
@@ -121,15 +127,27 @@
   },
   {
     "path": "packages/fresh_start/Evergreen_Fresh_Start_Helpers.zip",
-    "bytes": 44069,
-    "sha256": "33633e9fbfeecce84fb9fc3ff14529a7a3ceed48111cc84d027e60c3729d44d5",
-    "git_blob_sha": "9679dea8cc55d2883c20c59490576d2b759cd544"
+    "bytes": 46249,
+    "sha256": "0cee7efe370374ce1f5cae94f97cbc370156e868a315f88b3e0dae0c75965a58",
+    "git_blob_sha": "4ba9a7fc22de4c4c97bde10e9056d692bff462ee"
   },
   {
     "path": "packages/fresh_start/SHA256SUMS.txt",
     "bytes": 100,
-    "sha256": "26bdef23609ac4c39cc5e63c9abcd3ee3c6a2bdf3180f2db90b2288afa00d374",
-    "git_blob_sha": "2ae22d79b0c66632f44293ecad72f884b721ea96"
+    "sha256": "0bfc409dbc3675bf368a78176b430613847984f10ab98e011548e2f021758ab8",
+    "git_blob_sha": "0ce6bea9b993b64a11720ee35e270f6d899e6703"
+  },
+  {
+    "path": "packages/lighting_recovery/Evergreen_Lighting_Recovery.zip",
+    "bytes": 14502,
+    "sha256": "7fb70294b3f672e49cf52b4ca7126827bae1b68514652fefefff6d4d02caf525",
+    "git_blob_sha": "91f3ababa1fe0f1fc065b647b06e7721f79d3d8c"
+  },
+  {
+    "path": "packages/lighting_recovery/SHA256SUMS.txt",
+    "bytes": 98,
+    "sha256": "c8bd0604d16a006bbf709a19c94500b7d82862943dfc7aaa8992e0e6f22dd602",
+    "git_blob_sha": "f3f8a3e6ddade81deb935e6fc8db9e7ade0053a7"
   },
   {
     "path": "packages/normals_patch/Evergreen_Market_Normals_Patch.zip",
@@ -283,9 +301,15 @@
   },
   {
     "path": "qa/fresh_start_tests.txt",
-    "bytes": 857,
-    "sha256": "e319a4ca08a63734e91e25b89a48266e25e1a0d9ef4c7d262a757b41b0025370",
-    "git_blob_sha": "9fa47c184d75f74822d8f78085e1cb8338a1737e"
+    "bytes": 878,
+    "sha256": "2d4b1740fe176bed47beced629cb6cfa13aade623938ab6dbc846480ad171240",
+    "git_blob_sha": "fabae0fd669b9345cc7e16358ac57d7d40edf31a"
+  },
+  {
+    "path": "qa/lighting_recovery_tests.txt",
+    "bytes": 878,
+    "sha256": "2d4b1740fe176bed47beced629cb6cfa13aade623938ab6dbc846480ad171240",
+    "git_blob_sha": "fabae0fd669b9345cc7e16358ac57d7d40edf31a"
   },
   {
     "path": "qa/native_delivery_reopen.json",
@@ -396,6 +420,12 @@
     "git_blob_sha": "cc21fda0a94e10dd18a055d0e89389cfe266d90e"
   },
   {
+    "path": "source/unreal/Start_Lighting_Recovery.py",
+    "bytes": 1546,
+    "sha256": "f434590869ecea2acbcc3a91fed5b42c4626825604b95b39faef83198883573a",
+    "git_blob_sha": "9fa96c36529ddec4f5a7d41755aa057545d1c371"
+  },
+  {
     "path": "source/unreal/Start_Normals_Repair.py",
     "bytes": 820,
     "sha256": "9d2a52fba625c34f96adeb65b75ade0ea97072b2dda8c9dc1f38cc0501291e26",
@@ -433,9 +463,9 @@
   },
   {
     "path": "source/unreal/fresh_preview_setup.py",
-    "bytes": 18695,
-    "sha256": "af21fb468f9901fbc489e3c25f3cd033ac20fb08131842ad4851f672fcc7c456",
-    "git_blob_sha": "f30f61e4a23d9721d10f9f49ab092facebe1c0ef"
+    "bytes": 28068,
+    "sha256": "31e03cca11a5f4b9def4039d77e66a92d0191040105e624a0b77bd8a079c8aae",
+    "git_blob_sha": "c86e0e8d46a39f0587787988ec3b8dc590143d39"
   },
   {
     "path": "source/unreal/import_supermarket_unreal.py",
@@ -460,6 +490,12 @@
     "bytes": 12217,
     "sha256": "a61d0b2dacf26c8869c877a65ed019a1c0097e2ec734af0435f293ed01cdd1c1",
     "git_blob_sha": "0e2b03946182983e01e23583e8990370e5fb26ed"
+  },
+  {
+    "path": "source/unreal/recover_fresh_lighting.py",
+    "bytes": 10564,
+    "sha256": "bf174fe7846888d4262e3d4721770632a0452df0bc3b789b1708b13999a8d84a",
+    "git_blob_sha": "b982f7175aa2b3c2744420539eb148c6b96df383"
   },
   {
     "path": "source/unreal/repair_pilot_collision.py",
@@ -499,9 +535,9 @@
   },
   {
     "path": "source/unreal/test_fresh_preview_setup.py",
-    "bytes": 10961,
-    "sha256": "617ad08d779497681810b79c9c784d63369a9fea2de0f8ddce9ff6dfff1f0ba8",
-    "git_blob_sha": "598bdafa35b10d20e31cfb417fdba73d8b14ba35"
+    "bytes": 18844,
+    "sha256": "be216455fe12fdcbc14f016fc59f19f9005a6ae578d0ee693081337ecac3412f",
+    "git_blob_sha": "6306da452bfa15940be4e8478f4c4e72643628a3"
   },
   {
     "path": "source/unreal/test_import_contract.py",
@@ -538,6 +574,12 @@
     "bytes": 7932,
     "sha256": "95a3a54e121eb162d5d0fcf65745cf18a721fe8c6419c328eed605b701f95a83",
     "git_blob_sha": "c69733f19dd327464a8581f0a89ee6d44c9ec123"
+  },
+  {
+    "path": "source/unreal/test_recover_fresh_lighting.py",
+    "bytes": 7391,
+    "sha256": "2b6c3a26cdecba33bb0b915236188387f8fa946695b0e10736f0ba08de876a95",
+    "git_blob_sha": "89be8972dcf0450387a5d87cb2c08c3522b2d3fb"
   },
   {
     "path": "source/unreal/test_winding_generators.py",

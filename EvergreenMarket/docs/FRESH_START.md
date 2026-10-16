@@ -75,3 +75,6 @@ The optional preview supplies one movable directional light and ten movable poin
 Exactly four props become individually traceable StaticMeshActors tagged Prop: TomatoCan, CoffeeCan, OatsCarton and ShippingBox. The remaining scene uses instancing; this does not make all 6,695 candidate placements compatible with a StaticMeshActor-only Blueprint. Deleting prior content may invalidate mesh whitelist references, so test E again with these new assets.
 
 Material creation now explicitly sets and verifies the contract blend mode and two-sided flag, including Opaque, after saving/reloading. No blanket two-sided fix is used. API reference: https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/Material?application_version=5.7 .
+
+## Existing failed lighting run
+The updated helper explicitly assigns unit scale after spawning lights. For an existing run stopped by the older `Preview transform changed` error with Sun scale 2.5, use [LIGHTING_RECOVERY.md](LIGHTING_RECOVERY.md). Do not overwrite that run’s snapshotted helpers or hashes manually; the recovery validates the exact failure and performs a backed-up migration after save/reload succeeds.
