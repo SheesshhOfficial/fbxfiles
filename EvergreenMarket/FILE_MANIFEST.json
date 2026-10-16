@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 2093,
-    "sha256": "c32757d3779810665b3f4cc1961d99d486aa1346f624711b98563770e95cd4ab",
-    "git_blob_sha": "ffb661ffdcb78fb5a49e6428a37992bb078c1024"
+    "bytes": 2528,
+    "sha256": "d3eef6968edb752bf057ccf5f52fab1537c91d07679156323b30b72ff78d624f",
+    "git_blob_sha": "394599022c4f4b3337015754b838d4d35b60c2c7"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -118,6 +118,12 @@
     "bytes": 2047,
     "sha256": "6d312fba3574c865645863ba928b010a19fceecfb031a90205515b58e1e5a417",
     "git_blob_sha": "96135ebc2e6395ef4fead21f3f90909c25a69c37"
+  },
+  {
+    "path": "packages/unreal_handoff/Reassemble_Evergreen_Windows.cmd",
+    "bytes": 3891,
+    "sha256": "4482aaa0d71265f22b55c5af74df5fda218c9c06eb8c56085b0ab95dec290719",
+    "git_blob_sha": "739f9c125cad12bce64ba9e9f59ba2904688b80e"
   },
   {
     "path": "previews/01_Interior_Filtered_Test.png",
