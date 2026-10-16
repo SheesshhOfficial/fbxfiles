@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Abandoned Water Station",
+    "file": "assets_repo/Abandoned Water Station.fbx",
+    "original_dimensions": [
+      0.9986050128936768,
+      0.9969920516014099,
+      0.4822910726070404
+    ],
+    "normalized_dimensions": [
+      2.0705442428588867,
+      2.06719970703125,
+      0.9999998807907104
+    ],
+    "triangles": 50000,
+    "images": 4
+  },
+  {
+    "name": "Angular sandstone cover slab",
+    "file": "assets_repo/Angular sandstone cover slab.fbx",
+    "original_dimensions": [
+      0.9489870071411133,
+      0.3795740604400635,
+      0.6935920119285583
+    ],
+    "normalized_dimensions": [
+      1.3682208061218262,
+      0.5472583174705505,
+      0.9999998807907104
+    ],
+    "triangles": 50000,
+    "images": 8
+  },
+  {
+    "name": "Baricade3",
+    "file": "assets_repo/Baricade3.fbx",
+    "original_dimensions": [
+      0.942209005355835,
+      0.5841970443725586,
+      0.515779972076416
+    ],
+    "normalized_dimensions": [
+      1.8267652988433838,
+      1.1326477527618408,
+      0.9999999403953552
+    ],
+    "triangles": 49522,
+    "images": 12
+  },
+  {
+    "name": "Canyon bend and variation",
+    "file": "assets_repo/Canyon bend and variation.fbx",
+    "original_dimensions": [
+      1.075119972229004,
+      0.24309402704238892,
+      0.4885909855365753
+    ],
+    "normalized_dimensions": [
+      2.2004499435424805,
+      0.4975408911705017,
+      1.0
+    ],
+    "triangles": 50008,
+    "images": 16
+  },
+  {
+    "name": "Collapsed Sandstone Arc",
+    "file": "assets_repo/Collapsed Sandstone Arc.fbx",
+    "original_dimensions": [
+      0.9183900356292725,
+      0.5700950622558594,
+      0.7260370254516602
+    ],
+    "normalized_dimensions": [
+      1.2649354934692383,
+      0.7852147817611694,
+      1.0
+    ],
+    "triangles": 49998,
+    "images": 20
+  },
+  {
+    "name": "CrateA",
+    "file": "assets_repo/CrateA.fbx",
+    "original_dimensions": [
+      1.0166059732437134,
+      0.524582028388977,
+      0.46161606907844543
+    ],
+    "normalized_dimensions": [
+      2.2022759914398193,
+      1.1364033222198486,
+      1.0
+    ],
+    "triangles": 50000,
+    "images": 24
+  },
+  {
+    "name": "CrateB",
+    "file": "assets_repo/CrateB.fbx",
+    "original_dimensions": [
+      0.8752189874649048,
+      0.6913900375366211,
+      0.6278529763221741
+    ],
+    "normalized_dimensions": [
+      1.3939870595932007,
+      1.1011971235275269,
+      1.0
+    ],
+    "triangles": 50000,
+    "images": 28
+  },
+  {
+    "name": "CrateC",
+    "file": "assets_repo/CrateC.fbx",
+    "original_dimensions": [
+      0.7477409839630127,
+      0.7489230632781982,
+      0.748013973236084
+    ],
+    "normalized_dimensions": [
+      0.9996351003646851,
+      1.0012152194976807,
+      1.0
+    ],
+    "triangles": 50000,
+    "images": 32
+  },
+  {
+    "name": "L-shaped barricade",
+    "file": "assets_repo/L-shaped barricade.fbx",
+    "original_dimensions": [
+      0.8261889815330505,
+      0.8300610184669495,
+      0.39284205436706543
+    ],
+    "normalized_dimensions": [
+      2.1032047271728516,
+      2.112940788269043,
+      1.0000561475753784
+    ],
+    "triangles": 100000,
+    "images": 36
+  },
+  {
+    "name": "Large sandstone cover boulder",
+    "file": "assets_repo/Large sandstone cover boulder.fbx",
+    "original_dimensions": [
+      1.0714839696884155,
+      0.5397700071334839,
+      0.5474010109901428
+    ],
+    "normalized_dimensions": [
+      1.957402229309082,
+      0.9860594868659973,
+      0.9999999403953552
+    ],
+    "triangles": 50000,
+    "images": 40
+  },
+  {
+    "name": "Overturned Mining Cart",
+    "file": "assets_repo/Overturned Mining Cart.fbx",
+    "original_dimensions": [
+      1.0009039640426636,
+      0.7274170517921448,
+      0.5271000862121582
+    ],
+    "normalized_dimensions": [
+      1.898888111114502,
+      1.3800358772277832,
+      0.9999999403953552
+    ],
+    "triangles": 50000,
+    "images": 44
+  },
+  {
+    "name": "Sniper",
+    "file": "assets_repo/Sniper.glb",
+    "original_dimensions": [
+      1.0003581047058105,
+      0.15781442821025848,
+      0.4237034022808075
+    ],
+    "normalized_dimensions": [
+      2.3610787391662598,
+      0.3724530339241028,
+      0.9999200701713562
+    ],
+    "triangles": 100000,
+    "images": 47
+  },
+  {
+    "name": "Straight canyon wall",
+    "file": "assets_repo/Straight canyon wall.fbx",
+    "original_dimensions": [
+      1.101181983947754,
+      0.3341980576515198,
+      0.39713001251220703
+    ],
+    "normalized_dimensions": [
+      2.7728500366210938,
+      0.8415330052375793,
+      0.9999999403953552
+    ],
+    "triangles": 50000,
+    "images": 51
+  },
+  {
+    "name": "Tower",
+    "file": "assets_repo/Tower.fbx",
+    "original_dimensions": [
+      0.4065600037574768,
+      0.3815680742263794,
+      1.1038579940795898
+    ],
+    "normalized_dimensions": [
+      0.36830824613571167,
+      0.34566766023635864,
+      0.9999999403953552
+    ],
+    "triangles": 49776,
+    "images": 55
+  },
+  {
+    "name": "baricade2",
+    "file": "assets_repo/baricade2.fbx",
+    "original_dimensions": [
+      1.006585955619812,
+      0.5520090460777283,
+      0.5018640756607056
+    ],
+    "normalized_dimensions": [
+      2.0056943893432617,
+      1.0999174118041992,
+      1.0
+    ],
+    "triangles": 49956,
+    "images": 59
+  }
+]

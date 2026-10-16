@@ -1,0 +1,3875 @@
+[
+  {
+    "object": "Canyon -1 segment 00",
+    "asset": "Canyon bend and variation",
+    "position": [
+      -24,
+      -90,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -90
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 01",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      -76,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -76
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 02",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      -62,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -62
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 03",
+    "asset": "Canyon bend and variation",
+    "position": [
+      -24,
+      -48,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -48
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 04",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      -34,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -34
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 05",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      -20,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -20
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 06",
+    "asset": "Canyon bend and variation",
+    "position": [
+      -24,
+      -6,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      -6
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 07",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      8,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      8
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 08",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      22,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      22
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 09",
+    "asset": "Canyon bend and variation",
+    "position": [
+      -24,
+      36,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      36
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 10",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      50,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      50
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 11",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      64,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      64
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 12",
+    "asset": "Canyon bend and variation",
+    "position": [
+      -24,
+      78,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      78
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon -1 segment 13",
+    "asset": "Straight canyon wall",
+    "position": [
+      -24,
+      92,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": 90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      -24,
+      0,
+      92
+    ],
+    "unity_yaw_degrees": -90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 00",
+    "asset": "Canyon bend and variation",
+    "position": [
+      24,
+      -90,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -90
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 01",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      -76,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -76
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 02",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      -62,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -62
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 03",
+    "asset": "Canyon bend and variation",
+    "position": [
+      24,
+      -48,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -48
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 04",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      -34,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -34
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 05",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      -20,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -20
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 06",
+    "asset": "Canyon bend and variation",
+    "position": [
+      24,
+      -6,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      -6
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 07",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      8,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      8
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 08",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      22,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      22
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 09",
+    "asset": "Canyon bend and variation",
+    "position": [
+      24,
+      36,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      36
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 10",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      50,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      50
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 11",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      64,
+      0
+    ],
+    "height": 13.7,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.7,
+      13.7,
+      13.7
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      64
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.7,
+      13.7,
+      13.7
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 12",
+    "asset": "Canyon bend and variation",
+    "position": [
+      24,
+      78,
+      0
+    ],
+    "height": 12.5,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Canyon bend and variation",
+    "blender_scale": [
+      12.5,
+      12.5,
+      12.5
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      78
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      12.5,
+      12.5,
+      12.5
+    ]
+  },
+  {
+    "object": "Canyon +1 segment 13",
+    "asset": "Straight canyon wall",
+    "position": [
+      24,
+      92,
+      0
+    ],
+    "height": 13.1,
+    "rotation_z": -90,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      13.1,
+      13.1,
+      13.1
+    ],
+    "unity_position_xyz": [
+      24,
+      0,
+      92
+    ],
+    "unity_yaw_degrees": 90,
+    "unity_scale_xyz": [
+      13.1,
+      13.1,
+      13.1
+    ]
+  },
+  {
+    "object": "End wall -13.8",
+    "asset": "Straight canyon wall",
+    "position": [
+      -13.8,
+      94,
+      0
+    ],
+    "height": 12,
+    "rotation_z": 0,
+    "scale_xy": [
+      0.55,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      6.6000000000000005,
+      12,
+      12
+    ],
+    "unity_position_xyz": [
+      -13.8,
+      0,
+      94
+    ],
+    "unity_yaw_degrees": 0,
+    "unity_scale_xyz": [
+      6.6000000000000005,
+      12,
+      12
+    ]
+  },
+  {
+    "object": "End wall 13.8",
+    "asset": "Straight canyon wall",
+    "position": [
+      13.8,
+      94,
+      0
+    ],
+    "height": 12,
+    "rotation_z": 0,
+    "scale_xy": [
+      0.55,
+      1
+    ],
+    "collection": "01_CANYON",
+    "source_id": "Straight canyon wall",
+    "blender_scale": [
+      6.6000000000000005,
+      12,
+      12
+    ],
+    "unity_position_xyz": [
+      13.8,
+      0,
+      94
+    ],
+    "unity_yaw_degrees": 0,
+    "unity_scale_xyz": [
+      6.6000000000000005,
+      12,
+      12
+    ]
+  },
+  {
+    "object": "Tower gate and sniper deck",
+    "asset": "Tower",
+    "position": [
+      0,
+      89,
+      0
+    ],
+    "height": 26,
+    "rotation_z": 0,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "02_TOWER",
+    "source_id": "Tower",
+    "blender_scale": [
+      26,
+      26,
+      26
+    ],
+    "unity_position_xyz": [
+      0,
+      0,
+      89
+    ],
+    "unity_yaw_degrees": 0,
+    "unity_scale_xyz": [
+      26,
+      26,
+      26
+    ]
+  },
+  {
+    "object": "Cover L1 S01 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      -13.633697464050933,
+      -80.4,
+      0
+    ],
+    "height": 2.8899190888641884,
+    "rotation_z": 10.690262825834537,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      2.8899190888641884,
+      2.8899190888641884,
+      2.8899190888641884
+    ],
+    "unity_position_xyz": [
+      -13.633697464050933,
+      0,
+      -80.4
+    ],
+    "unity_yaw_degrees": -10.690262825834537,
+    "unity_scale_xyz": [
+      2.8899190888641884,
+      2.8899190888641884,
+      2.8899190888641884
+    ]
+  },
+  {
+    "object": "Cargo L1 S01 P1",
+    "asset": "CrateA",
+    "position": [
+      -10.933697464050933,
+      -79.60000000000001,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": 10.690262825834537,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      -10.933697464050933,
+      0,
+      -79.60000000000001
+    ],
+    "unity_yaw_degrees": -10.690262825834537,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L1 S01 P2",
+    "asset": "CrateB",
+    "position": [
+      -9.533697464050933,
+      -81.2,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 33.69026282583454,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      -9.533697464050933,
+      0,
+      -81.2
+    ],
+    "unity_yaw_degrees": -33.69026282583454,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L1 S02 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      -13.466351654015996,
+      -72.05000000000001,
+      0
+    ],
+    "height": 3.56021398968961,
+    "rotation_z": 24.781628284887404,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      3.56021398968961,
+      3.56021398968961,
+      3.56021398968961
+    ],
+    "unity_position_xyz": [
+      -13.466351654015996,
+      0,
+      -72.05000000000001
+    ],
+    "unity_yaw_degrees": -24.781628284887404,
+    "unity_scale_xyz": [
+      3.56021398968961,
+      3.56021398968961,
+      3.56021398968961
+    ]
+  },
+  {
+    "object": "Cover L1 S03 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      -9.609000578866937,
+      -63.699999999999996,
+      0
+    ],
+    "height": 2.9179209767682224,
+    "rotation_z": 37.39738765318692,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      2.9179209767682224,
+      2.9179209767682224,
+      2.9179209767682224
+    ],
+    "unity_position_xyz": [
+      -9.609000578866937,
+      0,
+      -63.699999999999996
+    ],
+    "unity_yaw_degrees": -37.39738765318692,
+    "unity_scale_xyz": [
+      2.9179209767682224,
+      2.9179209767682224,
+      2.9179209767682224
+    ]
+  },
+  {
+    "object": "Cover L1 S04 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      -13.372666585910887,
+      -55.35,
+      0
+    ],
+    "height": 2.984935370300184,
+    "rotation_z": 42.373011159247405,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      2.984935370300184,
+      2.984935370300184,
+      2.984935370300184
+    ],
+    "unity_position_xyz": [
+      -13.372666585910887,
+      0,
+      -55.35
+    ],
+    "unity_yaw_degrees": -42.373011159247405,
+    "unity_scale_xyz": [
+      2.984935370300184,
+      2.984935370300184,
+      2.984935370300184
+    ]
+  },
+  {
+    "object": "Cover L1 S05 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      -11.472121550838526,
+      -47.0,
+      0
+    ],
+    "height": 3.5970749532764046,
+    "rotation_z": -46.58222168501916,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      3.5970749532764046,
+      3.5970749532764046,
+      3.5970749532764046
+    ],
+    "unity_position_xyz": [
+      -11.472121550838526,
+      0,
+      -47.0
+    ],
+    "unity_yaw_degrees": 46.58222168501916,
+    "unity_scale_xyz": [
+      3.5970749532764046,
+      3.5970749532764046,
+      3.5970749532764046
+    ]
+  },
+  {
+    "object": "Cover L1 S06 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      -9.54066130761109,
+      -38.65,
+      0
+    ],
+    "height": 2.6,
+    "rotation_z": -15.618028413719443,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      2.6,
+      2.6,
+      2.6
+    ],
+    "unity_position_xyz": [
+      -9.54066130761109,
+      0,
+      -38.65
+    ],
+    "unity_yaw_degrees": 15.618028413719443,
+    "unity_scale_xyz": [
+      2.6,
+      2.6,
+      2.6
+    ]
+  },
+  {
+    "object": "Cargo L1 S06 P1",
+    "asset": "CrateC",
+    "position": [
+      -6.84066130761109,
+      -37.85,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -15.618028413719443,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      -6.84066130761109,
+      0,
+      -37.85
+    ],
+    "unity_yaw_degrees": 15.618028413719443,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L1 S06 P2",
+    "asset": "CrateA",
+    "position": [
+      -5.440661307611091,
+      -39.449999999999996,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 7.381971586280557,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      -5.440661307611091,
+      0,
+      -39.449999999999996
+    ],
+    "unity_yaw_degrees": -7.381971586280557,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L1 S07 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      -11.916329192247435,
+      -30.300000000000004,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": -28.476012642028238,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      -11.916329192247435,
+      0,
+      -30.300000000000004
+    ],
+    "unity_yaw_degrees": 28.476012642028238,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cover L1 S08 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      -12.52859941685033,
+      -21.950000000000003,
+      0
+    ],
+    "height": 3.2679207543297037,
+    "rotation_z": 22.720635708011066,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      3.2679207543297037,
+      3.2679207543297037,
+      3.2679207543297037
+    ],
+    "unity_position_xyz": [
+      -12.52859941685033,
+      0,
+      -21.950000000000003
+    ],
+    "unity_yaw_degrees": -22.720635708011066,
+    "unity_scale_xyz": [
+      3.2679207543297037,
+      3.2679207543297037,
+      3.2679207543297037
+    ]
+  },
+  {
+    "object": "Cover L1 S09 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      -13.421557179623191,
+      -13.600000000000003,
+      0
+    ],
+    "height": 2.9439121982783325,
+    "rotation_z": -28.553706275139,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      2.9439121982783325,
+      2.9439121982783325,
+      2.9439121982783325
+    ],
+    "unity_position_xyz": [
+      -13.421557179623191,
+      0,
+      -13.600000000000003
+    ],
+    "unity_yaw_degrees": 28.553706275139,
+    "unity_scale_xyz": [
+      2.9439121982783325,
+      2.9439121982783325,
+      2.9439121982783325
+    ]
+  },
+  {
+    "object": "Cover L1 S10 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      -9.18336693272939,
+      -5.250000000000009,
+      0
+    ],
+    "height": 3.591182287790847,
+    "rotation_z": -46.96664618834444,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      3.591182287790847,
+      3.591182287790847,
+      3.591182287790847
+    ],
+    "unity_position_xyz": [
+      -9.18336693272939,
+      0,
+      -5.250000000000009
+    ],
+    "unity_yaw_degrees": 46.96664618834444,
+    "unity_scale_xyz": [
+      3.591182287790847,
+      3.591182287790847,
+      3.591182287790847
+    ]
+  },
+  {
+    "object": "Cover L1 S11 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      -10.831339805654284,
+      3.1,
+      0
+    ],
+    "height": 3.1509444633194845,
+    "rotation_z": -28.507112580842293,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.1509444633194845,
+      3.1509444633194845,
+      3.1509444633194845
+    ],
+    "unity_position_xyz": [
+      -10.831339805654284,
+      0,
+      3.1
+    ],
+    "unity_yaw_degrees": 28.507112580842293,
+    "unity_scale_xyz": [
+      3.1509444633194845,
+      3.1509444633194845,
+      3.1509444633194845
+    ]
+  },
+  {
+    "object": "Cargo L1 S11 P1",
+    "asset": "CrateB",
+    "position": [
+      -8.131339805654285,
+      3.9000000000000004,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -28.507112580842293,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      -8.131339805654285,
+      0,
+      3.9000000000000004
+    ],
+    "unity_yaw_degrees": 28.507112580842293,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L1 S11 P2",
+    "asset": "CrateC",
+    "position": [
+      -6.731339805654285,
+      2.3,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": -5.507112580842293,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      -6.731339805654285,
+      0,
+      2.3
+    ],
+    "unity_yaw_degrees": 5.507112580842293,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L1 S12 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      -11.365090889178077,
+      11.449999999999994,
+      0
+    ],
+    "height": 3.093977446519207,
+    "rotation_z": -10.30937533210316,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      3.093977446519207,
+      3.093977446519207,
+      3.093977446519207
+    ],
+    "unity_position_xyz": [
+      -11.365090889178077,
+      0,
+      11.449999999999994
+    ],
+    "unity_yaw_degrees": 10.30937533210316,
+    "unity_scale_xyz": [
+      3.093977446519207,
+      3.093977446519207,
+      3.093977446519207
+    ]
+  },
+  {
+    "object": "Cover L1 S14 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      -13.476367446613754,
+      28.15,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": -11.137219691619332,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      -13.476367446613754,
+      0,
+      28.15
+    ],
+    "unity_yaw_degrees": 11.137219691619332,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cover L1 S15 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      -11.098150477614078,
+      36.49999999999999,
+      0
+    ],
+    "height": 3.3206063320408656,
+    "rotation_z": -6.464118074194506,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      3.3206063320408656,
+      3.3206063320408656,
+      3.3206063320408656
+    ],
+    "unity_position_xyz": [
+      -11.098150477614078,
+      0,
+      36.49999999999999
+    ],
+    "unity_yaw_degrees": 6.464118074194506,
+    "unity_scale_xyz": [
+      3.3206063320408656,
+      3.3206063320408656,
+      3.3206063320408656
+    ]
+  },
+  {
+    "object": "Cover L1 S16 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      -8.427273791685558,
+      44.85,
+      0
+    ],
+    "height": 3.594804841848056,
+    "rotation_z": -7.242840423318913,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      3.594804841848056,
+      3.594804841848056,
+      3.594804841848056
+    ],
+    "unity_position_xyz": [
+      -8.427273791685558,
+      0,
+      44.85
+    ],
+    "unity_yaw_degrees": 7.242840423318913,
+    "unity_scale_xyz": [
+      3.594804841848056,
+      3.594804841848056,
+      3.594804841848056
+    ]
+  },
+  {
+    "object": "Cargo L1 S16 P1",
+    "asset": "CrateA",
+    "position": [
+      -5.727273791685557,
+      45.65,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -7.242840423318913,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      -5.727273791685557,
+      0,
+      45.65
+    ],
+    "unity_yaw_degrees": 7.242840423318913,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L1 S16 P2",
+    "asset": "CrateB",
+    "position": [
+      -4.327273791685558,
+      44.050000000000004,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 15.757159576681087,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      -4.327273791685558,
+      0,
+      44.050000000000004
+    ],
+    "unity_yaw_degrees": -15.757159576681087,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L1 S17 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      -10.676615005968067,
+      53.199999999999996,
+      0
+    ],
+    "height": 4.248769846831672,
+    "rotation_z": 40.54096490980898,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      4.248769846831672,
+      4.248769846831672,
+      4.248769846831672
+    ],
+    "unity_position_xyz": [
+      -10.676615005968067,
+      0,
+      53.199999999999996
+    ],
+    "unity_yaw_degrees": -40.54096490980898,
+    "unity_scale_xyz": [
+      4.248769846831672,
+      4.248769846831672,
+      4.248769846831672
+    ]
+  },
+  {
+    "object": "Cover L1 S18 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      -12.762673432819012,
+      61.54999999999999,
+      0
+    ],
+    "height": 3.523006140714986,
+    "rotation_z": 26.496776583376597,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.523006140714986,
+      3.523006140714986,
+      3.523006140714986
+    ],
+    "unity_position_xyz": [
+      -12.762673432819012,
+      0,
+      61.54999999999999
+    ],
+    "unity_yaw_degrees": -26.496776583376597,
+    "unity_scale_xyz": [
+      3.523006140714986,
+      3.523006140714986,
+      3.523006140714986
+    ]
+  },
+  {
+    "object": "Cover L1 S19 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      -8.53207365187642,
+      69.89999999999998,
+      0
+    ],
+    "height": 4.035658755297495,
+    "rotation_z": -7.078880908586591,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      4.035658755297495,
+      4.035658755297495,
+      4.035658755297495
+    ],
+    "unity_position_xyz": [
+      -8.53207365187642,
+      0,
+      69.89999999999998
+    ],
+    "unity_yaw_degrees": 7.078880908586591,
+    "unity_scale_xyz": [
+      4.035658755297495,
+      4.035658755297495,
+      4.035658755297495
+    ]
+  },
+  {
+    "object": "Cover L2 S01 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      0.8063819805670143,
+      -78.0,
+      0
+    ],
+    "height": 2.6,
+    "rotation_z": -29.632060397732253,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      2.6,
+      2.6,
+      2.6
+    ],
+    "unity_position_xyz": [
+      0.8063819805670143,
+      0,
+      -78.0
+    ],
+    "unity_yaw_degrees": 29.632060397732253,
+    "unity_scale_xyz": [
+      2.6,
+      2.6,
+      2.6
+    ]
+  },
+  {
+    "object": "Cover L2 S02 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      -1.6059547251243689,
+      -69.65,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": 18.466972951459507,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      -1.6059547251243689,
+      0,
+      -69.65
+    ],
+    "unity_yaw_degrees": -18.466972951459507,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cargo L2 S02 P1",
+    "asset": "CrateC",
+    "position": [
+      1.0940452748756313,
+      -68.85000000000001,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": 18.466972951459507,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      1.0940452748756313,
+      0,
+      -68.85000000000001
+    ],
+    "unity_yaw_degrees": -18.466972951459507,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L2 S02 P2",
+    "asset": "CrateA",
+    "position": [
+      2.4940452748756305,
+      -70.45,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 41.46697295145951,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      2.4940452748756305,
+      0,
+      -70.45
+    ],
+    "unity_yaw_degrees": -41.46697295145951,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L2 S03 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      0.3330692340105288,
+      -61.3,
+      0
+    ],
+    "height": 2.894429840252949,
+    "rotation_z": -37.5226887181703,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      2.894429840252949,
+      2.894429840252949,
+      2.894429840252949
+    ],
+    "unity_position_xyz": [
+      0.3330692340105288,
+      0,
+      -61.3
+    ],
+    "unity_yaw_degrees": 37.5226887181703,
+    "unity_scale_xyz": [
+      2.894429840252949,
+      2.894429840252949,
+      2.894429840252949
+    ]
+  },
+  {
+    "object": "Cover L2 S04 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      0.7404798749411392,
+      -52.95,
+      0
+    ],
+    "height": 3.5686195683128075,
+    "rotation_z": -26.977441236762758,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      3.5686195683128075,
+      3.5686195683128075,
+      3.5686195683128075
+    ],
+    "unity_position_xyz": [
+      0.7404798749411392,
+      0,
+      -52.95
+    ],
+    "unity_yaw_degrees": 26.977441236762758,
+    "unity_scale_xyz": [
+      3.5686195683128075,
+      3.5686195683128075,
+      3.5686195683128075
+    ]
+  },
+  {
+    "object": "Cover L2 S05 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      1.1526826631037617,
+      -44.6,
+      0
+    ],
+    "height": 3.4832711705676984,
+    "rotation_z": 9.695490941239681,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      3.4832711705676984,
+      3.4832711705676984,
+      3.4832711705676984
+    ],
+    "unity_position_xyz": [
+      1.1526826631037617,
+      0,
+      -44.6
+    ],
+    "unity_yaw_degrees": -9.695490941239681,
+    "unity_scale_xyz": [
+      3.4832711705676984,
+      3.4832711705676984,
+      3.4832711705676984
+    ]
+  },
+  {
+    "object": "Cover L2 S06 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      0.6028101999875983,
+      -36.25,
+      0
+    ],
+    "height": 3.2096270041346644,
+    "rotation_z": -6.222475414330841,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.2096270041346644,
+      3.2096270041346644,
+      3.2096270041346644
+    ],
+    "unity_position_xyz": [
+      0.6028101999875983,
+      0,
+      -36.25
+    ],
+    "unity_yaw_degrees": 6.222475414330841,
+    "unity_scale_xyz": [
+      3.2096270041346644,
+      3.2096270041346644,
+      3.2096270041346644
+    ]
+  },
+  {
+    "object": "Cover L2 S07 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      -0.05262221965481606,
+      -27.900000000000006,
+      0
+    ],
+    "height": 3.27254799627111,
+    "rotation_z": -42.17492901045701,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      3.27254799627111,
+      3.27254799627111,
+      3.27254799627111
+    ],
+    "unity_position_xyz": [
+      -0.05262221965481606,
+      0,
+      -27.900000000000006
+    ],
+    "unity_yaw_degrees": 42.17492901045701,
+    "unity_scale_xyz": [
+      3.27254799627111,
+      3.27254799627111,
+      3.27254799627111
+    ]
+  },
+  {
+    "object": "Cargo L2 S07 P1",
+    "asset": "CrateB",
+    "position": [
+      2.647377780345184,
+      -27.100000000000005,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -42.17492901045701,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      2.647377780345184,
+      0,
+      -27.100000000000005
+    ],
+    "unity_yaw_degrees": 42.17492901045701,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L2 S07 P2",
+    "asset": "CrateC",
+    "position": [
+      4.047377780345183,
+      -28.700000000000006,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": -19.174929010457006,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      4.047377780345183,
+      0,
+      -28.700000000000006
+    ],
+    "unity_yaw_degrees": 19.174929010457006,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L2 S08 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      1.605419363943433,
+      -19.550000000000004,
+      0
+    ],
+    "height": 2.6,
+    "rotation_z": 20.67785336040147,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      2.6,
+      2.6,
+      2.6
+    ],
+    "unity_position_xyz": [
+      1.605419363943433,
+      0,
+      -19.550000000000004
+    ],
+    "unity_yaw_degrees": -20.67785336040147,
+    "unity_scale_xyz": [
+      2.6,
+      2.6,
+      2.6
+    ]
+  },
+  {
+    "object": "Cover L2 S09 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      1.4447225208039969,
+      -11.200000000000003,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": 13.184334686765625,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      1.4447225208039969,
+      0,
+      -11.200000000000003
+    ],
+    "unity_yaw_degrees": -13.184334686765625,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cover L2 S10 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      -2.639592719654816,
+      -2.8500000000000085,
+      0
+    ],
+    "height": 3.100152192012594,
+    "rotation_z": -12.64989118193567,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      3.100152192012594,
+      3.100152192012594,
+      3.100152192012594
+    ],
+    "unity_position_xyz": [
+      -2.639592719654816,
+      0,
+      -2.8500000000000085
+    ],
+    "unity_yaw_degrees": 12.64989118193567,
+    "unity_scale_xyz": [
+      3.100152192012594,
+      3.100152192012594,
+      3.100152192012594
+    ]
+  },
+  {
+    "object": "Cover L2 S11 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      2.66294484170895,
+      5.5,
+      0
+    ],
+    "height": 2.9057155020526215,
+    "rotation_z": 32.38228469614792,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      2.9057155020526215,
+      2.9057155020526215,
+      2.9057155020526215
+    ],
+    "unity_position_xyz": [
+      2.66294484170895,
+      0,
+      5.5
+    ],
+    "unity_yaw_degrees": -32.38228469614792,
+    "unity_scale_xyz": [
+      2.9057155020526215,
+      2.9057155020526215,
+      2.9057155020526215
+    ]
+  },
+  {
+    "object": "Cover L2 S12 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      -2.4300641507940064,
+      13.849999999999994,
+      0
+    ],
+    "height": 3.291160702030991,
+    "rotation_z": -21.532934409977614,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      3.291160702030991,
+      3.291160702030991,
+      3.291160702030991
+    ],
+    "unity_position_xyz": [
+      -2.4300641507940064,
+      0,
+      13.849999999999994
+    ],
+    "unity_yaw_degrees": 21.532934409977614,
+    "unity_scale_xyz": [
+      3.291160702030991,
+      3.291160702030991,
+      3.291160702030991
+    ]
+  },
+  {
+    "object": "Cargo L2 S12 P1",
+    "asset": "CrateA",
+    "position": [
+      0.2699358492059938,
+      14.649999999999995,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -21.532934409977614,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      0.2699358492059938,
+      0,
+      14.649999999999995
+    ],
+    "unity_yaw_degrees": 21.532934409977614,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L2 S12 P2",
+    "asset": "CrateB",
+    "position": [
+      1.6699358492059933,
+      13.049999999999994,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 1.4670655900223863,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      1.6699358492059933,
+      0,
+      13.049999999999994
+    ],
+    "unity_yaw_degrees": -1.4670655900223863,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L2 S13 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      2.4119871916765288,
+      22.19999999999999,
+      0
+    ],
+    "height": 3.4932044106645974,
+    "rotation_z": 39.20589881132479,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.4932044106645974,
+      3.4932044106645974,
+      3.4932044106645974
+    ],
+    "unity_position_xyz": [
+      2.4119871916765288,
+      0,
+      22.19999999999999
+    ],
+    "unity_yaw_degrees": -39.20589881132479,
+    "unity_scale_xyz": [
+      3.4932044106645974,
+      3.4932044106645974,
+      3.4932044106645974
+    ]
+  },
+  {
+    "object": "Cover L2 S14 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      -0.24380259799934434,
+      30.549999999999997,
+      0
+    ],
+    "height": 3.355947634657624,
+    "rotation_z": 30.515465723847335,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      3.355947634657624,
+      3.355947634657624,
+      3.355947634657624
+    ],
+    "unity_position_xyz": [
+      -0.24380259799934434,
+      0,
+      30.549999999999997
+    ],
+    "unity_yaw_degrees": -30.515465723847335,
+    "unity_scale_xyz": [
+      3.355947634657624,
+      3.355947634657624,
+      3.355947634657624
+    ]
+  },
+  {
+    "object": "Cover L2 S15 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      0.018586919960029036,
+      38.89999999999999,
+      0
+    ],
+    "height": 2.6,
+    "rotation_z": -22.39482906926858,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      2.6,
+      2.6,
+      2.6
+    ],
+    "unity_position_xyz": [
+      0.018586919960029036,
+      0,
+      38.89999999999999
+    ],
+    "unity_yaw_degrees": 22.39482906926858,
+    "unity_scale_xyz": [
+      2.6,
+      2.6,
+      2.6
+    ]
+  },
+  {
+    "object": "Cover L2 S16 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      -0.20767904620033217,
+      47.25,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": 12.911472481516263,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      -0.20767904620033217,
+      0,
+      47.25
+    ],
+    "unity_yaw_degrees": -12.911472481516263,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cover L2 S17 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      -0.6934993113071646,
+      55.599999999999994,
+      0
+    ],
+    "height": 3.9181057321019033,
+    "rotation_z": -9.061838043491798,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      3.9181057321019033,
+      3.9181057321019033,
+      3.9181057321019033
+    ],
+    "unity_position_xyz": [
+      -0.6934993113071646,
+      0,
+      55.599999999999994
+    ],
+    "unity_yaw_degrees": 9.061838043491798,
+    "unity_scale_xyz": [
+      3.9181057321019033,
+      3.9181057321019033,
+      3.9181057321019033
+    ]
+  },
+  {
+    "object": "Cargo L2 S17 P1",
+    "asset": "CrateC",
+    "position": [
+      2.0065006886928356,
+      56.39999999999999,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -9.061838043491798,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      2.0065006886928356,
+      0,
+      56.39999999999999
+    ],
+    "unity_yaw_degrees": 9.061838043491798,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L2 S17 P2",
+    "asset": "CrateA",
+    "position": [
+      3.406500688692835,
+      54.8,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 13.938161956508202,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      3.406500688692835,
+      0,
+      54.8
+    ],
+    "unity_yaw_degrees": -13.938161956508202,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L2 S18 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      2.3908709301100037,
+      63.94999999999999,
+      0
+    ],
+    "height": 4.052102347489086,
+    "rotation_z": 31.271282657936702,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      4.052102347489086,
+      4.052102347489086,
+      4.052102347489086
+    ],
+    "unity_position_xyz": [
+      2.3908709301100037,
+      0,
+      63.94999999999999
+    ],
+    "unity_yaw_degrees": -31.271282657936702,
+    "unity_scale_xyz": [
+      4.052102347489086,
+      4.052102347489086,
+      4.052102347489086
+    ]
+  },
+  {
+    "object": "Cover L2 S19 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      -2.4731590315184953,
+      72.29999999999998,
+      0
+    ],
+    "height": 4.034450668804709,
+    "rotation_z": 42.09848256775701,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      4.034450668804709,
+      4.034450668804709,
+      4.034450668804709
+    ],
+    "unity_position_xyz": [
+      -2.4731590315184953,
+      0,
+      72.29999999999998
+    ],
+    "unity_yaw_degrees": -42.09848256775701,
+    "unity_scale_xyz": [
+      4.034450668804709,
+      4.034450668804709,
+      4.034450668804709
+    ]
+  },
+  {
+    "object": "Cover L3 S01 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      9.059403374237975,
+      -75.6,
+      0
+    ],
+    "height": 3.1045609467177058,
+    "rotation_z": -15.54208155642308,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.1045609467177058,
+      3.1045609467177058,
+      3.1045609467177058
+    ],
+    "unity_position_xyz": [
+      9.059403374237975,
+      0,
+      -75.6
+    ],
+    "unity_yaw_degrees": 15.54208155642308,
+    "unity_scale_xyz": [
+      3.1045609467177058,
+      3.1045609467177058,
+      3.1045609467177058
+    ]
+  },
+  {
+    "object": "Cover L3 S02 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      13.107762202917602,
+      -67.25,
+      0
+    ],
+    "height": 3.0455706986281528,
+    "rotation_z": 24.912975184856787,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      3.0455706986281528,
+      3.0455706986281528,
+      3.0455706986281528
+    ],
+    "unity_position_xyz": [
+      13.107762202917602,
+      0,
+      -67.25
+    ],
+    "unity_yaw_degrees": -24.912975184856787,
+    "unity_scale_xyz": [
+      3.0455706986281528,
+      3.0455706986281528,
+      3.0455706986281528
+    ]
+  },
+  {
+    "object": "Cover L3 S03 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      12.505673396997349,
+      -58.9,
+      0
+    ],
+    "height": 2.6,
+    "rotation_z": -47.60429974148237,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      2.6,
+      2.6,
+      2.6
+    ],
+    "unity_position_xyz": [
+      12.505673396997349,
+      0,
+      -58.9
+    ],
+    "unity_yaw_degrees": 47.60429974148237,
+    "unity_scale_xyz": [
+      2.6,
+      2.6,
+      2.6
+    ]
+  },
+  {
+    "object": "Cargo L3 S03 P1",
+    "asset": "CrateB",
+    "position": [
+      9.80567339699735,
+      -58.1,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -47.60429974148237,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      9.80567339699735,
+      0,
+      -58.1
+    ],
+    "unity_yaw_degrees": 47.60429974148237,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L3 S03 P2",
+    "asset": "CrateC",
+    "position": [
+      8.405673396997349,
+      -59.699999999999996,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": -24.60429974148237,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      8.405673396997349,
+      0,
+      -59.699999999999996
+    ],
+    "unity_yaw_degrees": 24.60429974148237,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L3 S04 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      11.619444752264755,
+      -50.550000000000004,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": -11.562924992845259,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      11.619444752264755,
+      0,
+      -50.550000000000004
+    ],
+    "unity_yaw_degrees": 11.562924992845259,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cover L3 S05 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      10.648304937741985,
+      -42.2,
+      0
+    ],
+    "height": 3.3616874299280854,
+    "rotation_z": -26.184606102104702,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      3.3616874299280854,
+      3.3616874299280854,
+      3.3616874299280854
+    ],
+    "unity_position_xyz": [
+      10.648304937741985,
+      0,
+      -42.2
+    ],
+    "unity_yaw_degrees": 26.184606102104702,
+    "unity_scale_xyz": [
+      3.3616874299280854,
+      3.3616874299280854,
+      3.3616874299280854
+    ]
+  },
+  {
+    "object": "Cover L3 S06 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      12.715240724350288,
+      -33.85,
+      0
+    ],
+    "height": 3.1073235494331137,
+    "rotation_z": -28.12001148929734,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      3.1073235494331137,
+      3.1073235494331137,
+      3.1073235494331137
+    ],
+    "unity_position_xyz": [
+      12.715240724350288,
+      0,
+      -33.85
+    ],
+    "unity_yaw_degrees": 28.12001148929734,
+    "unity_scale_xyz": [
+      3.1073235494331137,
+      3.1073235494331137,
+      3.1073235494331137
+    ]
+  },
+  {
+    "object": "Cover L3 S07 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      10.038817659514418,
+      -25.500000000000007,
+      0
+    ],
+    "height": 3.037622408258133,
+    "rotation_z": -16.65221243163429,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      3.037622408258133,
+      3.037622408258133,
+      3.037622408258133
+    ],
+    "unity_position_xyz": [
+      10.038817659514418,
+      0,
+      -25.500000000000007
+    ],
+    "unity_yaw_degrees": 16.65221243163429,
+    "unity_scale_xyz": [
+      3.037622408258133,
+      3.037622408258133,
+      3.037622408258133
+    ]
+  },
+  {
+    "object": "Cover L3 S08 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      9.466423850925223,
+      -17.150000000000006,
+      0
+    ],
+    "height": 3.5752874210419225,
+    "rotation_z": 30.323212279038955,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.5752874210419225,
+      3.5752874210419225,
+      3.5752874210419225
+    ],
+    "unity_position_xyz": [
+      9.466423850925223,
+      0,
+      -17.150000000000006
+    ],
+    "unity_yaw_degrees": -30.323212279038955,
+    "unity_scale_xyz": [
+      3.5752874210419225,
+      3.5752874210419225,
+      3.5752874210419225
+    ]
+  },
+  {
+    "object": "Cargo L3 S08 P1",
+    "asset": "CrateA",
+    "position": [
+      6.766423850925222,
+      -16.350000000000005,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": 30.323212279038955,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      6.766423850925222,
+      0,
+      -16.350000000000005
+    ],
+    "unity_yaw_degrees": -30.323212279038955,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L3 S08 P2",
+    "asset": "CrateB",
+    "position": [
+      5.366423850925223,
+      -17.950000000000006,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 53.323212279038955,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      5.366423850925223,
+      0,
+      -17.950000000000006
+    ],
+    "unity_yaw_degrees": -53.323212279038955,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L3 S09 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      13.096536304795642,
+      -8.800000000000002,
+      0
+    ],
+    "height": 3.1615437563385003,
+    "rotation_z": 40.32825550361702,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      3.1615437563385003,
+      3.1615437563385003,
+      3.1615437563385003
+    ],
+    "unity_position_xyz": [
+      13.096536304795642,
+      0,
+      -8.800000000000002
+    ],
+    "unity_yaw_degrees": -40.32825550361702,
+    "unity_scale_xyz": [
+      3.1615437563385003,
+      3.1615437563385003,
+      3.1615437563385003
+    ]
+  },
+  {
+    "object": "Cover L3 S10 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      9.28047729772333,
+      -0.4500000000000086,
+      0
+    ],
+    "height": 2.6,
+    "rotation_z": 10.84811123882043,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      2.6,
+      2.6,
+      2.6
+    ],
+    "unity_position_xyz": [
+      9.28047729772333,
+      0,
+      -0.4500000000000086
+    ],
+    "unity_yaw_degrees": -10.84811123882043,
+    "unity_scale_xyz": [
+      2.6,
+      2.6,
+      2.6
+    ]
+  },
+  {
+    "object": "Cover L3 S11 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      12.664241163122746,
+      7.9,
+      0
+    ],
+    "height": 2.7,
+    "rotation_z": -44.67319863620288,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      2.7,
+      2.7,
+      2.7
+    ],
+    "unity_position_xyz": [
+      12.664241163122746,
+      0,
+      7.9
+    ],
+    "unity_yaw_degrees": 44.67319863620288,
+    "unity_scale_xyz": [
+      2.7,
+      2.7,
+      2.7
+    ]
+  },
+  {
+    "object": "Cover L3 S12 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      9.771402469956223,
+      16.249999999999993,
+      0
+    ],
+    "height": 3.0274002867964187,
+    "rotation_z": -24.047247054505426,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      3.0274002867964187,
+      3.0274002867964187,
+      3.0274002867964187
+    ],
+    "unity_position_xyz": [
+      9.771402469956223,
+      0,
+      16.249999999999993
+    ],
+    "unity_yaw_degrees": 24.047247054505426,
+    "unity_scale_xyz": [
+      3.0274002867964187,
+      3.0274002867964187,
+      3.0274002867964187
+    ]
+  },
+  {
+    "object": "Cover L3 S13 | Angular sandstone cover slab",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      10.478622417347747,
+      24.599999999999987,
+      0
+    ],
+    "height": 3.4217174051366763,
+    "rotation_z": -28.131527071726758,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      3.4217174051366763,
+      3.4217174051366763,
+      3.4217174051366763
+    ],
+    "unity_position_xyz": [
+      10.478622417347747,
+      0,
+      24.599999999999987
+    ],
+    "unity_yaw_degrees": 28.131527071726758,
+    "unity_scale_xyz": [
+      3.4217174051366763,
+      3.4217174051366763,
+      3.4217174051366763
+    ]
+  },
+  {
+    "object": "Cargo L3 S13 P1",
+    "asset": "CrateC",
+    "position": [
+      7.778622417347747,
+      25.399999999999988,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": -28.131527071726758,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      7.778622417347747,
+      0,
+      25.399999999999988
+    ],
+    "unity_yaw_degrees": 28.131527071726758,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L3 S13 P2",
+    "asset": "CrateA",
+    "position": [
+      6.3786224173477475,
+      23.799999999999986,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": -5.131527071726758,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateA",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      6.3786224173477475,
+      0,
+      23.799999999999986
+    ],
+    "unity_yaw_degrees": 5.131527071726758,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L3 S14 | Baricade3",
+    "asset": "Baricade3",
+    "position": [
+      9.069235209905866,
+      32.949999999999996,
+      0
+    ],
+    "height": 3.306139400845333,
+    "rotation_z": -7.801624051094183,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Baricade3",
+    "blender_scale": [
+      3.306139400845333,
+      3.306139400845333,
+      3.306139400845333
+    ],
+    "unity_position_xyz": [
+      9.069235209905866,
+      0,
+      32.949999999999996
+    ],
+    "unity_yaw_degrees": 7.801624051094183,
+    "unity_scale_xyz": [
+      3.306139400845333,
+      3.306139400845333,
+      3.306139400845333
+    ]
+  },
+  {
+    "object": "Cover L3 S15 | Overturned Mining Cart",
+    "asset": "Overturned Mining Cart",
+    "position": [
+      11.919878598304388,
+      41.29999999999999,
+      0
+    ],
+    "height": 3.3662637662147574,
+    "rotation_z": -43.5215743565927,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Overturned Mining Cart",
+    "blender_scale": [
+      3.3662637662147574,
+      3.3662637662147574,
+      3.3662637662147574
+    ],
+    "unity_position_xyz": [
+      11.919878598304388,
+      0,
+      41.29999999999999
+    ],
+    "unity_yaw_degrees": 43.5215743565927,
+    "unity_scale_xyz": [
+      3.3662637662147574,
+      3.3662637662147574,
+      3.3662637662147574
+    ]
+  },
+  {
+    "object": "Cover L3 S16 | baricade2",
+    "asset": "baricade2",
+    "position": [
+      11.229187511348636,
+      49.65,
+      0
+    ],
+    "height": 4.252882154620043,
+    "rotation_z": 42.627696918188725,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "baricade2",
+    "blender_scale": [
+      4.252882154620043,
+      4.252882154620043,
+      4.252882154620043
+    ],
+    "unity_position_xyz": [
+      11.229187511348636,
+      0,
+      49.65
+    ],
+    "unity_yaw_degrees": -42.627696918188725,
+    "unity_scale_xyz": [
+      4.252882154620043,
+      4.252882154620043,
+      4.252882154620043
+    ]
+  },
+  {
+    "object": "Cover L3 S17 | L-shaped barricade",
+    "asset": "L-shaped barricade",
+    "position": [
+      13.373832300566852,
+      57.99999999999999,
+      0
+    ],
+    "height": 3.3,
+    "rotation_z": 13.776014567363587,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "L-shaped barricade",
+    "blender_scale": [
+      3.3,
+      3.3,
+      3.3
+    ],
+    "unity_position_xyz": [
+      13.373832300566852,
+      0,
+      57.99999999999999
+    ],
+    "unity_yaw_degrees": -13.776014567363587,
+    "unity_scale_xyz": [
+      3.3,
+      3.3,
+      3.3
+    ]
+  },
+  {
+    "object": "Cover L3 S18 | Abandoned Water Station",
+    "asset": "Abandoned Water Station",
+    "position": [
+      9.452802580542082,
+      66.35,
+      0
+    ],
+    "height": 3.4000000000000004,
+    "rotation_z": 9.579385384036595,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Abandoned Water Station",
+    "blender_scale": [
+      3.4000000000000004,
+      3.4000000000000004,
+      3.4000000000000004
+    ],
+    "unity_position_xyz": [
+      9.452802580542082,
+      0,
+      66.35
+    ],
+    "unity_yaw_degrees": -9.579385384036595,
+    "unity_scale_xyz": [
+      3.4000000000000004,
+      3.4000000000000004,
+      3.4000000000000004
+    ]
+  },
+  {
+    "object": "Cargo L3 S18 P1",
+    "asset": "CrateB",
+    "position": [
+      6.752802580542082,
+      67.14999999999999,
+      0
+    ],
+    "height": 1.8,
+    "rotation_z": 9.579385384036595,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateB",
+    "blender_scale": [
+      1.8,
+      1.8,
+      1.8
+    ],
+    "unity_position_xyz": [
+      6.752802580542082,
+      0,
+      67.14999999999999
+    ],
+    "unity_yaw_degrees": -9.579385384036595,
+    "unity_scale_xyz": [
+      1.8,
+      1.8,
+      1.8
+    ]
+  },
+  {
+    "object": "Cargo L3 S18 P2",
+    "asset": "CrateC",
+    "position": [
+      5.3528025805420825,
+      65.55,
+      0
+    ],
+    "height": 2.3,
+    "rotation_z": 32.5793853840366,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "CrateC",
+    "blender_scale": [
+      2.3,
+      2.3,
+      2.3
+    ],
+    "unity_position_xyz": [
+      5.3528025805420825,
+      0,
+      65.55
+    ],
+    "unity_yaw_degrees": -32.5793853840366,
+    "unity_scale_xyz": [
+      2.3,
+      2.3,
+      2.3
+    ]
+  },
+  {
+    "object": "Cover L3 S19 | Large sandstone cover boulder",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      11.381103796574962,
+      74.69999999999999,
+      0
+    ],
+    "height": 4.267266241942821,
+    "rotation_z": -30.422404362433213,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      4.267266241942821,
+      4.267266241942821,
+      4.267266241942821
+    ],
+    "unity_position_xyz": [
+      11.381103796574962,
+      0,
+      74.69999999999999
+    ],
+    "unity_yaw_degrees": 30.422404362433213,
+    "unity_scale_xyz": [
+      4.267266241942821,
+      4.267266241942821,
+      4.267266241942821
+    ]
+  },
+  {
+    "object": "Open collapsed arch landmark",
+    "asset": "Collapsed Sandstone Arc",
+    "position": [
+      -11,
+      20,
+      0
+    ],
+    "height": 5.0,
+    "rotation_z": 0,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Collapsed Sandstone Arc",
+    "blender_scale": [
+      5.0,
+      5.0,
+      5.0
+    ],
+    "unity_position_xyz": [
+      -11,
+      0,
+      20
+    ],
+    "unity_yaw_degrees": 0,
+    "unity_scale_xyz": [
+      5.0,
+      5.0,
+      5.0
+    ]
+  },
+  {
+    "object": "Final west cover",
+    "asset": "Large sandstone cover boulder",
+    "position": [
+      -5,
+      79,
+      0
+    ],
+    "height": 4.3,
+    "rotation_z": -30,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Large sandstone cover boulder",
+    "blender_scale": [
+      4.3,
+      4.3,
+      4.3
+    ],
+    "unity_position_xyz": [
+      -5,
+      0,
+      79
+    ],
+    "unity_yaw_degrees": 30,
+    "unity_scale_xyz": [
+      4.3,
+      4.3,
+      4.3
+    ]
+  },
+  {
+    "object": "Final east peek",
+    "asset": "Angular sandstone cover slab",
+    "position": [
+      5,
+      81,
+      0
+    ],
+    "height": 4.4,
+    "rotation_z": 25,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "03_DENSE_COVER",
+    "source_id": "Angular sandstone cover slab",
+    "blender_scale": [
+      4.4,
+      4.4,
+      4.4
+    ],
+    "unity_position_xyz": [
+      5,
+      0,
+      81
+    ],
+    "unity_yaw_degrees": -25,
+    "unity_scale_xyz": [
+      4.4,
+      4.4,
+      4.4
+    ]
+  },
+  {
+    "object": "Sniper display rifle",
+    "asset": "Sniper",
+    "position": [
+      0,
+      86.5,
+      22.2
+    ],
+    "height": 0.6,
+    "rotation_z": 0,
+    "scale_xy": [
+      1,
+      1
+    ],
+    "collection": "02_TOWER",
+    "source_id": "Sniper",
+    "blender_scale": [
+      0.6,
+      0.6,
+      0.6
+    ],
+    "unity_position_xyz": [
+      0,
+      22.2,
+      86.5
+    ],
+    "unity_yaw_degrees": 0,
+    "unity_scale_xyz": [
+      0.6,
+      0.6,
+      0.6
+    ]
+  },
+  {
+    "object": "Sniper firing balcony",
+    "source_id": null,
+    "generated_geometry": "cube",
+    "position": [
+      0,
+      86,
+      21.8536
+    ],
+    "dimensions_xyz": [
+      3.2,
+      4,
+      0.22
+    ],
+    "unity_position_xyz": [
+      0,
+      21.8536,
+      86
+    ],
+    "unity_dimensions_xyz": [
+      3.2,
+      0.22,
+      4
+    ],
+    "material": "Balcony dark steel"
+  },
+  {
+    "object": "Balcony left stringer",
+    "source_id": null,
+    "generated_geometry": "cube",
+    "position": [
+      -1.35,
+      86.1,
+      21.65
+    ],
+    "dimensions_xyz": [
+      0.18,
+      4.5,
+      0.25
+    ],
+    "unity_position_xyz": [
+      -1.35,
+      21.65,
+      86.1
+    ],
+    "unity_dimensions_xyz": [
+      0.18,
+      0.25,
+      4.5
+    ],
+    "material": "Balcony dark steel"
+  },
+  {
+    "object": "Balcony right stringer",
+    "source_id": null,
+    "generated_geometry": "cube",
+    "position": [
+      1.35,
+      86.1,
+      21.65
+    ],
+    "dimensions_xyz": [
+      0.18,
+      4.5,
+      0.25
+    ],
+    "unity_position_xyz": [
+      1.35,
+      21.65,
+      86.1
+    ],
+    "unity_dimensions_xyz": [
+      0.18,
+      0.25,
+      4.5
+    ],
+    "material": "Balcony dark steel"
+  }
+]

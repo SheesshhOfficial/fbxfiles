@@ -1,0 +1,21 @@
+SNIPERSAIM DENSE CANYON V2 — REBUILD
+
+Requirements: Blender4.3.2, Python3, git, enough disk for approximately1.5 GB of originals/work files. No repository programs are executed; the repository contains model assets.
+
+Keep the supplied Python scripts together in a working folder. Clone the source into assets_repo beside them:
+git clone https://github.com/SheesshhOfficial/fbxfiles.git assets_repo
+git -C assets_repo checkout 5ae8afdb0ae6519261049e15dc388da1cf7f99b1
+
+Run the supplied authored scripts in order, replacing blender with its installed executable path:
+blender -b -t 6 --python inspect_build.py
+blender -b -t 6 --python build_dense_canyon.py
+blender -b -t 6 --python add_firing_balcony.py
+blender -b -t 4 --python export_validate.py -- --skip-export
+blender -b -t 4 --python check_geometry.py
+blender -b -t 6 --python reopen_render.py
+
+Output appears in output/. inspect_build.py normalizes and simplifies working geometry and packs1K maps; build_dense_canyon.py creates linked instances, ground, cameras and anchors and renders previews. export_validate.py checks gate/deck geometry and preserves the packed file; --skip-export avoids a large scene FBX export. Without that flag the script also exports a full-scene external-texture FBX and performs a Blender reimport check. Unity itself is not tested.
+
+Final delivered blend SHA256:
+6d9df542034455e209ba8a790d83afbe41f4c95f878e5789d725425bb029b123
+Rebuilt .blend files can differ byte-for-byte due to Blender metadata, even with equivalent geometry and textures. Compare source checksums, layout and geometry QA instead of expecting binary identity after rebuilding.

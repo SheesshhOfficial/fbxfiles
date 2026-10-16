@@ -1,0 +1,1321 @@
+{
+  "cover_objects_total": 83,
+  "primary_stations": 56,
+  "fully_occluded_five_point_samples": 53,
+  "hiding_samples": [
+    {
+      "cover": "Cover L1 S01 | Large sandstone cover boulder",
+      "safe_sample": [
+        -13.633697032928467,
+        -82.57475280761719,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S02 | Angular sandstone cover slab",
+      "safe_sample": [
+        -13.46635103225708,
+        -74.20536804199219,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S03 | Baricade3",
+      "safe_sample": [
+        -9.608999967575073,
+        -66.88147735595703,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S04 | Overturned Mining Cart",
+      "safe_sample": [
+        -13.372666358947754,
+        -59.03162384033203,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S05 | baricade2",
+      "safe_sample": [
+        -11.472120761871338,
+        -51.229888916015625,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S06 | L-shaped barricade",
+      "safe_sample": [
+        -12.017948786417643,
+        -42.281612396240234,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S07 | Abandoned Water Station",
+      "safe_sample": [
+        -11.916329383850098,
+        -34.33583068847656,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S08 | Large sandstone cover boulder",
+      "safe_sample": [
+        -12.528599262237549,
+        -24.921466827392578,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S09 | Angular sandstone cover slab",
+      "safe_sample": [
+        -13.421557426452637,
+        -15.5201997756958,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S10 | Baricade3",
+      "safe_sample": [
+        -9.183366775512695,
+        -9.2855224609375,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S11 | Overturned Mining Cart",
+      "safe_sample": [
+        -10.831339836120605,
+        -0.4884188175201416,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S12 | baricade2",
+      "safe_sample": [
+        -11.365091323852539,
+        8.970624923706055,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S14 | Abandoned Water Station",
+      "safe_sample": [
+        -15.397465610504153,
+        24.621910095214844,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S15 | Large sandstone cover boulder",
+      "safe_sample": [
+        -11.098150491714478,
+        34.25737380981445,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S16 | Angular sandstone cover slab",
+      "safe_sample": [
+        -8.427273511886597,
+        43.31415557861328,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S17 | Baricade3",
+      "safe_sample": [
+        -14.789756393432617,
+        48.5989875793457,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S18 | Overturned Mining Cart",
+      "safe_sample": [
+        -15.827760934829714,
+        57.6320915222168,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L1 S19 | baricade2",
+      "safe_sample": [
+        -9.828678480784099,
+        66.94872283935547,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S01 | L-shaped barricade",
+      "safe_sample": [
+        -1.9725744525591535,
+        -81.98953247070312,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S02 | Abandoned Water Station",
+      "safe_sample": [
+        -1.6059547662734985,
+        -73.43243408203125,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S03 | Large sandstone cover boulder",
+      "safe_sample": [
+        0.3330690860748291,
+        -64.40718078613281,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S04 | Angular sandstone cover slab",
+      "safe_sample": [
+        0.7404798865318298,
+        -55.17770767211914,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S05 | Baricade3",
+      "safe_sample": [
+        1.1526827812194824,
+        -47.33029556274414,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S06 | Overturned Mining Cart",
+      "safe_sample": [
+        0.6028100252151489,
+        -39.031951904296875,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S07 | baricade2",
+      "safe_sample": [
+        -0.052622199058532715,
+        -31.687236785888672,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S08 | L-shaped barricade",
+      "safe_sample": [
+        -0.47984826962153093,
+        -23.335439682006836,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S09 | Abandoned Water Station",
+      "safe_sample": [
+        1.4447224736213684,
+        -14.804710388183594,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S10 | Large sandstone cover boulder",
+      "safe_sample": [
+        -2.639592617750168,
+        -5.255817413330078,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S11 | Angular sandstone cover slab",
+      "safe_sample": [
+        2.6629450023174286,
+        3.513939142227173,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S12 | Baricade3",
+      "safe_sample": [
+        -4.483656628926594,
+        10.762880325317383,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S13 | Overturned Mining Cart",
+      "safe_sample": [
+        2.4119872450828552,
+        17.985797882080078,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S14 | baricade2",
+      "safe_sample": [
+        -0.24380230903625488,
+        27.001096725463867,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S15 | L-shaped barricade",
+      "safe_sample": null,
+      "body_rays_blocked": 3,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S16 | Abandoned Water Station",
+      "safe_sample": [
+        -0.20767903327941895,
+        43.65525817871094,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S17 | Large sandstone cover boulder",
+      "safe_sample": [
+        -0.6934993267059326,
+        52.83840560913086,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S18 | Angular sandstone cover slab",
+      "safe_sample": [
+        0.6942656000455221,
+        61.31334686279297,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L2 S19 | Baricade3",
+      "safe_sample": null,
+      "body_rays_blocked": 2,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S01 | Overturned Mining Cart",
+      "safe_sample": [
+        9.059403419494629,
+        -78.70366668701172,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S02 | baricade2",
+      "safe_sample": [
+        13.107762813568115,
+        -70.30565643310547,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S03 | L-shaped barricade",
+      "safe_sample": [
+        9.612227280934652,
+        -63.02131652832031,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S04 | Abandoned Water Station",
+      "safe_sample": [
+        11.619444847106934,
+        -54.0943717956543,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S05 | Large sandstone cover boulder",
+      "safe_sample": [
+        10.64830470085144,
+        -45.389122009277344,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S06 | Angular sandstone cover slab",
+      "safe_sample": [
+        12.715240478515625,
+        -35.85179901123047,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S07 | Baricade3",
+      "safe_sample": [
+        10.038817405700684,
+        -28.193201065063477,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S08 | Overturned Mining Cart",
+      "safe_sample": [
+        9.466423988342285,
+        -21.24332618713379,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S09 | baricade2",
+      "safe_sample": [
+        13.096537113189697,
+        -12.427379608154297,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S10 | L-shaped barricade",
+      "safe_sample": [
+        7.412324603398641,
+        -3.912425994873047,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S11 | Abandoned Water Station",
+      "safe_sample": [
+        11.480967330932618,
+        3.700216054916382,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S12 | Large sandstone cover boulder",
+      "safe_sample": [
+        9.77140212059021,
+        13.429584503173828,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S13 | Angular sandstone cover slab",
+      "safe_sample": [
+        10.478622436523438,
+        22.42062759399414,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S14 | Baricade3",
+      "safe_sample": [
+        9.069234848022461,
+        30.435070037841797,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S15 | Overturned Mining Cart",
+      "safe_sample": [
+        11.919878959655762,
+        37.1648063659668,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S16 | baricade2",
+      "safe_sample": [
+        11.229187965393066,
+        44.790714263916016,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S17 | L-shaped barricade",
+      "safe_sample": [
+        12.106992212931315,
+        53.537437438964844,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S18 | Abandoned Water Station",
+      "safe_sample": [
+        9.452802896499634,
+        62.04899597167969,
+        0
+      ],
+      "body_rays_blocked": 5,
+      "body_rays_total": 5
+    },
+    {
+      "cover": "Cover L3 S19 | Large sandstone cover boulder",
+      "safe_sample": null,
+      "body_rays_blocked": 1,
+      "body_rays_total": 5
+    }
+  ],
+  "gap_method": "Planar axis-aligned bounding-box separation between consecutive primary stations in each lane; conservative footprint proxy, not collision/navigation distance.",
+  "bbox_gap_min_m": 0.0,
+  "bbox_gap_median_m": 2.025186538696289,
+  "bbox_gap_max_m": 5.071533203125,
+  "gaps": [
+    {
+      "from": "Cover L1 S01 | Large sandstone cover boulder",
+      "to": "Cover L1 S02 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 4.5198822021484375,
+      "centre_distance_m": 8.35167515101524
+    },
+    {
+      "from": "Cover L1 S02 | Angular sandstone cover slab",
+      "to": "Cover L1 S03 | Baricade3",
+      "planar_bbox_gap_m": 3.5131607055664062,
+      "centre_distance_m": 9.197918285284768
+    },
+    {
+      "from": "Cover L1 S03 | Baricade3",
+      "to": "Cover L1 S04 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 1.9869003295898438,
+      "centre_distance_m": 9.159024231674671
+    },
+    {
+      "from": "Cover L1 S04 | Overturned Mining Cart",
+      "to": "Cover L1 S05 | baricade2",
+      "planar_bbox_gap_m": 0.9384841918945312,
+      "centre_distance_m": 8.563559125566861
+    },
+    {
+      "from": "Cover L1 S05 | baricade2",
+      "to": "Cover L1 S06 | L-shaped barricade",
+      "planar_bbox_gap_m": 0.9884986877441406,
+      "centre_distance_m": 8.570473279114292
+    },
+    {
+      "from": "Cover L1 S06 | L-shaped barricade",
+      "to": "Cover L1 S07 | Abandoned Water Station",
+      "planar_bbox_gap_m": 1.1827735900878906,
+      "centre_distance_m": 8.681379069281313
+    },
+    {
+      "from": "Cover L1 S07 | Abandoned Water Station",
+      "to": "Cover L1 S08 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 1.8427009582519531,
+      "centre_distance_m": 8.372415907239011
+    },
+    {
+      "from": "Cover L1 S08 | Large sandstone cover boulder",
+      "to": "Cover L1 S09 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 3.9583349227905273,
+      "centre_distance_m": 8.397611391112891
+    },
+    {
+      "from": "Cover L1 S09 | Angular sandstone cover slab",
+      "to": "Cover L1 S10 | Baricade3",
+      "planar_bbox_gap_m": 2.8942785263061523,
+      "centre_distance_m": 9.364014254298842
+    },
+    {
+      "from": "Cover L1 S10 | Baricade3",
+      "to": "Cover L1 S11 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 1.2260586023330688,
+      "centre_distance_m": 8.511070377327355
+    },
+    {
+      "from": "Cover L1 S11 | Overturned Mining Cart",
+      "to": "Cover L1 S12 | baricade2",
+      "planar_bbox_gap_m": 2.7822060585021973,
+      "centre_distance_m": 8.367042148442438
+    },
+    {
+      "from": "Cover L1 S12 | baricade2",
+      "to": "Open collapsed arch landmark",
+      "planar_bbox_gap_m": 4.357588768005371,
+      "centre_distance_m": 8.557791338433525
+    },
+    {
+      "from": "Open collapsed arch landmark",
+      "to": "Cover L1 S14 | Abandoned Water Station",
+      "planar_bbox_gap_m": 2.908872604370117,
+      "centre_distance_m": 8.51791561011818
+    },
+    {
+      "from": "Cover L1 S14 | Abandoned Water Station",
+      "to": "Cover L1 S15 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 3.07928466796875,
+      "centre_distance_m": 8.682074547341042
+    },
+    {
+      "from": "Cover L1 S15 | Large sandstone cover boulder",
+      "to": "Cover L1 S16 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 5.071533203125,
+      "centre_distance_m": 8.766758483386564
+    },
+    {
+      "from": "Cover L1 S16 | Angular sandstone cover slab",
+      "to": "Cover L1 S17 | Baricade3",
+      "planar_bbox_gap_m": 2.713146209716797,
+      "centre_distance_m": 8.647663085228999
+    },
+    {
+      "from": "Cover L1 S17 | Baricade3",
+      "to": "Cover L1 S18 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 0.33107757568359375,
+      "centre_distance_m": 8.60663196876834
+    },
+    {
+      "from": "Cover L1 S18 | Overturned Mining Cart",
+      "to": "Cover L1 S19 | baricade2",
+      "planar_bbox_gap_m": 1.9808120727539062,
+      "centre_distance_m": 9.360582990178315
+    },
+    {
+      "from": "Cover L2 S01 | L-shaped barricade",
+      "to": "Cover L2 S02 | Abandoned Water Station",
+      "planar_bbox_gap_m": 1.0782241821289062,
+      "centre_distance_m": 8.691481000600252
+    },
+    {
+      "from": "Cover L2 S02 | Abandoned Water Station",
+      "to": "Cover L2 S03 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 1.9603958129882812,
+      "centre_distance_m": 8.572185009264183
+    },
+    {
+      "from": "Cover L2 S03 | Large sandstone cover boulder",
+      "to": "Cover L2 S04 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 3.5151100158691406,
+      "centre_distance_m": 8.359931613537462
+    },
+    {
+      "from": "Cover L2 S04 | Angular sandstone cover slab",
+      "to": "Cover L2 S05 | Baricade3",
+      "planar_bbox_gap_m": 3.891998291015625,
+      "centre_distance_m": 8.360170628662122
+    },
+    {
+      "from": "Cover L2 S05 | Baricade3",
+      "to": "Cover L2 S06 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 3.337749481201172,
+      "centre_distance_m": 8.368084181850497
+    },
+    {
+      "from": "Cover L2 S06 | Overturned Mining Cart",
+      "to": "Cover L2 S07 | baricade2",
+      "planar_bbox_gap_m": 2.2808074951171875,
+      "centre_distance_m": 8.375684765321475
+    },
+    {
+      "from": "Cover L2 S07 | baricade2",
+      "to": "Cover L2 S08 | L-shaped barricade",
+      "planar_bbox_gap_m": 1.277322769165039,
+      "centre_distance_m": 8.51302563953157
+    },
+    {
+      "from": "Cover L2 S08 | L-shaped barricade",
+      "to": "Cover L2 S09 | Abandoned Water Station",
+      "planar_bbox_gap_m": 1.4600410461425781,
+      "centre_distance_m": 8.351545478814161
+    },
+    {
+      "from": "Cover L2 S09 | Abandoned Water Station",
+      "to": "Cover L2 S10 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 2.8394722938537598,
+      "centre_distance_m": 9.295382442393977
+    },
+    {
+      "from": "Cover L2 S10 | Large sandstone cover boulder",
+      "to": "Cover L2 S11 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 4.458121836185455,
+      "centre_distance_m": 9.891380437894556
+    },
+    {
+      "from": "Cover L2 S11 | Angular sandstone cover slab",
+      "to": "Cover L2 S12 | Baricade3",
+      "planar_bbox_gap_m": 3.7768197059631348,
+      "centre_distance_m": 9.78065659548073
+    },
+    {
+      "from": "Cover L2 S12 | Baricade3",
+      "to": "Cover L2 S13 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 1.5486774444580078,
+      "centre_distance_m": 9.652355507473363
+    },
+    {
+      "from": "Cover L2 S13 | Overturned Mining Cart",
+      "to": "Cover L2 S14 | baricade2",
+      "planar_bbox_gap_m": 1.086893081665039,
+      "centre_distance_m": 8.762173984791577
+    },
+    {
+      "from": "Cover L2 S14 | baricade2",
+      "to": "Cover L2 S15 | L-shaped barricade",
+      "planar_bbox_gap_m": 1.4696578979492188,
+      "centre_distance_m": 8.354124134903579
+    },
+    {
+      "from": "Cover L2 S15 | L-shaped barricade",
+      "to": "Cover L2 S16 | Abandoned Water Station",
+      "planar_bbox_gap_m": 1.4240188598632812,
+      "centre_distance_m": 8.353063475925985
+    },
+    {
+      "from": "Cover L2 S16 | Abandoned Water Station",
+      "to": "Cover L2 S17 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 2.493663787841797,
+      "centre_distance_m": 8.364119469455572
+    },
+    {
+      "from": "Cover L2 S17 | Large sandstone cover boulder",
+      "to": "Cover L2 S18 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 3.4517555236816406,
+      "centre_distance_m": 8.901453968824095
+    },
+    {
+      "from": "Cover L2 S18 | Angular sandstone cover slab",
+      "to": "Cover L2 S19 | Baricade3",
+      "planar_bbox_gap_m": 1.7975921630859375,
+      "centre_distance_m": 9.663401501684781
+    },
+    {
+      "from": "Cover L3 S01 | Overturned Mining Cart",
+      "to": "Cover L3 S02 | baricade2",
+      "planar_bbox_gap_m": 2.690673828125,
+      "centre_distance_m": 9.279638079787686
+    },
+    {
+      "from": "Cover L3 S02 | baricade2",
+      "to": "Cover L3 S03 | L-shaped barricade",
+      "planar_bbox_gap_m": 1.6730270385742188,
+      "centre_distance_m": 8.371677502932958
+    },
+    {
+      "from": "Cover L3 S03 | L-shaped barricade",
+      "to": "Cover L3 S04 | Abandoned Water Station",
+      "planar_bbox_gap_m": 1.1844749450683594,
+      "centre_distance_m": 8.396900788705207
+    },
+    {
+      "from": "Cover L3 S04 | Abandoned Water Station",
+      "to": "Cover L3 S05 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 2.1165084838867188,
+      "centre_distance_m": 8.406282524131054
+    },
+    {
+      "from": "Cover L3 S05 | Large sandstone cover boulder",
+      "to": "Cover L3 S06 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 3.6590805053710938,
+      "centre_distance_m": 8.602020944406199
+    },
+    {
+      "from": "Cover L3 S06 | Angular sandstone cover slab",
+      "to": "Cover L3 S07 | Baricade3",
+      "planar_bbox_gap_m": 4.154996871948242,
+      "centre_distance_m": 8.76844989592063
+    },
+    {
+      "from": "Cover L3 S07 | Baricade3",
+      "to": "Cover L3 S08 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 2.0634727478027344,
+      "centre_distance_m": 8.36959604027962
+    },
+    {
+      "from": "Cover L3 S08 | Overturned Mining Cart",
+      "to": "Cover L3 S09 | baricade2",
+      "planar_bbox_gap_m": 1.1292924880981445,
+      "centre_distance_m": 9.104955055674736
+    },
+    {
+      "from": "Cover L3 S09 | baricade2",
+      "to": "Cover L3 S10 | L-shaped barricade",
+      "planar_bbox_gap_m": 1.7601947784423828,
+      "centre_distance_m": 9.180675956589333
+    },
+    {
+      "from": "Cover L3 S10 | L-shaped barricade",
+      "to": "Cover L3 S11 | Abandoned Water Station",
+      "planar_bbox_gap_m": 1.1879966259002686,
+      "centre_distance_m": 9.009570331553226
+    },
+    {
+      "from": "Cover L3 S11 | Abandoned Water Station",
+      "to": "Cover L3 S12 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 1.8298006057739258,
+      "centre_distance_m": 8.836912227870293
+    },
+    {
+      "from": "Cover L3 S12 | Large sandstone cover boulder",
+      "to": "Cover L3 S13 | Angular sandstone cover slab",
+      "planar_bbox_gap_m": 3.8502120971679688,
+      "centre_distance_m": 8.379896412211462
+    },
+    {
+      "from": "Cover L3 S13 | Angular sandstone cover slab",
+      "to": "Cover L3 S14 | Baricade3",
+      "planar_bbox_gap_m": 4.155696868896484,
+      "centre_distance_m": 8.468109416312439
+    },
+    {
+      "from": "Cover L3 S14 | Baricade3",
+      "to": "Cover L3 S15 | Overturned Mining Cart",
+      "planar_bbox_gap_m": 2.1998748779296875,
+      "centre_distance_m": 8.823187927856129
+    },
+    {
+      "from": "Cover L3 S15 | Overturned Mining Cart",
+      "to": "Cover L3 S16 | baricade2",
+      "planar_bbox_gap_m": 0.0,
+      "centre_distance_m": 8.37851990918369
+    },
+    {
+      "from": "Cover L3 S16 | baricade2",
+      "to": "Cover L3 S17 | L-shaped barricade",
+      "planar_bbox_gap_m": 0.0,
+      "centre_distance_m": 8.62101932937726
+    },
+    {
+      "from": "Cover L3 S17 | L-shaped barricade",
+      "to": "Cover L3 S18 | Abandoned Water Station",
+      "planar_bbox_gap_m": 0.08669281005859375,
+      "centre_distance_m": 9.224800787948299
+    },
+    {
+      "from": "Cover L3 S18 | Abandoned Water Station",
+      "to": "Cover L3 S19 | Large sandstone cover boulder",
+      "planar_bbox_gap_m": 0.3699798583984375,
+      "centre_distance_m": 8.569761802763809
+    }
+  ],
+  "transition_visible_samples": 14,
+  "transition_samples": [
+    {
+      "position": [
+        -13.550024032592773,
+        -76.22500610351562,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -11.537675857543945,
+        -67.875,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -11.490833282470703,
+        -59.525001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -12.422393798828125,
+        -51.17499923706055,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -10.506391525268555,
+        -42.82500076293945,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -10.728494644165039,
+        -34.474998474121094,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -12.222464561462402,
+        -26.125,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -12.975078582763672,
+        -17.775001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -11.302461624145508,
+        -9.425000190734863,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -10.007352828979492,
+        -1.0750000476837158,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -11.098215103149414,
+        7.274999618530273,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -11.18254566192627,
+        15.725000381469727,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -12.238183975219727,
+        24.075000762939453,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -12.28725814819336,
+        32.32500076293945,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -9.762712478637695,
+        40.67499923706055,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -9.551944732666016,
+        49.025001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -11.719644546508789,
+        57.375,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -10.64737319946289,
+        65.7249984741211,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -0.3997863829135895,
+        -73.82499694824219,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -0.6364427804946899,
+        -65.4749984741211,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.5367745757102966,
+        -57.125,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.946581244468689,
+        -48.775001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.8777464628219604,
+        -40.42499923706055,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.27509400248527527,
+        -32.07500076293945,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.7763985991477966,
+        -23.724998474121094,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        1.5250709056854248,
+        -15.375,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -0.5974350571632385,
+        -7.024999618530273,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.01167607307434082,
+        1.3250000476837158,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        0.1164402961730957,
+        9.675000190734863,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -0.009038448333740234,
+        18.025001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        1.084092378616333,
+        26.375,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -0.11260783672332764,
+        34.724998474121094,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        -0.09454606473445892,
+        43.07500076293945,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -0.4505891799926758,
+        51.42499923706055,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        0.8486858606338501,
+        59.775001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        -0.04114401340484619,
+        68.125,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        11.083582878112793,
+        -71.42500305175781,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        12.806717872619629,
+        -63.07500076293945,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        12.062559127807617,
+        -54.724998474121094,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.133874893188477,
+        -46.375,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.681772232055664,
+        -38.025001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.377029418945312,
+        -29.674999237060547,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        9.752620697021484,
+        -21.325000762939453,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.28148078918457,
+        -12.975000381469727,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        11.188507080078125,
+        -4.625,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        10.972358703613281,
+        3.7250001430511475,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.21782112121582,
+        12.074999809265137,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        10.125012397766113,
+        20.424999237060547,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        9.77392864227295,
+        28.775001525878906,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        10.494556427001953,
+        37.125,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.574533462524414,
+        45.474998474121094,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        12.301509857177734,
+        53.82500076293945,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": false
+    },
+    {
+      "position": [
+        11.413317680358887,
+        62.17499923706055,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    },
+    {
+      "position": [
+        10.416953086853027,
+        70.52499389648438,
+        1.4500000476837158
+      ],
+      "visible_to_sniper": true
+    }
+  ],
+  "warning": "Static ray samples only. No Unity physics, movement, collision, timing, balance or multiplayer testing."
+}

@@ -1,0 +1,17 @@
+{
+  "file_bytes": 80777744,
+  "packed_images": 59,
+  "missing_images": [],
+  "source_mesh_count": 15,
+  "named_cameras": [
+    "CAM_OVERVIEW",
+    "CAM_RUNNER_APPROACH",
+    "CAM_SNIPER_POV",
+    "CAM_TOPDOWN"
+  ],
+  "eye": [
+    0.0,
+    85.80000305175781,
+    23.549999237060547
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "source_models": 15,
+  "visible_mesh_objects": 119,
+  "unique_meshes": 19,
+  "missing_images": [],
+  "packed_images": 59,
+  "gate_rays": {
+    "-0.75,0.2": null,
+    "-0.75,1": null,
+    "-0.75,1.8": null,
+    "0,0.2": null,
+    "0,1": null,
+    "0,1.8": null,
+    "0.75,0.2": null,
+    "0.75,1": null,
+    "0.75,1.8": null
+  },
+  "deck_probes": {
+    "85.8": [
+      2.036399885999069,
+      "Sniper firing balcony",
+      [
+        0.0,
+        85.80000305175781,
+        21.963600158691406
+      ]
+    ],
+    "88": [
+      2.0363731919333823,
+      "Tower gate and sniper deck",
+      [
+        0.0,
+        88.0,
+        21.963626861572266
+      ]
+    ],
+    "89": [
+      2.036754602877967,
+      "Tower gate and sniper deck",
+      [
+        0.0,
+        89.00000762939453,
+        21.963245391845703
+      ]
+    ]
+  }
+}
