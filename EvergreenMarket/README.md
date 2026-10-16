@@ -1,5 +1,9 @@
 # Evergreen Market
 
+## Fresh start with all corrected meshes
+
+For a new level, use the [fresh-start guide](docs/FRESH_START.md) and consolidated helpers in `packages/fresh_start/`. This prepares a separate corrected package before importing all 256 assets (178 corrected FBXs), then builds walking collision and four E-compatible pilot props. It does not depend on old maps/reports. Optional preview lighting and PlayerStart are provided; gameplay and visual checks remain required.
+
 For four working E props whose report failed with `Pilot collision mismatch`, use the [four-prop collision-profile repair](docs/PILOT_COLLISION_REPAIR.md) before the normals patch. It copies the current map and verifies persistence.
 
 ## Geometry correction: inward cube faces

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "patched_fbx_verified": 178,
+  "unchanged_fbx_verified": 78,
+  "placements": 11316,
+  "sample_asset_count": 15,
+  "explicit_sample_names": [
+    "Checkout base",
+    "Impulse display",
+    "PaperShoppingBag",
+    "ShippingCarton_Floor"
+  ],
+  "original_package_unchanged": true,
+  "patch_manifest_unchanged": true,
+  "merged_fingerprint": "1babafc179c8c0cf51626709a504783b48b1f9caff3f2842e2622eebeaef52d4",
+  "unreal_executed": false
+}

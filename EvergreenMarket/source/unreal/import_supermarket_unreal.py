@@ -301,6 +301,8 @@ def _build_material(u, material_id, data, folder, textures):
     scalar(data["roughness"], u.MaterialProperty.MP_ROUGHNESS, 160)
     scalar(data["metallic"], u.MaterialProperty.MP_METALLIC, 240)
     mode = data.get("alpha_mode", "OPAQUE")
+    mat.set_editor_property("blend_mode", {"OPAQUE": u.BlendMode.BLEND_OPAQUE,
+        "MASK": u.BlendMode.BLEND_MASKED, "BLEND": u.BlendMode.BLEND_TRANSLUCENT}[mode])
     if mode != "OPAQUE":
         mat.set_editor_property("blend_mode", u.BlendMode.BLEND_MASKED if mode == "MASK" else u.BlendMode.BLEND_TRANSLUCENT)
         prop = u.MaterialProperty.MP_OPACITY_MASK if mode == "MASK" else u.MaterialProperty.MP_OPACITY
@@ -320,7 +322,17 @@ def _build_material(u, material_id, data, folder, textures):
     lib.layout_material_expressions(mat)
     lib.recompile_material(mat)
     _save_asset(u, mat)
+    _verify_material_policy(u, mat, data)
     return mat
+
+
+def _verify_material_policy(u, mat, data):
+    expected = {"OPAQUE": u.BlendMode.BLEND_OPAQUE, "MASK": u.BlendMode.BLEND_MASKED,
+                "BLEND": u.BlendMode.BLEND_TRANSLUCENT}[data.get("alpha_mode", "OPAQUE")]
+    _require(mat is not None and mat.get_editor_property("blend_mode") == expected,
+             "Material blend mode differs from package contract")
+    _require(mat.get_editor_property("two_sided") == bool(data.get("two_sided", False)),
+             "Material two-sided policy differs from package contract")
 
 
 def _mesh_check(mesh, asset, tolerance_cm=0.5):
@@ -393,17 +405,21 @@ def _new_ism(u, actor_system, group_key, mesh, asset):
         "EMAsset=" + asset["asset_id"], "EMDisguiseTier=" + asset["disguise_tier"]])
     # Deliberately a visual/query staging map. Walking/physics collision must be
     # reviewed by category; default broad hulls on fixtures can block shelf props.
+    component.set_editor_property("generate_overlap_events", False)
+    component.set_editor_property("can_ever_affect_navigation", False)
+    component.modify()
+    component.set_collision_profile_name("Custom", update_overlaps=False)
     component.set_collision_enabled(u.CollisionEnabled.NO_COLLISION if asset["collision"]["strategy"] == "none"
                                     else u.CollisionEnabled.QUERY_ONLY)
     component.set_collision_response_to_all_channels(u.CollisionResponseType.ECR_IGNORE)
     component.set_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY, u.CollisionResponseType.ECR_BLOCK)
-    component.set_editor_property("generate_overlap_events", False)
-    component.set_editor_property("can_ever_affect_navigation", False)
     return actor, component
 
 
 def verify_scene(u, report):
     """Verify current loaded generated map; does not load/save or change assets."""
+    for mid, policy in report.get("material_policies", {}).items():
+        _verify_material_policy(u, u.load_asset(report["material_paths"][mid]), policy)
     actors = u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()
     groups = {}
     for actor in actors:
@@ -458,6 +474,8 @@ def run(package_root, *, execute=False, phase="sample", sample_asset_ids=None,
                  "Package changed since sample import; run the sample phase again")
     import unreal as u  # Import only when actually executing inside the UE editor.
     _check_collision_api(u)
+    for method in ("modify", "set_collision_profile_name"):
+        _require(hasattr(u.InstancedStaticMeshComponent, method), "Required ISM API missing: " + method)
     level_system = u.get_editor_subsystem(u.LevelEditorSubsystem)
     _require(not level_system.is_in_play_in_editor(), "Stop PIE before importing")
     _require(not u.EditorLoadingAndSavingUtils.get_dirty_map_packages(),
@@ -485,7 +503,7 @@ def run(package_root, *, execute=False, phase="sample", sample_asset_ids=None,
     report = dict(summary, schema=SCHEMA, status="started", engine_version=u.SystemLibrary.get_engine_version(),
                   content_root=root, map_path=root + "/Maps/L_Evergreen_" + phase,
                   material_fidelity="PBR approximation; procedural Blender nodes not transferred",
-                  gameplay_implemented=False, groups={}, meshes={}, material_paths={})
+                  gameplay_implemented=False, groups={}, meshes={}, material_paths={}, material_policies={})
     _write_report(report_path, report)
     try:
         u.EditorAssetLibrary.make_directory(root)
@@ -505,6 +523,8 @@ def run(package_root, *, execute=False, phase="sample", sample_asset_ids=None,
             mat = _build_material(u, mid, contract["materials"][mid], root + "/Materials", textures)
             material_assets[mid] = mat
             report["material_paths"][mid] = mat.get_path_name()
+            report["material_policies"][mid] = {"alpha_mode": contract["materials"][mid].get("alpha_mode", "OPAQUE"),
+                                              "two_sided": bool(contract["materials"][mid].get("two_sided", False))}
         meshes = {}
         for aid in plan["selected_asset_ids"]:
             asset = contract["assets"][aid]

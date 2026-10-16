@@ -121,7 +121,8 @@ def _api(u):
         (u.LevelEditorSubsystem, ('new_level_from_template', 'get_current_level', 'save_current_level', 'load_level', 'is_in_play_in_editor')),
         (u.BoxComponent, ('set_box_extent', 'get_unscaled_box_extent', 'set_world_transform',
                           'get_world_transform', 'get_collision_enabled',
-                          'get_collision_response_to_channel', 'get_collision_object_type')),
+                          'get_collision_response_to_channel', 'get_collision_object_type',
+                          'modify', 'set_collision_profile_name')),
         (u.SubobjectDataSubsystem, ('add_new_subobject', 'k2_gather_subobject_data_for_instance')),
         (u.SubobjectDataBlueprintFunctionLibrary, ('get_associated_object', 'is_actor', 'is_handle_valid', 'get_data'))):
         for method in methods:
@@ -172,15 +173,17 @@ def _spawn(u, box):
     component.set_mobility(u.ComponentMobility.STATIC)
     component.set_box_extent(u.Vector(*box['extent']), update_overlaps=False)
     component.set_world_transform(_transform(u, box), sweep=False, teleport=True)
+    component.set_editor_property('hidden_in_game', True)
+    component.set_editor_property('generate_overlap_events', False)
+    component.set_editor_property('can_ever_affect_navigation', False)
+    component.modify()
+    component.set_collision_profile_name('Custom', update_overlaps=False)
     component.set_collision_object_type(u.CollisionChannel.ECC_WORLD_STATIC)
     component.set_collision_enabled(u.CollisionEnabled.QUERY_ONLY)
     component.set_collision_response_to_all_channels(u.CollisionResponseType.ECR_IGNORE)
     component.set_collision_response_to_channel(u.CollisionChannel.ECC_PAWN, u.CollisionResponseType.ECR_BLOCK)
     if box['block_visibility']:
         component.set_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY, u.CollisionResponseType.ECR_BLOCK)
-    component.set_editor_property('hidden_in_game', True)
-    component.set_editor_property('generate_overlap_events', False)
-    component.set_editor_property('can_ever_affect_navigation', False)
     return component
 
 
