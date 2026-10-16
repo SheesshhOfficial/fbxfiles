@@ -1,0 +1,25 @@
+test_bootstrap_without_dunder_file (test_fixture_patch.FixtureTests.test_bootstrap_without_dunder_file) ... ok
+test_copy_transient_fields_ignored (test_fixture_patch.FixtureTests.test_copy_transient_fields_ignored) ... ok
+test_current_map_guard (test_fixture_patch.FixtureTests.test_current_map_guard) ... ok
+test_custom_layout_intensity (test_fixture_patch.FixtureTests.test_custom_layout_intensity) ... ok
+test_dirty_map_guard (test_fixture_patch.FixtureTests.test_dirty_map_guard) ... ok
+test_execute_copy_verify_save_reload_and_failure_report (test_fixture_patch.FixtureTests.test_execute_copy_verify_save_reload_and_failure_report) ... ok
+test_existing_patch_blocks_rerun (test_fixture_patch.FixtureTests.test_existing_patch_blocks_rerun) ... ok
+test_full_point_set_verify_rejects_changed_temperature (test_fixture_patch.FixtureTests.test_full_point_set_verify_rejects_changed_temperature) ... ok
+test_helper_hash_fails_before_import (test_fixture_patch.FixtureTests.test_helper_hash_fails_before_import) ... ok
+test_layout_all_actual_fixtures (test_fixture_patch.FixtureTests.test_layout_all_actual_fixtures) ... ok
+test_manual_light_settings_drift_detected (test_fixture_patch.FixtureTests.test_manual_light_settings_drift_detected) ... ok
+test_reject_missing_fixture_or_directional (test_fixture_patch.FixtureTests.test_reject_missing_fixture_or_directional) ... ok
+test_removal_scope_preserves_start_manual_and_tuned (test_fixture_patch.FixtureTests.test_removal_scope_preserves_start_manual_and_tuned) ... ok
+test_report_remap_uses_current_final_not_original_pilot (test_fixture_patch.FixtureTests.test_report_remap_uses_current_final_not_original_pilot) ... ok
+test_snapshot_covers_all_preserved_actors (test_fixture_patch.FixtureTests.test_snapshot_covers_all_preserved_actors) ... ok
+test_source_manifest_hash (test_fixture_patch.FixtureTests.test_source_manifest_hash) ... ok
+test_spawn_scale_25_reset_and_settings (test_fixture_patch.FixtureTests.test_spawn_scale_25_reset_and_settings) ... ok
+test_state_or_report_hash_change (test_fixture_patch.FixtureTests.test_state_or_report_hash_change) ... ok
+test_unknown_or_duplicate_old_tag_fails (test_fixture_patch.FixtureTests.test_unknown_or_duplicate_old_tag_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.369s
+
+OK
+PREFLIGHT ONLY. Inspect removed identities, retained manual lights and proposed points. No map changes.

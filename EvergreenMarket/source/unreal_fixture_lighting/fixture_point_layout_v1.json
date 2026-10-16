@@ -1,0 +1,2865 @@
+{
+  "schema": "evergreen-fixture-point-layout-v1",
+  "purpose": "One point per actual ceiling, canopy, and exterior wall fixture; initial untested settings.",
+  "coordinate_system": "UE_X_FORWARD_Y_RIGHT_Z_UP_CM",
+  "source_manifest": "evergreen_source_v2/manifest.json",
+  "source_manifest_sha256": "e983146c1d8f18145eaec63c9ec0544e3a6128231b7c61eb940bcace94566f85",
+  "source_blend_sha256": "096d92c625b40bff84e6b2db16ca0af325b12302bd82adcd288a107ba7eded03",
+  "source_fixture_count": 42,
+  "fixture_role_counts": {
+    "ceiling": 25,
+    "canopy": 15,
+    "exterior_wall": 2
+  },
+  "source_evidence": "source/blender/build_supermarket.py lines 200, 216-223, 509; exported fixture placements.",
+  "placement_policy": "Ceiling: source X/Y and Z430 cm, 4.25 cm below diffuser. Canopy: source X/Y and 4.5 cm below underside. Wall: 5 cm beyond +X outer face at mesh-center height. No fill grid synthesized.",
+  "excluded_fixture_roles": [
+    "Case vertical LED: 15 refrigerated-case accents remain emissive; not separate point-light fixtures in this patch"
+  ],
+  "directional_lights_allowed": false,
+  "skylights_allowed": false,
+  "rect_lights_allowed": false,
+  "unreal_runtime_tested": false,
+  "tuning_note": "Ceiling 3000 lumens/900 cm, canopy 250 lumens/500 cm, wall 1000 lumens/600 cm are initial neutral preview settings, not a photometric or runtime validation. Keep shadows for shelving and wall occlusion; profile the 42 movable shadow-casting points in the target engine. Do not add overlapping fill lights or disable all shadows to mask performance problems.",
+  "lights": [
+    {
+      "key": "Fixture_01",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -1800.0,
+        1300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_bac6885507795e02",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -1800.0,
+        1300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -1800.0,
+        1300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -18.0,
+        -13.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -18.0,
+        -13.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_c4214ea7a4ec46af",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_02",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -1800.0,
+        500.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_f52358313dc81d9b",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.001"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -1800.0,
+        500.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -1800.0,
+        500.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -18.0,
+        -5.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -18.0,
+        -5.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_7fa8d28ce5df449f",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_03",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -1800.0,
+        -300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_fce0e7067c048bf1",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.002"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -1800.0,
+        -300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -1800.0,
+        -300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -18.0,
+        3.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -18.0,
+        3.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_62e3c9d6ff602e16",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_04",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -1800.0,
+        -1100.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_2c21e029ebee25c0",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.003"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -1800.0,
+        -1100.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -1800.0,
+        -1100.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -18.0,
+        11.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -18.0,
+        11.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_071412c36126ef34",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_05",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -1800.0,
+        -2400.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_a32292f0e5347d26",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.004"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -1800.0,
+        -2400.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -1800.0,
+        -2400.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -18.0,
+        24.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -18.0,
+        24.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_27c955fe2abfffb1",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_06",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -900.0,
+        1300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_a40841b91d70a424",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.005"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -900.0,
+        1300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -900.0,
+        1300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -9.0,
+        -13.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -9.0,
+        -13.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_ee4799ea42af317a",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_07",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -900.0,
+        500.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_807b82dd48625f31",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.006"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -900.0,
+        500.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -900.0,
+        500.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -9.0,
+        -5.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -9.0,
+        -5.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_c5011b698f413d45",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_08",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -900.0,
+        -300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_cceafd96285b4a54",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.007"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -900.0,
+        -300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -900.0,
+        -300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -9.0,
+        3.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -9.0,
+        3.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_01952a52d5f13c4d",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_09",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -900.0,
+        -1100.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_bdb563d6c2a3e567",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.008"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -900.0,
+        -1100.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -900.0,
+        -1100.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -9.0,
+        11.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -9.0,
+        11.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_bc5d67102eb926a6",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_10",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -900.0,
+        -2400.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_6f0286907b58a83e",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.009"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        -900.0,
+        -2400.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        -900.0,
+        -2400.0,
+        435.500021
+      ],
+      "source_position_m": [
+        -9.0,
+        24.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        -9.0,
+        24.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_9afcae5f8dc49919",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_11",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        0.0,
+        1300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_af0a610e101146dd",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.010"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        0.0,
+        1300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        0.0,
+        1300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        0.0,
+        -13.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        0.0,
+        -13.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_b73982b78f7f19a4",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_12",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        0.0,
+        500.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_7a04f526feaabf25",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.011"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        0.0,
+        500.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        0.0,
+        500.0,
+        435.500021
+      ],
+      "source_position_m": [
+        0.0,
+        -5.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        0.0,
+        -5.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_b1ce1f2033a50f6d",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_13",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        0.0,
+        -300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_245a0a32d52494ac",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.012"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        0.0,
+        -300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        0.0,
+        -300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        0.0,
+        3.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        0.0,
+        3.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_88b979cc4cdf1f50",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_14",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        0.0,
+        -1100.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_2ca58608a7b0eb73",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.013"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        0.0,
+        -1100.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        0.0,
+        -1100.0,
+        435.500021
+      ],
+      "source_position_m": [
+        0.0,
+        11.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        0.0,
+        11.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_9d464287051ca7ac",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_15",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        0.0,
+        -2400.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_a298d67314ec71eb",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.014"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        0.0,
+        -2400.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        0.0,
+        -2400.0,
+        435.500021
+      ],
+      "source_position_m": [
+        0.0,
+        24.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        0.0,
+        24.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_dedd617d99e3a8a7",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_16",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        900.0,
+        1300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_062a308ed06964d2",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.015"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        900.0,
+        1300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        900.0,
+        1300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        9.0,
+        -13.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        9.0,
+        -13.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_a94a75a52e7022ac",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_17",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        900.0,
+        500.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_3e7094ec7a3b6444",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.016"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        900.0,
+        500.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        900.0,
+        500.0,
+        435.500021
+      ],
+      "source_position_m": [
+        9.0,
+        -5.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        9.0,
+        -5.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_d3f6e520a053da6c",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_18",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        900.0,
+        -300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_e1cbaf4d3bc5f328",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.017"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        900.0,
+        -300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        900.0,
+        -300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        9.0,
+        3.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        9.0,
+        3.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_e7903943ef643f41",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_19",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        900.0,
+        -1100.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_7e881389f4dd9093",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.018"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        900.0,
+        -1100.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        900.0,
+        -1100.0,
+        435.500021
+      ],
+      "source_position_m": [
+        9.0,
+        11.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        9.0,
+        11.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_2dc57a6c0abf04cb",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_20",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        900.0,
+        -2400.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_f7f5135bb7d2816d",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.019"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        900.0,
+        -2400.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        900.0,
+        -2400.0,
+        435.500021
+      ],
+      "source_position_m": [
+        9.0,
+        24.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        9.0,
+        24.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_3c631023b8a347bc",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_21",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        1800.0,
+        1300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_035514b9046700a7",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.020"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        1800.0,
+        1300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        1800.0,
+        1300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        18.0,
+        -13.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        18.0,
+        -13.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_199c2e7da0e697c9",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_22",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        1800.0,
+        500.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_3de1d4cd924ec560",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.021"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        1800.0,
+        500.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        1800.0,
+        500.0,
+        435.500021
+      ],
+      "source_position_m": [
+        18.0,
+        -5.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        18.0,
+        -5.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_f8b0d96a0a799aec",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_23",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        1800.0,
+        -300.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_43f6639cb562a69e",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.022"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        1800.0,
+        -300.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        1800.0,
+        -300.0,
+        435.500021
+      ],
+      "source_position_m": [
+        18.0,
+        3.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        18.0,
+        3.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_6e9395e611e75ce2",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_24",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        1800.0,
+        -1100.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_b4c20a0837238b7b",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.023"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        1800.0,
+        -1100.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        1800.0,
+        -1100.0,
+        435.500021
+      ],
+      "source_position_m": [
+        18.0,
+        11.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        18.0,
+        11.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_acbd7d44454e116c",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Fixture_25",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        1800.0,
+        -2400.0,
+        430.0
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 3000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 900.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_0432f38717be0b15",
+      "source_fixture_asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "source_fixture_names": [
+        "Opal LED diffuser.024"
+      ],
+      "source_collection": "40_Lighting",
+      "source_fixture_bottom_cm": [
+        1800.0,
+        -2400.0,
+        434.250021
+      ],
+      "source_fixture_center_cm": [
+        1800.0,
+        -2400.0,
+        435.500021
+      ],
+      "source_position_m": [
+        18.0,
+        24.0,
+        4.34250021
+      ],
+      "fixture_point_position_m": [
+        18.0,
+        24.0,
+        4.3
+      ],
+      "source_fixture_dimensions_cm": [
+        270.0,
+        24.0,
+        2.5
+      ],
+      "source_housing_instance_id": "EGI_0e881998c8c64bde",
+      "emitter_clearance_below_diffuser_cm": 4.250021
+    },
+    {
+      "key": "Canopy_01",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -700.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_4cd6185455d94735",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -700.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -700.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -7.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -7.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_02",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -600.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_4f4d9d60eb41601b",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.001"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -600.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -600.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -6.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -6.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_03",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -500.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_0f271dd3e4f8f4d3",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.002"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -500.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -500.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -5.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -5.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_04",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -400.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_d07811f15c6f5084",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.003"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -400.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -400.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -4.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -4.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_05",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -300.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_b7d65941ca3349e5",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.004"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -300.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -300.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -3.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -3.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_06",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -200.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_ecf9c7fac0208b7f",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.005"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -200.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -200.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -2.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -2.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_07",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        -100.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_5bf4395b9b7e4a0b",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.006"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        -100.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        -100.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        -1.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        -1.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_08",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        0.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_5b4802f7e7e14b77",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.007"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        0.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        0.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        0.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        0.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_09",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        100.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_dcea0eb09e488d2e",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.008"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        100.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        100.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        1.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        1.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_10",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        200.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_c84f3d75468c0ddc",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.009"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        200.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        200.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        2.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        2.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_11",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        300.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_2292c991fcd9785a",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.010"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        300.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        300.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        3.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        3.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_12",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        400.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_2c801115a28796a0",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.011"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        400.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        400.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        4.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        4.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_13",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        500.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_8e12b24594bb7a04",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.012"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        500.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        500.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        5.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        5.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_14",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        600.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_fb9c23f7bae7a5b1",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.013"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        600.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        600.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        6.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        6.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "Canopy_15",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        700.0,
+        1960.000038,
+        398.00001
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 250.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 500.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_67c293aeabaff494",
+      "source_fixture_asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "source_fixture_names": [
+        "Canopy linear light.014"
+      ],
+      "source_collection": "02_Front_Glazing",
+      "source_fixture_bottom_cm": [
+        700.0,
+        1960.000038,
+        402.50001
+      ],
+      "source_fixture_center_cm": [
+        700.0,
+        1960.000038,
+        404.00001
+      ],
+      "source_fixture_dimensions_cm": [
+        3.5,
+        270.0,
+        3.0
+      ],
+      "source_position_m": [
+        7.0,
+        -19.600000379999997,
+        4.0250001
+      ],
+      "fixture_point_position_m": [
+        7.0,
+        -19.600000379999997,
+        3.9800001
+      ],
+      "placement_note": "4.5 cm below canopy underside"
+    },
+    {
+      "key": "ExteriorWall_01",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        2244.999924,
+        -2700.0,
+        320.000014
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 1000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 600.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_9c9ece7920ad9b16",
+      "source_fixture_asset_id": "SM_EG_Exterior_wall_lamp_25c57a1243",
+      "source_fixture_names": [
+        "Exterior wall lamp.001"
+      ],
+      "source_collection": "22_Loading_Yard",
+      "source_fixture_bottom_cm": [
+        2229.999924,
+        -2700.0,
+        310.000014
+      ],
+      "source_fixture_center_cm": [
+        2229.999924,
+        -2700.0,
+        320.000014
+      ],
+      "source_fixture_dimensions_cm": [
+        20.0,
+        50.0,
+        20.0
+      ],
+      "source_position_m": [
+        22.299999240000002,
+        27.0,
+        3.10000014
+      ],
+      "fixture_point_position_m": [
+        22.44999924,
+        27.0,
+        3.20000014
+      ],
+      "placement_note": "5 cm beyond outward +X face; at physical lamp center height"
+    },
+    {
+      "key": "ExteriorWall_02",
+      "actor": "PointLight",
+      "component": "PointLightComponent",
+      "location_cm": [
+        2244.999924,
+        -1100.0,
+        320.000014
+      ],
+      "rotation_degrees_pitch_yaw_roll": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 1000.0,
+      "intensity_unit": "lumens",
+      "attenuation_radius_cm": 600.0,
+      "source_radius_cm": 2.0,
+      "soft_source_radius_cm": 0.0,
+      "source_length_cm": 0.0,
+      "use_inverse_squared_falloff": true,
+      "color_linear_rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mobility": "Movable",
+      "cast_shadows": true,
+      "source_fixture_instance_id": "EGI_bfaa8d838d453856",
+      "source_fixture_asset_id": "SM_EG_Exterior_wall_lamp_25c57a1243",
+      "source_fixture_names": [
+        "Exterior wall lamp"
+      ],
+      "source_collection": "22_Loading_Yard",
+      "source_fixture_bottom_cm": [
+        2229.999924,
+        -1100.0,
+        310.000014
+      ],
+      "source_fixture_center_cm": [
+        2229.999924,
+        -1100.0,
+        320.000014
+      ],
+      "source_fixture_dimensions_cm": [
+        20.0,
+        50.0,
+        20.0
+      ],
+      "source_position_m": [
+        22.299999240000002,
+        11.0,
+        3.10000014
+      ],
+      "fixture_point_position_m": [
+        22.44999924,
+        11.0,
+        3.20000014
+      ],
+      "placement_note": "5 cm beyond outward +X face; at physical lamp center height"
+    }
+  ]
+}

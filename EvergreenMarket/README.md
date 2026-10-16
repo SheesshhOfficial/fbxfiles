@@ -1,5 +1,9 @@
 # Evergreen Market
 
+## Fixture-aligned lighting for a working v2 map
+
+Use the small [fixture-lighting ZIP](packages/fixture_lighting/Evergreen_Fixture_Lighting.zip) and [two-command guide](docs/FIXTURE_LIGHTS.md) to create a lighting-only map copy with 42 actual fixture points: 25 ceiling/warehouse, 15 canopy and 2 wall lamps. It replaces only the 11 generated preview lights, including the generated Sun, and preserves geometry, 694 colliders, four working props, PlayerStart and unrelated manual lights. No asset reimport or full-package download is needed. Settings are an initial visual/performance test, not a promise of calibrated brightness or frame rate.
+
 ## Latest complete Blender-source v2 package
 
 Use [packages/source_v2](packages/source_v2) for the corrected native Blender master, all 256 render FBXs, 86 collision companions, textures, source-defined lighting and fresh-import helpers. The [v2 guide](docs/FRESH_SOURCE_V2.md) creates new maps with 694 reviewed walking boxes, four E-compatible pilot actors and 11 neutral preview lights. No previous package, patch or reports are needed. Keep your working map.

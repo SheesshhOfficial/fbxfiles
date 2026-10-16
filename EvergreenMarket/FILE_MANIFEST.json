@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 6123,
-    "sha256": "20d145ed700a0faf48ef58da8b0fcb0f8855c793765d9bbddf5272e1f0497293",
-    "git_blob_sha": "f2ef53120f2daf8d90f1ae31c11edbeb84c5030e"
+    "bytes": 6769,
+    "sha256": "8f99e3d06e8c19851c60d60c343996758048a0e92703ee42b7288f864897ca8c",
+    "git_blob_sha": "9c79e18e0af1d40605c902c7d1c359702d2190be"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -34,6 +34,12 @@
     "bytes": 3859,
     "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
     "git_blob_sha": "b3d93a1235a82213fbc451853317c40e62ed9272"
+  },
+  {
+    "path": "docs/FIXTURE_LIGHTS.md",
+    "bytes": 5523,
+    "sha256": "10eb21cf5d5efe05598346fc9c2772558655dfdd37200039cc12a69076ffebcb",
+    "git_blob_sha": "b336ab93e42b621fb9024a42d1cf3a09b84e1ce8"
   },
   {
     "path": "docs/FRESH_SOURCE_V2.md",
@@ -160,6 +166,18 @@
     "bytes": 2907000,
     "sha256": "f723afbcdc31d5719037e3b5d18f1a5057b00608eee7a8d2790c8dd86eb30bb2",
     "git_blob_sha": "24977769910747f398d0e3fe427bddafe19b1124"
+  },
+  {
+    "path": "packages/fixture_lighting/Evergreen_Fixture_Lighting.zip",
+    "bytes": 82567,
+    "sha256": "529c58fcb9021250f9f92d67a84f8545bb05a95c7d1c008af8c53777e5048171",
+    "git_blob_sha": "50f0bf2193a495923ddc6159cb77424b2d4193e7"
+  },
+  {
+    "path": "packages/fixture_lighting/SHA256SUMS.txt",
+    "bytes": 97,
+    "sha256": "3667525ba71a2421e764e8668d987e805565799149924a230f808ff45a8e8089",
+    "git_blob_sha": "675c9362ab306ace7adf5d060c5d9ded37feb3c9"
   },
   {
     "path": "packages/fresh_start/Evergreen_Fresh_Start_Helpers.zip",
@@ -370,6 +388,12 @@
     "bytes": 886,
     "sha256": "10f12e20366c5e59210c9de4bc98d3c775ad672aedb3beb56f4edd2fb66fbf56",
     "git_blob_sha": "02edbf80d828f560e7a9a9aa0fcd5c1844e916ac"
+  },
+  {
+    "path": "previews/fixture_light_positions.png",
+    "bytes": 73154,
+    "sha256": "d0335886d5f450a04e277b6b9bd7d3c824554247009d6dcac06825e4f0e2d18d",
+    "git_blob_sha": "9ea028beeb40d6c18aa58a208d70aa76b5c24be6"
   },
   {
     "path": "qa/blender_roundtrip.json",
@@ -898,6 +922,78 @@
     "bytes": 7761,
     "sha256": "db0fc99998e12bb76ccc4996e8aaa0770f26f4eb55196892eba19299de813e77",
     "git_blob_sha": "77da32f0324749cf615c3b7caec2b20f4fc6c7f4"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/FIXTURE_LAYOUT_EVIDENCE.md",
+    "bytes": 5511,
+    "sha256": "9c48727c5745a936847a0c4768d4c205c0d1bd1d4d6ec5abd9a8418da22ae8f9",
+    "git_blob_sha": "bf73ccc34e752962fa9925a26193cd5c2969e7bc"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/FIXTURE_LIGHTS_README.md",
+    "bytes": 5523,
+    "sha256": "10eb21cf5d5efe05598346fc9c2772558655dfdd37200039cc12a69076ffebcb",
+    "git_blob_sha": "b336ab93e42b621fb9024a42d1cf3a09b84e1ce8"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/Start_Fixture_Lights.py",
+    "bytes": 724,
+    "sha256": "068078973d0f5d3c447854e75959930d4365a03ae4d9d5a64d238a6902ad8e28",
+    "git_blob_sha": "229a92a90aa2a207c1cc1137f68c7dfcfd418dd4"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/derive_fixture_layout.py",
+    "bytes": 5775,
+    "sha256": "83afa6f93596b76a8edd5db0ad01eb18d8b966141a5622b35da3a49ad311c5c9",
+    "git_blob_sha": "7dde3505ef014c653a504812739d1eaa9cdc794b"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/estimate_fixture_overlap.py",
+    "bytes": 1468,
+    "sha256": "bc0f95fdebeb3c58fc2ff423348cec8793b291e6860fd02d00d094fe67fad6f5",
+    "git_blob_sha": "f0cc5f6c244512c169d978386720d44dda8dd1d7"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/fixture_light_positions.png",
+    "bytes": 73154,
+    "sha256": "d0335886d5f450a04e277b6b9bd7d3c824554247009d6dcac06825e4f0e2d18d",
+    "git_blob_sha": "9ea028beeb40d6c18aa58a208d70aa76b5c24be6"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/fixture_overlap_estimate.json",
+    "bytes": 3051,
+    "sha256": "64329cc2297b64f86f5c2ea7f9762415db91be4f7863d9b86bb0ee65f0089bb8",
+    "git_blob_sha": "1debc726d41327c94fdc214d7518ffcc45ffe2f7"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/fixture_point_layout_v1.json",
+    "bytes": 65445,
+    "sha256": "04fd71f5a4857cd368dac5555bb1bcec777c7bc2a60441f0cfead8c3cd2fbaa1",
+    "git_blob_sha": "297eeab6dd97b487926d0c7373298e696891c6e3"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/fixture_point_patch.py",
+    "bytes": 18796,
+    "sha256": "52e21b5dfa1f233e721bc9a687097f532d2de3f457fb1c0576ddd8129acf0b80",
+    "git_blob_sha": "682b03f9a3c58e85eeee09af7c5dd08aac9e2a23"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/render_fixture_plan.py",
+    "bytes": 1645,
+    "sha256": "54c305d6e4f455c9d3c509edfa3f85196b191d19e2fb148fe0a909540b5b2bac",
+    "git_blob_sha": "e88c07b7582a6ab254e447b35922e0f765021b39"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/test_fixture_patch.py",
+    "bytes": 12210,
+    "sha256": "927e759148bc9fb2593608f7ae78ad24f3709dbcae31fd8c19c39af5b41bcf28",
+    "git_blob_sha": "c7f8682b9496be5862c6b9a1c3350006eb34b182"
+  },
+  {
+    "path": "source/unreal_fixture_lighting/test_results.txt",
+    "bytes": 2440,
+    "sha256": "c2a67b970d8bf4a4ec7a321ba11f1e57e3d6ce951ce1f3f3a3ffe6518262b2a2",
+    "git_blob_sha": "2f4867cf331f4507e5b8662929c7fa2ce3e9cb4d"
   },
   {
     "path": "source/unreal_v2/FRESH_SOURCE_V2.md",
