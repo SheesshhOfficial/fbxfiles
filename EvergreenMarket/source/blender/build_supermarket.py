@@ -55,7 +55,7 @@ CACHE={}
 def box(name,loc,dims,ma='porcelain',bev=.03,rot=(0,0,0)):
  key=('b',tuple(round(x,4) for x in dims),ma,bev)
  if key not in CACHE:
-  x,y,z=(v/2 for v in dims);verts=[(-x,-y,-z),(-x,-y,z),(-x,y,-z),(-x,y,z),(x,-y,-z),(x,-y,z),(x,y,-z),(x,y,z)];faces=[(0,4,6,2),(1,3,7,5),(0,1,5,4),(2,6,7,3),(0,2,3,1),(4,5,7,6)]
+  x,y,z=(v/2 for v in dims);verts=[(-x,-y,-z),(-x,-y,z),(-x,y,-z),(-x,y,z),(x,-y,-z),(x,-y,z),(x,y,-z),(x,y,z)];faces=[(2,6,4,0),(5,7,3,1),(4,5,1,0),(3,7,6,2),(1,3,2,0),(6,7,5,4)]
   mesh=bpy.data.meshes.new(name+'_Mesh');mesh.from_pydata(verts,[],faces);mesh.materials.append(M[ma]);mesh.update()
   if bev:
    temp=link_obj('_bevel_template',mesh);mod=temp.modifiers.new('Machined edge radius','BEVEL');mod.width=bev;mod.segments=3;mod.affect='EDGES'

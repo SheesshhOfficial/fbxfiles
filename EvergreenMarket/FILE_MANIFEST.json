@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 3603,
-    "sha256": "27846f297fe40b270348e617a7c7a9e7e99e28979a48a5cab854a87b6ece6b8b",
-    "git_blob_sha": "cb769657e4cf15d2a2dad4d41820d443d4ad6649"
+    "bytes": 4167,
+    "sha256": "928b1c0f9fe77b0b7f7b2f76284584cffe9366a0949e5f67232e491e6bfc4fe4",
+    "git_blob_sha": "602e015d2498a2d20f4633960f26311cbc2af490"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -60,6 +60,12 @@
     "git_blob_sha": "9e9f5c61436d2bb2e773cffc1c4f8ef980606ea8"
   },
   {
+    "path": "docs/NORMALS_REPAIR.md",
+    "bytes": 5069,
+    "sha256": "92ec4a6c035fe6d602ab9ce2524dbbe7d3aef30349491a4ee7ba218a13d354bb",
+    "git_blob_sha": "e8085672daa2a37513d182315d744610c88abe43"
+  },
+  {
     "path": "docs/PROP_ACTOR_COMPATIBILITY_PILOT.md",
     "bytes": 12892,
     "sha256": "adafde17ec33e340658ec5a27258d66aff7271af211d86964f2a9d0d24cd0269",
@@ -100,6 +106,24 @@
     "bytes": 2907000,
     "sha256": "f723afbcdc31d5719037e3b5d18f1a5057b00608eee7a8d2790c8dd86eb30bb2",
     "git_blob_sha": "24977769910747f398d0e3fe427bddafe19b1124"
+  },
+  {
+    "path": "packages/normals_patch/Evergreen_Market_Normals_Patch.zip",
+    "bytes": 6161013,
+    "sha256": "22954d0793ee2073c15667df74c8478791a5aca68bde2d496ea9b22cf74c6cea",
+    "git_blob_sha": "8fa2e8958e043aa793d0847335c98875ce7bffec"
+  },
+  {
+    "path": "packages/normals_patch/README.md",
+    "bytes": 443,
+    "sha256": "55f24aef13ac9d14151ac4cdbeecd17759c2075812aa1a5b72c24c49fd613821",
+    "git_blob_sha": "1b17e50e6a6d83d2020d4be6d6ea6c4397a9b9a2"
+  },
+  {
+    "path": "packages/normals_patch/SHA256SUMS.txt",
+    "bytes": 101,
+    "sha256": "77faf7704492e86c7e2069fb2efe97e210a71a4d9efe93fa6e79f465615b716a",
+    "git_blob_sha": "76001a97adb35b215815c59a42493ff08f75186c"
   },
   {
     "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part01",
@@ -222,6 +246,24 @@
     "git_blob_sha": "efe42d333511a70cbe5c026dcf8dd5606314599e"
   },
   {
+    "path": "qa/normals_fbx_exact_payload.json",
+    "bytes": 447169,
+    "sha256": "f3f60e1b739adf9eeefea1034716cf22c1c4b1d666c9da46aaf701083fa0fbb1",
+    "git_blob_sha": "d6b2682c7bd1253f61bcb615cf2aa72f77c4741c"
+  },
+  {
+    "path": "qa/normals_fbx_roundtrip.json",
+    "bytes": 378727,
+    "sha256": "c8c13705f4021bea58c7cb71a88e02c9489306c8153d583db9ac9a6254844b50",
+    "git_blob_sha": "247b246a34b5bdd97a565350673854211fceec67"
+  },
+  {
+    "path": "qa/normals_python_tests.txt",
+    "bytes": 407,
+    "sha256": "2e7d0527383f100fac99f00fc59017c5260ae15e55def8ed807001e75d7d6959",
+    "git_blob_sha": "853f5e06793333a75f2c01ac6d1e292dbfac5d5a"
+  },
+  {
     "path": "qa/package_result.json",
     "bytes": 281,
     "sha256": "2b40b347fa6aa8194e39fdb1c197aeda850cd2a1c9fb480ff12a185b24831a51",
@@ -242,8 +284,8 @@
   {
     "path": "source/blender/build_supermarket.py",
     "bytes": 40193,
-    "sha256": "95232d04a252a4143ad0a36063bf65ae876cb7d50aecfa64a56a805a2cfd84f2",
-    "git_blob_sha": "6466c5770687c482e07b121b6f09fb724b40d0da"
+    "sha256": "e52e3c579dc88425872bf06cd3dd0210fdf1f1647ba022e4ca658d55f82aedfd",
+    "git_blob_sha": "9110b057819f12883125e1cfb8d2170bb4da9dbd"
   },
   {
     "path": "source/blender/finish_and_render.py",
@@ -294,6 +336,18 @@
     "git_blob_sha": "ce9334833570939f11df82c953974b131581c1e5"
   },
   {
+    "path": "source/unreal/Start_Normals_Repair.py",
+    "bytes": 820,
+    "sha256": "9d2a52fba625c34f96adeb65b75ade0ea97072b2dda8c9dc1f38cc0501291e26",
+    "git_blob_sha": "6943cecb3f50d458dcdb639b220b0c718305127e"
+  },
+  {
+    "path": "source/unreal/classify_closed_shells.py",
+    "bytes": 2188,
+    "sha256": "ecd9a6c8c2153e79603be6d5c5ae5ef21eb99da834413839f11e3dc01a2d410b",
+    "git_blob_sha": "f1d8bf0b886bbac4e4166ffa85e0956ea60cf9fa"
+  },
+  {
     "path": "source/unreal/consolidate_symmetric_chairs.py",
     "bytes": 2950,
     "sha256": "8c5d482737ab9b75467a907fb7578c4db0f844670ad748d20ff65598124df7d0",
@@ -302,8 +356,8 @@
   {
     "path": "source/unreal/convert_supermarket.py",
     "bytes": 16157,
-    "sha256": "e4158bd1ee496a4af2b3ec2b7757d94f3864144a3cdb87fd151ac0a64310029b",
-    "git_blob_sha": "fb2a02a794dfbf4c43d54a24a8afe2219dc3ecc7"
+    "sha256": "85c2e1610b3250df49a1cc1ec5dffbbd3bf06c67dd4764d1be473adfed809f75",
+    "git_blob_sha": "00134094d702141809afebfb398a33c98028950d"
   },
   {
     "path": "source/unreal/import_supermarket_unreal.py",
@@ -324,10 +378,22 @@
     "git_blob_sha": "6195fd286f72c515d6c2738fe639e945a379da3e"
   },
   {
+    "path": "source/unreal/patch_original_fbx_payload.py",
+    "bytes": 12217,
+    "sha256": "a61d0b2dacf26c8869c877a65ed019a1c0097e2ec734af0435f293ed01cdd1c1",
+    "git_blob_sha": "0e2b03946182983e01e23583e8990370e5fb26ed"
+  },
+  {
     "path": "source/unreal/setup_market_collision.py",
     "bytes": 16258,
     "sha256": "5bb4577756dc1c8e314aa9bdadf9a44284cde07d52d44efd7cd1fc7e1c2ad67b",
     "git_blob_sha": "259c97517acc816f0c0c17c985577050b4df2b95"
+  },
+  {
+    "path": "source/unreal/setup_market_normals.py",
+    "bytes": 17999,
+    "sha256": "a86f05ff5b41d18aa848da9e6e7aec15fcd0316f4201131373648108dde1f6a9",
+    "git_blob_sha": "9d90543330a9031b5f7cfcb7092a40b1a7b22432"
   },
   {
     "path": "source/unreal/setup_prop_actor_pilot.py",
@@ -348,15 +414,33 @@
     "git_blob_sha": "1197f28d6fb186d79e1721340df75259997d9f2c"
   },
   {
+    "path": "source/unreal/test_normals_patch.py",
+    "bytes": 4662,
+    "sha256": "d14e26e739dc43e3d61fa7e1719d73ac43dff91bedfb80581dea8984454eea98",
+    "git_blob_sha": "eba3160779e9c2173fce3b4362b2ae2cfed2553e"
+  },
+  {
     "path": "source/unreal/test_prop_actor_pilot.py",
     "bytes": 7886,
     "sha256": "1b5768dd606e544bc80da0ac346decc1f66f484a0cdb52d8aeeeb556d6f02020",
     "git_blob_sha": "8e62b69c10e67017bc99033748d744eedaf11d2d"
   },
   {
+    "path": "source/unreal/test_winding_generators.py",
+    "bytes": 1382,
+    "sha256": "176c868fae01949df9254d769e414c4055af73494c64d737c1a269017f99b02f",
+    "git_blob_sha": "e54fb899a78ac177aa72d03dd5a31ecd487a49dc"
+  },
+  {
     "path": "source/unreal/verify_handoff_blender.py",
     "bytes": 5259,
     "sha256": "d52ae59b1bd707ac31bf7f2af2890de355287a37133fd278bd1e01ca636aa20b",
     "git_blob_sha": "80522fdc268721e2376354bab6a120e3ed96fff3"
+  },
+  {
+    "path": "source/unreal/verify_patch_roundtrip.py",
+    "bytes": 7761,
+    "sha256": "db0fc99998e12bb76ccc4996e8aaa0770f26f4eb55196892eba19299de813e77",
+    "git_blob_sha": "77da32f0324749cf615c3b7caec2b20f4fc6c7f4"
   }
 ]
