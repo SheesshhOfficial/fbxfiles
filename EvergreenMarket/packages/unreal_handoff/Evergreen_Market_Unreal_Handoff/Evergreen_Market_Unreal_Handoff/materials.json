@@ -1,0 +1,1073 @@
+{
+  "schema_version": 1,
+  "materials": [
+    {
+      "material_id": "M_EG_LED",
+      "source_name": "LED",
+      "base_color_rgba": [
+        0.9399999976158142,
+        0.9700000286102295,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.20000000298023224,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        4.699999988079071,
+        4.8500001430511475,
+        5.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_00_Original",
+      "source_name": "Packaging_00_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_00.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_01_Original",
+      "source_name": "Packaging_01_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_01.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_02_Original",
+      "source_name": "Packaging_02_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_02.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_03_Original",
+      "source_name": "Packaging_03_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_03.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_04_Original",
+      "source_name": "Packaging_04_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_04.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_05_Original",
+      "source_name": "Packaging_05_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_05.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_06_Original",
+      "source_name": "Packaging_06_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_06.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_07_Original",
+      "source_name": "Packaging_07_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_07.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_08_Original",
+      "source_name": "Packaging_08_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_08.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_09_Original",
+      "source_name": "Packaging_09_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_09.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_10_Original",
+      "source_name": "Packaging_10_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_10.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_11_Original",
+      "source_name": "Packaging_11_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_11.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_12_Original",
+      "source_name": "Packaging_12_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_12.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_13_Original",
+      "source_name": "Packaging_13_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_13.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_14_Original",
+      "source_name": "Packaging_14_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_14.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_Packaging_15_Original",
+      "source_name": "Packaging_15_Original",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "base_color_texture": "textures/pack_15.png",
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_amber",
+      "source_name": "amber",
+      "base_color_rgba": [
+        0.8700000047683716,
+        0.4099999964237213,
+        0.07999999821186066,
+        1.0
+      ],
+      "roughness": 0.41999998688697815,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_apple",
+      "source_name": "apple",
+      "base_color_rgba": [
+        0.5600000023841858,
+        0.04500000178813934,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_architectural_glass",
+      "source_name": "architectural glass",
+      "base_color_rgba": [
+        0.7300000190734863,
+        0.8700000047683716,
+        0.8799999952316284,
+        1.0
+      ],
+      "roughness": 0.07999999821186066,
+      "metallic": 0.0,
+      "two_sided": true,
+      "alpha_mode": "BLEND",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.9800000190734863,
+      "opacity": 0.16,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_asphalt",
+      "source_name": "asphalt",
+      "base_color_rgba": [
+        0.10499999672174454,
+        0.11999999731779099,
+        0.11999999731779099,
+        1.0
+      ],
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_black_rubber",
+      "source_name": "black rubber",
+      "base_color_rgba": [
+        0.014000000432133675,
+        0.02199999988079071,
+        0.020999999716877937,
+        1.0
+      ],
+      "roughness": 0.7400000095367432,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_blue_plastic",
+      "source_name": "blue plastic",
+      "base_color_rgba": [
+        0.03500000014901161,
+        0.2199999988079071,
+        0.3400000035762787,
+        1.0
+      ],
+      "roughness": 0.3199999928474426,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_bread",
+      "source_name": "bread",
+      "base_color_rgba": [
+        0.5400000214576721,
+        0.27000001072883606,
+        0.06499999761581421,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_brushed_steel",
+      "source_name": "brushed steel",
+      "base_color_rgba": [
+        0.5799999833106995,
+        0.6299999952316284,
+        0.6299999952316284,
+        1.0
+      ],
+      "roughness": 0.3199999928474426,
+      "metallic": 0.75,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_cardboard",
+      "source_name": "cardboard",
+      "base_color_rgba": [
+        0.44999998807907104,
+        0.28999999165534973,
+        0.12999999523162842,
+        1.0
+      ],
+      "roughness": 0.8199999928474426,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_charcoal",
+      "source_name": "charcoal",
+      "base_color_rgba": [
+        0.04500000178813934,
+        0.05900000035762787,
+        0.05700000002980232,
+        1.0
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_concrete",
+      "source_name": "concrete",
+      "base_color_rgba": [
+        0.4000000059604645,
+        0.4300000071525574,
+        0.4099999964237213,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_cream_paper",
+      "source_name": "cream paper",
+      "base_color_rgba": [
+        0.9100000262260437,
+        0.8299999833106995,
+        0.6399999856948853,
+        1.0
+      ],
+      "roughness": 0.6399999856948853,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_deep_evergreen",
+      "source_name": "deep evergreen",
+      "base_color_rgba": [
+        0.014999999664723873,
+        0.07000000029802322,
+        0.04500000178813934,
+        1.0
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_eggplant",
+      "source_name": "eggplant",
+      "base_color_rgba": [
+        0.11500000208616257,
+        0.017999999225139618,
+        0.09000000357627869,
+        1.0
+      ],
+      "roughness": 0.25999999046325684,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_green_apple",
+      "source_name": "green apple",
+      "base_color_rgba": [
+        0.3799999952316284,
+        0.550000011920929,
+        0.07000000029802322,
+        1.0
+      ],
+      "roughness": 0.33000001311302185,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_ink",
+      "source_name": "ink",
+      "base_color_rgba": [
+        0.012000000104308128,
+        0.03999999910593033,
+        0.029999999329447746,
+        1.0
+      ],
+      "roughness": 0.550000011920929,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_leaf",
+      "source_name": "leaf",
+      "base_color_rgba": [
+        0.11999999731779099,
+        0.2800000011920929,
+        0.05999999865889549,
+        1.0
+      ],
+      "roughness": 0.5799999833106995,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_lemon",
+      "source_name": "lemon",
+      "base_color_rgba": [
+        0.8999999761581421,
+        0.699999988079071,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_oak",
+      "source_name": "oak",
+      "base_color_rgba": [
+        0.38999998569488525,
+        0.20999999344348907,
+        0.0949999988079071,
+        1.0
+      ],
+      "roughness": 0.4699999988079071,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_oak_light",
+      "source_name": "oak light",
+      "base_color_rgba": [
+        0.6200000047683716,
+        0.3799999952316284,
+        0.1599999964237213,
+        1.0
+      ],
+      "roughness": 0.4399999976158142,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_orange",
+      "source_name": "orange",
+      "base_color_rgba": [
+        0.8999999761581421,
+        0.2800000011920929,
+        0.014999999664723873,
+        1.0
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_porcelain",
+      "source_name": "porcelain",
+      "base_color_rgba": [
+        0.800000011920929,
+        0.8299999833106995,
+        0.7799999713897705,
+        1.0
+      ],
+      "roughness": 0.28999999165534973,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_red_plastic",
+      "source_name": "red plastic",
+      "base_color_rgba": [
+        0.5699999928474426,
+        0.05999999865889549,
+        0.03500000014901161,
+        1.0
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_sage_enamel",
+      "source_name": "sage enamel",
+      "base_color_rgba": [
+        0.18000000715255737,
+        0.2800000011920929,
+        0.17000000178813934,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_screen",
+      "source_name": "screen",
+      "base_color_rgba": [
+        0.02500000037252903,
+        0.30000001192092896,
+        0.25,
+        1.0
+      ],
+      "roughness": 0.25,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.017499999962747093,
+        0.21000000476837144,
+        0.17499999701976776
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_steel",
+      "source_name": "steel",
+      "base_color_rgba": [
+        0.3199999928474426,
+        0.36000001430511475,
+        0.36000001430511475,
+        1.0
+      ],
+      "roughness": 0.2800000011920929,
+      "metallic": 0.800000011920929,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_tape",
+      "source_name": "tape",
+      "base_color_rgba": [
+        0.6100000143051147,
+        0.4399999976158142,
+        0.23000000417232513,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_terrazzo_porcelain",
+      "source_name": "terrazzo porcelain",
+      "base_color_rgba": [
+        0.6600000262260437,
+        0.6899999976158142,
+        0.6399999856948853,
+        1.0
+      ],
+      "roughness": 0.33000001311302185,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_tile_grout",
+      "source_name": "tile grout",
+      "base_color_rgba": [
+        0.23999999463558197,
+        0.2800000011920929,
+        0.25999999046325684,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_warm_LED",
+      "source_name": "warm LED",
+      "base_color_rgba": [
+        1.0,
+        0.7699999809265137,
+        0.41999998688697815,
+        1.0
+      ],
+      "roughness": 0.20000000298023224,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        4.0,
+        3.0799999237060547,
+        1.6799999475479126
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_warm_plaster",
+      "source_name": "warm plaster",
+      "base_color_rgba": [
+        0.7400000095367432,
+        0.75,
+        0.6800000071525574,
+        1.0
+      ],
+      "roughness": 0.75,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": true
+    },
+    {
+      "material_id": "M_EG_white_label",
+      "source_name": "white label",
+      "base_color_rgba": [
+        0.9300000071525574,
+        0.9399999976158142,
+        0.8700000047683716,
+        1.0
+      ],
+      "roughness": 0.550000011920929,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    },
+    {
+      "material_id": "M_EG_yellow_safety",
+      "source_name": "yellow safety",
+      "base_color_rgba": [
+        0.9200000166893005,
+        0.6200000047683716,
+        0.05999999865889549,
+        1.0
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "two_sided": false,
+      "alpha_mode": "OPAQUE",
+      "emissive_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "transmission": 0.0,
+      "procedural_approximation": false
+    }
+  ],
+  "note": "Uniform PBR and original packaging textures. Blender procedural noise/bump are approximated, not baked. Original nodes remain in the .blend."
+}

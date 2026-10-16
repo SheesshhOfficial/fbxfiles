@@ -1,0 +1,21 @@
+{
+  "blender": "4.3.2",
+  "units": "METRIC",
+  "unit_scale": 1.0,
+  "file_images": 16,
+  "packed_images": 16,
+  "materials": 50,
+  "mesh_objects": 11316,
+  "viewport_modes": [
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID",
+    "SOLID"
+  ]
+}

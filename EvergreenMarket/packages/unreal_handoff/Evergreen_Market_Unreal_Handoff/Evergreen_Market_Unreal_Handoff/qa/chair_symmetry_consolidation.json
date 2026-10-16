@@ -1,0 +1,9 @@
+{
+  "merged_family": "StaffChair",
+  "kept_asset_id": "SM_EG_StaffChair_4136c31f6f",
+  "removed_redundant_asset_id": "SM_EG_StaffChair_8c703cc024",
+  "shared_placements": 4,
+  "vertex_surface_error_metres": 1.4140267921902705e-05,
+  "per_material_surface_area_match": true,
+  "reason": "The rear-facing source boxes are symmetric under 180-degree rotation but have a different vertex index order."
+}

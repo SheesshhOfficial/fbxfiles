@@ -1,0 +1,56 @@
+EVERGREEN MARKET — REUSABLE UNREAL MESH HANDOFF
+
+Open Evergreen_Market_Unreal_Ready.blend to inspect complete logical props in Blender.
+This is a separate conversion of the delivered supermarket. The original delivered
+Evergreen_Market.blend and original Blender package were not changed.
+
+WHAT TO READ
+1. docs/PROP_CATALOG.md: which complete objects should be disguises, conditional
+   small/large candidates, and fixed scenery.
+2. docs/PROP_ASSET_LIST.csv: exact prop mesh filenames, IDs, sizes and copy counts.
+3. docs/UNREAL_IMPORT_AND_PROP_HUNT.md: dry-run/sample/full editor import workflow,
+   material/collision limits, and integration with your existing E-to-disguise logic.
+4. qa/: measured conversion coverage, Blender FBX roundtrip and importer data tests.
+
+ARCHITECTURE
+One FBX per unique reusable asset. Each placement has a stable ID and transform.
+A can includes its body/lid/label; a mug includes its handle; a cart includes its
+basket/frame/handle/wheels. Copies share the mesh. Fixed fixture pieces also share
+meshes and are reconstructed as sector-based ISM components, not thousands of
+individual actors. The disguised character may reference the same Static Mesh.
+
+IMPORT
+Keep assets/, textures/, source/, materials.json and manifest.json together.
+source/import_supermarket_unreal.py defaults to a dry run and does nothing merely
+by loading it. Its sample phase must pass and be visually reviewed before full
+reconstruction. It creates new isolated content/maps and refuses overwrites.
+Python Editor Script Plugin and Editor Scripting Utilities are required in Unreal.
+The helper targets the documented UE 5.7 API; other versions may need adjustments.
+Do not run a full import blindly in your production project.
+
+HONEST LIMITS
+Unreal was not available here. This is not a tested Unreal project or completed
+gameplay Blueprint implementation. The importer creates a geometry/query staging
+map. Walking collision, lighting, navigation, networking and E input still belong
+to your game. Query boxes are conservative proxies, not precision hollow collision.
+The original PNG packaging and material identities are included. Unreal PBR
+materials approximate Blender procedural noise/bump and glass; the full original
+Blender material nodes remain in the new .blend. Joining parts can change generated
+procedural texture coordinates. Relight in Unreal. No LODs,
+lightmap quality, Nanite/performance budget or multiplayer balance is certified.
+
+REPRODUCE
+Requires the original Evergreen_Market.blend previously delivered, Blender 4.3.2,
+and this package. No third-party downloads or paid assets are required.
+  blender -b /path/to/original/Evergreen_Market.blend --python source/convert_supermarket.py
+  blender -b Evergreen_Market_Unreal_Ready.blend --python source/consolidate_symmetric_chairs.py
+  blender -b Evergreen_Market_Unreal_Ready.blend --python source/verify_handoff_blender.py
+  python source/test_import_contract.py
+The converter only writes this separate package directory. It never saves its input.
+Do not use Evergreen_Market_Unreal_Ready.blend as converter input. Check original SHA:
+48bc8102865423ec3da2cd66610b52bc57f551d21ab7388e8fbf63c8b26b694a
+
+Units in Blender: metres. Manifest transforms: Unreal centimetres. Do not apply
+another 100x scale. The import guide specifies exact axis and quaternion handling.
+CHECKSUMS.json covers the packaged files. The FBXs are independent assets rather
+than a combined building mesh; retain the manifest to reconstruct their placement.

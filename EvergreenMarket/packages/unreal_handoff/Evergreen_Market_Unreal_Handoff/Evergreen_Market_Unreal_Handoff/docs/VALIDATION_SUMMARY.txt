@@ -1,0 +1,27 @@
+EVERGREEN HANDOFF — VERIFIED DELIVERY SUMMARY
+
+256 unique reusable mesh assets; 11,316 scene placements.
+51 candidate prop mesh variants; 6,695 individually identified candidate placements.
+14,987 original renderable components covered exactly once; no missing or duplicate membership.
+50 named materials and 16 original packaging PNGs retained in the handoff.
+Original delivered Blender source hash unchanged.
+
+Blender 4.3.2 reopen and full FBX roundtrip: 256/256 passed.
+Checked mesh counts, dimensions, bottom-center pivots, geometry positions,
+triangle counts, material slot names and custom box collision presence.
+Maximum source assembly/quantization difference: 0.0336 mm.
+Coordinate-contract mathematical error: 0.000492 cm.
+All four chairs share one mesh after symmetric geometry verification.
+
+Geometry budget: 887,528 unique triangles, approximately
+10,772,616 triangles across all placements at full detail.
+This includes triangulated 3D lettering and curves, unlike the original mesh-only
+counts. It is a detailed authoring handoff, not an optimized target-platform build.
+Profile LODs/Nanite, lettering/detail cost, collision and shadows before shipping.
+
+Unreal editor importer: local Python syntax and 16 data-validation tests passed.
+Actual package references and sample/full planning are independently checked in
+IMPORTER_ACTUAL_PACKAGE_CHECKS.json. Unreal Engine was not available here.
+No UE import/runtime, gameplay, multiplayer, navmesh or performance pass is claimed.
+
+See PROP_CATALOG.md and PROP_ASSET_LIST.csv for the recommended disguise meshes.
