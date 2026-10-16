@@ -1,6 +1,37 @@
 @echo off
-setlocal
+setlocal EnableExtensions DisableDelayedExpansion
+echo SnipersAim Blender scene reassembly
+echo Folder: "%~dp0"
+echo.
+call :REASSEMBLE
+set "RESULT=%ERRORLEVEL%"
+echo.
+if "%RESULT%"=="0" (
+  echo Reassembly finished successfully. You can open the Blender file now.
+) else (
+  echo Reassembly stopped. The error message is shown above.
+)
+echo.
+echo Press any key to close this window.
+pause >nul
+exit /b %RESULT%
+
+:REASSEMBLE
 cd /d "%~dp0"
+if errorlevel 1 (
+  echo Cannot open the folder containing this script.
+  exit /b 1
+)
+where certutil.exe >nul 2>&1
+if errorlevel 1 (
+  echo Windows certutil.exe was not found. It is needed to verify the file.
+  exit /b 1
+)
+where findstr.exe >nul 2>&1
+if errorlevel 1 (
+  echo Windows findstr.exe was not found. It is needed to verify the file.
+  exit /b 1
+)
 set "OUT=SnipersAim_Dense_Canyon_v2.blend"
 set "TMP=SnipersAim_Dense_Canyon_v2.blend.reassembling"
 if exist "%OUT%" (
@@ -16,6 +47,7 @@ if exist "%TMP%" (
   echo A temporary file already exists. Inspect or move it first: %TMP%
   exit /b 1
 )
+echo Checking part 1 of 8...
 if not exist "SnipersAim_Dense_Canyon_v2.001.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.001.part. Pull the repository again.
   exit /b 1
@@ -24,7 +56,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.001.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.001.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.002.part" (
+)
+echo Checking part 2 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.002.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.002.part. Pull the repository again.
   exit /b 1
 )
@@ -32,7 +66,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.002.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.002.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.003.part" (
+)
+echo Checking part 3 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.003.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.003.part. Pull the repository again.
   exit /b 1
 )
@@ -40,7 +76,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.003.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.003.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.004.part" (
+)
+echo Checking part 4 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.004.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.004.part. Pull the repository again.
   exit /b 1
 )
@@ -48,7 +86,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.004.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.004.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.005.part" (
+)
+echo Checking part 5 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.005.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.005.part. Pull the repository again.
   exit /b 1
 )
@@ -56,7 +96,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.005.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.005.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.006.part" (
+)
+echo Checking part 6 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.006.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.006.part. Pull the repository again.
   exit /b 1
 )
@@ -64,7 +106,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.006.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.006.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.007.part" (
+)
+echo Checking part 7 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.007.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.007.part. Pull the repository again.
   exit /b 1
 )
@@ -72,7 +116,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.007.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.007.part
   exit /b 1
-)if not exist "SnipersAim_Dense_Canyon_v2.008.part" (
+)
+echo Checking part 8 of 8...
+if not exist "SnipersAim_Dense_Canyon_v2.008.part" (
   echo Missing part: SnipersAim_Dense_Canyon_v2.008.part. Pull the repository again.
   exit /b 1
 )
@@ -80,7 +126,9 @@ certutil -hashfile "SnipersAim_Dense_Canyon_v2.008.part" SHA256 | findstr /I /C:
 if errorlevel 1 (
   echo Checksum mismatch: SnipersAim_Dense_Canyon_v2.008.part
   exit /b 1
-)copy /b "SnipersAim_Dense_Canyon_v2.001.part"+"SnipersAim_Dense_Canyon_v2.002.part"+"SnipersAim_Dense_Canyon_v2.003.part"+"SnipersAim_Dense_Canyon_v2.004.part"+"SnipersAim_Dense_Canyon_v2.005.part"+"SnipersAim_Dense_Canyon_v2.006.part"+"SnipersAim_Dense_Canyon_v2.007.part"+"SnipersAim_Dense_Canyon_v2.008.part" "%TMP%" >nul
+)
+echo Joining the verified parts into the Blender file...
+copy /b "SnipersAim_Dense_Canyon_v2.001.part"+"SnipersAim_Dense_Canyon_v2.002.part"+"SnipersAim_Dense_Canyon_v2.003.part"+"SnipersAim_Dense_Canyon_v2.004.part"+"SnipersAim_Dense_Canyon_v2.005.part"+"SnipersAim_Dense_Canyon_v2.006.part"+"SnipersAim_Dense_Canyon_v2.007.part"+"SnipersAim_Dense_Canyon_v2.008.part" "%TMP%" >nul
 if errorlevel 1 exit /b 1
 certutil -hashfile "%TMP%" SHA256 | findstr /I /C:"6d9df542034455e209ba8a790d83afbe41f4c95f878e5789d725425bb029b123" >nul
 if errorlevel 1 (
@@ -93,4 +141,5 @@ if exist "%OUT%" (
 )
 move /-Y "%TMP%" "%OUT%" >nul
 if errorlevel 1 exit /b 1
-echo Created and SHA256-verified: %OUT%
+echo Created and SHA256-verified: "%CD%\%OUT%"
+exit /b 0
