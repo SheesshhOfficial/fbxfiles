@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 3247,
-    "sha256": "5d81aad7791b1b87a189203ce79cc0b06b4da4a71236df7f12f4101edcf8e745",
-    "git_blob_sha": "441de68092ec2f8cd2b18533d17f89b2ff970282"
+    "bytes": 3603,
+    "sha256": "27846f297fe40b270348e617a7c7a9e7e99e28979a48a5cab854a87b6ece6b8b",
+    "git_blob_sha": "cb769657e4cf15d2a2dad4d41820d443d4ad6649"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -58,6 +58,12 @@
     "bytes": 1905,
     "sha256": "c2e7db523f9cb57255f18d7448f3c6e028280acc0013a61632390cb1884cd489",
     "git_blob_sha": "9e9f5c61436d2bb2e773cffc1c4f8ef980606ea8"
+  },
+  {
+    "path": "docs/PROP_ACTOR_COMPATIBILITY_PILOT.md",
+    "bytes": 9302,
+    "sha256": "e3a0310659afd93b6fe3f52aad432c5ce6839e9e52b0925d60528587d4a95f33",
+    "git_blob_sha": "37a3c64e07cb18d457029815302d7096784182b5"
   },
   {
     "path": "docs/PROP_ASSET_LIST.csv",
@@ -222,6 +228,12 @@
     "git_blob_sha": "b170db71b4c4236ec7402940503932d9c1e5fccc"
   },
   {
+    "path": "qa/prop_pilot_local_tests.txt",
+    "bytes": 4866,
+    "sha256": "1be5f7a5359f260e164a8703231d057d59025855b3a460f555a62c05c4d744d9",
+    "git_blob_sha": "40a4474d2ee8478b1a84597c2ca822e69cb6da8b"
+  },
+  {
     "path": "source/blender/build_supermarket.py",
     "bytes": 40193,
     "sha256": "95232d04a252a4143ad0a36063bf65ae876cb7d50aecfa64a56a805a2cfd84f2",
@@ -300,6 +312,12 @@
     "git_blob_sha": "259c97517acc816f0c0c17c985577050b4df2b95"
   },
   {
+    "path": "source/unreal/setup_prop_actor_pilot.py",
+    "bytes": 15754,
+    "sha256": "eb2b7bc6dcdd578fcbd2ae1474c26f2b1975339107b423ac17525c6197952342",
+    "git_blob_sha": "4a99c648e3b8d7cf040ab411d1f4e70048925933"
+  },
+  {
     "path": "source/unreal/test_import_contract.py",
     "bytes": 7042,
     "sha256": "c5e76cfe72e74e6629673c95a165254ddb42b6738217e936a480271513f192b6",
@@ -310,6 +328,12 @@
     "bytes": 5380,
     "sha256": "33f4fc15d4d92e98660848f58ea5e37c3d8c96b6206f1ca07a57a06500fe2dd4",
     "git_blob_sha": "1197f28d6fb186d79e1721340df75259997d9f2c"
+  },
+  {
+    "path": "source/unreal/test_prop_actor_pilot.py",
+    "bytes": 4316,
+    "sha256": "632347e4f946c6a785af5f77de2b101dcbd551bd8f92115c1e0a3cae03f03eca",
+    "git_blob_sha": "b765d6d59ba525ac3fbced0a4fc3cbe7bb6410bc"
   },
   {
     "path": "source/unreal/verify_handoff_blender.py",

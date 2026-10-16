@@ -8,6 +8,10 @@ After extracting the handoff ZIP, copy the current `source/unreal/import_superma
 
 If the character falls through the map, use the [walk-test collision helper and finishing checklist](docs/WALK_COLLISION_AND_FINISHING.md). It adds reviewed floor/wall/fixture collision to a new map copy without reimporting assets. Dry run first; the new helper still needs an actual Unreal walk test.
 
+## Existing StaticMeshActor-based prop gameplay
+
+For a ChangeProp Blueprint that casts HitActor to StaticMeshActor, try the [four-prop compatibility pilot](docs/PROP_ACTOR_COMPATIBILITY_PILOT.md) after the walking collision step. It converts only four selected props in another map copy; the guide explains the separate floor-first Visibility trace risk.
+
 ## Download and open
 Download the repository ZIP (Code → Download ZIP), or clone this repository. All project files are under **EvergreenMarket/**.
 
