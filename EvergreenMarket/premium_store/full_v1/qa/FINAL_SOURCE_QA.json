@@ -1,0 +1,126 @@
+{
+  "title": "You want it You get it: independent final authored-source QA",
+  "status": "PASS_AUTHORED_SOURCE_ONLY",
+  "source": "premium_store_full_v1/YOU_WANT_IT_YOU_GET_IT_FULL_v1.blend",
+  "source_sha256": "6ea633d3dab618fab872f6394480786ee17009e8c9921c1e3fa4f2db002a1cf1",
+  "manifest_sha256": "22c8c32d2a733ca052deb94d7b084ceb2656fa3a919ed7b6cd6a1d0c8da81037",
+  "route_spec_sha256": "687584e51d751753f0a6a4a1c75a92b429067b33a4b4694274ad98e3549a3c03",
+  "independent_reports": {
+    "SOURCE_AUDIT": {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/SOURCE_AUDIT.json",
+      "sha256": "a95b94dac40ea84159728a8f6a2cc39fe5defb86ac314d244fc20a5ab0efac74",
+      "status": "PASS_SOURCE_ONLY",
+      "summary": {
+        "scene_objects": 6740,
+        "mesh_objects": 6614,
+        "unique_mesh_datablocks": 715,
+        "manifest_assets": 116,
+        "eligible_assets": 50,
+        "manifest_placements": 5899,
+        "eligible_placements": 5574,
+        "collision_objects": 231,
+        "render_closed_shells": 1473,
+        "render_negative_closed_shells": 0,
+        "classified_open_render_shells": 404,
+        "evaluated_modifier_meshes": 142,
+        "unmanifested_mesh_objects": 0,
+        "unclassified_render_objects": 0,
+        "context_inventory_records": 521,
+        "physical_context_placements": 114,
+        "intentional_nonblocking_context_objects": 407,
+        "cached_world_matrix_stale_objects": 0,
+        "opening_probes": 12,
+        "blocked_opening_probes": 0,
+        "packed_file_images": 71,
+        "foundation_source_probes": 0,
+        "materials": 101,
+        "manifest_lights": 68,
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    "LAYOUT_AUDIT": {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/LAYOUT_AUDIT.json",
+      "sha256": "7f46889ae0887e086b1e31125ea05670a6fab2a969c6f638f5d649b3320e379e",
+      "status": "PASS_SOURCE_LAYOUT_ONLY",
+      "summary": {
+        "placed_hulls": 9530,
+        "floor_hulls": 1,
+        "routes": 37,
+        "doors": 11,
+        "player_starts": 10,
+        "boundary_checks": 8,
+        "enclosure_checks": 10,
+        "uncovered_floor_area_m2": 0,
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    "INTERACTION_FACING_AUDIT": {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/INTERACTION_FACING_AUDIT.json",
+      "sha256": "0d0490dc6bcb9bd9f15a3209dfe77705da35b58a46e4869b1bc4eb0e05350bb5",
+      "status": "PASS_SOURCE_FACING_WITH_RUNTIME_REACH_UNTESTED",
+      "summary": {
+        "eligible_copies": 5574,
+        "vertical_bounds": 5574,
+        "central_shelf_copies": 144,
+        "outward_central_shelf_copies": 144,
+        "central_product_copies": 4320,
+        "outward_central_product_copies": 4320,
+        "guaranteed_vertical_misses_by_assumed_actor_origin_z_m": {
+          "0.9": 0,
+          "0.96": 0,
+          "1.0": 0,
+          "1.1": 0
+        },
+        "errors": 0
+      }
+    },
+    "LABEL_ORIENTATION_AUDIT": {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/LABEL_ORIENTATION_AUDIT.json",
+      "sha256": "6ca711db4996ade0beacb9da2fd77954bbb50299499be0326fe8f9c3090485d1",
+      "status": "PASS_SOURCE_PRINT_ORIENTATION_ONLY",
+      "summary": {
+        "assets_with_front_image_print": 22,
+        "front_print_faces": 425,
+        "backward_front_print_faces": 0,
+        "errors": 0
+      }
+    },
+    "LIGHT_ALIGNMENT_AUDIT": {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/LIGHT_ALIGNMENT_AUDIT.json",
+      "sha256": "811e416ba010eca8238fea79a3b5399f39610f8ac02b8b486013ec49389a2871",
+      "status": "PASS_SOURCE_LIGHT_ALIGNMENT_ONLY",
+      "summary": {
+        "default_area_lights": 67,
+        "aligned": 67,
+        "errors": 0,
+        "separately_excluded_render_lights": 1
+      }
+    },
+    "DISPLAY_APERTURE_AUDIT": {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/DISPLAY_APERTURE_AUDIT.json",
+      "sha256": "0206fa41982a8d04d9a7091e5863bc6ec731d7f9b3aeac6badc66d6198a84f4d",
+      "status": "PASS_SOURCE_DISPLAY_APERTURES_ONLY",
+      "summary": {
+        "fixture_copies": 17,
+        "eligible_stock_probes": 360,
+        "chilled_stock_probes": 330,
+        "deli_meat_fish_stock_probes": 30,
+        "clear_required_apertures": 360,
+        "errors": 0
+      }
+    }
+  },
+  "review_history": "Five build-review passes with an additional preserved access-refinement snapshot of pass five. Earlier failures and measured corrections remain in CHECKPOINT_REPORT_INDEX.json.",
+  "scope_limits": [
+    "Every eligible copy is an independent Blender mesh object with StaticMeshActor import intent and Prop tag. No actual Unreal actor import is asserted.",
+    "Vertical overlap and clear geometric approach paths are necessary source checks, not proof that the existing single-hit Visibility sphere reliably selects every copy.",
+    "Deli/meat/fish cases retain customer glazing; their thirty products require the explicitly measured open staff-side approach.",
+    "Unreal import, collision-channel readback, actual sphere traces, disguise behavior, Character root-capsule movement, multiplayer and performance remain untested here.",
+    "FBX and PBR derivative verification is reported separately by the export pipeline. This certificate does not substitute for it.",
+    "Blender area-light energy is recorded in source units. Unreal photometry and exposure remain unvalidated."
+  ],
+  "unreal_runtime_tested": false,
+  "source_live_hash_rechecked": true
+}

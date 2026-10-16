@@ -1,0 +1,32 @@
+{
+  "archive": "You_Want_It_You_Get_It_Full_Source_v1.zip",
+  "bytes": 43250495,
+  "sha256": "99edbb04a47d9c23e5ea36c94056cf60ebb1de9d142cb1baba2834a3f9fac6bd",
+  "parts": [
+    {
+      "name": "You_Want_It_You_Get_It_Full_Source_v1.zip.part01",
+      "bytes": 9437184,
+      "sha256": "e54bf1e3930ffaccbd3451c440b879a0d54965d962704a4328ff4a0aa1ec2890"
+    },
+    {
+      "name": "You_Want_It_You_Get_It_Full_Source_v1.zip.part02",
+      "bytes": 9437184,
+      "sha256": "41bd6ccc5729f658057894b641a4792200a79eefc4b4bf03d5b28c0493b32670"
+    },
+    {
+      "name": "You_Want_It_You_Get_It_Full_Source_v1.zip.part03",
+      "bytes": 9437184,
+      "sha256": "fce8fe6f8c8f4e670bb7ba286d4140807054280436ae540083a0e46ab8f80c61"
+    },
+    {
+      "name": "You_Want_It_You_Get_It_Full_Source_v1.zip.part04",
+      "bytes": 9437184,
+      "sha256": "5583c46bf466214ab878bf09b245f2de2f98756e44db008f03cbef99eaf5bde4"
+    },
+    {
+      "name": "You_Want_It_You_Get_It_Full_Source_v1.zip.part05",
+      "bytes": 5501759,
+      "sha256": "def8fdf71a713e56fa3efcce4ded2ed413c74c299e001a9174676ec27013557d"
+    }
+  ]
+}

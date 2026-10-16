@@ -1,12 +1,16 @@
 # Evergreen Market
 
-## Premium pantry source checkpoint
+## Complete premium Blender source
 
-[View the genuine Cycles aisle/product renders and packed Blender source](premium_store/slice_v1/) for **You want it You get it**. The frozen slice contains 488 individually eligible placements, 20 canonical assets and 42 authored collision hulls, with independent source checks and isolated packed-texture reopen validation. This is a Blender checkpoint, not a tested Unreal import. The accepted style is continuing into five documented full-store improvement passes.
+[Open the full-store source and five-pass QA](premium_store/full_v1/) for **You want it You get it**: 64 × 56 m, 5,574 individually eligible placements, 116 physical assets and 231 authored hulls. The packed Blender master opens independently. Final render/export derivatives are still being checked; this source checkpoint does not claim Unreal runtime validation.
+
+## Historical pantry source checkpoint (superseded)
+
+[View the genuine Cycles aisle/product renders and packed Blender source](premium_store/slice_v1/) for **You want it You get it**. The frozen slice contains 488 individually eligible placements, 20 canonical assets and 42 authored collision hulls, with independent source checks and isolated packed-texture reopen validation. This is a Blender checkpoint, not a tested Unreal import. The complete full-store successor incorporates five documented improvement passes. A later supplemental audit found two reversed open printed-label planes in this old slice; the full-store source corrects them and checks all printed fronts. Keep this checkpoint for historical review, not as the final export source.
 
 ## New store: You want it You get it
 
-[View the approved layout and updated store name](premium_store/design_name_revision/). The 64 × 56 m single-floor layout is approved; a detailed aisle slice is next for visual approval. [Earlier blockout views and Blender ZIP](premium_store/design_v1/) retain the historical name. Every eventual eligible placement must be individually transformable. These designs are not gameplay-ready imports; existing delivery versions below remain untouched.
+[View the approved layout and updated store name](premium_store/design_name_revision/). The 64 × 56 m single-floor layout is approved; the detailed aisle style was approved and expanded into the full-store version. [Earlier blockout views and Blender ZIP](premium_store/design_v1/) retain the historical name. Every eventual eligible placement must be individually transformable. These designs are not gameplay-ready imports; existing delivery versions below remain untouched.
 
 ## Controlled expansion: 16 original props
 

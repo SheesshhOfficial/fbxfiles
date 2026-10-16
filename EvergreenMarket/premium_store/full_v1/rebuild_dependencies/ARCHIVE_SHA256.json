@@ -1,0 +1,17 @@
+{
+  "archive": "You_Want_It_You_Get_It_Rebuild_Dependencies_v1.zip",
+  "bytes": 16669939,
+  "sha256": "3dca6e6009434ed19b332a529e930d8e8abb5029afccdd7bb10d455388319a6c",
+  "parts": [
+    {
+      "name": "You_Want_It_You_Get_It_Rebuild_Dependencies_v1.zip.part01",
+      "bytes": 9437184,
+      "sha256": "4e49096db7f2ec178fa5dcc6c59cb893dbf60140998f27ba62409beac8d1fa0e"
+    },
+    {
+      "name": "You_Want_It_You_Get_It_Rebuild_Dependencies_v1.zip.part02",
+      "bytes": 7232755,
+      "sha256": "2ca587686bff144153e435ed80a4e0c1c7451318ab7b0a5e9303f79d568a5047"
+    }
+  ]
+}

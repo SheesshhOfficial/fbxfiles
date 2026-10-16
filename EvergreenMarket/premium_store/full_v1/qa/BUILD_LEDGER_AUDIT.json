@@ -1,0 +1,170 @@
+{
+  "scope": "Written review-evidence reconciliation; source geometry and Unreal-runtime statuses remain separate.",
+  "ledger_sha256": "e423dd13dfd1db826b0d487c4dbf6b4c32508c6ad1cd3ae6a47536e17eb10575",
+  "source_sha256": "6ea633d3dab618fab872f6394480786ee17009e8c9921c1e3fa4f2db002a1cf1",
+  "status": "PASS_LEDGER_EVIDENCE",
+  "summary": {
+    "passes": 5,
+    "verified_report_references": 31,
+    "total_report_references": 31,
+    "errors": 0
+  },
+  "references": [
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_01/LAYOUT_AUDIT.json",
+      "declared_sha256": "28e47a0d2192c0a6ebb82e2ce0b0b163b260f53c959a31f9e4dfdd454b7adb2f",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_01/SOURCE_AUDIT.json",
+      "declared_sha256": "72a922299bc785d4e7ebf3cec30ef1a90ab28abc036077b85102003de3cdbf2a",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_02/INTERACTION_FACING_AUDIT.json",
+      "declared_sha256": "054d7bbb91c84cd45e25edddb8b9966aa9467fcd51408e7b9e9ccbe529191bed",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_02/LAYOUT_AUDIT.json",
+      "declared_sha256": "3ef69361342b9235d7d1bd154668e77c9f0ba9438fb2f79a260f277bbbe52a0b",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_02/SOURCE_AUDIT.json",
+      "declared_sha256": "229595e153aee1fa0d142fd645fd7a4abb88e993388a27293cc3dba8f5aaa076",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_02/SOURCE_CHANGES_FROM_01.json",
+      "declared_sha256": "b07574ab70c856fed191ed50e7f41b5373cbd47e8e888a55ddde79b74abd18b5",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_03/INTERACTION_FACING_AUDIT.json",
+      "declared_sha256": "5138bd8f64b30b429975b750cd8a59913b227a4ef4a07f242adeb6709fda86ae",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_03/LABEL_ORIENTATION_AUDIT.json",
+      "declared_sha256": "e6394214202d6dfd2a1951e5c18a205f60673f47fec9e7baddc437c05f135177",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_03/LAYOUT_AUDIT.json",
+      "declared_sha256": "5082eb8da5e31fc3d7599fce37d7fe51a726465e9853a9c9c2b186ae0ac5e28a",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_03/SOURCE_AUDIT.json",
+      "declared_sha256": "0e78e8b807c415d145a581c667db5130b8d00bd1954d1ffb83838cc4faccf913",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_03/SOURCE_CHANGES_FROM_02.json",
+      "declared_sha256": "1dcde6b8f4e8990556ad13056ec832df1502b2c3001c274dea74363fe337a6a1",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_04/INTERACTION_FACING_AUDIT.json",
+      "declared_sha256": "6a1b23a5a73b0184ce74e97e00c0e8ee7bf94785f29e203d457f39c50656a77e",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_04/LABEL_ORIENTATION_AUDIT.json",
+      "declared_sha256": "3747e4c0ecf8378ae9e03884366ed73d2be3b35a3f43a0460d0bccda3032bf49",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_04/LAYOUT_AUDIT.json",
+      "declared_sha256": "f9236b15d8e2da382d42aacbcc71be82532366f8a5d923588c8c3d94044ec83a",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_04/LIGHT_ALIGNMENT_AUDIT.json",
+      "declared_sha256": "3943c8b52ad5838ef18b34629858d57af068b92a34fc52d8db5dc74014349732",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_04/SOURCE_AUDIT.json",
+      "declared_sha256": "8265df940ea5cd58b90bceaa2da9dc10714da0480a81b5e0f1c70a0745a092cf",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_04/SOURCE_CHANGES_FROM_03.json",
+      "declared_sha256": "16d2e30ff4921d2e6dcfed8f5191456b340bedbfba5ef167d35df48dfe15ecf1",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/DISPLAY_APERTURE_AUDIT.json",
+      "declared_sha256": "0206fa41982a8d04d9a7091e5863bc6ec731d7f9b3aeac6badc66d6198a84f4d",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/INTERACTION_FACING_AUDIT.json",
+      "declared_sha256": "0d0490dc6bcb9bd9f15a3209dfe77705da35b58a46e4869b1bc4eb0e05350bb5",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/LABEL_ORIENTATION_AUDIT.json",
+      "declared_sha256": "6ca711db4996ade0beacb9da2fd77954bbb50299499be0326fe8f9c3090485d1",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/LAYOUT_AUDIT.json",
+      "declared_sha256": "7f46889ae0887e086b1e31125ea05670a6fab2a969c6f638f5d649b3320e379e",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/LIGHT_ALIGNMENT_AUDIT.json",
+      "declared_sha256": "811e416ba010eca8238fea79a3b5399f39610f8ac02b8b486013ec49389a2871",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/SOURCE_AUDIT.json",
+      "declared_sha256": "a95b94dac40ea84159728a8f6a2cc39fe5defb86ac314d244fc20a5ab0efac74",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05_final/SOURCE_CHANGES_FROM_05.json",
+      "declared_sha256": "7a3e391891c454bcd13989404ab2f6e2a6ebfc3a36a7ebec9e5826716c54c62e",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/DISPLAY_APERTURE_AUDIT.json",
+      "declared_sha256": "f4cab9b3ddcda0c9f4fb47186df9960dd1355e6cf3aafb38e37d628922b33da4",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/INTERACTION_FACING_AUDIT.json",
+      "declared_sha256": "7d6c472cdd0c0b0d6c0e5a1411208284a8ff01d1386e45bd0d77ea6b5e3d3131",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/LABEL_ORIENTATION_AUDIT.json",
+      "declared_sha256": "642392eebd7a53cc1f8900996f4898ba165f065e4a10a1aa71334d42785661df",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/LAYOUT_AUDIT.json",
+      "declared_sha256": "6dddf97e9636a961426b11ed1b41b186e6735041fff073f3151e5c60e97afa7c",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/LIGHT_ALIGNMENT_AUDIT.json",
+      "declared_sha256": "3505d21da99c5c2a51b81420d7039a741cf57a995174ffe6ce25d40904af0de1",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/SOURCE_AUDIT.json",
+      "declared_sha256": "3f502a2085fb82d1e2543a59d247e5917ceeb68c903fbcd717dd0f6c42e5a80c",
+      "verified": true
+    },
+    {
+      "path": "premium_store_full_qa_v1/checkpoint_05/SOURCE_CHANGES_FROM_04.json",
+      "declared_sha256": "6c5cc359e8a1a5581a1fbd0ffb20c3bde69f7ecea92b05809bf2cb1af3eabd9c",
+      "verified": true
+    }
+  ],
+  "errors": []
+}
