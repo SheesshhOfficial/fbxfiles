@@ -1,6 +1,30 @@
-.....................
+test_bootstrap_plain_exec (test_prop_batch_patch.Tests.test_bootstrap_plain_exec) ... ok
+test_collision_helpers_are_exact_proven_policy (test_prop_batch_patch.Tests.test_collision_helpers_are_exact_proven_policy) ... ok
+test_descending_multiple_same_group_shift_and_swap (test_prop_batch_patch.Tests.test_descending_multiple_same_group_shift_and_swap) ... ok
+test_dirty_editor_and_pie_rejected (test_prop_batch_patch.Tests.test_dirty_editor_and_pie_rejected) ... ok
+test_edited_selection_transform_rejected (test_prop_batch_patch.Tests.test_edited_selection_transform_rejected) ... ok
+test_exact_approved31_pass_and_historical42_rejected (test_prop_batch_patch.Tests.test_exact_approved31_pass_and_historical42_rejected) ... ok
+test_exact_source_and_counts (test_prop_batch_patch.Tests.test_exact_source_and_counts) ... ok
+test_failed_remove_and_ambiguous_mapping (test_prop_batch_patch.Tests.test_failed_remove_and_ambiguous_mapping) ... ok
+test_fixture_report_reject_partial_wrong_map_hash (test_prop_batch_patch.Tests.test_fixture_report_reject_partial_wrong_map_hash) ... ok
+test_fixture_wrong_same_count_missing_duplicate_unknown_rejected (test_prop_batch_patch.Tests.test_fixture_wrong_same_count_missing_duplicate_unknown_rejected) ... ok
+test_fixture_wrong_source_duplicate_source_and_missing_tag_rejected (test_prop_batch_patch.Tests.test_fixture_wrong_source_duplicate_source_and_missing_tag_rejected) ... ok
+test_no_pilot_reuse (test_prop_batch_patch.Tests.test_no_pilot_reuse) ... ok
+test_orchestration_save_reload_failure_and_backup_guards (test_prop_batch_patch.Tests.test_orchestration_save_reload_failure_and_backup_guards) ... ok
+test_reject_manifest_and_duplicate (test_prop_batch_patch.Tests.test_reject_manifest_and_duplicate) ... ok
+test_short_target_and_remap (test_prop_batch_patch.Tests.test_short_target_and_remap) ... ok
+test_spawn_replaces_pilot_identity (test_prop_batch_patch.Tests.test_spawn_replaces_pilot_identity) ... ok
+test_canonical_scale_and_candidate (test_prop_batch_selection.SelectionTests.test_canonical_scale_and_candidate) ... ok
+test_count_and_unique (test_prop_batch_selection.SelectionTests.test_count_and_unique) ... ok
+test_distributed (test_prop_batch_selection.SelectionTests.test_distributed) ... ok
+test_exact_original_transform (test_prop_batch_selection.SelectionTests.test_exact_original_transform) ... ok
+test_exclude_existing_pilot (test_prop_batch_selection.SelectionTests.test_exclude_existing_pilot) ... ok
+test_existing_geometry_and_risk (test_prop_batch_selection.SelectionTests.test_existing_geometry_and_risk) ... ok
+test_fingerprint_and_reproducible (test_prop_batch_selection.SelectionTests.test_fingerprint_and_reproducible) ... ok
+test_low_heights (test_prop_batch_selection.SelectionTests.test_low_heights) ... ok
+
 ----------------------------------------------------------------------
-Ran 21 tests in 2.121s
+Ran 24 tests in 1.712s
 
 OK
 PREFLIGHT ONLY: no map changes. Review the 16 selections; execute only after backup.
@@ -11,7 +35,7 @@ PREFLIGHT ONLY: no map changes. Review the 16 selections; execute only after bac
   "new_prop_count": 0,
   "remaining_ism_instances": 11312,
   "total_loose_props": 4,
-  "preserved_fixture_points": 42,
+  "preserved_fixture_points": 31,
   "preserved_collision_boxes": 694,
   "selected": [],
   "caveat": "Original placements retained. Shelf/pallet collision may occlude interaction; E and disguise fit require PIE testing. No Blueprint changes."

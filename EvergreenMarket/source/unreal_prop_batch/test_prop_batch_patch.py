@@ -56,6 +56,37 @@ class Tests(unittest.TestCase):
   for pie,dirty_map,dirty_asset in ((True,False,False),(False,True,False),(False,False,True)):
    u=types.SimpleNamespace(LevelEditorSubsystem=object(),get_editor_subsystem=lambda cls:types.SimpleNamespace(is_in_play_in_editor=lambda:pie),EditorLoadingAndSavingUtils=types.SimpleNamespace(get_dirty_map_packages=lambda:dirty_map,get_dirty_content_packages=lambda:dirty_asset))
    with self.assertRaises(ValueError):f.clean(u)
+ def fixture_case(self,keys):
+  layout=f.read(HERE.parent/'fixture_lighting_work/fixture_point_layout_v1.json')['lights']
+  lookup={p['key']:p for p in layout}
+  class Actor:
+   def __init__(self,key):self.key=key;self.tags=[f.TAG,f.PREFIX+key,'EMSourceFixture='+lookup.get(key,{'source_fixture_instance_id':'unknown'})['source_fixture_instance_id']]
+   def get_editor_property(self,name):return self.tags
+   def get_class(self):return 'point'
+   def get_name(self):return self.key
+  actors=[Actor(k) for k in keys]
+  u=types.SimpleNamespace(PointLight=types.SimpleNamespace(static_class=lambda:'point'))
+  ctx={'fixture_report':{'lights':layout},'fp':types.SimpleNamespace(_actors=lambda u:actors)}
+  return u,ctx,actors
+ def test_exact_approved31_pass_and_historical42_rejected(self):
+  u,ctx,actors=self.fixture_case(sorted(b.APPROVED_FIXTURE_KEYS))
+  self.assertEqual(set(b.fixture_identity(u,ctx,f)),b.APPROVED_FIXTURE_KEYS)
+  self.assertEqual(len(ctx['fixture_report']['lights']),42)
+  u,ctx,actors=self.fixture_case([p['key'] for p in ctx['fixture_report']['lights']])
+  with self.assertRaisesRegex(ValueError,'removed/restored'):b.fixture_identity(u,ctx,f)
+ def test_fixture_wrong_same_count_missing_duplicate_unknown_rejected(self):
+  correct=sorted(b.APPROVED_FIXTURE_KEYS)
+  cases=[correct[1:]+['Canopy_02'],correct[:-1],correct[:-1]+[correct[0]],correct[:-1]+['Unknown_01']]
+  for keys in cases:
+   u,ctx,actors=self.fixture_case(keys)
+   with self.assertRaises(ValueError):b.fixture_identity(u,ctx,f)
+ def test_fixture_wrong_source_duplicate_source_and_missing_tag_rejected(self):
+  for mode in ('wrong_source','duplicate_source','missing_tag'):
+   u,ctx,actors=self.fixture_case(sorted(b.APPROVED_FIXTURE_KEYS))
+   if mode=='wrong_source':actors[0].tags[-1]='EMSourceFixture=wrong'
+   elif mode=='duplicate_source':actors[0].tags.append(actors[0].tags[-1])
+   else:actors[0].tags.remove(f.TAG)
+   with self.assertRaises(ValueError):b.fixture_identity(u,ctx,f)
  def test_short_target_and_remap(self):
   target=b.target_map('20261016_210000_1234abcd');self.assertLess(len(target),120);self.assertLess(len('G:/Games/SheeshhPropHuntYT/Content/'+target[6:]+'.umap'),180)
   import fresh_preview_setup as fp

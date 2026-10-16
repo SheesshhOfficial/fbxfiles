@@ -7,6 +7,9 @@ import uuid
 from pathlib import Path
 from datetime import datetime, timezone
 TAG='EvergreenPropBatchV1'
+# User-approved current scene: eleven canopy points intentionally removed.
+# Historical successful 42-light report remains immutable provenance.
+APPROVED_FIXTURE_KEYS=frozenset(['Fixture_%02d'%i for i in range(1,26)]+['Canopy_01','Canopy_07','Canopy_12','Canopy_15','ExteriorWall_01','ExteriorWall_02'])
 SCHEMA='evergreen-prop-batch-v1'
 APPROVED_IDS=('EGI_0f8d6343f4f54f9d', 'EGI_5451cd109bab56e9', 'EGI_01eca130f35d655e', 'EGI_7ff75102d10dd13b', 'EGI_4c0fd92658e86b28', 'EGI_3ba9a0d6328c5647', 'EGI_3013a88f914ebc03', 'EGI_869f7db65feb4ccd', 'EGI_33de12349a45541a', 'EGI_9dfa86a010edad0a', 'EGI_b74ac46863b43864', 'EGI_4c207ecbd1ac569b', 'EGI_4fb051d8175da0d7', 'EGI_18fc8f491c214f5f', 'EGI_40290a2b7eaefcbc', 'EGI_9ca5fc6b0e622d49')
 DEFAULT_STATE=r'C:\Art\Evergreen_Native_Run_01\run_state.json'
@@ -79,15 +82,21 @@ def remove_selected(component,rows,ids,to_transform):
     return remap_survivors(component,survivors,to_transform),removed
 
 def fixture_identity(u,ctx,f):
-    expected={p['key']:p for p in ctx['fixture_report']['lights']};found={}
+    historical=ctx['fixture_report']['lights']
+    expected={p['key']:p for p in historical};found={}
+    check(len(historical)==42 and len(expected)==42 and APPROVED_FIXTURE_KEYS.issubset(expected),'Historical fixture provenance/key set mismatch')
     for a in ctx['fp']._actors(u):
         tags=[str(t) for t in a.get_editor_property('tags')]
-        if f.TAG not in tags:continue
         keys=[t[len(f.PREFIX):] for t in tags if t.startswith(f.PREFIX)]
-        check(len(keys)==1 and keys[0] in expected and keys[0] not in found,'Fixture identity mismatch')
-        p=expected[keys[0]];check(a.get_class()==u.PointLight.static_class() and 'EMSourceFixture='+p['source_fixture_instance_id'] in tags,'Fixture class/source mismatch')
+        if f.TAG not in tags:
+            check(not keys,'Fixture identity tag missing');continue
+        check(len(keys)==1 and keys[0] in APPROVED_FIXTURE_KEYS and keys[0] not in found,'Fixture identity mismatch: removed/restored, unknown or duplicate key')
+        p=expected[keys[0]]
+        sources=[t[len('EMSourceFixture='):] for t in tags if t.startswith('EMSourceFixture=')]
+        check(a.get_class()==u.PointLight.static_class() and sources==[p['source_fixture_instance_id']],'Fixture class/source mismatch')
         found[keys[0]]=a.get_name()
-    check(len(found)==42,'Expected exactly 42 fixture points')
+    check(set(found)==APPROVED_FIXTURE_KEYS,'Expected exact approved 31 fixture points; a retained light is missing')
+    return found
 
 def mesh_snapshot(u,ctx,f):
     current=ctx['fp']._current(u);out={}
@@ -128,7 +137,7 @@ def verify(u,ctx,plan,f,before,meshes):
     remaining=[p['instance_id'] for g in pilot['remaining_scene']['groups'].values() for p in g['instances']]
     old={p['instance_id'] for p in pilot['promoted']}
     check(len(remaining)==11312-len(expected) and not set(remaining)&(set(expected)|old) and len(remaining)+len(old)+len(expected)==11316,'Source total/duplicate visual mismatch')
-    return dict(remaining_ism_instances=len(remaining),old_pilot_actors=4,new_prop_actors=len(expected),combined_original_placements=11316,fixture_points=42,collision_boxes=694)
+    return dict(remaining_ism_instances=len(remaining),old_pilot_actors=4,new_prop_actors=len(expected),combined_original_placements=11316,fixture_points=31,collision_boxes=694)
 
 def run(folder,state_file=DEFAULT_STATE,fixture_report=DEFAULT_REPORT,*,execute=False,backup_confirmed=False):
     folder=Path(folder).resolve();f=support(folder);ctx=context(f,state_file,fixture_report)
@@ -147,9 +156,9 @@ def run(folder,state_file=DEFAULT_STATE,fixture_report=DEFAULT_REPORT,*,execute=
         transforms=[ctx['em']._transform(u,p) for p in ctx['pilot']['remaining_scene']['groups'][key]['instances']]
         check(all(not near(a,b) for i,a in enumerate(transforms) for b in transforms[i+1:]),'Ambiguous duplicate source transforms in affected group')
     before=f.snapshot(u,ctx,set());meshes=mesh_snapshot(u,ctx,f)
-    result=dict(schema=SCHEMA,status='dry_run',source_map=SOURCE,protected_hashes=ctx['hashes'],plan=plan,new_prop_count=len(plan['promoted']),preserved_actor_snapshot=before,preserved_mesh_snapshot=meshes,gameplay_verified=False,blueprint_modified=False,unreal_runtime_previously_tested=False)
+    result=dict(schema=SCHEMA,status='dry_run',source_map=SOURCE,protected_hashes=ctx['hashes'],plan=plan,new_prop_count=len(plan['promoted']),preserved_fixture_points=31,approved_fixture_keys=sorted(APPROVED_FIXTURE_KEYS),historical_fixture_report_count=42,preserved_actor_snapshot=before,preserved_mesh_snapshot=meshes,gameplay_verified=False,blueprint_modified=False,unreal_runtime_previously_tested=False)
     if not execute:
-        summary=dict(status='dry_run_no_changes',source_map=SOURCE,target_prefix=target_map('UNIQUE'),new_prop_count=len(plan['promoted']),remaining_ism_instances=11312-len(plan['promoted']),total_loose_props=4+len(plan['promoted']),preserved_fixture_points=42,preserved_collision_boxes=694,selected=[dict(id=p['instance_id'],label=p['label'],xyz_cm=p['target_placement']['location_cm']) for p in plan['promoted']],caveat='Original placements retained. Shelf/pallet collision may occlude interaction; E and disguise fit require PIE testing. No Blueprint changes.')
+        summary=dict(status='dry_run_no_changes',source_map=SOURCE,target_prefix=target_map('UNIQUE'),new_prop_count=len(plan['promoted']),remaining_ism_instances=11312-len(plan['promoted']),total_loose_props=4+len(plan['promoted']),preserved_fixture_points=31,preserved_collision_boxes=694,selected=[dict(id=p['instance_id'],label=p['label'],xyz_cm=p['target_placement']['location_cm']) for p in plan['promoted']],caveat='Original placements retained. Shelf/pallet collision may occlude interaction; E and disguise fit require PIE testing. No Blueprint changes.')
         print(json.dumps(summary,indent=2));return result
     check(backup_confirmed is True,'Save and back up project; pass backup_confirmed=True')
     f.clean(u);f.unchanged(ctx['hashes'])

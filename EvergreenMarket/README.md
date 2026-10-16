@@ -2,7 +2,7 @@
 
 ## Controlled expansion: 16 original props
 
-Use the small [prop-batch ZIP](packages/prop_batch/Evergreen_Prop_Batch.zip) and [two-command guide](docs/PROP_BATCH.md) on the successful fixture-lit v2 map. It creates a separate short-named map with 16 additional original-position cans, bottles, cartons and boxes, preserving the four existing props, 42 lights and 694 walking colliders. Dry-run first. Offline tests passed; actual E interaction and multiplayer still need playtesting.
+Use the small [prop-batch ZIP](packages/prop_batch/Evergreen_Prop_Batch.zip) and [two-command guide](docs/PROP_BATCH.md) on the successful fixture-lit v2 map. It creates a separate short-named map with 16 additional original-position cans, bottles, cartons and boxes, preserving the four existing props, the user-approved 31 remaining lights and 694 walking colliders. Dry-run first. Offline tests passed; actual E interaction and multiplayer still need playtesting.
 
 ## Fixture-aligned lighting for a working v2 map
 
