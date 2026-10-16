@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "test": "outward_closed_cube_positive_volume",
+      "passed": true
+    },
+    {
+      "test": "outward_cube_convex",
+      "passed": true
+    },
+    {
+      "test": "inward_cube_negative_volume",
+      "passed": true
+    },
+    {
+      "test": "inward_cube_fails_outward_halfspaces",
+      "passed": true
+    },
+    {
+      "test": "inward_shell_not_hidden_by_aggregate",
+      "passed": true
+    },
+    {
+      "test": "open_label_distinguished_from_inward_solid",
+      "passed": true
+    },
+    {
+      "test": "dented_hull_rejected",
+      "passed": true
+    },
+    {
+      "test": "signed_volume_translation_stable",
+      "passed": true
+    },
+    {
+      "test": "authored_hidden_transform_uses_location",
+      "passed": true
+    },
+    {
+      "test": "point_probe_accounts_for_hidden_hull_translation",
+      "passed": true
+    },
+    {
+      "test": "opening_probe_outside_shifted_hull_is_clear",
+      "passed": true
+    }
+  ]
+}

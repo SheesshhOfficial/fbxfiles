@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 7770,
-    "sha256": "5b980958b8ad19d6d11429eb448508e3037a9e95dba66dbcb0151c2c2434d759",
-    "git_blob_sha": "c31de5a2d5ae5638135e38647730b4ecdaae2e4a"
+    "bytes": 8277,
+    "sha256": "ea0a10200a6111bc51834665dc3fe0d055da0647cbef39ba0784e87831bf546e",
+    "git_blob_sha": "c2a308b1bbec3d9bf64b856446d94163252d286c"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -466,6 +466,162 @@
     "bytes": 2869,
     "sha256": "ba262101ad9f7ea519bb23d00e46ba6f694df0965051d17036ad1c50584c63a4",
     "git_blob_sha": "7c8692953117f96a6e246e6a7117cf77ef397080"
+  },
+  {
+    "path": "premium_store/slice_v1/ASSET_COLLISION_QA.json",
+    "bytes": 17406,
+    "sha256": "b3c0e6a9f106224b9f2c3acaecbad5ea8953aec35e7de9e3017f40d1251dc4af",
+    "git_blob_sha": "9ceda1e2262cbc7f5fa3dd241981c1cf81cddc05"
+  },
+  {
+    "path": "premium_store/slice_v1/EXPORT_MANIFEST.json",
+    "bytes": 411158,
+    "sha256": "18524eb8104c2af6957e1f6d049f36404d8f043d59c9076422f7c15ec42575e4",
+    "git_blob_sha": "e66701abfbd150d3348c305f0ba9188c8ce66acf"
+  },
+  {
+    "path": "premium_store/slice_v1/PACKED_REOPEN_VALIDATION.json",
+    "bytes": 3458,
+    "sha256": "03eb843f526c21baf0d8b9abc02ad72b91bcb7ac25b795b38b60caec44961f35",
+    "git_blob_sha": "a176a310c5f632f2ff1160c7c0d5e2512e727c82"
+  },
+  {
+    "path": "premium_store/slice_v1/PACKED_TEXTURE_VALIDATION.json",
+    "bytes": 1918,
+    "sha256": "c806ef3f5ab56c1f42b934dc77a6631e45f4e239cf0a40dbe1c49f17e31af42f",
+    "git_blob_sha": "670fdd8670f4c9e84e5037f6fe05083bd0aece99"
+  },
+  {
+    "path": "premium_store/slice_v1/README.md",
+    "bytes": 3079,
+    "sha256": "16fdc2e186b89e34ac43c3e0c2119971a6adb6c2fddfd560af78b5029f81ccac",
+    "git_blob_sha": "06c859a7314f66f754fb41511cde26956a7fde1b"
+  },
+  {
+    "path": "premium_store/slice_v1/RENDER_VALIDATION.json",
+    "bytes": 741,
+    "sha256": "499c68eb7e738cab65e4f9feb6b6c416ced9995afea846ddb34236b1931c7c17",
+    "git_blob_sha": "3c0606bd98d949a6153c0b187382b1a747035197"
+  },
+  {
+    "path": "premium_store/slice_v1/REPRODUCE.md",
+    "bytes": 3227,
+    "sha256": "3c35a4c9bc163aaaaddf4c927b7095f0a3610f845d0d9464bcd714f870ee8949",
+    "git_blob_sha": "8a2953098abe6123312fba34bf37e199d02d4e7f"
+  },
+  {
+    "path": "premium_store/slice_v1/SHA256SUMS.txt",
+    "bytes": 110,
+    "sha256": "eb62e457f0930dbd3c83d4853a1299faeb1f9b4f67544cc3a81b32bd5309c869",
+    "git_blob_sha": "ac7bdf2217dd935c091175b3fcea93589bd8071a"
+  },
+  {
+    "path": "premium_store/slice_v1/SLICE_01_AISLE_CYCLES.png",
+    "bytes": 3143595,
+    "sha256": "1709285e2caac52de73a6749e75853b9c32201ccb42a8a53735ee502afd3b90a",
+    "git_blob_sha": "6a8e172593edf6276424aa885e7b8e9581b6455b"
+  },
+  {
+    "path": "premium_store/slice_v1/SLICE_02_PRODUCT_DETAIL_CYCLES.png",
+    "bytes": 2615425,
+    "sha256": "d25d7825103745b07e57b3124d3c0173954c062b9a097f0d7dc350ff5d6dbc24",
+    "git_blob_sha": "2ac0c4272f8c061f022ad1d1285e94f729a465e7"
+  },
+  {
+    "path": "premium_store/slice_v1/You_Want_It_You_Get_It_Pantry_Source_v1.zip",
+    "bytes": 8848877,
+    "sha256": "b8cf0af282d289b792d37561d47fefd19fb8e3bad1f5b4a5f6deb98bd6f0dc07",
+    "git_blob_sha": "7995f12b2d985b115f08e400e62375ccdbfccae4"
+  },
+  {
+    "path": "premium_store/slice_v1/build_premium_slice.py",
+    "bytes": 30042,
+    "sha256": "b2c9e7915700f558400d6804846b60dd038a78fb0be9abe6d0e808e1a5c83fee",
+    "git_blob_sha": "1c6b3ef3bf98907be8f6a9f542e9fd50b279a1d4"
+  },
+  {
+    "path": "premium_store/slice_v1/check_isolated_reopen.py",
+    "bytes": 1136,
+    "sha256": "1e5d7fc5931aa19f25b3444d8c6e9a8e533570d1cce16ae802a1679d72c64dba",
+    "git_blob_sha": "b522b6f8379da8866732706927cfa276af1aa668"
+  },
+  {
+    "path": "premium_store/slice_v1/complete_source_contract.py",
+    "bytes": 9388,
+    "sha256": "5e2f4f79ed54b196c00606496374142e2431cccadfe5183988ec242cffe1e3f3",
+    "git_blob_sha": "bc20161a2248809c96118f7b6fbb5bb17564070c"
+  },
+  {
+    "path": "premium_store/slice_v1/finalize_scene.py",
+    "bytes": 3272,
+    "sha256": "a77c44dd7041e498b51aa11c20868a3553a7017eaff5adc8fbd80622566b72f5",
+    "git_blob_sha": "5713aa467895ff84b290cd88774e7ff1d6f28653"
+  },
+  {
+    "path": "premium_store/slice_v1/pack_relative_assets.py",
+    "bytes": 1086,
+    "sha256": "5d1c544b7618abde3fb3bb6efc4c538716d285b4ec2c4ec25da3e9bd932b5871",
+    "git_blob_sha": "8175152f6e9fb22ba3132f221d6204ff21528b25"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/COLLISION_EXPORT_ACCEPTANCE.md",
+    "bytes": 7105,
+    "sha256": "8c9923e486703197b48227bf35950060c4927922d568f2155d69173c98835f13",
+    "git_blob_sha": "0b444c23ee519243cddb844fbfde462962c4bea7"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/SOURCE_AUDIT_FINAL.json",
+    "bytes": 2054825,
+    "sha256": "8c41377672b4c772274ac1c9e2c4d7663681938f8e2338a235354aabc73222d1",
+    "git_blob_sha": "6c7cece3c580b474dd18f4fee692746efbdce5ce"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/SOURCE_QA_SUMMARY.md",
+    "bytes": 4268,
+    "sha256": "72cbbf9daa448dc0ad2894cd0daf1ba2afd6cc7dd10cffbbf80896057e48ddfe",
+    "git_blob_sha": "cc0bafb5392ab254cdd07873ddd348d4bb5af261"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/audit_blender_slice.py",
+    "bytes": 37574,
+    "sha256": "99643e2631999c312338ebcbd7458562ba54f7c98372b10fd08c07acb5943213",
+    "git_blob_sha": "7fd1d9a119c698a211e013461191bc10348b5119"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/independent_opening_probes.json",
+    "bytes": 881,
+    "sha256": "91e36076bcbd5400bc3eb5d5183d473d2557690b931912601338c9a3dddc9c42",
+    "git_blob_sha": "7228410a4bf5d5f3643e77b67c367a16c4ac36e7"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/test_audit_geometry.py",
+    "bytes": 3537,
+    "sha256": "aeb249b0339c6b4bff7af57e5ae5b017bbd8196689946da15aa3ae6828ee2431",
+    "git_blob_sha": "968f451ca12b42a0bf009a466a50018a3e527520"
+  },
+  {
+    "path": "premium_store/slice_v1/qa/validator_self_tests.json",
+    "bytes": 988,
+    "sha256": "1dd6d58641759dc6e3bb664aaa445a3db0e6518b261c34d50941f6768d3e5ac7",
+    "git_blob_sha": "6b3389540c95dd166ef35855cdc933741c2ddaaf"
+  },
+  {
+    "path": "premium_store/slice_v1/rebuild_slice.py",
+    "bytes": 820,
+    "sha256": "27fcc34627b7c36540242bca4aa9be24a50024787499db7052b1af2f9f02d9dc",
+    "git_blob_sha": "7e932d785be9ea52094ad7f78556711c32f7bd3e"
+  },
+  {
+    "path": "premium_store/slice_v1/refine_product_composition.py",
+    "bytes": 1176,
+    "sha256": "123f1daf21bbcea1c7a9dfea85c4591baaf168161552a042f33c263ff6eb5051",
+    "git_blob_sha": "ce05c77a35677d6615604fdad3d45076f17cd3d3"
+  },
+  {
+    "path": "premium_store/slice_v1/render_slice.py",
+    "bytes": 1656,
+    "sha256": "6bbe54589d4f8e3b1dd1990effe5ec8de2d921373d03525b40bb62c4be4adf58",
+    "git_blob_sha": "da0638a9824a1331332aa37c772160001a8760f8"
   },
   {
     "path": "previews/01_Interior_Filtered_Test.png",

@@ -1,0 +1,98 @@
+{
+  "master_sha256": "fb52a3daa3e403a9853d37d1350b67989bfc18b1d495a54c7623bc8562707a60",
+  "all_ten_labels_packed": true,
+  "all_texture_paths_relative": true,
+  "textures": [
+    {
+      "image": "almond_granola.png",
+      "filepath": "//textures/almond_granola.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "bronze_pasta.png",
+      "filepath": "//textures/bronze_pasta.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "chickpeas.png",
+      "filepath": "//textures/chickpeas.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "coffee.png",
+      "filepath": "//textures/coffee.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "crushed_tomatoes.png",
+      "filepath": "//textures/crushed_tomatoes.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "olive_oil.png",
+      "filepath": "//textures/olive_oil.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "rolled_oats.png",
+      "filepath": "//textures/rolled_oats.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "sea_salt.png",
+      "filepath": "//textures/sea_salt.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "strawberry_preserve.png",
+      "filepath": "//textures/strawberry_preserve.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    },
+    {
+      "image": "wildflower_honey.png",
+      "filepath": "//textures/wildflower_honey.png",
+      "packed": true,
+      "size": [
+        600,
+        850
+      ]
+    }
+  ],
+  "isolated_reopen": "See PACKED_REOPEN_VALIDATION.json"
+}

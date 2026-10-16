@@ -1,0 +1,762 @@
+{
+  "units": "metres; Unreal import must use metre-to-centimetre conversion 100",
+  "scope": "One pantry aisle vertical slice only",
+  "all_gameplay_checks": "NOT RUN",
+  "asset_checks": [
+    {
+      "asset_id": "crushed_tomatoes",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.000985446807076265,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_crushed_tomatoes_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "chickpeas",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.000985446807076265,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_chickpeas_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "coffee",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0020314438161263227,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_coffee_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "olive_oil",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0013107607536930188,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 2,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_olive_oil_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_MV_olive_oil_01",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "wildflower_honey",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0012334244767248548,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_wildflower_honey_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "strawberry_preserve",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.001075699346312113,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_strawberry_preserve_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "rolled_oats",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0034513061098914765,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_rolled_oats_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "almond_granola",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0030602222961296824,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_almond_granola_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "bronze_pasta",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0016779750557956072,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_bronze_pasta_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "sea_salt",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0006111358860712769,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 1,
+      "collision_details": [
+        {
+          "object": "UCX_SM_MV_sea_salt_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "shopping_basket",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.0008557219572938919,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 11,
+      "collision_details": [
+        {
+          "object": "UCX_SM_EG_Basket_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_01",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_02",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_03",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_04",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_05",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_06",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_07",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_08",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_09",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_Basket_10",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "premium_shelf_bay",
+      "render_zero_area_faces": 0,
+      "render_signed_volume_m3": 0.7532825414837482,
+      "canonical_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pivot_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "all_collision_hulls_positive_watertight": true,
+      "collision_hull_count": 12,
+      "collision_details": [
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_00",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_01",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_02",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_03",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_04",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_05",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_06",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_07",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_08",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_09",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_10",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "object": "UCX_SM_EG_PremiumShelfBay_11",
+          "positive_volume": true,
+          "watertight": true,
+          "zero_area_faces": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "asset_id": "context_floor_slab",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_ceiling",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_end_wall",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_end_wall_oak_dado",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_warm_side_wall",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_warm_side_wall_001",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_end_tasting_console",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    },
+    {
+      "asset_id": "context_console_stone_top",
+      "canonical_scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_origin_m": [
+        0,
+        0,
+        0
+      ],
+      "pivot_type": "geometric centre; deliberate structural pivot",
+      "collision_hull_count": 1,
+      "all_collision_hulls_positive_watertight": true,
+      "render_zero_area_faces": 0
+    }
+  ],
+  "placement_count": 488,
+  "unique_eligible_assets": 11,
+  "fixture_placements": 6,
+  "fixture_bay_aisle_clear_m": 2.95,
+  "warnings": [],
+  "all_placement_scales_unit": true,
+  "unique_stable_ids": true,
+  "eligible_placement_material_overrides": 0,
+  "collision_object_transforms_baked": true,
+  "display_store_name": "You want it You get it",
+  "visual_context_export_qualification": "Every context object classified; physical structures and console have authored simple source collision; Unreal validation not run",
+  "rendering": "Cycles CPU; no denoiser available, high-sample render",
+  "context_physical_assets": 8,
+  "context_authored_hulls": 8,
+  "total_authored_hulls": 42,
+  "side_typography_fitted": true,
+  "independent_audit_required_after_changes": true
+}

@@ -1,0 +1,19 @@
+{
+  "shopping_basket": [
+    {"name": "basket cavity centre", "point": [0, 0, 0.15]},
+    {"name": "basket cavity left", "point": [-0.12, 0, 0.15]},
+    {"name": "basket cavity right", "point": [0.12, 0, 0.15]},
+    {"name": "basket upper opening", "point": [0, 0, 0.25]},
+    {"name": "front handle hand opening", "point": [0, -0.095, 0.30]},
+    {"name": "rear handle hand opening", "point": [0, 0.095, 0.30]}
+  ],
+  "premium_shelf_bay": [
+    {"name": "bottom shelf bay", "point": [0, -0.10, 0.45]},
+    {"name": "second shelf bay", "point": [0, -0.10, 0.85]},
+    {"name": "middle shelf bay", "point": [0, -0.10, 1.23]},
+    {"name": "fourth shelf bay", "point": [0, -0.10, 1.60]},
+    {"name": "top shelf bay", "point": [0, -0.10, 2.00]},
+    {"name": "front access left", "point": [-0.60, -0.40, 1.23]},
+    {"name": "front access right", "point": [0.60, -0.40, 1.23]}
+  ]
+}

@@ -1,5 +1,9 @@
 # Evergreen Market
 
+## Premium pantry source checkpoint
+
+[View the genuine Cycles aisle/product renders and packed Blender source](premium_store/slice_v1/) for **You want it You get it**. The frozen slice contains 488 individually eligible placements, 20 canonical assets and 42 authored collision hulls, with independent source checks and isolated packed-texture reopen validation. This is a Blender checkpoint, not a tested Unreal import. The accepted style is continuing into five documented full-store improvement passes.
+
 ## New store: You want it You get it
 
 [View the approved layout and updated store name](premium_store/design_name_revision/). The 64 × 56 m single-floor layout is approved; a detailed aisle slice is next for visual approval. [Earlier blockout views and Blender ZIP](premium_store/design_v1/) retain the historical name. Every eventual eligible placement must be individually transformable. These designs are not gameplay-ready imports; existing delivery versions below remain untouched.

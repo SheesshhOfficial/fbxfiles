@@ -1,0 +1,29 @@
+{
+  "master_sha256": "fb52a3daa3e403a9853d37d1350b67989bfc18b1d495a54c7623bc8562707a60",
+  "engine": "Blender 4.3.2 Cycles CPU",
+  "max_samples": 512,
+  "adaptive_threshold": 0.015,
+  "denoising": false,
+  "images": [
+    {
+      "file": "SLICE_01_AISLE_CYCLES.png",
+      "dimensions": [
+        1500,
+        1100
+      ],
+      "sha256": "1709285e2caac52de73a6749e75853b9c32201ccb42a8a53735ee502afd3b90a",
+      "bytes": 3143595,
+      "visually_inspected": true
+    },
+    {
+      "file": "SLICE_02_PRODUCT_DETAIL_CYCLES.png",
+      "dimensions": [
+        1500,
+        1100
+      ],
+      "sha256": "d25d7825103745b07e57b3124d3c0173954c062b9a097f0d7dc350ff5d6dbc24",
+      "bytes": 2615425,
+      "visually_inspected": true
+    }
+  ]
+}
