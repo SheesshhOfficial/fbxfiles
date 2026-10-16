@@ -1,0 +1,266 @@
+{
+  "invariants": {
+    "asset_count": 256,
+    "placement_count": 11316,
+    "legacy_box_assets": 111,
+    "legacy_none_assets": 145,
+    "candidate_assets": 51,
+    "candidate_placements": 6695,
+    "walking_boxes_reconstructed": 568,
+    "canonical_blocker_assets": 86,
+    "canonical_blocker_boxes": 102,
+    "original_walking_boxes_preserved": 568,
+    "additional_world_boxes": 126,
+    "total_world_boxes": 694
+  },
+  "additions": [
+    {
+      "asset_id": "SM_EG_SafetyBollard_e60962836a",
+      "name": "SafetyBollard",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "Authored physical cylinder/rail enclosed by a local AABB; slim circumscribed simple proxy, not a fence-plane fill."
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_01_96cc807ffa",
+      "name": "StaffLocker_01",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:453 closed locker carcass only; excludes handle/text protrusions"
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_03_ee0c2d3104",
+      "name": "StaffLocker_03",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:453 closed locker carcass only; excludes handle/text protrusions"
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_05_e54f4b7fa2",
+      "name": "StaffLocker_05",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:453 closed locker carcass only; excludes handle/text protrusions"
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_07_9bda23ab81",
+      "name": "StaffLocker_07",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:453 closed locker carcass only; excludes handle/text protrusions"
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_09_c9e0e9b9b2",
+      "name": "StaffLocker_09",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:453 closed locker carcass only; excludes handle/text protrusions"
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_11_e626650e28",
+      "name": "StaffLocker_11",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:453 closed locker carcass only; excludes handle/text protrusions"
+    },
+    {
+      "asset_id": "SM_EG_BakeryWallCabinet_484300892f",
+      "name": "BakeryWallCabinet",
+      "local_box_count": 6,
+      "placement_count": 3,
+      "world_box_count": 18,
+      "source_evidence": "build_supermarket.py:310-320 cabinet base, three shelves and two side uprights; preserves shelf cavities, excludes loaves and top light"
+    },
+    {
+      "asset_id": "SM_EG_Bagging_well_1ad3e66c5b",
+      "name": "Bagging well",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:365 actual shallow platform above checkout"
+    },
+    {
+      "asset_id": "SM_EG_Card_reader_b71c4f82d6",
+      "name": "Card reader",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:370 small solid reader housing"
+    },
+    {
+      "asset_id": "SM_EG_Checkout_lane_sign_3345811d3e",
+      "name": "Checkout lane sign",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:375 actual overhead sign body, does not extend to ground"
+    },
+    {
+      "asset_id": "SM_EG_Checkout_scanner_glass_bc65ff3eb9",
+      "name": "Checkout scanner glass",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:364 actual scanner plate"
+    },
+    {
+      "asset_id": "SM_EG_Chilled_case_body_f77be21526",
+      "name": "Chilled case body",
+      "local_box_count": 1,
+      "placement_count": 5,
+      "world_box_count": 5,
+      "source_evidence": "build_supermarket.py:331 closed authored cabinet cuboid"
+    },
+    {
+      "asset_id": "SM_EG_Chilled_header_b4fc30757f",
+      "name": "Chilled header",
+      "local_box_count": 1,
+      "placement_count": 5,
+      "world_box_count": 5,
+      "source_evidence": "build_supermarket.py:343 actual cabinet top trim"
+    },
+    {
+      "asset_id": "SM_EG_Entrance_planter_92879c4719",
+      "name": "Entrance planter",
+      "local_box_count": 1,
+      "placement_count": 2,
+      "world_box_count": 2,
+      "source_evidence": "polish_details.py:59 solid concrete planter body; excludes separate foliage"
+    },
+    {
+      "asset_id": "SM_EG_Fence_post_69e009f9f1",
+      "name": "Fence post",
+      "local_box_count": 1,
+      "placement_count": 9,
+      "world_box_count": 9,
+      "source_evidence": "Authored physical cylinder/rail enclosed by a local AABB; slim circumscribed simple proxy, not a fence-plane fill."
+    },
+    {
+      "asset_id": "SM_EG_Fence_rails_8d35d1e81b",
+      "name": "Fence rails",
+      "local_box_count": 1,
+      "placement_count": 3,
+      "world_box_count": 3,
+      "source_evidence": "Authored physical cylinder/rail enclosed by a local AABB; slim circumscribed simple proxy, not a fence-plane fill."
+    },
+    {
+      "asset_id": "SM_EG_Freezer_sliding_glass_lid_cdd03bba2e",
+      "name": "Freezer sliding glass lid",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:350 actual horizontal closed lids"
+    },
+    {
+      "asset_id": "SM_EG_Glass_refrigerator_door_a0ffaba052",
+      "name": "Glass refrigerator door",
+      "local_box_count": 1,
+      "placement_count": 15,
+      "world_box_count": 15,
+      "source_evidence": "build_supermarket.py:337 closed refrigerator panel; not a passage door"
+    },
+    {
+      "asset_id": "SM_EG_Impact_protection_e5e6902f42",
+      "name": "Impact protection",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:177 narrow existing wall scuff board"
+    },
+    {
+      "asset_id": "SM_EG_Impulse_display_69234da7c4",
+      "name": "Impulse display",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:377 solid oak checkout impulse cabinet"
+    },
+    {
+      "asset_id": "SM_EG_Lane_sign_post_3739b0fca4",
+      "name": "Lane sign post",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "Authored physical cylinder/rail enclosed by a local AABB; slim circumscribed simple proxy, not a fence-plane fill."
+    },
+    {
+      "asset_id": "SM_EG_Notice_board_cc53032389",
+      "name": "Notice board",
+      "local_box_count": 1,
+      "placement_count": 1,
+      "world_box_count": 1,
+      "source_evidence": "build_supermarket.py:476 solid wall board"
+    },
+    {
+      "asset_id": "SM_EG_POS_monitor_e22f1a232c",
+      "name": "POS monitor",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:367 rotated solid monitor housing"
+    },
+    {
+      "asset_id": "SM_EG_POS_pedestal_b1aaa84439",
+      "name": "POS pedestal",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:366 solid post"
+    },
+    {
+      "asset_id": "SM_EG_Planter_soil_06a8edc2b1",
+      "name": "Planter soil",
+      "local_box_count": 1,
+      "placement_count": 3,
+      "world_box_count": 3,
+      "source_evidence": "polish_details.py:27-28 solid promotional base role; shared decorative sign/soil placements explicitly excluded"
+    },
+    {
+      "asset_id": "SM_EG_Promotional_feature_sign_87734a6453",
+      "name": "Promotional feature sign",
+      "local_box_count": 1,
+      "placement_count": 3,
+      "world_box_count": 3,
+      "source_evidence": "polish_details.py:27-28 solid promotional base role; shared decorative sign/soil placements explicitly excluded"
+    },
+    {
+      "asset_id": "SM_EG_Promotional_island_top_fe009d6598",
+      "name": "Promotional island top",
+      "local_box_count": 1,
+      "placement_count": 6,
+      "world_box_count": 6,
+      "source_evidence": "polish_details.py:29-30 counter and merchandise riser cuboids"
+    },
+    {
+      "asset_id": "SM_EG_Rooftop_air_handling_unit_0d0b19e13b",
+      "name": "Rooftop air handling unit",
+      "local_box_count": 1,
+      "placement_count": 3,
+      "world_box_count": 3,
+      "source_evidence": "polish_details.py:48 closed mechanical housing"
+    },
+    {
+      "asset_id": "SM_EG_Rubber_conveyor_belt_fa9985d5a7",
+      "name": "Rubber conveyor belt",
+      "local_box_count": 1,
+      "placement_count": 4,
+      "world_box_count": 4,
+      "source_evidence": "build_supermarket.py:360 solid belt surface, no enlarged enclosure"
+    },
+    {
+      "asset_id": "SM_EG_Service_swing_door_bumper_e85786e97a",
+      "name": "Service swing door bumper",
+      "local_box_count": 1,
+      "placement_count": 2,
+      "world_box_count": 2,
+      "source_evidence": "build_supermarket.py:520 side bumper only; open passage not filled"
+    }
+  ]
+}

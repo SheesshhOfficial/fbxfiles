@@ -1,0 +1,567 @@
+{
+  "passed": true,
+  "additional_assets_verified": 31,
+  "bounds_tolerance_cm": 0.01,
+  "assets": [
+    {
+      "asset_id": "SM_EG_SafetyBollard_e60962836a",
+      "name": "SafetyBollard",
+      "native_min_cm": [
+        -10.499999672174454,
+        -10.499999672174454,
+        0.0
+      ],
+      "native_max_cm": [
+        10.499999672174454,
+        10.499999672174454,
+        94.9999988079071
+      ],
+      "bottom_center_bound_error_cm": 1.1920928955078125e-06,
+      "maximum_proxy_outside_source_bounds_cm": 1.1920928955078125e-06,
+      "selected_instances": 4,
+      "source_component_count": 2,
+      "two_coaxial_overlapping_cylinder_parts_verified": true
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_01_96cc807ffa",
+      "name": "StaffLocker_01",
+      "native_min_cm": [
+        -85.00000238418579,
+        -56.37500286102295,
+        0.0
+      ],
+      "native_max_cm": [
+        85.00000238418579,
+        56.37500286102295,
+        209.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 1.7138977050024096e-05,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-06,
+      "selected_instances": 1,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_03_ee0c2d3104",
+      "name": "StaffLocker_03",
+      "native_min_cm": [
+        -85.00000238418579,
+        -56.37500286102295,
+        0.0
+      ],
+      "native_max_cm": [
+        85.00000238418579,
+        56.37500286102295,
+        209.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 1.7138977050024096e-05,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-06,
+      "selected_instances": 1,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_05_e54f4b7fa2",
+      "name": "StaffLocker_05",
+      "native_min_cm": [
+        -85.00000238418579,
+        -56.37500286102295,
+        0.0
+      ],
+      "native_max_cm": [
+        85.00000238418579,
+        56.37500286102295,
+        209.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 1.7138977050024096e-05,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-06,
+      "selected_instances": 1,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_07_9bda23ab81",
+      "name": "StaffLocker_07",
+      "native_min_cm": [
+        -85.00000238418579,
+        -56.37500286102295,
+        0.0
+      ],
+      "native_max_cm": [
+        85.00000238418579,
+        56.37500286102295,
+        209.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 1.7138977050024096e-05,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-06,
+      "selected_instances": 1,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_09_c9e0e9b9b2",
+      "name": "StaffLocker_09",
+      "native_min_cm": [
+        -85.00000238418579,
+        -56.37500286102295,
+        0.0
+      ],
+      "native_max_cm": [
+        85.00000238418579,
+        56.37500286102295,
+        209.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 1.7138977050024096e-05,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-06,
+      "selected_instances": 1,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_11_e626650e28",
+      "name": "StaffLocker_11",
+      "native_min_cm": [
+        -85.00000238418579,
+        -56.37500286102295,
+        0.0
+      ],
+      "native_max_cm": [
+        85.00000238418579,
+        56.37500286102295,
+        209.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 1.7138977050024096e-05,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-06,
+      "selected_instances": 1,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_BakeryWallCabinet_484300892f",
+      "name": "BakeryWallCabinet",
+      "native_min_cm": [
+        -112.5,
+        -142.99999475479126,
+        0.0
+      ],
+      "native_max_cm": [
+        112.5,
+        142.99999475479126,
+        295.0000047683716
+      ],
+      "bottom_center_bound_error_cm": 3.499999999689862e-05,
+      "maximum_proxy_outside_source_bounds_cm": 3.799999990405922e-05,
+      "selected_instances": 3,
+      "source_component_count": 7
+    },
+    {
+      "asset_id": "SM_EG_Bagging_well_1ad3e66c5b",
+      "name": "Bagging well",
+      "native_min_cm": [
+        -60.00000238418579,
+        -42.500001192092896,
+        0.0
+      ],
+      "native_max_cm": [
+        60.00000238418579,
+        42.500001192092896,
+        5.000000074505806
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 0,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Card_reader_b71c4f82d6",
+      "name": "Card reader",
+      "native_min_cm": [
+        -9.000000357627869,
+        -10.999999940395355,
+        0.0
+      ],
+      "native_max_cm": [
+        9.000000357627869,
+        10.999999940395355,
+        12.999999523162842
+      ],
+      "bottom_center_bound_error_cm": 4.76837158203125e-07,
+      "maximum_proxy_outside_source_bounds_cm": 4.76837158203125e-07,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_lane_sign_3345811d3e",
+      "name": "Checkout lane sign",
+      "native_min_cm": [
+        -34.00000035762787,
+        -6.499999761581421,
+        0.0
+      ],
+      "native_max_cm": [
+        34.00000035762787,
+        6.499999761581421,
+        64.99999761581421
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 2.384185791015625e-06,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_scanner_glass_bc65ff3eb9",
+      "name": "Checkout scanner glass",
+      "native_min_cm": [
+        -27.500000596046448,
+        -28.999999165534973,
+        0.0
+      ],
+      "native_max_cm": [
+        27.500000596046448,
+        28.999999165534973,
+        2.500000037252903
+      ],
+      "bottom_center_bound_error_cm": 8.344650268554688e-07,
+      "maximum_proxy_outside_source_bounds_cm": 8.344650268554688e-07,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_case_body_f77be21526",
+      "name": "Chilled case body",
+      "native_min_cm": [
+        -68.99999976158142,
+        -160.0000023841858,
+        0.0
+      ],
+      "native_max_cm": [
+        68.99999976158142,
+        160.0000023841858,
+        309.99999046325684
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 2.384185791015625e-07,
+      "selected_instances": 5,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_header_b4fc30757f",
+      "name": "Chilled header",
+      "native_min_cm": [
+        -3.999999910593033,
+        -160.0000023841858,
+        0.0
+      ],
+      "native_max_cm": [
+        3.999999910593033,
+        160.0000023841858,
+        28.00000011920929
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 8.940696716308594e-08,
+      "selected_instances": 5,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Entrance_planter_92879c4719",
+      "name": "Entrance planter",
+      "native_min_cm": [
+        -129.99999523162842,
+        -170.00000476837158,
+        0.0
+      ],
+      "native_max_cm": [
+        129.99999523162842,
+        170.00000476837158,
+        47.999998927116394
+      ],
+      "bottom_center_bound_error_cm": 1.02316284085191e-05,
+      "maximum_proxy_outside_source_bounds_cm": 1.0728836059570312e-06,
+      "selected_instances": 2,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fence_post_69e009f9f1",
+      "name": "Fence post",
+      "native_min_cm": [
+        -3.500000014901161,
+        -3.500000014901161,
+        0.0
+      ],
+      "native_max_cm": [
+        3.500000014901161,
+        3.500000014901161,
+        279.9999952316284
+      ],
+      "bottom_center_bound_error_cm": 4.76837158203125e-06,
+      "maximum_proxy_outside_source_bounds_cm": 4.76837158203125e-06,
+      "selected_instances": 9,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fence_rails_8d35d1e81b",
+      "name": "Fence rails",
+      "native_min_cm": [
+        -1.3000000268220901,
+        -1300.0,
+        0.0
+      ],
+      "native_max_cm": [
+        1.3000000268220901,
+        1300.0,
+        2.4730000644922256
+      ],
+      "bottom_center_bound_error_cm": 0.0002500644922256434,
+      "maximum_proxy_outside_source_bounds_cm": 4.9973177909778954e-05,
+      "selected_instances": 3,
+      "source_component_count": 1,
+      "single_thin_rail_per_instance_verified": true
+    },
+    {
+      "asset_id": "SM_EG_Freezer_sliding_glass_lid_cdd03bba2e",
+      "name": "Freezer sliding glass lid",
+      "native_min_cm": [
+        -88.49999904632568,
+        -100.0,
+        0.0
+      ],
+      "native_max_cm": [
+        88.49999904632568,
+        100.0,
+        2.500000037252903
+      ],
+      "bottom_center_bound_error_cm": 9.5367431640625e-07,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-07,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Glass_refrigerator_door_a0ffaba052",
+      "name": "Glass refrigerator door",
+      "native_min_cm": [
+        -1.4000000432133675,
+        -51.332998275756836,
+        0.0
+      ],
+      "native_max_cm": [
+        1.4000000432133675,
+        51.332998275756836,
+        279.9999952316284
+      ],
+      "bottom_center_bound_error_cm": 0.000331724243160636,
+      "maximum_proxy_outside_source_bounds_cm": 0.000331724243160636,
+      "selected_instances": 15,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Impact_protection_e5e6902f42",
+      "name": "Impact protection",
+      "native_min_cm": [
+        -3.999999910593033,
+        -1800.0,
+        0.0
+      ],
+      "native_max_cm": [
+        3.999999910593033,
+        1800.0,
+        18.000000715255737
+      ],
+      "bottom_center_bound_error_cm": 7.152557373046875e-07,
+      "maximum_proxy_outside_source_bounds_cm": 8.940696716308594e-08,
+      "selected_instances": 1,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Impulse_display_69234da7c4",
+      "name": "Impulse display",
+      "native_min_cm": [
+        -31.00000023841858,
+        -72.50000238418579,
+        0.0
+      ],
+      "native_max_cm": [
+        31.00000023841858,
+        72.50000238418579,
+        125.99999904632568
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 9.5367431640625e-07,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Lane_sign_post_3739b0fca4",
+      "name": "Lane sign post",
+      "native_min_cm": [
+        -2.500000037252903,
+        -2.500000037252903,
+        0.0
+      ],
+      "native_max_cm": [
+        2.500000037252903,
+        2.500000037252903,
+        200.0
+      ],
+      "bottom_center_bound_error_cm": 3.725290298461914e-08,
+      "maximum_proxy_outside_source_bounds_cm": 0,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Notice_board_cc53032389",
+      "name": "Notice board",
+      "native_min_cm": [
+        -2.9999999329447746,
+        -120.00000476837158,
+        0.0
+      ],
+      "native_max_cm": [
+        2.9999999329447746,
+        120.00000476837158,
+        139.9999976158142
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 2.384185791015625e-06,
+      "selected_instances": 1,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_POS_monitor_e22f1a232c",
+      "name": "POS monitor",
+      "native_min_cm": [
+        -27.500000596046448,
+        -5.000000074505806,
+        0.0
+      ],
+      "native_max_cm": [
+        27.500000596046448,
+        5.000000074505806,
+        36.000001430511475
+      ],
+      "bottom_center_bound_error_cm": 1.430511474609375e-06,
+      "maximum_proxy_outside_source_bounds_cm": 0,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_POS_pedestal_b1aaa84439",
+      "name": "POS pedestal",
+      "native_min_cm": [
+        -3.999999910593033,
+        -5.000000074505806,
+        0.0
+      ],
+      "native_max_cm": [
+        3.999999910593033,
+        5.000000074505806,
+        50.0
+      ],
+      "bottom_center_bound_error_cm": 8.940696716308594e-08,
+      "maximum_proxy_outside_source_bounds_cm": 8.940696716308594e-08,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Planter_soil_06a8edc2b1",
+      "name": "Planter soil",
+      "native_min_cm": [
+        -129.99999523162842,
+        -170.00000476837158,
+        0.0
+      ],
+      "native_max_cm": [
+        129.99999523162842,
+        170.00000476837158,
+        47.999998927116394
+      ],
+      "bottom_center_bound_error_cm": 9.768371569407464e-06,
+      "maximum_proxy_outside_source_bounds_cm": 1.0728836059570312e-06,
+      "selected_instances": 3,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Promotional_feature_sign_87734a6453",
+      "name": "Promotional feature sign",
+      "native_min_cm": [
+        -129.99999523162842,
+        -170.00000476837158,
+        0.0
+      ],
+      "native_max_cm": [
+        129.99999523162842,
+        170.00000476837158,
+        47.999998927116394
+      ],
+      "bottom_center_bound_error_cm": 1.02316284085191e-05,
+      "maximum_proxy_outside_source_bounds_cm": 1.0728836059570312e-06,
+      "selected_instances": 3,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Promotional_island_top_fe009d6598",
+      "name": "Promotional island top",
+      "native_min_cm": [
+        -129.99999523162842,
+        -170.00000476837158,
+        0.0
+      ],
+      "native_max_cm": [
+        129.99999523162842,
+        170.00000476837158,
+        47.999998927116394
+      ],
+      "bottom_center_bound_error_cm": 9.768371569407464e-06,
+      "maximum_proxy_outside_source_bounds_cm": 1.0728836059570312e-06,
+      "selected_instances": 6,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Rooftop_air_handling_unit_0d0b19e13b",
+      "name": "Rooftop air handling unit",
+      "native_min_cm": [
+        -129.99999523162842,
+        -170.00000476837158,
+        0.0
+      ],
+      "native_max_cm": [
+        129.99999523162842,
+        170.00000476837158,
+        47.999998927116394
+      ],
+      "bottom_center_bound_error_cm": 1.0728836059570312e-06,
+      "maximum_proxy_outside_source_bounds_cm": 1.0728836059570312e-06,
+      "selected_instances": 3,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Rubber_conveyor_belt_fa9985d5a7",
+      "name": "Rubber conveyor belt",
+      "native_min_cm": [
+        -67.00000166893005,
+        -97.50000238418579,
+        0.0
+      ],
+      "native_max_cm": [
+        67.00000166893005,
+        97.50000238418579,
+        2.500000037252903
+      ],
+      "bottom_center_bound_error_cm": 2.384185791015625e-06,
+      "maximum_proxy_outside_source_bounds_cm": 0,
+      "selected_instances": 4,
+      "source_component_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Service_swing_door_bumper_e85786e97a",
+      "name": "Service swing door bumper",
+      "native_min_cm": [
+        -10.000000149011612,
+        -17.499999701976776,
+        0.0
+      ],
+      "native_max_cm": [
+        10.000000149011612,
+        17.499999701976776,
+        200.0
+      ],
+      "bottom_center_bound_error_cm": 2.980232238769531e-07,
+      "maximum_proxy_outside_source_bounds_cm": 2.980232238769531e-07,
+      "selected_instances": 2,
+      "source_component_count": 1
+    }
+  ]
+}

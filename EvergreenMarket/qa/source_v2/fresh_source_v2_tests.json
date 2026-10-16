@@ -1,0 +1,26 @@
+{
+  "status": "passed_local_mock_and_contract_tests",
+  "tests_run": 89,
+  "skipped": 0,
+  "unreal_runtime_executed": false,
+  "package_root": "evergreen_source_v2",
+  "stages": [
+    "sample",
+    "sample_lighting",
+    "full",
+    "collision",
+    "pilot",
+    "lighting"
+  ],
+  "checks": [
+    "Complete native checkpoint and all256 renderFBX hashes",
+    "86 companions102canonical694world boxes with exact source masks",
+    "Pinned collision policy and separate renderQuery/walk components",
+    "All694boxes PlayerStart clearance",
+    "Four pilot props;11312remaining placements",
+    "Native11light layout and unit-scale mock persistence",
+    "New run preparation and source snapshot fingerprint",
+    "Report hash tampering and failed/running state rejection",
+    "Explicit visual review gate after sample lighting"
+  ]
+}

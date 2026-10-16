@@ -1,5 +1,11 @@
 # Evergreen Market
 
+## Latest complete Blender-source v2 package
+
+Use [packages/source_v2](packages/source_v2) for the corrected native Blender master, all 256 render FBXs, 86 collision companions, textures, source-defined lighting and fresh-import helpers. The [v2 guide](docs/FRESH_SOURCE_V2.md) creates new maps with 694 reviewed walking boxes, four E-compatible pilot actors and 11 neutral preview lights. No previous package, patch or reports are needed. Keep your working map.
+
+Double-click `Reassemble_Source_v2_Windows.cmd` beside all archive parts, then extract the verified ZIP to `C:\Art`. Read the included `START_HERE.md`. The 51 prop-candidate FBXs contain their own UBX hulls; render-only fixtures require their separate companion policy via the importer. Character movement/capsule behavior still belongs to the game Blueprint. Local geometry/export/tests pass; the new workflow still needs Unreal runtime acceptance. Older packages and repair routes below remain for existing runs; do not mix their helper files with v2.
+
 If fresh sample lighting stopped with `Preview transform changed` and the Sun has scale 2.5, use the [scoped Sun-scale recovery](docs/LIGHTING_RECOVERY.md). It retains the sample and repairs the existing light without reimporting meshes.
 
 ## Fresh start with all corrected meshes

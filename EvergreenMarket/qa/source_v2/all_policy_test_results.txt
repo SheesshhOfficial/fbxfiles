@@ -1,0 +1,21 @@
+test_all_have_explicit_reason (test_policy.PolicyTests.test_all_have_explicit_reason) ... ok
+test_coverage (test_policy.PolicyTests.test_coverage) ... ok
+test_doors_open (test_policy.PolicyTests.test_doors_open) ... ok
+test_inverse_scaled_rotated (test_policy.PolicyTests.test_inverse_scaled_rotated) ... ok
+test_lights (test_policy.PolicyTests.test_lights) ... ok
+test_prop_review_not_falsely_validated (test_policy.PolicyTests.test_prop_review_not_falsely_validated) ... ok
+test_separate_bodies (test_policy.PolicyTests.test_separate_bodies) ... ok
+test_bakery_cavities (test_physical_policy.PhysicalTests.test_bakery_cavities) ... ok
+test_hash_reject (test_physical_policy.PhysicalTests.test_hash_reject) ... ok
+test_impulse_world_dimensions (test_physical_policy.PhysicalTests.test_impulse_world_dimensions) ... ok
+test_lockers_actual_body_not_handle (test_physical_policy.PhysicalTests.test_lockers_actual_body_not_handle) ... ok
+test_no_doors_or_fence_plane (test_physical_policy.PhysicalTests.test_no_doors_or_fence_plane) ... ok
+test_original568_exact (test_physical_policy.PhysicalTests.test_original568_exact) ... ok
+test_scaled_planters (test_physical_policy.PhysicalTests.test_scaled_planters) ... ok
+test_shared_role_masks (test_physical_policy.PhysicalTests.test_shared_role_masks) ... ok
+test_totals (test_physical_policy.PhysicalTests.test_totals) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.450s
+
+OK

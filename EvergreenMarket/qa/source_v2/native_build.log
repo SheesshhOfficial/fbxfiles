@@ -1,0 +1,18 @@
+NATIVE 1 256 flipped 0
+NATIVE 26 256 flipped 12596
+NATIVE 51 256 flipped 26132
+NATIVE 76 256 flipped 28212
+NATIVE 101 256 flipped 31984
+NATIVE 126 256 flipped 33676
+NATIVE 151 256 flipped 36308
+NATIVE 176 256 flipped 37072
+NATIVE 201 256 flipped 37824
+NATIVE 226 256 flipped 41020
+NATIVE 251 256 flipped 44616
+Info: No new files have been packed
+Info: Saved "Evergreen_Market_Source_v2.blend"
+NATIVE BUILD COMPLETE /workspace/scratch/26eeef986c30/evergreen_source_v2/Evergreen_Market_Source_v2.blend {'legacy_query_prototypes': 111, 'walking_prototypes': 102, 'walking_placed_boxes': 694}
+Blender 4.3.2
+Read blend: "/workspace/scratch/26eeef986c30/supermarket_unreal_handoff/Evergreen_Market_Unreal_Ready.blend"
+
+Blender quit

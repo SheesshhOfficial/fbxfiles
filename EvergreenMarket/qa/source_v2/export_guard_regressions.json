@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "all_342_FBX_collision_Model_names_and_Geometry_connections",
+      "passed": true
+    },
+    {
+      "test": "edited_vertex_rejected",
+      "passed": true,
+      "rejection": "Stale exact-normal attributes or edited geometry: SM_EG_ShoppingCart_09a101bdbd"
+    },
+    {
+      "test": "stale_normal_attribute_rejected",
+      "passed": true,
+      "rejection": "Stale exact-normal attributes or edited geometry: SM_EG_ShoppingCart_09a101bdbd"
+    },
+    {
+      "test": "edited_UV_rejected",
+      "passed": true,
+      "rejection": "Stale exact-normal attributes or edited geometry: SM_EG_ShoppingCart_09a101bdbd"
+    },
+    {
+      "test": "edited_placement_rejected",
+      "passed": true,
+      "rejection": "Original placement transforms changed"
+    }
+  ],
+  "input_blend_saved": false
+}

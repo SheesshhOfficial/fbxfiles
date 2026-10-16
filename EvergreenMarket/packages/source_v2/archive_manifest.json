@@ -1,0 +1,37 @@
+{
+  "archive": "Evergreen_Market_Source_v2_Complete.zip",
+  "bytes": 53216166,
+  "sha256": "21c85917a12ca5709215783ed4e02522ad942c652ac76927525e030c920cdbab",
+  "parts": [
+    {
+      "name": "Evergreen_Market_Source_v2_Complete.zip.part01",
+      "bytes": 9437184,
+      "sha256": "9cbef229356e9e29bce3fb9c4345d74865b92b819ed71c3118f6816529c6d373"
+    },
+    {
+      "name": "Evergreen_Market_Source_v2_Complete.zip.part02",
+      "bytes": 9437184,
+      "sha256": "5d0f0a18ef9790120bc7eded300a0a03ddad1cf3454fe684d0bf578fed935983"
+    },
+    {
+      "name": "Evergreen_Market_Source_v2_Complete.zip.part03",
+      "bytes": 9437184,
+      "sha256": "ae5b207f1639ba84d4b8df3db859a36f990bde177e2b90d581a52ead82284fbd"
+    },
+    {
+      "name": "Evergreen_Market_Source_v2_Complete.zip.part04",
+      "bytes": 9437184,
+      "sha256": "649480c512040892949b9c7cbe5c8ffeb7d4db0cfec5cea5cc92175e6e911831"
+    },
+    {
+      "name": "Evergreen_Market_Source_v2_Complete.zip.part05",
+      "bytes": 9437184,
+      "sha256": "c586802d55b9812487a57dcf2cb24ef64f0929c4b7550b174504f35bd82d5356"
+    },
+    {
+      "name": "Evergreen_Market_Source_v2_Complete.zip.part06",
+      "bytes": 6030246,
+      "sha256": "1db2ef26031cb938d03b2d9c440c06976e36d7fdf9995177b962124facd9ba73"
+    }
+  ]
+}

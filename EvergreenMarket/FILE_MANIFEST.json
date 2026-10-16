@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 5104,
-    "sha256": "786ffe113196d216426abe9551607e13a36566da379bfa08c9d5c7ff5021742f",
-    "git_blob_sha": "5bad5c275d36a3b0cb13a506097f8149028cb293"
+    "bytes": 6123,
+    "sha256": "20d145ed700a0faf48ef58da8b0fcb0f8855c793765d9bbddf5272e1f0497293",
+    "git_blob_sha": "f2ef53120f2daf8d90f1ae31c11edbeb84c5030e"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -34,6 +34,12 @@
     "bytes": 3859,
     "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
     "git_blob_sha": "b3d93a1235a82213fbc451853317c40e62ed9272"
+  },
+  {
+    "path": "docs/FRESH_SOURCE_V2.md",
+    "bytes": 5212,
+    "sha256": "766c1718f70ab433ba00fcab00c2580233635c6fac4e73537f43aaef09b0ae68",
+    "git_blob_sha": "0f595143666c4ab98289f6b32d8d0adbc577e3a6"
   },
   {
     "path": "docs/FRESH_START.md",
@@ -100,6 +106,36 @@
     "bytes": 8187,
     "sha256": "f8e599f3464c26363f11ca3c46cd1dbd6ea2bef96ed564b9cfecd399debb4aa0",
     "git_blob_sha": "e140c299e67b945b58ce2be9133c55a990161619"
+  },
+  {
+    "path": "docs/SOURCE_V2_EXPORT_MAPPING_PLAN.md",
+    "bytes": 6561,
+    "sha256": "5454223f0475a27d0b4e387310ffc8790f14d3ceaeb305d7f744a56125a3e659",
+    "git_blob_sha": "cce576387a9ae7c87da6dc0aab6cd33a980afae4"
+  },
+  {
+    "path": "docs/SOURCE_V2_PHYSICAL_COVERAGE_V2.md",
+    "bytes": 46276,
+    "sha256": "dae2d2b6574584201bfd6d25d61c499b2ccbb672d1a5d840ef8a900399161950",
+    "git_blob_sha": "da055b6bfe08bb47403591f20b08d1aaf98ab020"
+  },
+  {
+    "path": "docs/SOURCE_V2_SOURCE_EXPORT.md",
+    "bytes": 3453,
+    "sha256": "3f08f757125f3148ddc78970c4e0d938e1d9c19482eef0d5fc1a1d69e8be2a89",
+    "git_blob_sha": "fc23d588e021cd5ae072c0110629f8f87d7310d2"
+  },
+  {
+    "path": "docs/SOURCE_V2_SOURCE_VALIDATION.md",
+    "bytes": 4558,
+    "sha256": "3e58e48c106505f3306454e05d9574e31ecaaad9ff3e871b1a8b09ba0deafd68",
+    "git_blob_sha": "9888033d411f035c87d4ade2231eb3141918e3d7"
+  },
+  {
+    "path": "docs/SOURCE_V2_START_HERE.md",
+    "bytes": 5981,
+    "sha256": "aed875bb73f01b4e508678627b7687208b85cd4e6064cf616bb667e9906f02ab",
+    "git_blob_sha": "e96ced485573e77dc8550e936e466716ea092fff"
   },
   {
     "path": "docs/UNREAL_IMPORT_AND_PROP_HUNT.md",
@@ -178,6 +214,72 @@
     "bytes": 103,
     "sha256": "04b6e85f11960b1de6540c327cca62957f2d6a26b7b89c35e94adb9fb37dbfbe",
     "git_blob_sha": "cd84b61759a4d8bc9688c0b03ebfe8821e2728c4"
+  },
+  {
+    "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part01",
+    "bytes": 9437184,
+    "sha256": "9cbef229356e9e29bce3fb9c4345d74865b92b819ed71c3118f6816529c6d373",
+    "git_blob_sha": "080f49e7efec2bbcb88182a1b55836b08b665468"
+  },
+  {
+    "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part02",
+    "bytes": 9437184,
+    "sha256": "5d0f0a18ef9790120bc7eded300a0a03ddad1cf3454fe684d0bf578fed935983",
+    "git_blob_sha": "e9a6c513a3e33a4e3d4b4f6ba57d1865556cad46"
+  },
+  {
+    "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part03",
+    "bytes": 9437184,
+    "sha256": "ae5b207f1639ba84d4b8df3db859a36f990bde177e2b90d581a52ead82284fbd",
+    "git_blob_sha": "0825f621f4e39f882a5663d4dfdf39203be4f1c2"
+  },
+  {
+    "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part04",
+    "bytes": 9437184,
+    "sha256": "649480c512040892949b9c7cbe5c8ffeb7d4db0cfec5cea5cc92175e6e911831",
+    "git_blob_sha": "9658a43f5fc1fd005d1e22ec69ceb1eb2118a1e7"
+  },
+  {
+    "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part05",
+    "bytes": 9437184,
+    "sha256": "c586802d55b9812487a57dcf2cb24ef64f0929c4b7550b174504f35bd82d5356",
+    "git_blob_sha": "acaec94d1c9e4ce1337f049c26e9b6e6e402c279"
+  },
+  {
+    "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part06",
+    "bytes": 6030246,
+    "sha256": "1db2ef26031cb938d03b2d9c440c06976e36d7fdf9995177b962124facd9ba73",
+    "git_blob_sha": "f8190c6acf58156af15b39c0eb084f72ef4e79d1"
+  },
+  {
+    "path": "packages/source_v2/README.md",
+    "bytes": 1382,
+    "sha256": "a07a57ead94976c16ed42d66d0825641267ac7808f70970c478c635da2bd3d5c",
+    "git_blob_sha": "af19e0570db78e9d5a64df929f4ecde6ab8d1709"
+  },
+  {
+    "path": "packages/source_v2/Reassemble_Source_v2.py",
+    "bytes": 2216,
+    "sha256": "143bcab7c58bbdc9d1c75686fc40c145d5b9e9ba961a6e53244b2ab8c626d196",
+    "git_blob_sha": "efebb6d7add6811ec0a75ea1d919ea1dabc08d09"
+  },
+  {
+    "path": "packages/source_v2/Reassemble_Source_v2_Windows.cmd",
+    "bytes": 4069,
+    "sha256": "c11fae4b2954dd821e3a5f1e8637fd75dfaca67a9d0ec1d0df74eb7d2414469f",
+    "git_blob_sha": "cb22e5dfa34d68b9a5acca32fbae2b2b664d448f"
+  },
+  {
+    "path": "packages/source_v2/SHA256SUMS.txt",
+    "bytes": 784,
+    "sha256": "dd5b5212d08cdb47ff43dd0bfc1ae81ad50fc2c0c3d370c9fd33388eb0a96753",
+    "git_blob_sha": "61322410378a83053d98036ca1cf6a464a6d56a0"
+  },
+  {
+    "path": "packages/source_v2/archive_manifest.json",
+    "bytes": 1281,
+    "sha256": "e38a5f4228e42e0eb966864cf443ebc66a2bec281bef62bbbd90cb780a356dc2",
+    "git_blob_sha": "52475f803a1198cc5fed36a69cf628d4b11e73d2"
   },
   {
     "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part01",
@@ -360,6 +462,126 @@
     "git_blob_sha": "03073330647c3ca1e3656aaa2e80f4365f8761c4"
   },
   {
+    "path": "qa/source_v2/additional_physical_geometry.json",
+    "bytes": 16046,
+    "sha256": "b240b4273f507b85aebcf9cfef8600c15c1fc190d4576fce96cc623744bc069b",
+    "git_blob_sha": "c06cd67cf6249dca8e4f2e82fd68b542bf8b349d"
+  },
+  {
+    "path": "qa/source_v2/all_policy_test_results.txt",
+    "bytes": 1470,
+    "sha256": "e8420520dff461a6921379059ba255ada8f292b2755d4da4f3dc0cad232b8712",
+    "git_blob_sha": "fdb169af067e7ef7d6797d193ac81b6d8a34423e"
+  },
+  {
+    "path": "qa/source_v2/export_guard_regressions.json",
+    "bytes": 847,
+    "sha256": "46e23fb7ee0ec61d33c1c0303707a23a294f025981678b6b560d88a5f73841e4",
+    "git_blob_sha": "63aafe2d01b461dfa95bff5b5f19585077afa67a"
+  },
+  {
+    "path": "qa/source_v2/export_guard_regressions.log",
+    "bytes": 154,
+    "sha256": "00c1de1131bae7ea54bd48cedd1ea60db7b1d24408f07fb6c3ae16142903e968",
+    "git_blob_sha": "f8e2065713a0baf9c97991ee1f1f0a598fde480b"
+  },
+  {
+    "path": "qa/source_v2/fresh_source_v2_tests.json",
+    "bytes": 833,
+    "sha256": "fdfdbf13405ea0f68fda166da1df2d16b27e22c3cbcd472ca31df8e477e2e53f",
+    "git_blob_sha": "0ca4b9994f4932c3999677f7d94c0118b365be45"
+  },
+  {
+    "path": "qa/source_v2/fresh_source_v2_tests.txt",
+    "bytes": 11048,
+    "sha256": "c3f7d191ee106cce1d3cc837c8f2bff538ae73de13c62ec5f95b508f6e1d4a06",
+    "git_blob_sha": "b2cce2d7f2e7caaec1eef63bb00e3495fea3dfba"
+  },
+  {
+    "path": "qa/source_v2/legacy_baseline_local_tests.txt",
+    "bytes": 878,
+    "sha256": "fbd24e7521605328045f07c7eb4a86322d41e034a780fb1bee377fd9dbe61ce8",
+    "git_blob_sha": "3fa15d089f16db19bcb2a92f4f7b03415deaed2f"
+  },
+  {
+    "path": "qa/source_v2/native_additions_audit.log",
+    "bytes": 159,
+    "sha256": "d7e5132aecbdde7996ac8340ce8405e28ec510a3ad57daee0de9c60e56349b1b",
+    "git_blob_sha": "42bbb737e1511e0e025fee5fe694334c73371c26"
+  },
+  {
+    "path": "qa/source_v2/native_additions_geometry_audit.json",
+    "bytes": 16047,
+    "sha256": "45eeb21a89cca6fe8e509e5bf95904c17a0e8f70fbf334a37afccbb881b76e7e",
+    "git_blob_sha": "a88cb3c750bb58c99b2dfd7dfd23f616939c90e9"
+  },
+  {
+    "path": "qa/source_v2/native_build.json",
+    "bytes": 289834,
+    "sha256": "15fecfad3edb2b81dd46f0e9fef0604a9e3247d1186b5c3ece85618739d11d28",
+    "git_blob_sha": "0ed874f0f5e65770f61f37eb01cd336303980dbb"
+  },
+  {
+    "path": "qa/source_v2/native_build.log",
+    "bytes": 726,
+    "sha256": "065968057640001d48e92652bef3431c950e61d730ff312016e42d5249329bdd",
+    "git_blob_sha": "b452ca40d26ff193c418dde7dddddcc88c734b3b"
+  },
+  {
+    "path": "qa/source_v2/native_reopen_export.log",
+    "bytes": 16365,
+    "sha256": "e85e863194b5be858edb759b8543df07f094020a1c340c1b36c3a68b72b90836",
+    "git_blob_sha": "40b9bfe1b78fa24021a85aad5e0e161daf37f967"
+  },
+  {
+    "path": "qa/source_v2/native_reopen_verification.json",
+    "bytes": 136307,
+    "sha256": "c495e429efc007214555e8aab8f43aac5368534cfe0f1f72c29c91e673b6ee96",
+    "git_blob_sha": "c1091835f2632d7146d643807e1947d3c9c697ae"
+  },
+  {
+    "path": "qa/source_v2/original_object_reopen.json",
+    "bytes": 239,
+    "sha256": "fd911ccb9e0dc8531b2e970f9682c34ec89cd26df8ef143d34efc8662102e72e",
+    "git_blob_sha": "60fa95720de9b1fd7195127c23854c686f7649e5"
+  },
+  {
+    "path": "qa/source_v2/original_object_reopen.log",
+    "bytes": 267,
+    "sha256": "05e67367f7136204c2adba3376c95e5083e5088bfe34595e2afdde589116001b",
+    "git_blob_sha": "6db5c853709fa605ff8b9b659cc7a0962efe2915"
+  },
+  {
+    "path": "qa/source_v2/physical_additions_report.json",
+    "bytes": 9440,
+    "sha256": "070ffbbb96ab62e62defd034425169e1e4e7f543603c8507f5a81dcf3bdf41d8",
+    "git_blob_sha": "0afb61c0329d04a1a90159b9d88fb683c5ce0a5f"
+  },
+  {
+    "path": "qa/source_v2/physical_policy_audit_v2.csv",
+    "bytes": 59341,
+    "sha256": "bcffdd9c27a4849ebe905f357814f912af81358a35bf158915e3a2529274829c",
+    "git_blob_sha": "1f82f0ee7e32154089cf93e4385572709de0d94d"
+  },
+  {
+    "path": "qa/source_v2/policy_local_tests.txt",
+    "bytes": 115,
+    "sha256": "888df23d39971ed0059ed93962b6349cb9b19eaca92809bbd9a52f47f5789d22",
+    "git_blob_sha": "2d60817cb0193737c19ad19152a84e069ac83e96"
+  },
+  {
+    "path": "qa/source_v2/source_export_verification.json",
+    "bytes": 136409,
+    "sha256": "d6f132513c7c654179c9195a8a9555d038af952c851b7159d680e3e0c0ce2595",
+    "git_blob_sha": "2e8833fad6d084abde50a622bf2a6d9a81ca5d01"
+  },
+  {
+    "path": "qa/source_v2/unreal_v2_local_tests.txt",
+    "bytes": 11048,
+    "sha256": "d2798f9311c5199284d2f7b240697133604f7db67f526d4ff12976211b0cbc6b",
+    "git_blob_sha": "4c89daf1a79620f26f2920c77828594b2fb11b08"
+  },
+  {
     "path": "source/blender/build_supermarket.py",
     "bytes": 40193,
     "sha256": "e52e3c579dc88425872bf06cd3dd0210fdf1f1647ba022e4ca658d55f82aedfd",
@@ -400,6 +622,84 @@
     "bytes": 1342,
     "sha256": "e037fb008cc333722188857d56136c4b19b9ddfb1b47b4841348f5404f023856",
     "git_blob_sha": "13116bd673722e3aeee51322bc616ce7176e1242"
+  },
+  {
+    "path": "source/blender_v2/build_supermarket.py",
+    "bytes": 40193,
+    "sha256": "e52e3c579dc88425872bf06cd3dd0210fdf1f1647ba022e4ca658d55f82aedfd",
+    "git_blob_sha": "9110b057819f12883125e1cfb8d2170bb4da9dbd"
+  },
+  {
+    "path": "source/blender_v2/build_supermarket_outward_boxes.py",
+    "bytes": 40193,
+    "sha256": "e52e3c579dc88425872bf06cd3dd0210fdf1f1647ba022e4ca658d55f82aedfd",
+    "git_blob_sha": "9110b057819f12883125e1cfb8d2170bb4da9dbd"
+  },
+  {
+    "path": "source/blender_v2/classify_closed_shells.py",
+    "bytes": 2188,
+    "sha256": "ecd9a6c8c2153e79603be6d5c5ae5ef21eb99da834413839f11e3dc01a2d410b",
+    "git_blob_sha": "f1d8bf0b886bbac4e4166ffa85e0956ea60cf9fa"
+  },
+  {
+    "path": "source/blender_v2/consolidate_native.py",
+    "bytes": 16443,
+    "sha256": "0428ded35028daf2ed2040e08104de7564b1689076987f347562310c7f546fcd",
+    "git_blob_sha": "59438136aed629d3ec0e5d3635f0e2e8baab2259"
+  },
+  {
+    "path": "source/blender_v2/convert_supermarket_outward_ubx.py",
+    "bytes": 16157,
+    "sha256": "85c2e1610b3250df49a1cc1ec5dffbbd3bf06c67dd4764d1be473adfed809f75",
+    "git_blob_sha": "00134094d702141809afebfb398a33c98028950d"
+  },
+  {
+    "path": "source/blender_v2/export_source_snapshot.py",
+    "bytes": 17641,
+    "sha256": "fdc21ced3bb463fe6b81feb69caa0f5eacc10d4f7b651822aff5c0fe426b4e7d",
+    "git_blob_sha": "652075c2136dcc7c15ef33fd7b971f1b8f929f5e"
+  },
+  {
+    "path": "source/blender_v2/logical_groups.py",
+    "bytes": 14543,
+    "sha256": "d25e62835afbd070e4951bf0f2d0cc442bfd7e0c073b82d94279f64e2286e6d3",
+    "git_blob_sha": "bc37c24ee3d837f938ef8df9675b1c5a7e507c80"
+  },
+  {
+    "path": "source/blender_v2/polish_details.py",
+    "bytes": 5523,
+    "sha256": "e7b5edf4f1161fd65ffb15110af9e14e5c2a5ee3dfc4386e7fe2aaec8ec95528",
+    "git_blob_sha": "22914c13fc4357873efd0540f7d06419ac9d1eb8"
+  },
+  {
+    "path": "source/blender_v2/test_snapshot_guards.py",
+    "bytes": 2113,
+    "sha256": "a4b092c699b6f6454cc6eb57625048766e17aeeeb3038c5c423e912a58061924",
+    "git_blob_sha": "d4404abcdb86c1d6aa0648f4219a4cd4a2b0150e"
+  },
+  {
+    "path": "source/policy_v2/build_policy.py",
+    "bytes": 8821,
+    "sha256": "cd6304279523bcb658bb5b8326175f7276b3fd9366079e72bf0f4bd2af065a67",
+    "git_blob_sha": "9516a5c29964805223a0ecd777b36d754cedd3c8"
+  },
+  {
+    "path": "source/policy_v2/expand_physical_policy.py",
+    "bytes": 5741,
+    "sha256": "b1f405f5babba0cdc2edc4d94068bf9395cbbec5a5709c5d4d072480ac478e10",
+    "git_blob_sha": "4948cef44e7a014fead5dad1f25b2af75ae2c095"
+  },
+  {
+    "path": "source/policy_v2/test_physical_policy.py",
+    "bytes": 3341,
+    "sha256": "7569df2eb519214733a4553c6b373c85f721dd47e93d36aebcc0bcec5901debd",
+    "git_blob_sha": "05a3d89061ace2ffbf2084f42e6b677f67302474"
+  },
+  {
+    "path": "source/policy_v2/test_policy.py",
+    "bytes": 1779,
+    "sha256": "3160eeef0ba6fb6f8ebaf5795f85cc090ecd604560cbfb61f58f7f5dc47013cb",
+    "git_blob_sha": "1a60b38b51c7c6dfa20d82845c3e502540257115"
   },
   {
     "path": "source/unreal/Recover_Evergreen_Pilot.py",
@@ -598,5 +898,89 @@
     "bytes": 7761,
     "sha256": "db0fc99998e12bb76ccc4996e8aaa0770f26f4eb55196892eba19299de813e77",
     "git_blob_sha": "77da32f0324749cf615c3b7caec2b20f4fc6c7f4"
+  },
+  {
+    "path": "source/unreal_v2/FRESH_SOURCE_V2.md",
+    "bytes": 5212,
+    "sha256": "766c1718f70ab433ba00fcab00c2580233635c6fac4e73537f43aaef09b0ae68",
+    "git_blob_sha": "0f595143666c4ab98289f6b32d8d0adbc577e3a6"
+  },
+  {
+    "path": "source/unreal_v2/Start_Source_v2.py",
+    "bytes": 1027,
+    "sha256": "c03e4ad4dd7058f79717e2af714309ddebf4d07505003c77b42df1081d3741a2",
+    "git_blob_sha": "c562d65797fd4d6ea5941923edb36bc0b0c0f494"
+  },
+  {
+    "path": "source/unreal_v2/fresh_market_source_v2.py",
+    "bytes": 15762,
+    "sha256": "e61b25480f6f085399ed0bf4d8285d28025e2d16b6fb22f4249a4903c4d5098f",
+    "git_blob_sha": "de16ed0f76e91483b88bcc991578c6c7dc5452dd"
+  },
+  {
+    "path": "source/unreal_v2/fresh_preview_setup.py",
+    "bytes": 28872,
+    "sha256": "66c41f1750702ce1fd4b2168464d6063bf047b1ebf0f0aa0e13746dd79800a59",
+    "git_blob_sha": "ed6af90046146ec14d1f195ab5073472c66ccc72"
+  },
+  {
+    "path": "source/unreal_v2/import_supermarket_unreal.py",
+    "bytes": 35095,
+    "sha256": "e785ff654629a123463189b5d5e70f9cf5bfe2f7ae92162db32558215dfd7823",
+    "git_blob_sha": "06436a632d26873c003be686fab711e564007647"
+  },
+  {
+    "path": "source/unreal_v2/setup_market_collision.py",
+    "bytes": 19340,
+    "sha256": "902c6b57aa4ce8e09d737b86f89b83a467380dc7b479e60f3df91b1821f40763",
+    "git_blob_sha": "01a7e4411f3398f7d2128556c37bbcd79029b3c7"
+  },
+  {
+    "path": "source/unreal_v2/setup_prop_actor_pilot.py",
+    "bytes": 19524,
+    "sha256": "2a6d0cf2dc37ef7a86000dd69c17a8438256d6b96bca82313e947cabab70498c",
+    "git_blob_sha": "041bcc0d748ec0b13356af9ec1d7f0df52e65772"
+  },
+  {
+    "path": "source/unreal_v2/test_fresh_collision_profiles.py",
+    "bytes": 2797,
+    "sha256": "463956c59616fd79f5fe8c44c23ec2379075f470f668c29c34426020884909c5",
+    "git_blob_sha": "3837a297d22835dbd9d28b5c5993160af36e0636"
+  },
+  {
+    "path": "source/unreal_v2/test_fresh_source_v2.py",
+    "bytes": 5527,
+    "sha256": "5276922dcbd02ac987cec7df244c7cfb75becb9c0af9cbb4440a83b7af4e4e09",
+    "git_blob_sha": "a06799cf8479249fa91afcef280dc252cd55dde3"
+  },
+  {
+    "path": "source/unreal_v2/test_import_contract.py",
+    "bytes": 7042,
+    "sha256": "c5e76cfe72e74e6629673c95a165254ddb42b6738217e936a480271513f192b6",
+    "git_blob_sha": "adc989732ed139b34597a6132ef4cb4753dbe2be"
+  },
+  {
+    "path": "source/unreal_v2/test_native_package.py",
+    "bytes": 2926,
+    "sha256": "1d136d55eb7f503499b9858ed27a10935d482c4dc5fd27c547d6e70c953abdbd",
+    "git_blob_sha": "7066e5e22bd46416c7a9e75237de650b6bb59a51"
+  },
+  {
+    "path": "source/unreal_v2/test_pilot_collision_profile.py",
+    "bytes": 2506,
+    "sha256": "13331591063601f6a0ef4ce001a7e84c25cd620110c643ce35953f3593a01d32",
+    "git_blob_sha": "1440806bfa2bd7cda34c1c810a08ddc362f89f74"
+  },
+  {
+    "path": "source/unreal_v2/test_prop_actor_pilot.py",
+    "bytes": 8107,
+    "sha256": "35de6ccea40f018283f8b14104ec7685c25eb4c3b08eecf4b50faa14aa74209c",
+    "git_blob_sha": "ce17d2afd3b18586bf1db7ac46883a78d50afb34"
+  },
+  {
+    "path": "source/unreal_v2/test_source_preview.py",
+    "bytes": 19301,
+    "sha256": "06a94c466e309afb519846760357a92972935ae3e1f6f58e08fb97e2966bf56c",
+    "git_blob_sha": "4051ae55b7cec253429aa6d69fd770a38742a425"
   }
 ]

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "original_objects_checked": 11363,
+  "original_objects_exactly_preserved": true,
+  "maximum_world_matrix_error": 0,
+  "placement_transforms_sha256": "33969c28a94d740c391eae6f90c757ecf80e6ac23cfd7201a364ab3eeb6b7467"
+}
