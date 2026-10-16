@@ -1,0 +1,23 @@
+SNIPERSAIM DENSE CANYON V2: OPEN THE BLENDER SCENE
+
+1. Pull this repository, including all eight SnipersAim_Dense_Canyon_v2.00N.part files.
+2. Windows: double-click Reassemble_SnipersAim.cmd.
+   macOS/Linux, or Windows with Python 3: run python3 Reassemble_SnipersAim.py
+   (On Windows the Python command may be python or py.)
+3. Open SnipersAim_Dense_Canyon_v2.blend in Blender.
+
+The scripts create the Blender file beside themselves and verify every part and
+the final SHA256. They refuse to overwrite a different existing .blend file.
+No packages, network access, or security-setting changes are required by the scripts.
+
+The scene is 80,777,744 bytes. SHA256:
+6d9df542034455e209ba8a790d83afbe41f4c95f878e5789d725425bb029b123
+
+The parts contain the exact complete Blender file; no rebuilding of the scene is
+required. They are stored as ordinary binary Git files because the available
+upload connector could not transfer the complete file in one request.
+Your existing .blend Git LFS tracking remains unchanged. These .part files are
+not LFS pointers.
+
+The reproducibility/ folder separately contains the scene-building scripts,
+layout manifest, original source checksums, and validation reports.
