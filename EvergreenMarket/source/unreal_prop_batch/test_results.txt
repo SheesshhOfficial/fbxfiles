@@ -1,0 +1,18 @@
+.....................
+----------------------------------------------------------------------
+Ran 21 tests in 2.121s
+
+OK
+PREFLIGHT ONLY: no map changes. Review the 16 selections; execute only after backup.
+{
+  "status": "dry_run_no_changes",
+  "source_map": "/Game/EvergreenHandoff/Full_20261016_193857_732038/Maps/L_Evergreen_full_WalkTest_20261016_194017_759391fe_PropPilot_20261016_194024_6198d196_Preview_20261016_194032_39fe2769_FixtureLights_20261016_203347_2abafb60",
+  "target_prefix": "/Game/EvergreenHandoff/Full_20261016_193857_732038/Maps/L_EG_PropBatch_UNIQUE",
+  "new_prop_count": 0,
+  "remaining_ism_instances": 11312,
+  "total_loose_props": 4,
+  "preserved_fixture_points": 42,
+  "preserved_collision_boxes": 694,
+  "selected": [],
+  "caveat": "Original placements retained. Shelf/pallet collision may occlude interaction; E and disguise fit require PIE testing. No Blueprint changes."
+}

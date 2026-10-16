@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 6769,
-    "sha256": "8f99e3d06e8c19851c60d60c343996758048a0e92703ee42b7288f864897ca8c",
-    "git_blob_sha": "9c79e18e0af1d40605c902c7d1c359702d2190be"
+    "bytes": 7253,
+    "sha256": "0c9a76256924647da30367d021ac732ae0650c5b0bcf4d100e0830149338a1fb",
+    "git_blob_sha": "7f1ecb32f86b85157454ab24be89fd772fe3e453"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -106,6 +106,12 @@
     "bytes": 7235,
     "sha256": "356871e1b574802341c186d3e4889b99c70cc3544b72d198403aaf37b0bc002c",
     "git_blob_sha": "55e553f4abc2b72e327035118ec63da1b43bdb77"
+  },
+  {
+    "path": "docs/PROP_BATCH.md",
+    "bytes": 4363,
+    "sha256": "d654a2f472b2aeed40da8da8e75ddec8b9b6f002dc28ead2c9967b026dcb4a1b",
+    "git_blob_sha": "277924fdc95e497189f848d7ac414da9019451c6"
   },
   {
     "path": "docs/PROP_CATALOG.md",
@@ -232,6 +238,18 @@
     "bytes": 103,
     "sha256": "04b6e85f11960b1de6540c327cca62957f2d6a26b7b89c35e94adb9fb37dbfbe",
     "git_blob_sha": "cd84b61759a4d8bc9688c0b03ebfe8821e2728c4"
+  },
+  {
+    "path": "packages/prop_batch/Evergreen_Prop_Batch.zip",
+    "bytes": 31004,
+    "sha256": "b8e958804b91669d2d44d625cdcd9bc2954f4bdf36cf2f0137711bd8d187175e",
+    "git_blob_sha": "50a37e2a9a32aaf2db4027a6da8aae075a265839"
+  },
+  {
+    "path": "packages/prop_batch/SHA256SUMS.txt",
+    "bytes": 91,
+    "sha256": "1b95dc3b51dcf14d5b7e2113727b0671db45993d9afcd4a4dab9c80eb17e4f46",
+    "git_blob_sha": "e5be405fcb3b334745864ebd05d0bd7692852387"
   },
   {
     "path": "packages/source_v2/Evergreen_Market_Source_v2_Complete.zip.part01",
@@ -994,6 +1012,72 @@
     "bytes": 2440,
     "sha256": "c2a67b970d8bf4a4ec7a321ba11f1e57e3d6ce951ce1f3f3a3ffe6518262b2a2",
     "git_blob_sha": "2f4867cf331f4507e5b8662929c7fa2ce3e9cb4d"
+  },
+  {
+    "path": "source/unreal_prop_batch/PROP_BATCH_README.md",
+    "bytes": 4363,
+    "sha256": "d654a2f472b2aeed40da8da8e75ddec8b9b6f002dc28ead2c9967b026dcb4a1b",
+    "git_blob_sha": "277924fdc95e497189f848d7ac414da9019451c6"
+  },
+  {
+    "path": "source/unreal_prop_batch/PROP_BATCH_SELECTION_AUDIT.md",
+    "bytes": 4387,
+    "sha256": "f2fb8f8a8aa4426b74c67cdd23e0e8a3bb2fa56751298d53b3d10fbeeb28ac97",
+    "git_blob_sha": "080ecb56537ca76c5ebe91d4ddb4dac0808c4263"
+  },
+  {
+    "path": "source/unreal_prop_batch/Start_Prop_Batch.py",
+    "bytes": 582,
+    "sha256": "88fd231fc16d64f43b121422048d5b47d945a7cf20d7206ec971b4da03cbdbb1",
+    "git_blob_sha": "3ec5d3cb84512b34715189dc5c04935782e65cd1"
+  },
+  {
+    "path": "source/unreal_prop_batch/fixture_support.py",
+    "bytes": 18796,
+    "sha256": "52e21b5dfa1f233e721bc9a687097f532d2de3f457fb1c0576ddd8129acf0b80",
+    "git_blob_sha": "682b03f9a3c58e85eeee09af7c5dd08aac9e2a23"
+  },
+  {
+    "path": "source/unreal_prop_batch/generate_prop_batch_selection.py",
+    "bytes": 5592,
+    "sha256": "ea654a8f37e2bac1d648133f9bc81c3faf3d6f3c97a71c335bc0dfd909f5660b",
+    "git_blob_sha": "e6fd94c0ef77c516c7da18cfdf99ce49011fe200"
+  },
+  {
+    "path": "source/unreal_prop_batch/prop_batch_patch.py",
+    "bytes": 16238,
+    "sha256": "5e646d8625ac4c7fa5333c7e32749a79c048906ba1c5aa51816ffd5ed9f71938",
+    "git_blob_sha": "905c73ad509611c942dca5073ef7f8f4faf64b21"
+  },
+  {
+    "path": "source/unreal_prop_batch/prop_batch_selection_v1.json",
+    "bytes": 69933,
+    "sha256": "49f3f1a90aed02dc51a562b5cf4af4567525a8bfdaf34e4040a75c416ee71eb6",
+    "git_blob_sha": "3f7e2705443f89fca13bafdfc31c83b7a923797a"
+  },
+  {
+    "path": "source/unreal_prop_batch/selection_tests.txt",
+    "bytes": 792,
+    "sha256": "03ac2dbd19b95a910b5a9d643f91cb55f0ffc4019fb22ec6333b6fd97795fd26",
+    "git_blob_sha": "f4bf91c1b201367c12329e17143fee792613752d"
+  },
+  {
+    "path": "source/unreal_prop_batch/test_prop_batch_patch.py",
+    "bytes": 9237,
+    "sha256": "1a5538614296b6d225646897a8fd995ec470c7e2bfe4a7f448efa0dcdb2eec0e",
+    "git_blob_sha": "75e4a1c4cbfcf2c475702ed4ec903cfb1a7f0e04"
+  },
+  {
+    "path": "source/unreal_prop_batch/test_prop_batch_selection.py",
+    "bytes": 2481,
+    "sha256": "0e00020ae646fcc9d7d9fbe2735161752c30823700b92d10afa4e74ba5655d77",
+    "git_blob_sha": "6d0e2ca4b054de6c3820c972eab84f7fbc192b92"
+  },
+  {
+    "path": "source/unreal_prop_batch/test_results.txt",
+    "bytes": 903,
+    "sha256": "3eb1b73269d56309be88cd8da0f2b8dc84774b5b39b2516d0afcb2411fc3edd8",
+    "git_blob_sha": "b3c085db822e963d7e627c06531c88030d9abd20"
   },
   {
     "path": "source/unreal_v2/FRESH_SOURCE_V2.md",

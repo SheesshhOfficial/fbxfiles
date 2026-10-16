@@ -1,0 +1,2892 @@
+{
+  "schema": "evergreen-prop-batch-selection-v1",
+  "source_manifest_sha256": "e983146c1d8f18145eaec63c9ec0544e3a6128231b7c61eb940bcace94566f85",
+  "selection_count": 16,
+  "original_logical_placement_count": 11316,
+  "original_disguise_candidate_count": 6695,
+  "existing_collision_box_count": 694,
+  "excluded_pilot_instance_ids": [
+    "EGI_07d3299713adda67",
+    "EGI_4079aa7e948f1ef0",
+    "EGI_017f72992dd32364",
+    "EGI_3e0f2d4065a1cbf8"
+  ],
+  "allowed_asset_names": [
+    "SKU_02_bottle",
+    "SKU_03_bottle",
+    "SKU_04_bottle",
+    "SKU_05_Carton",
+    "SKU_06_can",
+    "SKU_07_can",
+    "SKU_08_can",
+    "SKU_10_Carton",
+    "SKU_11_bottle",
+    "SKU_12_Carton",
+    "SKU_13_can",
+    "ShippingCarton_Floor"
+  ],
+  "canonical_scale_tolerance": 1e-06,
+  "selected": [
+    {
+      "instance_id": "EGI_0f8d6343f4f54f9d",
+      "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+      "asset_name": "SKU_02_bottle",
+      "category": "disguise_candidate",
+      "label": "SKU_02_bottle_f54f9d",
+      "source_placement": {
+        "instance_id": "EGI_0f8d6343f4f54f9d",
+        "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+        "location_cm": [
+          -761.999989,
+          848.999977,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_02_bottle.003"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -7.619999886
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_0f8d6343f4f54f9d",
+        "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+        "location_cm": [
+          -761.999989,
+          848.999977,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_02_bottle.003"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -7.619999886
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        14.0,
+        14.0,
+        34.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -768.999989,
+          841.999977,
+          44.999999
+        ],
+        "max": [
+          -754.999989,
+          855.999977,
+          79.699999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        79.699999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_e8ffcb087f8eb3ff",
+      "illustrative_approach_probe_center_cm": [
+        -761.999989,
+        928.999977,
+        62.349999000000004
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 57.85
+        },
+        {
+          "instance_id": "EGI_e8ffcb087f8eb3ff",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.8625
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 62.35
+        },
+        {
+          "instance_id": "EGI_ef1fed4c167b2b8f",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 69.0638
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 79.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_5451cd109bab56e9",
+      "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+      "asset_name": "SKU_02_bottle",
+      "category": "disguise_candidate",
+      "label": "SKU_02_bottle_ab56e9",
+      "source_placement": {
+        "instance_id": "EGI_5451cd109bab56e9",
+        "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+        "location_cm": [
+          -839.999962,
+          350.999999,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_02_bottle.004"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            -8.399999619
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            -3.50999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_5451cd109bab56e9",
+        "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+        "location_cm": [
+          -839.999962,
+          350.999999,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_02_bottle.004"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            -8.399999619
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            -3.50999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        14.0,
+        14.0,
+        34.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -846.9999626119594,
+          343.9999983880406,
+          44.999999
+        ],
+        "max": [
+          -832.9999613880406,
+          357.9999996119594,
+          79.699999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        79.699999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_d02239cfe130049f",
+      "illustrative_approach_probe_center_cm": [
+        -839.999962,
+        270.999999,
+        62.349999000000004
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 57.85
+        },
+        {
+          "instance_id": "EGI_d02239cfe130049f",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.8624
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 62.35
+        },
+        {
+          "instance_id": "EGI_5a168eec7ee634b2",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 69.0638
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 79.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_01eca130f35d655e",
+      "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+      "asset_name": "SKU_03_bottle",
+      "category": "disguise_candidate",
+      "label": "SKU_03_bottle_5d655e",
+      "source_placement": {
+        "instance_id": "EGI_01eca130f35d655e",
+        "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+        "location_cm": [
+          -162.0,
+          350.999999,
+          44.999987
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_03_bottle.027"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            -1.620000005
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            -3.50999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999869
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_01eca130f35d655e",
+        "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+        "location_cm": [
+          -162.0,
+          350.999999,
+          44.999987
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_03_bottle.027"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            -1.620000005
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            -3.50999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999869
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        14.0,
+        14.0,
+        34.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -169.00000061195942,
+          343.9999983880406,
+          44.999987
+        ],
+        "max": [
+          -154.99999938804058,
+          357.9999996119594,
+          79.699987
+        ]
+      },
+      "bottom_top_cm": [
+        44.999987,
+        79.699987
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_c80d1f073eaf6783",
+      "illustrative_approach_probe_center_cm": [
+        -162.0,
+        270.999999,
+        62.349987
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 57.85
+        },
+        {
+          "instance_id": "EGI_c80d1f073eaf6783",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.8624
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 62.35
+        },
+        {
+          "instance_id": "EGI_d8a6f231a3ffd1f3",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 69.0638
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 79.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_7ff75102d10dd13b",
+      "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+      "asset_name": "SKU_03_bottle",
+      "category": "disguise_candidate",
+      "label": "SKU_03_bottle_0dd13b",
+      "source_placement": {
+        "instance_id": "EGI_7ff75102d10dd13b",
+        "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+        "location_cm": [
+          -240.00001,
+          848.999977,
+          44.999987
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_03_bottle.020"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.400000095
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999869
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_7ff75102d10dd13b",
+        "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+        "location_cm": [
+          -240.00001,
+          848.999977,
+          44.999987
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_03_bottle.020"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -2.400000095
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999869
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        14.0,
+        14.0,
+        34.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -247.00001,
+          841.999977,
+          44.999987
+        ],
+        "max": [
+          -233.00001,
+          855.999977,
+          79.699987
+        ]
+      },
+      "bottom_top_cm": [
+        44.999987,
+        79.699987
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_a60476c4df62dbdf",
+      "illustrative_approach_probe_center_cm": [
+        -240.00001,
+        928.999977,
+        62.349987
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 57.85
+        },
+        {
+          "instance_id": "EGI_a60476c4df62dbdf",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.8624
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 62.35
+        },
+        {
+          "instance_id": "EGI_5eb30c84300b9363",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 69.0638
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 79.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_4c0fd92658e86b28",
+      "asset_id": "SM_EG_SKU_04_bottle_a89675d86d",
+      "asset_name": "SKU_04_bottle",
+      "category": "disguise_candidate",
+      "label": "SKU_04_bottle_e86b28",
+      "source_placement": {
+        "instance_id": "EGI_4c0fd92658e86b28",
+        "asset_id": "SM_EG_SKU_04_bottle_a89675d86d",
+        "location_cm": [
+          438.000011,
+          848.999977,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_04_bottle.049"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.380000114
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_4c0fd92658e86b28",
+        "asset_id": "SM_EG_SKU_04_bottle_a89675d86d",
+        "location_cm": [
+          438.000011,
+          848.999977,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_04_bottle.049"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.380000114
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        14.0,
+        14.0,
+        34.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          431.000011,
+          841.999977,
+          44.999999
+        ],
+        "max": [
+          445.000011,
+          855.999977,
+          79.699999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        79.699999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_963b3673c1529a11",
+      "illustrative_approach_probe_center_cm": [
+        438.000011,
+        928.999977,
+        62.349999000000004
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 57.85
+        },
+        {
+          "instance_id": "EGI_963b3673c1529a11",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.8625
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 62.35
+        },
+        {
+          "instance_id": "EGI_44c8c1e13c229692",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 69.0638
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 79.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_3ba9a0d6328c5647",
+      "asset_id": "SM_EG_SKU_05_Carton_a0ae06adeb",
+      "asset_name": "SKU_05_Carton",
+      "category": "disguise_candidate",
+      "label": "SKU_05_Carton_8c5647",
+      "source_placement": {
+        "instance_id": "EGI_3ba9a0d6328c5647",
+        "asset_id": "SM_EG_SKU_05_Carton_a0ae06adeb",
+        "location_cm": [
+          960.000038,
+          350.999999,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_05_box.076"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            9.600000381
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            -3.50999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_3ba9a0d6328c5647",
+        "asset_id": "SM_EG_SKU_05_Carton_a0ae06adeb",
+        "location_cm": [
+          960.000038,
+          350.999999,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_05_box.076"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            9.600000381
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            -3.50999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        19.0,
+        11.0,
+        29.0
+      ],
+      "world_aabb_cm": {
+        "min": [
+          950.5000375191747,
+          345.4999981694836,
+          44.999999
+        ],
+        "max": [
+          969.5000384808253,
+          356.4999998305164,
+          73.999999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        73.999999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_32d04b303208dc68",
+      "illustrative_approach_probe_center_cm": [
+        960.000038,
+        270.999999,
+        59.499999
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 55.0
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 59.5
+        },
+        {
+          "instance_id": "EGI_32d04b303208dc68",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.066
+        },
+        {
+          "instance_id": "EGI_366547ff858b137b",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 70.5873
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 76.5
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_3013a88f914ebc03",
+      "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+      "asset_name": "SKU_06_can",
+      "category": "disguise_candidate",
+      "label": "SKU_06_can_4ebc03",
+      "source_placement": {
+        "instance_id": "EGI_3013a88f914ebc03",
+        "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+        "location_cm": [
+          -761.999989,
+          -399.000025,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.464271086135341e-08
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_06_can.118"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.000000119,
+            8.9e-08,
+            0.0,
+            -7.619999886
+          ],
+          [
+            -8.9e-08,
+            -1.000000119,
+            0.0,
+            3.990000248
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_3013a88f914ebc03",
+        "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+        "location_cm": [
+          -761.999989,
+          -399.000025,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.464271086135341e-08
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_06_can.118"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.000000119,
+            8.9e-08,
+            0.0,
+            -7.619999886
+          ],
+          [
+            -8.9e-08,
+            -1.000000119,
+            0.0,
+            3.990000248
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        13.4,
+        13.4,
+        18.5
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -768.6999903969147,
+          -405.7000263969146,
+          44.999999
+        ],
+        "max": [
+          -755.2999876030854,
+          -392.3000236030854,
+          63.499999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        63.499999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_d3b87181e475aeb2",
+      "illustrative_approach_probe_center_cm": [
+        -761.999989,
+        -479.000025,
+        54.249999
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 49.75
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 54.25
+        },
+        {
+          "instance_id": "EGI_d3b87181e475aeb2",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 59.9271
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 71.25
+        },
+        {
+          "instance_id": "EGI_8907204546bed503",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 73.6003
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_869f7db65feb4ccd",
+      "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+      "asset_name": "SKU_06_can",
+      "category": "disguise_candidate",
+      "label": "SKU_06_can_eb4ccd",
+      "source_placement": {
+        "instance_id": "EGI_869f7db65feb4ccd",
+        "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+        "location_cm": [
+          -761.999989,
+          99.000031,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -1.067216930592305e-07,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -9.313224635931761e-10,
+          1.0
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_06_can.114"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.000000119,
+            -2e-09,
+            0.0,
+            -7.619999886
+          ],
+          [
+            2e-09,
+            1.000000119,
+            0.0,
+            -0.990000308
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_869f7db65feb4ccd",
+        "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+        "location_cm": [
+          -761.999989,
+          99.000031,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -1.067216930592305e-07,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -9.313224635931761e-10,
+          1.0
+        ],
+        "scale": [
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_06_can.114"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.000000119,
+            -2e-09,
+            0.0,
+            -7.619999886
+          ],
+          [
+            2e-09,
+            1.000000119,
+            0.0,
+            -0.990000308
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        13.4,
+        13.4,
+        18.5
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -768.699989811182,
+          92.30003018881804,
+          44.999999
+        ],
+        "max": [
+          -755.299988188818,
+          105.70003181118197,
+          63.499999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        63.499999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_a7242f706d634557",
+      "illustrative_approach_probe_center_cm": [
+        -761.999989,
+        179.000031,
+        54.249999
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 49.75
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 54.25
+        },
+        {
+          "instance_id": "EGI_a7242f706d634557",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 59.9271
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 71.25
+        },
+        {
+          "instance_id": "EGI_18547877bdcde9fd",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 73.6003
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_33de12349a45541a",
+      "asset_id": "SM_EG_SKU_07_can_6890802b73",
+      "asset_name": "SKU_07_can",
+      "category": "disguise_candidate",
+      "label": "SKU_07_can_45541a",
+      "source_placement": {
+        "instance_id": "EGI_33de12349a45541a",
+        "asset_id": "SM_EG_SKU_07_can_6890802b73",
+        "location_cm": [
+          -239.999986,
+          -399.000025,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          0.9999999403953552,
+          0.9999999403953552,
+          0.9999999403953552
+        ],
+        "source_names": [
+          "PROP_SKU_07_can.113"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -0.99999994,
+            8.7e-08,
+            0.0,
+            -2.399999857
+          ],
+          [
+            -8.7e-08,
+            -0.99999994,
+            0.0,
+            3.990000248
+          ],
+          [
+            0.0,
+            0.0,
+            0.99999994,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_33de12349a45541a",
+        "asset_id": "SM_EG_SKU_07_can_6890802b73",
+        "location_cm": [
+          -239.999986,
+          -399.000025,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          0.9999999403953552,
+          0.9999999403953552,
+          0.9999999403953552
+        ],
+        "source_names": [
+          "PROP_SKU_07_can.113"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -0.99999994,
+            8.7e-08,
+            0.0,
+            -2.399999857
+          ],
+          [
+            -8.7e-08,
+            -0.99999994,
+            0.0,
+            3.990000248
+          ],
+          [
+            0.0,
+            0.0,
+            0.99999994,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        13.4,
+        13.4,
+        18.5
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -246.69998618638147,
+          -405.7000251863814,
+          44.999999
+        ],
+        "max": [
+          -233.29998581361855,
+          -392.30002481361856,
+          63.499997897314074
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        63.499997897314074
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_f3b097786f94abfa",
+      "illustrative_approach_probe_center_cm": [
+        -239.999986,
+        -479.000025,
+        54.24999844865704
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 49.75
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 54.25
+        },
+        {
+          "instance_id": "EGI_f3b097786f94abfa",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 59.9271
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 71.25
+        },
+        {
+          "instance_id": "EGI_b4be62d4f49713ac",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 73.6003
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_9dfa86a010edad0a",
+      "asset_id": "SM_EG_SKU_08_can_eabbd8afbe",
+      "asset_name": "SKU_08_can",
+      "category": "disguise_candidate",
+      "label": "SKU_08_can_edad0a",
+      "source_placement": {
+        "instance_id": "EGI_9dfa86a010edad0a",
+        "asset_id": "SM_EG_SKU_08_can_eabbd8afbe",
+        "location_cm": [
+          437.999916,
+          -399.000025,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_08_can.139"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            4.379999161
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            3.990000248
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_9dfa86a010edad0a",
+        "asset_id": "SM_EG_SKU_08_can_eabbd8afbe",
+        "location_cm": [
+          437.999916,
+          -399.000025,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.371138828673793e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_08_can.139"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            4.379999161
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            3.990000248
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        13.4,
+        13.4,
+        18.5
+      ],
+      "world_aabb_cm": {
+        "min": [
+          431.2999154142674,
+          -405.7000255857326,
+          44.999999
+        ],
+        "max": [
+          444.6999165857326,
+          -392.3000244142674,
+          63.499999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        63.499999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_a31786348c9a5a39",
+      "illustrative_approach_probe_center_cm": [
+        437.999916,
+        -479.000025,
+        54.249999
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 49.75
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 54.25
+        },
+        {
+          "instance_id": "EGI_a31786348c9a5a39",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 59.9271
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 71.25
+        },
+        {
+          "instance_id": "EGI_078a4dc7e8d6a614",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 73.6003
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_b74ac46863b43864",
+      "asset_id": "SM_EG_SKU_10_Carton_cbddf5d730",
+      "asset_name": "SKU_10_Carton",
+      "category": "disguise_candidate",
+      "label": "SKU_10_Carton_b43864",
+      "source_placement": {
+        "instance_id": "EGI_b74ac46863b43864",
+        "asset_id": "SM_EG_SKU_10_Carton_cbddf5d730",
+        "location_cm": [
+          -761.999893,
+          -651.000071,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_10_box.202"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -7.619998932
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            6.510000706
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_b74ac46863b43864",
+        "asset_id": "SM_EG_SKU_10_Carton_cbddf5d730",
+        "location_cm": [
+          -761.999893,
+          -651.000071,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_10_box.202"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -7.619998932
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            6.510000706
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        19.0,
+        11.0,
+        29.0
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -771.499893,
+          -656.500071,
+          44.999999
+        ],
+        "max": [
+          -752.499893,
+          -645.500071,
+          73.999999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        73.999999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_adffe15d1c365a8d",
+      "illustrative_approach_probe_center_cm": [
+        -761.999893,
+        -571.000071,
+        59.499999
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 55.0
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 59.5
+        },
+        {
+          "instance_id": "EGI_adffe15d1c365a8d",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.066
+        },
+        {
+          "instance_id": "EGI_4889c86dbc1c2e54",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 70.5872
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 76.5
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_4c207ecbd1ac569b",
+      "asset_id": "SM_EG_SKU_11_bottle_c4f0a62a98",
+      "asset_name": "SKU_11_bottle",
+      "category": "disguise_candidate",
+      "label": "SKU_11_bottle_ac569b",
+      "source_placement": {
+        "instance_id": "EGI_4c207ecbd1ac569b",
+        "asset_id": "SM_EG_SKU_11_bottle_c4f0a62a98",
+        "location_cm": [
+          -240.00001,
+          -1149.000072,
+          45.000023
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.464271086135341e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "source_names": [
+          "PROP_SKU_11_bottle.229"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.9e-08,
+            0.0,
+            -2.400000095
+          ],
+          [
+            -8.9e-08,
+            -1.0,
+            0.0,
+            11.490000725
+          ],
+          [
+            0.0,
+            0.0,
+            1.000000119,
+            0.450000226
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_4c207ecbd1ac569b",
+        "asset_id": "SM_EG_SKU_11_bottle_c4f0a62a98",
+        "location_cm": [
+          -240.00001,
+          -1149.000072,
+          45.000023
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.464271086135341e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0000001192092896
+        ],
+        "source_names": [
+          "PROP_SKU_11_bottle.229"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.9e-08,
+            0.0,
+            -2.400000095
+          ],
+          [
+            -8.9e-08,
+            -1.0,
+            0.0,
+            11.490000725
+          ],
+          [
+            0.0,
+            0.0,
+            1.000000119,
+            0.450000226
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        14.0,
+        14.0,
+        34.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -247.00001062499797,
+          -1156.000072624998,
+          45.000023
+        ],
+        "max": [
+          -233.00000937500204,
+          -1142.000071375002,
+          79.70002713656234
+        ]
+      },
+      "bottom_top_cm": [
+        45.000023,
+        79.70002713656234
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_c1047d4d3c1d8011",
+      "illustrative_approach_probe_center_cm": [
+        -240.00001,
+        -1229.000072,
+        62.35002506828117
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 57.85
+        },
+        {
+          "instance_id": "EGI_c1047d4d3c1d8011",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.8625
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 62.35
+        },
+        {
+          "instance_id": "EGI_4c76e2278c0eb825",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 69.0639
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 79.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_4fb051d8175da0d7",
+      "asset_id": "SM_EG_SKU_12_Carton_58ed0d7cd2",
+      "asset_name": "SKU_12_Carton",
+      "category": "disguise_candidate",
+      "label": "SKU_12_Carton_5da0d7",
+      "source_placement": {
+        "instance_id": "EGI_4fb051d8175da0d7",
+        "asset_id": "SM_EG_SKU_12_Carton_58ed0d7cd2",
+        "location_cm": [
+          437.999916,
+          -651.000023,
+          44.999975
+        ],
+        "rotation_deg": [
+          -0.0,
+          1.6675266528351443e-08,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          1.4551915228366852e-10,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_12_box.223"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.379999161
+          ],
+          [
+            -0.0,
+            1.0,
+            0.0,
+            6.510000229
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.44999975
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_4fb051d8175da0d7",
+        "asset_id": "SM_EG_SKU_12_Carton_58ed0d7cd2",
+        "location_cm": [
+          437.999916,
+          -651.000023,
+          44.999975
+        ],
+        "rotation_deg": [
+          -0.0,
+          1.6675266528351443e-08,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          1.4551915228366852e-10,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_12_box.223"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.379999161
+          ],
+          [
+            -0.0,
+            1.0,
+            0.0,
+            6.510000229
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.44999975
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        19.0,
+        11.0,
+        29.0
+      ],
+      "world_aabb_cm": {
+        "min": [
+          428.4999159983993,
+          -656.5000230027649,
+          44.999975
+        ],
+        "max": [
+          447.4999160016007,
+          -645.5000229972352,
+          73.999975
+        ]
+      },
+      "bottom_top_cm": [
+        44.999975,
+        73.999975
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_c6d0d538dde25884",
+      "illustrative_approach_probe_center_cm": [
+        437.999916,
+        -571.000023,
+        59.499975000000006
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 55.0
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 59.5
+        },
+        {
+          "instance_id": "EGI_c6d0d538dde25884",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 61.066
+        },
+        {
+          "instance_id": "EGI_45c4145d2a455799",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 70.5873
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 76.5
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_18fc8f491c214f5f",
+      "asset_id": "SM_EG_SKU_13_can_f0a96922e9",
+      "asset_name": "SKU_13_can",
+      "category": "disguise_candidate",
+      "label": "SKU_13_can_214f5f",
+      "source_placement": {
+        "instance_id": "EGI_18fc8f491c214f5f",
+        "asset_id": "SM_EG_SKU_13_can_f0a96922e9",
+        "location_cm": [
+          960.000038,
+          -1148.999977,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.347855764308406e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_13_can.207"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            9.600000381
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            11.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_18fc8f491c214f5f",
+        "asset_id": "SM_EG_SKU_13_can_f0a96922e9",
+        "location_cm": [
+          960.000038,
+          -1148.999977,
+          44.999999
+        ],
+        "rotation_deg": [
+          0.0,
+          179.999991348578,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.0,
+          1.0,
+          4.347855764308406e-08
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP_SKU_13_can.207"
+        ],
+        "source_collection": "11_Grocery_Products",
+        "blender_matrix": [
+          [
+            -1.0,
+            8.7e-08,
+            0.0,
+            9.600000381
+          ],
+          [
+            -8.7e-08,
+            -1.0,
+            0.0,
+            11.489999771
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.449999988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        13.4,
+        13.4,
+        18.5
+      ],
+      "world_aabb_cm": {
+        "min": [
+          953.3000374173873,
+          -1155.6999775826125,
+          44.999999
+        ],
+        "max": [
+          966.7000385826127,
+          -1142.2999764173874,
+          63.499999
+        ]
+      },
+      "bottom_top_cm": [
+        44.999999,
+        63.499999
+      ],
+      "zone": "Sales floor low endcap",
+      "support_fixture_instance_id": "EGI_07042674ff6c33b7",
+      "illustrative_approach_probe_center_cm": [
+        960.000038,
+        -1228.999977,
+        54.249999
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_6864fe9b53e88d80",
+          "name": "Sales floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 49.75
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 54.25
+        },
+        {
+          "instance_id": "EGI_07042674ff6c33b7",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 59.9271
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 71.25
+        },
+        {
+          "instance_id": "EGI_d5528333678f5d2d",
+          "name": "Endcap shelf",
+          "visibility_block": false,
+          "distance_from_illustrative_probe_center_cm": 73.6003
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low outward-facing endcap; approach from cross-aisle."
+    },
+    {
+      "instance_id": "EGI_40290a2b7eaefcbc",
+      "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+      "asset_name": "ShippingCarton_Floor",
+      "category": "disguise_candidate",
+      "label": "ShippingCarton_Floor_aefcbc",
+      "source_placement": {
+        "instance_id": "EGI_40290a2b7eaefcbc",
+        "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+        "location_cm": [
+          271.000004,
+          -2767.239952,
+          23.0
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP shipping carton.444",
+          "Carton packing tape.444",
+          "Carton printed label.444",
+          "Carton handling text.444"
+        ],
+        "source_collection": "20_Stockroom",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.710000038
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            27.672399521
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.230000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_40290a2b7eaefcbc",
+        "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+        "location_cm": [
+          271.000004,
+          -2767.239952,
+          23.0
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP shipping carton.444",
+          "Carton packing tape.444",
+          "Carton printed label.444",
+          "Carton handling text.444"
+        ],
+        "source_collection": "20_Stockroom",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.710000038
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            27.672399521
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.230000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        55.0,
+        60.52006,
+        48.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          243.500004,
+          -2797.499982,
+          23.0
+        ],
+        "max": [
+          298.500004,
+          -2736.979922,
+          71.7
+        ]
+      },
+      "bottom_top_cm": [
+        23.0,
+        71.7
+      ],
+      "zone": "Stockroom pallet-level floor carton",
+      "support_fixture_instance_id": null,
+      "illustrative_approach_probe_center_cm": [
+        271.000004,
+        -2687.239952,
+        47.35
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_d174e82e890eb5ca",
+          "name": "Service floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 42.85
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 47.35
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 64.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low stockroom carton on pallet; adjacent cartons/pallet can obstruct approach."
+    },
+    {
+      "instance_id": "EGI_9ca5fc6b0e622d49",
+      "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+      "asset_name": "ShippingCarton_Floor",
+      "category": "disguise_candidate",
+      "label": "ShippingCarton_Floor_622d49",
+      "source_placement": {
+        "instance_id": "EGI_9ca5fc6b0e622d49",
+        "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+        "location_cm": [
+          -1571.000004,
+          -2467.239952,
+          23.0
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP shipping carton.433",
+          "Carton packing tape.433",
+          "Carton printed label.433",
+          "Carton handling text.433"
+        ],
+        "source_collection": "20_Stockroom",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -15.710000038
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            24.672399521
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.230000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_placement": {
+        "instance_id": "EGI_9ca5fc6b0e622d49",
+        "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+        "location_cm": [
+          -1571.000004,
+          -2467.239952,
+          23.0
+        ],
+        "rotation_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_names": [
+          "PROP shipping carton.433",
+          "Carton packing tape.433",
+          "Carton printed label.433",
+          "Carton handling text.433"
+        ],
+        "source_collection": "20_Stockroom",
+        "blender_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -15.710000038
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            24.672399521
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.230000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "canonical_bounds_cm": [
+        55.0,
+        60.52006,
+        48.7
+      ],
+      "world_aabb_cm": {
+        "min": [
+          -1598.500004,
+          -2497.499982,
+          23.0
+        ],
+        "max": [
+          -1543.500004,
+          -2436.979922,
+          71.7
+        ]
+      },
+      "bottom_top_cm": [
+        23.0,
+        71.7
+      ],
+      "zone": "Stockroom pallet-level floor carton",
+      "support_fixture_instance_id": null,
+      "illustrative_approach_probe_center_cm": [
+        -1571.000004,
+        -2387.239952,
+        47.35
+      ],
+      "nearby_694_boxes_within_100cm": [
+        {
+          "instance_id": "EGI_d174e82e890eb5ca",
+          "name": "Service floor",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 42.85
+        },
+        {
+          "instance_id": "EGI_90b83be55fd1f337",
+          "name": "Raised building slab",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 47.35
+        },
+        {
+          "instance_id": "EGI_2db27d21bcb8a594",
+          "name": "Site terrain",
+          "visibility_block": true,
+          "distance_from_illustrative_probe_center_cm": 64.35
+        }
+      ],
+      "accessibility_status": "offline_low_height_candidate_requires_PIE_test",
+      "accessibility_note": "Original placement preserved. Low stockroom carton on pallet; adjacent cartons/pallet can obstruct approach."
+    }
+  ],
+  "limitations": [
+    "Selection is a geometry-based review, not an Unreal runtime/reachability certification.",
+    "AABB estimates derive from bottom-center canonical bounds, original quaternion and scale; actual mesh collision and gameplay trace can differ.",
+    "Illustrative probe centers are 80 cm toward an endcap cross-aisle (floor cartons use +Y); they are diagnostic points, not approved pawn positions or navigation routes.",
+    "Nearby-box lists use point-to-world-AABB distance and a hypothetical 100 cm radius; conservative for rotated boxes and not an actual sweep, occlusion test, or first-hit proof.",
+    "The character Visibility sphere may hit fixtures, floor, neighboring props or another actor before the selected prop. Fixture collision is preserved. Confirm radius versus sweep length and trace origin in the actual character Blueprint.",
+    "Original non-selected stock can crowd each shelf. Test from aisle while aiming down; standing height alone does not guarantee a low prop can be selected.",
+    "No props moved/added and no bulk conversion of 6695 disguise-candidate placements; only these 16 existing instances are proposed."
+  ]
+}

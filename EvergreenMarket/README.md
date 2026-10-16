@@ -1,5 +1,9 @@
 # Evergreen Market
 
+## Controlled expansion: 16 original props
+
+Use the small [prop-batch ZIP](packages/prop_batch/Evergreen_Prop_Batch.zip) and [two-command guide](docs/PROP_BATCH.md) on the successful fixture-lit v2 map. It creates a separate short-named map with 16 additional original-position cans, bottles, cartons and boxes, preserving the four existing props, 42 lights and 694 walking colliders. Dry-run first. Offline tests passed; actual E interaction and multiplayer still need playtesting.
+
 ## Fixture-aligned lighting for a working v2 map
 
 Use the small [fixture-lighting ZIP](packages/fixture_lighting/Evergreen_Fixture_Lighting.zip) and [two-command guide](docs/FIXTURE_LIGHTS.md) to create a lighting-only map copy with 42 actual fixture points: 25 ceiling/warehouse, 15 canopy and 2 wall lamps. It replaces only the 11 generated preview lights, including the generated Sun, and preserves geometry, 694 colliders, four working props, PlayerStart and unrelated manual lights. No asset reimport or full-package download is needed. Settings are an initial visual/performance test, not a promise of calibrated brightness or frame rate.

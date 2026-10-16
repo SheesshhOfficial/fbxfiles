@@ -1,0 +1,13 @@
+test_canonical_scale_and_candidate (__main__.SelectionTests.test_canonical_scale_and_candidate) ... ok
+test_count_and_unique (__main__.SelectionTests.test_count_and_unique) ... ok
+test_distributed (__main__.SelectionTests.test_distributed) ... ok
+test_exact_original_transform (__main__.SelectionTests.test_exact_original_transform) ... ok
+test_exclude_existing_pilot (__main__.SelectionTests.test_exclude_existing_pilot) ... ok
+test_existing_geometry_and_risk (__main__.SelectionTests.test_existing_geometry_and_risk) ... ok
+test_fingerprint_and_reproducible (__main__.SelectionTests.test_fingerprint_and_reproducible) ... ok
+test_low_heights (__main__.SelectionTests.test_low_heights) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.258s
+
+OK
