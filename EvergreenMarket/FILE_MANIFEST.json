@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 2900,
-    "sha256": "a538952e428e32131c0fbe85ae9f81fb65bd3e4582e2ee7b8910f0f94464207a",
-    "git_blob_sha": "417ed710f5c0890835e750699da3dd76f9e1465f"
+    "bytes": 3247,
+    "sha256": "5d81aad7791b1b87a189203ce79cc0b06b4da4a71236df7f12f4101edcf8e745",
+    "git_blob_sha": "441de68092ec2f8cd2b18533d17f89b2ff970282"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -82,6 +82,12 @@
     "bytes": 1575,
     "sha256": "963e03d45f21114241d3bbc2f1c2dff6dc42f18ebc1073625110c3085c8d1757",
     "git_blob_sha": "2292a200bea23f18b047e24ea5868859c14da9ae"
+  },
+  {
+    "path": "docs/WALK_COLLISION_AND_FINISHING.md",
+    "bytes": 8499,
+    "sha256": "aad74c18d2148843b678eff421340075c5e690fa944768b30f5826734fcced35",
+    "git_blob_sha": "e0bb1952a2b017ae313aa876d3edc2ffc45fcce5"
   },
   {
     "path": "packages/Evergreen_Market_Blender_Package.zip",
@@ -192,6 +198,12 @@
     "git_blob_sha": "80851a8a0d1d8f2731a2d2fce577d03240fd9aa0"
   },
   {
+    "path": "qa/collision_local_tests.txt",
+    "bytes": 3606,
+    "sha256": "89c2b08cdc303e1a8216ef5209553119dda2e4bc61010171f996e832c9a7f13f",
+    "git_blob_sha": "c2b5ac65ae5052c337ef708dbde63f729ab280b0"
+  },
+  {
     "path": "qa/conversion_report.json",
     "bytes": 8193,
     "sha256": "4da99db860b825ab679fbcb268a0f1e93a259f2d59a30887c6616e5065dfd057",
@@ -282,10 +294,22 @@
     "git_blob_sha": "6195fd286f72c515d6c2738fe639e945a379da3e"
   },
   {
+    "path": "source/unreal/setup_market_collision.py",
+    "bytes": 16258,
+    "sha256": "5bb4577756dc1c8e314aa9bdadf9a44284cde07d52d44efd7cd1fc7e1c2ad67b",
+    "git_blob_sha": "259c97517acc816f0c0c17c985577050b4df2b95"
+  },
+  {
     "path": "source/unreal/test_import_contract.py",
     "bytes": 7042,
     "sha256": "c5e76cfe72e74e6629673c95a165254ddb42b6738217e936a480271513f192b6",
     "git_blob_sha": "adc989732ed139b34597a6132ef4cb4753dbe2be"
+  },
+  {
+    "path": "source/unreal/test_market_collision.py",
+    "bytes": 5380,
+    "sha256": "33f4fc15d4d92e98660848f58ea5e37c3d8c96b6206f1ca07a57a06500fe2dd4",
+    "git_blob_sha": "1197f28d6fb186d79e1721340df75259997d9f2c"
   },
   {
     "path": "source/unreal/verify_handoff_blender.py",

@@ -4,6 +4,10 @@
 
 After extracting the handoff ZIP, copy the current `source/unreal/import_supermarket_unreal.py` from this repository over the extracted package's `source/import_supermarket_unreal.py`. The archive retains its original version. This fixes the collision-enum error during sample assembly; see [hotfix and retry steps](docs/IMPORTER_HOTFIX.md).
 
+## Walking collision after the full import
+
+If the character falls through the map, use the [walk-test collision helper and finishing checklist](docs/WALK_COLLISION_AND_FINISHING.md). It adds reviewed floor/wall/fixture collision to a new map copy without reimporting assets. Dry run first; the new helper still needs an actual Unreal walk test.
+
 ## Download and open
 Download the repository ZIP (Code → Download ZIP), or clone this repository. All project files are under **EvergreenMarket/**.
 
