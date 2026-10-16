@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 7281,
-    "sha256": "7090c6f5d109be4d042ce77c1be6a7becd7f99a2c31e62afc2624393eac43e1f",
-    "git_blob_sha": "c8ebf6468ce05654f8fca4a0004198044e15ae08"
+    "bytes": 7783,
+    "sha256": "f73045dbdf24b49bdf670a3e3ac55b2fe694a3467db84471240589059e0ffaac",
+    "git_blob_sha": "f9b3553c82b58d9f63c2dcaed4130b685fa78772"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -358,6 +358,78 @@
     "bytes": 3891,
     "sha256": "4482aaa0d71265f22b55c5af74df5fda218c9c06eb8c56085b0ab95dec290719",
     "git_blob_sha": "739f9c125cad12bce64ba9e9f59ba2904688b80e"
+  },
+  {
+    "path": "premium_store/design_v1/DESIGN_CONTRACT.json",
+    "bytes": 974,
+    "sha256": "6f09f4a3b6f55d2654f463029e88238946c42344c009388bd2296d9501871252",
+    "git_blob_sha": "24768aa3178be8813d93b7923c4a6ee949249d71"
+  },
+  {
+    "path": "premium_store/design_v1/DESIGN_PROPOSAL.md",
+    "bytes": 9045,
+    "sha256": "ba266c052219855a93a409ce3a3b768b4e81230947d8b3023cf68c5481b4d177",
+    "git_blob_sha": "eb0550ba1432376d66ee8318bf3b1932192e0c2e"
+  },
+  {
+    "path": "premium_store/design_v1/EVERGREEN_BLOCKOUT_AERIAL.png",
+    "bytes": 2283690,
+    "sha256": "b14e4c836fe7cebdb2e384c8b3aeb890139d9eff4b3e599afa2ae32c54f3b177",
+    "git_blob_sha": "939c6244fc32038e6084e110482ad6485a777e11"
+  },
+  {
+    "path": "premium_store/design_v1/EVERGREEN_BLOCKOUT_AISLE.png",
+    "bytes": 1878538,
+    "sha256": "7ab3acc26c5cae57b980b6c82e2542760a0668d4e8cb13fdc4441b997123ed08",
+    "git_blob_sha": "b35af6ce9fcc28e9be5288659326aa0db9f9ef08"
+  },
+  {
+    "path": "premium_store/design_v1/Evergreen_Premium_Design_v1.zip",
+    "bytes": 4870306,
+    "sha256": "6fbddcd0d1a2ef5af3ac28d3d117a6c7c738bf2bb0eb222c8dab9f6c65c2d19d",
+    "git_blob_sha": "3b4b31e292a6b76b24018fc43543dcca7ad8b284"
+  },
+  {
+    "path": "premium_store/design_v1/PREMIUM_FLOOR_PLAN_OPTION_A.png",
+    "bytes": 223378,
+    "sha256": "555c7146fcea5f99ebc1a79a7a58ea275dcebe7f61d9dcd2aff4be80529b9c6b",
+    "git_blob_sha": "c92c5b85c61b2c354aab7ebb5269d4689797416d"
+  },
+  {
+    "path": "premium_store/design_v1/PREMIUM_FLOOR_PLAN_OPTION_A.svg",
+    "bytes": 121685,
+    "sha256": "cf1bdf6931276bf78846eca2d63ca0efa53d356fc10fe21aa87bdcadca3f2983",
+    "git_blob_sha": "acd5554e71caa00a83511985456c7734a560c021"
+  },
+  {
+    "path": "premium_store/design_v1/README.md",
+    "bytes": 1779,
+    "sha256": "f1d84ffc05370032d041c18407fd2abb9851d21b0c39b477bd30600a17205571",
+    "git_blob_sha": "43790a1ee188b247f9e12788f8cca8a909b0f559"
+  },
+  {
+    "path": "premium_store/design_v1/SHA256SUMS.txt",
+    "bytes": 98,
+    "sha256": "992f4c30716e1073408045ea913220eb5892ce571d243280434f17c5cd8f8dc2",
+    "git_blob_sha": "6cb129f0d3576f51579f504e4c2faf1a804b5883"
+  },
+  {
+    "path": "premium_store/design_v1/build_layout_blockout.py",
+    "bytes": 13583,
+    "sha256": "33c21fdcbf1899e52c9546107297a7907de07764fae3f752cd0ddf262e29d261",
+    "git_blob_sha": "650a02c7cb8769a034c889ede3f034a88d2ffe1b"
+  },
+  {
+    "path": "premium_store/design_v1/finalize_blockout_preview.py",
+    "bytes": 1803,
+    "sha256": "e71f219503f20205fec33ac663445842447c4dd096e279d058b1190f4de18280",
+    "git_blob_sha": "53cc88fdc0152f32b501f84c45452b6f0db61ec1"
+  },
+  {
+    "path": "premium_store/design_v1/render_plan.py",
+    "bytes": 2869,
+    "sha256": "ba262101ad9f7ea519bb23d00e46ba6f694df0965051d17036ad1c50584c63a4",
+    "git_blob_sha": "7c8692953117f96a6e246e6a7117cf77ef397080"
   },
   {
     "path": "previews/01_Interior_Filtered_Test.png",

@@ -1,0 +1,36 @@
+{
+  "schema": "evergreen-premium-design-contract-v1",
+  "stage": "layout_approval_only",
+  "dimensions_m": [
+    64,
+    56
+  ],
+  "single_floor": true,
+  "players": 10,
+  "all_eligible_placements_individual_static_mesh_actors": true,
+  "eligibility_tag": "Prop",
+  "mesh_asset_sharing_allowed": true,
+  "representative_only_eligibility_allowed": false,
+  "eligible_categories": [
+    "products",
+    "boxes",
+    "baskets",
+    "bins",
+    "carts",
+    "chairs",
+    "approved_small_movable_objects",
+    "approved_large_movable_objects"
+  ],
+  "ineligible_structure_may_use_instancing": true,
+  "character_collision_requires_separate_validation": true,
+  "old_deliverables_modified": false,
+  "detailed_build_approved": false,
+  "actual_unreal_validation_performed": false,
+  "interior_only_gameplay": true,
+  "exterior_scenery": [
+    "road",
+    "forest"
+  ],
+  "brand_policy": "fictional_realistic_pending_art_direction",
+  "confirmed_store_name": "Evergreen Market"
+}
