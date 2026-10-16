@@ -112,14 +112,15 @@ def _material_contract(component):
     return materials
 
 
-def _spawn(u, p, mesh):
-    actor = u.get_editor_subsystem(u.EditorActorSubsystem).spawn_actor_from_class(u.StaticMeshActor, u.Vector(0,0,0), transient=False)
+def _spawn(u, p, mesh, actor=None):
+    if actor is None:
+        actor = u.get_editor_subsystem(u.EditorActorSubsystem).spawn_actor_from_class(u.StaticMeshActor, u.Vector(0,0,0), transient=False)
     check(isinstance(actor, u.StaticMeshActor), 'Could not create StaticMeshActor')
     actor.set_actor_label('EM_PILOT_' + p['label'])
     actor.set_editor_property('tags', ['Prop', TAG, 'EMSource=' + p['instance_id']])
     actor.set_editor_property('static_mesh_replicate_movement', False)
-    actor.set_editor_property('replicate_movement', False)
-    actor.set_editor_property('replicates', False)
+    actor.set_replicate_movement(False)
+    actor.set_replicates(False)
     c = actor.get_editor_property('static_mesh_component')
     c.set_mobility(u.ComponentMobility.STATIC)
     check(c.set_static_mesh(mesh), 'Could not set pilot mesh')
@@ -186,13 +187,52 @@ def _write_lookup(path, plan):
                 ActorPath=p['actor_path'],StableInstanceId=p['instance_id'],AssetId=p['asset_id'],LocationX=x,LocationY=y,LocationZ=z))
 
 
-def run(package_root, full_import_report, collision_report, *, execute=False, backup_confirmed=False):
+def _recovery_map(failed, plan, fingerprint):
+    check(failed.get('schema') == 'evergreen-prop-actor-pilot-v1'
+          and failed.get('status') == 'failed_partial_pilot_copy', 'Expected failed pilot report')
+    check(failed.get('package_fingerprint') == fingerprint and failed.get('source_map') == plan['source_map'],
+          'Failed report does not match this package/WalkTest')
+    error = failed.get('error', '')
+    check("replicate_movement" in error and "cannot be edited on instances" in error,
+          'Recovery is limited to the known replication-property failure')
+    target = failed.get('target_map', '')
+    check(re.fullmatch(re.escape(plan['source_map']) + r'_PropPilot_[A-Za-z0-9_]+', target),
+          'Invalid failed-map path')
+    return target
+
+
+def _empty_recovery_actor(u, plan):
+    actors = _pilot_actors(u)
+    check(len(actors) == 1, 'Recovery requires exactly one partial pilot actor')
+    actor = actors[0]
+    first = plan['promoted'][0]
+    tags = [str(t) for t in actor.get_editor_property('tags')]
+    check(isinstance(actor, u.StaticMeshActor)
+          and actor.get_actor_label() == 'EM_PILOT_' + first['label']
+          and set(tags) == {'Prop', TAG, 'EMSource=' + first['instance_id']},
+          'Partial actor identity/tags changed; stop for inspection')
+    check(actor.get_attach_parent_actor() is None and not actor.get_attached_actors(),
+          'Partial actor has attachments; stop for inspection')
+    check(len(actor.get_components_by_class(u.SceneComponent)) == 1,
+          'Partial actor has extra scene components; stop for inspection')
+    check(actor.get_editor_property('static_mesh_component').get_editor_property('static_mesh') is None,
+          'Partial actor already has a mesh; stop for inspection')
+    return actor
+
+
+def run(package_root, full_import_report, collision_report, *, execute=False, backup_confirmed=False,
+        failed_pilot_report=None):
     contract=em.load_contract(package_root)
     full=json.loads(Path(full_import_report).read_text(encoding='utf-8'))
     collision=json.loads(Path(collision_report).read_text(encoding='utf-8'))
     plan=make_plan(contract,full,collision)
+    recovery = failed_pilot_report is not None
+    copy_source = plan['source_map']
+    if recovery:
+        failed = json.loads(Path(failed_pilot_report).read_text(encoding='utf-8'))
+        copy_source = _recovery_map(failed, plan, contract['fingerprint'])
     summary={'source_map':plan['source_map'],'promoted':plan['promoted'],'changed_groups':plan['changed_groups'],
-             'remaining_ism_instances':plan['remaining_scene']['placement_count'],'collision_boxes':plan['collision_plan']['box_count']}
+             'remaining_ism_instances':plan['remaining_scene']['placement_count'],'collision_boxes':plan['collision_plan']['box_count'], 'copy_source':copy_source, 'recovery':recovery}
     if not execute:
         print(json.dumps(summary,indent=2));return summary
     check(backup_confirmed is True,'Back up/checkpoint first and pass backup_confirmed=True')
@@ -201,6 +241,8 @@ def run(package_root, full_import_report, collision_report, *, execute=False, ba
     for method in ('clear_instances','add_instances','modify'):
         check(hasattr(u.InstancedStaticMeshComponent,method),'Required ISM API missing: '+method)
     check(hasattr(u,'StaticMeshActor'), 'StaticMeshActor API unavailable')
+    for method in ('set_replicate_movement', 'set_replicates'):
+        check(hasattr(u.StaticMeshActor, method), 'Required actor API missing: ' + method)
     for owner, methods in ((u.StaticMesh, ('get_material',)),
                            (u.StaticMeshComponent, ('set_static_mesh','get_num_materials','get_material',
                              'set_world_transform','set_simulate_physics','is_simulating_physics'))):
@@ -209,9 +251,12 @@ def run(package_root, full_import_report, collision_report, *, execute=False, ba
     level=u.get_editor_subsystem(u.LevelEditorSubsystem)
     check(not level.is_in_play_in_editor(),'Stop Play In Editor first')
     check(not u.EditorLoadingAndSavingUtils.get_dirty_map_packages() and not u.EditorLoadingAndSavingUtils.get_dirty_content_packages(),
-          'Save or discard all unsaved changes first')
-    check(level.get_current_level().get_path_name().split('.')[0]==plan['source_map'],'Open the original verified WalkTest map first')
-    check(not _pilot_actors(u),'Pilot already present; start from the original WalkTest map')
+          'Save all current changes before recovery; do not discard them' if recovery else 'Save or discard all unsaved changes first')
+    check(level.get_current_level().get_path_name().split('.')[0]==copy_source,'Open the exact source map printed in the plan first')
+    if recovery:
+        _empty_recovery_actor(u, plan)
+    else:
+        check(not _pilot_actors(u),'Pilot already present; use explicit recovery for the known failed copy')
     em.verify_scene(u,full);ec.verify(u,plan['collision_plan']);ec._check_original_collision(u,contract)
     groups=_groups(u)
     for p in plan['promoted']:
@@ -221,25 +266,28 @@ def run(package_root, full_import_report, collision_report, *, execute=False, ba
         check(u.get_editor_subsystem(u.StaticMeshEditorSubsystem).get_simple_collision_count(c.get_editor_property('static_mesh'))>0,
               'Pilot mesh has no simple query collision')
     stamp=datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')+'_'+uuid.uuid4().hex[:8]
-    target=plan['source_map']+'_PropPilot_'+stamp
+    target=copy_source+('_Recovered_' if recovery else '_PropPilot_')+stamp
     check(not (Path(u.Paths.project_content_dir()).resolve()/(target[len('/Game/'):]+'.umap')).exists(),'Destination exists')
     output=Path(u.Paths.project_saved_dir()).resolve()/'EvergreenHandoff'/('PropPilot_'+stamp)
     output.mkdir(parents=True,exist_ok=False)
     result=dict(schema='evergreen-prop-actor-pilot-v1',status='started',source_map=plan['source_map'],target_map=target,
-                gameplay_verified=False,blueprint_modified=False,package_fingerprint=contract['fingerprint'])
+                gameplay_verified=False,blueprint_modified=False,package_fingerprint=contract['fingerprint'],
+                recovery_from=copy_source if recovery else None)
     path=output/'prop_pilot_report.json'
     def save_report():
         result['plan']=plan
         path.write_text(json.dumps(result,indent=2),encoding='utf-8')
     save_report()
     try:
-        check(level.new_level_from_template(target,plan['source_map']),'Could not copy WalkTest map')
+        check(level.new_level_from_template(target,copy_source),'Could not copy WalkTest map')
         check(level.get_current_level().get_path_name().split('.')[0]==target,'Wrong target map loaded')
         em.verify_scene(u,full);ec.verify(u,plan['collision_plan'])
         groups=_groups(u)
         with u.ScopedEditorTransaction('Evergreen four-prop compatibility pilot'):
-            for p in plan['promoted']:
-                _spawn(u,p,groups[p['source_group']].get_editor_property('static_mesh'))
+            partial = _empty_recovery_actor(u, plan) if recovery else None
+            for i, p in enumerate(plan['promoted']):
+                _spawn(u,p,groups[p['source_group']].get_editor_property('static_mesh'),
+                       actor=partial if i == 0 else None)
             for key in plan['changed_groups']:
                 c=groups[key];c.modify()
                 apply_rebuild(c,plan['remaining_scene']['groups'][key]['instances'],lambda p:em._transform(u,p))

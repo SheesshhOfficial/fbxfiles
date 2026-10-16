@@ -83,3 +83,25 @@ The user-described reliable server/multicast calls are not a networking certific
 44 local tests passed: existing contract/collision coverage plus pilot conservation, exact four-object scope, unit scale, original-report preservation, unaffected groups, report guards and a mock ISM adapter exercising nonsequential/duplicate/invalid returned indices. Syntax passed. Relevant Epic UE5.7 APIs were checked. **This pilot has not run in Unreal here; neither UE5.8 execution nor Blueprint/gameplay behavior is claimed.** The report records `gameplay_verified: false` even after persistence succeeds.
 
 References: [StaticMeshActor](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/StaticMeshActor?application_version=5.7), [ISM clear/add and returned indices](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/InstancedStaticMeshComponent?application_version=5.7), [level copy API](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/LevelEditorSubsystem?application_version=5.7).
+
+## Recover the empty TomatoCan caused by the replication-property error
+
+The previous helper attempted to edit `replicate_movement` directly on a placed actor. Unreal rejects that instance-property write. The current helper uses documented `set_replicate_movement(False)` and `set_replicates(False)` methods and checks they exist before making a copy. Official reference: https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/Actor?application_version=5.7
+
+For this specific failure, keep the failed pilot map with your latest edits. **Back up the project, stop Play, and save all current map/content changes yourself.** Do not delete the empty actor, reimport the scene, or discard your manually added lights/PlayerStart. Download the updated `setup_prop_actor_pilot.py` and new `Recover_Evergreen_Pilot.py` beside the current importer and collision helpers in your package's `source` directory.
+
+With the failed pilot map still open, run this read-only dry run:
+
+```python
+exec(open(r"C:\Art\Evergreen_Market_Unreal_Handoff\source\Recover_Evergreen_Pilot.py", encoding="utf-8").read())
+```
+
+It finds the unique `prop_pilot_report.json` whose target is the current map, then its matching successful collision and Full reports. Review the printed copy source and four-prop plan. After your backup/save:
+
+```python
+pilot_report = ep.run(package, full_report, collision_report, execute=True, backup_confirmed=True, failed_pilot_report=failed_pilot_report)
+```
+
+Execution requires the known replication-property error, exactly one correctly tagged empty TomatoCan, all original 11,316 ISM placements intact, and all 568 walking colliders intact. If those checks fail, stop and share the exception; do not bypass them. It creates a **new `_Recovered_<timestamp>` copy of the currently saved failed map**, preserving its manual additions. Only within that new copy it fills the existing empty TomatoCan, creates the other three pilot actors, and removes the corresponding four source ISM placements. No actor or map is deleted. The old WalkTest and failed pilot maps remain unchanged.
+
+The recovery deliberately resets the empty TomatoCan to its intended front-walkway test position. Other actor transforms are untouched. It saves/reloads and verifies the completed pilot as before. A later failure remains a separate partial copy; do not repeatedly run recovery on that new copy. Local tests cover the known read-only property failure, empty-actor reuse, and report/actor rejection guards; Unreal runtime verification remains required.

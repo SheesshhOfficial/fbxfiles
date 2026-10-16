@@ -61,9 +61,9 @@
   },
   {
     "path": "docs/PROP_ACTOR_COMPATIBILITY_PILOT.md",
-    "bytes": 10336,
-    "sha256": "5168cb43a532648dc82427ef112fc16ab1950fc3b10a4d6704438394ddf000cb",
-    "git_blob_sha": "99b26714ecd1661a0ad926a689d800667fd777a6"
+    "bytes": 12892,
+    "sha256": "adafde17ec33e340658ec5a27258d66aff7271af211d86964f2a9d0d24cd0269",
+    "git_blob_sha": "347e10ffb930905c238aa3cd61cdf3fad2a7aa8b"
   },
   {
     "path": "docs/PROP_ASSET_LIST.csv",
@@ -234,6 +234,12 @@
     "git_blob_sha": "40a4474d2ee8478b1a84597c2ca822e69cb6da8b"
   },
   {
+    "path": "qa/prop_pilot_recovery_local_tests.txt",
+    "bytes": 454,
+    "sha256": "2605ce5e14748c428b42f31acfe358ef94555b2b783a0d2ddb7d3a4584fd1e9a",
+    "git_blob_sha": "03073330647c3ca1e3656aaa2e80f4365f8761c4"
+  },
+  {
     "path": "source/blender/build_supermarket.py",
     "bytes": 40193,
     "sha256": "95232d04a252a4143ad0a36063bf65ae876cb7d50aecfa64a56a805a2cfd84f2",
@@ -274,6 +280,12 @@
     "bytes": 1342,
     "sha256": "e037fb008cc333722188857d56136c4b19b9ddfb1b47b4841348f5404f023856",
     "git_blob_sha": "13116bd673722e3aeee51322bc616ce7176e1242"
+  },
+  {
+    "path": "source/unreal/Recover_Evergreen_Pilot.py",
+    "bytes": 3408,
+    "sha256": "c95ffeb47df35356c7a8af3fbb5bfdb42866e576f0d82661f20480d9cbfee0a0",
+    "git_blob_sha": "e61e16cb1b3756aa9fb02e9554d94b4c9d5d3333"
   },
   {
     "path": "source/unreal/Restart_Evergreen_Pilot.py",
@@ -319,9 +331,9 @@
   },
   {
     "path": "source/unreal/setup_prop_actor_pilot.py",
-    "bytes": 15754,
-    "sha256": "eb2b7bc6dcdd578fcbd2ae1474c26f2b1975339107b423ac17525c6197952342",
-    "git_blob_sha": "4a99c648e3b8d7cf040ab411d1f4e70048925933"
+    "bytes": 18432,
+    "sha256": "c6ec6e3c0f1a000c6b3941a7c7475125f182c0f231d3eadf4097589b188757aa",
+    "git_blob_sha": "261793f3673c42fe031d7a213721903b001b595f"
   },
   {
     "path": "source/unreal/test_import_contract.py",
@@ -337,9 +349,9 @@
   },
   {
     "path": "source/unreal/test_prop_actor_pilot.py",
-    "bytes": 4316,
-    "sha256": "632347e4f946c6a785af5f77de2b101dcbd551bd8f92115c1e0a3cae03f03eca",
-    "git_blob_sha": "b765d6d59ba525ac3fbced0a4fc3cbe7bb6410bc"
+    "bytes": 7886,
+    "sha256": "1b5768dd606e544bc80da0ac346decc1f66f484a0cdb52d8aeeeb556d6f02020",
+    "git_blob_sha": "8e62b69c10e67017bc99033748d744eedaf11d2d"
   },
   {
     "path": "source/unreal/verify_handoff_blender.py",
