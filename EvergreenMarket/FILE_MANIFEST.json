@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 7783,
-    "sha256": "f73045dbdf24b49bdf670a3e3ac55b2fe694a3467db84471240589059e0ffaac",
-    "git_blob_sha": "f9b3553c82b58d9f63c2dcaed4130b685fa78772"
+    "bytes": 7770,
+    "sha256": "5b980958b8ad19d6d11429eb448508e3037a9e95dba66dbcb0151c2c2434d759",
+    "git_blob_sha": "c31de5a2d5ae5638135e38647730b4ecdaae2e4a"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -358,6 +358,42 @@
     "bytes": 3891,
     "sha256": "4482aaa0d71265f22b55c5af74df5fda218c9c06eb8c56085b0ab95dec290719",
     "git_blob_sha": "739f9c125cad12bce64ba9e9f59ba2904688b80e"
+  },
+  {
+    "path": "premium_store/design_name_revision/DESIGN_CONTRACT.json",
+    "bytes": 1027,
+    "sha256": "6249a415c668666fe12bec85d09bf17ae897df414d41053cef81688e979f056c",
+    "git_blob_sha": "94aec05b64370c10ea157f553715f3b3e98d4e34"
+  },
+  {
+    "path": "premium_store/design_name_revision/DESIGN_PROPOSAL.md",
+    "bytes": 9125,
+    "sha256": "81e2d261b9935a971e41eaae8a74cf5ea8d8d556a576cdbc708ed6741bee0fed",
+    "git_blob_sha": "a25c3680cbf3e5c528973e146a01ec2b5320c3c8"
+  },
+  {
+    "path": "premium_store/design_name_revision/PREMIUM_FLOOR_PLAN_OPTION_A.png",
+    "bytes": 223285,
+    "sha256": "1330d15d44b09eb21b88e64cd930a9570be3206b29d70628b4e610700bdb5f05",
+    "git_blob_sha": "707c25946d496a4ad88ee63b004ec891ba8684ac"
+  },
+  {
+    "path": "premium_store/design_name_revision/PREMIUM_FLOOR_PLAN_OPTION_A.svg",
+    "bytes": 124676,
+    "sha256": "2c7b0cdbb5026effa0343129c85d582fcbd4cc0b4065b52694eb08c05cfbc947",
+    "git_blob_sha": "4f5168c6236344f9729975356e48a24f4d176b65"
+  },
+  {
+    "path": "premium_store/design_name_revision/README.md",
+    "bytes": 676,
+    "sha256": "26f4b9e6cda3dacd25bf4f58ada9e8811c2cda530cc9f29abf70f64030a550ff",
+    "git_blob_sha": "02994bdb6f01a3866daee5f09bd18d81b7676b47"
+  },
+  {
+    "path": "premium_store/design_name_revision/render_plan.py",
+    "bytes": 2881,
+    "sha256": "33901b898405d2d45d672b8cee9d41d43ecde9ed58eba924d1a5762ff045f398",
+    "git_blob_sha": "1d767da034d4d3faa9ceac995f44d09d7d33d7ed"
   },
   {
     "path": "premium_store/design_v1/DESIGN_CONTRACT.json",

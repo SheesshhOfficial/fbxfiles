@@ -1,8 +1,8 @@
 # Evergreen Market
 
-## New premium store: layout approval stage
+## New store: You want it You get it
 
-[View the proposed floor plan, Blender blockout previews and design ZIP](premium_store/design_v1/). This new 64 × 56 m single-floor Evergreen concept includes premium departments and connected stock/staff routes. These are layout blockouts, not finished artwork or a gameplay-ready import. Every eventual eligible placement must be individually transformable; detailed production awaits layout approval. Existing delivery versions below remain untouched.
+[View the approved layout and updated store name](premium_store/design_name_revision/). The 64 × 56 m single-floor layout is approved; a detailed aisle slice is next for visual approval. [Earlier blockout views and Blender ZIP](premium_store/design_v1/) retain the historical name. Every eventual eligible placement must be individually transformable. These designs are not gameplay-ready imports; existing delivery versions below remain untouched.
 
 ## Controlled expansion: 16 original props
 
