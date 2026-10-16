@@ -61,9 +61,9 @@
   },
   {
     "path": "docs/PROP_ACTOR_COMPATIBILITY_PILOT.md",
-    "bytes": 9302,
-    "sha256": "e3a0310659afd93b6fe3f52aad432c5ce6839e9e52b0925d60528587d4a95f33",
-    "git_blob_sha": "37a3c64e07cb18d457029815302d7096784182b5"
+    "bytes": 10336,
+    "sha256": "5168cb43a532648dc82427ef112fc16ab1950fc3b10a4d6704438394ddf000cb",
+    "git_blob_sha": "99b26714ecd1661a0ad926a689d800667fd777a6"
   },
   {
     "path": "docs/PROP_ASSET_LIST.csv",
@@ -274,6 +274,12 @@
     "bytes": 1342,
     "sha256": "e037fb008cc333722188857d56136c4b19b9ddfb1b47b4841348f5404f023856",
     "git_blob_sha": "13116bd673722e3aeee51322bc616ce7176e1242"
+  },
+  {
+    "path": "source/unreal/Restart_Evergreen_Pilot.py",
+    "bytes": 2895,
+    "sha256": "92af8fbddafca1c821fbd476ee3cfe8d857fb9af2524f8acf1b0573c1abfa93b",
+    "git_blob_sha": "ce9334833570939f11df82c953974b131581c1e5"
   },
   {
     "path": "source/unreal/consolidate_symmetric_chairs.py",

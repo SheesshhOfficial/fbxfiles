@@ -39,6 +39,16 @@ pilot_plan = ep.run(package, full_report, collision_report)
 
 `full_report` and `collision_report` must be the successful report filenames returned by those earlier helpers. After an editor restart, assign those variables to their actual files under your project's `Saved/EvergreenHandoff/` folder. A sample report or failed collision report is rejected. Do not invent the filenames or use a report from another run.
 
+### After restarting Unreal
+
+Download `source/unreal/Restart_Evergreen_Pilot.py` beside the three current helpers in `C:\Art\Evergreen_Market_Unreal_Handoff\source`. Open your original successful WalkTest map and stop Play. In Output Log → Python, run:
+
+```python
+exec(open(r"C:\Art\Evergreen_Market_Unreal_Handoff\source\Restart_Evergreen_Pilot.py", encoding="utf-8").read())
+```
+
+This restores `package`, `full_report`, `collision_report` and `ep`, then performs only the pilot dry run. It matches the **currently open map** to exactly one successful collision report under the current project's Saved/EvergreenHandoff folder, and matches that report's source map to exactly one successful Full import report. It rejects missing or ambiguous matches rather than selecting the newest report. It does not load a map, reimport assets, or run the conversion. If your package lives elsewhere, edit the helper's `package` line first. The report-selection logic passed five local checks; Unreal execution still needs your runtime test.
+
 5. Review the dry-run output: exactly four promoted props, four changed groups and 568 collision boxes. It changes nothing. Then, after backup:
 
 ```python
