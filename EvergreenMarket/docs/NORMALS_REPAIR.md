@@ -5,6 +5,10 @@ The original procedural cube helper ordered all six faces inward. FBX roundtrip 
 
 This patch reverses only inward **closed** shells and their corresponding split normals. It retains vertex positions, UV associations, material slots, pivots and outward/open shells. Collision-box winding is repaired separately. See the generated geometry audit for exact coverage and roundtrip validation. Open or degenerate shells are not automatically classified as outward/inward and remain unchanged.
 
+## Pilot report collision guard
+
+If the pilot report failed with `Pilot collision mismatch` and the four actors still show BlockAll, complete [the scoped four-prop collision repair](PILOT_COLLISION_REPAIR.md) first. Install its current helper update after copying helpers from the older normals ZIP. Do not change a report status manually.
+
 ## Preserve the working project
 Back up the project and save your current successful recovered pilot map, including manual lights, PlayerStart and any other edits. Stop Play. Do not reimport the entire old handoff, overwrite the existing mesh assets, rebuild collision, or rerun the prop conversion.
 

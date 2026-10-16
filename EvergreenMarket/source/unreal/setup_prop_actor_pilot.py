@@ -112,6 +112,31 @@ def _material_contract(component):
     return materials
 
 
+def _pilot_collision_state(u, c):
+    return dict(profile=str(c.get_collision_profile_name()), enabled=str(c.get_collision_enabled()),
+                visibility=str(c.get_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY)),
+                pawn=str(c.get_collision_response_to_channel(u.CollisionChannel.ECC_PAWN)))
+
+
+def _check_pilot_collision(u, c):
+    check(str(c.get_collision_profile_name()) == 'Custom'
+          and c.get_collision_enabled() == u.CollisionEnabled.QUERY_ONLY
+          and c.get_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY) == u.CollisionResponseType.ECR_BLOCK
+          and c.get_collision_response_to_channel(u.CollisionChannel.ECC_PAWN) == u.CollisionResponseType.ECR_IGNORE,
+          'Pilot collision mismatch: ' + str(_pilot_collision_state(u, c)))
+
+
+def _apply_pilot_collision(u, c):
+    c.modify()
+    # Custom is Unreal's per-body editable profile; never change project presets.
+    c.set_collision_profile_name('Custom', update_overlaps=False)
+    c.set_collision_object_type(u.CollisionChannel.ECC_WORLD_STATIC)
+    c.set_collision_enabled(u.CollisionEnabled.QUERY_ONLY)
+    c.set_collision_response_to_all_channels(u.CollisionResponseType.ECR_IGNORE)
+    c.set_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY,u.CollisionResponseType.ECR_BLOCK)
+    _check_pilot_collision(u, c)
+
+
 def _spawn(u, p, mesh, actor=None):
     if actor is None:
         actor = u.get_editor_subsystem(u.EditorActorSubsystem).spawn_actor_from_class(u.StaticMeshActor, u.Vector(0,0,0), transient=False)
@@ -126,18 +151,17 @@ def _spawn(u, p, mesh, actor=None):
     check(c.set_static_mesh(mesh), 'Could not set pilot mesh')
     c.set_world_transform(em._transform(u,p['target_placement']), sweep=False, teleport=True)
     c.set_simulate_physics(False)
-    c.set_collision_object_type(u.CollisionChannel.ECC_WORLD_STATIC)
-    c.set_collision_enabled(u.CollisionEnabled.QUERY_ONLY)
-    c.set_collision_response_to_all_channels(u.CollisionResponseType.ECR_IGNORE)
-    c.set_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY,u.CollisionResponseType.ECR_BLOCK)
     c.set_editor_property('generate_overlap_events',False)
     c.set_editor_property('can_ever_affect_navigation',False)
+    # Apply after editor property changes; named presets can reload their defaults.
+    _apply_pilot_collision(u, c)
     p['actor_path'] = actor.get_path_name()
     p['canonical_materials'] = _material_contract(c)
     return actor
 
 
-def verify(u, plan):
+def verify(u, plan, *, verify_collision=True):
+    """Only repair preflight may defer collision; success paths always use the default."""
     em.verify_scene(u, plan['remaining_scene'])
     ec.verify(u, plan['collision_plan'])
     expected = {p['instance_id']:p for p in plan['promoted']}
@@ -154,10 +178,8 @@ def verify(u, plan):
         check(c.get_editor_property('static_mesh').get_path_name()==p['mesh_path'], 'Pilot mesh mismatch')
         check(c.get_world_transform().is_near_equal(em._transform(u,p['target_placement']),
                   location_tolerance=0.1,rotation_tolerance=0.001,scale3d_tolerance=0.0001), 'Pilot transform mismatch')
-        check(c.get_collision_enabled()==u.CollisionEnabled.QUERY_ONLY
-              and c.get_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY)==u.CollisionResponseType.ECR_BLOCK
-              and c.get_collision_response_to_channel(u.CollisionChannel.ECC_PAWN)==u.CollisionResponseType.ECR_IGNORE,
-              'Pilot collision mismatch')
+        if verify_collision:
+            _check_pilot_collision(u, c)
         check(not a.get_editor_property('replicates') and not a.get_editor_property('replicate_movement')
               and not a.get_editor_property('static_mesh_replicate_movement'), 'Unexpected replication')
         check(not c.is_simulating_physics()
@@ -245,7 +267,8 @@ def run(package_root, full_import_report, collision_report, *, execute=False, ba
         check(hasattr(u.StaticMeshActor, method), 'Required actor API missing: ' + method)
     for owner, methods in ((u.StaticMesh, ('get_material',)),
                            (u.StaticMeshComponent, ('set_static_mesh','get_num_materials','get_material',
-                             'set_world_transform','set_simulate_physics','is_simulating_physics'))):
+                             'set_world_transform','set_simulate_physics','is_simulating_physics',
+                             'modify','set_collision_profile_name','get_collision_profile_name'))):
         for method in methods:
             check(hasattr(owner,method), 'Required API missing: '+owner.__name__+'.'+method)
     level=u.get_editor_subsystem(u.LevelEditorSubsystem)

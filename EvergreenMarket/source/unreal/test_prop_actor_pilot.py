@@ -98,7 +98,7 @@ class PilotTests(unittest.TestCase):
             def get_path_name(self):return '/Game/Copy.Actor'
         actor=Actor();u=MagicMock();u.StaticMeshActor=Actor
         row=self.plan()['promoted'][0]
-        with patch.object(pilot.em,'_transform',return_value='transform'), patch.object(pilot,'_material_contract',return_value=['material']):
+        with patch.object(pilot.em,'_transform',return_value='transform'), patch.object(pilot,'_material_contract',return_value=['material']), patch.object(pilot,'_check_pilot_collision'):
             result=pilot._spawn(u,row,'mesh',actor=actor)
         self.assertIs(result,actor);u.get_editor_subsystem.assert_not_called()
         self.assertEqual(actor.calls,[('movement',False),('replicates',False)])

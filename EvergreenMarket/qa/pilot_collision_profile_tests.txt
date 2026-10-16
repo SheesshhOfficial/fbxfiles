@@ -1,0 +1,16 @@
+...............................................................
+----------------------------------------------------------------------
+Ran 63 tests in 10.506s
+
+OK
+{
+  "phase": "sample",
+  "selected_asset_ids": [
+    "a"
+  ],
+  "asset_count": 1,
+  "placement_count": 1,
+  "ism_actor_count": 1,
+  "sector_size_cm": 2000.0,
+  "package_fingerprint": "d75e30965e2d3d13ec967b35b477fe23f938bcc8ed9cebda8074417372aef17a"
+}

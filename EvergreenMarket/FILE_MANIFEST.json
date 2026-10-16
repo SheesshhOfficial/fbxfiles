@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 4167,
-    "sha256": "928b1c0f9fe77b0b7f7b2f76284584cffe9366a0949e5f67232e491e6bfc4fe4",
-    "git_blob_sha": "602e015d2498a2d20f4633960f26311cbc2af490"
+    "bytes": 4401,
+    "sha256": "e3e12f1f0543f4dbef9667b029325d51762c254aadeeaeb9b5c8adac89d2f3ed",
+    "git_blob_sha": "1ccbbfb2ce80fcf9d44748d4ea7f49814fcd50dd"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -61,9 +61,15 @@
   },
   {
     "path": "docs/NORMALS_REPAIR.md",
-    "bytes": 5069,
-    "sha256": "92ec4a6c035fe6d602ab9ce2524dbbe7d3aef30349491a4ee7ba218a13d354bb",
-    "git_blob_sha": "e8085672daa2a37513d182315d744610c88abe43"
+    "bytes": 5410,
+    "sha256": "0884fafdac248ade1082e8706c655a5dbd2dd6a11ced5559043adbc7ac708022",
+    "git_blob_sha": "8064b35672748c69bc8b7187e87dae020ee43e29"
+  },
+  {
+    "path": "docs/PILOT_COLLISION_REPAIR.md",
+    "bytes": 3404,
+    "sha256": "bb0147ed006c6739b69bdb438fb288e2fe1c8fef06c5a01f7247e29e97b24735",
+    "git_blob_sha": "4bb8451ae77a5265c2993fa1a937ff169fe5a519"
   },
   {
     "path": "docs/PROP_ACTOR_COMPATIBILITY_PILOT.md",
@@ -124,6 +130,18 @@
     "bytes": 101,
     "sha256": "77faf7704492e86c7e2069fb2efe97e210a71a4d9efe93fa6e79f465615b716a",
     "git_blob_sha": "76001a97adb35b215815c59a42493ff08f75186c"
+  },
+  {
+    "path": "packages/pilot_collision_repair/Evergreen_Pilot_Collision_Repair.zip",
+    "bytes": 34394,
+    "sha256": "4ab71eb5150150e55a73502778ba73908f0e77404f1e924d34bf69f4c2d6963e",
+    "git_blob_sha": "0834086e51cf91d1b6532b0d8c5d111bb73f70a6"
+  },
+  {
+    "path": "packages/pilot_collision_repair/SHA256SUMS.txt",
+    "bytes": 103,
+    "sha256": "04b6e85f11960b1de6540c327cca62957f2d6a26b7b89c35e94adb9fb37dbfbe",
+    "git_blob_sha": "cd84b61759a4d8bc9688c0b03ebfe8821e2728c4"
   },
   {
     "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part01",
@@ -270,6 +288,12 @@
     "git_blob_sha": "b170db71b4c4236ec7402940503932d9c1e5fccc"
   },
   {
+    "path": "qa/pilot_collision_profile_tests.txt",
+    "bytes": 415,
+    "sha256": "0fb8afde6d036a03048e1a724a7bdba534f75e86afe48c14ba8106df43e974e3",
+    "git_blob_sha": "b411e6eac00b78eb26737d013b13e11f6bdb65d6"
+  },
+  {
     "path": "qa/prop_pilot_local_tests.txt",
     "bytes": 4866,
     "sha256": "1be5f7a5359f260e164a8703231d057d59025855b3a460f555a62c05c4d744d9",
@@ -342,6 +366,12 @@
     "git_blob_sha": "6943cecb3f50d458dcdb639b220b0c718305127e"
   },
   {
+    "path": "source/unreal/Start_Pilot_Collision_Repair.py",
+    "bytes": 791,
+    "sha256": "805ee382e5f0a5eae704b048232b054299a99c0b3a5f07f008f3089fe16e627c",
+    "git_blob_sha": "6f886389a8d064f766a85b690779c6d8644e3f01"
+  },
+  {
     "path": "source/unreal/classify_closed_shells.py",
     "bytes": 2188,
     "sha256": "ecd9a6c8c2153e79603be6d5c5ae5ef21eb99da834413839f11e3dc01a2d410b",
@@ -384,6 +414,12 @@
     "git_blob_sha": "0e2b03946182983e01e23583e8990370e5fb26ed"
   },
   {
+    "path": "source/unreal/repair_pilot_collision.py",
+    "bytes": 9634,
+    "sha256": "937612b5e385b0fba78d0a8560013f31270a83d43ababc5775821e224f581a20",
+    "git_blob_sha": "aa5271ec03090dd841baec72ba018693f3d14a2e"
+  },
+  {
     "path": "source/unreal/setup_market_collision.py",
     "bytes": 16258,
     "sha256": "5bb4577756dc1c8e314aa9bdadf9a44284cde07d52d44efd7cd1fc7e1c2ad67b",
@@ -397,9 +433,9 @@
   },
   {
     "path": "source/unreal/setup_prop_actor_pilot.py",
-    "bytes": 18432,
-    "sha256": "c6ec6e3c0f1a000c6b3941a7c7475125f182c0f231d3eadf4097589b188757aa",
-    "git_blob_sha": "261793f3673c42fe031d7a213721903b001b595f"
+    "bytes": 19524,
+    "sha256": "2a6d0cf2dc37ef7a86000dd69c17a8438256d6b96bca82313e947cabab70498c",
+    "git_blob_sha": "041bcc0d748ec0b13356af9ec1d7f0df52e65772"
   },
   {
     "path": "source/unreal/test_import_contract.py",
@@ -420,10 +456,22 @@
     "git_blob_sha": "eba3160779e9c2173fce3b4362b2ae2cfed2553e"
   },
   {
+    "path": "source/unreal/test_pilot_collision_profile.py",
+    "bytes": 2506,
+    "sha256": "13331591063601f6a0ef4ce001a7e84c25cd620110c643ce35953f3593a01d32",
+    "git_blob_sha": "1440806bfa2bd7cda34c1c810a08ddc362f89f74"
+  },
+  {
+    "path": "source/unreal/test_pilot_collision_repair.py",
+    "bytes": 2878,
+    "sha256": "8198ec6ed7ac1fc073747a5a1e5704af608cf84b1c7b090c66ab057df597bbe0",
+    "git_blob_sha": "69be2269cd80799d75cd7296ca2e822f4c1bf607"
+  },
+  {
     "path": "source/unreal/test_prop_actor_pilot.py",
-    "bytes": 7886,
-    "sha256": "1b5768dd606e544bc80da0ac346decc1f66f484a0cdb52d8aeeeb556d6f02020",
-    "git_blob_sha": "8e62b69c10e67017bc99033748d744eedaf11d2d"
+    "bytes": 7932,
+    "sha256": "95a3a54e121eb162d5d0fcf65745cf18a721fe8c6419c328eed605b701f95a83",
+    "git_blob_sha": "c69733f19dd327464a8581f0a89ee6d44c9ec123"
   },
   {
     "path": "source/unreal/test_winding_generators.py",

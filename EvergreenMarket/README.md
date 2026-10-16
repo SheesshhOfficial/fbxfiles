@@ -1,5 +1,7 @@
 # Evergreen Market
 
+For four working E props whose report failed with `Pilot collision mismatch`, use the [four-prop collision-profile repair](docs/PILOT_COLLISION_REPAIR.md) before the normals patch. It copies the current map and verifies persistence.
+
 ## Geometry correction: inward cube faces
 
 The original handoff contains inward-wound box geometry. Use the versioned [normals repair guide](docs/NORMALS_REPAIR.md) and patch in `packages/normals_patch/` rather than enabling Two Sided globally or reimporting the complete scene. The patch preserves original maps/assets and creates a corrected copy, with a box/checkout sample before the full affected set. Existing original archives are retained for reproducibility and have not silently changed. The source box and UBX generators below now use outward winding.
