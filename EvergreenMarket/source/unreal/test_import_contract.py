@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from types import SimpleNamespace
 import import_supermarket_unreal as importer
 
 
@@ -120,6 +121,35 @@ class ContractTests(unittest.TestCase):
     def test_full_needs_review_before_unreal_import(self):
         with self.assertRaisesRegex(ValueError, "Inspect a sample"):
             importer.run(self.root, execute=True, phase="full")
+
+
+class CollisionEnumRegressionTests(unittest.TestCase):
+    def api(self):
+        return SimpleNamespace(
+            CollisionResponseType=SimpleNamespace(ECR_IGNORE=0, ECR_BLOCK=2),
+            CollisionChannel=SimpleNamespace(ECC_VISIBILITY=3),
+            CollisionEnabled=SimpleNamespace(NO_COLLISION=0, QUERY_ONLY=1))
+
+    def test_documented_collision_enum_names(self):
+        importer._check_collision_api(self.api())
+        import inspect
+        source = inspect.getsource(importer._new_ism)
+        self.assertIn("u.CollisionResponseType.ECR_IGNORE", source)
+        self.assertIn("u.CollisionResponseType.ECR_BLOCK", source)
+        self.assertNotIn("u.CollisionResponseType.IGNORE", source)
+        self.assertNotIn("u.CollisionResponseType.BLOCK", source)
+
+    def test_wrong_names_fail_preflight(self):
+        api = self.api()
+        api.CollisionResponseType = SimpleNamespace(IGNORE=0, BLOCK=2)
+        with self.assertRaisesRegex(ValueError, "ECR_IGNORE unavailable"):
+            importer._check_collision_api(api)
+
+    def test_missing_block_fails_preflight(self):
+        api = self.api()
+        del api.CollisionResponseType.ECR_BLOCK
+        with self.assertRaisesRegex(ValueError, "ECR_BLOCK unavailable"):
+            importer._check_collision_api(api)
 
 
 if __name__ == "__main__":

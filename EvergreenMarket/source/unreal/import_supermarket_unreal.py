@@ -358,6 +358,18 @@ def _transform(u, placement):
                        scale=u.Vector(*placement["scale"]))
 
 
+def _check_collision_api(u):
+    # Validate before importing assets, not halfway through building a map.
+    for enum_name, members in (
+            ("CollisionResponseType", ("ECR_IGNORE", "ECR_BLOCK")),
+            ("CollisionChannel", ("ECC_VISIBILITY",)),
+            ("CollisionEnabled", ("NO_COLLISION", "QUERY_ONLY"))):
+        enum = getattr(u, enum_name, None)
+        for member in members:
+            _require(enum is not None and hasattr(enum, member),
+                     f"Required Unreal enum {enum_name}.{member} unavailable; import stopped before creating content")
+
+
 def _new_ism(u, actor_system, group_key, mesh, asset):
     actor = actor_system.spawn_actor_from_class(u.Actor, u.Vector(0, 0, 0), transient=False)
     _require(actor is not None, f"Unable to spawn {group_key}")
@@ -383,8 +395,8 @@ def _new_ism(u, actor_system, group_key, mesh, asset):
     # reviewed by category; default broad hulls on fixtures can block shelf props.
     component.set_collision_enabled(u.CollisionEnabled.NO_COLLISION if asset["collision"]["strategy"] == "none"
                                     else u.CollisionEnabled.QUERY_ONLY)
-    component.set_collision_response_to_all_channels(u.CollisionResponseType.IGNORE)
-    component.set_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY, u.CollisionResponseType.BLOCK)
+    component.set_collision_response_to_all_channels(u.CollisionResponseType.ECR_IGNORE)
+    component.set_collision_response_to_channel(u.CollisionChannel.ECC_VISIBILITY, u.CollisionResponseType.ECR_BLOCK)
     component.set_editor_property("generate_overlap_events", False)
     component.set_editor_property("can_ever_affect_navigation", False)
     return actor, component
@@ -445,6 +457,7 @@ def run(package_root, *, execute=False, phase="sample", sample_asset_ids=None,
         _require(prior.get("package_fingerprint") == contract["fingerprint"],
                  "Package changed since sample import; run the sample phase again")
     import unreal as u  # Import only when actually executing inside the UE editor.
+    _check_collision_api(u)
     level_system = u.get_editor_subsystem(u.LevelEditorSubsystem)
     _require(not level_system.is_in_play_in_editor(), "Stop PIE before importing")
     _require(not u.EditorLoadingAndSavingUtils.get_dirty_map_packages(),

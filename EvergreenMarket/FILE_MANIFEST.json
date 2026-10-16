@@ -7,9 +7,9 @@
   },
   {
     "path": "README.md",
-    "bytes": 2528,
-    "sha256": "d3eef6968edb752bf057ccf5f52fab1537c91d07679156323b30b72ff78d624f",
-    "git_blob_sha": "394599022c4f4b3337015754b838d4d35b60c2c7"
+    "bytes": 2900,
+    "sha256": "a538952e428e32131c0fbe85ae9f81fb65bd3e4582e2ee7b8910f0f94464207a",
+    "git_blob_sha": "417ed710f5c0890835e750699da3dd76f9e1465f"
   },
   {
     "path": "blender/Evergreen_Market.blend",
@@ -46,6 +46,12 @@
     "bytes": 13002,
     "sha256": "808b15317fe75d4a555198ce2bd032561308aeecec74878f5ec4ade96625a472",
     "git_blob_sha": "de99e8f3c263ef61475a1937df01da60fbf5f4c9"
+  },
+  {
+    "path": "docs/IMPORTER_HOTFIX.md",
+    "bytes": 2037,
+    "sha256": "de17e3f1e8ba73553f343e5760524f71a47ca2c824fdfcf89b20832de6118cea",
+    "git_blob_sha": "668e8081595c85f132b14145ee3aff667111c617"
   },
   {
     "path": "docs/IMPORTER_LOCAL_TEST_RESULTS.txt",
@@ -259,9 +265,9 @@
   },
   {
     "path": "source/unreal/import_supermarket_unreal.py",
-    "bytes": 33055,
-    "sha256": "6439cb3e7be9edaaba2afcaa0c10095bc8717eeb5db5d3d27c1c4e282367cbe4",
-    "git_blob_sha": "42aff2030eef90c7c77c04d8201ad7fb8e51b049"
+    "bytes": 33678,
+    "sha256": "4273514eb3f9f88e0d07a75e1855c5b83bd3333b4193a7cb5f04053c1a19ca0d",
+    "git_blob_sha": "9d67d70f7588cd5167af272f32359c2b8841768b"
   },
   {
     "path": "source/unreal/logical_groups.py",
@@ -277,9 +283,9 @@
   },
   {
     "path": "source/unreal/test_import_contract.py",
-    "bytes": 5723,
-    "sha256": "6687e77c4fcf0af7a7627b1132069dda7c70b356aa9227bb9797110d781b4901",
-    "git_blob_sha": "432be0a4b43a9159c73c4c21e4dcc661afbdc7bc"
+    "bytes": 7042,
+    "sha256": "c5e76cfe72e74e6629673c95a165254ddb42b6738217e936a480271513f192b6",
+    "git_blob_sha": "adc989732ed139b34597a6132ef4cb4753dbe2be"
   },
   {
     "path": "source/unreal/verify_handoff_blender.py",
