@@ -1,0 +1,35 @@
+EVERGREEN MARKET
+Detailed supermarket environment for a prop-hunt game
+
+OPEN THE SCENE
+Open Evergreen_Market.blend in Blender 4.3 or newer. The native file has its images and fonts packed. No marketplace downloads are needed. It opens in Solid viewport mode for safer inspection. This is a detailed roughly 15,000-object authoring scene; keep Solid mode initially and hide department collections as needed on lower-memory hardware. Use the named cameras in the 50_Cameras collection to inspect the environment. The full building is saved with roof and walls enabled. For a dollhouse view, hide 03_Roof_Ceiling; for an unobstructed plan also hide ceiling light fixtures in 40_Lighting.
+
+WHAT IS INCLUDED
+- A 44 x 48 m building, with a 44 x 36 m main sales floor and 12 m-deep rear service rooms
+- A 16 x 26 m side loading yard connected at two points
+- Twelve stocked gondola runs, five produce islands, bakery, chilled display cabinets, freezer islands, three promotional displays and four checkout lanes
+- Wire shopping carts, baskets, product families, crates, cartons, pallet racks, cleaning equipment, a kitchenette, staff seating and lockers
+- Beveled fixture meshes, linked repeated meshes, original fictional packaging, procedural surface detail, interior lights, roof services, air-handling units, entrance planting and signage
+- Named collections and cameras, editable authoring source, validation report and an Unreal handoff checklist
+
+IMPORTANT SCOPE
+This is environment art in Blender. It is not an Unreal project or playable game. No disguise mechanic, weapons, replication, collision, navigation or performance certification is included. The 8–12-player intent is an assumption that needs playtesting. The scene is deliberately detailed and should be optimized and tested on the intended platform before shipping. See Unreal_Handoff.txt.
+
+REBUILD
+The supplied Blender file is the easiest way to use the work. To rebuild deterministically, keep this folder structure and run:
+blender -b -t 6 --python source/build_supermarket.py -- --no-render
+blender -b Evergreen_Market.blend -t 6 --python source/polish_details.py
+blender -b Evergreen_Market.blend -t 6 --python source/finish_and_render.py -- --qa-only
+
+The authoring script uses the already supplied packaging textures. Regenerating the original packaging artwork is optional and uses Python with Pillow:
+python source/make_packaging.py
+
+RENDER
+blender -b Evergreen_Market.blend -t 6 --python source/finish_and_render.py -- --views 01_Interior_Hero,06_Exterior,08_Topdown
+Add --quick for lower-resolution 24-sample previews, or --resolution 1280 --samples 96 for the supplied review-image settings. The render source includes a gentle edge-aware compositor grain filter, which you can bypass or replace with your Blender installation's supported denoiser. Rendering is CPU-compatible; dedicated GPU configuration is left to the user's Blender installation.
+
+PROVENANCE
+Geometry, fictional store identity, packaging layouts and materials were procedurally authored for this deliverable. No paid or third-party marketplace models or textures were used. Lettering uses DejaVu Sans; the included font files are covered by DejaVu_Font_License.txt. All product brands are fictional.
+
+LIMITATIONS
+The procedural material network may need baking or recreation for engine export. Text and curves may need conversion to meshes in an export copy. Transparent glass, linked instances and collision need engine-specific validation. Scene validation checks do not replace gameplay, accessibility or performance testing.

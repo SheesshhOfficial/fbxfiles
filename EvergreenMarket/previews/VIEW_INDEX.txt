@@ -1,0 +1,10 @@
+EVERGREEN MARKET / REVIEW VIEWS
+
+These are Blender renders of the supplied native environment, not Unreal gameplay screenshots. They show the actual modeled scene. Visible path-tracing grain remains in some views; it is not baked into the model's textures.
+
+04_Stockroom.png — pallet racking, boxed stock and service route
+06_Exterior.png — building, storefront, loading yard and roof equipment
+08_Topdown.png — complete overhead layout, with roof and overhead fixtures hidden
+09_Grocery_Detail.png — close-up of shelf construction and original product packaging
+
+The editable .blend is saved with its complete roof and walls enabled. Overhead visibility and framing changes were made only for the preview. The original model/package were not changed after delivery. Additional cameras for produce, checkouts, staff room and the main sales floor remain available in the .blend.

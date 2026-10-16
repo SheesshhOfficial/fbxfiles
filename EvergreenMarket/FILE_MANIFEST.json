@@ -1,0 +1,284 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 72,
+    "sha256": "15222e0515f5485a772729bb43bc1418c628f79d6097266bc7e2e805f5c13b53",
+    "git_blob_sha": "32e4b90508f505cf585cc0718dae2b6c3e1a7fbf"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2093,
+    "sha256": "c32757d3779810665b3f4cc1961d99d486aa1346f624711b98563770e95cd4ab",
+    "git_blob_sha": "ffb661ffdcb78fb5a49e6428a37992bb078c1024"
+  },
+  {
+    "path": "blender/Evergreen_Market.blend",
+    "bytes": 1882629,
+    "sha256": "48bc8102865423ec3da2cd66610b52bc57f551d21ab7388e8fbf63c8b26b694a",
+    "git_blob_sha": "c3f500535d65d6e654dfe75128a1ce8bfab22799"
+  },
+  {
+    "path": "blender/START_HERE.txt",
+    "bytes": 3576,
+    "sha256": "e9c980ed4e616e4f53cdfadd2bf2c4833371b2b5d919633f563ec7f6c187ce45",
+    "git_blob_sha": "7e76da7a0cc407f590e63a59736696b1c41c9518"
+  },
+  {
+    "path": "docs/ALL_ASSETS.csv",
+    "bytes": 37308,
+    "sha256": "58bfb3072a83d45def08b5a40acce7fc8f2c323e05558fce957adc8e78e5ecf7",
+    "git_blob_sha": "cb74f207068ac5ccd08c9d2b3051c9bc9cc9cb92"
+  },
+  {
+    "path": "docs/DejaVu_Font_License.txt",
+    "bytes": 3859,
+    "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+    "git_blob_sha": "b3d93a1235a82213fbc451853317c40e62ed9272"
+  },
+  {
+    "path": "docs/HANDOFF_START_HERE.txt",
+    "bytes": 3513,
+    "sha256": "6505d06bb4345c98aa57816d586aeeae6f08cf27a7f50953099a21bc6c0c59d5",
+    "git_blob_sha": "b83796ae29adda4190350b1aed466c8e1e47d2f3"
+  },
+  {
+    "path": "docs/IMPORTER_ACTUAL_PACKAGE_CHECKS.json",
+    "bytes": 13002,
+    "sha256": "808b15317fe75d4a555198ce2bd032561308aeecec74878f5ec4ade96625a472",
+    "git_blob_sha": "de99e8f3c263ef61475a1937df01da60fbf5f4c9"
+  },
+  {
+    "path": "docs/IMPORTER_LOCAL_TEST_RESULTS.txt",
+    "bytes": 1905,
+    "sha256": "c2e7db523f9cb57255f18d7448f3c6e028280acc0013a61632390cb1884cd489",
+    "git_blob_sha": "9e9f5c61436d2bb2e773cffc1c4f8ef980606ea8"
+  },
+  {
+    "path": "docs/PROP_ASSET_LIST.csv",
+    "bytes": 7235,
+    "sha256": "356871e1b574802341c186d3e4889b99c70cc3544b72d198403aaf37b0bc002c",
+    "git_blob_sha": "55e553f4abc2b72e327035118ec63da1b43bdb77"
+  },
+  {
+    "path": "docs/PROP_CATALOG.md",
+    "bytes": 8187,
+    "sha256": "f8e599f3464c26363f11ca3c46cd1dbd6ea2bef96ed564b9cfecd399debb4aa0",
+    "git_blob_sha": "e140c299e67b945b58ce2be9133c55a990161619"
+  },
+  {
+    "path": "docs/UNREAL_IMPORT_AND_PROP_HUNT.md",
+    "bytes": 16511,
+    "sha256": "f1cbb43fdb3cbf18e618c82274f87eebc318298e3ccba3b6e9c8bbd8c94bf4e9",
+    "git_blob_sha": "f004fc088b7ee90e40a6f38bdb8143c58e93a817"
+  },
+  {
+    "path": "docs/VALIDATION_SUMMARY.txt",
+    "bytes": 1575,
+    "sha256": "963e03d45f21114241d3bbc2f1c2dff6dc42f18ebc1073625110c3085c8d1757",
+    "git_blob_sha": "2292a200bea23f18b047e24ea5868859c14da9ae"
+  },
+  {
+    "path": "packages/Evergreen_Market_Blender_Package.zip",
+    "bytes": 2907000,
+    "sha256": "f723afbcdc31d5719037e3b5d18f1a5057b00608eee7a8d2790c8dd86eb30bb2",
+    "git_blob_sha": "24977769910747f398d0e3fe427bddafe19b1124"
+  },
+  {
+    "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part01",
+    "bytes": 9437184,
+    "sha256": "ffe296047dd272f1b66b238bcbc448f2b2a37c08c86e36a53775d2d45292b4cd",
+    "git_blob_sha": "a191a4d7617cec2e888b134acd58d7285a9b3358"
+  },
+  {
+    "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part02",
+    "bytes": 9437184,
+    "sha256": "6c695513e1ab79646f8918a7000a68a2d789d0333cc76b0f241b111cb99726ab",
+    "git_blob_sha": "1ea2fdab469edd184881a79938ebe70172aca5ba"
+  },
+  {
+    "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part03",
+    "bytes": 9437184,
+    "sha256": "cc7b34c0a6278db18142da258267f3e5d9a3a82469ebb13c157d8f9479c9a51f",
+    "git_blob_sha": "993ad5a6bdb09105c232afe290a11f528ec988bf"
+  },
+  {
+    "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part04",
+    "bytes": 9437184,
+    "sha256": "1931735e45a716d9aaa4a06ff4211b2ed3fd07db087c9813ba747d068377ccb7",
+    "git_blob_sha": "4bbc6ea00ba8cc70a3a31d6c435a57839495f536"
+  },
+  {
+    "path": "packages/unreal_handoff/Evergreen_Market_Unreal_Handoff.zip.part05",
+    "bytes": 5511473,
+    "sha256": "368e934f7ac1c962e7356c125e289c78ded89c06af55220e401a90225a529d9c",
+    "git_blob_sha": "39974d1a319a8695b23c362096a07166f2310bbd"
+  },
+  {
+    "path": "packages/unreal_handoff/Reassemble_Evergreen.py",
+    "bytes": 2047,
+    "sha256": "6d312fba3574c865645863ba928b010a19fceecfb031a90205515b58e1e5a417",
+    "git_blob_sha": "96135ebc2e6395ef4fead21f3f90909c25a69c37"
+  },
+  {
+    "path": "previews/01_Interior_Filtered_Test.png",
+    "bytes": 2170516,
+    "sha256": "b0ae65594555fa8cad295410e68cfeef4f3bba715c9ed7674111e8ad28f4ae2e",
+    "git_blob_sha": "6613987116a9c2044c364c17c984ddc21f8a6081"
+  },
+  {
+    "path": "previews/01_Interior_Hero_quick.png",
+    "bytes": 2343357,
+    "sha256": "99b0c6c7fff52eae6d4f7e68a5ab17648f49fef13f0e98433812ae11f5c21b3d",
+    "git_blob_sha": "b02665ccf49d3d3d013175dfbb707abac9f1e608"
+  },
+  {
+    "path": "previews/04_Stockroom.png",
+    "bytes": 1970368,
+    "sha256": "8c2d27f525e20545d5220a945ffbab555c40534a1cd67a6f58fbe3294b883be6",
+    "git_blob_sha": "82a09ef61a6fcc24af6a7cf3701eda1dbf129207"
+  },
+  {
+    "path": "previews/06_Exterior.png",
+    "bytes": 930805,
+    "sha256": "43bac44763c75f8d003bfaf2c470fa574fa29d1db31a7f1e286a21a9f2a36d04",
+    "git_blob_sha": "9c63c0a002014941713369bb4dd266a858c35a98"
+  },
+  {
+    "path": "previews/07_Cutaway_quick.png",
+    "bytes": 1583929,
+    "sha256": "729121da196212b517888ef1d232fccb09348822b4b232708dcc7cc02e5c49ea",
+    "git_blob_sha": "d3e0079bb94bf403c2620f94dbc84da000684411"
+  },
+  {
+    "path": "previews/08_Topdown.png",
+    "bytes": 1442068,
+    "sha256": "954536eee029b5686457c1b24465623529f7273b9c89cf866789700e26bbcd1e",
+    "git_blob_sha": "51e012f7bbf9806ad2ea968c58c560ff10eaef30"
+  },
+  {
+    "path": "previews/09_Grocery_Detail.png",
+    "bytes": 1995220,
+    "sha256": "b385ad0b68a7698c09a0a34624071f9dda384ece00d21f037c83f24298aa1e73",
+    "git_blob_sha": "b074ccfb0252ef4af7a06c7872027dca39dbdab1"
+  },
+  {
+    "path": "previews/VIEW_INDEX.txt",
+    "bytes": 886,
+    "sha256": "10f12e20366c5e59210c9de4bc98d3c775ad672aedb3beb56f4edd2fb66fbf56",
+    "git_blob_sha": "02edbf80d828f560e7a9a9aa0fcd5c1844e916ac"
+  },
+  {
+    "path": "qa/blender_roundtrip.json",
+    "bytes": 85187,
+    "sha256": "5816760acc11549588bce0968c67c556b4b3e7ab121ace1564f1db037aa7d5d2",
+    "git_blob_sha": "44c67151821c442470ead9b92043f4e1592103ba"
+  },
+  {
+    "path": "qa/chair_symmetry_consolidation.json",
+    "bytes": 399,
+    "sha256": "a733ae1a1b8c691bff6fd11fd34babce0e5599092ea516905ea7fa61192eb7d1",
+    "git_blob_sha": "80851a8a0d1d8f2731a2d2fce577d03240fd9aa0"
+  },
+  {
+    "path": "qa/conversion_report.json",
+    "bytes": 8193,
+    "sha256": "4da99db860b825ab679fbcb268a0f1e93a259f2d59a30887c6616e5065dfd057",
+    "git_blob_sha": "ef2621fbb0785583ee878a40cc031d6e37234cc1"
+  },
+  {
+    "path": "qa/native_delivery_reopen.json",
+    "bytes": 310,
+    "sha256": "da7367303fe637fbe925a1bbd15efdedbce9ba09dada4fc199c0849d28110a0a",
+    "git_blob_sha": "efe42d333511a70cbe5c026dcf8dd5606314599e"
+  },
+  {
+    "path": "qa/package_result.json",
+    "bytes": 281,
+    "sha256": "2b40b347fa6aa8194e39fdb1c197aeda850cd2a1c9fb480ff12a185b24831a51",
+    "git_blob_sha": "b170db71b4c4236ec7402940503932d9c1e5fccc"
+  },
+  {
+    "path": "source/blender/build_supermarket.py",
+    "bytes": 40193,
+    "sha256": "95232d04a252a4143ad0a36063bf65ae876cb7d50aecfa64a56a805a2cfd84f2",
+    "git_blob_sha": "6466c5770687c482e07b121b6f09fb724b40d0da"
+  },
+  {
+    "path": "source/blender/finish_and_render.py",
+    "bytes": 7476,
+    "sha256": "3f679ade9a1e277a9406778f5924d4745965ee4c0e2bb3ca6762681b68bcfd57",
+    "git_blob_sha": "b805491ec2808239fbe190f389654814aa9aeceb"
+  },
+  {
+    "path": "source/blender/make_packaging.py",
+    "bytes": 3147,
+    "sha256": "8e386080e1e4b9c84dda2ec36f16dca2ee07d230efb35e65bd6952339936312a",
+    "git_blob_sha": "3aac5d6749c400cf46137f008c0e4e70d9bf399c"
+  },
+  {
+    "path": "source/blender/polish_details.py",
+    "bytes": 5523,
+    "sha256": "e7b5edf4f1161fd65ffb15110af9e14e5c2a5ee3dfc4386e7fe2aaec8ec95528",
+    "git_blob_sha": "22914c13fc4357873efd0540f7d06419ac9d1eb8"
+  },
+  {
+    "path": "source/blender/test_eevee.py",
+    "bytes": 642,
+    "sha256": "1f539a6c1a9e122fd4a5897ad7846ce30ddc38efed63fe2ad96ac50ba5c2c551",
+    "git_blob_sha": "ce5c5c1f36252925eea085cf17702d564197aeda"
+  },
+  {
+    "path": "source/blender/test_filtered_render.py",
+    "bytes": 754,
+    "sha256": "6aae6a11462d54861bfda530b8c447b4b4e33a8339ce874c107f24c3ae06dc9a",
+    "git_blob_sha": "916174c9d137aae963978f6436bacb53438b9803"
+  },
+  {
+    "path": "source/blender/verify_native.py",
+    "bytes": 1342,
+    "sha256": "e037fb008cc333722188857d56136c4b19b9ddfb1b47b4841348f5404f023856",
+    "git_blob_sha": "13116bd673722e3aeee51322bc616ce7176e1242"
+  },
+  {
+    "path": "source/unreal/consolidate_symmetric_chairs.py",
+    "bytes": 2950,
+    "sha256": "8c5d482737ab9b75467a907fb7578c4db0f844670ad748d20ff65598124df7d0",
+    "git_blob_sha": "f2ddfa0e6f0ac614101782ec55af7b1261e96b88"
+  },
+  {
+    "path": "source/unreal/convert_supermarket.py",
+    "bytes": 16157,
+    "sha256": "e4158bd1ee496a4af2b3ec2b7757d94f3864144a3cdb87fd151ac0a64310029b",
+    "git_blob_sha": "fb2a02a794dfbf4c43d54a24a8afe2219dc3ecc7"
+  },
+  {
+    "path": "source/unreal/import_supermarket_unreal.py",
+    "bytes": 33055,
+    "sha256": "6439cb3e7be9edaaba2afcaa0c10095bc8717eeb5db5d3d27c1c4e282367cbe4",
+    "git_blob_sha": "42aff2030eef90c7c77c04d8201ad7fb8e51b049"
+  },
+  {
+    "path": "source/unreal/logical_groups.py",
+    "bytes": 14543,
+    "sha256": "d25e62835afbd070e4951bf0f2d0cc442bfd7e0c073b82d94279f64e2286e6d3",
+    "git_blob_sha": "bc37c24ee3d837f938ef8df9675b1c5a7e507c80"
+  },
+  {
+    "path": "source/unreal/package_handoff.py",
+    "bytes": 2455,
+    "sha256": "6cb1d71128bcf0a61dc40db631a37380a1b06d6b476f0e8a0dac39c5db5fdfe6",
+    "git_blob_sha": "6195fd286f72c515d6c2738fe639e945a379da3e"
+  },
+  {
+    "path": "source/unreal/test_import_contract.py",
+    "bytes": 5723,
+    "sha256": "6687e77c4fcf0af7a7627b1132069dda7c70b356aa9227bb9797110d781b4901",
+    "git_blob_sha": "432be0a4b43a9159c73c4c21e4dcc661afbdc7bc"
+  },
+  {
+    "path": "source/unreal/verify_handoff_blender.py",
+    "bytes": 5259,
+    "sha256": "d52ae59b1bd707ac31bf7f2af2890de355287a37133fd278bd1e01ca636aa20b",
+    "git_blob_sha": "80522fdc268721e2376354bab6a120e3ed96fff3"
+  }
+]

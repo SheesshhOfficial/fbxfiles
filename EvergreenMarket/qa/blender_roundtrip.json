@@ -1,0 +1,3183 @@
+{
+  "status": "passed",
+  "logical_blend_mesh_objects": 11316,
+  "logical_blend_unique_meshes": 256,
+  "manifest_placements": 11316,
+  "assets_checked": 256,
+  "fbx_passed": 256,
+  "fbx_failed": [],
+  "max_reopen_matrix_error": 2.558050027801073e-06,
+  "max_coordinate_contract_math_error_cm": 0.0004920811613951751,
+  "unreal_tested": false,
+  "note": "Blender FBX roundtrip and mathematical coordinate mapping only. Target Unreal import/sample validation still required.",
+  "assets": [
+    {
+      "asset_id": "SM_EG_AHU_front_louvre_cb51c4265e",
+      "status": "pass",
+      "bounds_error_cm": 2.04632568170382e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_01_backing_9e4199052e",
+      "status": "pass",
+      "bounds_error_cm": 4.632568391116365e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_01_overhead_sign_af3ea200c8",
+      "status": "pass",
+      "bounds_error_cm": 1.430511474609375e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_01_recessed_plinth_65aba42d94",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_09a042d4e6",
+      "status": "pass",
+      "bounds_error_cm": 0.0004899785423280179,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 16712,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_1f7c766034",
+      "status": "pass",
+      "bounds_error_cm": 0.0009330517578121089,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 21740,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_3ac014c0f0",
+      "status": "pass",
+      "bounds_error_cm": 0.0009864408874449282,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 17020,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_52e7c2ce26",
+      "status": "pass",
+      "bounds_error_cm": 0.0008517623901411753,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 19228,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_56a8020783",
+      "status": "pass",
+      "bounds_error_cm": 0.0004899785423280179,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 21732,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_5c4e6a9bad",
+      "status": "pass",
+      "bounds_error_cm": 0.0004899785423280179,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 19228,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_86aa7e4bb0",
+      "status": "pass",
+      "bounds_error_cm": 0.0007338528442346615,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 15468,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_872425a6bf",
+      "status": "pass",
+      "bounds_error_cm": 0.0006090539550740459,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 9184,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_9afda6e5d4",
+      "status": "pass",
+      "bounds_error_cm": 0.000781247405996055,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 10936,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_bb5be9ec89",
+      "status": "pass",
+      "bounds_error_cm": 0.0004899785423280179,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 21720,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_e4e292abc4",
+      "status": "pass",
+      "bounds_error_cm": 0.0004899785423280179,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12396,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Aisle_designation_f92b7f3690",
+      "status": "pass",
+      "bounds_error_cm": 0.000595483398427632,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 25712,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Bagging_well_1ad3e66c5b",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_BakeryIsland_874a3116bf",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 564,
+      "material_slots": [
+        "M_EG_deep_evergreen",
+        "M_EG_porcelain",
+        "M_EG_architectural_glass"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_BakeryRoll_e0b5f2f06a",
+      "status": "pass",
+      "bounds_error_cm": 9.880790710070642e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_bread"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_BakeryWallCabinet_484300892f",
+      "status": "pass",
+      "bounds_error_cm": 6.999999999379725e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1316,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_oak_light",
+        "M_EG_warm_LED"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Bakery_wall_brand_2a95a3b3f4",
+      "status": "pass",
+      "bounds_error_cm": 0.0001658381652873686,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 6668,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_BakingTray_f392e2ed88",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Belt_fine_seam_eb1e1a12e1",
+      "status": "pass",
+      "bounds_error_cm": 3.79979609999026e-08,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Canopy_linear_light_cb95b6d51f",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_LED"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Canopy_timber_soffit_0c4b3b708f",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Card_reader_b71c4f82d6",
+      "status": "pass",
+      "bounds_error_cm": 7.152557373046875e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Card_reader_screen_db376ae833",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_screen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Case_vertical_LED_4578b82106",
+      "status": "pass",
+      "bounds_error_cm": 4.632568106899271e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_LED"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Ceiling_acoustic_deck_d2e72e7576",
+      "status": "pass",
+      "bounds_error_cm": 2.682209014892578e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Ceiling_purlin_55af83d6c3",
+      "status": "pass",
+      "bounds_error_cm": 1.4901161193847656e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_CeramicMug_a61c9b4865",
+      "status": "pass",
+      "bounds_error_cm": 0.0009193128776558979,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 380,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_base_0ad0db34e7",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_interface_a833c8d388",
+      "status": "pass",
+      "bounds_error_cm": 0.0008900438690186974,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 22948,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_lane_sign_3345811d3e",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_amber"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_scanner_glass_bc65ff3eb9",
+      "status": "pass",
+      "bounds_error_cm": 1.6689300537109375e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_screen"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Checkout_stainless_rim_e8b3ece42e",
+      "status": "pass",
+      "bounds_error_cm": 4.7547912629397615e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_back_d0703c817e",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_case_body_f77be21526",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_enamel_interior_b800e0a604",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_header_b4fc30757f",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_section_lettering_421276d8a2",
+      "status": "pass",
+      "bounds_error_cm": 0.00039997854232787233,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 11596,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Chilled_wire_shelf_fffe31fdc2",
+      "status": "pass",
+      "bounds_error_cm": 0.0006696337890588211,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_CleaningTrolley_c2b95a7f36",
+      "status": "pass",
+      "bounds_error_cm": 0.0002368032836841394,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3268,
+      "material_slots": [
+        "M_EG_charcoal",
+        "M_EG_steel",
+        "M_EG_yellow_safety",
+        "M_EG_black_rubber"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_CoffeeMachine_77b0ed3228",
+      "status": "pass",
+      "bounds_error_cm": 1.9165534972387377e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 376,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Column_scuff_guard_73b8d23c33",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_CommercialRefuseContainer_4c4da787a6",
+      "status": "pass",
+      "bounds_error_cm": 0.0008962882995717791,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 9744,
+      "material_slots": [
+        "M_EG_steel",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_cream_paper",
+        "M_EG_black_rubber"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Condenser_fan_blade_3684bff408",
+      "status": "pass",
+      "bounds_error_cm": 0.00012046325684877957,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Condenser_fan_recess_a13ab4a297",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 320,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Conveyor_roller_d8184ea917",
+      "status": "pass",
+      "bounds_error_cm": 4.291534423828125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 320,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_CrustyLoaf_e4a4fcd1b8",
+      "status": "pass",
+      "bounds_error_cm": 2.0834465026098314e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 780,
+      "material_slots": [
+        "M_EG_cream_paper",
+        "M_EG_bread"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Diffuser_grille_453821a29e",
+      "status": "pass",
+      "bounds_error_cm": 1.7881393432617188e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Door_frame_left_77653fbaf3",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Door_visibility_strip_4c14da527f",
+      "status": "pass",
+      "bounds_error_cm": 4.632568106899271e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_East_external_wall_09edc77610",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_East_external_wall_3cf69c6bb0",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_East_external_wall_de8da52a6e",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_East_external_wall_lintel_1a12e8051e",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Emergency_exit_sign_dcbfe873ca",
+      "status": "pass",
+      "bounds_error_cm": 7.152557373046875e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Endcap_dark_header_02e84bc416",
+      "status": "pass",
+      "bounds_error_cm": 4.7547912629397615e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Endcap_shelf_886085ba57",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Entrance_canopy_d532d8d09e",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Entrance_door_frame_18d6de522e",
+      "status": "pass",
+      "bounds_error_cm": 4.632568106899271e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Entrance_planter_92879c4719",
+      "status": "pass",
+      "bounds_error_cm": 2.04632568170382e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_concrete"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Entrance_planting_0b232cf226",
+      "status": "pass",
+      "bounds_error_cm": 9.000000000014552e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_leaf"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Entrance_transom_21d959ebf8",
+      "status": "pass",
+      "bounds_error_cm": 5.960464477539062e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Entry_mat_dd70ec947e",
+      "status": "pass",
+      "bounds_error_cm": 9.265136213798542e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_black_rubber"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Entry_mat_rib_eca659eef5",
+      "status": "pass",
+      "bounds_error_cm": 7.59959219998052e-08,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Evergreen_storefront_logo_870afce5d7",
+      "status": "pass",
+      "bounds_error_cm": 0.0002656228637647473,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 7964,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Exit_lettering_d894490aed",
+      "status": "pass",
+      "bounds_error_cm": 0.000769895095825035,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1084,
+      "material_slots": [
+        "M_EG_white_label"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Exterior_wall_lamp_25c57a1243",
+      "status": "pass",
+      "bounds_error_cm": 2.980232238769531e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fan_centre_motor_3a703abfe2",
+      "status": "pass",
+      "bounds_error_cm": 8.807907107666324e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 320,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_cross_wire_05c4dc6cc2",
+      "status": "pass",
+      "bounds_error_cm": 0.0007788384246794067,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_cross_wire_0bed2e940a",
+      "status": "pass",
+      "bounds_error_cm": 0.0003799783933162715,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_cross_wire_4cbb69ffed",
+      "status": "pass",
+      "bounds_error_cm": 0.0003799783933162715,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_cross_wire_6170e169ea",
+      "status": "pass",
+      "bounds_error_cm": 0.0006655236816470733,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_cross_wire_95379e3e33",
+      "status": "pass",
+      "bounds_error_cm": 0.0005505111694326104,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_diagonal_wire_27475953d2",
+      "status": "pass",
+      "bounds_error_cm": 0.0003799783933162715,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_diagonal_wire_2a1bcc7a82",
+      "status": "pass",
+      "bounds_error_cm": 0.0005505111694326104,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_diagonal_wire_7143165a55",
+      "status": "pass",
+      "bounds_error_cm": 0.0003799783933162715,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_diagonal_wire_918c789f10",
+      "status": "pass",
+      "bounds_error_cm": 0.0006655236816470733,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_diagonal_wire_be00909e88",
+      "status": "pass",
+      "bounds_error_cm": 0.0007788384246794067,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_post_69e009f9f1",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 320,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Fence_rails_8d35d1e81b",
+      "status": "pass",
+      "bounds_error_cm": 0.0002500644922256434,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_FireExtinguisher_4ced63f611",
+      "status": "pass",
+      "bounds_error_cm": 0.0009499961853016714,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 548,
+      "material_slots": [
+        "M_EG_charcoal",
+        "M_EG_black_rubber",
+        "M_EG_red_plastic"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fixture_suspension_38b547f825",
+      "status": "pass",
+      "bounds_error_cm": 0.0008399871850013341,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Freezer_inset_38ea3277ff",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Freezer_island_355dbcac10",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Freezer_sliding_glass_lid_cdd03bba2e",
+      "status": "pass",
+      "bounds_error_cm": 1.9073486328125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_architectural_glass"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fridge_door_frame_b53b0c343f",
+      "status": "pass",
+      "bounds_error_cm": 0.000665342254634993,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fridge_upright_gasket_1468049f92",
+      "status": "pass",
+      "bounds_error_cm": 4.632568106899271e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Front_canopy_tagline_08133136b0",
+      "status": "pass",
+      "bounds_error_cm": 0.0005000858306889455,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 24496,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Front_kerb_9fc77e1819",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Front_walkway_c80917f383",
+      "status": "pass",
+      "bounds_error_cm": 3.5762786865234375e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_concrete"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_apple_Plain_beb82bdf03",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_apple"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_apple_Stemmed_a899910308",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 840,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_apple"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_eggplant_Plain_533041c6d1",
+      "status": "pass",
+      "bounds_error_cm": 9.880790710070642e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_eggplant"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_eggplant_Stemmed_6230ff0689",
+      "status": "pass",
+      "bounds_error_cm": 9.880790710070642e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 840,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_eggplant"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_green_apple_Plain_acaa02ebf6",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_green_apple"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_green_apple_Stemmed_451712414a",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 840,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_green_apple"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_lemon_Plain_99d52cdf19",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_lemon"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_lemon_Stemmed_b6eb464ced",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 840,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_lemon"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_orange_Plain_ee7be8fe9e",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 720,
+      "material_slots": [
+        "M_EG_orange"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Fruit_orange_Stemmed_cfdaf3c28d",
+      "status": "pass",
+      "bounds_error_cm": 1.0298023223498376e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 840,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_orange"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Glass_refrigerator_door_a0ffaba052",
+      "status": "pass",
+      "bounds_error_cm": 0.000663448486321272,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_architectural_glass"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Gondola_timber_end_panel_339bf3f095",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_HVAC_outlet_neck_51feaa9bf2",
+      "status": "pass",
+      "bounds_error_cm": 0.0009189452362079464,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_HVAC_outlet_neck_af082d27df",
+      "status": "pass",
+      "bounds_error_cm": 0.0009189452362079464,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_HVAC_seam_ring_bf3cd60be8",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 400,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_HVAC_spiral_main_81e8726cb7",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 400,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_HerbPlanter_V01_4ced14a098",
+      "status": "pass",
+      "bounds_error_cm": 0.0008280564117413292,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 11120,
+      "material_slots": [
+        "M_EG_leaf",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_HerbPlanter_V02_3237f49d4d",
+      "status": "pass",
+      "bounds_error_cm": 0.0007880564117428435,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 11120,
+      "material_slots": [
+        "M_EG_leaf",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_HerbPlanter_V03_fe6faf26c8",
+      "status": "pass",
+      "bounds_error_cm": 0.0008280564117413292,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 11120,
+      "material_slots": [
+        "M_EG_leaf",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Impact_protection_e5e6902f42",
+      "status": "pass",
+      "bounds_error_cm": 7.152557373046875e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Impulse_display_69234da7c4",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Impulse_shelf_851eab500a",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Lane_number_228eb14d3f",
+      "status": "pass",
+      "bounds_error_cm": 0.0003392971420304036,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 4196,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Lane_number_2d69c4d436",
+      "status": "pass",
+      "bounds_error_cm": 0.0005105311965927228,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 2640,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Lane_number_87c306060d",
+      "status": "pass",
+      "bounds_error_cm": 0.0007094792938246997,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 2564,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Lane_number_8c9517f92c",
+      "status": "pass",
+      "bounds_error_cm": 0.0006193638992293415,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 5876,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Lane_sign_post_3739b0fca4",
+      "status": "pass",
+      "bounds_error_cm": 7.450580596923828e-08,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 320,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Loading_threshold_d9b5ca7414",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Loading_yard_paving_b6e1824bca",
+      "status": "pass",
+      "bounds_error_cm": 5.960464477539062e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_concrete"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Microwave_9e871793a8",
+      "status": "pass",
+      "bounds_error_cm": 4.286102294770444e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 376,
+      "material_slots": [
+        "M_EG_porcelain",
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Notice_board_cc53032389",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Opal_LED_diffuser_ba74ebfa6c",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_LED"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_POS_monitor_e22f1a232c",
+      "status": "pass",
+      "bounds_error_cm": 1.430511474609375e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_POS_pedestal_b1aaa84439",
+      "status": "pass",
+      "bounds_error_cm": 1.7881393432617188e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_POS_screen_c001e9e3be",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_screen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_PalletJack_9f26a4be6f",
+      "status": "pass",
+      "bounds_error_cm": 0.0008446539306703471,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1524,
+      "material_slots": [
+        "M_EG_steel",
+        "M_EG_yellow_safety",
+        "M_EG_black_rubber"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_PaperShoppingBag_4f3da19274",
+      "status": "pass",
+      "bounds_error_cm": 0.00032022315978963434,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 248,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Paper_shelf_edge_label_9d1c8b4b6c",
+      "status": "pass",
+      "bounds_error_cm": 6.556510925292969e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Parking_bay_stripe_3e133faccc",
+      "status": "pass",
+      "bounds_error_cm": 1.4901161193847656e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_white_label"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Planter_soil_06a8edc2b1",
+      "status": "pass",
+      "bounds_error_cm": 1.9536743138814927e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Poster_caption_26571aadb3",
+      "status": "pass",
+      "bounds_error_cm": 0.00043630355834523016,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12456,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Poster_caption_3b2d6add58",
+      "status": "pass",
+      "bounds_error_cm": 0.0006129144287143617,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 8616,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Poster_cream_face_eca7cf7934",
+      "status": "pass",
+      "bounds_error_cm": 5.046325685498232e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Poster_headline_3b4599ff15",
+      "status": "pass",
+      "bounds_error_cm": 0.0009999568462379926,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 4932,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Poster_headline_c4ad675ef0",
+      "status": "pass",
+      "bounds_error_cm": 0.0009999568462379926,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3872,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Powder_coated_shelf_b8139c7534",
+      "status": "pass",
+      "bounds_error_cm": 1.6689300537109375e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_ProduceCrate_21a86d195d",
+      "status": "pass",
+      "bounds_error_cm": 7.09536743102035e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3196,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_oak_light"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_ProduceIsland_57c4019de2",
+      "status": "pass",
+      "bounds_error_cm": 1.0715255740478824e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1128,
+      "material_slots": [
+        "M_EG_oak",
+        "M_EG_deep_evergreen",
+        "M_EG_oak_light"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_chalk_ticket_3914cc9b02",
+      "status": "pass",
+      "bounds_error_cm": 1.9073486328125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_header_d2d3f489ec",
+      "status": "pass",
+      "bounds_error_cm": 0.0009001773834214077,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 9144,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_island_upright_sign_f79829d1f6",
+      "status": "pass",
+      "bounds_error_cm": 1.7881393432617188e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_overhead_board_320db62183",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_00888702a0",
+      "status": "pass",
+      "bounds_error_cm": 0.0009098714923858608,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 15308,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_0ac49d25fc",
+      "status": "pass",
+      "bounds_error_cm": 0.0009098714923858608,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 19892,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_3866662326",
+      "status": "pass",
+      "bounds_error_cm": 0.0009097515678408996,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 11236,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_3e3a44022e",
+      "status": "pass",
+      "bounds_error_cm": 0.000849871492386356,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 17120,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_79db21caa5",
+      "status": "pass",
+      "bounds_error_cm": 0.000849871492386356,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 18800,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_7c0f08ae13",
+      "status": "pass",
+      "bounds_error_cm": 0.0005199868869780744,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12972,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_7da6600113",
+      "status": "pass",
+      "bounds_error_cm": 0.0009098714923858608,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 16580,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_8886a191f4",
+      "status": "pass",
+      "bounds_error_cm": 0.0009098714923858608,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 18620,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_8f4c6b9623",
+      "status": "pass",
+      "bounds_error_cm": 0.0005199868869780744,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 14652,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_8f6431811d",
+      "status": "pass",
+      "bounds_error_cm": 0.0009098714923858608,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 16940,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_cc796773f8",
+      "status": "pass",
+      "bounds_error_cm": 0.0009097515678408996,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 14548,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_cefe430c6e",
+      "status": "pass",
+      "bounds_error_cm": 0.0005199868869780744,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 11340,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_dcef24d548",
+      "status": "pass",
+      "bounds_error_cm": 0.0009098714923858608,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 18212,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_dff758b6a1",
+      "status": "pass",
+      "bounds_error_cm": 0.000849871492386356,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 15488,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_price_efecc01a40",
+      "status": "pass",
+      "bounds_error_cm": 0.0009097515678408996,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12868,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Produce_table_sign_60a872082f",
+      "status": "pass",
+      "bounds_error_cm": 0.0007685809326147819,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12896,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Promo_headline_5acc49ac87",
+      "status": "pass",
+      "bounds_error_cm": 0.0007447111511282856,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3596,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Promo_headline_b829174dd8",
+      "status": "pass",
+      "bounds_error_cm": 0.00027024604797354357,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3580,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Promo_headline_d7a3c4a054",
+      "status": "pass",
+      "bounds_error_cm": 0.0008620809173578436,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 4824,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Promo_supporting_line_4474312534",
+      "status": "pass",
+      "bounds_error_cm": 0.0010007667541458432,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 4252,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Promotional_feature_sign_87734a6453",
+      "status": "pass",
+      "bounds_error_cm": 2.04632568170382e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Promotional_island_top_fe009d6598",
+      "status": "pass",
+      "bounds_error_cm": 1.9536743138814927e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak_light"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Promotional_price_b0982affc5",
+      "status": "pass",
+      "bounds_error_cm": 0.0007200288486481909,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 5028,
+      "material_slots": [
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Rack_diagonal_brace_6b69caa9c4",
+      "status": "pass",
+      "bounds_error_cm": 0.0005987661743347417,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Raised_building_slab_eb50f27489",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_concrete"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Raised_roller_shutter_slat_d335cad4e1",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Rear_department_heading_6c36eecdf6",
+      "status": "pass",
+      "bounds_error_cm": 0.0009595584487911424,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 21108,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Rear_department_heading_b7e103eb56",
+      "status": "pass",
+      "bounds_error_cm": 0.0009301773834238247,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 13792,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Rear_external_wall_58e4ad6a7b",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Rear_sales_frieze_94adc50229",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Refrigerator_grab_handle_ba8dbcd004",
+      "status": "pass",
+      "bounds_error_cm": 0.00036814414977470733,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 60,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Roller_shutter_housing_5bd469ea51",
+      "status": "pass",
+      "bounds_error_cm": 5.960464477539062e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Roof_membrane_8f63638a82",
+      "status": "pass",
+      "bounds_error_cm": 3.7060544855194166e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Rooftop_air_handling_unit_0d0b19e13b",
+      "status": "pass",
+      "bounds_error_cm": 1.0728836059570312e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Rubber_conveyor_belt_fa9985d5a7",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_black_rubber"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_SKU_00_Carton_0f36481706",
+      "status": "pass",
+      "bounds_error_cm": 1.430511474609375e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_00_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_01_Carton_dd427a1e53",
+      "status": "pass",
+      "bounds_error_cm": 1.430511474609375e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_01_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_02_bottle_c10a073af7",
+      "status": "pass",
+      "bounds_error_cm": 2.8610229207970406e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 800,
+      "material_slots": [
+        "M_EG_sage_enamel",
+        "M_EG_Packaging_02_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_03_bottle_b4b2317e36",
+      "status": "pass",
+      "bounds_error_cm": 2.8610229207970406e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 800,
+      "material_slots": [
+        "M_EG_sage_enamel",
+        "M_EG_Packaging_03_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_04_bottle_a89675d86d",
+      "status": "pass",
+      "bounds_error_cm": 2.8610229207970406e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 800,
+      "material_slots": [
+        "M_EG_sage_enamel",
+        "M_EG_Packaging_04_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_05_Carton_a0ae06adeb",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_05_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_06_can_ce30ee6e39",
+      "status": "pass",
+      "bounds_error_cm": 3.3378601038691613e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 560,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_Packaging_06_Original"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_07_can_6890802b73",
+      "status": "pass",
+      "bounds_error_cm": 3.3378601038691613e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 560,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_Packaging_07_Original"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_08_can_eabbd8afbe",
+      "status": "pass",
+      "bounds_error_cm": 3.3378601038691613e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 560,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_Packaging_08_Original"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_09_Carton_10412e075f",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_09_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_10_Carton_cbddf5d730",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_10_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_11_bottle_c4f0a62a98",
+      "status": "pass",
+      "bounds_error_cm": 2.8610229207970406e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 800,
+      "material_slots": [
+        "M_EG_sage_enamel",
+        "M_EG_Packaging_11_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_12_Carton_58ed0d7cd2",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_12_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_13_Carton_c6e1d68f5d",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_13_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_13_can_f0a96922e9",
+      "status": "pass",
+      "bounds_error_cm": 3.3378601038691613e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 560,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_Packaging_13_Original"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_14_Carton_5db50c95de",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_14_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SKU_15_Carton_8516ee3011",
+      "status": "pass",
+      "bounds_error_cm": 8.344650268554688e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_Packaging_15_Original",
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_SafetyBollard_e60962836a",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 640,
+      "material_slots": [
+        "M_EG_cream_paper",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Sales_floor_c763d3c61f",
+      "status": "pass",
+      "bounds_error_cm": 2.682209014892578e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_terrazzo_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Service_floor_562d41d5d7",
+      "status": "pass",
+      "bounds_error_cm": 2.682209014892578e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_concrete"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Service_swing_door_bumper_e85786e97a",
+      "status": "pass",
+      "bounds_error_cm": 5.960464477539062e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Service_wayfinding_266a28362f",
+      "status": "pass",
+      "bounds_error_cm": 0.0007481536865299176,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 7952,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Service_wayfinding_e61360791c",
+      "status": "pass",
+      "bounds_error_cm": 0.0009496681213363445,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 10824,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Service_wayfinding_faf83ae951",
+      "status": "pass",
+      "bounds_error_cm": 0.00047972844123833625,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 17452,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shelf_price_rail_f24b256f97",
+      "status": "pass",
+      "bounds_error_cm": 2.980232238769531e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Shelf_slotted_upright_a8e453c7dc",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Shelf_upright_perforation_30b2ee97bf",
+      "status": "pass",
+      "bounds_error_cm": 1.7881393432617188e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_ShippingCarton_Floor_691d3a8c95",
+      "status": "pass",
+      "bounds_error_cm": 6.073432922448774e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 13816,
+      "material_slots": [
+        "M_EG_ink",
+        "M_EG_tape",
+        "M_EG_cream_paper",
+        "M_EG_cardboard"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_ShippingCarton_Rack_eabaee651a",
+      "status": "pass",
+      "bounds_error_cm": 0.00014188827514516333,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 13816,
+      "material_slots": [
+        "M_EG_ink",
+        "M_EG_tape",
+        "M_EG_cream_paper",
+        "M_EG_cardboard"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_ShippingCarton_Yard_e4cae33c5b",
+      "status": "pass",
+      "bounds_error_cm": 1.2880096434741972e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 13816,
+      "material_slots": [
+        "M_EG_ink",
+        "M_EG_tape",
+        "M_EG_cream_paper",
+        "M_EG_cardboard"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Shop_service_partition_43b3ad51da",
+      "status": "pass",
+      "bounds_error_cm": 9.265136213798542e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shop_service_partition_80b61990b5",
+      "status": "pass",
+      "bounds_error_cm": 9.265136213798542e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shop_service_partition_90f6ee9d4e",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shop_service_partition_a90b6859fb",
+      "status": "pass",
+      "bounds_error_cm": 9.265136213798542e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shop_service_partition_lintel_28c5a00983",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shop_service_partition_lintel_f7ef923deb",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shopfront_glass_7486991b52",
+      "status": "pass",
+      "bounds_error_cm": 9.265136213798542e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_architectural_glass"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shopfront_header_88af00259f",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Shopfront_mullion_0c5b3bf69c",
+      "status": "pass",
+      "bounds_error_cm": 4.632568106899271e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_ShoppingBasket_c2405a9dca",
+      "status": "pass",
+      "bounds_error_cm": 0.0007906885528541352,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 4028,
+      "material_slots": [
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_ShoppingCart_09a101bdbd",
+      "status": "pass",
+      "bounds_error_cm": 0.00016198173523207515,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3580,
+      "material_slots": [
+        "M_EG_deep_evergreen",
+        "M_EG_steel",
+        "M_EG_black_rubber",
+        "M_EG_brushed_steel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Sign_hangers_d0c38e6f7d",
+      "status": "pass",
+      "bounds_error_cm": 0.00064003445148475,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Site_terrain_adaf676f57",
+      "status": "pass",
+      "bounds_error_cm": 0.0,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_asphalt"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Sliding_entrance_glass_db0f7aefa6",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_architectural_glass"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Sprinkler_head_c6e672ef82",
+      "status": "pass",
+      "bounds_error_cm": 3.5762786865234375e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 320,
+      "material_slots": [
+        "M_EG_steel"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Sprinkler_line_567c87067d",
+      "status": "pass",
+      "bounds_error_cm": 0.0003099749660488982,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 20,
+      "material_slots": [
+        "M_EG_red_plastic"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_StaffChair_4136c31f6f",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1128,
+      "material_slots": [
+        "M_EG_steel",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffKitchenette_a2d9e46425",
+      "status": "pass",
+      "bounds_error_cm": 0.0005042533874473065,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 624,
+      "material_slots": [
+        "M_EG_steel",
+        "M_EG_brushed_steel",
+        "M_EG_porcelain",
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_01_96cc807ffa",
+      "status": "pass",
+      "bounds_error_cm": 3.427795410004819e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3692,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_cream_paper",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_03_ee0c2d3104",
+      "status": "pass",
+      "bounds_error_cm": 3.427795410004819e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 7004,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_cream_paper",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_05_e54f4b7fa2",
+      "status": "pass",
+      "bounds_error_cm": 3.427795410004819e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 5876,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_cream_paper",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_07_9bda23ab81",
+      "status": "pass",
+      "bounds_error_cm": 3.427795410004819e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 3596,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_cream_paper",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_09_c9e0e9b9b2",
+      "status": "pass",
+      "bounds_error_cm": 3.427795410004819e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 6912,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_cream_paper",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffLocker_11_e626650e28",
+      "status": "pass",
+      "bounds_error_cm": 3.427795410004819e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1648,
+      "material_slots": [
+        "M_EG_brushed_steel",
+        "M_EG_cream_paper",
+        "M_EG_deep_evergreen",
+        "M_EG_charcoal",
+        "M_EG_sage_enamel"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_StaffTable_d621301158",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 940,
+      "material_slots": [
+        "M_EG_oak_light",
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Staff_notice_sheet_2b56ee56c3",
+      "status": "pass",
+      "bounds_error_cm": 5.960464477539062e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Staff_stock_partition_c5b0742980",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Staff_stock_partition_lintel_3b3ec547e9",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Staff_welcome_04642da45e",
+      "status": "pass",
+      "bounds_error_cm": 0.00011042819976836427,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 6584,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Steel_main_roof_beam_790b683dda",
+      "status": "pass",
+      "bounds_error_cm": 7.152557373046875e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Stock_rack_upright_5378349f97",
+      "status": "pass",
+      "bounds_error_cm": 1.4901161193847656e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_blue_plastic"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Structural_column_b21ee6f92a",
+      "status": "pass",
+      "bounds_error_cm": 3.5762786865234375e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Suspended_LED_housing_96b8941317",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_porcelain"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Tile_expansion_joint_48c4e9757d",
+      "status": "pass",
+      "bounds_error_cm": 1.043081288010228e-08,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_tile_grout"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Tile_expansion_joint_49cfa5d2af",
+      "status": "pass",
+      "bounds_error_cm": 1.043081288010228e-08,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_tile_grout"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_UtilityBin_ba8f1de3d2",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 640,
+      "material_slots": [
+        "M_EG_sage_enamel",
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Wall_green_frieze_21f60e32f9",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Warehouse_orange_beam_59ef0709d9",
+      "status": "pass",
+      "bounds_error_cm": 4.632568106899271e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_amber"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Warehouse_shelf_03058d9426",
+      "status": "pass",
+      "bounds_error_cm": 2.384185791015625e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_West_external_wall_ad17074bd0",
+      "status": "pass",
+      "bounds_error_cm": 5.364418029785156e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_warm_plaster"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_WetFloorSign_4073a8a288",
+      "status": "pass",
+      "bounds_error_cm": 0.0004471294403032289,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 14668,
+      "material_slots": [
+        "M_EG_yellow_safety",
+        "M_EG_ink"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_WoodPallet_fe31a1a362",
+      "status": "pass",
+      "bounds_error_cm": 9.71389770541009e-05,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 1504,
+      "material_slots": [
+        "M_EG_oak_light",
+        "M_EG_oak"
+      ],
+      "collision_mesh_count": 1
+    },
+    {
+      "asset_id": "SM_EG_Yard_direction_06ef536413",
+      "status": "pass",
+      "bounds_error_cm": 0.0005000858306889455,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 8292,
+      "material_slots": [
+        "M_EG_cream_paper"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Yard_portal_steel_jamb_4e40e745e3",
+      "status": "pass",
+      "bounds_error_cm": 1.1920928955078125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_charcoal"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Yard_safety_stripe_9f0eca0417",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-07,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 12,
+      "material_slots": [
+        "M_EG_yellow_safety"
+      ],
+      "collision_mesh_count": 0
+    },
+    {
+      "asset_id": "SM_EG_Yard_wayfinding_a3cb30dcea",
+      "status": "pass",
+      "bounds_error_cm": 4.76837158203125e-06,
+      "pivot_error_cm": 0.0,
+      "vertex_error_metres": 0.0,
+      "triangles": 188,
+      "material_slots": [
+        "M_EG_deep_evergreen"
+      ],
+      "collision_mesh_count": 0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+*.part* -text
+*.blend -text
+*.zip -text
+*.png -text
+*.bat text eol=crlf
