@@ -1,0 +1,46 @@
+{
+  "algorithm": "sha256",
+  "scope": "Eight payload files; this CHECKSUMS.json is the ninth file and is not self-hashed. Hashes describe LF publication bytes.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8396,
+      "sha256": "51adcba2d790010fa357bb539b0fe5f28ae0668bf3551c904d7ee186488b1e2e"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 4488,
+      "sha256": "a192d844ca8a203748857305b2a944003e7dee42746ac936dab6338318ad62ba"
+    },
+    {
+      "path": "_support/carnival_material_stage57.py",
+      "bytes": 24927,
+      "sha256": "d06e38dcdd23dfbad3d60ebee0cb11b3d4906813211b383d17f9de8537de3783"
+    },
+    {
+      "path": "carnival_calibration57.py",
+      "bytes": 33221,
+      "sha256": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171"
+    },
+    {
+      "path": "carnival_full_import57.py",
+      "bytes": 36562,
+      "sha256": "b8773c4b10b4c27bf27f2a3d26a8c89dc79a7e894b827e5677452ebb6da12cf9"
+    },
+    {
+      "path": "tests/full_plan_fixture.json",
+      "bytes": 216773,
+      "sha256": "dbb5ac371f1aa233e3e2d545aa10e07b013d6de5b2a35b0193b1784bbd257a07"
+    },
+    {
+      "path": "tests/mock_unreal.py",
+      "bytes": 22385,
+      "sha256": "34aea58756c22c7fe29c549209b6100b0e1509c60686dded766d2b32652c18a3"
+    },
+    {
+      "path": "tests/test_full_import57.py",
+      "bytes": 22854,
+      "sha256": "0d80bd405f3b01956bdc876105468d9b200abb4b4bd12f9278756b20dab3f90b"
+    }
+  ]
+}

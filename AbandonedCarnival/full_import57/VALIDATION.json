@@ -1,0 +1,127 @@
+{
+  "schema": "carnival-full-import57-validation-v1",
+  "date_utc": "2026-10-17",
+  "status": "OFFLINE_AND_MOCK_VERIFIED_FULL_UNREAL_RUN_PENDING",
+  "unreal_target": "5.7.4",
+  "offline_mock_tests": {
+    "total": 45,
+    "passed_with_frozen_source": 45,
+    "failed": 0,
+    "portable_without_source": {
+      "passed": 44,
+      "skipped_optional_integration": 1
+    },
+    "command": "python -B -m unittest discover -s tests -v",
+    "optional_source_environment_variable": "CARNIVAL_PACKAGE_ROOT"
+  },
+  "source_preflight": {
+    "status": "FILES_VERIFIED_ENGINE_NOT_CHECKED",
+    "verified_files": 246,
+    "source_parts": 15,
+    "source_bytes": 136393382,
+    "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+    "file_manifest_sha256": "a4257f232c1c2f5cb334a823095b25893ac608bf639456b924d4bf81a29d16eb",
+    "json_normalization": "CRLF to LF only; binary hashes exact"
+  },
+  "expected_counts": {
+    "prop_assets": 138,
+    "prop_actors": 153,
+    "environment_assets_and_actors": 43,
+    "mesh_assets": 181,
+    "mesh_actors": 196,
+    "materials": 59,
+    "texture_usage_assets": 41,
+    "player_starts": 10,
+    "point_lights": 33,
+    "rect_lights": 7,
+    "directional_lights": 1,
+    "total_content_assets": 281,
+    "total_authored_actors": 247,
+    "canonical_convex_hulls": 2276,
+    "placed_convex_hulls": 2372,
+    "zero_hull_environment_assets": 8
+  },
+  "independent_raw_fbx_audit": {
+    "fbx_files": 181,
+    "passed": [
+      "inventory hashes and byte sizes",
+      "one render Model per FBX",
+      "connected UCX Model names and counts",
+      "ordered material connections",
+      "exactly one UV layer",
+      "explicit normals; no tangent payload",
+      "manifest local bounds"
+    ],
+    "max_bounds_difference_cm": 6.10352e-05,
+    "prop_ucx_note": "Prop collision Geometry names are generic; valid UCX identity is on connected FBX Model nodes."
+  },
+  "guards_tested": [
+    "dirty map and content",
+    "PIE/Simulate",
+    "wrong engine version",
+    "forward renderer",
+    "existing package or physical namespace",
+    "existing full actors",
+    "source hash changes",
+    "missing API",
+    "actual import path mismatch",
+    "Interchange provenance",
+    "unexpected primitive collision",
+    "missing UV",
+    "wrong bounds or hull count",
+    "zero-hull decoration",
+    "source material slot order",
+    "texture non-VT readback",
+    "source metadata directions",
+    "actor collision and tags",
+    "derived light radius and color",
+    "partial assets and actor snapshot",
+    "no save/delete/global setting writes"
+  ],
+  "preserved_known_caveats": {
+    "environment_blender_roundtrip_normal_failures": {
+      "tiles": 24,
+      "corners_above_tolerance": 4795
+    },
+    "prop_blender_roundtrip_normal_failures": [
+      "SM_wooden_pallet_244700516e",
+      "SM_wooden_pallet_540b8fba44"
+    ],
+    "raw_source_fidelity_pass_is_not_visual_validation": true
+  },
+  "previous_runtime_evidence": {
+    "geometry_sample": "UE5.7.4 passed 3 canonical meshes, 4 native actors, UCX 8/9/1",
+    "material_sample": "UE5.7.4 created 9 materials, 10 textures, 3 neutral lights",
+    "scope_warning": "Those results do not establish the full scene or the new glass/RectLight/zero-hull paths."
+  },
+  "not_established": [
+    "Full scene Unreal import success",
+    "shader compilation completion",
+    "visual/material matching",
+    "photometric matching",
+    "runtime memory or frame rate",
+    "PlayerStart clearance or multiplayer gameplay"
+  ],
+  "behavior": {
+    "fresh_namespace": "/Game/AbandonedCarnivalFull57",
+    "fresh_unsaved_world": true,
+    "saves_performed_by_helper": 0,
+    "overwrites": false,
+    "deletes": false,
+    "automatic_cleanup": false,
+    "global_settings_changed": false,
+    "engine_autosave": "unchanged"
+  },
+  "light_policy": {
+    "source_transform_color_shadow_flags": "preserved and read back",
+    "photometry": "approximate",
+    "local_lumens_per_source_watt": 100,
+    "directional_lux_per_source_unit": 1,
+    "local_radius_cm": "max(1200, 2*area_width_cm, 2*max(0, location_z_cm)); source-ground Z=0 heuristic",
+    "disk_approximation": "square RectLight with width and height equal to source area width"
+  },
+  "vendored_unchanged_sha256": {
+    "carnival_calibration57.py": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171",
+    "_support/carnival_material_stage57.py": "d06e38dcdd23dfbad3d60ebee0cb11b3d4906813211b383d17f9de8537de3783"
+  }
+}
