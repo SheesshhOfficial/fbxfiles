@@ -1,0 +1,6 @@
+{
+  "python_reconstruction_and_existing_output": "PASS",
+  "archive_crc": "PASS",
+  "cmd_actual_crlf": true,
+  "windows_powershell_execution": "NOT_TESTED_NO_WINDOWS_RUNTIME"
+}

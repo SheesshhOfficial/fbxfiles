@@ -1,0 +1,11 @@
+{
+  "objects_expected": 438,
+  "objects_imported": 438,
+  "max_world_bounds_error_m": 2.384185791015625e-07,
+  "geometry_match": true,
+  "all_images_packed": true,
+  "images": 2,
+  "errors": [],
+  "full_store_export": false,
+  "Unreal_tested": false
+}

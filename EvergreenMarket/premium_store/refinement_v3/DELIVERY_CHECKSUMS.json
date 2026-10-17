@@ -1,0 +1,74 @@
+{
+  "README.md": {
+    "bytes": 5549,
+    "sha256": "c2d82e3a41d1eb9117180a463b4f9427f2b76ce9c4b05f09c761f8f3ffb8a148"
+  },
+  "YOU_WANT_IT_YOU_GET_IT_REFINED_v3.blend": {
+    "bytes": 41163135,
+    "sha256": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519"
+  },
+  "REFINEMENT_v3_OVERLAY.glb": {
+    "bytes": 9438624,
+    "sha256": "b431e8be6232804bf711fcdcf74c80810aa8f76f59c4406165a719097f4ba7ef"
+  },
+  "REFINEMENT_MANIFEST.json": {
+    "bytes": 38452,
+    "sha256": "19a79e6da6d5d657c486e144a1ee13246e484d112a697655c1182142fc04dee7"
+  },
+  "PRESERVATION_BASELINE.json": {
+    "bytes": 1350333,
+    "sha256": "1c89572c96615f480d58e89d7e05528022e1c321942a43bdc3c5351a349df76d"
+  },
+  "OVERLAY_GEOMETRY.json": {
+    "bytes": 138647,
+    "sha256": "8b17f019323fac97f747592a51b4a90e76cb2bc32dd9c0c3ecdc3a8f8021cd93"
+  },
+  "OVERLAY_ROUNDTRIP_QA.json": {
+    "bytes": 251,
+    "sha256": "dd2f712ea3374d52434ee9925f851ff4429639d7a1f0db91cae46314c53ae698"
+  },
+  "build_refinement.py": {
+    "bytes": 12666,
+    "sha256": "37dfdbd6a773a11237a465bea947d4f2b4957d46f9664296bd9cef2f9275e1ca"
+  },
+  "finalize_refinement.py": {
+    "bytes": 3174,
+    "sha256": "3151ec367a83d677fd9c011bdf068e33307e9699cba886bfe70271777af63a49"
+  },
+  "export_overlay.py": {
+    "bytes": 2633,
+    "sha256": "beba35463fb3ae0314763e162b41bff6125fc1020553fb2b0d21a19f7987f66a"
+  },
+  "render_review.py": {
+    "bytes": 769,
+    "sha256": "81b20134258cd8ec4f474f274f4f78188870f6214f3860fbb6597cc555ccd60b"
+  },
+  "render_details.py": {
+    "bytes": 1098,
+    "sha256": "0e73f4424937c577ac64404a6ae3932b7b9b28d73e289d9e67dc89d5d3176c98"
+  },
+  "textures/V3_Stone_Normal.png": {
+    "bytes": 895224,
+    "sha256": "88aa9776b9902a3eceea992061a46e3194588737aa0cb784caaeccbb8936f4f5"
+  },
+  "textures/V3_Stone_BaseColor.png": {
+    "bytes": 1092065,
+    "sha256": "eb29344e1a3674eac1d0d44096c3a4e65fbb58f2eec1c3f937333bcdbf0ea82e"
+  },
+  "qa/FINAL_QA_SUMMARY.md": {
+    "bytes": 1969,
+    "sha256": "3224dc00485e77dff07e2af48b1fe4bc7959233cdf93ee47f14dcf294259ee02"
+  },
+  "qa/FINAL_INDEPENDENT_QA.json": {
+    "bytes": 93172,
+    "sha256": "2d10d2d7f54484d97929c1a81aea83ff91e7c40fa7ed4ce138c29bd6011af229"
+  },
+  "qa/audit_final.py": {
+    "bytes": 8937,
+    "sha256": "c669ec6d5c146b2fe52d5d5fdfdd039a8c3c051d2d87a10b0aa182f145307558"
+  },
+  "qa/baseline_mounts.json": {
+    "bytes": 126881,
+    "sha256": "56431b2ae77508b3139de384aa1a3db80d4fc2c270c23766a4157bff885886a5"
+  }
+}

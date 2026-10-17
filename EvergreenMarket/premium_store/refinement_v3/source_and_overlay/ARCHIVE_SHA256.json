@@ -1,0 +1,37 @@
+{
+  "archive": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip",
+  "bytes": 47934313,
+  "sha256": "bf5e87abd78c4c5916add574b0d2a2999fce89820316d95b5573e701418081b1",
+  "parts": [
+    {
+      "name": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip.part01",
+      "bytes": 9437184,
+      "sha256": "38f0fde648122425b9d17a2af9fe924e301980b713f59f09942641e0e228bbd6"
+    },
+    {
+      "name": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip.part02",
+      "bytes": 9437184,
+      "sha256": "ec0096ccba6c35853e8c7c464dee9240820bb82d99ee10ba9472b0d513fbc28b"
+    },
+    {
+      "name": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip.part03",
+      "bytes": 9437184,
+      "sha256": "2102b1416c4f436d0a6b9f21a6fbc0bd303bf7ba92f0e44a8f3fe33eb773360c"
+    },
+    {
+      "name": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip.part04",
+      "bytes": 9437184,
+      "sha256": "5e6b1f46c87d83ea20bc282d4557f62a0b024b2451e41ccdcc66799c0574d7f9"
+    },
+    {
+      "name": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip.part05",
+      "bytes": 9437184,
+      "sha256": "18750db69806d0ac3dd6cb42f4234f4852035fd0e242335003df7e8e340675e4"
+    },
+    {
+      "name": "You_want_it_You_get_it_Refined_v3_Source_and_Overlay.zip.part06",
+      "bytes": 748393,
+      "sha256": "c09129479e182be1106f08a67c872330833909b9e215bb010e3e12eea504a372"
+    }
+  ]
+}

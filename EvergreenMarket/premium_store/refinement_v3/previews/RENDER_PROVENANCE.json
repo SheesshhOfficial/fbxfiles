@@ -1,0 +1,47 @@
+{
+  "render_engine": "Blender Cycles",
+  "resolution": [
+    1200,
+    850
+  ],
+  "denoising": false,
+  "adaptive_sampling": true,
+  "note": "AFTER_AISLE and AFTER_SIGNS were rendered from the preview-stage source before the final 1.8 mm glyph seating correction. AFTER_WALLS uses the final source. These previews are not all byte-identical final-source renders.",
+  "renders": [
+    {
+      "file": "BEFORE_AISLE.png",
+      "image_sha256": "bba2e0a64ba719c5a25873f9407948dd8f88bbe142346f3d9840bbba5af0d622",
+      "source_stage": "exterior_v2_baseline",
+      "source_sha256": "84320b8abaf59bd06f544dc7c2562395e4291120548ef5705985f2dca62498c9",
+      "max_samples": 96
+    },
+    {
+      "file": "BEFORE_SIGNS.png",
+      "image_sha256": "b4bd9aab8012d3c5ee160e4edb85593e7b1ee89eb49b02f5fb76a84dd6018f50",
+      "source_stage": "exterior_v2_baseline",
+      "source_sha256": "84320b8abaf59bd06f544dc7c2562395e4291120548ef5705985f2dca62498c9",
+      "max_samples": 64
+    },
+    {
+      "file": "AFTER_AISLE.png",
+      "image_sha256": "563019a53724ea25067e1b6335bc2ce145b43ecbdc9eb1a8e223a582162a6b71",
+      "source_stage": "preview_stage_refinement_v3",
+      "source_sha256": "39e57de31a573227817371f190493eca8e7a5dbe2a904f9e0398c860283ca871",
+      "max_samples": 96
+    },
+    {
+      "file": "AFTER_SIGNS.png",
+      "image_sha256": "339b942dbd48180db1f1c282ec41f351c9fc2bc25995402f715d6736235dbc90",
+      "source_stage": "preview_stage_refinement_v3",
+      "source_sha256": "39e57de31a573227817371f190493eca8e7a5dbe2a904f9e0398c860283ca871",
+      "max_samples": 64
+    },
+    {
+      "file": "AFTER_WALLS.png",
+      "image_sha256": "04b278af3987d95154f4581c2ebc6589c1ddb55e497609857af55d8977788e9a",
+      "source_stage": "final_refinement_v3",
+      "source_sha256": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519",
+      "max_samples": 64
+    }
+  ]
+}

@@ -1,0 +1,3229 @@
+{
+  "baseline_objects": 6766,
+  "final_objects": 7030,
+  "missing_baseline": [],
+  "unapproved_changes": [],
+  "all_changes": [
+    "Front wayfinding backing",
+    "Front wayfinding backing.001",
+    "FULL_COLD_FRONT_0_00001",
+    "FULL_COLD_FRONT_1_00001",
+    "FULL_COLD_LEFT_00001",
+    "FULL_COLD_REAR_0_00001",
+    "FULL_COLD_REAR_1_00001",
+    "FULL_COLD_RIGHT_00001",
+    "FULL_CUSTOMER_STALL_SCREEN_00001",
+    "FULL_CUSTOMER_WC_FRONT_0_00001",
+    "FULL_CUSTOMER_WC_FRONT_1_00001",
+    "FULL_CUSTOMER_WC_WEST_00001",
+    "FULL_MAIN_FLOOR_00001",
+    "FULL_OFFICE_DIVIDER_00001",
+    "FULL_OFFICE_FRONT_0_00001",
+    "FULL_OFFICE_FRONT_1_00001",
+    "FULL_OFFICE_FRONT_2_00001",
+    "FULL_OFFICE_REAR_0_00001",
+    "FULL_OFFICE_REAR_1_00001",
+    "FULL_OFFICE_REAR_2_00001",
+    "FULL_STAFF_FRONT_PARTITION_0_00001",
+    "FULL_STAFF_FRONT_PARTITION_1_00001",
+    "FULL_STAFF_FRONT_PARTITION_2_00001",
+    "FULL_STAFF_FRONT_PARTITION_3_00001",
+    "FULL_STAFF_STALL_SCREEN_00001",
+    "FULL_STAFF_WC_WEST_LOWER_00001",
+    "FULL_STAFF_WC_WEST_UPPER_00001",
+    "FULL_WALL_LEFT_00001",
+    "FULL_WALL_REAR_00001",
+    "FULL_WALL_RIGHT_00001",
+    "FULL_WC_DIVIDER_00001",
+    "SIGN 01  BREAKFAST",
+    "SIGN 01  BREAKFAST.001",
+    "SIGN 02  GRAINS & PASTA",
+    "SIGN 02  GRAINS & PASTA.001",
+    "SIGN 03  COOKING",
+    "SIGN 03  COOKING.001",
+    "SIGN 04  PANTRY",
+    "SIGN 04  PANTRY.001",
+    "SIGN 05  COFFEE & TEA",
+    "SIGN 05  COFFEE & TEA.001",
+    "SIGN 06  PRESERVES",
+    "SIGN 06  PRESERVES.001",
+    "SIGN 07  SNACKS",
+    "SIGN 07  SNACKS.001",
+    "SIGN 08  HOME & CARE",
+    "SIGN 08  HOME & CARE.001",
+    "SIGN BAKED HERE",
+    "SIGN BREAK ROOM",
+    "SIGN BUTCHER",
+    "SIGN CHECKOUTS",
+    "SIGN CHILLED",
+    "SIGN COFFEE & PATISSERIE",
+    "SIGN COLD STORE",
+    "SIGN CUSTOMER SERVICE",
+    "SIGN CUSTOMER WC",
+    "SIGN DAIRY",
+    "SIGN DAIRY / CHILLED / FROZEN",
+    "SIGN DELI & CHEESE",
+    "SIGN FISHMONGER",
+    "SIGN FLOWERS & FINDS",
+    "SIGN FRESH DRINKS",
+    "SIGN FROZEN",
+    "SIGN RECEIVING & STOCK",
+    "SIGN STAFF OFFICE",
+    "SIGN STAFF WC",
+    "SIGN THE CELLAR & DRINKS",
+    "SIGN THE FRESH MARKET",
+    "SIGN WELCOME IN",
+    "Stone grout X",
+    "Stone grout X.001",
+    "Stone grout X.002",
+    "Stone grout X.003",
+    "Stone grout X.004",
+    "Stone grout X.005",
+    "Stone grout X.006",
+    "Stone grout X.007",
+    "Stone grout X.008",
+    "Stone grout X.009",
+    "Stone grout X.010",
+    "Stone grout X.011",
+    "Stone grout X.012",
+    "Stone grout X.013",
+    "Stone grout X.014",
+    "Stone grout X.015",
+    "Stone grout X.016",
+    "Stone grout X.017",
+    "Stone grout X.018",
+    "Stone grout X.019",
+    "Stone grout X.020",
+    "Stone grout X.021",
+    "Stone grout X.022",
+    "Stone grout X.023",
+    "Stone grout X.024",
+    "Stone grout X.025",
+    "Stone grout X.026",
+    "Stone grout X.027",
+    "Stone grout X.028",
+    "Stone grout X.029",
+    "Stone grout X.030",
+    "Stone grout X.031",
+    "Stone grout X.032",
+    "Stone grout X.033",
+    "Stone grout X.034",
+    "Stone grout X.035",
+    "Stone grout X.036",
+    "Stone grout X.037",
+    "Stone grout X.038",
+    "Stone grout X.039",
+    "Stone grout X.040",
+    "Stone grout X.041",
+    "Stone grout X.042",
+    "Stone grout X.043",
+    "Stone grout X.044",
+    "Stone grout X.045",
+    "Stone grout X.046",
+    "Stone grout X.047",
+    "Stone grout X.048",
+    "Stone grout X.049",
+    "Stone grout X.050",
+    "Stone grout X.051",
+    "Stone grout X.052",
+    "Stone grout Y",
+    "Stone grout Y.001",
+    "Stone grout Y.002",
+    "Stone grout Y.003",
+    "Stone grout Y.004",
+    "Stone grout Y.005",
+    "Stone grout Y.006",
+    "Stone grout Y.007",
+    "Stone grout Y.008",
+    "Stone grout Y.009",
+    "Stone grout Y.010",
+    "Stone grout Y.011",
+    "Stone grout Y.012",
+    "Stone grout Y.013",
+    "Stone grout Y.014",
+    "Stone grout Y.015",
+    "Stone grout Y.016",
+    "Stone grout Y.017",
+    "Stone grout Y.018",
+    "Stone grout Y.019",
+    "Stone grout Y.020",
+    "Stone grout Y.021",
+    "Stone grout Y.022",
+    "Stone grout Y.023",
+    "Stone grout Y.024",
+    "Stone grout Y.025",
+    "Stone grout Y.026",
+    "Stone grout Y.027",
+    "Stone grout Y.028",
+    "Stone grout Y.029",
+    "Stone grout Y.030",
+    "Stone grout Y.031",
+    "Stone grout Y.032",
+    "Stone grout Y.033",
+    "Stone grout Y.034",
+    "Stone grout Y.035",
+    "Stone grout Y.036",
+    "Stone grout Y.037",
+    "Stone grout Y.038",
+    "Stone grout Y.039",
+    "Stone grout Y.040",
+    "Stone grout Y.041",
+    "Stone grout Y.042",
+    "Stone grout Y.043",
+    "Stone grout Y.044",
+    "Stone grout Y.045",
+    "Wayfinding backing BAKED HERE",
+    "Wayfinding backing COFFEE & PATISSERIE",
+    "Wayfinding backing DAIRY / CHILLED / FROZEN",
+    "Wayfinding backing FLOWERS & FINDS",
+    "Wayfinding backing THE CELLAR & DRINKS",
+    "Wayfinding backing THE FRESH MARKET"
+  ],
+  "eligible_count_baseline": 5574,
+  "eligible_count_final": 5574,
+  "changed_eligible": [],
+  "collision_collections": {
+    "06_COLLISION_LIBRARY": [
+      "UCX_SM_MV_crushed_tomatoes_00",
+      "UCX_SM_MV_chickpeas_00",
+      "UCX_SM_MV_coffee_00",
+      "UCX_SM_MV_olive_oil_00",
+      "UCX_SM_MV_olive_oil_01",
+      "UCX_SM_MV_wildflower_honey_00",
+      "UCX_SM_MV_strawberry_preserve_00",
+      "UCX_SM_MV_rolled_oats_00",
+      "UCX_SM_MV_almond_granola_00",
+      "UCX_SM_MV_bronze_pasta_00",
+      "UCX_SM_MV_sea_salt_00",
+      "UCX_SM_EG_Basket_00",
+      "UCX_SM_EG_Basket_01",
+      "UCX_SM_EG_Basket_02",
+      "UCX_SM_EG_Basket_03",
+      "UCX_SM_EG_Basket_04",
+      "UCX_SM_EG_Basket_05",
+      "UCX_SM_EG_Basket_06",
+      "UCX_SM_EG_Basket_07",
+      "UCX_SM_EG_Basket_08",
+      "UCX_SM_EG_Basket_09",
+      "UCX_SM_EG_Basket_10",
+      "UCX_SM_EG_PremiumShelfBay_00",
+      "UCX_SM_EG_PremiumShelfBay_01",
+      "UCX_SM_EG_PremiumShelfBay_02",
+      "UCX_SM_EG_PremiumShelfBay_03",
+      "UCX_SM_EG_PremiumShelfBay_04",
+      "UCX_SM_EG_PremiumShelfBay_05",
+      "UCX_SM_EG_PremiumShelfBay_06",
+      "UCX_SM_EG_PremiumShelfBay_07",
+      "UCX_SM_EG_PremiumShelfBay_08",
+      "UCX_SM_EG_PremiumShelfBay_09",
+      "UCX_SM_EG_PremiumShelfBay_10",
+      "UCX_SM_EG_PremiumShelfBay_11",
+      "UCX_SM_FULL_cafe_chair_00",
+      "UCX_SM_FULL_cafe_chair_01",
+      "UCX_SM_FULL_cafe_chair_02",
+      "UCX_SM_FULL_cafe_chair_03",
+      "UCX_SM_FULL_cafe_chair_04",
+      "UCX_SM_FULL_cafe_chair_05",
+      "UCX_SM_FULL_cafe_chair_06",
+      "UCX_SM_FULL_cafe_chair_07",
+      "UCX_SM_FULL_cafe_stool_00",
+      "UCX_SM_FULL_cafe_stool_01",
+      "UCX_SM_FULL_cafe_stool_02",
+      "UCX_SM_FULL_cafe_stool_03",
+      "UCX_SM_FULL_cafe_stool_04",
+      "UCX_SM_FULL_cafe_stool_05",
+      "UCX_SM_FULL_cafe_stool_06",
+      "UCX_SM_FULL_cafe_table_00",
+      "UCX_SM_FULL_cafe_table_01",
+      "UCX_SM_FULL_cafe_table_02",
+      "UCX_SM_FULL_refuse_bin_00",
+      "UCX_SM_FULL_refuse_bin_01",
+      "UCX_SM_FULL_refuse_bin_02",
+      "UCX_SM_FULL_refuse_bin_03",
+      "UCX_SM_FULL_refuse_bin_04",
+      "UCX_SM_FULL_refuse_bin_05",
+      "UCX_SM_FULL_refuse_bin_06",
+      "UCX_SM_FULL_recycling_bin_00",
+      "UCX_SM_FULL_recycling_bin_01",
+      "UCX_SM_FULL_recycling_bin_02",
+      "UCX_SM_FULL_recycling_bin_03",
+      "UCX_SM_FULL_recycling_bin_04",
+      "UCX_SM_FULL_recycling_bin_05",
+      "UCX_SM_FULL_recycling_bin_06",
+      "UCX_SM_FULL_shipping_carton_small_00",
+      "UCX_SM_FULL_shipping_carton_large_00",
+      "UCX_SM_FULL_produce_crate_00",
+      "UCX_SM_FULL_produce_crate_01",
+      "UCX_SM_FULL_produce_crate_02",
+      "UCX_SM_FULL_produce_crate_03",
+      "UCX_SM_FULL_produce_crate_04",
+      "UCX_SM_FULL_shopping_cart_00",
+      "UCX_SM_FULL_shopping_cart_01",
+      "UCX_SM_FULL_shopping_cart_02",
+      "UCX_SM_FULL_shopping_cart_03",
+      "UCX_SM_FULL_shopping_cart_04",
+      "UCX_SM_FULL_shopping_cart_05",
+      "UCX_SM_FULL_shopping_cart_06",
+      "UCX_SM_FULL_shopping_cart_07",
+      "UCX_SM_FULL_shopping_cart_08",
+      "UCX_SM_FULL_shopping_cart_09",
+      "UCX_SM_FULL_shopping_cart_10",
+      "UCX_SM_FULL_shopping_cart_11",
+      "UCX_SM_FULL_shopping_cart_12",
+      "UCX_SM_FULL_shopping_cart_13",
+      "UCX_SM_FULL_shopping_cart_14",
+      "UCX_SM_FULL_shopping_cart_15",
+      "UCX_SM_FULL_service_counter_00",
+      "UCX_SM_FULL_service_counter_01",
+      "UCX_SM_FULL_produce_island_00",
+      "UCX_SM_FULL_produce_island_01",
+      "UCX_SM_FULL_florist_plinth_00",
+      "UCX_SM_FULL_florist_plinth_01",
+      "UCX_SM_FULL_checkout_00",
+      "UCX_SM_FULL_checkout_01",
+      "UCX_SM_FULL_glass_display_counter_00",
+      "UCX_SM_FULL_glass_display_counter_01",
+      "UCX_SM_FULL_glass_display_counter_02",
+      "UCX_SM_FULL_glass_display_counter_03",
+      "UCX_SM_FULL_glass_display_counter_04",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_00",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_01",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_02",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_03",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_04",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_05",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_06",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_07",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_08",
+      "UCX_SM_FULL_OpenFrontRefrigeratedBay_09",
+      "UCX_SM_FULL_warehouse_rack_00",
+      "UCX_SM_FULL_warehouse_rack_01",
+      "UCX_SM_FULL_warehouse_rack_02",
+      "UCX_SM_FULL_warehouse_rack_03",
+      "UCX_SM_FULL_warehouse_rack_04",
+      "UCX_SM_FULL_warehouse_rack_05",
+      "UCX_SM_FULL_warehouse_rack_06",
+      "UCX_SM_FULL_warehouse_rack_07",
+      "UCX_SM_FULL_toilet_00",
+      "UCX_SM_FULL_toilet_01",
+      "UCX_SM_FULL_vanity_00",
+      "UCX_SM_FULL_vanity_01",
+      "UCX_SM_FULL_coffee_machine_00",
+      "UCX_SM_FULL_garden_peas_00",
+      "UCX_SM_FULL_cultured_butter_00",
+      "UCX_SM_FULL_botanical_soap_00",
+      "UCX_SM_FULL_whole_milk_00",
+      "UCX_SM_FULL_whole_milk_01",
+      "UCX_SM_FULL_greek_yogurt_00",
+      "UCX_SM_FULL_red_wine_00",
+      "UCX_SM_FULL_red_wine_01",
+      "UCX_SM_FULL_white_wine_00",
+      "UCX_SM_FULL_white_wine_01",
+      "UCX_SM_FULL_spring_water_00",
+      "UCX_SM_FULL_spring_water_01",
+      "UCX_SM_FULL_orange_juice_00",
+      "UCX_SM_FULL_orange_juice_01",
+      "UCX_SM_FULL_herbal_shampoo_00",
+      "UCX_SM_FULL_herbal_shampoo_01",
+      "UCX_SM_FULL_laundry_wash_00",
+      "UCX_SM_FULL_laundry_wash_01",
+      "UCX_SM_FULL_sea_salt_chips_00",
+      "UCX_SM_FRESH_apple_00",
+      "UCX_SM_FRESH_orange_00",
+      "UCX_SM_FRESH_bell_pepper_00",
+      "UCX_SM_FRESH_avocado_00",
+      "UCX_SM_FRESH_tomato_00",
+      "UCX_SM_FRESH_banana_00",
+      "UCX_SM_FRESH_banana_01",
+      "UCX_SM_FRESH_banana_02",
+      "UCX_SM_FRESH_banana_03",
+      "UCX_SM_FRESH_banana_04",
+      "UCX_SM_FRESH_sourdough_loaf_00",
+      "UCX_SM_FRESH_baguette_00",
+      "UCX_SM_FRESH_butter_croissant_00",
+      "UCX_SM_FRESH_butter_croissant_01",
+      "UCX_SM_FRESH_butter_croissant_02",
+      "UCX_SM_FRESH_butter_croissant_03",
+      "UCX_SM_FRESH_butter_croissant_04",
+      "UCX_SM_FRESH_cinnamon_pastry_pack_00",
+      "UCX_SM_FRESH_wrapped_cheddar_00",
+      "UCX_SM_FRESH_brie_round_00",
+      "UCX_SM_FRESH_sliced_charcuterie_pack_00",
+      "UCX_SM_FRESH_deli_olive_tub_00",
+      "UCX_SM_FRESH_steak_tray_00",
+      "UCX_SM_FRESH_salmon_tray_00",
+      "UCX_SM_FRESH_floral_bouquet_00",
+      "UCX_SM_FRESH_floral_bouquet_01",
+      "UCX_SM_FRESH_floral_bouquet_02",
+      "UCX_SM_FRESH_floral_bouquet_03",
+      "UCX_SM_FRESH_potted_flowering_plant_00",
+      "UCX_SM_FRESH_potted_flowering_plant_01",
+      "UCX_SM_FRESH_potted_flowering_plant_02",
+      "UCX_SM_FRESH_potted_flowering_plant_03",
+      "UCX_SM_FULL_main_floor_00",
+      "UCX_SM_FULL_roof_slab_00",
+      "UCX_SM_FULL_wall_left_00",
+      "UCX_SM_FULL_wall_right_00",
+      "UCX_SM_FULL_wall_rear_00",
+      "UCX_SM_FULL_front_glass_0_00",
+      "UCX_SM_FULL_front_glass_1_00",
+      "UCX_SM_FULL_front_glass_2_00",
+      "UCX_SM_FULL_front_glass_3_00",
+      "UCX_SM_FULL_front_glass_4_00",
+      "UCX_SM_FULL_closed_entry_doors_00",
+      "UCX_SM_FULL_front_entry_header_00",
+      "UCX_SM_FULL_front_upper_lintel_00",
+      "UCX_SM_FULL_front_sign_fascia_00",
+      "UCX_SM_FULL_staff_front_partition_0_00",
+      "UCX_SM_FULL_staff_front_partition_1_00",
+      "UCX_SM_FULL_staff_front_partition_2_00",
+      "UCX_SM_FULL_staff_front_partition_3_00",
+      "UCX_SM_FULL_staff_front_partition_header_0_00",
+      "UCX_SM_FULL_staff_front_partition_header_1_00",
+      "UCX_SM_FULL_staff_front_partition_header_2_00",
+      "UCX_SM_FULL_customer_wc_front_0_00",
+      "UCX_SM_FULL_customer_wc_front_1_00",
+      "UCX_SM_FULL_customer_wc_front_header_0_00",
+      "UCX_SM_FULL_wc_divider_00",
+      "UCX_SM_FULL_customer_wc_west_00",
+      "UCX_SM_FULL_staff_wc_west_lower_00",
+      "UCX_SM_FULL_staff_wc_west_upper_00",
+      "UCX_SM_FULL_staff_wc_west_header_00",
+      "UCX_SM_FULL_customer_stall_screen_00",
+      "UCX_SM_FULL_staff_stall_screen_00",
+      "UCX_SM_FULL_cold_front_0_00",
+      "UCX_SM_FULL_cold_front_1_00",
+      "UCX_SM_FULL_cold_front_header_0_00",
+      "UCX_SM_FULL_cold_left_00",
+      "UCX_SM_FULL_cold_right_00",
+      "UCX_SM_FULL_cold_rear_0_00",
+      "UCX_SM_FULL_cold_rear_1_00",
+      "UCX_SM_FULL_cold_rear_header_0_00",
+      "UCX_SM_FULL_office_front_0_00",
+      "UCX_SM_FULL_office_front_1_00",
+      "UCX_SM_FULL_office_front_2_00",
+      "UCX_SM_FULL_office_front_header_0_00",
+      "UCX_SM_FULL_office_front_header_1_00",
+      "UCX_SM_FULL_office_divider_00",
+      "UCX_SM_FULL_office_rear_0_00",
+      "UCX_SM_FULL_office_rear_1_00",
+      "UCX_SM_FULL_office_rear_2_00",
+      "UCX_SM_FULL_office_rear_header_0_00",
+      "UCX_SM_FULL_office_rear_header_1_00",
+      "UCX_SM_FULL_exterior_ground_00",
+      "UCX_SM_FULL_exterior_road_00",
+      "UCX_SM_FULL_front_sidewalk_00",
+      "UCX_SM_FULL_pine_tall_00",
+      "UCX_SM_FULL_pine_small_00"
+    ],
+    "11_GAMEPLAY_MARKERS": [
+      "PLAYER_START_01",
+      "PLAYER_START_02",
+      "PLAYER_START_03",
+      "PLAYER_START_04",
+      "PLAYER_START_05",
+      "PLAYER_START_06",
+      "PLAYER_START_07",
+      "PLAYER_START_08",
+      "PLAYER_START_09",
+      "PLAYER_START_10",
+      "BOUNDARY_FRONT",
+      "BOUNDARY_LEFT",
+      "BOUNDARY_RIGHT",
+      "BOUNDARY_REAR"
+    ]
+  },
+  "changed_collision_objects": [],
+  "exterior_changed": [],
+  "surface_contacts": [
+    {
+      "text": "SIGN BREAK ROOM",
+      "board": "V3_Sign_backing_17",
+      "board_bounds": [
+        [
+          50.10980224609375,
+          46.96799850463867,
+          2.6232001781463623
+        ],
+        [
+          51.89080047607422,
+          47.00300216674805,
+          3.013200044631958
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.032000942319631576,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.032000946044921874,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_1_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "SIGN CHILLED",
+      "board": "V3_Sign_backing_20",
+      "board_bounds": [
+        [
+          28.495439529418945,
+          37.942996978759766,
+          2.3559200763702393
+        ],
+        [
+          29.50480079650879,
+          37.97800064086914,
+          2.745919942855835
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00005",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00005",
+              "distance_from_plate_front": 0.007003233931958675,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00005",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "text": "SIGN COLD STORE",
+      "board": "V3_Sign_backing_22",
+      "board_bounds": [
+        [
+          30.6304988861084,
+          46.96799850463867,
+          2.6232001781463623
+        ],
+        [
+          32.37329864501953,
+          47.00300216674805,
+          3.013200044631958
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.032000946044921874,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_COLD_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.032000946044921874,
+              "within_plate_depth": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "SIGN CUSTOMER WC",
+      "board": "V3_Sign_backing_24",
+      "board_bounds": [
+        [
+          59.94171905517578,
+          43.972999572753906,
+          2.540020227432251
+        ],
+        [
+          62.058937072753906,
+          44.00800323486328,
+          2.9300200939178467
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.026999881654977798,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.026999881654977798,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.0269998779296875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.02699987979233265,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.02699987979233265,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.02699987979233265,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.0269998779296875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.0269998779296875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_CUSTOMER_WC_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.0269998779296875,
+              "within_plate_depth": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "SIGN DAIRY",
+      "board": "V3_Sign_backing_25",
+      "board_bounds": [
+        [
+          18.56131935119629,
+          37.942996978759766,
+          2.3561601638793945
+        ],
+        [
+          19.448118209838867,
+          37.97800064086914,
+          2.7461600303649902
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00002",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00002",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00002",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "text": "SIGN FRESH DRINKS",
+      "board": "V3_Sign_backing_30",
+      "board_bounds": [
+        [
+          45.34159851074219,
+          37.942996978759766,
+          2.3559200763702393
+        ],
+        [
+          46.66368103027344,
+          37.97800064086914,
+          2.745919942855835
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00010",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00011",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "text": "SIGN FROZEN",
+      "board": "V3_Sign_backing_31",
+      "board_bounds": [
+        [
+          38.50444030761719,
+          37.942996978759766,
+          2.3559200763702393
+        ],
+        [
+          39.49568176269531,
+          37.97800064086914,
+          2.745919942855835
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00008",
+              "distance_from_plate_front": 0.00700323486328125,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00008",
+              "distance_from_plate_front": 0.007003233931958675,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": []
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_CHILLED_BAY_00008",
+              "distance_from_plate_front": 0.007003233931958675,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "text": "SIGN STAFF OFFICE",
+      "board": "V3_Sign_backing_33",
+      "board_bounds": [
+        [
+          44.11629867553711,
+          46.96799850463867,
+          2.6232001781463623
+        ],
+        [
+          45.88589859008789,
+          47.00300216674805,
+          3.013200044631958
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.032000946044921874,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.032000946044921874,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.032000946044921874,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_OFFICE_FRONT_HEADER_0_00001",
+              "distance_from_plate_front": 0.03200094977021217,
+              "within_plate_depth": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "SIGN STAFF WC",
+      "board": "V3_Sign_backing_34",
+      "board_bounds": [
+        [
+          57.90299987792969,
+          52.21814727783203,
+          2.540020227432251
+        ],
+        [
+          57.93800354003906,
+          53.78295135498047,
+          2.9300200939178467
+        ]
+      ],
+      "depth": 0.03500000014901161,
+      "probes": [
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": -0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.0169977435618639,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": -0.4,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        },
+        {
+          "horizontal_fraction": 0.4,
+          "vertical_fraction": 0.4,
+          "hits": [
+            {
+              "target": "FULL_STAFF_WC_WEST_HEADER_00001",
+              "distance_from_plate_front": 0.01699774169921875,
+              "within_plate_depth": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "brand_objects": [
+    {
+      "name": "EXT2_Brand_name",
+      "type": "MESH",
+      "bounds": [
+        [
+          27.844837188720703,
+          -0.8289999961853027,
+          4.7703986167907715
+        ],
+        [
+          36.15211868286133,
+          -0.8009999990463257,
+          5.61344051361084
+        ]
+      ],
+      "body": null
+    }
+  ],
+  "counter_objects": [
+    "FULL_GLASS_DISPLAY_COUNTER_00001",
+    "FULL_GLASS_DISPLAY_COUNTER_00002",
+    "FULL_GLASS_DISPLAY_COUNTER_00003",
+    "FULL_GLASS_DISPLAY_COUNTER_00004",
+    "FULL_GLASS_DISPLAY_COUNTER_00005",
+    "FULL_GLASS_DISPLAY_COUNTER_00006"
+  ],
+  "changed_counter_objects": [],
+  "packed_images": [
+    {
+      "name": "V3_Stone_BaseColor",
+      "packed": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "V3_Stone_Normal",
+      "packed": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    }
+  ],
+  "exterior_carrier_contact": {
+    "bounds": [
+      [
+        27.763479232788086,
+        -0.8070000410079956,
+        4.691919803619385
+      ],
+      [
+        36.23347854614258,
+        -0.6809999942779541,
+        5.691919803619385
+      ]
+    ],
+    "glyph_rear_vertex_count": 2514,
+    "all_letter_rears_intersect_carrier": true,
+    "all_rearward_facade_contacts_intersect_carrier": true
+  },
+  "ceiling_hanger_contacts": [
+    {
+      "rod": "V3_Sign_hanger_0_0",
+      "board": "V3_Sign_backing_00",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_0_1",
+      "board": "V3_Sign_backing_00",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_1_0",
+      "board": "V3_Sign_backing_01",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_1_1",
+      "board": "V3_Sign_backing_01",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_2_0",
+      "board": "V3_Sign_backing_02",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_2_1",
+      "board": "V3_Sign_backing_02",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_3_0",
+      "board": "V3_Sign_backing_03",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_3_1",
+      "board": "V3_Sign_backing_03",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_4_0",
+      "board": "V3_Sign_backing_04",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_4_1",
+      "board": "V3_Sign_backing_04",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_5_0",
+      "board": "V3_Sign_backing_05",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_5_1",
+      "board": "V3_Sign_backing_05",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_6_0",
+      "board": "V3_Sign_backing_06",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_6_1",
+      "board": "V3_Sign_backing_06",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_7_0",
+      "board": "V3_Sign_backing_07",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_7_1",
+      "board": "V3_Sign_backing_07",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_8_0",
+      "board": "V3_Sign_backing_08",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_8_1",
+      "board": "V3_Sign_backing_08",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_9_0",
+      "board": "V3_Sign_backing_09",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_9_1",
+      "board": "V3_Sign_backing_09",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242313385009766,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_10_0",
+      "board": "V3_Sign_backing_10",
+      "rod_z": [
+        3.1153411865234375,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1243410110473633,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_10_1",
+      "board": "V3_Sign_backing_10",
+      "rod_z": [
+        3.1153411865234375,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1243410110473633,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_11_0",
+      "board": "V3_Sign_backing_11",
+      "rod_z": [
+        3.1153411865234375,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1243410110473633,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_11_1",
+      "board": "V3_Sign_backing_11",
+      "rod_z": [
+        3.1153411865234375,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1243410110473633,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_12_0",
+      "board": "V3_Sign_backing_12",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_12_1",
+      "board": "V3_Sign_backing_12",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_13_0",
+      "board": "V3_Sign_backing_13",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_13_1",
+      "board": "V3_Sign_backing_13",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242311000823975,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_14_0",
+      "board": "V3_Sign_backing_14",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242308616638184,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_14_1",
+      "board": "V3_Sign_backing_14",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242308616638184,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_15_0",
+      "board": "V3_Sign_backing_15",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242308616638184,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_15_1",
+      "board": "V3_Sign_backing_15",
+      "rod_z": [
+        3.1152310371398926,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1242308616638184,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_16_0",
+      "board": "Wayfinding backing BAKED HERE",
+      "rod_z": [
+        3.5944197177886963,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.6034200191497803,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_16_1",
+      "board": "Wayfinding backing BAKED HERE",
+      "rod_z": [
+        3.5944197177886963,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.6034200191497803,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_18_0",
+      "board": "V3_Sign_backing_18",
+      "rod_z": [
+        3.1428699493408203,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.151870012283325,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_18_1",
+      "board": "V3_Sign_backing_18",
+      "rod_z": [
+        3.1428699493408203,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.151870012283325,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_19_0",
+      "board": "Front wayfinding backing",
+      "rod_z": [
+        3.518880844116211,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5278806686401367,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_19_1",
+      "board": "Front wayfinding backing",
+      "rod_z": [
+        3.518880844116211,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5278806686401367,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_21_0",
+      "board": "Wayfinding backing COFFEE & PATISSERIE",
+      "rod_z": [
+        3.577420234680176,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5864205360412598,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_21_1",
+      "board": "Wayfinding backing COFFEE & PATISSERIE",
+      "rod_z": [
+        3.577420234680176,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5864205360412598,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_23_0",
+      "board": "V3_Sign_backing_23",
+      "rod_z": [
+        3.004199981689453,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.013199806213379,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_23_1",
+      "board": "V3_Sign_backing_23",
+      "rod_z": [
+        3.004199981689453,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.013200044631958,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_26_0",
+      "board": "Wayfinding backing DAIRY / CHILLED / FROZEN",
+      "rod_z": [
+        3.7481508255004883,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.757150650024414,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_26_1",
+      "board": "Wayfinding backing DAIRY / CHILLED / FROZEN",
+      "rod_z": [
+        3.7481508255004883,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.757150650024414,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_27_0",
+      "board": "V3_Sign_backing_27",
+      "rod_z": [
+        3.1428699493408203,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.151870012283325,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_27_1",
+      "board": "V3_Sign_backing_27",
+      "rod_z": [
+        3.1428699493408203,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.151870012283325,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_28_0",
+      "board": "V3_Sign_backing_28",
+      "rod_z": [
+        3.1428704261779785,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1518702507019043,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_28_1",
+      "board": "V3_Sign_backing_28",
+      "rod_z": [
+        3.1428704261779785,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.1518702507019043,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_29_0",
+      "board": "Wayfinding backing FLOWERS & FINDS",
+      "rod_z": [
+        3.5705108642578125,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5795106887817383,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_29_1",
+      "board": "Wayfinding backing FLOWERS & FINDS",
+      "rod_z": [
+        3.5705108642578125,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5795106887817383,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_32_0",
+      "board": "V3_Sign_backing_32",
+      "rod_z": [
+        3.004199981689453,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.013200044631958,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_32_1",
+      "board": "V3_Sign_backing_32",
+      "rod_z": [
+        3.004199981689453,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.013200044631958,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_35_0",
+      "board": "Wayfinding backing THE CELLAR & DRINKS",
+      "rod_z": [
+        3.5136003494262695,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5226001739501953,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_35_1",
+      "board": "Wayfinding backing THE CELLAR & DRINKS",
+      "rod_z": [
+        3.5136003494262695,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5226001739501953,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_36_0",
+      "board": "Wayfinding backing THE FRESH MARKET",
+      "rod_z": [
+        3.5412404537200928,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5502405166625977,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_36_1",
+      "board": "Wayfinding backing THE FRESH MARKET",
+      "rod_z": [
+        3.5412404537200928,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.5502405166625977,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_37_0",
+      "board": "Front wayfinding backing.001",
+      "rod_z": [
+        3.5981502532958984,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.6071505546569824,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    },
+    {
+      "rod": "V3_Sign_hanger_37_1",
+      "board": "Front wayfinding backing.001",
+      "rod_z": [
+        3.5981502532958984,
+        4.684000015258789
+      ],
+      "actual_board_top_z": 3.6071505546569824,
+      "actual_roof_bottom_z": 4.659999847412109,
+      "board_contact": true,
+      "roof_contact": true
+    }
+  ],
+  "all_hangers_contact_board_and_roof": true,
+  "anchor_plate_contacts": [
+    {
+      "anchor": "V3_Ceiling_anchor_0_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_0_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_10_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_10_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_11_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_11_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_12_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_12_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_13_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_13_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_14_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_14_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_15_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_15_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_16_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_16_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_18_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_18_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_19_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_19_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_1_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_1_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_21_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_21_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_23_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_23_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_26_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_26_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_27_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_27_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_28_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_28_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_29_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_29_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_2_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_2_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_32_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_32_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_35_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_35_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_36_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_36_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_37_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_37_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_3_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_3_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_4_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_4_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_5_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_5_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_6_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_6_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_7_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_7_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_8_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_8_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_9_0",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    },
+    {
+      "anchor": "V3_Ceiling_anchor_9_1",
+      "roof_surface_z": 4.659999847412109,
+      "roof_contact": true,
+      "rod_contact": true
+    }
+  ],
+  "all_anchor_plates_touch_roof_and_rods": true,
+  "interior_glyph_contacts": [
+    {
+      "text": "SIGN 01  BREAKFAST",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 01  BREAKFAST.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 02  GRAINS & PASTA",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 02  GRAINS & PASTA.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 03  COOKING",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 03  COOKING.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 04  PANTRY",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 04  PANTRY.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 05  COFFEE & TEA",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 05  COFFEE & TEA.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 06  PRESERVES",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 06  PRESERVES.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 07  SNACKS",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740437,
+      "gap_m": -0.00030041949122505684,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 07  SNACKS.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921078687,
+      "gap_m": -0.0002994658169086506,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 08  HOME & CARE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 13.983299386895595,
+      "board_front_coordinate": 13.98299896740842,
+      "gap_m": -0.00030041948717496325,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN 08  HOME & CARE.001",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 27.983299386895595,
+      "board_front_coordinate": 27.982999921082737,
+      "gap_m": -0.000299465812858557,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN BAKED HERE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 39.603298339726436,
+      "board_front_coordinate": 39.60300077570565,
+      "gap_m": -0.000297564020783625,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN BREAK ROOM",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 46.968299991969886,
+      "board_front_coordinate": 46.96799861930239,
+      "gap_m": -0.0003013726674936379,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN BUTCHER",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 31.65329946439772,
+      "board_front_coordinate": 31.65299999736098,
+      "gap_m": -0.00029946703673999764,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN CHECKOUTS",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 7.003300339140537,
+      "board_front_coordinate": 7.003000391900855,
+      "gap_m": -0.00029994723968229664,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN CHILLED",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 37.943298453183885,
+      "board_front_coordinate": 37.9429970817403,
+      "gap_m": -0.00030137144358377554,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN COFFEE & PATISSERIE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 15.503299864862242,
+      "board_front_coordinate": 15.50299944262126,
+      "gap_m": -0.00030042224098281167,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN COLD STORE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 46.968299991969886,
+      "board_front_coordinate": 46.96799861930239,
+      "gap_m": -0.0003013726674936379,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN CUSTOMER SERVICE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 3.0033000778005743,
+      "board_front_coordinate": 3.0030001356445553,
+      "gap_m": -0.0002999421560190285,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN CUSTOMER WC",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 43.97330105675519,
+      "board_front_coordinate": 43.972999683781715,
+      "gap_m": -0.0003013729734746562,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN DAIRY",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 37.94329845315765,
+      "board_front_coordinate": 37.942997081750796,
+      "gap_m": -0.00030137140685582153,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN DAIRY / CHILLED / FROZEN",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 39.5032998723251,
+      "board_front_coordinate": 39.50300231018913,
+      "gap_m": -0.0002975621359695424,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN DELI & CHEESE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 26.65329946439772,
+      "board_front_coordinate": 26.65299999736098,
+      "gap_m": -0.00029946703673999764,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN FISHMONGER",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 36.65330137174635,
+      "board_front_coordinate": 36.653003812058245,
+      "gap_m": -0.00029755968810718514,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN FLOWERS & FINDS",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 11.703299673825327,
+      "board_front_coordinate": 11.702999251890347,
+      "gap_m": -0.0003004219349804771,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN FRESH DRINKS",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 37.943298453183885,
+      "board_front_coordinate": 37.9429970817403,
+      "gap_m": -0.00030137144358377554,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN FROZEN",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 37.943298453183885,
+      "board_front_coordinate": 37.9429970817403,
+      "gap_m": -0.00030137144358377554,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN RECEIVING & STOCK",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 47.003299839381995,
+      "board_front_coordinate": 47.00300228141177,
+      "gap_m": -0.0002975579702280129,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN STAFF OFFICE",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 46.968299991969886,
+      "board_front_coordinate": 46.96799861930239,
+      "gap_m": -0.0003013726674936379,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN STAFF WC",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 57.903299066763466,
+      "board_front_coordinate": 57.90299763803011,
+      "gap_m": -0.00030142873335847753,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN THE CELLAR & DRINKS",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 23.50329986207258,
+      "board_front_coordinate": 23.503000394117905,
+      "gap_m": -0.0002994679546759471,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN THE FRESH MARKET",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 31.50329986328076,
+      "board_front_coordinate": 31.503000394102173,
+      "gap_m": -0.00029946917858580946,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    },
+    {
+      "text": "SIGN WELCOME IN",
+      "extrude": 0.003000000026077032,
+      "bevel_depth": 0.0003000000142492354,
+      "glyph_rear_coordinate": 9.10330024723811,
+      "board_front_coordinate": 9.102999824079191,
+      "gap_m": -0.00030042315891876115,
+      "local_mesh_z_min": -0.0032999999821186066,
+      "local_mesh_z_max": 0.0032999999821186066
+    }
+  ],
+  "all_interior_glyphs_contact_boards": true,
+  "all_source_file_images": [
+    {
+      "name": "almond_granola.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/almond_granola.png"
+    },
+    {
+      "name": "apple_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/apple_basecolor.png"
+    },
+    {
+      "name": "apple_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/apple_normal.png"
+    },
+    {
+      "name": "apple_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/apple_roughness.png"
+    },
+    {
+      "name": "avocado_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/avocado_basecolor.png"
+    },
+    {
+      "name": "avocado_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/avocado_normal.png"
+    },
+    {
+      "name": "avocado_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/avocado_roughness.png"
+    },
+    {
+      "name": "banana_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/banana_basecolor.png"
+    },
+    {
+      "name": "banana_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/banana_normal.png"
+    },
+    {
+      "name": "banana_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/banana_roughness.png"
+    },
+    {
+      "name": "bell_pepper_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bell_pepper_basecolor.png"
+    },
+    {
+      "name": "bell_pepper_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bell_pepper_normal.png"
+    },
+    {
+      "name": "bell_pepper_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bell_pepper_roughness.png"
+    },
+    {
+      "name": "botanical_soap.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/botanical_soap.png"
+    },
+    {
+      "name": "bread_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bread_basecolor.png"
+    },
+    {
+      "name": "bread_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bread_normal.png"
+    },
+    {
+      "name": "bread_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bread_roughness.png"
+    },
+    {
+      "name": "brie_round_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/brie_round_label.png"
+    },
+    {
+      "name": "bronze_pasta.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/bronze_pasta.png"
+    },
+    {
+      "name": "cheddar_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/cheddar_basecolor.png"
+    },
+    {
+      "name": "cheddar_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/cheddar_normal.png"
+    },
+    {
+      "name": "cheddar_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/cheddar_roughness.png"
+    },
+    {
+      "name": "chickpeas.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/chickpeas.png"
+    },
+    {
+      "name": "cinnamon_pastry_pack_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/cinnamon_pastry_pack_label.png"
+    },
+    {
+      "name": "coffee.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/coffee.png"
+    },
+    {
+      "name": "croissant_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/croissant_basecolor.png"
+    },
+    {
+      "name": "croissant_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/croissant_normal.png"
+    },
+    {
+      "name": "croissant_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/croissant_roughness.png"
+    },
+    {
+      "name": "crushed_tomatoes.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/crushed_tomatoes.png"
+    },
+    {
+      "name": "cultured_butter.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/cultured_butter.png"
+    },
+    {
+      "name": "deli_olive_tub_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/deli_olive_tub_label.png"
+    },
+    {
+      "name": "EXT2_stone_BaseColor",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/EXT2_stone_BaseColor.png"
+    },
+    {
+      "name": "EXT2_wood_BaseColor",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/EXT2_wood_BaseColor.png"
+    },
+    {
+      "name": "garden_peas.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/garden_peas.png"
+    },
+    {
+      "name": "greek_yogurt.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/greek_yogurt.png"
+    },
+    {
+      "name": "green_olive_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/green_olive_basecolor.png"
+    },
+    {
+      "name": "green_olive_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/green_olive_normal.png"
+    },
+    {
+      "name": "green_olive_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/green_olive_roughness.png"
+    },
+    {
+      "name": "herbal_shampoo.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/herbal_shampoo.png"
+    },
+    {
+      "name": "laundry_wash.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/laundry_wash.png"
+    },
+    {
+      "name": "leaf_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/leaf_basecolor.png"
+    },
+    {
+      "name": "leaf_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/leaf_normal.png"
+    },
+    {
+      "name": "leaf_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/leaf_roughness.png"
+    },
+    {
+      "name": "olive_oil.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/olive_oil.png"
+    },
+    {
+      "name": "orange_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/orange_basecolor.png"
+    },
+    {
+      "name": "orange_juice.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/orange_juice.png"
+    },
+    {
+      "name": "orange_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/orange_normal.png"
+    },
+    {
+      "name": "orange_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/orange_roughness.png"
+    },
+    {
+      "name": "red_wine.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/red_wine.png"
+    },
+    {
+      "name": "rolled_oats.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/rolled_oats.png"
+    },
+    {
+      "name": "salami_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salami_basecolor.png"
+    },
+    {
+      "name": "salami_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salami_normal.png"
+    },
+    {
+      "name": "salami_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salami_roughness.png"
+    },
+    {
+      "name": "salmon_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salmon_basecolor.png"
+    },
+    {
+      "name": "salmon_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salmon_normal.png"
+    },
+    {
+      "name": "salmon_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salmon_roughness.png"
+    },
+    {
+      "name": "salmon_tray_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/salmon_tray_label.png"
+    },
+    {
+      "name": "sea_salt.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/sea_salt.png"
+    },
+    {
+      "name": "sea_salt_chips.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/sea_salt_chips.png"
+    },
+    {
+      "name": "sliced_charcuterie_pack_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/sliced_charcuterie_pack_label.png"
+    },
+    {
+      "name": "spring_water.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/spring_water.png"
+    },
+    {
+      "name": "steak_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/steak_basecolor.png"
+    },
+    {
+      "name": "steak_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/steak_normal.png"
+    },
+    {
+      "name": "steak_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/steak_roughness.png"
+    },
+    {
+      "name": "steak_tray_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/steak_tray_label.png"
+    },
+    {
+      "name": "strawberry_preserve.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/strawberry_preserve.png"
+    },
+    {
+      "name": "tomato_basecolor.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/tomato_basecolor.png"
+    },
+    {
+      "name": "tomato_normal.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/tomato_normal.png"
+    },
+    {
+      "name": "tomato_roughness.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/tomato_roughness.png"
+    },
+    {
+      "name": "V3_Stone_BaseColor",
+      "packed": true,
+      "filepath": "//textures/V3_Stone_BaseColor.png"
+    },
+    {
+      "name": "V3_Stone_Normal",
+      "packed": true,
+      "filepath": "//../premium_store_exterior_v2/textures/V3_Stone_Normal.png"
+    },
+    {
+      "name": "white_wine.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/white_wine.png"
+    },
+    {
+      "name": "whole_milk.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/whole_milk.png"
+    },
+    {
+      "name": "wildflower_honey.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/wildflower_honey.png"
+    },
+    {
+      "name": "wrapped_cheddar_label.png",
+      "packed": true,
+      "filepath": "//../premium_store_full_v1/textures/wrapped_cheddar_label.png"
+    }
+  ],
+  "all_source_file_images_packed": true,
+  "audited_blend_sha256": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519"
+}
