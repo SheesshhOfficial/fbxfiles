@@ -12,9 +12,11 @@ import math
 from pathlib import Path
 import re
 
-DEST = "/Game/AbandonedCarnivalFull57"
+DEST = "/Game/AbandonedCarnivalFull57_Corrected"
 MAP_PATH = DEST + "/Maps/AbandonedCarnivalFull57"
-TAG = "AbandonedCarnivalFull57"
+TAG = "AbandonedCarnivalFull57_Corrected"
+AXIS_ADAPTER = "counter_y_fbx7400_v1"
+SENTINELS = ("SM_Env_Tile_m3_m4", "SM_OpenToolbox_20d6fff596")
 COUNTS = dict(mesh_assets=181, prop_assets=138, prop_actors=153, environment_assets=43,
               environment_actors=43, materials=59, textures=41, player_starts=10, lights=41, authored_actors=247)
 VENDORS = {"carnival_calibration57.py": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171",
@@ -130,7 +132,7 @@ def plan(package_root):
 
 def _report(mode):
     return dict(schema="carnival-full-import57-v1",mode=mode,status="PENDING",mutation_started=False,partial=False,saves_performed=0,
-                namespace=DEST,suggested_manual_save_path=MAP_PATH,counts=dict(COUNTS),textures=[],materials=[],meshes=[],actors=[],errors=[],
+                namespace=DEST,suggested_manual_save_path=MAP_PATH,counts=dict(COUNTS),derived_files=[],textures=[],materials=[],meshes=[],actors=[],errors=[],
                 light_policy=dict(LIGHT_POLICY),visual_pass=False,shader_compilation="NOT_VERIFIED",gameplay="NOT_VERIFIED",
                 limitations=["Full import is untested in Unreal until executed and reviewed; sample success is narrower evidence.",
                 "Source light placement/color/type/shadows are preserved; brightness/falloff and disk-to-square shape are approximations.",
@@ -145,7 +147,7 @@ def _api(u,c,m):
     for cls,methods in {"RectLight":(),"PlayerStart":(),"RectLightComponent":("set_source_width","set_source_height","set_intensity_units","set_attenuation_radius"),
         "PointLightComponent":("set_source_radius","set_intensity_units","set_attenuation_radius"),
         "DirectionalLightComponent":("set_light_source_angle",),"Actor":("get_actor_forward_vector","get_actor_up_vector","get_actor_rotation"),
-        "SystemLibrary":("get_console_variable_int_value",),"StaticMeshComponent":("set_collision_enabled","set_collision_response_to_all_channels","set_collision_response_to_channel","get_collision_enabled","get_collision_response_to_channel","is_simulating_physics")}.items():
+        "SystemLibrary":("get_console_variable_int_value",),"Paths":("project_saved_dir",),"StaticMeshComponent":("set_collision_enabled","set_collision_response_to_all_channels","set_collision_response_to_channel","get_collision_enabled","get_collision_response_to_channel","is_simulating_physics")}.items():
         obj=getattr(u,cls,None);require(obj is not None,"Missing full-import API class: "+cls)
         for name in methods:require(callable(getattr(obj,name,None)),"Missing full-import API: "+cls+"."+name)
     for cls in (u.PointLightComponent,u.RectLightComponent,u.DirectionalLightComponent):
@@ -175,6 +177,7 @@ def _guard(u,c):
     require(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world() is None,"Stop Play/Simulate first")
     lib=u.EditorAssetLibrary
     require(not lib.does_directory_exist(DEST) and not lib.list_assets(DEST,recursive=True,include_folder=True) and not lib.does_asset_exist(MAP_PATH),"Full-import namespace/map already exists; no overwrite/resume")
+    _cache_root(u)  # Read-only path/symlink check; never creates directories.
     content=Path(str(u.Paths.convert_relative_path_to_full(u.Paths.project_content_dir())))
     require(content.is_absolute() and content.is_dir(),"Cannot verify physical Content directory")
     target=content/DEST.removeprefix("/Game/");require(not target.exists() and not target.is_symlink(),"Physical full-import namespace already exists")
@@ -208,13 +211,413 @@ def _material(u,m,record,textures,report):
     return mat
 
 
+# Pure, frozen-source FBX7400 adapter. No file or Unreal operations here.
+"""Frozen-Carnival FBX7400 Y-reflection fallback CANDIDATE; standard library only.
+
+No operation occurs on import. reflect_bytes() returns a derived FBX in memory.
+It does not read/write assets, change original files, or claim Unreal validation.
+Unknown geometry/layer schemas and nonidentity Model transforms fail closed.
+All original unmodified property encodings and the entire footer are preserved.
+Compression choices keep the footer at its original modulo-16 alignment.
+"""
+import array
+from dataclasses import dataclass, field
+import hashlib
+import math
+import struct
+import sys
+import zlib
+
+_fbx_MAGIC = b'Kaydara FBX Binary  \x00\x1a\x00'
+_fbx_NULL = b'\x00' * 13
+_fbx_SCALARS = {'Z': ('b', 1), 'Y': ('h', 2), 'B': ('?', 1), 'C': ('c', 1),
+           'I': ('i', 4), 'F': ('f', 4), 'D': ('d', 8), 'L': ('q', 8)}
+_fbx_ARRAYS = {'b': ('B', 1), 'c': ('B', 1), 'i': ('i', 4), 'l': ('q', 8),
+          'f': ('f', 4), 'd': ('d', 8)}
+_fbx_IDENTITY = {'Lcl Translation': (0.,0.,0.), 'Lcl Rotation': (0.,0.,0.),
+            'Lcl Scaling': (1.,1.,1.), 'GeometricTranslation': (0.,0.,0.),
+            'GeometricRotation': (0.,0.,0.), 'GeometricScaling': (1.,1.,1.),
+            'PreRotation': (0.,0.,0.), 'PostRotation': (0.,0.,0.),
+            'RotationOffset': (0.,0.,0.), 'RotationPivot': (0.,0.,0.),
+            'ScalingOffset': (0.,0.,0.), 'ScalingPivot': (0.,0.,0.)}
+
+
+def _fbx_require(ok, message):
+    if not ok:
+        raise ValueError(message)
+
+
+@dataclass
+class _fbx_Property:
+    kind: str
+    encoded: bytes  # original whole property, including type byte
+    payload: bytes  # uncompressed array payload, string bytes, or scalar bytes
+    count: int | None = None
+    encoding: int | None = None
+    changed: bool = False
+
+    def value(self):
+        if self.kind in ('S', 'R'):
+            return self.payload
+        if self.kind in _fbx_SCALARS:
+            return struct.unpack('<' + _fbx_SCALARS[self.kind][0], self.payload)[0]
+        _fbx_require(self.kind in _fbx_ARRAYS, 'Unsupported property kind')
+        a = array.array(_fbx_ARRAYS[self.kind][0]); a.frombytes(self.payload)
+        if sys.byteorder != 'little' and a.itemsize > 1:
+            a.byteswap()
+        return a
+
+    def set_array(self, values):
+        _fbx_require(self.kind in _fbx_ARRAYS, 'Only arrays may be changed')
+        a = array.array(_fbx_ARRAYS[self.kind][0], values)
+        _fbx_require(len(a) == self.count, 'Array length change forbidden')
+        if sys.byteorder != 'little' and a.itemsize > 1:
+            a.byteswap()
+        payload = a.tobytes()
+        if payload != self.payload:
+            self.payload = payload; self.changed = True
+            self.encoded = self.compressed(1)
+
+    def compressed(self, level):
+        _fbx_require(self.kind in _fbx_ARRAYS, 'Compression requires array')
+        data = zlib.compress(self.payload, level) if self.encoding == 1 else self.payload
+        return self.kind.encode() + struct.pack('<III', self.count, self.encoding, len(data)) + data
+
+
+@dataclass
+class _fbx_Node:
+    name: bytes
+    props: list[_fbx_Property]
+    children: list['Node']
+    sentinel: bool
+
+
+@dataclass
+class _fbx_Document:
+    header: bytes
+    nodes: list[_fbx_Node]
+    footer: bytes
+    footer_offset: int
+
+
+def _fbx_parse(data: bytes) -> _fbx_Document:
+    _fbx_require(data[:23] == _fbx_MAGIC and len(data) >= 40, 'Not binary FBX')
+    _fbx_require(struct.unpack_from('<I', data, 23)[0] == 7400, 'Only FBX7400 is supported')
+    limit = len(data)
+    def node_at(pos):
+        _fbx_require(pos + 13 <= limit, 'Truncated FBX record')
+        end, count, plen, nlen = struct.unpack_from('<IIIB', data, pos)
+        _fbx_require(end and pos + 13 + nlen <= end <= limit, 'Invalid FBX record end')
+        name = data[pos+13:pos+13+nlen]; cur = pos+13+nlen; pend = cur+plen
+        _fbx_require(pend <= end, 'Invalid property byte count')
+        props=[]
+        for _ in range(count):
+            start=cur; _fbx_require(cur < pend, 'Missing property type'); k=chr(data[cur]);cur+=1
+            n=enc=None
+            if k in _fbx_SCALARS:
+                size=_fbx_SCALARS[k][1]; _fbx_require(cur+size<=pend, 'Truncated scalar')
+                payload=data[cur:cur+size];cur+=size
+            elif k in ('S','R'):
+                _fbx_require(cur+4<=pend, 'Truncated string header');size=struct.unpack_from('<I',data,cur)[0];cur+=4
+                _fbx_require(cur+size<=pend, 'Truncated string');payload=data[cur:cur+size];cur+=size
+            elif k in _fbx_ARRAYS:
+                _fbx_require(cur+12<=pend, 'Truncated array header');n,enc,size=struct.unpack_from('<III',data,cur);cur+=12
+                _fbx_require(enc in (0,1) and cur+size<=pend, 'Unsupported/truncated array')
+                packed=data[cur:cur+size];cur+=size
+                if enc:
+                    dec=zlib.decompressobj();payload=dec.decompress(packed);payload+=dec.flush()
+                    _fbx_require(dec.eof and not dec.unused_data and not dec.unconsumed_tail, 'Invalid zlib array stream')
+                else:payload=packed
+                _fbx_require(len(payload)==n*_fbx_ARRAYS[k][1], 'Array payload length mismatch')
+            else:raise ValueError('Unsupported FBX property type: '+repr(k))
+            props.append(_fbx_Property(k,data[start:cur],payload,n,enc))
+        _fbx_require(cur==pend, 'Property list length mismatch')
+        children=[];sentinel=False
+        while cur<end:
+            if data[cur:cur+13]==_fbx_NULL:
+                _fbx_require(cur+13==end, 'Misplaced nested null record');sentinel=True;cur+=13;break
+            _fbx_child,cur=node_at(cur);children.append(_fbx_child)
+        _fbx_require(cur==end, 'Node offset mismatch')
+        _fbx_require(not children or sentinel, 'Missing child-list terminator')
+        return _fbx_Node(name,props,children,sentinel),cur
+    nodes=[];pos=27
+    while True:
+        _fbx_require(pos+13<=limit, 'Missing root terminator')
+        if data[pos:pos+13]==_fbx_NULL:pos+=13;break
+        n,pos=node_at(pos);nodes.append(n)
+    footer=data[pos:]
+    _fbx_require(len(footer)>=160, 'Missing binary footer')
+    _fbx_require(footer[:16]==bytes.fromhex('fabcab09d0c8d466b176fb831cf7267e'), 'Unrecognized frozen-source footer ID')
+    _fbx_require(footer[-16:]==bytes.fromhex('f85a8c6adef5d97eece90ce3758f290b'), 'Invalid footer trailer')
+    _fbx_require(footer[-140:-136]==struct.pack('<I',7400) and footer[-136:-16]==b'\0'*120, 'Invalid footer version/reserved block')
+    _fbx_require(footer[16:-140] and not any(footer[16:-140]), 'Nonzero footer padding')
+    _fbx_require((pos+len(footer)-140)%16==0, 'Footer version alignment mismatch')
+    return _fbx_Document(data[:27],nodes,footer,pos)
+
+
+def _fbx_walk(nodes):
+    for node in nodes:
+        yield node
+        yield from _fbx_walk(node.children)
+
+
+def _fbx_child(node, name, optional=False):
+    found=[n for n in node.children if n.name==name]
+    _fbx_require(len(found)==1 or (optional and not found), 'Missing/duplicate child '+repr(name))
+    return found[0] if found else None
+
+
+def _fbx_single(node):
+    _fbx_require(node is not None and len(node.props)==1, 'Expected single property')
+    return node.props[0]
+
+
+def _fbx_text_child(node,name):
+    p=_fbx_single(_fbx_child(node,name));_fbx_require(p.kind=='S','Expected string property');return p.value()
+
+
+def _fbx_identity_models(doc):
+    objects=next((n for n in doc.nodes if n.name==b'Objects'),None)
+    _fbx_require(objects is not None,'Missing Objects')
+    def inspect(props_node):
+        if props_node is None:return
+        for p in props_node.children:
+            _fbx_require(p.name==b'P' and len(p.props)>=4,'Invalid Properties70')
+            key=p.props[0].value().decode('utf-8')
+            if key in _fbx_IDENTITY:
+                vals=tuple(x.value() for x in p.props[4:])
+                _fbx_require(vals==_fbx_IDENTITY[key], 'Nonidentity Model transform '+key+': '+repr(vals))
+    for n in _fbx_walk(doc.nodes):
+        if n.name==b'PropertyTemplate' and n.props and n.props[0].value()==b'FbxNode':
+            inspect(_fbx_child(n,b'Properties70',True))
+    models={}
+    for n in objects.children:
+        if n.name==b'Model':
+            _fbx_require(len(n.props)==3 and n.props[2].value()==b'Mesh', 'Only Mesh Models are supported')
+            inspect(_fbx_child(n,b'Properties70',True));models[n.props[0].value()]=n
+    connections=next((n for n in doc.nodes if n.name==b'Connections'),None)
+    _fbx_require(connections is not None, 'Missing Connections')
+    model_parent={}
+    for c in connections.children:
+        vals=[p.value() for p in c.props]
+        if len(vals)==3 and vals[0]==b'OO' and vals[1] in models:
+            _fbx_require(vals[1] not in model_parent,'Multiple Model parents')
+            model_parent[vals[1]]=vals[2]
+    _fbx_require(set(model_parent)==set(models) and all(v==0 for v in model_parent.values()),'Only root-parented identity Models are supported')
+    return objects
+
+
+def _fbx_reorder(prop, permutation, stride=1):
+    _fbx_require(prop.kind in _fbx_ARRAYS,'Expected array')
+    vals=prop.value();_fbx_require(len(vals)==len(permutation)*stride,'Corner payload cardinality mismatch')
+    prop.set_array(v for old in permutation for v in vals[old*stride:(old+1)*stride])
+
+
+def _fbx_reflect_vectors(prop):
+    _fbx_require(prop.kind in ('d','f') and prop.count%3==0,'Expected 3D floating vectors')
+    vals=prop.value();_fbx_require(all(math.isfinite(x) for x in vals),'Nonfinite vectors')
+    for i in range(1,len(vals),3):vals[i]=-vals[i]
+    prop.set_array(vals)
+
+
+def _fbx_reflect_geometry(g):
+    _fbx_require(len(g.props)==3 and g.props[2].value()==b'Mesh','Only Mesh Geometry is supported')
+    allowed={b'Properties70',b'GeometryVersion',b'Vertices',b'PolygonVertexIndex',b'Edges',b'Layer',
+             b'LayerElementNormal',b'LayerElementUV',b'LayerElementSmoothing',b'LayerElementColor',b'LayerElementMaterial'}
+    _fbx_require(all(c.name in allowed for c in g.children),'Unsupported geometry element (including tangent/binormal)')
+    pv=_fbx_single(_fbx_child(g,b'Vertices'));_fbx_reflect_vectors(pv);nverts=pv.count//3
+    pp=_fbx_single(_fbx_child(g,b'PolygonVertexIndex'));_fbx_require(pp.kind=='i','Polygon indices must be int32')
+    old=pp.value();_fbx_require(old and old[-1]<0,'Unterminated/empty polygon stream')
+    decoded=array.array('i',(-v-1 if v<0 else v for v in old));_fbx_require(all(0<=v<nverts for v in decoded),'Vertex index outside mesh')
+    perm=array.array('i');face_count=0;start=0;new=array.array('i');next_corner=array.array('i',[0])*len(old)
+    for end,v in enumerate(old):
+        if v<0:
+            stop=end+1;_fbx_require(stop-start>=3,'Degenerate polygon schema')
+            face_count+=1;reverse=range(stop-1,start-1,-1);perm.extend(reverse)
+            for i in range(start,stop):next_corner[i]=i+1 if i+1<stop else start
+            new.extend(decoded[i] for i in reverse);new[-1]=-new[-1]-1;start=stop
+    _fbx_require(start==len(old),'Invalid final polygon')
+    pp.set_array(new);inverse=array.array('i',[0])*len(old)
+    for new_index,old_index in enumerate(perm):inverse[old_index]=new_index
+    edges=_fbx_child(g,b'Edges',True);edge_count=0
+    if edges:
+        ep=_fbx_single(edges);_fbx_require(ep.kind=='i','Edges must be int32');ev=ep.value();edge_count=len(ev)
+        _fbx_require(all(0<=v<len(old) for v in ev),'Invalid edge corner reference')
+        ep.set_array(inverse[next_corner[v]] for v in ev)
+    layer_specs={b'LayerElementNormal':(b'Normals',b'NormalsIndex',3),
+                 b'LayerElementUV':(b'UV',b'UVIndex',2),
+                 b'LayerElementSmoothing':(b'Smoothing',b'SmoothingIndex',1),
+                 b'LayerElementColor':(b'Colors',b'ColorIndex',4)}
+    mappings={b'ByPolygonVertex':len(old),b'ByVertice':nverts,b'ByVertex':nverts,
+              b'ByPolygon':face_count,b'AllSame':1,b'ByEdge':edge_count}
+    layer_ids=set()
+    for l in [x for x in g.children if x.name.startswith(b'LayerElement')]:
+        _fbx_require(len(l.props)==1 and l.props[0].kind=='I','Invalid layer identifier')
+        lid=(l.name,l.props[0].value());_fbx_require(lid not in layer_ids,'Duplicate layer');layer_ids.add(lid)
+        mapping=_fbx_text_child(l,b'MappingInformationType');reference=_fbx_text_child(l,b'ReferenceInformationType')
+        _fbx_require(mapping in mappings,'Unsupported mapping '+repr(mapping));_fbx_require(reference in (b'Direct',b'IndexToDirect'),'Unsupported reference '+repr(reference))
+        count=mappings[mapping];base={b'Version',b'Name',b'MappingInformationType',b'ReferenceInformationType'}
+        if l.name==b'LayerElementMaterial':
+            _fbx_require(reference==b'IndexToDirect' and mapping in (b'ByPolygon',b'AllSame'),'Unsupported material schema')
+            _fbx_require(all(x.name in base|{b'Materials'} for x in l.children),'Unknown material property')
+            mp=_fbx_single(_fbx_child(l,b'Materials'));_fbx_require(mp.kind=='i' and mp.count==count,'Material cardinality mismatch')
+            continue
+        data_name,index_name,stride=layer_specs[l.name]
+        _fbx_require(all(x.name in base|{data_name,index_name} for x in l.children),'Unknown layer property')
+        dp=_fbx_single(_fbx_child(l,data_name));_fbx_require(dp.kind in _fbx_ARRAYS and dp.count%stride==0,'Malformed layer data')
+        if l.name in (b'LayerElementNormal',b'LayerElementUV',b'LayerElementColor'):
+            _fbx_require(dp.kind in ('d','f'),'Expected floating layer data')
+        ip_node=_fbx_child(l,index_name,True)
+        if reference==b'Direct':
+            _fbx_require(ip_node is None and dp.count==count*stride,'Direct layer cardinality/index mismatch')
+            if mapping==b'ByPolygonVertex':_fbx_reorder(dp,perm,stride)
+        else:
+            _fbx_require(ip_node is not None,'Missing layer index array');ip=_fbx_single(ip_node)
+            _fbx_require(ip.kind=='i' and ip.count==count,'Indexed layer cardinality mismatch')
+            _fbx_require(all(0<=i<dp.count//stride for i in ip.value()),'Layer index outside data array')
+            if mapping==b'ByPolygonVertex':_fbx_reorder(ip,perm)
+        if l.name==b'LayerElementNormal':_fbx_reflect_vectors(dp)
+    for layer in [x for x in g.children if x.name==b'Layer']:
+        _fbx_require(all(x.name in (b'Version',b'LayerElement') for x in layer.children),'Unknown Layer child')
+        for ref in [x for x in layer.children if x.name==b'LayerElement']:
+            pair=(_fbx_text_child(ref,b'Type'),_fbx_single(_fbx_child(ref,b'TypedIndex')).value())
+            _fbx_require(pair in layer_ids,'Layer reference to unsupported/missing element')
+    return {'vertices':nverts,'polygons':face_count,'corners':len(old),'edges':edge_count}
+
+
+def _fbx_node_size(node):
+    return 13+len(node.name)+sum(len(p.encoded) for p in node.props)+sum(_fbx_node_size(c) for c in node.children)+(13 if node.sentinel else 0)
+
+
+def _fbx_footer_alignment(doc):
+    """Use valid deterministic zlib levels, never padding inside compressed streams.
+
+    The original footer includes alignment padding. Choose equivalent compressed
+    encodings whose combined lengths preserve its original absolute alignment.
+    Fail rather than alter any footer byte if no choice can achieve that.
+    """
+    offset=27+sum(_fbx_node_size(n) for n in doc.nodes)+13
+    needed=(doc.footer_offset-offset)%16
+    if needed==0:return 0
+    candidates=[p for n in _fbx_walk(doc.nodes) for p in n.props if p.changed and p.encoding==1]
+    candidates.sort(key=lambda p:len(p.payload))  # stable traversal breaks ties
+    states={0:[]};options=[]
+    for p in candidates:
+        base_len=len(p.encoded);variants={0:p.encoded}
+        for level in range(10):
+            encoded=p.compressed(level);variants.setdefault((len(encoded)-base_len)%16,encoded)
+        options.append((p,variants));index=len(options)-1;new=dict(states)
+        for residue,choices in states.items():
+            for delta in sorted(variants):new.setdefault((residue+delta)%16,choices+[(index,delta)])
+        states=new
+        if needed in states:
+            for index,delta in states[needed]:
+                prop,variants=options[index];prop.encoded=variants[delta]
+            _fbx_require((27+sum(_fbx_node_size(n) for n in doc.nodes)+13-doc.footer_offset)%16==0,'Internal footer alignment failure')
+            return len(states[needed])
+    raise ValueError('Cannot preserve exact footer alignment with valid compressed-array encodings')
+
+
+def _fbx_encode(doc):
+    _fbx_footer_alignment(doc)
+    out=bytearray(doc.header)
+    def emit(n):
+        start=len(out);pbytes=b''.join(p.encoded for p in n.props);out.extend(b'\0'*13);out.extend(n.name);out.extend(pbytes)
+        for c in n.children:emit(c)
+        if n.sentinel:out.extend(_fbx_NULL)
+        _fbx_require(len(out)<2**32,'FBX7400 offset overflow')
+        struct.pack_into('<IIIB',out,start,len(out),len(n.props),len(pbytes),len(n.name))
+    for n in doc.nodes:emit(n)
+    out.extend(_fbx_NULL);_fbx_require((len(out)-doc.footer_offset)%16==0,'Footer alignment moved');out.extend(doc.footer)
+    return bytes(out)
+
+
+def _fbx_decoded_digest(doc):
+    """Bit-exact decoded semantic digest, including types, order and footer.
+
+    Excludes only node byte offsets and compressed representations of arrays.
+    Signed zero is distinguished; every original scalar/string byte is included.
+    """
+    h=hashlib.sha256();h.update(doc.header)
+    def piece(b):h.update(struct.pack('<Q',len(b)));h.update(b)
+    def emit(n):
+        piece(n.name);h.update(bytes([n.sentinel]));h.update(struct.pack('<II',len(n.props),len(n.children)))
+        for p in n.props:
+            piece(p.kind.encode());piece(p.payload)
+            if p.kind in _fbx_ARRAYS:h.update(struct.pack('<II',p.count,p.encoding))
+        for c in n.children:emit(c)
+    for n in doc.nodes:emit(n)
+    piece(doc.footer);return h.hexdigest()
+
+
+def _fbx_reflect_bytes(data):
+    doc=_fbx_parse(data);objects=_fbx_identity_models(doc);stats=[]
+    for g in objects.children:
+        if g.name==b'Geometry':stats.append(_fbx_reflect_geometry(g))
+    _fbx_require(stats,'No geometry')
+    result=_fbx_encode(doc)
+    check=_fbx_parse(result);_fbx_require(check.footer==doc.footer,'Footer changed')
+    _fbx_require(_fbx_decoded_digest(check)==_fbx_decoded_digest(doc),'Encoder decoded-payload mismatch')
+    return result,{'geometry_count':len(stats),'vertices':sum(x['vertices'] for x in stats),
+                   'polygons':sum(x['polygons'] for x in stats),'corners':sum(x['corners'] for x in stats),
+                   'source_sha256':hashlib.sha256(data).hexdigest(),'derived_sha256':hashlib.sha256(result).hexdigest(),
+                   'source_bytes':len(data),'derived_bytes':len(result),'footer_preserved_exact':True,
+                   'unreal_import_tested':False}
+
+
+def _counterreflect_fbx(raw):
+    return _fbx_reflect_bytes(raw)
+
+
+def _cache_root(u):
+    saved=Path(str(u.Paths.convert_relative_path_to_full(u.Paths.project_saved_dir())))
+    require(saved.is_absolute() and saved.is_dir() and not saved.is_symlink(),"Cannot verify project Saved directory")
+    path=saved/"CarnivalFull57Derived"/AXIS_ADAPTER
+    for part in (saved/"CarnivalFull57Derived",path):
+        require(not part.is_symlink() and (not part.exists() or part.is_dir()),"Unsafe derived FBX cache directory")
+    return path
+
+
+def _derived_source(u,c,item,report=None,write=False):
+    """Verify original bytes; derive reproducibly. Only explicit import may write new cache files."""
+    source=Path(item["source_path"]);raw=source.read_bytes()
+    require(hashlib.sha256(raw).hexdigest()==item["fbx_sha256"],"Original FBX changed before counter-conversion")
+    derived,proof=_counterreflect_fbx(raw)
+    digest=hashlib.sha256(derived).hexdigest()
+    directory=_cache_root(u)/item["fbx_sha256"]
+    require(not directory.is_symlink() and (not directory.exists() or directory.is_dir()),"Unsafe derived source directory")
+    path=directory/(item["asset_name"]+".fbx");meta=directory/(item["asset_name"]+".json")
+    metadata=dict(adapter=AXIS_ADAPTER,asset_name=item["asset_name"],original_sha256=item["fbx_sha256"],
+                  derived_sha256=digest,derived_bytes=len(derived),proof=proof)
+    encoded=(json.dumps(metadata,sort_keys=True,indent=2,allow_nan=False)+"\n").encode("utf-8")
+    row=dict(original_source_path=str(source),original_fbx_sha256=item["fbx_sha256"],source_path=str(path),
+             derived_fbx_sha256=digest,metadata_path=str(meta),status="VERIFIED_EXISTING" if path.exists() else "PENDING",files_written=[])
+    if report is not None:report["derived_files"].append(row)
+    for dest,expected in ((path,derived),(meta,encoded)):
+        require(not dest.is_symlink(),"Refusing symlink in derived source cache")
+        if dest.exists():
+            require(dest.is_file() and dest.read_bytes()==expected,"Existing derived cache differs; no overwrite: "+str(dest))
+        else:
+            require(write,"Derived import source missing; read-only validation will not recreate it: "+str(dest))
+            directory.mkdir(parents=True,exist_ok=True)
+            row["status"]="WRITING_NEW_CACHE"
+            with dest.open("xb") as stream:
+                row["files_written"].append(str(dest));stream.write(expected)
+            require(dest.read_bytes()==expected,"Derived source write verification failed")
+    row["status"]="DERIVED_SOURCE_VERIFIED"
+    result=dict(item,source_path=str(path),fbx_sha256=digest,original_source_path=str(source),
+                original_fbx_sha256=item["fbx_sha256"],derived_fbx_sha256=digest)
+    return result
+
+
 def _import_mesh(u,c,item,report):
     target=DEST+"/"+("Props" if item["kind"]=="props" else "Environment")+"/"+item["asset_name"]
     require(not u.EditorAssetLibrary.does_asset_exist(target),"Mesh target already exists: "+target)
-    require(c._sha(Path(item["source_path"]))==item["fbx_sha256"],"FBX changed after preflight")
+    item=_derived_source(u,c,item,report,write=True)
+    require(c._sha(Path(item["source_path"]))==item["fbx_sha256"],"Derived FBX changed after verification")
     task=u.AssetImportTask()
     c._set_readback(task,dict(filename=item["source_path"],destination_path=target.rsplit("/",1)[0],destination_name=item["asset_name"],factory=u.FbxFactory(),options=c._options(u),automated=True,async_=False,save=False,replace_existing=False,replace_existing_settings=False))
-    row=dict(name=item["asset_name"],requested=target,status="ATTEMPTED",actual=[],task_paths=[]);report["meshes"].append(row);objects=[]
+    row=dict(name=item["asset_name"],requested=target,status="ATTEMPTED",actual=[],task_paths=[],original_source_path=item["original_source_path"],original_fbx_sha256=item["original_fbx_sha256"],derived_source_path=item["source_path"],derived_fbx_sha256=item["derived_fbx_sha256"]);report["meshes"].append(row);objects=[]
     try:u.AssetToolsHelpers.get_asset_tools().import_asset_tasks([task])
     finally:
         try:row["task_paths"]=[str(x) for x in task.get_editor_property("imported_object_paths")]
@@ -228,7 +631,45 @@ def _import_mesh(u,c,item,report):
     ss=u.get_editor_subsystem(u.StaticMeshEditorSubsystem);build=ss.get_lod_build_settings(mesh,0);c._set_readback(build,c.BUILD_FIELDS);ss.set_lod_build_settings(mesh,0,build)
     body=mesh.get_editor_property("body_setup");require(body is not None,"Missing BodySetup")
     c._set_readback(body,dict(collision_trace_flag=u.CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX))
-    row.update(c._validate_mesh(u,mesh,item));row["status"]="GEOMETRY_COLLISION_CHECKED_UNSAVED";return mesh
+    row.update(c._validate_mesh(u,mesh,item))
+    if item["asset_name"] in SENTINELS:row["signed_geometry_probe"]=_signed_landmark_probe(u,c,mesh,item)
+    row["status"]="GEOMETRY_COLLISION_CHECKED_UNSAVED";return mesh
+
+
+def _signed_landmark_probe(u,c,mesh,item):
+    """Optional read-only MeshDescription evidence; unsupported bindings are reported.
+
+    Bounds/UV/UCX validation remains mandatory. If these documented getters are
+    available, a signed-position mismatch is a hard failure, never normalized.
+    """
+    if not callable(getattr(mesh,"get_static_mesh_description",None)) or not hasattr(u,"VertexID"):
+        return dict(status="UNAVAILABLE",reason="MeshDescription/VertexID Python binding absent")
+    try:
+        desc=mesh.get_static_mesh_description(0)
+        require(desc is not None,"No LOD0 MeshDescription")
+        for name in ("get_vertex_count","is_vertex_valid","get_vertex_position"):
+            require(callable(getattr(desc,name,None)),"Missing MeshDescription getter: "+name)
+        count=desc.get_vertex_count();require(0<count<=10000000,"Invalid MeshDescription vertex count")
+        # Freshly imported MeshDescriptions normally have dense IDs. Do not guess across holes.
+        ids=[u.VertexID(id_value=i) for i in range(count)]
+        require(all(desc.is_vertex_valid(i) for i in ids),"Non-dense vertex IDs; optional probe cannot enumerate safely")
+    except Exception as exc:return dict(status="UNAVAILABLE",reason=str(exc))
+    doc=_fbx_parse(Path(item["original_source_path"]).read_bytes())
+    objects=next(n for n in doc.nodes if n.name==b"Objects")
+    geo=next(n for n in objects.children if n.name==b"Geometry" and n.props[1].value().split(b"\x00")[0].decode()==item["asset_name"])
+    verts=_fbx_single(_fbx_child(geo,b"Vertices")).value()
+    indices=_fbx_single(_fbx_child(geo,b"PolygonVertexIndex")).value()
+    used=sorted({-v-1 if v<0 else v for v in indices})
+    chosen={used[0]}
+    for axis in range(3):
+        chosen.add(min(used,key=lambda i:verts[i*3+axis]));chosen.add(max(used,key=lambda i:verts[i*3+axis]))
+    landmarks=[[float(v) for v in verts[i*3:i*3+3]] for i in sorted(chosen)]
+    best=[float("inf")]*len(landmarks)
+    for vid in ids:
+        position=c._vec(desc.get_vertex_position(vid))
+        for k,want in enumerate(landmarks):best[k]=min(best[k],max(abs(a-b) for a,b in zip(position,want)))
+    require(max(best)<=.05,"Signed MeshDescription landmark mismatch: "+item["asset_name"]+": "+repr(best))
+    return dict(status="SIGNED_LANDMARKS_PASS",source_landmarks_cm=landmarks,max_error_cm=max(best),mesh_description_vertices=count)
 
 
 def _spawn_mesh(u,c,item,mesh,placement,report):
@@ -343,18 +784,21 @@ def import_full(package_root):
         def progress(kind,index,total,name):
             require(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()==world,"Editor world changed during full import; stopping without cleanup")
             r["stage"]=kind+":"+name;u.log("[CarnivalFull57] %s %d/%d: %s"%(kind,index,total,name))
+        meshes={};assets={a["asset_name"]:a for a in p["assets"]}
+        for i,name in enumerate(SENTINELS,1):
+            progress("axis sentinel",i,len(SENTINELS),name)
+            meshes[name]=_import_mesh(u,c,assets[name],r)
+        r["axis_sentinels_passed"]=list(SENTINELS)
         textures={}
         for i,t in enumerate(p["textures"],1):
             progress("texture",i,41,t["asset_name"]);textures[(t["path"],t["usage"])]=m.import_texture(u,c,t,r)
         materials={}
         for i,a in enumerate(p["materials"],1):
             progress("material",i,59,a["source_name"]);materials[a["source_name"]]=_material(u,m,a,textures,r)
-        meshes={};assets={a["asset_name"]:a for a in p["assets"]}
-        # Exercise the new zero-hull environment case first, without changing source order.
-        first_zero=next(a for a in p["assets"] if a["kind"]=="environment" and a["collision_hulls"]==0)
-        mesh_order=[first_zero]+[a for a in p["assets"] if a is not first_zero]
-        for i,a in enumerate(mesh_order,1):
-            progress("mesh",i,181,a["asset_name"]);mesh=_import_mesh(u,c,a,r)
+        for i,a in enumerate(p["assets"],1):
+            progress("mesh",i,181,a["asset_name"])
+            mesh=meshes.get(a["asset_name"])
+            if mesh is None:mesh=_import_mesh(u,c,a,r)
             for slot,name in enumerate(a["materials"]):mesh.set_material(slot,materials[name]);require(mesh.get_material(slot)==materials[name],"Full material assignment failed")
             meshes[a["asset_name"]]=mesh
         for i,pmt in enumerate(p["placements"],1):
@@ -406,7 +850,7 @@ def _validate_current(u,c,m,p):
     for a in p["assets"]:
         path=DEST+("/Props/" if a["kind"]=="props" else "/Environment/")+a["asset_name"];expected_assets.add(path)
         def check(a=a,path=path):
-            mesh=u.load_asset(path);c._validate_mesh(u,mesh,a)
+            mesh=u.load_asset(path);derived=_derived_source(u,c,a,write=False);c._validate_mesh(u,mesh,derived)
             for slot,name in enumerate(a["materials"]):require(name in material_objects and mesh.get_material(slot)==material_objects[name],"Material slot assignment differs")
             out["checked_meshes"]+=1
         attempt(path,check)

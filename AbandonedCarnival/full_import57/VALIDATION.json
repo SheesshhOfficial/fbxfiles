@@ -1,14 +1,14 @@
 {
-  "schema": "carnival-full-import57-validation-v1",
+  "schema": "carnival-full-import57-validation-v2-counter-y",
   "date_utc": "2026-10-17",
-  "status": "OFFLINE_AND_MOCK_VERIFIED_FULL_UNREAL_RUN_PENDING",
+  "status": "CORRECTED_TRANSPORT_OFFLINE_VERIFIED_NATIVE_RUN_PENDING",
   "unreal_target": "5.7.4",
   "offline_mock_tests": {
-    "total": 45,
-    "passed_with_frozen_source": 45,
+    "total": 65,
+    "passed_with_frozen_source": 65,
     "failed": 0,
     "portable_without_source": {
-      "passed": 44,
+      "passed": 64,
       "skipped_optional_integration": 1
     },
     "command": "python -B -m unittest discover -s tests -v",
@@ -76,7 +76,15 @@
     "actor collision and tags",
     "derived light radius and color",
     "partial assets and actor snapshot",
-    "no save/delete/global setting writes"
+    "no save/delete/global setting writes",
+    "First logged Y-reflected sentinel bounds rejected before materials/textures",
+    "Second 21-hull sentinel failure blocks further creation",
+    "Corrected namespace leaves old partial assets alone",
+    "Original bytes unchanged by derivation",
+    "Derived native import provenance",
+    "Existing differing cache bytes and metadata refused",
+    "Read-only validation never recreates cache",
+    "Pure binary FBX corner/edge reflection and rejection cases"
   ],
   "preserved_known_caveats": {
     "environment_blender_roundtrip_normal_failures": {
@@ -90,9 +98,27 @@
     "raw_source_fidelity_pass_is_not_visual_validation": true
   },
   "previous_runtime_evidence": {
-    "geometry_sample": "UE5.7.4 passed 3 canonical meshes, 4 native actors, UCX 8/9/1",
+    "geometry_sample": "UE5.7.4 passed 3 canonical mesh bounds/counts and 4 actors, UCX8/9/1; all three Y-symmetric bounds were insufficient to establish handedness.",
     "material_sample": "UE5.7.4 created 9 materials, 10 textures, 3 neutral lights",
-    "scope_warning": "Those results do not establish the full scene or the new glass/RectLight/zero-hull paths."
+    "scope_warning": "Previous native results do not establish corrected geometry, full scene, shader/visual equivalence or gameplay.",
+    "original_full_attempt": {
+      "status": "FAILED_STRICT_BOUNDS_BEFORE_ACTOR_PLACEMENT",
+      "created_textures": 41,
+      "created_materials": 59,
+      "created_meshes": 1,
+      "created_actors": 0,
+      "mesh": "SM_Env_Tile_m3_m4",
+      "expected_y_bounds_cm": [
+        -1563.0569458007812,
+        -672.6940155029297
+      ],
+      "observed_y_bounds_cm": [
+        672.6940307617188,
+        1563.056884765625
+      ],
+      "post_compile_origin_y_cm": 1117.8754577636719,
+      "conclusion": "Persistent Y reflection observed; not a transient compilation-bound result. Legacy handedness-conversion mechanism is an inference, not inspected installed-engine source."
+    }
   },
   "not_established": [
     "Full scene Unreal import success",
@@ -103,14 +129,16 @@
     "PlayerStart clearance or multiplayer gameplay"
   ],
   "behavior": {
-    "fresh_namespace": "/Game/AbandonedCarnivalFull57",
+    "fresh_namespace": "/Game/AbandonedCarnivalFull57_Corrected",
     "fresh_unsaved_world": true,
     "saves_performed_by_helper": 0,
     "overwrites": false,
     "deletes": false,
     "automatic_cleanup": false,
     "global_settings_changed": false,
-    "engine_autosave": "unchanged"
+    "engine_autosave": "unchanged",
+    "old_partial_namespace_preserved": "/Game/AbandonedCarnivalFull57",
+    "derived_cache_writes": "Only explicit import: project Saved/CarnivalFull57Derived/counter_y_fbx7400_v1/<original_hash>/<asset>.fbx plus .json; exact existing bytes checked; no overwrite/deletion."
   },
   "light_policy": {
     "source_transform_color_shadow_flags": "preserved and read back",
@@ -123,5 +151,66 @@
   "vendored_unchanged_sha256": {
     "carnival_calibration57.py": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171",
     "_support/carnival_material_stage57.py": "d06e38dcdd23dfbad3d60ebee0cb11b3d4906813211b383d17f9de8537de3783"
+  },
+  "coordinate_adapter_validation": {
+    "policy": "counter_y_fbx7400_v1",
+    "fbx_files": 181,
+    "totals": {
+      "LayerElementSmoothing": 2457,
+      "LayerElementNormal": 2457,
+      "LayerElementUV": 181,
+      "material_layers": 181,
+      "geometries": 2457,
+      "vertices": 3123056,
+      "polygons": 2759257,
+      "corners": 9226411,
+      "edges": 5641650
+    },
+    "all_passed": true,
+    "double_reflection_binary_exact_for_every_original": true,
+    "originals_unchanged": true,
+    "embedded_adapter_matches_standalone_serialized_outputs": 181,
+    "independent_parser_accepts_serialized_outputs": 181,
+    "proofs": [
+      "Bit-exact Y sign reflection of every render/UCX vertex and normal",
+      "X/Z values unchanged",
+      "Reversed per-polygon winding and carried corner-index permutation",
+      "Preserved normal/UV corner association and polygon material/smoothing assignments",
+      "Preserved Edges endpoint pairs and edge order",
+      "Preserved scalar/string encodings, node/connection order, header/footer",
+      "Repeated transform deterministic",
+      "Unknown layouts rejected"
+    ],
+    "native_corrected_import_tested": false,
+    "runtime_order": [
+      "SM_Env_Tile_m3_m4: zero hulls",
+      "SM_OpenToolbox_20d6fff596: 21 hulls",
+      "Only after both pass:41textures59materials179remainingmeshes and247actors"
+    ],
+    "serialized_sentinel_sha256": {
+      "SM_Env_Tile_m3_m4": "0458ad29e7c08c9449e551298407c91f87260f5ffbfc300162c178a6241ff843",
+      "SM_OpenToolbox_20d6fff596": "2ef198d36a3d0b6dfb85e3fbcc250df4efabf4dc952da756be50d1cc051bf95f"
+    },
+    "independent_blender_format_import": {
+      "version": "4.3.2",
+      "result": "Both serialized sentinel FBXs loaded with expected render/UCX counts, vertex/polygon counts, UV1 and material slots. Format/readability evidence only; not an Unreal coordinate test."
+    },
+    "memory_measurement": {
+      "standalone_largest_file_peak_rss_approx_mib": 129,
+      "exhaustive_multitree_harness_peak_rss_approx_mib": 400,
+      "not_an_unreal_peak_memory_bound": true
+    },
+    "independent_serialized_output_audit": {
+      "status": "PASSED",
+      "parser": "Separate installed Blender FBX parser",
+      "files": 181,
+      "geometries": 2457,
+      "vertices": 3123056,
+      "polygons": 2759257,
+      "corners": 9226411,
+      "edges": 5641650,
+      "typed_nodes": 174293,
+      "result": "Only required position/normal/corner-index/edge arrays changed. UV tables, per-polygon material/smoothing, transforms/global settings, all other typed properties and exact header/footer unchanged. Edge endpoint pairs preserved. Output hashes match audited manifest."
+    }
   }
 }

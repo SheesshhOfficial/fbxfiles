@@ -143,6 +143,7 @@ def fake_engine(contract, core):
     u.world.path = "/Game/Previous.Previous"
     u.game_world = None
     u.content_dir = tempfile.mkdtemp(prefix="calibration57-fake-content-")
+    u.saved_dir = tempfile.mkdtemp(prefix="full57-fake-saved-")
     for cls in (Obj, Vector, Rotator, MaterialInterface, BodySetup, FbxStaticMeshImportData,
                 FbxImportUI, FbxFactory, AssetImportTask, StaticMesh, StaticMeshComponent, StaticMeshActor, World):
         setattr(u, cls.__name__, cls)
@@ -158,6 +159,8 @@ def fake_engine(contract, core):
     class Paths:
         @staticmethod
         def project_content_dir(): return u.content_dir
+        @staticmethod
+        def project_saved_dir(): return u.saved_dir
         @staticmethod
         def convert_relative_path_to_full(path): return str(Path(path).resolve())
     class Loading:

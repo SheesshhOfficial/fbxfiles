@@ -1,16 +1,16 @@
 {
   "algorithm": "sha256",
-  "scope": "Eight payload files; this CHECKSUMS.json is the ninth file and is not self-hashed. Hashes describe LF publication bytes.",
+  "scope": "Eight payload files; this CHECKSUMS.json is ninth and not self-hashed. Hashes describe LF publication bytes.",
   "files": [
     {
       "path": "README.md",
-      "bytes": 8396,
-      "sha256": "51adcba2d790010fa357bb539b0fe5f28ae0668bf3551c904d7ee186488b1e2e"
+      "bytes": 11661,
+      "sha256": "1ab2684d62fa7bcb16518b1022e8d0c6ce8d40d52d812bef113496ed0302cb6d"
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 4488,
-      "sha256": "a192d844ca8a203748857305b2a944003e7dee42746ac936dab6338318ad62ba"
+      "bytes": 8736,
+      "sha256": "3d524e89e1b42cb1a4cb826aac33d9ba50113805e7ea8a7e9f754b0d764c4911"
     },
     {
       "path": "_support/carnival_material_stage57.py",
@@ -24,8 +24,8 @@
     },
     {
       "path": "carnival_full_import57.py",
-      "bytes": 36562,
-      "sha256": "b8773c4b10b4c27bf27f2a3d26a8c89dc79a7e894b827e5677452ebb6da12cf9"
+      "bytes": 61311,
+      "sha256": "f4f4a75d03fa37840e590af9e026654e7fed7f04e7ed0eea68fb972b0d495adf"
     },
     {
       "path": "tests/full_plan_fixture.json",
@@ -34,13 +34,13 @@
     },
     {
       "path": "tests/mock_unreal.py",
-      "bytes": 22385,
-      "sha256": "34aea58756c22c7fe29c549209b6100b0e1509c60686dded766d2b32652c18a3"
+      "bytes": 22523,
+      "sha256": "ccb9c3a72ad7f1b01101e6935e932bfef3393fdd2b852aced70ccce418790c30"
     },
     {
       "path": "tests/test_full_import57.py",
-      "bytes": 22854,
-      "sha256": "0d80bd405f3b01956bdc876105468d9b200abb4b4bd12f9278756b20dab3f90b"
+      "bytes": 41541,
+      "sha256": "e7a92f8ac4a08e17ce883fb72b6de2e93d9bfd4dfa40795db0f93a4e35174edc"
     }
   ]
 }

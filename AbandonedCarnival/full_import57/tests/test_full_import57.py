@@ -1,4 +1,6 @@
 """Portable stdlib contract and safety tests. Mocks do not prove UE runtime behavior.
+The fake geometry happy path copies expected bounds; the independent measured-bounds
+regression verifies rejection of the actual uncorrected UE Y-reflection failure.
 
 Run: python -m unittest discover -s full_import57/tests -v
 Optional frozen-package integration: CARNIVAL_PACKAGE_ROOT=/path/to/AbandonedCarnival
@@ -13,6 +15,8 @@ import os
 from pathlib import Path
 import shutil
 import sys
+import struct
+import zlib
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -23,6 +27,7 @@ HERE = Path(__file__).resolve().parent
 def load(name, path):
     spec = importlib.util.spec_from_file_location(name, path)
     module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module  # dataclass annotations resolve through the defining module
     exec(compile(path.read_bytes(), str(path), 'exec'), module.__dict__)
     return module
 
@@ -93,6 +98,156 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(len(p['verified_files']), 246)
 
 
+def binary_fixture(compressed=False, model_translation=None, invalid_tangent=False):
+    """Small independently encoded FBX7400 with render and UCX geometry.
+
+    The writer is intentionally separate from the production parser/encoder.
+    It models only the frozen contract, not the whole FBX specification.
+    """
+    def prop(kind, value):
+        if kind in ('S', 'R'):
+            raw = value.encode() if isinstance(value, str) else value
+            return kind.encode() + struct.pack('<I', len(raw)) + raw
+        if kind in ('L', 'I', 'D'):
+            fmt = {'L':'q', 'I':'i', 'D':'d'}[kind]
+            return kind.encode() + struct.pack('<' + fmt, value)
+        fmt = {'d':'d', 'i':'i'}[kind]
+        raw = struct.pack('<' + str(len(value)) + fmt, *value)
+        packed = zlib.compress(raw) if compressed else raw
+        return kind.encode() + struct.pack('<III', len(value), int(compressed), len(packed)) + packed
+    def node(name, properties=(), children=()):
+        return (name.encode(), list(properties), list(children))
+    def value_node(name, kind, value):
+        return node(name, [prop(kind, value)])
+    def layer(name, mapping, reference, values):
+        children = [value_node('MappingInformationType','S',mapping), value_node('ReferenceInformationType','S',reference)]
+        children += [value_node(key,kind,value) for key,kind,value in values]
+        return node(name,[prop('I',0)],children)
+    vertices = [1.,2.,3., 4.,5.,7., 8.,11.,13., 16.,17.,19.]
+    normals = [1.,0.,0., 0.,1.,0., 0.,0.,1., -1.,0.,0., 0.,-1.,0., 0.,0.,-1.]
+    objects=[]; connections=[]
+    for index, name in enumerate(('SM_AsymmetricFixture','UCX_SM_AsymmetricFixture_00'),1):
+        geometry = [value_node('Vertices','d',vertices), value_node('PolygonVertexIndex','i',[0,1,-3,0,2,-4]),
+            value_node('Edges','i',[0,1,2,4,5]),
+            layer('LayerElementNormal','ByPolygonVertex','Direct',[('Normals','d',normals)]),
+            layer('LayerElementUV','ByPolygonVertex','IndexToDirect', [('UV','d',[.1,.2,.3,.4,.5,.6,.7,.8]),('UVIndex','i',[0,1,2,0,2,3])]),
+            layer('LayerElementSmoothing','ByPolygon','Direct',[('Smoothing','i',[1,0])]),
+            layer('LayerElementMaterial','ByPolygon','IndexToDirect',[('Materials','i',[0,1])])]
+        if invalid_tangent:
+            geometry.append(node('LayerElementTangent',[prop('I',0)]))
+        objects.append(node('Geometry',[prop('L',index),prop('S',name + '\x00\x01Geometry'),prop('S','Mesh')],geometry))
+        model_children=[]
+        if model_translation is not None:
+            transform = [prop('S',v) for v in ('Lcl Translation','Lcl Translation','','A')]
+            transform += [prop('D',v) for v in model_translation]
+            model_children = [node('Properties70',children=[node('P',transform)])]
+        objects.append(node('Model',[prop('L',100+index),prop('S',name + '\x00\x01Model'),prop('S','Mesh')],model_children))
+        connections += [node('C',[prop('S','OO'),prop('L',index),prop('L',100+index)]),
+                        node('C',[prop('S','OO'),prop('L',100+index),prop('L',0)])]
+    roots = [node('Objects',children=objects),node('Connections',children=connections),
+             node('OpaquePreserved',[prop('S','unchanged text'),prop('R',b'opaque\x00payload'),prop('I',123)])]
+    output=bytearray(b'Kaydara FBX Binary  \x00\x1a\x00'+struct.pack('<I',7400))
+    def emit(n):
+        name, props, children=n
+        start=len(output); body=b''.join(props)
+        output.extend(b'\x00'*13);output.extend(name);output.extend(body)
+        for child in children:emit(child)
+        if children:output.extend(b'\x00'*13)
+        struct.pack_into('<IIIB',output,start,len(output),len(props),len(body),len(name))
+    for n in roots:emit(n)
+    output.extend(b'\x00'*13)
+    offset=len(output)
+    padding=(-offset-16)%16 or 16
+    if padding < 4: padding += 16
+    output.extend(bytes.fromhex('fabcab09d0c8d466b176fb831cf7267e'))
+    output.extend(b'\x00'*padding+struct.pack('<I',7400)+b'\x00'*120+bytes.fromhex('f85a8c6adef5d97eece90ce3758f290b'))
+    return bytes(output)
+
+
+class PureFbxAdapterTests(unittest.TestCase):
+    def geometries(self, raw):
+        doc = f._fbx_parse(raw)
+        objects = next(n for n in doc.nodes if n.name == b'Objects')
+        return doc, [n for n in objects.children if n.name == b'Geometry']
+
+    def values(self, node, child):
+        return list(f._fbx_single(f._fbx_child(node, child)).value())
+
+    def test_reflects_render_and_ucx_vertices_and_face_winding(self):
+        original = binary_fixture()
+        derived, proof = f._counterreflect_fbx(original)
+        _, geometries = self.geometries(derived)
+        self.assertEqual(len(geometries), 2)
+        for geometry in geometries:
+            self.assertEqual(self.values(geometry,b'Vertices'), [1.,-2.,3.,4.,-5.,7.,8.,-11.,13.,16.,-17.,19.])
+            self.assertEqual(self.values(geometry,b'PolygonVertexIndex'), [2,1,-1,3,2,-1])
+            self.assertEqual(self.values(geometry,b'Edges'), [1,0,2,3,5])
+        self.assertEqual(proof['geometry_count'], 2)
+        self.assertEqual(proof['vertices'], 8)
+        self.assertEqual(proof['polygons'], 4)
+        self.assertFalse(proof['unreal_import_tested'])
+        self.assertEqual(proof['source_sha256'], hashlib.sha256(original).hexdigest())
+        self.assertEqual(proof['derived_sha256'], hashlib.sha256(derived).hexdigest())
+
+    def test_corner_normals_and_uv_indices_follow_reversed_winding(self):
+        derived, _ = f._counterreflect_fbx(binary_fixture())
+        _, geometries = self.geometries(derived)
+        for geometry in geometries:
+            normals = f._fbx_child(geometry,b'LayerElementNormal')
+            self.assertEqual(self.values(normals,b'Normals'), [0.,0.,1.,0.,-1.,0.,1.,0.,0.,0.,0.,-1.,0.,1.,0.,-1.,0.,0.])
+            uv = f._fbx_child(geometry,b'LayerElementUV')
+            self.assertEqual(self.values(uv,b'UVIndex'), [2,1,0,3,2,0])
+            self.assertEqual(self.values(uv,b'UV'), [.1,.2,.3,.4,.5,.6,.7,.8])
+            self.assertEqual(self.values(f._fbx_child(geometry,b'LayerElementMaterial'),b'Materials'), [0,1])
+            self.assertEqual(self.values(f._fbx_child(geometry,b'LayerElementSmoothing'),b'Smoothing'), [1,0])
+
+    def test_transform_is_deterministic_and_semantically_involutive(self):
+        original = binary_fixture()
+        first, proof = f._counterreflect_fbx(original)
+        same, same_proof = f._counterreflect_fbx(original)
+        restored, _ = f._counterreflect_fbx(first)
+        self.assertEqual(first,same)
+        self.assertEqual(proof,same_proof)
+        self.assertEqual(f._fbx_decoded_digest(f._fbx_parse(restored)), f._fbx_decoded_digest(f._fbx_parse(original)))
+        self.assertEqual(restored, original)  # no compressed-array representation differences
+
+    def test_footer_and_untouched_properties_are_preserved_exactly(self):
+        original = binary_fixture()
+        derived, proof = f._counterreflect_fbx(original)
+        before, _ = self.geometries(original)
+        after, _ = self.geometries(derived)
+        self.assertEqual(before.footer, after.footer)
+        self.assertTrue(proof['footer_preserved_exact'])
+        before_node = next(n for n in before.nodes if n.name == b'OpaquePreserved')
+        after_node = next(n for n in after.nodes if n.name == b'OpaquePreserved')
+        self.assertEqual([p.encoded for p in before_node.props], [p.encoded for p in after_node.props])
+
+    def test_compressed_fixture_preserves_footer_and_correct_geometry(self):
+        original = binary_fixture(compressed=True)
+        derived, proof = f._counterreflect_fbx(original)
+        self.assertEqual(f._fbx_parse(original).footer, f._fbx_parse(derived).footer)
+        self.assertTrue(proof['footer_preserved_exact'])
+        self.assertEqual(f._counterreflect_fbx(original)[0], derived)
+        _, geometries = self.geometries(derived)
+        self.assertEqual(self.values(geometries[0],b'PolygonVertexIndex'), [2,1,-1,3,2,-1])
+
+    def test_rejects_nonidentity_models_instead_of_guessing(self):
+        with self.assertRaisesRegex(ValueError, 'Nonidentity Model transform'):
+            f._counterreflect_fbx(binary_fixture(model_translation=(1.,0.,0.)))
+
+    def test_rejects_unsupported_tangent_payload(self):
+        with self.assertRaisesRegex(ValueError, 'Unsupported geometry element'):
+            f._counterreflect_fbx(binary_fixture(invalid_tangent=True))
+
+    def test_rejects_unknown_version_and_truncated_footer(self):
+        original = binary_fixture()
+        bad = original[:23] + struct.pack('<I',7500) + original[27:]
+        with self.assertRaisesRegex(ValueError, 'Only FBX7400'):
+            f._counterreflect_fbx(bad)
+        with self.assertRaises(ValueError):
+            f._counterreflect_fbx(original[:-20])
+
+
 class MockEngineTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -114,6 +269,10 @@ class MockEngineTests(unittest.TestCase):
                 row[hashkey] = hashlib.sha256(raw).hexdigest()
         self.u = g.full_engine(self.p, self.c)
         self.addCleanup(shutil.rmtree, self.u.content_dir, True)
+        self.addCleanup(shutil.rmtree, self.u.saved_dir, True)
+        self.transform_patch = patch.object(f, '_counterreflect_fbx',
+            side_effect=lambda raw: (b'MOCK_COUNTER_REFLECTION\n' + raw, {'mock_transform_only': True}), create=True)
+        self.transform_patch.start(); self.addCleanup(self.transform_patch.stop)
         self.engine_patch = patch.dict(sys.modules, {'unreal': self.u})
         self.engine_patch.start(); self.addCleanup(self.engine_patch.stop)
         self.plan_patch = patch.object(f, 'plan', return_value=(self.c, self.m, self.p))
@@ -230,7 +389,7 @@ class MockEngineTests(unittest.TestCase):
     def test_source_hash_rechecked_before_mesh_import(self):
         item = self.p['assets'][0]
         Path(item['source_path']).write_bytes(b'changed after preflight')
-        with self.assertRaisesRegex(ValueError, 'changed after preflight'):
+        with self.assertRaisesRegex(ValueError, 'Original FBX changed'):
             self.mesh(item)
         self.assertEqual(self.u.events, [])
 
@@ -313,7 +472,8 @@ class MockEngineTests(unittest.TestCase):
         report = caught.exception.report
         self.assertEqual(report['status'], 'FULL_IMPORT_FAILED_PARTIAL')
         self.assertTrue(report['partial'])
-        self.assertEqual(len(report['namespace_assets_on_failure']), 1)
+        self.assertEqual(len(report['namespace_assets_on_failure']), 3)
+        self.assertEqual(len(report['meshes']), 2)
         self.assertEqual(len(self.u.actors), 0)
         self.assertEqual(len(report['textures']), 1)
         self.assertFalse(any('save' in e or 'delete' in e for e in self.u.events))
@@ -447,6 +607,162 @@ class MockEngineTests(unittest.TestCase):
         self.assertEqual(len(report['actors']), 1)
         self.assertEqual(report['actors'][0]['status'], 'ATTEMPTED')
         self.assertFalse(any('save' in e or 'delete' in e for e in self.u.events))
+
+
+    def test_corrected_namespace_is_distinct_from_failed_namespace(self):
+        self.assertEqual(f.DEST, '/Game/AbandonedCarnivalFull57_Corrected')
+        old = g.Obj(); old.path = '/Game/AbandonedCarnivalFull57/Environment/Old.Old'
+        self.u.assets[old.path.split('.')[0]] = old
+        (Path(self.u.content_dir) / 'AbandonedCarnivalFull57').mkdir()
+        report = f.preflight(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_PREFLIGHT_PASS', report)
+        self.assertIs(self.u.assets[old.path.split('.')[0]], old)
+        self.assertEqual(self.u.events, [])
+
+    def test_sentinel_geometry_precedes_all_textures_and_materials(self):
+        report = self.import_success()
+        self.assertEqual(report['axis_sentinels_passed'], list(f.SENTINELS))
+        self.assertEqual([t.props['destination_name'] for t in self.u.import_tasks[:2]], list(f.SENTINELS))
+        self.assertTrue(all(isinstance(t.props['factory'], g.FbxFactory) for t in self.u.import_tasks[:2]))
+        first_texture = self.u.events.index('import_texture')
+        first_material = self.u.events.index('create_material')
+        self.assertEqual(self.u.events[:first_texture].count('import_mesh'), 2)
+        self.assertEqual(self.u.events[:first_material].count('import_mesh'), 2)
+        self.assertEqual([row['name'] for row in report['meshes'][:2]], list(f.SENTINELS))
+
+    def test_logged_uncorrected_y_reflection_fails_first_sentinel(self):
+        observed = {
+            'min': [669.30615234375, 672.6940307617188, -29.212182998657227],
+            'max': [1477.0469970703125, 1563.056884765625, 1282.4898681640625],
+        }
+        expected = next(a for a in self.p['assets'] if a['asset_name'] == f.SENTINELS[0])
+        self.assertLess(expected['bounds_cm']['max'][1], 0)
+        self.assertEqual(expected['collision_hulls'], 0)
+        def measured_failure(mesh):
+            if mesh.item['asset_name'] == f.SENTINELS[0]:
+                mesh.item['bounds_cm'] = copy.deepcopy(observed)
+        self.u.import_mutator = measured_failure
+        with self.assertRaises(f.FullImportError) as caught:
+            f.import_full(self.tmp.name)
+        report = caught.exception.report
+        self.assertIn('bounds/pivot/axis mismatch', ' '.join(report['errors']))
+        self.assertEqual(report['status'], 'FULL_IMPORT_FAILED_PARTIAL')
+        self.assertEqual(len(report['meshes']), 1)
+        self.assertEqual(len(report['namespace_assets_on_failure']), 1)
+        self.assertEqual(report['current_actor_paths_on_failure'], [])
+        self.assertEqual(report['textures'], [])
+        self.assertEqual(report['materials'], [])
+        self.assertEqual(self.u.events.count('import_texture'), 0)
+        self.assertEqual(self.u.events.count('create_material'), 0)
+        self.assertEqual(len(report['derived_files']), 1)
+        self.assertLess(expected['bounds_cm']['max'][1], 0)
+
+    def test_compound_collision_sentinel_failure_stops_before_textures(self):
+        expected = next(a for a in self.p['assets'] if a['asset_name'] == f.SENTINELS[1])
+        self.assertEqual(expected['collision_hulls'], 21)
+        def wrong_hulls(mesh):
+            if mesh.item['asset_name'] == f.SENTINELS[1]:
+                mesh.props['body_setup'].props['agg_geom'].props['convex_elems'].pop()
+        self.u.import_mutator = wrong_hulls
+        with self.assertRaises(f.FullImportError) as caught:
+            f.import_full(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(len(report['meshes']), 2)
+        self.assertEqual(len(report['namespace_assets_on_failure']), 2)
+        self.assertEqual(report['textures'], [])
+        self.assertEqual(report['materials'], [])
+        self.assertEqual(report['actors'], [])
+        self.assertNotIn('axis_sentinels_passed', report)
+
+    def test_preflight_never_creates_derived_cache_files(self):
+        saved = Path(self.u.saved_dir)
+        self.assertEqual(list(saved.iterdir()), [])
+        self.assertEqual(f.preflight(self.tmp.name)['status'], 'FULL_PREFLIGHT_PASS')
+        self.assertEqual(list(saved.iterdir()), [])
+
+    def test_readonly_missing_cache_is_not_recreated(self):
+        with self.assertRaisesRegex(ValueError, 'read-only validation will not recreate'):
+            f._derived_source(self.u, self.c, self.p['assets'][0], write=False)
+        self.assertEqual(list(Path(self.u.saved_dir).iterdir()), [])
+        self.assertEqual(self.u.events, [])
+
+    def test_derived_cache_preserves_original_and_reports_provenance(self):
+        item = self.p['assets'][0]
+        raw = Path(item['source_path']).read_bytes()
+        original = copy.deepcopy(item)
+        report = f._report('test')
+        derived = f._derived_source(self.u, self.c, item, report, write=True)
+        self.assertEqual(item, original)
+        self.assertEqual(Path(item['source_path']).read_bytes(), raw)
+        self.assertEqual(derived['original_source_path'], item['source_path'])
+        self.assertEqual(derived['original_fbx_sha256'], item['fbx_sha256'])
+        self.assertEqual(Path(derived['source_path']).read_bytes(), b'MOCK_COUNTER_REFLECTION\n' + raw)
+        self.assertNotEqual(derived['fbx_sha256'], item['fbx_sha256'])
+        self.assertTrue(Path(derived['source_path']).is_relative_to(Path(self.u.saved_dir)))
+        self.assertEqual(len(report['derived_files'][0]['files_written']), 2)
+        metadata = json.loads(Path(report['derived_files'][0]['metadata_path']).read_text())
+        self.assertEqual(metadata['original_sha256'], item['fbx_sha256'])
+        self.assertEqual(metadata['derived_sha256'], derived['fbx_sha256'])
+        self.assertEqual(metadata['adapter'], f.AXIS_ADAPTER)
+
+    def test_existing_exact_cache_is_reused_without_writes(self):
+        item = self.p['assets'][0]
+        derived = f._derived_source(self.u, self.c, item, write=True)
+        before = {str(p): (p.read_bytes(), p.stat().st_mtime_ns) for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}
+        report = f._report('test')
+        self.assertEqual(f._derived_source(self.u, self.c, item, report, write=True), derived)
+        self.assertEqual(report['derived_files'][0]['files_written'], [])
+        self.assertEqual(f._derived_source(self.u, self.c, item, write=False), derived)
+        after = {str(p): (p.read_bytes(), p.stat().st_mtime_ns) for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}
+        self.assertEqual(after, before)
+
+    def test_conflicting_derived_fbx_is_rejected_without_overwrite(self):
+        item = self.p['assets'][0]
+        derived = f._derived_source(self.u, self.c, item, write=True)
+        path = Path(derived['source_path']); path.write_bytes(b'conflicting existing cache')
+        with self.assertRaisesRegex(ValueError, 'no overwrite'):
+            f._derived_source(self.u, self.c, item, write=True)
+        self.assertEqual(path.read_bytes(), b'conflicting existing cache')
+        self.assertEqual(self.u.events, [])
+
+    def test_conflicting_cache_metadata_is_rejected_without_overwrite(self):
+        report = f._report('test')
+        item = self.p['assets'][0]
+        f._derived_source(self.u, self.c, item, report, write=True)
+        path = Path(report['derived_files'][0]['metadata_path']); path.write_text('conflicting metadata')
+        with self.assertRaisesRegex(ValueError, 'no overwrite'):
+            f._derived_source(self.u, self.c, item, write=True)
+        self.assertEqual(path.read_text(), 'conflicting metadata')
+
+    def test_import_provenance_points_to_verified_derived_copy(self):
+        item = self.p['assets'][0]
+        original_bytes = Path(item['source_path']).read_bytes()
+        mesh, report = self.mesh(item)
+        row = report['meshes'][0]
+        data = mesh.props['asset_import_data']
+        self.assertEqual(data.extract_filenames(), [row['derived_source_path']])
+        self.assertNotEqual(row['derived_source_path'], item['source_path'])
+        self.assertEqual(row['original_source_path'], item['source_path'])
+        self.assertEqual(row['original_fbx_sha256'], item['fbx_sha256'])
+        self.assertEqual(Path(item['source_path']).read_bytes(), original_bytes)
+        derived = f._derived_source(self.u, self.c, item, write=False)
+        data.filename = item['source_path']
+        with self.assertRaisesRegex(Exception, 'source path mismatch'):
+            self.c._validate_mesh(self.u, mesh, derived)
+
+    def test_validate_cannot_recreate_missing_derived_copy(self):
+        self.import_success()
+        cache = next(Path(self.u.saved_dir).rglob('*.fbx'))
+        # Test setup simulates a missing cache file. Production never deletes it.
+        cache.unlink()
+        remaining = {str(p): p.read_bytes() for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}
+        self.u.events.clear()
+        report = f.validate(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_STRUCTURE_MISMATCH', report)
+        self.assertIn('read-only validation will not recreate', ' '.join(report['validation']['errors']))
+        self.assertFalse(cache.exists())
+        self.assertEqual({str(p): p.read_bytes() for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}, remaining)
+        self.assertEqual(self.u.events, [])
 
 
 if __name__ == '__main__':

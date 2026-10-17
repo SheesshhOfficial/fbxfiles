@@ -1,6 +1,8 @@
 # Full carnival import for Unreal Engine 5.7.4
 
-This additive importer creates a new, unsaved world and `/Game/AbandonedCarnivalFull57`. It uses the frozen AbandonedCarnival export and the unchanged geometry/material helper code that passed the smaller UE 5.7.4 calibration. The full scene has not yet passed an Unreal runtime or visual review.
+This corrected importer creates a new, unsaved world and `/Game/AbandonedCarnivalFull57_Corrected`. The earlier full attempt stopped on the first asymmetric tile: its Y bounds were reflected, and a later read confirmed the reflection persisted after compilation. The three earlier calibration props had symmetric Y bounds, so their passing bounds checks did not establish handedness. The corrected full scene has not yet passed an Unreal runtime or visual review.
+
+The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left untouched. Do not rerun the old importer or delete those assets automatically. This revision uses a separate namespace and retains the original source FBXs, Blender source and unchanged vendor helpers.
 
 ## Exact scope
 
@@ -11,14 +13,14 @@ This additive importer creates a new, unsaved world and `/Game/AbandonedCarnival
 - Total: 281 content assets and 247 authored actors, plus Unreal's world infrastructure.
 - No Blueprints, current-map editing, existing-asset replacement, save, delete, cleanup, automatic retry, or renderer/exposure setting changes. The saved calibration content stays separate.
 
-All used FBX, texture and metadata files are checked against the pinned original FILE_MANIFEST. The original source's 15 parts are verified by their hashes and their combined source hash. JSON/Python pins permit only CRLF-to-LF normalization; binary hashes remain exact. Additional importer files do not require changing the frozen FILE_MANIFEST.
+All original FBX, texture and metadata files are checked against the pinned original FILE_MANIFEST. The original source's 15 parts are verified by their hashes and their combined source hash. JSON/Python pins permit only CRLF-to-LF normalization; binary hashes remain exact. Additional importer files do not require changing the frozen FILE_MANIFEST.
 
 ## Before running
 
 1. Pull the approved `full_import57` folder into your existing package root. Keep all nine delivered files together; no dependency installation is required.
 2. Use Unreal **5.7.4**, with the same Editor Python setup used for calibration. Stop Play/Simulate.
-3. Manually save any wanted calibration assets and map, or discard unwanted edits yourself. Preflight blocks any dirty map or content package.
-4. `/Game/AbandonedCarnivalFull57` and its physical Content folder must not exist. A partial prior attempt is deliberately blocked. Inspect it before deciding manually what to retain/discard.
+3. Manually save any wanted calibration work, the previous 101 partial assets and current temporary map, or discard unwanted edits yourself. Preflight blocks any dirty map or content package; it will not silently discard the current world. The old failed mesh can be retained for comparison.
+4. `/Game/AbandonedCarnivalFull57_Corrected` and its physical Content folder must not exist. A partial prior attempt is deliberately blocked. Inspect it before deciding manually what to retain/discard.
 5. Source RectLights require deferred rendering. Forward rendering is blocked; this helper never changes it. Close other heavy applications if memory is tight. The full import is much larger than calibration.
 
 ## Read-only preflight
@@ -26,26 +28,26 @@ All used FBX, texture and metadata files are checked against the pinned original
 Run this in the Unreal Python console (one line). It does not create assets, actors, maps, or report files:
 
 ```python
-import sys, json; sys.dont_write_bytecode = True; root = r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0, root + r"\full_import57"); import carnival_full_import57 as f; full_preflight = f.preflight(root); print(json.dumps({k: full_preflight.get(k) for k in ("status", "engine_version", "verified_file_count", "errors")}, indent=2))
+import sys, json, importlib; sys.dont_write_bytecode = True; root = r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0, root + r"\full_import57"); import carnival_full_import57 as f; f = importlib.reload(f); full_preflight = f.preflight(root); print(json.dumps({k: full_preflight.get(k) for k in ("status", "engine_version", "verified_file_count", "errors")}, indent=2))
 ```
 
 Expected inside Unreal: `FULL_PREFLIGHT_PASS`. Outside Unreal, `FILES_VERIFIED_ENGINE_NOT_CHECKED` verifies source files only. A successful preflight does not authorize a cached bypass: import repeats all checks.
 
 ## Explicit full import
 
-After reviewing preflight, this is the single mutating entry point:
+The optional preflight is also repeated internally. This complete one-line command reloads the updated module, then calls the single mutating entry point:
 
 ```python
-full_report = f.import_full(root); print(json.dumps({k: full_report.get(k) for k in ("status", "world_path", "counts", "validation", "errors")}, indent=2))
+import sys, json, importlib; sys.dont_write_bytecode = True; root = r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0, root + r"\full_import57"); import carnival_full_import57 as f; f = importlib.reload(f); full_report = f.import_full(root); print(json.dumps({k: full_report.get(k) for k in ("status", "world_path", "counts", "validation", "errors")}, indent=2))
 ```
 
-The importer creates a **fresh blank unsaved map**, then processes one texture or FBX import task at a time. The Output Log reports each texture/material/mesh/actor count. A zero-hull environment tile is tested first in the mesh stage because that BodySetup case is new to the full scene. Actual returned asset paths, legacy importer provenance, source filenames, texture settings, ordered slots, UV counts, centimetre bounds and exact UCX counts are checked. No auto-generated or complex-as-simple replacement collision is used. All solid actors block Pawn and Visibility; zero-hull decoration has collision disabled. These are structural settings, not a gameplay test.
+The importer creates a **fresh blank unsaved map** and first imports two asymmetric geometry sentinels: `SM_Env_Tile_m3_m4` (zero hulls) and `SM_OpenToolbox_20d6fff596` (21 hulls). Both must pass unchanged source bounds, UV, material-slot and UCX checks **before** any texture/material creation. Where documented MeshDescription getters are available, signed source-vertex landmarks are checked too; unavailable optional bindings are reported, not invented. It then automatically continues with textures, materials and the remaining 179 meshes. The Output Log reports each stage/count. Tasks remain sequential. Actual returned asset paths, legacy importer provenance, verified derived source filenames, texture settings, ordered slots, UV counts, centimetre bounds and exact UCX counts are checked. No auto-generated or complex-as-simple replacement collision is used. All solid actors block Pawn and Visibility; zero-hull decoration has collision disabled. These are structural settings, not a gameplay test.
 
 Success is `FULL_IMPORT_CREATED_UNSAVED`. Wait for Unreal's background compilation, inspect the log and scene, then manually Save As:
 
-`/Game/AbandonedCarnivalFull57/Maps/AbandonedCarnivalFull57`
+`/Game/AbandonedCarnivalFull57_Corrected/Maps/AbandonedCarnivalFull57`
 
-Save wanted content manually. The helper performs zero saves; Unreal's independent autosave is unchanged and may still occur.
+Save wanted content manually. The helper performs zero Unreal asset/map saves; it does write the explicitly described derived import cache below. Unreal's independent autosave is unchanged and may still occur.
 
 Failure raises `FullImportError` with a structured `.report` and prints that report in the exception. It lists attempted/created assets and actors, current namespace contents, failure stage and partial-import status. Partial content is left for inspection. Do not rerun over it. No existing map or asset assignments need rollback because all mutations target newly created full-import content.
 
@@ -58,6 +60,24 @@ full_audit = f.validate(root); print(json.dumps(full_audit, indent=2))
 ```
 
 Dirty packages are allowed and listed. This validates the existing inventory, source provenance/settings, mesh/material assignments, actor transforms/tags, collision settings, light properties and source forward/up vectors. It does not re-traverse material graphs or establish shader compilation, visual quality, light matching, player clearance, multiplayer behavior or performance. `visual_pass` remains false until a separate human review; `FULL_STRUCTURE_PASS` is structural only.
+
+## Deterministic import-only coordinate correction
+
+The persistent reflection is observed UE 5.7.4 behavior. Legacy FBX handedness conversion is the supported explanation; the exact internal implementation was not inspected in the installed engine. Scene-axis conversion being disabled did not prevent the observed Y reflection.
+
+A standard-library FBX7400 adapter compensates in derived copies only:
+- Negate Y for every render/UCX vertex and explicit normal vector; keep X/Z and all other floating values unchanged.
+- Reverse each polygon's corner order, move normal/UV indices with the same corner permutation, and preserve polygon material/smoothing order.
+- Remap FBX Edges to retain the same endpoint pairs; preserve model/connection identities, scalar/string values and the binary footer.
+- Leave UV values, texture pixels/green-channel settings and unit actor scale unchanged. No negative actor/build scale or relaxed bounds are used.
+
+All 181 files / 2,457 render+UCX geometries passed independent offline per-corner association and edge-endpoint checks. Applying the adapter twice restored each original file byte-for-byte. These tests validate transport preparation, not native rendering or Chaos behavior.
+
+New files are written exclusively under:
+
+`<project Saved>/CarnivalFull57Derived/counter_y_fbx7400_v1/<original FBX SHA256>/`
+
+Each source gets one derived FBX plus one deterministic metadata JSON. Originals are rehashed before derivation. Existing identical cache bytes can be reused; unexpected bytes or symlinks are refused, never overwritten. The report records original/derived hashes, import source paths and each cache file written. Keep these derived import sources with the project if you need reimport/audit later. Read-only preflight creates no cache; read-only validate checks existing cache and refuses to recreate missing files.
 
 ## Material, light and performance limits
 
