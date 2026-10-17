@@ -1,0 +1,32 @@
+test_change_after_preflight_no_import (test_calibration57.CalibrationTests.test_change_after_preflight_no_import) ... ok
+test_dirty_content_rejected_before_mutation (test_calibration57.CalibrationTests.test_dirty_content_rejected_before_mutation) ... ok
+test_dirty_map_rejected_before_mutation (test_calibration57.CalibrationTests.test_dirty_map_rejected_before_mutation) ... ok
+test_existing_namespace_rejected (test_calibration57.CalibrationTests.test_existing_namespace_rejected) ... ok
+test_existing_sample_asset_rejected (test_calibration57.CalibrationTests.test_existing_sample_asset_rejected) ... ok
+test_extra_primitive_collision_rejected (test_calibration57.CalibrationTests.test_extra_primitive_collision_rejected) ... ok
+test_interchange_import_data_rejected (test_calibration57.CalibrationTests.test_interchange_import_data_rejected) ... ok
+test_material_slots_rejected (test_calibration57.CalibrationTests.test_material_slots_rejected) ... ok
+test_missing_api_rejected (test_calibration57.CalibrationTests.test_missing_api_rejected) ... ok
+test_missing_uv_rejected (test_calibration57.CalibrationTests.test_missing_uv_rejected) ... ok
+test_physical_empty_folder_rejected (test_calibration57.CalibrationTests.test_physical_empty_folder_rejected) ... ok
+test_pie_rejected (test_calibration57.CalibrationTests.test_pie_rejected) ... ok
+test_preflight_is_read_only (test_calibration57.CalibrationTests.test_preflight_is_read_only) ... ok
+test_repeat_rejected_without_more_mutation (test_calibration57.CalibrationTests.test_repeat_rejected_without_more_mutation) ... ok
+test_slot_order_rejected (test_calibration57.CalibrationTests.test_slot_order_rejected) ... ok
+test_source_verification_failure_no_mutation (test_calibration57.CalibrationTests.test_source_verification_failure_no_mutation) ... ok
+test_success_exactly_three_assets_four_actors_unsaved (test_calibration57.CalibrationTests.test_success_exactly_three_assets_four_actors_unsaved) ... ok
+test_wrong_actual_name_stops_partial (test_calibration57.CalibrationTests.test_wrong_actual_name_stops_partial) ... ok
+test_wrong_bounds_rejected (test_calibration57.CalibrationTests.test_wrong_bounds_rejected) ... ok
+test_wrong_engine_rejected (test_calibration57.CalibrationTests.test_wrong_engine_rejected) ... ok
+test_wrong_hull_count_rejected (test_calibration57.CalibrationTests.test_wrong_hull_count_rejected) ... ok
+test_binary_hash_never_normalized (test_calibration57.OfflineIntegrityTests.test_binary_hash_never_normalized) ... ok
+test_json_crlf_only_normalization (test_calibration57.OfflineIntegrityTests.test_json_crlf_only_normalization) ... ok
+test_offline_preflight_does_not_claim_engine_check (test_calibration57.OfflineIntegrityTests.test_offline_preflight_does_not_claim_engine_check) ... ok
+test_path_traversal_rejected (test_calibration57.OfflineIntegrityTests.test_path_traversal_rejected) ... ok
+test_pinned_manifest_tamper_rejected (test_calibration57.OfflineIntegrityTests.test_pinned_manifest_tamper_rejected) ... ok
+test_real_frozen_source_and_sample_hashes (test_calibration57.OfflineIntegrityTests.test_real_frozen_source_and_sample_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.372s
+
+OK

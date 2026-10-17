@@ -1,0 +1,65 @@
+{
+  "scope": "Calibration/material helper additions only; no full-map metadata corrections",
+  "files": [
+    {
+      "path": "IMPORT_AUDIT_UE57.md",
+      "bytes": 6165,
+      "sha256": "5001270d434dbec97963451f8ef20e109b5cdfea4e6f3c9b959e168d67a3f955"
+    },
+    {
+      "path": "OFFLINE_TEST_RESULTS.txt",
+      "bytes": 3238,
+      "sha256": "918347d65034227d2090179d8d521161eef02a9fe789f4a02a38d12f2a0574e0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11679,
+      "sha256": "db3a4b041532ed44946791f5edd178eb654e9d015efe2b0cdac1dd7fbec344a7"
+    },
+    {
+      "path": "START_HERE.txt",
+      "bytes": 1679,
+      "sha256": "c5a861acbbb0536dfcab9ac52c59f9ac2ad400d915f969f814c1b7908055b8fa"
+    },
+    {
+      "path": "carnival_calibration57.py",
+      "bytes": 33221,
+      "sha256": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171"
+    },
+    {
+      "path": "material_stage/OFFLINE_TEST_RESULTS.txt",
+      "bytes": 3133,
+      "sha256": "5df2447991868a94665519e1222a7c9e553100802329aba24cec8fadda485cdb"
+    },
+    {
+      "path": "material_stage/README.md",
+      "bytes": 7255,
+      "sha256": "e9c1dbdb8b2d1286b95ef7a702dc3cd28aff3da78e2ac602257317f25131b26d"
+    },
+    {
+      "path": "material_stage/carnival_material_stage57.py",
+      "bytes": 24927,
+      "sha256": "d06e38dcdd23dfbad3d60ebee0cb11b3d4906813211b383d17f9de8537de3783"
+    },
+    {
+      "path": "material_stage/tests/material_plan_fixture.json",
+      "bytes": 17418,
+      "sha256": "8a510416f7e176ee80f68f1ff13e6df96201a08a970d93dc17d9b23113a470e6"
+    },
+    {
+      "path": "material_stage/tests/test_material_stage57.py",
+      "bytes": 19813,
+      "sha256": "c1c79b304e7cd97bc7b7f2710bf6ca44530c836fe0d453b72e04f505a05e3775"
+    },
+    {
+      "path": "tests/sample_contract_fixture.json",
+      "bytes": 4440,
+      "sha256": "38ee54ce2cbc20c96f9184094329c2e38411b189b8392bf4ce9e538bc4dbd377"
+    },
+    {
+      "path": "tests/test_calibration57.py",
+      "bytes": 19611,
+      "sha256": "12937dec082fe882d12052b31107facd43ae1881532f547f6c8393fa63a25a63"
+    }
+  ]
+}

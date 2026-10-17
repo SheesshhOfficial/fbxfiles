@@ -1,0 +1,514 @@
+{
+  "contract": {
+    "root": "MOCK_PACKAGE_ROOT",
+    "selected": [
+      {
+        "asset_name": "SM_BumperCar_566477cf32",
+        "fbx": "props/SM_BumperCar_566477cf32.fbx",
+        "geometry_material_uv_sha256": "e72869a22f6587d2dd12b7b62124370bfc2c240441730d413da431c6fbf39447",
+        "collision_recipe_sha256": "525f3579290d03782ef61a8f8df916b955d2217f86f5343aaabf2725cc907995",
+        "asset_signature_sha256": "566477cf321975921b9ca529d58bccb990a410fb94db099688e54fed959af6f9",
+        "normal_payload": "Exact numeric source corner normals; packed-normal bypass",
+        "fbx_sha256": "c2cec0066bb3639fb79f1f90ed42ca056844e838d7e1365cda5779041a86531e",
+        "source_exemplar": "BumperCar_00_Complete",
+        "family": "BumperCar",
+        "vertices": 17214,
+        "polygons": 17302,
+        "materials": [
+          "Ride realism | vulcanized bumper rubber",
+          "Ride realism | worn nickel fittings",
+          "Ride realism | faded oxblood enamel",
+          "Ride realism | aged charcoal vinyl",
+          "Ride realism | old headlamp glass",
+          "PaintRed"
+        ],
+        "collision_hulls": 8,
+        "collision_mode": "refined_structural_recipe",
+        "previous_collision_hulls": 8,
+        "collision_skipped_components": 0,
+        "bounds_cm": {
+          "min": [
+            -131.06918334960938,
+            -91.83260345458984,
+            9.399999618530273
+          ],
+          "max": [
+            131.06918334960938,
+            91.83260345458984,
+            382.20001220703125
+          ]
+        },
+        "source_path": "MOCK_PACKAGE_ROOT/SM_BumperCar_566477cf32.fbx",
+        "source_tags": [
+          "PropActor"
+        ],
+        "expected_uv_channels": 1
+      },
+      {
+        "asset_name": "SM_wooden_pallet_244700516e",
+        "fbx": "props/SM_wooden_pallet_244700516e.fbx",
+        "geometry_material_uv_sha256": "955f3b89d775bf2e82ccbe4d98120f092aea1d295af2c019131f840d9644cd73",
+        "collision_recipe_sha256": "e57c110013e8409f0bed07601f2d5d9075e0ee498019de0309be6aebc6c2ada5",
+        "asset_signature_sha256": "244700516e63de2ae51f33692909595dd7cb309cef3db758fdd207e3f127d283",
+        "normal_payload": "Exact numeric source corner normals; packed-normal bypass",
+        "fbx_sha256": "3a75274214328a035f8d708dc32f875bf35711f483b9853698dbc24857e10644",
+        "source_exemplar": "BY_Pallet_Low_2",
+        "family": "wooden_pallet",
+        "vertices": 1600,
+        "polygons": 1402,
+        "materials": [
+          "wood",
+          "rust"
+        ],
+        "collision_hulls": 9,
+        "collision_mode": "refined_structural_recipe",
+        "previous_collision_hulls": 9,
+        "collision_skipped_components": 0,
+        "bounds_cm": {
+          "min": [
+            -10.0,
+            -57.5,
+            -7.500000476837158
+          ],
+          "max": [
+            110.0,
+            57.5,
+            14.970000267028809
+          ]
+        },
+        "source_path": "MOCK_PACKAGE_ROOT/SM_wooden_pallet_244700516e.fbx",
+        "source_tags": [
+          "PropActor"
+        ],
+        "expected_uv_channels": 1
+      },
+      {
+        "asset_name": "SM_OpenMaintenanceBucket_aeb36301a9",
+        "fbx": "props/SM_OpenMaintenanceBucket_aeb36301a9.fbx",
+        "geometry_material_uv_sha256": "2d21ea8eb7607b29c0c8f7efa91980d664d554c18b2a75b235777ebcd64a854c",
+        "collision_recipe_sha256": null,
+        "asset_signature_sha256": "aeb36301a92034b96a2c7df8f8028a443be53be638290a033e9a609e4bbd8b7b",
+        "normal_payload": "Exact numeric source corner normals; packed-normal bypass",
+        "fbx_sha256": "2281d9973d1e01f32e9794d9d45b733674aa34c369c0d4a9ed74b44edfd58306",
+        "source_exemplar": "RF_Bucket_Funhouse_Front",
+        "family": "OpenMaintenanceBucket",
+        "vertices": 544,
+        "polygons": 340,
+        "materials": [
+          "rust",
+          "black"
+        ],
+        "collision_hulls": 1,
+        "collision_mode": "approved_small_prop_outer_convex_proxy",
+        "previous_collision_hulls": 34,
+        "collision_skipped_components": 0,
+        "bounds_cm": {
+          "min": [
+            -18.994903564453125,
+            -18.994903564453125,
+            0.0011980533599853516
+          ],
+          "max": [
+            18.994712829589844,
+            18.994903564453125,
+            51.79203796386719
+          ]
+        },
+        "source_path": "MOCK_PACKAGE_ROOT/SM_OpenMaintenanceBucket_aeb36301a9.fbx",
+        "source_tags": [
+          "PropActor"
+        ],
+        "expected_uv_channels": 1
+      }
+    ],
+    "verified_files": {},
+    "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+    "source_bytes": 136393382,
+    "normalized_json_files": []
+  },
+  "materials": [
+    {
+      "source_name": "PaintRed",
+      "asset_name": "M_PaintRed_65c640d0",
+      "maps": {
+        "base_color": {
+          "path": "textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | aged charcoal vinyl",
+      "asset_name": "M_Ride_realism___aged_charcoal_vinyl_2a71a0c0",
+      "maps": {},
+      "base_color": [
+        0.03200000151991844,
+        0.03700000047683716,
+        0.03400000184774399,
+        1.0
+      ],
+      "roughness": 0.5099999904632568,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | faded oxblood enamel",
+      "asset_name": "M_Ride_realism___faded_oxblood_enamel_66fa76d5",
+      "maps": {
+        "base_color": {
+          "path": "textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.4399999976158142,
+      "metallic": 0.3199999928474426,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | old headlamp glass",
+      "asset_name": "M_Ride_realism___old_headlamp_glass_54b88473",
+      "maps": {
+        "normal": {
+          "path": "textures/542a4eda31856ba9_cream_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.47999998927116394,
+        0.41999998688697815,
+        0.25999999046325684,
+        1.0
+      ],
+      "roughness": 0.20000000298023224,
+      "metallic": 0.11999999731779099,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | vulcanized bumper rubber",
+      "asset_name": "M_Ride_realism___vulcanized_bumper_rubber_161e5aa9",
+      "maps": {},
+      "base_color": [
+        0.01600000075995922,
+        0.01899999938905239,
+        0.017999999225139618,
+        1.0
+      ],
+      "roughness": 0.7799999713897705,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | worn nickel fittings",
+      "asset_name": "M_Ride_realism___worn_nickel_fittings_10c252ba",
+      "maps": {},
+      "base_color": [
+        0.3400000035762787,
+        0.3199999928474426,
+        0.25,
+        1.0
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.800000011920929,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "black",
+      "asset_name": "M_black_466bc8ce",
+      "maps": {},
+      "base_color": [
+        0.014999999664723873,
+        0.017999999225139618,
+        0.01899999938905239,
+        1.0
+      ],
+      "roughness": 0.5199999809265137,
+      "metallic": 0.10000000149011612,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "rust",
+      "asset_name": "M_rust_7b41f80f",
+      "maps": {
+        "base_color": {
+          "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.10000000149011612,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "wood",
+      "asset_name": "M_wood_e8002c16",
+      "maps": {
+        "base_color": {
+          "path": "textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    }
+  ],
+  "textures": [
+    {
+      "path": "textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "usage": "base_color",
+      "filename": "MOCK_PACKAGE_ROOT/T_a7023507bf7681e5_PaintRed_basecolor_3940a5c5.mocktexture",
+      "sha256": "a7023507bf7681e59948ab34f4216132933a4de6e33b1980d90d4350f9936c53",
+      "asset_name": "T_a7023507bf7681e5_PaintRed_basecolor_3940a5c5",
+      "flip_green": false
+    },
+    {
+      "path": "textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "usage": "roughness",
+      "filename": "MOCK_PACKAGE_ROOT/T_d77f26d293e4a90c_PaintRed_roughness_ce5f14a0.mocktexture",
+      "sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "asset_name": "T_d77f26d293e4a90c_PaintRed_roughness_ce5f14a0",
+      "flip_green": false
+    },
+    {
+      "path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "usage": "normal",
+      "filename": "MOCK_PACKAGE_ROOT/T_db89a6d4ac976986_PaintRed_normal_d7b90a6c.mocktexture",
+      "sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "asset_name": "T_db89a6d4ac976986_PaintRed_normal_d7b90a6c",
+      "flip_green": true
+    },
+    {
+      "path": "textures/542a4eda31856ba9_cream_normal.png",
+      "usage": "normal",
+      "filename": "MOCK_PACKAGE_ROOT/T_542a4eda31856ba9_cream_normal_1c746657.mocktexture",
+      "sha256": "542a4eda31856ba958225edf5e0cdbeef7bf39c4fcc70590194a0fd4ab12967a",
+      "asset_name": "T_542a4eda31856ba9_cream_normal_1c746657",
+      "flip_green": true
+    },
+    {
+      "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "usage": "base_color",
+      "filename": "MOCK_PACKAGE_ROOT/T_1cb16ddd9c29b6f1_CorrodedMetal_basecolor_d596b09c.mocktexture",
+      "sha256": "1cb16ddd9c29b6f15457af365e074625d996163748574c2d49158c5c046fe71b",
+      "asset_name": "T_1cb16ddd9c29b6f1_CorrodedMetal_basecolor_d596b09c",
+      "flip_green": false
+    },
+    {
+      "path": "textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "usage": "roughness",
+      "filename": "MOCK_PACKAGE_ROOT/T_f5ff8d398d88ed01_CorrodedMetal_roughness_0c77a833.mocktexture",
+      "sha256": "f5ff8d398d88ed01a30a75a9fe743e69497eccbb241c45b62011868d98d7f7de",
+      "asset_name": "T_f5ff8d398d88ed01_CorrodedMetal_roughness_0c77a833",
+      "flip_green": false
+    },
+    {
+      "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "usage": "normal",
+      "filename": "MOCK_PACKAGE_ROOT/T_24fc9bd5ac5ba383_CorrodedMetal_normal_2163c99d.mocktexture",
+      "sha256": "24fc9bd5ac5ba383305634a6cf69bae6d0261efcaf39f6baee8a9307f12ead32",
+      "asset_name": "T_24fc9bd5ac5ba383_CorrodedMetal_normal_2163c99d",
+      "flip_green": true
+    },
+    {
+      "path": "textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "usage": "base_color",
+      "filename": "MOCK_PACKAGE_ROOT/T_1ef20f6692f5cdee_WeatheredWood_basecolor_01625d43.mocktexture",
+      "sha256": "1ef20f6692f5cdeed2c8a6d1e587f1351331099a8c4e8b574b60609112302374",
+      "asset_name": "T_1ef20f6692f5cdee_WeatheredWood_basecolor_01625d43",
+      "flip_green": false
+    },
+    {
+      "path": "textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "usage": "roughness",
+      "filename": "MOCK_PACKAGE_ROOT/T_c9a297dbc926ebc1_WeatheredWood_roughness_b868b8c6.mocktexture",
+      "sha256": "c9a297dbc926ebc18601c45937d0bcd170f26c909028d84c49612b6a06a041f9",
+      "asset_name": "T_c9a297dbc926ebc1_WeatheredWood_roughness_b868b8c6",
+      "flip_green": false
+    },
+    {
+      "path": "textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "usage": "normal",
+      "filename": "MOCK_PACKAGE_ROOT/T_db89a6d4ac976986_WeatheredWood_normal_a36070f4.mocktexture",
+      "sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "asset_name": "T_db89a6d4ac976986_WeatheredWood_normal_a36070f4",
+      "flip_green": true
+    }
+  ],
+  "material_manifest_actual_sha256": "7b4624bf35618733783f8b13b9d7a376890a4dbed795b0177f4ff574739caaa2",
+  "material_manifest_crlf_normalized": false
+}

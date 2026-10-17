@@ -1,0 +1,31 @@
+test_assignment_failure_restores_original_nondefault_materials (test_material_stage57.StageTests.test_assignment_failure_restores_original_nondefault_materials) ... ok
+test_changed_texture_rejected_before_submission (test_material_stage57.StageTests.test_changed_texture_rejected_before_submission) ... ok
+test_dirty_content_blocked (test_material_stage57.StageTests.test_dirty_content_blocked) ... ok
+test_dirty_map_blocked (test_material_stage57.StageTests.test_dirty_map_blocked) ... ok
+test_duplicate_actor_identity_blocked (test_material_stage57.StageTests.test_duplicate_actor_identity_blocked) ... ok
+test_empty_physical_namespace_blocked (test_material_stage57.StageTests.test_empty_physical_namespace_blocked) ... ok
+test_exact_success_counts_no_save_delete (test_material_stage57.StageTests.test_exact_success_counts_no_save_delete) ... ok
+test_existing_actor_override_blocked (test_material_stage57.StageTests.test_existing_actor_override_blocked) ... ok
+test_extra_actor_blocked (test_material_stage57.StageTests.test_extra_actor_blocked) ... ok
+test_failed_rollback_is_reported_without_deleting (test_material_stage57.StageTests.test_failed_rollback_is_reported_without_deleting) ... ok
+test_interchange_provenance_rejected (test_material_stage57.StageTests.test_interchange_provenance_rejected) ... ok
+test_light_failure_restores_originals_keeps_assets_and_actor (test_material_stage57.StageTests.test_light_failure_restores_originals_keeps_assets_and_actor) ... ok
+test_missing_actor_blocked (test_material_stage57.StageTests.test_missing_actor_blocked) ... ok
+test_missing_tag_blocked (test_material_stage57.StageTests.test_missing_tag_blocked) ... ok
+test_namespace_blocked (test_material_stage57.StageTests.test_namespace_blocked) ... ok
+test_no_save_delete_calls_in_helper (test_material_stage57.StageTests.test_no_save_delete_calls_in_helper) ... ok
+test_offline_preflight_does_not_claim_runtime (test_material_stage57.StageTests.test_offline_preflight_does_not_claim_runtime) ... ok
+test_partial_texture_import_retains_result_paths (test_material_stage57.StageTests.test_partial_texture_import_retains_result_paths) ... ok
+test_pie_blocked (test_material_stage57.StageTests.test_pie_blocked) ... ok
+test_plan_has_exact_materials_textures_and_hashes (test_material_stage57.StageTests.test_plan_has_exact_materials_textures_and_hashes) ... ok
+test_preflight_read_only (test_material_stage57.StageTests.test_preflight_read_only) ... ok
+test_unsaved_map_asset_blocked (test_material_stage57.StageTests.test_unsaved_map_asset_blocked) ... ok
+test_virtual_texture_failed_readback_rejected (test_material_stage57.StageTests.test_virtual_texture_failed_readback_rejected) ... ok
+test_wrong_mesh_blocked (test_material_stage57.StageTests.test_wrong_mesh_blocked) ... ok
+test_wrong_saved_map_blocked (test_material_stage57.StageTests.test_wrong_saved_map_blocked) ... ok
+test_wrong_texture_actual_name_stops_sequential_import (test_material_stage57.StageTests.test_wrong_texture_actual_name_stops_sequential_import) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.273s
+
+OK

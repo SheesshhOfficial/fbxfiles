@@ -1,0 +1,19 @@
+CARNIVAL: FIRST UNREAL 5.7.4 CHECK
+
+1. Open the ZIP and copy its contained import_calibration57 folder into:
+   G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival
+
+The helper must then be at:
+   G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival\import_calibration57\carnival_calibration57.py
+
+2. In Unreal Editor, open Output Log and select Python for its command field. Paste this ONE line:
+
+import sys,json; sys.dont_write_bytecode=True; sys.path.insert(0,r'G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival\import_calibration57'); import carnival_calibration57 as c; report=c.preflight(r'G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival'); print(json.dumps({k:report.get(k) for k in ('status','ready_to_import','engine_version','error')},indent=2))
+
+Send back that short printed result. Do not run import_sample or the old full importer yet.
+
+This preflight reads files/editor state only. It creates no assets or maps, changes no Blueprint or settings, saves nothing, and writes no report file. It checks the actual Unreal API, version, existing destination/unsaved work, and source/sample hashes. If it reports PREFLIGHT_BLOCKED, stop and share the error rather than deleting anything or weakening checks.
+
+If Python is unavailable in Output Log, enable Python Editor Script Plugin and Editor Scripting Utilities, then restart Unreal after saving your work.
+
+The helper has offline/mock tests only. Passing preflight does not establish that the actual Unreal importer, collision, materials or gameplay work. The next explicit step will be three mesh assets/four independent prop actors in a fresh unsaved sample map; this step does not run automatically.
