@@ -1999,9 +1999,9 @@
   },
   {
     "path": "premium_store/README.md",
-    "bytes": 1201,
-    "sha256": "ae95d0e7134d9b8fb5e8f57327e7bfba87d64070980eb6fc72f34d3a0120f843",
-    "git_blob_sha": "638b0ad1d1547ad12a734a7f48d69c0804d4c9fc"
+    "bytes": 1518,
+    "sha256": "e355d28b7c2cdb8104fd342b9da91122be29062aaa9548289d68582c2e971bce",
+    "git_blob_sha": "da317d475194f5b4a418cf8c56843b74f4cfabca"
   },
   {
     "path": "premium_store/refinement_v3/DELIVERY_CHECKSUMS.json",
@@ -2182,5 +2182,389 @@
     "bytes": 2286,
     "sha256": "ea7b4d9d4d1402be1118ac27fa427e16366d21f765449073ba15193e6d4ebb2f",
     "git_blob_sha": "86fafd44de6607847ec399f9f03a5fbded431534"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/ARCHIVE_AUDIT.json",
+    "bytes": 1281,
+    "sha256": "70b4a0b5cd5a6eb6de256ba11e3370b0a88d9322087a0a334bc9eee04063a2a5",
+    "git_blob_sha": "d16b201dbde0f59db2ec71542bb8937e304f0f06"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/DOWNLOAD.md",
+    "bytes": 1132,
+    "sha256": "c74d5d2a3f7e41793328a7ed123623ae4e3aee18c8554e99616576f160584d1d",
+    "git_blob_sha": "d14b031a65656897c3042f02d6365e3ca1c9cb77"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/Download_V3.ps1",
+    "bytes": 10235,
+    "sha256": "149591b4893bae02a1d8d8654ff9ed4ef6c626abb40218efd15b8faa5441f825",
+    "git_blob_sha": "d505a45e358333508627ce069f47177127b825db"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/FINAL_QA_SUMMARY.json",
+    "bytes": 2938,
+    "sha256": "5ba4a2e9d5f57f7de4805201d6aeb18e996cd352c6ab6e0fba9fc53949e44ac7",
+    "git_blob_sha": "5ee94ebb3270de37e523a15d7eac2d6557d1b143"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/PACKAGE_RESULT.json",
+    "bytes": 206,
+    "sha256": "88c083049fff98a44148cbc1f6a39bb45ee4c94e134b95b6047703a8a4618957",
+    "git_blob_sha": "982c675a69140c0b9ec5c5e443885c8186a047ed"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/README.md",
+    "bytes": 5157,
+    "sha256": "c0535c5488796ff7e19101e92ac3a9e05fd4c9c1291fb0e77e283be732f3e720",
+    "git_blob_sha": "dc90d9ea873f2a1fa5969d9b52814ec56b44f4f4"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/SOURCE_PROVENANCE.json",
+    "bytes": 918,
+    "sha256": "262a42e5ddd74d6f1015a250d79dc8bfd2f18be67d8201d3000e90bc8ee95ba7",
+    "git_blob_sha": "65554311087fe5b79ef411f73a4c0ac136176a9d"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/ARCHIVE_SHA256.json",
+    "bytes": 7638,
+    "sha256": "a8db9064a5abc4dc0ad008541e20c19ec6bc7e7931d7b2ed11660b6764270259",
+    "git_blob_sha": "b05eedf80ec91c4e4eb39564b26198de94cc43ae"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part01",
+    "bytes": 9437184,
+    "sha256": "1af9d481e2162a8d938a7373f972fe3d8794d46f173b771c714a9b43c048efd2",
+    "git_blob_sha": "77b119a789350900b7103445323560542b2753c7"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part02",
+    "bytes": 9437184,
+    "sha256": "195f664ab562bec473bb09f17657e544ae90f7ac6b403a99147739c955e2df8c",
+    "git_blob_sha": "699db334195639a49ececd470557a8f76bfce4c6"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part03",
+    "bytes": 9437184,
+    "sha256": "ba09952fe85499c2deb0b849a197dd7048610c0d4ebe7e4612b451b1baf7b8f2",
+    "git_blob_sha": "fcad289d06aea9d0d6ed2acf57c04185fdd5ffac"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part04",
+    "bytes": 9437184,
+    "sha256": "c524fce7640dcd1fa97a91d969d94d3322022c27f46e29d1ed57d34861eb0bc2",
+    "git_blob_sha": "57c4eddd3ded949ff02afba24befa5377b71b9db"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part05",
+    "bytes": 9437184,
+    "sha256": "753fdb6370ced15e0a624c9fa964392e8305543290fa05255b71318f25f213d5",
+    "git_blob_sha": "5e930b88bddf4bef092ebaa40600fb11e1dc00b1"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part06",
+    "bytes": 9437184,
+    "sha256": "e4b4baead1ab4eb0b194fd77eb53af23813b79ecf562fbbbe7cd523062091865",
+    "git_blob_sha": "0bd296945e3dafd40d5db2c7a1c6bcad7ee0d2cb"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part07",
+    "bytes": 9437184,
+    "sha256": "29cfcc9a22ea49520bd517d35c4c270b49d34ac036bf8ca9bdbe821ab1680e55",
+    "git_blob_sha": "7891bb7f2696d0953a888c57d43a5f634cfeea6b"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part08",
+    "bytes": 9437184,
+    "sha256": "60e0352f515658e77e7b1d0bda57a8ea3f318d6311e1e0eb99b1a0bbd669950e",
+    "git_blob_sha": "a704f4d7af74db47e9a5dba789050c295232bb15"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part09",
+    "bytes": 9437184,
+    "sha256": "ffc94de62a2c5ba134da7def61c184e1660e4384c44dbd64fad970f2f4a201db",
+    "git_blob_sha": "f9e294bef4fd32faa51387bd2a35f7b3509026d0"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part10",
+    "bytes": 9437184,
+    "sha256": "87da2c1433d2e445e9163e7dfb6848fcea5a120f3bc08133f11bbcc0c55bc9f9",
+    "git_blob_sha": "3bbab10410ca8b14363545aacab97a85a4ac6ca0"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part11",
+    "bytes": 9437184,
+    "sha256": "fb8514054cc15a82d7c0d2bb3434ea4a32a506ebda0ed672f3c701297b4321d3",
+    "git_blob_sha": "bb338fda55f10c2c124fc5783f385a72d0e99268"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part12",
+    "bytes": 9437184,
+    "sha256": "331322f34b033bc80b0ea3bc51923e7a26ec15b440bf6c9e67bc991077be463e",
+    "git_blob_sha": "4eb2718e5a55e37a5404fc0e6c3a16850c25c585"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part13",
+    "bytes": 9437184,
+    "sha256": "7947f2ecd3c8c7175ea353b5ae89ac87ef847555d242cf515069a90248dc98bb",
+    "git_blob_sha": "337ae5cc86b58aec6b0fc0566fd849d8990a06d3"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part14",
+    "bytes": 9437184,
+    "sha256": "090763376b2458d97f579ecf02193adb4b50161f04e49a27c35086061c01f819",
+    "git_blob_sha": "eec8f2188aa81d1b8cc18ffcaa7381633436e997"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part15",
+    "bytes": 9437184,
+    "sha256": "2bba93af351ce742a73476cfbde599660d3b05b5260fd7f347c6501b0dfe4ad1",
+    "git_blob_sha": "e014e3f72ba14c21022ed36cda6a0fa10e5be8fd"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part16",
+    "bytes": 9437184,
+    "sha256": "540f40ea5568d5eaecfdaf0a7cc236e0e67f5842ef013d55d0e3ff49b811cbe8",
+    "git_blob_sha": "173ba6c31dbf1eb8057b63af73076efc597d338d"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part17",
+    "bytes": 9437184,
+    "sha256": "857d3cbf4312c4f6d8f5410476f56bf900d05de2647f5ec86be869d6920f3a6f",
+    "git_blob_sha": "1dd8a49e80d1f26b1e10f444d69fa4060bb4244d"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part18",
+    "bytes": 9437184,
+    "sha256": "8149ae9312af49930b2938346f89b98b8ad237902ef43f21c8e1f5ae4d43b2da",
+    "git_blob_sha": "19abc619c966602d7a45d2f936e14eea735a305f"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part19",
+    "bytes": 9437184,
+    "sha256": "adf37fec0619f62a9f3dcaef291e6338edbeb87f5659824db9090865ab343cfc",
+    "git_blob_sha": "6d58e19021f26cb35a3d26cdece40e682adf765f"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part20",
+    "bytes": 9437184,
+    "sha256": "4b26dd1793ed59c96b60d4b53f17b1edaadb0189865c69b93f20a400eab6af04",
+    "git_blob_sha": "4e8fc9638fcfea637c46406b983bf2edaa0445b5"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part21",
+    "bytes": 9437184,
+    "sha256": "de2cc9a1ca8b69ccb4f1972e7e6b8faeab2de34b7a2fb4ee1e065ed0b4a9d52c",
+    "git_blob_sha": "f70d4cbc9304be54f8d904fc8f61a6086dd9f17b"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part22",
+    "bytes": 9437184,
+    "sha256": "a51c5623d51f78aa214ab06e3315eb5c04fd67b446993810420c7ac70f905c74",
+    "git_blob_sha": "c9f320a90420e4fe738f8abfb678de660e18a4ed"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part23",
+    "bytes": 9437184,
+    "sha256": "c84dbf254da1a238d6e8c97a17bf6d2072b67e59a992d6f447f4d343bf4aa328",
+    "git_blob_sha": "b5d13ee660ad1d2953d1bf183afb3f2901ccdd79"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part24",
+    "bytes": 9437184,
+    "sha256": "ee16eba21ce54910763660094b9f83b98a1f40fc5531fd187d4f4b629186b972",
+    "git_blob_sha": "826a0158f6cf39d2daf27211d0d069e525d5cdde"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part25",
+    "bytes": 9437184,
+    "sha256": "b09d44bc5290c644c38412a2be4efe9e2c12a0c1867655eed8de79a2e0dd9d4c",
+    "git_blob_sha": "563d5ed881755fd0140799a289d835e988e5e5c5"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part26",
+    "bytes": 9437184,
+    "sha256": "84c0189e1ea66deb88b0a5259ff56df67f1c13e99c405bed60b05baafc82b34d",
+    "git_blob_sha": "b442c7067fb26d840ec38b95e33721da9a16fdb2"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part27",
+    "bytes": 9437184,
+    "sha256": "7ef3ed75940ef0e9b84516a945f464f2363e175d544bb17827c80507e28770d6",
+    "git_blob_sha": "92ec293f337a4d0b9e95984038156dbd3762bc86"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part28",
+    "bytes": 9437184,
+    "sha256": "9c17d135c8f56207a1c3104fca708fed3ac22f1bde4e6280560c631e6c86a2a7",
+    "git_blob_sha": "788d650a5a5a3df78f7ad1013be8483ff34e5ef0"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part29",
+    "bytes": 9437184,
+    "sha256": "b70823ad08280aea506de1efff0a0ba4f787caabce752a299d660671c930b346",
+    "git_blob_sha": "f3ea94daaf04cb95160106325a0a11abc63004df"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part30",
+    "bytes": 9437184,
+    "sha256": "bc72e0bdabbdde59120cecccec3e068d70cb2238c1518a33c89f2cfb8a3f8d91",
+    "git_blob_sha": "93cc858da5bdb27afd9ff796d8b85e4f23f50a66"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part31",
+    "bytes": 9437184,
+    "sha256": "80f0d836fd752a91b9e93df38d69bb6f63fd04c8b8213e3cf74555351c8c7306",
+    "git_blob_sha": "0dff359ef0421e22223aaec6d833e572af521c2f"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part32",
+    "bytes": 9437184,
+    "sha256": "6a9318c7731e0934a4298e7d4bc01c69fff0f1630576491f902df6ec7cf6a9ad",
+    "git_blob_sha": "aee8c2cb45022d734d52c30672b72e7cbc35ebd2"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part33",
+    "bytes": 9437184,
+    "sha256": "10594487e10769c7f477bcdde5629a1dc44d2e80d535b492359a535dcb03b93f",
+    "git_blob_sha": "dd0ed816c6f9054b20dbb2f51d004c9ca6fa9b96"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part34",
+    "bytes": 9437184,
+    "sha256": "1b261d1f0f1478ad6ebb045c4dd86c0c00fef5c86e96eb72bd9e450d9b245051",
+    "git_blob_sha": "97e470dbb0f405bff71516b4d5be5c8cc136c747"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part35",
+    "bytes": 9437184,
+    "sha256": "9eeea4f78a7b8665dce89b89768f524dc73efa5c0ecaaf118b05a8b197bb0eb1",
+    "git_blob_sha": "f58cabe1a32023849c16c607c0cc80d8cb0164a9"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part36",
+    "bytes": 9437184,
+    "sha256": "c90bf26bb6bb42ba7fd21769c68e2a87f4c0fe3f342fd7849caad9523617eea6",
+    "git_blob_sha": "a0a2d9354597f8be0b28b5614b796a300532f59d"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part37",
+    "bytes": 9437184,
+    "sha256": "dc5e7b19f5e2ff640c83c4a0318dd8ffb21989bec95d0980af81dd65b79424c6",
+    "git_blob_sha": "c871b9763632b3d7f9eb08c7e1ab5d6d0ba2072b"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part38",
+    "bytes": 9437184,
+    "sha256": "c4b1888ab58ee395ecf14401d170386dd14450195ccfea28fab93b62ac77c554",
+    "git_blob_sha": "4cb3a415fd93940016e888b4bfffc180b9a6e5bf"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part39",
+    "bytes": 9437184,
+    "sha256": "2f2cc0ece3d9c74e0e108b82fa64c32150433b331c029e4ebe47e505b1a1fdaa",
+    "git_blob_sha": "90e3ac9445a9a243307f4e956980afc1c28ccfec"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part40",
+    "bytes": 9437184,
+    "sha256": "084cf841cdde3383c5cc7e81e1fe681ff6e2a8c8bb976f06110450c4c0789855",
+    "git_blob_sha": "bd40515bf8de4d322d54bc411acfce794e3c0add"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/EvergreenMarket_v3_Unreal_Handoff.zip.part41",
+    "bytes": 2599278,
+    "sha256": "6d89a28f7036382ca76b7a0fe33b684d488d22a51bdcd4a53400a149ace419ba",
+    "git_blob_sha": "e47976ee71a82f8344c611d21ef8313c783406f6"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/REASSEMBLY_TEST.json",
+    "bytes": 177,
+    "sha256": "8d26976f6bb6ed0f3879d456f5ee07d2b78150cf5f367e0531539c80e7fb6144",
+    "git_blob_sha": "7c50a59436be797f454fe4063a58f7d6e2241f36"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/Reassemble.py",
+    "bytes": 1551,
+    "sha256": "29a8e8d41f04410d8ec0ee24c5843373930b13449b15dc9827dcfa5efc1a0528",
+    "git_blob_sha": "d7fefcf3d5a8e148e9a000b7d2385f967e6feaef"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/download/Reassemble_Windows.cmd",
+    "bytes": 9581,
+    "sha256": "0d032a3d2d87f58af3ceba148964a61abd6ca74bdc0b89d433847b8c1897a7d8",
+    "git_blob_sha": "e5d096cf6e579fa1dfabe740fffeba2ba195f503"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/MATERIAL_PREFLIGHT.json",
+    "bytes": 672012,
+    "sha256": "6994281d5911d83d8a4bea1f0269fab7cf87916da5b59502399d12218a213965",
+    "git_blob_sha": "f3b553f6708fa69ad8ad7e0f089ce20c33e58c79"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/OFFLINE_CHECKS.json",
+    "bytes": 1843,
+    "sha256": "21305e6345e8007337b307cf7940db647197df57bd7694a503601b514c6709a9",
+    "git_blob_sha": "a004388b30902f4138c8ed1c65a880308f048ba5"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/README.md",
+    "bytes": 18132,
+    "sha256": "e986a80f1fd6299404c06e2894907369d501a9ae9d8194b3938628fa6c4377d7",
+    "git_blob_sha": "4f823ab8577249bed2020585885f1205be0257ab"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/__init__.py",
+    "bytes": 83,
+    "sha256": "034c54ac62659444b6eb1d4db788b2869fb2a0c6ceb74ef34d64fbcc7d1e426a",
+    "git_blob_sha": "a7e46837b3e48e252fecd493ced7ccf8e68740fb"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/emission_profiles.json",
+    "bytes": 661,
+    "sha256": "10046c3ae2206ae8589c51c9f7f5e13b49264ea1510fe6ee0973de368e0f7be8",
+    "git_blob_sha": "1805fff08fc12cbe707ed207c60ab7e76c260be5"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/materials.py",
+    "bytes": 26933,
+    "sha256": "4b6b9ca3549008a0b3ddb238c454e7f8a1c6f6cdef611c23eedc212d8e60ae82",
+    "git_blob_sha": "eb5689a6aa50c65d0a38bb4804ce020b7bf977d1"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/optical_profiles.json",
+    "bytes": 1337,
+    "sha256": "4b87059de455c3e78afe8bc269ee12ec5877db98746a92eed327dcb453114d6d",
+    "git_blob_sha": "6dd7b314bd84bd19e9e8bc75d246dd2ccdb8c0e8"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/sample_review_template.json",
+    "bytes": 645,
+    "sha256": "c0bfa21f5a52ffa57345727b4b56ff27e298585a2a7801604649780b568b16c3",
+    "git_blob_sha": "1e554455b2257a4d2a7fda3cef3022ba6a511b6f"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/store_importer.py",
+    "bytes": 64158,
+    "sha256": "81436281e12ae10dd31e4b9da17b5ecec2e6442d3f9fb43c12eb39d22a7dbd92",
+    "git_blob_sha": "6b63e42389fb32fb56f318671ebfc96237c8c59e"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/tests/TEST_RESULTS.txt",
+    "bytes": 7297,
+    "sha256": "9422b17fe5a75cd4f281e5cb643192ff706261ae3236c39afef6fde5c822294a",
+    "git_blob_sha": "2a3f671cd89a2faa35dbaf55e5582255b2d75489"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/tests/test_importer.py",
+    "bytes": 25371,
+    "sha256": "43b2c5a4e4c51529dd31291c8ec5603b577056545f724729318bc10d51be378e",
+    "git_blob_sha": "33471a465f4a27b608b340760576b49e90d8893f"
+  },
+  {
+    "path": "premium_store/unreal_handoff_v3/importer/tests/test_material_graph.py",
+    "bytes": 7722,
+    "sha256": "02ab4e7712dfc21ce8dbdff786fef3e3e73918602e6e1f4a75373441ee02f0b0",
+    "git_blob_sha": "7565843951dbcae2f93ce8b8e5ca9edf74e53a21"
   }
 ]

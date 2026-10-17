@@ -1,0 +1,25 @@
+{
+  "status": "PASS_FROZEN_ARCHIVE",
+  "archive": "EvergreenMarket_v3_Unreal_Handoff.zip",
+  "archive_sha256": "8046567922712d81f89f6418125bbc02defd9bd7b6e05e88aa9a6d1bc7baf32f",
+  "archive_bytes": 380086638,
+  "payload_files": 1284,
+  "inventory_files": 1283,
+  "crc": "PASS",
+  "safe_member_paths": true,
+  "extracted_unit_tests_returncode": 0,
+  "extracted_unit_tests_tail": "ion_blocks_before_creation) ... ok\ntest_unsupported_full_material_plan_blocks_before_creation (test_material_graph.MaterialGraphTests.test_unsupported_full_material_plan_blocks_before_creation) ... ok\n\n----------------------------------------------------------------------\nRan 58 tests in 0.399s\n\nOK\n",
+  "actual_extracted_package": {
+    "package_fingerprint": "d1758d97eb83aaed1013eb4279b63a1828c22ed2e2dc9f9e0a92c3d5ac5fb323",
+    "full_source_actors": 6593,
+    "eligible_actors": 5574,
+    "full_role_actors": 6678,
+    "sample_source_actors": 22,
+    "pinned_runtime_files": 484,
+    "no_unreal_execution": true
+  },
+  "errors": [],
+  "unreal_tested": false,
+  "windows_powershell_tested": false,
+  "scope": "Exact frozen ZIP size/SHA256, every member CRC/path/inventory SHA256, fresh extraction, extracted importer tests and full/sample material plans. No Unreal or Windows execution."
+}

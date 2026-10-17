@@ -14,3 +14,7 @@
 - [Exterior refinement v2](exterior_v2/): complete source with improved forest/facade plus isolated exterior overlay.
 
 The latest v3 delivery is complete Blender source plus an isolated visual overlay. The full v1 FBX/PBR handoff has not been regenerated to match v3. Unreal import, gameplay and performance validation remain outstanding.
+
+## Matching Unreal v3 handoff
+
+[Complete v3 export and sample-first Unreal importer](unreal_handoff_v3/) matches the approved refinement source. Extract to a fresh C:\Art folder and run the calibration/sample stage before approving full scene import. Actual Unreal execution remains to be validated in your project.

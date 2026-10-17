@@ -1,0 +1,59 @@
+{
+  "schema": "evergreen-v3-offline-importer-checks-v1",
+  "status": "PASS_OFFLINE_ONLY",
+  "time_utc": "2026-10-17T07:06:37.913428+00:00",
+  "unreal_execution_tested": false,
+  "package_fingerprint": "d1758d97eb83aaed1013eb4279b63a1828c22ed2e2dc9f9e0a92c3d5ac5fb323",
+  "approved_source_sha256": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519",
+  "tests": {
+    "unit_and_mock_passed": 58,
+    "evidence": "tests/TEST_RESULTS.txt"
+  },
+  "actual_export_validation": "PASS",
+  "actual_fbx_roundtrip_validation": "PASS",
+  "sample": {
+    "source_placements": 22,
+    "probe_actors": 1,
+    "eligible_actors": 8,
+    "total_role_actors": 108,
+    "asset_ids": [
+      "crushed_tomatoes",
+      "olive_oil",
+      "shopping_basket",
+      "premium_shelf_bay",
+      "cafe_chair",
+      "shipping_carton_large",
+      "shopping_cart",
+      "service_counter",
+      "main_floor",
+      "wall_left",
+      "pine_tall_v3_variant_2",
+      "visual_context_015",
+      "visual_context_073",
+      "visual_context_074",
+      "visual_context_075",
+      "visual_context_076",
+      "visual_context_077"
+    ],
+    "evidence": "SAMPLE_DRY_RUN.json"
+  },
+  "full": {
+    "canonical_assets": 264,
+    "source_placements": 6593,
+    "eligible_actors": 5574,
+    "total_role_actors": 6678,
+    "player_starts": 10,
+    "boundary_metadata_markers": 4,
+    "invisible_perimeter_barriers": 4,
+    "fixture_lights": 67,
+    "materials": 163,
+    "textures": 176,
+    "material_slots": 484,
+    "material_blockers": 0,
+    "evidence": "FULL_DRY_RUN.json"
+  },
+  "limitations": [
+    "Plans include producer-local absolute paths as offline evidence only. run() rebuilds paths from extracted package root.",
+    "Offline validation is not Unreal material/render/collision/gameplay verification. Sample and manual gates remain mandatory."
+  ]
+}

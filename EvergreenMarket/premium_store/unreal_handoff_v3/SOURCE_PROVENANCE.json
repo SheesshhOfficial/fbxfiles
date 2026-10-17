@@ -1,0 +1,12 @@
+{
+  "approved_source_filename": "YOU_WANT_IT_YOU_GET_IT_REFINED_v3.blend",
+  "approved_source_sha256": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519",
+  "source_commit": "4d69de9f8fad9823208b6836023a0e792db88069",
+  "source_folder_url": "https://github.com/SheesshhOfficial/fbxfiles/tree/4d69de9f8fad9823208b6836023a0e792db88069/EvergreenMarket/premium_store/refinement_v3",
+  "source_handling": "Read only; conversion, material baking and UV preparation happen in separate derivatives.",
+  "scope": "Complete approved v3 store, including v2 exterior and all individual placement records.",
+  "actual_unreal_execution": "NOT_RUN: no Unreal runtime in this workspace; target is user Unreal Engine 5.8 project.",
+  "pre_export_source_hash_verified": true,
+  "post_export_source_hash_verified": true,
+  "post_export_source_sha256": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519"
+}

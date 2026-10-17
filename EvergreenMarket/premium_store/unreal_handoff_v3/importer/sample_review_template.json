@@ -1,0 +1,16 @@
+{
+  "axis_probe_100_200_300_cm_and_handedness": false,
+  "source_layout_and_pivots": false,
+  "all_sample_copies_individually_selectable": false,
+  "materials_labels_normal_uvs_glass": false,
+  "shader_compile_errors_absent": false,
+  "player_capsule_floor_walls_openings": false,
+  "e_trace_shelf_basket_chair_cart_large_prop": false,
+  "trace_reachability_first_hit_occlusion": false,
+  "fixture_lighting_no_directional": false,
+  "spawn_and_boundary_review": false,
+  "save_close_reopen": false,
+  "copied_prop_collision_and_capsule_clearance": false,
+  "two_client_server_multicast": false,
+  "invisible_perimeter_contains_players": false
+}

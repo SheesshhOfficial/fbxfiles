@@ -1,0 +1,24 @@
+{
+  "schema": "evergreen-reviewed-emission-profiles-v1",
+  "policy": "Exact named project emission only. Multiplier is an artistic starting value, not a photometric conversion. Does not create or align any lights. Actual Unreal compilation/rendering remain untested.",
+  "profiles": {
+    "Warm opal diffuser": {
+      "expected_source_rgb": [
+        1,
+        0.77,
+        0.47
+      ],
+      "expected_source_strength": 3.2,
+      "artistic_multiplier": 3.2
+    },
+    "Cold opal diffuser": {
+      "expected_source_rgb": [
+        0.9,
+        0.95,
+        1.0
+      ],
+      "expected_source_strength": 3.2,
+      "artistic_multiplier": 3.2
+    }
+  }
+}

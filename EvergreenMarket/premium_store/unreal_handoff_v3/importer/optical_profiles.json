@@ -1,0 +1,46 @@
+{
+  "schema": "evergreen-reviewed-optical-profiles-v1",
+  "policy": "Exact-name, constant-transmission project materials only. Opacity is an artistic real-time approximation, not Blender transmission conversion or guaranteed Cycles parity. Closed physical shells use Default Lit, Translucent, Surface Forward Shading, source IOR, and backface culling. No project settings are changed.",
+  "profiles": {
+    "Glass clear": {
+      "expected_source_transmission": 1.0,
+      "opacity": 0.08
+    },
+    "Glass olive": {
+      "expected_source_transmission": 1.0,
+      "opacity": 0.18
+    },
+    "Olive oil": {
+      "expected_source_transmission": 0.5,
+      "opacity": 0.5
+    },
+    "Honey": {
+      "expected_source_transmission": 0.2,
+      "opacity": 0.8
+    },
+    "Strawberry preserve": {
+      "expected_source_transmission": 0.08,
+      "opacity": 0.92
+    },
+    "FRESH_ClearPET": {
+      "expected_source_transmission": 0.96,
+      "opacity": 0.06
+    },
+    "FRESH_Film": {
+      "expected_source_transmission": 0.98,
+      "opacity": 0.04
+    },
+    "Wine red": {
+      "expected_source_transmission": 0.2,
+      "opacity": 0.8
+    },
+    "Wine white": {
+      "expected_source_transmission": 0.35,
+      "opacity": 0.65
+    },
+    "Water fill": {
+      "expected_source_transmission": 0.95,
+      "opacity": 0.05
+    }
+  }
+}
