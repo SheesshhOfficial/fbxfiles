@@ -1,8 +1,8 @@
 # Full carnival import for Unreal Engine 5.7.4
 
-This corrected importer creates a new, unsaved world and `/Game/AbandonedCarnivalFull57_Corrected`. The earlier full attempt stopped on the first asymmetric tile: its Y bounds were reflected, and a later read confirmed the reflection persisted after compilation. The three earlier calibration props had symmetric Y bounds, so their passing bounds checks did not establish handedness. The corrected full scene has not yet passed an Unreal runtime or visual review.
+This corrected importer creates a new, unsaved world and `/Game/AbandonedCarnivalFull57_Corrected`. The earlier full attempt stopped on the first asymmetric tile: its Y bounds were reflected, and a later read confirmed the reflection persisted after compilation. The three earlier calibration props had symmetric Y bounds, so their passing bounds checks did not establish handedness. The corrected axis transport has now passed two asymmetric native Unreal sentinels, including signed MeshDescription landmarks with zero error. The full scene has not yet completed import or visual/gameplay review.
 
-The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left untouched. Do not rerun the old importer or delete those assets automatically. This revision uses a separate namespace and retains the original source FBXs, Blender source and unchanged vendor helpers.
+The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left untouched. Do not rerun the old importer or delete those assets automatically. This revision uses a separate namespace and retains the original source FBXs, Blender source and the calibration map. A strict wrapper around the unchanged vendored validator now recognizes the observed legacy dot-to-underscore spelling while preserving strict order and rejecting ambiguous aliases.
 
 ## Exact scope
 
@@ -11,11 +11,25 @@ The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left u
 - 59 materials, including one documented translucent glass approximation; 41 texture/usage assets.
 - 10 native PlayerStarts and 41 source lights: 33 PointLights, 7 RectLights, 1 DirectionalLight.
 - Total: 281 content assets and 247 authored actors, plus Unreal's world infrastructure.
-- No Blueprints, current-map editing, existing-asset replacement, save, delete, cleanup, automatic retry, or renderer/exposure setting changes. The saved calibration content stays separate.
+- No Blueprints, existing-asset replacement, save, delete, cleanup, automatic retry, or renderer/exposure setting changes. Fresh import creates a new world; explicit recovery continues only its verified empty partial world. The saved calibration content stays separate.
 
 All original FBX, texture and metadata files are checked against the pinned original FILE_MANIFEST. The original source's 15 parts are verified by their hashes and their combined source hash. JSON/Python pins permit only CRLF-to-LF normalization; binary hashes remain exact. Additional importer files do not require changing the frozen FILE_MANIFEST.
 
-## Before running
+## Resume the verified second-attempt checkpoint
+
+The second run created 41 textures, 59 materials and 68 meshes, then stopped on the first teddy because Unreal changed `.001` to `_001` while retaining spaces in imported material-slot names. The axis correction worked; this was an overly narrow name validator. No actors were created.
+
+For that exact unchanged partial attempt, keep Unreal open on its empty `/Temp/Untitled_3.Untitled` world. Do not rerun `import_full`, delete partial assets, or save/rename the temporary world before recovery. Stop Play/Simulate. Pull the updated helper files, then use this explicit recovery command:
+
+```python
+import sys,json,importlib; sys.dont_write_bytecode=True; root=r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0,root+r"\full_import57"); import carnival_full_import57 as f; f=importlib.reload(f); full_report=f.resume_full(root); print(json.dumps({k:full_report.get(k) for k in ("status","world_path","counts","validation","errors")},indent=2))
+```
+
+Recovery accepts only the known checkpoint: the exact empty temporary world, exact 168-asset inventory, pinned source/cache bytes and valid texture/material/mesh readbacks. The 65 already assigned meshes must retain their exact materials. Both early sentinels and the failed teddy may retain only approved importer defaults; recovery finishes their assignments. It imports the 113 missing meshes, then places the scene. Unexpected assets, edits, actors, sources, collision, slots or unrelated dirty work block recovery before mutation.
+
+Existing material settings are checked; the successful creation ledger supports their graph provenance, but material graph retraversal and rendered appearance are not verified. Do not use this recovery for a modified or different partial attempt. No automatic deletion, asset replacement, save or rollback occurs. If blocked, share the report rather than repeating the command. Expected success is `FULL_RESUME_CREATED_UNSAVED`; a pre-mutation mismatch returns `FULL_RESUME_BLOCKED`, while an interruption after continuation reports `FULL_RESUME_FAILED_PARTIAL`. After success, inspect and manually save to `/Game/AbandonedCarnivalFull57_Corrected/Maps/AbandonedCarnivalFull57`.
+
+## Before a fresh import
 
 1. Pull the approved `full_import57` folder into your existing package root. Keep all nine delivered files together; no dependency installation is required.
 2. Use Unreal **5.7.4**, with the same Editor Python setup used for calibration. Stop Play/Simulate.

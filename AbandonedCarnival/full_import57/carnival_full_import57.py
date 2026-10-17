@@ -1,7 +1,8 @@
 """Full frozen carnival UE5.7.4 import into a new unsaved world/namespace.
 
 No module-import side effects. preflight/validate are read-only. import_full is
-explicit mutation. No saving, deletion, replacement, fallback or automatic resume.
+explicit mutation. resume_full is an explicit, single-checkpoint recovery only.
+No saving, deletion, replacement, fallback or automatic resume.
 """
 from __future__ import annotations
 import hashlib
@@ -17,6 +18,18 @@ MAP_PATH = DEST + "/Maps/AbandonedCarnivalFull57"
 TAG = "AbandonedCarnivalFull57_Corrected"
 AXIS_ADAPTER = "counter_y_fbx7400_v1"
 SENTINELS = ("SM_Env_Tile_m3_m4", "SM_OpenToolbox_20d6fff596")
+# This descriptor is derived from the supplied native failure ledger. No host
+# filesystem paths or log content are published. It is not a graph fingerprint.
+# Projection uses compact sorted-key JSON: schema/status/namespace/world_path/
+# stage/axis_sentinels_passed; created_materials(actual,source_name,status),
+# created_textures(actual_objects,status,sha256), created_meshes(name,status,actual),
+# inventory(namespace_assets_on_failure) and actors. No live-log authentication.
+RESUME_WORLD = "/Temp/Untitled_3.Untitled"
+RESUME_FAILED_MESH = "SM_TeddyPrize_7adfe5d511"
+RESUME_CHECKPOINT = dict(id="native_teddy_slot_failure_20261017_220639",
+    creation_ledger_projection_sha256="bd57a669a3bb5e06a0bdbd5f4b07a04d79842c03d3d326584ab333b02862565f",
+    textures=41,materials=59,meshes=68,assigned_meshes=65,unassigned_meshes=3,authored_actors=0,
+    source_error="Aged tan plush fabric_001 != Aged tan plush fabric.001")
 COUNTS = dict(mesh_assets=181, prop_assets=138, prop_actors=153, environment_assets=43,
               environment_actors=43, materials=59, textures=41, player_starts=10, lights=41, authored_actors=247)
 VENDORS = {"carnival_calibration57.py": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171",
@@ -103,6 +116,7 @@ def plan(package_root):
     matrows=materials["materials"];names={r["source_name"] for r in matrows}
     require(len(names)==59 and len({r["asset_name"] for r in matrows})==59,"Duplicate material identity")
     require(all(name in names for a in assets for name in a["materials"]),"Unresolved source material slot")
+    for asset in assets: asset["material_name_universe"]=sorted(names)
     textures={}
     for r in matrows:
         require(re.fullmatch(r"M_[A-Za-z0-9_]+",r["asset_name"]),"Unsafe material name")
@@ -610,6 +624,35 @@ def _derived_source(u,c,item,report=None,write=False):
     return result
 
 
+def _slot_aliases(source):
+    """Only source text and two explicit, source-derived legacy FBX spellings."""
+    return {source,source.replace(".","_"),re.sub(r"[^A-Za-z0-9_]","_",source)}
+
+
+def _check_slot_names(actual,sources,universe=None):
+    require(len(actual)==len(sources),"Material-slot count mismatch")
+    owners={}
+    for source in set(sources)|set(universe or ()):
+        for alias in _slot_aliases(source): owners.setdefault(alias,set()).add(source)
+    for got,want in zip(actual,sources):
+        require(got in _slot_aliases(want),"Imported material-slot name/order mismatch: "+got+" != "+want)
+        require(owners[got]=={want},"Ambiguous imported material-slot alias collision: "+got)
+
+
+def _validate_mesh(u,c,mesh,item):
+    """Extend only slot-name compatibility; retain every frozen geometry validator."""
+    require(isinstance(mesh,u.StaticMesh),"Expected StaticMesh: "+item["asset_name"])
+    slots=mesh.get_editor_property("static_materials")
+    names=[str(slot.get_editor_property("imported_material_slot_name")) for slot in slots]
+    _check_slot_names(names,item["materials"],item.get("material_name_universe"))
+    # The original vendor now sees the already strictly verified actual spelling.
+    # No mesh/slot/source metadata is changed, and all its other gates still run.
+    result=c._validate_mesh(u,mesh,dict(item,materials=names))
+    result["source_materials"]=list(item["materials"])
+    result["slot_name_policy"]="ORDERED_UNAMBIGUOUS_SOURCE_DOT_OR_LEGACY_ASCII"
+    return result
+
+
 def _import_mesh(u,c,item,report):
     target=DEST+"/"+("Props" if item["kind"]=="props" else "Environment")+"/"+item["asset_name"]
     require(not u.EditorAssetLibrary.does_asset_exist(target),"Mesh target already exists: "+target)
@@ -631,7 +674,7 @@ def _import_mesh(u,c,item,report):
     ss=u.get_editor_subsystem(u.StaticMeshEditorSubsystem);build=ss.get_lod_build_settings(mesh,0);c._set_readback(build,c.BUILD_FIELDS);ss.set_lod_build_settings(mesh,0,build)
     body=mesh.get_editor_property("body_setup");require(body is not None,"Missing BodySetup")
     c._set_readback(body,dict(collision_trace_flag=u.CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX))
-    row.update(c._validate_mesh(u,mesh,item))
+    row.update(_validate_mesh(u,c,mesh,item))
     if item["asset_name"] in SENTINELS:row["signed_geometry_probe"]=_signed_landmark_probe(u,c,mesh,item)
     row["status"]="GEOMETRY_COLLISION_CHECKED_UNSAVED";return mesh
 
@@ -820,6 +863,178 @@ def import_full(package_root):
         raise FullImportError(r) from exc
 
 
+def _asset_path(item):
+    return DEST+("/Props/" if item["kind"]=="props" else "/Environment/")+item["asset_name"]
+
+
+def _object_path(path):
+    return path+"."+path.rsplit("/",1)[1]
+
+
+def _check_reused_material(u,m,record):
+    path=m.MATS+"/"+record["asset_name"];mat=u.load_asset(path)
+    require(isinstance(mat,u.Material) and mat.get_path_name()==_object_path(path),"Reused material identity/type differs: "+path)
+    expected=dict(two_sided=record["two_sided"],shading_model=u.MaterialShadingModel.MSM_DEFAULT_LIT,
+                  blend_mode=u.BlendMode.BLEND_TRANSLUCENT if record["glass_approximation"] else u.BlendMode.BLEND_OPAQUE)
+    if record["glass_approximation"]:
+        expected.update(refraction_method=u.RefractionMode.RM_INDEX_OF_REFRACTION,
+                        translucency_lighting_mode=u.TranslucencyLightingMode.TLM_SURFACE_PER_PIXEL_LIGHTING)
+    for key,value in expected.items():require(mat.get_editor_property(key)==value,"Reused material setting differs: "+path+": "+key)
+    return mat
+
+
+def _check_reused_texture(u,c,m,record):
+    path=m.TEX+"/"+record["asset_name"];tex=u.load_asset(path)
+    require(isinstance(tex,u.Texture2D) and tex.get_path_name()==_object_path(path),"Reused texture identity/type differs: "+path)
+    require(c._sha(Path(record["filename"]))==record["sha256"],"Reused texture source hash differs")
+    data=tex.get_editor_property("asset_import_data")
+    require(isinstance(data,u.AssetImportData) and str(data.get_class().get_name())=="AssetImportData","Reused texture importer provenance differs")
+    files=list(data.extract_filenames())
+    require(len(files)==1 and Path(str(files[0])).resolve()==Path(record["filename"]).resolve(),"Reused texture source path differs")
+    compression={"base_color":u.TextureCompressionSettings.TC_DEFAULT,"normal":u.TextureCompressionSettings.TC_NORMALMAP,"roughness":u.TextureCompressionSettings.TC_MASKS}[record["usage"]]
+    for key,value in dict(srgb=record["usage"]=="base_color",compression_settings=compression,
+                          flip_green_channel=record["flip_green"],virtual_texture_streaming=False).items():
+        require(tex.get_editor_property(key)==value,"Reused texture setting differs: "+path+": "+key)
+    return tex
+
+
+def _resume_inventory(p,m):
+    failed=[i for i,a in enumerate(p["assets"]) if a["asset_name"]==RESUME_FAILED_MESH]
+    require(failed==[65],"Pinned recovery mesh order differs")
+    assigned={a["asset_name"] for a in p["assets"][:65]}
+    pending=set(SENTINELS)|{RESUME_FAILED_MESH}
+    names=assigned|pending;require(len(assigned)==65 and len(names)==68,"Recovery checkpoint mesh count differs")
+    meshes={a["asset_name"]:a for a in p["assets"] if a["asset_name"] in names}
+    require(len(meshes)==68,"Recovery checkpoint mesh missing from source")
+    paths={_asset_path(a) for a in meshes.values()}
+    paths.update(m.TEX+"/"+t["asset_name"] for t in p["textures"])
+    paths.update(m.MATS+"/"+a["asset_name"] for a in p["materials"])
+    require(len(paths)==168,"Recovery checkpoint asset count differs")
+    return meshes,assigned,pending,paths
+
+
+def _resume_physical_guard(u,paths):
+    """Reject unregistered on-disk targets and every owned-namespace symlink."""
+    content=Path(str(u.Paths.convert_relative_path_to_full(u.Paths.project_content_dir())))
+    require(content.is_absolute() and content.is_dir() and not content.is_symlink(),"Cannot verify physical Content directory for resume")
+    name=DEST.removeprefix("/Game/")
+    roots=[x for x in content.iterdir() if x.name.casefold()==name.casefold()]
+    require(len(roots)<=1,"Ambiguous physical namespace case variants")
+    if not roots:return dict(files_checked=0)
+    root=roots[0];require(not root.is_symlink() and root.is_dir(),"Unsafe physical resume namespace")
+    allowed={x.casefold() for x in paths};pending=[root];count=0
+    while pending:
+        directory=pending.pop()
+        for child in directory.iterdir():
+            require(not child.is_symlink(),"Symlink in physical resume namespace: "+str(child))
+            if child.is_dir():pending.append(child);continue
+            require(child.is_file(),"Unexpected non-file in physical resume namespace")
+            package=DEST+"/"+child.relative_to(root).with_suffix("").as_posix()
+            require(child.suffix.casefold() in (".uasset",".uexp",".ubulk") and package.casefold() in allowed,
+                    "Unregistered or unexpected physical asset target blocks resume: "+str(child))
+            count+=1
+    return dict(files_checked=count)
+
+
+def _resume_guard(u,c,m,p):
+    """Read-only, single known checkpoint. No generic resume/repair/replacement."""
+    editor=u.get_editor_subsystem(u.UnrealEditorSubsystem)
+    require(editor.get_game_world() is None,"Stop Play/Simulate before resume")
+    world=editor.get_editor_world()
+    require(world is not None and isinstance(world,u.World) and world.get_path_name()==RESUME_WORLD,
+            "Resume requires the same empty failure world "+RESUME_WORLD)
+    actors=list(u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors())
+    require(all(str(a.get_class().get_name()) in ("WorldSettings","Brush") for a in actors),
+            "Resume requires zero authored actors; no actor-stage resume is supported")
+    items,assigned,pending,paths=_resume_inventory(p,m)
+    actual=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
+    require(len(actual)==168 and set(actual)=={_object_path(x) for x in paths},
+            "Resume namespace inventory differs from the exact 168-asset checkpoint")
+    dirty_maps=[str(x.get_path_name()) for x in u.EditorLoadingAndSavingUtils.get_dirty_map_packages()]
+    dirty_content=[str(x.get_path_name()) for x in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+    require(all(x==RESUME_WORLD.split(".")[0] for x in dirty_maps),"Unrelated dirty map blocks resume")
+    require(all(x in paths for x in dirty_content),"Unrelated dirty content blocks resume")
+    _cache_root(u);physical=_resume_physical_guard(u,paths)
+    materials={a["source_name"]:_check_reused_material(u,m,a) for a in p["materials"]}
+    textures={(t["path"],t["usage"]):_check_reused_texture(u,c,m,t) for t in p["textures"]}
+    default=u.load_asset("/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial")
+    require(isinstance(default,u.MaterialInterface),"Cannot verify native default material")
+    meshes={};checks=[]
+    for name,item in items.items():
+        u.log("[CarnivalFull57] Verify reused mesh %d/68: %s"%(len(meshes)+1,name))
+        path=_asset_path(item);mesh=u.load_asset(path)
+        require(isinstance(mesh,u.StaticMesh) and mesh.get_path_name()==_object_path(path),"Reused mesh identity/type differs: "+name)
+        derived=_derived_source(u,c,item,write=False);checked=_validate_mesh(u,c,mesh,derived)
+        if name in SENTINELS:checked["signed_geometry_probe"]=_signed_landmark_probe(u,c,mesh,derived)
+        for slot,source in enumerate(item["materials"]):
+            current=mesh.get_material(slot)
+            if name in assigned:require(current==materials[source],"Completed mesh material assignment differs: "+name)
+            else:require(current is None or current==default,"Unexpected material on unassigned checkpoint mesh: "+name)
+        checked["assignment_state"]="VERIFIED_COMPLETED" if name in assigned else "VERIFIED_NATIVE_DEFAULTS"
+        checks.append(checked);meshes[name]=mesh
+    return dict(world=world,meshes=meshes,materials=materials,textures=textures,assigned=assigned,pending=pending,
+                checks=checks,dirty_maps=dirty_maps,dirty_content=dirty_content,default=default,physical=physical)
+
+
+def resume_full(package_root):
+    """EXPLICIT recovery only for the unchanged, empty, 168-asset Teddy checkpoint.
+
+    Rechecks every reusable asset before mutation. Preserves existing material
+    graphs without claiming graph retraversal or a visual/shader pass. Never
+    creates a new map, recreates existing assets, saves, deletes or overwrites.
+    A different/advanced partial checkpoint is blocked and requires review.
+    """
+    r=_report("resume_full");r["resume_checkpoint"]=dict(RESUME_CHECKPOINT)
+    r["material_graph_retraversal"]="NOT_PERFORMED_EXISTING_GRAPHS_PRESERVED"
+    r["material_graph_evidence"]="Original native construction ledger completed 59 graphs; current graph contents are not independently fingerprinted."
+    r["reused_assets"]=[];r["completed_assignment_changes"]=[]
+    try:
+        c,m,p=plan(package_root);u=importlib.import_module("unreal");r["engine_version"]=_api(u,c,m)
+        r.update(source_sha256=p["source_sha256"],verified_file_count=len(p["verified_files"]),normalized_json_files=p["normalized_json_files"])
+        c._options(u);state=_resume_guard(u,c,m,p);world=state["world"]
+        r.update(world_path=world.get_path_name(),reused_mesh_checks=state["checks"],dirty_maps=state["dirty_maps"],dirty_content=state["dirty_content"],physical_namespace_check=state["physical"])
+        r["reused_assets"]=[x.get_path_name() for group in (state["meshes"],state["materials"],state["textures"]) for x in group.values()]
+        meshes=state["meshes"];materials=state["materials"];assets={a["asset_name"]:a for a in p["assets"]}
+        def progress(kind,index,total,name):
+            require(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()==world,"Editor world changed during resume; stopping without cleanup")
+            r["stage"]=kind+":"+name;u.log("[CarnivalFull57] %s %d/%d: %s"%(kind,index,total,name))
+        missing=[a for a in p["assets"] if a["asset_name"] not in meshes]
+        require(len(missing)==113,"Recovery missing-mesh count differs")
+        # All reusable assets and assignments passed before the first mutation.
+        for i,a in enumerate(missing,1):
+            progress("resume missing mesh",i,113,a["asset_name"]);r["mutation_started"]=True
+            mesh=_import_mesh(u,c,a,r)
+            for slot,source in enumerate(a["materials"]):
+                mesh.set_material(slot,materials[source]);require(mesh.get_material(slot)==materials[source],"New mesh material assignment failed")
+            meshes[a["asset_name"]]=mesh
+        for i,name in enumerate(sorted(state["pending"]),1):
+            progress("complete pending assignments",i,3,name);mesh=meshes[name]
+            entry=dict(name=name,status="ATTEMPTED",slots=[]);r["completed_assignment_changes"].append(entry)
+            for slot,source in enumerate(assets[name]["materials"]):
+                before=mesh.get_material(slot)
+                require(before is None or before==state["default"],"Pending mesh material changed during resume: "+name)
+                entry["slots"].append(dict(slot=slot,previous=before.get_path_name() if before else None,target=materials[source].get_path_name()))
+                mesh.set_material(slot,materials[source]);require(mesh.get_material(slot)==materials[source],"Pending mesh material assignment failed")
+            entry["status"]="ASSIGNED_UNSAVED"
+        for i,pmt in enumerate(p["placements"],1):
+            progress("mesh actor",i,196,pmt["source_object"]);_spawn_mesh(u,c,assets[pmt["asset_name"]],meshes[pmt["asset_name"]],pmt,r)
+        for i,row in enumerate(p["metadata"],1):progress("metadata actor",i,51,row["source_object"]);_spawn_metadata(u,c,row,r)
+        r["stage"]="read_only_validation";r["validation"]=_validate_current(u,c,m,p)
+        require(r["validation"]["passed"],"Post-resume structural validation failed: "+repr(r["validation"]["errors"]))
+        r.update(status="FULL_RESUME_CREATED_UNSAVED",partial=False,stage="complete")
+        u.log("[CarnivalFull57] Resume complete: reused 168 assets, created 113 meshes and 247 actors. No save performed.")
+        return r
+    except Exception as exc:
+        if r["mutation_started"]:
+            try:
+                r["namespace_assets_on_failure"]=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
+                r["current_actor_paths_on_failure"]=[x.get_path_name() for x in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()]
+            except Exception as snapshot:r["snapshot_error"]=str(snapshot)
+        r.update(status="FULL_RESUME_FAILED_PARTIAL" if r["mutation_started"] else "FULL_RESUME_BLOCKED",partial=r["mutation_started"],errors=[str(exc)],
+                 recovery="No save, deletion, replacement or cleanup was attempted. Preserve this state and report the ledger; do not retry a different partial checkpoint.")
+        raise FullImportError(r) from exc
+
+
 def _validate_current(u,c,m,p):
     out=dict(passed=False,errors=[],checked_meshes=0,checked_materials=0,checked_textures=0,checked_actors=0,material_graph_retraversal="NOT_PERFORMED",shader_compilation="NOT_VERIFIED",visual_pass=False)
     def attempt(label,fn):
@@ -850,7 +1065,7 @@ def _validate_current(u,c,m,p):
     for a in p["assets"]:
         path=DEST+("/Props/" if a["kind"]=="props" else "/Environment/")+a["asset_name"];expected_assets.add(path)
         def check(a=a,path=path):
-            mesh=u.load_asset(path);derived=_derived_source(u,c,a,write=False);c._validate_mesh(u,mesh,derived)
+            mesh=u.load_asset(path);derived=_derived_source(u,c,a,write=False);_validate_mesh(u,c,mesh,derived)
             for slot,name in enumerate(a["materials"]):require(name in material_objects and mesh.get_material(slot)==material_objects[name],"Material slot assignment differs")
             out["checked_meshes"]+=1
         attempt(path,check)

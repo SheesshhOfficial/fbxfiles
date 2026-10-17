@@ -13,6 +13,7 @@ import json
 import math
 import os
 from pathlib import Path
+import re
 import shutil
 import sys
 import struct
@@ -89,6 +90,21 @@ class ContractTests(unittest.TestCase):
         bad = [n.func.attr for n in ast.walk(tree) if isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute)
                and n.func.attr.startswith(forbidden)]
         self.assertEqual(bad, [])
+
+    def test_slot_aliases_are_only_three_explicit_source_spellings(self):
+        self.assertEqual(f._slot_aliases('Aged tan plush fabric.001'),
+                         {'Aged tan plush fabric.001', 'Aged tan plush fabric_001', 'Aged_tan_plush_fabric_001'})
+
+    def test_slot_alias_collision_in_another_mesh_material_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, '[Aa]mbigu|[Cc]ollision'):
+            f._check_slot_names(['A_B'], ['A.B'], universe=['A.B', 'A_B'])
+
+    def test_exact_slot_name_cannot_hide_cross_source_alias_collision(self):
+        with self.assertRaisesRegex(ValueError, '[Aa]mbigu|[Cc]ollision'):
+            f._check_slot_names(['A_B'], ['A_B'], universe=['A.B', 'A_B'])
+
+    def test_repeated_same_source_slots_are_not_ambiguous(self):
+        f._check_slot_names(['A_B', 'A_B'], ['A.B', 'A.B'], universe=['A.B', 'A.B'])
 
     @unittest.skipUnless(os.environ.get('CARNIVAL_PACKAGE_ROOT'), 'optional real pinned-source integration; set CARNIVAL_PACKAGE_ROOT')
     def test_real_frozen_package(self):
@@ -523,6 +539,97 @@ class MockEngineTests(unittest.TestCase):
         with self.assertRaisesRegex(Exception, '[Ss]lot|[Mm]aterial'):
             self.mesh()
 
+    def teddy_item(self):
+        return next(a for a in self.p['assets'] if a['materials'][0] == 'Aged tan plush fabric.001')
+
+    def set_imported_slot_names(self, names):
+        def mutate(mesh):
+            mesh.props['static_materials'] = [g.Obj(imported_material_slot_name=name) for name in names]
+        self.u.import_mutator = mutate
+
+    def test_original_material_slot_names_remain_valid(self):
+        item = self.teddy_item()
+        mesh, report = self.mesh(item)
+        self.assertEqual(report['meshes'][0]['imported_material_slot_names'], item['materials'])
+        self.assertEqual([slot.props['imported_material_slot_name'] for slot in mesh.props['static_materials']], item['materials'])
+
+    def test_native_dot_only_slot_alias_preserves_spaces_and_source(self):
+        item = self.teddy_item()
+        before = copy.deepcopy(item)
+        names = [name.replace('.', '_') for name in item['materials']]
+        self.assertEqual(names[0], 'Aged tan plush fabric_001')
+        self.set_imported_slot_names(names)
+        mesh, report = self.mesh(item)
+        self.assertEqual(report['meshes'][0]['imported_material_slot_names'], names)
+        self.assertEqual([slot.props['imported_material_slot_name'] for slot in mesh.props['static_materials']], names)
+        self.assertEqual(item, before)
+
+    def test_legacy_all_nonalphanumeric_slot_alias_remains_valid(self):
+        item = self.teddy_item()
+        names = [re.sub(r'[^A-Za-z0-9_]', '_', name) for name in item['materials']]
+        self.set_imported_slot_names(names)
+        _, report = self.mesh(item)
+        self.assertEqual(report['meshes'][0]['imported_material_slot_names'], names)
+
+    def test_mixed_exact_and_known_slot_aliases_remain_valid(self):
+        item = self.teddy_item()
+        names = [item['materials'][0].replace('.', '_'), item['materials'][1],
+                 re.sub(r'[^A-Za-z0-9_]', '_', item['materials'][2])]
+        self.set_imported_slot_names(names)
+        _, report = self.mesh(item)
+        self.assertEqual(report['meshes'][0]['imported_material_slot_names'], names)
+
+    def test_known_slot_aliases_still_require_exact_slot_order(self):
+        item = self.teddy_item()
+        names = [name.replace('.', '_') for name in item['materials']]
+        names[0], names[2] = names[2], names[0]
+        self.set_imported_slot_names(names)
+        with self.assertRaisesRegex(Exception, '[Ss]lot|[Mm]aterial'):
+            self.mesh(item)
+
+    def test_slot_alias_does_not_accept_case_suffix_or_partial_normalization(self):
+        item = self.teddy_item()
+        for wrong in ('aged tan plush fabric_001', 'Aged tan plush fabric_001_1',
+                      'Aged_tan plush fabric_001', 'Aged tan plush fabric_002',
+                      'Aged tan plush fabric001'):
+            with self.subTest(wrong=wrong):
+                self.u.assets.clear()
+                self.set_imported_slot_names([wrong] + item['materials'][1:])
+                with self.assertRaisesRegex(Exception, '[Ss]lot|[Mm]aterial'):
+                    self.mesh(item)
+
+    def test_cross_source_slot_alias_collision_is_rejected(self):
+        item = self.teddy_item()
+        item['materials'] = ['A.B', 'A_B']
+        self.set_imported_slot_names(['A_B', 'A_B'])
+        with self.assertRaisesRegex(Exception, '[Aa]mbigu|[Cc]ollision'):
+            self.mesh(item)
+
+    def test_cross_source_legacy_slot_alias_collision_is_rejected(self):
+        item = self.teddy_item()
+        item['materials'] = ['A B', 'A-B']
+        self.set_imported_slot_names(['A_B', 'A_B'])
+        with self.assertRaisesRegex(Exception, '[Aa]mbigu|[Cc]ollision'):
+            self.mesh(item)
+
+    def test_readonly_validation_accepts_dot_only_aliases_without_rewriting(self):
+        report = self.import_success()
+        self.assertEqual(report['status'], 'FULL_IMPORT_CREATED_UNSAVED')
+        changed = []
+        for mesh in self.u.assets.values():
+            if isinstance(mesh, g.StaticMesh):
+                for slot in mesh.props['static_materials']:
+                    old = slot.props['imported_material_slot_name']
+                    if '.' in old:
+                        slot.props['imported_material_slot_name'] = old.replace('.', '_')
+                        changed.append((slot, slot.props['imported_material_slot_name']))
+        self.assertGreater(len(changed), 0)
+        self.u.events.clear()
+        report = f.validate(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_STRUCTURE_PASS', report)
+        self.assertTrue(all(slot.props['imported_material_slot_name'] == name for slot, name in changed))
+        self.assertEqual(self.u.events, [])
+
     def test_texture_hash_rechecked_before_import(self):
         texture = self.p['textures'][0]
         Path(texture['filename']).write_bytes(b'changed texture')
@@ -763,6 +870,322 @@ class MockEngineTests(unittest.TestCase):
         self.assertFalse(cache.exists())
         self.assertEqual({str(p): p.read_bytes() for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}, remaining)
         self.assertEqual(self.u.events, [])
+
+    def resume_checkpoint(self):
+        """Replay import up to the independently fixed native Teddy failure boundary.
+
+        This fixture exercises the same importer and real fake-engine object inventory.
+        It does not claim the mock proves the historical native checkpoint is intact.
+        """
+        real_import = f._import_mesh
+        def stop_after_teddy(u, core, item, report):
+            mesh = real_import(u, core, item, report)
+            if item['asset_name'] == 'SM_TeddyPrize_7adfe5d511':
+                raise ValueError('injected historical Teddy slot-name checkpoint')
+            return mesh
+        with patch.object(f, '_import_mesh', side_effect=stop_after_teddy):
+            with self.assertRaises(f.FullImportError) as caught:
+                f.import_full(self.tmp.name)
+        self.assertEqual(caught.exception.report['status'], 'FULL_IMPORT_FAILED_PARTIAL')
+        self.assertEqual(len(self.u.assets), 168)
+        self.assertEqual(sum(isinstance(o, g.StaticMesh) for o in self.u.assets.values()), 68)
+        self.assertEqual(sum(isinstance(o, g.Texture2D) for o in self.u.assets.values()), 41)
+        self.assertEqual(sum(isinstance(o, g.Material) for o in self.u.assets.values()), 59)
+        self.assertEqual(self.u.actors, [])
+        self.u.world.path = '/Temp/Untitled_3.Untitled'
+        self.u.existing_namespace = True
+        dirty_map = g.Obj(); dirty_map.path = '/Temp/Untitled_3'
+        self.u.dirty_maps = [dirty_map]
+        self.u.dirty_content = []
+        for path in self.u.assets:
+            package = g.Obj(); package.path = path
+            self.u.dirty_content.append(package)
+        for mesh in self.u.assets.values():
+            if isinstance(mesh, g.StaticMesh):
+                for slot in mesh.props['static_materials']:
+                    slot.props['imported_material_slot_name'] = slot.props['imported_material_slot_name'].replace('.', '_')
+        self.u.events.clear()
+        self.u.import_tasks.clear()
+        return caught.exception.report
+
+    def resume_mesh(self, name=None):
+        name = name or self.p['assets'][0]['asset_name']
+        return next(o for o in self.u.assets.values() if isinstance(o, g.StaticMesh) and o.item['asset_name'] == name)
+
+    def assert_resume_blocked(self, expected=None):
+        self.u.events.clear()
+        before_assets = dict(self.u.assets)
+        before_actors = list(self.u.actors)
+        before_world = self.u.world
+        before_files = {str(p): (p.read_bytes(), p.stat().st_mtime_ns)
+                        for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}
+        before_assignments = {path: list(obj.materials) for path, obj in self.u.assets.items() if isinstance(obj, g.StaticMesh)}
+        with self.assertRaises(f.FullImportError) as caught:
+            f.resume_full(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESUME_BLOCKED', report)
+        self.assertFalse(report['mutation_started'])
+        if expected:
+            self.assertRegex(' '.join(report['errors']), expected)
+        self.assertEqual(self.u.events, [])
+        self.assertEqual(self.u.assets, before_assets)
+        self.assertEqual(self.u.actors, before_actors)
+        self.assertIs(self.u.world, before_world)
+        self.assertEqual({str(p): (p.read_bytes(), p.stat().st_mtime_ns)
+                          for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}, before_files)
+        self.assertEqual({path: list(obj.materials) for path, obj in self.u.assets.items() if isinstance(obj, g.StaticMesh)}, before_assignments)
+        return report
+
+    def test_resume_exact_checkpoint_imports_only_missing_meshes_in_same_world(self):
+        self.resume_checkpoint()
+        existing = dict(self.u.assets)
+        completed = [self.resume_mesh(item['asset_name']) for item in self.p['assets'][:65]]
+        completed_setters = [list(mesh.material_set_calls) for mesh in completed]
+        world = self.u.world
+        old_files = {str(p): (p.read_bytes(), p.stat().st_mtime_ns)
+                     for p in Path(self.u.saved_dir).rglob('*') if p.is_file()}
+        report = f.resume_full(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
+        self.assertIs(self.u.world, world)
+        self.assertTrue(all(self.u.assets[path] is obj for path, obj in existing.items()))
+        self.assertEqual(len(self.u.assets), 281)
+        self.assertEqual(len(self.u.actors), 247)
+        self.assertEqual(len(report['reused_assets']), 168)
+        self.assertEqual(len(report['meshes']), 113)
+        self.assertEqual(report['textures'], [])
+        self.assertEqual(report['materials'], [])
+        self.assertEqual({row['name'] for row in report['completed_assignment_changes']},
+                         set(f.SENTINELS) | {'SM_TeddyPrize_7adfe5d511'})
+        self.assertEqual([mesh.material_set_calls for mesh in completed], completed_setters)
+        self.assertEqual(self.u.events.count('import_mesh'), 113)
+        self.assertEqual(len(self.u.import_tasks), 113)
+        self.assertTrue(all(isinstance(task.props['factory'], g.FbxFactory) for task in self.u.import_tasks))
+        for forbidden in ('import_texture', 'create_material', 'create_material_expression',
+                          'connect_material_property', 'connect_material_expressions',
+                          'request_shader_compile', 'new_blank_map'):
+            self.assertNotIn(forbidden, self.u.events)
+        self.assertEqual({path: (Path(path).read_bytes(), Path(path).stat().st_mtime_ns) for path in old_files}, old_files)
+        self.assertFalse(any('save' in e or 'delete' in e or 'destroy' in e for e in self.u.events))
+        self.assertEqual(report['saves_performed'], 0)
+        self.assertFalse(report['visual_pass'])
+        self.assertEqual(report['shader_compilation'], 'NOT_VERIFIED')
+        self.assertIn('NOT_PERFORMED', report['material_graph_retraversal'])
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+
+    def test_resume_accepts_engine_default_only_for_three_unassigned_meshes(self):
+        self.resume_checkpoint()
+        for name in (*f.SENTINELS, 'SM_TeddyPrize_7adfe5d511'):
+            mesh = self.resume_mesh(name)
+            self.assertTrue(all(material is None for material in mesh.materials))
+            mesh.materials[:] = [self.u.default_material] * len(mesh.materials)
+        report = f.resume_full(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
+
+    def test_resume_normal_import_still_refuses_checkpoint(self):
+        self.resume_checkpoint()
+        with self.assertRaises(f.FullImportError) as caught:
+            f.import_full(self.tmp.name)
+        self.assertEqual(caught.exception.report['status'], 'FULL_IMPORT_BLOCKED')
+        self.assertEqual(self.u.events, [])
+
+    def test_resume_blocks_other_unsaved_or_saved_world_without_mutation(self):
+        self.resume_checkpoint()
+        for path in ('/Temp/Untitled.Untitled', '/Temp/Untitled_4.Untitled', '/Game/Other.Other'):
+            with self.subTest(path=path):
+                self.u.world.path = path
+                self.assert_resume_blocked()
+
+    def test_resume_blocks_play_world(self):
+        self.resume_checkpoint()
+        self.u.game_world = g.World()
+        self.assert_resume_blocked('[Pp]lay|[Ss]imulate|PIE')
+
+    def test_resume_blocks_any_authored_actor_even_without_import_tag(self):
+        self.resume_checkpoint()
+        actor = g.StaticMeshActor(); actor.path = self.u.world.path + ':UnrelatedActor'
+        self.u.actors.append(actor)
+        self.assert_resume_blocked('[Aa]ctor|[Ee]mpty')
+
+    def test_resume_blocks_unrelated_dirty_map(self):
+        self.resume_checkpoint()
+        other = g.Obj(); other.path = '/Game/UserWork'
+        self.u.dirty_maps.append(other)
+        self.assert_resume_blocked('[Dd]irty|[Mm]ap')
+
+    def test_resume_blocks_unrelated_dirty_content(self):
+        self.resume_checkpoint()
+        other = g.Obj(); other.path = '/Game/UserWork/Material'
+        self.u.dirty_content.append(other)
+        self.assert_resume_blocked('[Dd]irty|[Pp]ackage')
+
+    def test_resume_blocks_new_extra_namespace_asset(self):
+        self.resume_checkpoint()
+        other = g.Obj(); other.path = f.DEST + '/Props/Untracked.Untracked'
+        self.u.assets[other.path.split('.')[0]] = other
+        self.assert_resume_blocked('[Ii]nventory|[Aa]sset|[Cc]heckpoint')
+
+    def test_resume_blocks_unregistered_missing_mesh_package_with_mixed_case(self):
+        self.resume_checkpoint()
+        missing = self.p['assets'][66]
+        folder = 'Props' if missing['kind'] == 'props' else 'Environment'
+        physical = (Path(self.u.content_dir) / f.DEST.removeprefix('/Game/').swapcase() /
+                    folder.swapcase() / (missing['asset_name'].swapcase() + '.UaSsEt'))
+        physical.parent.mkdir(parents=True)
+        physical.write_bytes(b'unregistered user package must not be overwritten')
+        self.assert_resume_blocked('[Pp]hysical|[Dd]isk|[Ff]ile|[Pp]ackage|[Uu]nexpected')
+        self.assertEqual(physical.read_bytes(), b'unregistered user package must not be overwritten')
+
+    def test_resume_blocks_unexpected_physical_map_package(self):
+        self.resume_checkpoint()
+        physical = Path(self.u.content_dir) / f.DEST.removeprefix('/Game/') / 'Maps' / 'Existing.umap'
+        physical.parent.mkdir(parents=True)
+        physical.write_bytes(b'unregistered map')
+        self.assert_resume_blocked('[Pp]hysical|[Dd]isk|[Ff]ile|[Pp]ackage|[Uu]nexpected')
+        self.assertEqual(physical.read_bytes(), b'unregistered map')
+
+    def test_resume_blocks_nested_physical_namespace_symlink(self):
+        self.resume_checkpoint()
+        target = Path(self.u.content_dir) / 'UnrelatedContent'
+        target.mkdir()
+        namespace = Path(self.u.content_dir) / f.DEST.removeprefix('/Game/')
+        namespace.mkdir()
+        link = namespace / 'LinkedSubfolder'
+        link.symlink_to(target, target_is_directory=True)
+        self.assert_resume_blocked('[Ss]ymlink|[Ll]ink')
+        self.assertTrue(link.is_symlink())
+
+    def test_resume_blocks_missing_checkpoint_mesh_material_or_texture(self):
+        self.resume_checkpoint()
+        for cls in (g.StaticMesh, g.Material, g.Texture2D):
+            path = next(path for path, obj in self.u.assets.items() if isinstance(obj, cls))
+            obj = self.u.assets.pop(path)
+            with self.subTest(cls=cls.__name__):
+                self.assert_resume_blocked()
+            self.u.assets[path] = obj
+
+    def test_resume_blocks_wrong_asset_type_even_at_expected_path(self):
+        self.resume_checkpoint()
+        path = next(path for path, obj in self.u.assets.items() if isinstance(obj, g.StaticMesh))
+        wrong = g.Obj(); wrong.path = self.u.assets[path].path
+        self.u.assets[path] = wrong
+        self.assert_resume_blocked()
+
+    def test_resume_blocks_completed_mesh_assignment_drift(self):
+        self.resume_checkpoint()
+        mesh = self.resume_mesh()
+        self.assertIsInstance(mesh.materials[0], g.Material)
+        mesh.materials[0] = None
+        self.assert_resume_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_resume_blocks_foreign_material_on_pending_mesh(self):
+        self.resume_checkpoint()
+        foreign = g.MaterialInterface(); foreign.path = '/Game/UserWork/Material.Material'
+        self.resume_mesh('SM_TeddyPrize_7adfe5d511').materials[0] = foreign
+        self.assert_resume_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_resume_blocks_geometry_drift_before_any_new_import(self):
+        self.resume_checkpoint()
+        mesh = self.resume_mesh()
+        mesh.item['bounds_cm']['max'][0] += 50
+        self.assert_resume_blocked('[Bb]ounds|[Gg]eometry')
+
+    def test_resume_blocks_collision_drift_before_any_new_import(self):
+        self.resume_checkpoint()
+        mesh = self.resume_mesh()
+        mesh.props['body_setup'].props['agg_geom'].props['convex_elems'].append(g.Obj())
+        self.assert_resume_blocked('[Cc]onvex|[Hh]ull|[Cc]ollision')
+
+    def test_resume_blocks_uv_drift_before_any_new_import(self):
+        self.resume_checkpoint()
+        self.resume_mesh().uv = 0
+        self.assert_resume_blocked('UV')
+
+    def test_resume_blocks_build_setting_drift_without_repair(self):
+        self.resume_checkpoint()
+        mesh = self.resume_mesh()
+        key = next(key for key, value in self.c.BUILD_FIELDS.items() if isinstance(value, bool))
+        mesh.build.props[key] = not mesh.build.props[key]
+        self.assert_resume_blocked()
+        self.assertNotEqual(mesh.build.props[key], self.c.BUILD_FIELDS[key])
+
+    def test_resume_blocks_import_settings_drift_without_repair(self):
+        self.resume_checkpoint()
+        mesh = self.resume_mesh()
+        mesh.props['asset_import_data'].props['import_uniform_scale'] = 2.
+        self.assert_resume_blocked()
+        self.assertEqual(mesh.props['asset_import_data'].props['import_uniform_scale'], 2.)
+
+    def test_resume_blocks_mesh_source_provenance_drift(self):
+        self.resume_checkpoint()
+        mesh = self.resume_mesh()
+        mesh.props['asset_import_data'].filename = mesh.item['source_path']
+        self.assert_resume_blocked('[Ss]ource|[Pp]rovenance')
+
+    def test_resume_blocks_missing_cache_without_recreating_it(self):
+        self.resume_checkpoint()
+        path = Path(self.resume_mesh().props['asset_import_data'].filename)
+        path.unlink()
+        self.assert_resume_blocked('[Cc]ache|[Dd]erived|recreate')
+        self.assertFalse(path.exists())
+
+    def test_resume_blocks_changed_original_source_before_mutation(self):
+        self.resume_checkpoint()
+        Path(self.p['assets'][0]['source_path']).write_bytes(b'changed after native attempt')
+        self.assert_resume_blocked('[Hh]ash|[Cc]hanged|[Ss]ource')
+
+    def test_resume_blocks_texture_setting_drift_without_repair(self):
+        self.resume_checkpoint()
+        texture = next(o for o in self.u.assets.values() if isinstance(o, g.Texture2D))
+        texture.props['virtual_texture_streaming'] = True
+        self.assert_resume_blocked('[Tt]exture|[Ss]etting')
+        self.assertTrue(texture.props['virtual_texture_streaming'])
+
+    def test_resume_blocks_texture_source_drift(self):
+        self.resume_checkpoint()
+        texture = next(o for o in self.u.assets.values() if isinstance(o, g.Texture2D))
+        texture.props['asset_import_data'].filename = str(Path(self.tmp.name) / 'wrong.png')
+        self.assert_resume_blocked('[Tt]exture|[Ss]ource')
+
+    def test_resume_blocks_texture_provenance_drift(self):
+        self.resume_checkpoint()
+        texture = next(o for o in self.u.assets.values() if isinstance(o, g.Texture2D))
+        texture.props['asset_import_data'] = g.InterchangeAssetImportData(texture.props['asset_import_data'].filename)
+        self.assert_resume_blocked('[Tt]exture|[Pp]rovenance')
+
+    def test_resume_blocks_material_policy_drift_without_repair(self):
+        self.resume_checkpoint()
+        material = next(o for o in self.u.assets.values() if isinstance(o, g.Material))
+        material.props['two_sided'] = not material.props['two_sided']
+        wrong = material.props['two_sided']
+        self.assert_resume_blocked('[Mm]aterial|[Ss]ided')
+        self.assertEqual(material.props['two_sided'], wrong)
+
+    def test_resume_blocks_glass_policy_drift_without_repair(self):
+        self.resume_checkpoint()
+        material = next(o for o in self.u.assets.values() if isinstance(o, g.Material) and o.props['blend_mode'] == 'TRANSLUCENT')
+        material.props['refraction_method'] = 'PIXEL_NORMAL_OFFSET'
+        self.assert_resume_blocked('[Mm]aterial|[Gg]lass|[Rr]efraction')
+
+    def test_resume_new_import_failure_retains_partial_boundary_without_cleanup(self):
+        self.resume_checkpoint()
+        previous = dict(self.u.assets)
+        self.u.raise_after_import = True
+        with self.assertRaises(f.FullImportError) as caught:
+            f.resume_full(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESUME_FAILED_PARTIAL', report)
+        self.assertTrue(report['mutation_started'])
+        self.assertTrue(report['partial'])
+        self.assertEqual(len(self.u.assets), 169)
+        self.assertTrue(all(self.u.assets[path] is obj for path, obj in previous.items()))
+        self.assertEqual(self.u.actors, [])
+        self.assertEqual(self.u.events.count('import_mesh'), 1)
+        self.assertFalse(any('save' in e or 'delete' in e or 'destroy' in e for e in self.u.events))
+
+    def test_resume_cannot_run_again_after_successful_actor_placement(self):
+        self.resume_checkpoint()
+        self.assertEqual(f.resume_full(self.tmp.name)['status'], 'FULL_RESUME_CREATED_UNSAVED')
+        self.assert_resume_blocked()
 
 
 if __name__ == '__main__':

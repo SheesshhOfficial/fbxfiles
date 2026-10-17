@@ -1,14 +1,14 @@
 {
-  "schema": "carnival-full-import57-validation-v2-counter-y",
+  "schema": "carnival-full-import57-validation-v3-slot-resume",
   "date_utc": "2026-10-17",
-  "status": "CORRECTED_TRANSPORT_OFFLINE_VERIFIED_NATIVE_RUN_PENDING",
+  "status": "NATIVE_AXIS_CONFIRMED_SLOT_RECOVERY_OFFLINE_VERIFIED_NATIVE_RESUME_PENDING",
   "unreal_target": "5.7.4",
   "offline_mock_tests": {
-    "total": 65,
-    "passed_with_frozen_source": 65,
+    "total": 109,
+    "passed_with_frozen_source": 109,
     "failed": 0,
     "portable_without_source": {
-      "passed": 64,
+      "passed": 108,
       "skipped_optional_integration": 1
     },
     "command": "python -B -m unittest discover -s tests -v",
@@ -212,5 +212,54 @@
       "typed_nodes": 174293,
       "result": "Only required position/normal/corner-index/edge arrays changed. UV tables, per-polygon material/smoothing, transforms/global settings, all other typed properties and exact header/footer unchanged. Edge endpoint pairs preserved. Output hashes match audited manifest."
     }
+  },
+  "native_second_run": {
+    "engine": "5.7.4-51494982+++UE5+Release-5.7",
+    "log_lines": 8969,
+    "log_bytes": 698693,
+    "log_sha256": "4760afb617fc046a6a1faec76a823d66d8d99928f0bfd1ef2c8bac2bd22a8298",
+    "axis_sentinels_signed_landmarks": "PASS: both maximum error 0.0 cm",
+    "largest_completed_mesh_bounds_error_cm": 6.103515625e-05,
+    "textures_settings_verified": 41,
+    "material_graphs_created": 59,
+    "meshes_geometry_collision_verified": 67,
+    "additional_mesh_awaiting_slot_validation": 1,
+    "actors_created": 0,
+    "failure": "Strict slot checker omitted Unreal dot-to-underscore name spelling that preserves spaces.",
+    "scope_note": "Native axis correction passed; full scene, recovery execution, final visuals and gameplay remain pending."
+  },
+  "slot_name_audit": {
+    "distinct_source_material_names": 59,
+    "mesh_slot_lists": 181,
+    "dotted_names": [
+      "Aged tan plush fabric.001",
+      "Dark plush muzzle.001"
+    ],
+    "affected_teddy_meshes": 21,
+    "dot_alias_collisions": 0,
+    "matching": "Ordered and unambiguous only; source original or explicitly accepted source-derived alias."
+  },
+  "explicit_recovery": {
+    "entrypoint": "resume_full(package_root)",
+    "success_status": "FULL_RESUME_CREATED_UNSAVED",
+    "expected_reused_assets": 168,
+    "existing_meshes": 68,
+    "existing_assigned_meshes": 65,
+    "pending_default_assignment_meshes": 3,
+    "new_meshes": 113,
+    "new_actors": 247,
+    "checkpoint": "Only the exact unchanged zero-actor second-attempt world and inventory.",
+    "guards": [
+      "Exact temporary world and 168-asset inventory",
+      "No authored actors or unrelated dirty packages",
+      "Pinned source and derived cache bytes",
+      "All reused texture settings and source provenance",
+      "All reused mesh geometry, slots, bounds, UV, hull and build settings",
+      "Completed mesh assignments unchanged",
+      "Pending slots default/None rechecked before each setter",
+      "No unregistered physical targets or symlinks"
+    ],
+    "material_graph_retraversal": "NOT_PERFORMED_EXISTING_GRAPHS_PRESERVED",
+    "native_resume": "NOT_RUN"
   }
 }

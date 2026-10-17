@@ -89,12 +89,15 @@ class StaticMesh(Obj):
         self.path = c.MESH_FOLDER + "/" + item["asset_name"] + "." + item["asset_name"]
         self.build = Obj(**c.BUILD_FIELDS)
         self.materials = [None] * len(item["materials"])
+        self.material_set_calls = []
         self.uv = 1
     def get_bounds(self):
         lo, hi = self.item["bounds_cm"]["min"], self.item["bounds_cm"]["max"]
         return types.SimpleNamespace(origin=Vector(*[(a+b)/2 for a,b in zip(lo,hi)]),
                                      box_extent=Vector(*[(b-a)/2 for a,b in zip(lo,hi)]))
     def set_material(self, index, material):
+        if hasattr(self, 'events'): self.events.append('assign_material')
+        self.material_set_calls.append((index, material))
         self.materials[index] = material
     def get_material(self, index):
         return self.materials[index]
@@ -260,7 +263,10 @@ class Texture2D(Obj):
         if not self.ignore_virtual_setter: self.props['virtual_texture_streaming'] = value
 
 class Material(MaterialInterface):
-    def __init__(self): super().__init__(two_sided=False, blend_mode='OPAQUE', shading_model='LIT', translucency_lighting_mode='PER_PIXEL', refraction_method='IOR')
+    def __init__(self):
+        super().__init__(two_sided=False, blend_mode='OPAQUE', shading_model='LIT', translucency_lighting_mode='PER_PIXEL', refraction_method='IOR')
+        self.expressions = []
+        self.property_inputs = {}
 
 class MaterialFactoryNew(Obj): pass
 class MaterialExpressionTextureSample(Obj): pass
@@ -400,7 +406,7 @@ def full_engine(plan, core):
                 u.events.append('import_mesh')
                 item=next(row for row in plan['assets'] if row['asset_name']==v['destination_name'])
                 data=copy.deepcopy(v['options'].props['static_mesh_import_data']);data.filename=v['filename']
-                obj=StaticMesh(copy.deepcopy(item),data);mutate=u.import_mutator
+                obj=StaticMesh(copy.deepcopy(item),data);obj.events=u.events;mutate=u.import_mutator
             obj.path=v['destination_path']+'/'+v['destination_name']+'.'+v['destination_name']
             if mutate:mutate(obj)
             task.objects=[obj];task.props['imported_object_paths']=[obj.path];u.assets[obj.path.split('.')[0]]=obj
@@ -412,13 +418,32 @@ def full_engine(plan, core):
     tool=Tools();u.AssetToolsHelpers=types.SimpleNamespace(get_asset_tools=lambda:tool)
     class MaterialEditingLibrary:
         @staticmethod
-        def create_material_expression(material,cls,x,y):return cls()
+        def create_material_expression(material,cls,x,y):
+            node=cls();node.material=material;node.inputs={}
+            node.path=material.path+':Expression'+str(len(material.expressions))
+            material.expressions.append(node)
+            u.events.append('create_material_expression')
+            return node
         @staticmethod
-        def connect_material_property(*args):return True
+        def connect_material_property(expression,output,prop):
+            expression.material.property_inputs[prop]=(expression,output)
+            u.events.append('connect_material_property')
+            return True
         @staticmethod
-        def connect_material_expressions(*args):return True
+        def connect_material_expressions(source,output,target,input_name):
+            assert source.material is target.material
+            target.inputs[input_name]=(source,output)
+            u.events.append('connect_material_expressions')
+            return True
         @staticmethod
         def recompile_material(material):u.events.append('request_shader_compile')
+        @staticmethod
+        def get_num_material_expressions(material):return len(material.expressions)
+        @staticmethod
+        def get_used_textures(material):
+            # A deterministic construction graph double; not compiled UE evidence.
+            return list(dict.fromkeys(node.props['texture'] for node in material.expressions
+                                      if isinstance(node,MaterialExpressionTextureSample) and node.props.get('texture') is not None))
     u.MaterialEditingLibrary=MaterialEditingLibrary
     class Actors:
         def get_all_level_actors(self):return list(u.actors)
