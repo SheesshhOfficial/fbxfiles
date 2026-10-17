@@ -1,0 +1,14 @@
+{
+  "packed_reopen_success": true,
+  "protected_object_count": 6679,
+  "protected_objects_unchanged": true,
+  "tree_transforms_stable_ids_unchanged": true,
+  "eligible_placements": 5574,
+  "all_file_images_packed": true,
+  "file_image_count": 73,
+  "source_scenes": [
+    "EXTERIOR_v2_Preview",
+    "Scene"
+  ],
+  "overlay_source_object_count": 84
+}

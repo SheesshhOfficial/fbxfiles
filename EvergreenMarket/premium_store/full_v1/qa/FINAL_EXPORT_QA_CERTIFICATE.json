@@ -1,0 +1,58 @@
+{
+  "title": "Final offline store export QA certificate",
+  "status": "PASS_OFFLINE_SOURCE_AND_EXPORT_EVIDENCE",
+  "approved_source_sha256": "6ea633d3dab618fab872f6394480786ee17009e8c9921c1e3fa4f2db002a1cf1",
+  "prepared_derivative_sha256": "e7d59597a0afda0f622e9145d0ba4f99c528cd95c1da0ac5b0d296620086fa9a",
+  "pbr_derivative_sha256": "76d309ec46d12092035846f3cf75be49336935fe0ea87338be35222dd77e85b9",
+  "summary": {
+    "assets": 163,
+    "placements": 6306,
+    "eligible": 5574,
+    "hulls": 231,
+    "image_files_hashed": 203,
+    "fbx_relative_texture_references_hashed": 215,
+    "baked_maps_hash_matched_to_pixel_review": 132,
+    "validator_sensitivity_tests": 9,
+    "offline_material_helper_tests": 30,
+    "reported_max_roundtrip_vertex_error_m": 0,
+    "reported_max_roundtrip_uv_error": 0,
+    "reported_max_roundtrip_split_normal_angle_deg": 0.03956468118525214,
+    "errors": 0
+  },
+  "independent_reports": [
+    {
+      "path": "premium_store_export_qa_v1/COMPLETE_VISUAL_DERIVATIVE_V3_AUDIT.json",
+      "sha256": "e713aa60b0ddc72ed582ff8766554e0f97ca3c06ffc3280cf8a8dc155a4a706b",
+      "status": "PASS_COMPLETE_VISUAL_SOURCE_COVERAGE"
+    },
+    {
+      "path": "premium_store_export_qa_v1/PBR_VISIBILITY_LIGHT_AUDIT.json",
+      "sha256": "fd0330a7ccecdcdf8219c0738a3a7963c8ca43204794a6dfc3eee2c097cc4ef5",
+      "status": "PASS_PBR_VISIBILITY_AND_LIGHT_PRESERVATION"
+    },
+    {
+      "path": "premium_store_export_qa_v1/MATERIAL_PLAN_AUDIT.json",
+      "sha256": "7cdbd71246822650ab05ade7a14979e5102354ac5e6227e94a3618b2f06b64b9",
+      "status": "PASS_MATERIAL_PLAN_CONTRACT"
+    },
+    {
+      "path": "premium_store_export_qa_v1/FINAL_EXPORT_RECONCILIATION.json",
+      "sha256": "faec33004db930318250edf75d761ad6670799cace0c49418b722e9a827bb260",
+      "status": "PASS_FINAL_EXPORT_RECONCILIATION"
+    }
+  ],
+  "validated_scope": [
+    "Every original asset, authored hull and physical placement preserved through visual-context preparation.",
+    "Every source visual context object represented by an independent placement, with exactly 39 text-to-mesh conversions; only 42 proven zero-area canonical glyph faces removed.",
+    "Actual reopened PBR scene retains source visibility, source light data and the separately excluded preview sun.",
+    "All final FBX/texture hashes match the fresh-Blender round-trip and pixel-review reports; manifest coverage, NoCollision policy and source lineage reconciled.",
+    "Every one of 336 canonical material slots maps to a supported offline material plan with verified texture bytes and explicit UV/normal settings."
+  ],
+  "scope_limits": [
+    "Unreal import/UCX cooking, engine material creation or shader compilation, first-hit sphere targeting, Character root-capsule movement, multiplayer, performance and photometric equivalence have not been run.",
+    "FBX numeric units and candidate axis mapping require the provided calibration fixture in the actual target Unreal project.",
+    "Matched-camera Cycles diagnostics are supporting low-resolution evidence, not full-resolution or Unreal render parity.",
+    "This certificate binds export files and evidence before archive publication; final archive reconstruction and publication are separate packaging steps."
+  ],
+  "unreal_tested": false
+}

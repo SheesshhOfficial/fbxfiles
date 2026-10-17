@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FINAL_ARCHIVE_INTEGRITY",
+  "archive_sha256": "5d724a73a2b1b6940d3cd73f659b77b3142fa3bbc2988247ea4252139e0f7c65",
+  "archive_bytes": 262891346,
+  "summary": {
+    "entries": 1059,
+    "inventory_files_hashed": 1058,
+    "exact_independent_reports": 5,
+    "errors": 0
+  },
+  "errors": [],
+  "scope": "Read-only local final export ZIP checks. Does not establish remote publication or actual Windows reconstruction."
+}

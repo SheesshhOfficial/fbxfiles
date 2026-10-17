@@ -1,0 +1,66 @@
+{
+  "README.md": {
+    "bytes": 4529,
+    "sha256": "07dccf71da29a3c2d81ebff63fa3b5a5d667b28cfae22a270c847230f55607e2"
+  },
+  "YOU_WANT_IT_YOU_GET_IT_EXTERIOR_v2.blend": {
+    "bytes": 39079230,
+    "sha256": "84320b8abaf59bd06f544dc7c2562395e4291120548ef5705985f2dca62498c9"
+  },
+  "YOU_WANT_IT_YOU_GET_IT_EXTERIOR_v2_OVERLAY.glb": {
+    "bytes": 28864836,
+    "sha256": "ee37bb8f1bfe101e321a8166d18170477a6b3eed6293fdae174b210e1381c1f9"
+  },
+  "EXTERIOR_v2_HERO.png": {
+    "bytes": 2686766,
+    "sha256": "9ccf50cbbb4c6fc37f9699132875ed00a29ba0600975a8e846c99e10cb9c8b58"
+  },
+  "EXTERIOR_v2_ENTRY.png": {
+    "bytes": 2820967,
+    "sha256": "3ec1120eaaa36f4757dd0fbd8d5b498a792ec443d6a10ac96381b6fff89eebae"
+  },
+  "EXTERIOR_V2_QA.json": {
+    "bytes": 1135,
+    "sha256": "cdb4913f8b59fe1521d717f6c0dc9af2c5b31d34c7c7515c2470c2cce4e3b1f3"
+  },
+  "PACKED_REOPEN_QA.json": {
+    "bytes": 349,
+    "sha256": "8ea31e6fd95fb5047ec7dd8ec98be5122dd1d4288849530aa95d029d861e7fed"
+  },
+  "OVERLAY_REIMPORT_QA.json": {
+    "bytes": 335,
+    "sha256": "8585441d9c4ab69b0c2a13c7c5e607b2b51016aeed1c4e2638a903fa469846cb"
+  },
+  "EXTERIOR_V2_OVERLAY_MANIFEST.json": {
+    "bytes": 6984,
+    "sha256": "e454c2a44f51cbfb17af81eb44ae8664460686e6c56daa528db6f388126f6165"
+  },
+  "OVERLAY_SOURCE_GEOMETRY.json": {
+    "bytes": 23664,
+    "sha256": "7f4375fa9f7f9127a3239e957fec9c42332013dcd6f1e77597acd7c9e6e0d609"
+  },
+  "PRESERVATION_BASELINE.json": {
+    "bytes": 703443,
+    "sha256": "362a222ccaf633052e368857e994a2005e964601c6f79283d73ae2b51511b109"
+  },
+  "refine_exterior.py": {
+    "bytes": 20843,
+    "sha256": "d3ab4505040db3e6288548fe3e1fbdce45010165d0ca96edd05fc2a99eb05dea"
+  },
+  "verify_exterior.py": {
+    "bytes": 3978,
+    "sha256": "f0ca6e7f8bebed81af6bc3867f26bfa47aa7f8f19327be272c580d278217f3c4"
+  },
+  "render_exterior.py": {
+    "bytes": 1692,
+    "sha256": "4d281e58da01d80237c153b4fdc28c8353bae88f1504b113032a9a5077682aa2"
+  },
+  "textures/EXT2_stone_BaseColor.png": {
+    "bytes": 348860,
+    "sha256": "8a30cbdb369277253e6b7790353b1bb647090c672383d02e082e7843caf7d732"
+  },
+  "textures/EXT2_wood_BaseColor.png": {
+    "bytes": 335409,
+    "sha256": "9947d8fe46384fae980a12b34504a823bd981570a1ee2a983a0164b7e5df1d8d"
+  }
+}

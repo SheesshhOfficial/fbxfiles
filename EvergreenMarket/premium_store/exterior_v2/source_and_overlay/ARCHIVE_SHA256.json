@@ -1,0 +1,42 @@
+{
+  "archive": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip",
+  "bytes": 60266914,
+  "sha256": "8cf48a5173b2c97bb70b2af3dc1625a163029f5c985cd6ae7fd1e6c91fa63112",
+  "parts": [
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part01",
+      "bytes": 9437184,
+      "sha256": "1f167f060628559afc76fa69c4fcc13f27719b021e0c2302266e9d9824674ed4"
+    },
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part02",
+      "bytes": 9437184,
+      "sha256": "97498b013819ddd7940658bd357f07a2705665e6a381b74035af90ade76a9358"
+    },
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part03",
+      "bytes": 9437184,
+      "sha256": "1e78a6df600040205eeddbc0299e94b363fbc764f139d5575105a95cc79ca609"
+    },
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part04",
+      "bytes": 9437184,
+      "sha256": "474b90b3bf0af49e0cb18035e39784b8c27ec9007fa7ceb72d0231acbe229d4e"
+    },
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part05",
+      "bytes": 9437184,
+      "sha256": "a1ce55232b8304a9f5428a6d821b3d40484fb9c55b146a1c4ca68d0e1b57bf63"
+    },
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part06",
+      "bytes": 9437184,
+      "sha256": "2a93ca6e0bed80998ab1aafb2b6e20c9c03893f5640351c444327fe53da30762"
+    },
+    {
+      "name": "You_want_it_You_get_it_Exterior_v2_Source_and_Overlay.zip.part07",
+      "bytes": 3643810,
+      "sha256": "a755dca8d40b30bf169d08c65d29958dbe102fafa86410a237d17d60c247be0a"
+    }
+  ]
+}

@@ -23,6 +23,18 @@ The optional [rebuild dependencies](rebuild_dependencies/) are only needed to re
 
 [Read the independent source QA summary](qa/FINAL_SOURCE_QA_SUMMARY.md). Final master SHA-256: `6ea633d3dab618fab872f6394480786ee17009e8c9921c1e3fa4f2db002a1cf1`.
 
-Final Cycles views and the complete FBX/PBR derivative are being validated separately and are not yet part of this source checkpoint. Existing slice renders remain historical. Do not use earlier slice FBXs as the final store export.
+## Verified FBX/PBR export
+
+The [FBX/PBR package](fbx_pbr_export/) contains 163 canonical FBXs, 231 authored convex collision hulls, 6,306 total placements including 5,574 individually eligible prop copies, and 203 texture images. Download all 28 parts and the reassembly helper together, reassemble, extract, and follow the included README. The package includes placement manifests and a material helper; an all-placement Unreal level importer is not included. Do not use the historical ISM/pilot importer for this store.
+
+The [optional packed PBR Blender derivative](optional_baked_blend/) is a separate 13-part archive. It is useful for inspecting the baked materials; the original packed source above remains preserved.
+
+[Independent export checks](qa/FINAL_EXPORT_QA_SUMMARY.md) cover asset/placement reconciliation, FBX roundtrips and material contracts. [Archive audit](qa/FINAL_ARCHIVE_AUDIT.json) verifies final payloads. These are offline checks, not Unreal execution.
+
+[Final aisle and fresh-area Cycles views](previews/) are included. This v1 checkpoint retains the original exterior. Any improved exterior successor is separately versioned and must not be assumed to be included in these v1 exports. Historical slice packages are not the final store export.
 
 Unreal import, material compilation, actual single-hit Visibility selection, disguised Character collision, multiplayer and ten-player performance are not tested by Blender checks. The existing game Blueprint is unchanged. Every copy is eligible by export contract; that does not by itself prove dense-shelf first-hit selection or Character capsule fit.
+
+## Improved exterior successor
+
+[Exterior v2](../exterior_v2/) contains a complete successor Blender source preserving the interior, plus an isolated exterior GLB overlay and its verification. The v1 FBX/PBR package above retains its original exterior; it is not a matched full-store v2 export.

@@ -1,0 +1,13 @@
+{
+  "glb_reimported_in_Blender": true,
+  "source_objects": 84,
+  "imported_objects": 84,
+  "geometry_and_world_bounds_match": true,
+  "max_bounds_error_m": 3.814697265625e-06,
+  "image_count": 2,
+  "all_images_packed": true,
+  "errors": [],
+  "unreal_import_tested": false,
+  "collision_included": false,
+  "full_store_export": false
+}

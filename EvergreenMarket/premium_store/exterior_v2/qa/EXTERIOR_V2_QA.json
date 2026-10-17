@@ -1,0 +1,25 @@
+{
+  "version": "exterior_v2",
+  "source_blend": "/workspace/scratch/26eeef986c30/premium_store_full_v1/YOU_WANT_IT_YOU_GET_IT_FULL_v1.blend",
+  "source_sha256": "6ea633d3dab618fab872f6394480786ee17009e8c9921c1e3fa4f2db002a1cf1",
+  "protected_non_tree_objects": 6679,
+  "protected_object_hashes_unchanged": true,
+  "changed_protected_objects": [],
+  "eligible_placements_unchanged": 5574,
+  "tree_placements_mesh_replaced": 61,
+  "tree_transforms_stable_ids_preserved": true,
+  "tree_variant_meshes": 6,
+  "tree_unique_triangles": 489648,
+  "new_exterior_mesh_objects": 23,
+  "new_exterior_collection": "12_EXTERIOR_REFINEMENT_v2",
+  "source_collision_and_gameplay_markers_untouched": true,
+  "unreal_tested": false,
+  "full_matched_export_produced": false,
+  "preview_scene": "EXTERIOR_v2_Preview",
+  "limitations": [
+    "Isolated visual overlay only. Not a full matched v2 Unreal package.",
+    "Procedural foliage is higher-detail and unbenchmarked; LODs and Unreal import/performance validation remain required.",
+    "Exterior is nonplayable scenery, no new gameplay collision authored."
+  ],
+  "distant_terrain_extension": true
+}
