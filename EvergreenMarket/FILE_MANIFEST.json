@@ -1999,9 +1999,9 @@
   },
   {
     "path": "premium_store/README.md",
-    "bytes": 1015,
-    "sha256": "fe92c48d14af8b278f752a856dd05df2bcedaad6396cb43d61eb113443acce16",
-    "git_blob_sha": "27ac9132311db1666efef646aacb1a89620ba6b2"
+    "bytes": 1201,
+    "sha256": "ae95d0e7134d9b8fb5e8f57327e7bfba87d64070980eb6fc72f34d3a0120f843",
+    "git_blob_sha": "638b0ad1d1547ad12a734a7f48d69c0804d4c9fc"
   },
   {
     "path": "premium_store/refinement_v3/DELIVERY_CHECKSUMS.json",
@@ -2164,5 +2164,23 @@
     "bytes": 748393,
     "sha256": "c09129479e182be1106f08a67c872330833909b9e215bb010e3e12eea504a372",
     "git_blob_sha": "02cd723431f726779b9e91c8e9430630d5dc46ab"
+  },
+  {
+    "path": "premium_store/refinement_v3/previews/FINAL_SIGNS_256.png",
+    "bytes": 2349802,
+    "sha256": "189eb1bfea757ab2490ec35c17a63fb7f7785b3ba5e8edf1ca89a6e7317f0beb",
+    "git_blob_sha": "5e2b5862e301249c9d2b916fdb428de9e86908fc"
+  },
+  {
+    "path": "premium_store/refinement_v3/previews/FINAL_RENDER_PROVENANCE.json",
+    "bytes": 1203,
+    "sha256": "3ee0e9f90ad1df5c4def226a19ea3ac61d22ab338578dc388bc978e163aeaef9",
+    "git_blob_sha": "88c91b4e2610bd9c17f4c02755394a2783f6a660"
+  },
+  {
+    "path": "premium_store/refinement_v3/scripts/render_final_signs.py",
+    "bytes": 2286,
+    "sha256": "ea7b4d9d4d1402be1118ac27fa427e16366d21f765449073ba15193e6d4ebb2f",
+    "git_blob_sha": "86fafd44de6607847ec399f9f03a5fbded431534"
   }
 ]

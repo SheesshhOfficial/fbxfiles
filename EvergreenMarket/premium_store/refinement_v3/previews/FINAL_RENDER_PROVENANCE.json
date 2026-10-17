@@ -1,0 +1,38 @@
+{
+  "source": "/workspace/scratch/26eeef986c30/premium_store_refinement_v3/YOU_WANT_IT_YOU_GET_IT_REFINED_v3.blend",
+  "source_sha256_before": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519",
+  "source_sha256_after": "c4abf30a478051c30e00536642416c53fefb7db4911128dbb8114c0732975519",
+  "source_unchanged": true,
+  "output": "/workspace/scratch/26eeef986c30/premium_store_refinement_v3/FINAL_SIGNS_256.png",
+  "output_sha256": "189eb1bfea757ab2490ec35c17a63fb7f7785b3ba5e8edf1ca89a6e7317f0beb",
+  "output_bytes": 2349802,
+  "blender_version": "4.3.2",
+  "completed_utc": "2026-10-17T06:39:03.016865+00:00",
+  "settings": {
+    "engine": "CYCLES",
+    "samples": 256,
+    "denoising": false,
+    "adaptive_sampling": true,
+    "adaptive_threshold": 0.025,
+    "max_bounces": 6,
+    "threads": 8,
+    "resolution": [
+      1200,
+      850
+    ],
+    "camera_location": [
+      12,
+      10.2,
+      2.15
+    ],
+    "camera_target": [
+      30,
+      23,
+      2.3
+    ],
+    "lens_mm": 26,
+    "clip_end": 400
+  },
+  "source_saved": false,
+  "note": "Rendered the final exact source with temporary camera/settings in memory only. No source or existing preview image was overwritten."
+}
