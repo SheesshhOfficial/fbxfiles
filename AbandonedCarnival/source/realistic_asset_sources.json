@@ -1,0 +1,333 @@
+{
+  "retrieved_utc": "2026-10-17",
+  "license_evidence": "Official ambientCG license page states all downloadable asset files are CC0 1.0 Universal. Original license HTML saved in textures/realistic/ambientCG_license.html.",
+  "assets": [
+    {
+      "id": "Wood092",
+      "provider": "ambientCG",
+      "asset_url": "https://ambientcg.com/a/Wood092",
+      "download_url": "https://ambientcg.com/get?file=Wood092_2K-JPG.zip",
+      "license": "CC0 1.0 Universal",
+      "license_source": "https://docs.ambientcg.com/license/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "archive_sha256": "4c392495ec8689024659de2099f538089556d77dd7c2f2c2d70a707fa7d29d54",
+      "archive_crc_verified": true,
+      "creation_technique": "surface-photogrammetry",
+      "source_dimensions": {
+        "width": 80,
+        "height": 80,
+        "depth": 0
+      },
+      "tags": [
+        "92",
+        "brown",
+        "clean",
+        "fine",
+        "orange",
+        "smooth",
+        "wood",
+        "wooden"
+      ],
+      "maps": [
+        {
+          "filename": "textures/realistic/Wood092/Wood092_2K-JPG_Roughness.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "c3b7a9daf961ec4e5dd54601e2918f76b22fd86f59cc354b606aa9fae63e7fe4"
+        },
+        {
+          "filename": "textures/realistic/Wood092/Wood092_2K-JPG_NormalGL.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "1493a96b0c938cf301f894c164d9582965f654e638cb4598091e8de05ef05bd1"
+        },
+        {
+          "filename": "textures/realistic/Wood092/Wood092_2K-JPG_Displacement.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "21686644c81837ee1d4ef646bab11577502648576efd2dc8e9bfa099b96b4191"
+        },
+        {
+          "filename": "textures/realistic/Wood092/Wood092_2K-JPG_NormalDX.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "1895db9601f212ee0ab0641cb557589ac420a15b6424a7eca1f9c49c5c7c2710"
+        },
+        {
+          "filename": "textures/realistic/Wood092/Wood092_2K-JPG_Color.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "f070ac5b7e936666d5fcde0ab24744ec2cbb314ad01c9b389c9fae0d6a6a9f51"
+        }
+      ]
+    },
+    {
+      "id": "Asphalt033",
+      "provider": "ambientCG",
+      "asset_url": "https://ambientcg.com/a/Asphalt033",
+      "download_url": "https://ambientcg.com/get?file=Asphalt033_2K-JPG.zip",
+      "license": "CC0 1.0 Universal",
+      "license_source": "https://docs.ambientcg.com/license/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "archive_sha256": "ad7193b7635b1c7e20c1b70e3d55d0cf68166dd98c7b4c43850d13ffa1ac1b42",
+      "archive_crc_verified": true,
+      "creation_technique": "surface-photogrammetry",
+      "source_dimensions": {
+        "width": 250,
+        "height": 250,
+        "depth": 0
+      },
+      "tags": [
+        "033",
+        "33",
+        "asphalt",
+        "asphalt033",
+        "charcoal",
+        "dark",
+        "granular",
+        "gray",
+        "industrial",
+        "matte",
+        "pavement",
+        "road",
+        "rough",
+        "urban"
+      ],
+      "maps": [
+        {
+          "filename": "textures/realistic/Asphalt033/Asphalt033_2K-JPG_NormalGL.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "76c39fecbd6fcdb0f412bcfe24327bb6aaabac740423888b7cea87af4f6ab863"
+        },
+        {
+          "filename": "textures/realistic/Asphalt033/Asphalt033_2K-JPG_NormalDX.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "5d18ec40e3bdf20ff4de71b0ff40b520d8d8bf3be649628f9cdf679a57e1e380"
+        },
+        {
+          "filename": "textures/realistic/Asphalt033/Asphalt033_2K-JPG_Displacement.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "8c7a8bbbdfd66c7d0bda2246d39efc4f2bec03d97363398761083a529b5e68bb"
+        },
+        {
+          "filename": "textures/realistic/Asphalt033/Asphalt033_2K-JPG_Color.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "d427bc140fd984e7b5fb933ac72cffad6ffdb52e84e7240dabdce4090ef8d653"
+        },
+        {
+          "filename": "textures/realistic/Asphalt033/Asphalt033_2K-JPG_Roughness.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "e21108d1f8f5af3a1b48e3f71da23239dfc6921768b13b9f92900604f82c535f"
+        },
+        {
+          "filename": "textures/realistic/Asphalt033/Asphalt033_2K-JPG_AmbientOcclusion.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "60b508636b528a1cdb0eb4e872d9f038d22aabb0b64493b9733427af2eb3df74"
+        }
+      ]
+    },
+    {
+      "id": "Ground112",
+      "provider": "ambientCG",
+      "asset_url": "https://ambientcg.com/a/Ground112",
+      "download_url": "https://ambientcg.com/get?file=Ground112_2K-JPG.zip",
+      "license": "CC0 1.0 Universal",
+      "license_source": "https://docs.ambientcg.com/license/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "archive_sha256": "87b5e6a077ada7f40c5058986da6876bea5f8817fa36c9910ed8b2dc37ad0395",
+      "archive_crc_verified": true,
+      "creation_technique": "surface-photogrammetry",
+      "source_dimensions": {
+        "width": 0,
+        "height": 0,
+        "depth": 0
+      },
+      "tags": [
+        "112",
+        "ground",
+        "ground112"
+      ],
+      "maps": [
+        {
+          "filename": "textures/realistic/Ground112/Ground112_2K-JPG_Color.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "48f82c52972fd9945d9906c806ca12daba0523a9b3e4aaa1def0c76609e6e392"
+        },
+        {
+          "filename": "textures/realistic/Ground112/Ground112_2K-JPG_Displacement.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "cf3616d338ec506fd199fd5a9fd4f612e28bb683283983f759337b3eeea8aa9b"
+        },
+        {
+          "filename": "textures/realistic/Ground112/Ground112_2K-JPG_NormalDX.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "64a66dc35fbcf6fba92b92a8be2acd7cb57b8f002923c837fa1eab8d25581b08"
+        },
+        {
+          "filename": "textures/realistic/Ground112/Ground112_2K-JPG_AmbientOcclusion.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "85c59b2e94ecca2b7c22ac510cbc8437d1e264bc123bb9813817c509b73d6d03"
+        },
+        {
+          "filename": "textures/realistic/Ground112/Ground112_2K-JPG_Roughness.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "e5be2cefe8a72a9a4d295bbfad91df3dc28827d1a5a4db1ff077f5baeecfdd35"
+        },
+        {
+          "filename": "textures/realistic/Ground112/Ground112_2K-JPG_NormalGL.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "91bd18211fea8082adba9785a9efc827d50ef186d78ecb2a0a1c786f075c89f5"
+        }
+      ]
+    },
+    {
+      "id": "Metal063",
+      "provider": "ambientCG",
+      "asset_url": "https://ambientcg.com/a/Metal063",
+      "download_url": "https://ambientcg.com/get?file=Metal063_2K-JPG.zip",
+      "license": "CC0 1.0 Universal",
+      "license_source": "https://docs.ambientcg.com/license/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "archive_sha256": "4c4a995457002ff5288c337254893d3bd42bdd13cecba3e3dadf84e71ebae4a6",
+      "archive_crc_verified": true,
+      "creation_technique": "surface-approximated",
+      "source_dimensions": {
+        "width": 0,
+        "height": 0,
+        "depth": 0
+      },
+      "tags": [
+        "063",
+        "63",
+        "aged",
+        "black",
+        "brown",
+        "dark",
+        "fine",
+        "glossy",
+        "industrial",
+        "metal",
+        "oxidized",
+        "polished",
+        "rust",
+        "rusty",
+        "smooth",
+        "steel"
+      ],
+      "maps": [
+        {
+          "filename": "textures/realistic/Metal063/Metal063_2K-JPG_Roughness.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "32ce62d9bf51cc2690211a57856650b169400409e73c9cb31ebd0d7a2f7bdd2b"
+        },
+        {
+          "filename": "textures/realistic/Metal063/Metal063_2K-JPG_NormalDX.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "a807cb730c40f92b5495333591ee200ab0ab8c50b95c3026eff0895647e12542"
+        },
+        {
+          "filename": "textures/realistic/Metal063/Metal063_2K-JPG_Metalness.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "9f85ff589e2260aad853118a5a1efb80a9a252e7831a9942fcc6a4d8db4900cb"
+        },
+        {
+          "filename": "textures/realistic/Metal063/Metal063_2K-JPG_Displacement.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "54db99a64f3e07af92b411349924f65af48b583c1880c785055f2e3067ffca7f"
+        },
+        {
+          "filename": "textures/realistic/Metal063/Metal063_2K-JPG_Color.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "c6c93446af0620f65594fc9472d9f347983a7686b6e4509b084b0ecc10d7c2ac"
+        },
+        {
+          "filename": "textures/realistic/Metal063/Metal063_2K-JPG_NormalGL.jpg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "sha256": "f1eabb5d3eec9d3247ed76bcb34336f62d17ccbfe316b0dfb563a30f139af7fe"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "pixel_inspection": "Wood092 is continuous warm woodgrain without plank seams; needs darkening and desaturation for aged wood. Asphalt033 is uncracked smooth asphalt. Ground112 is uneven rubble/gravel and sparse litter. Metal063 is muted grey oxidized metal with subtle rust flecks.",
+    "blender_maps": "Color: sRGB; NormalGL and Roughness: Non-Color. Use NormalGL through a Normal Map node.",
+    "physical_tile_width_m": {
+      "Wood092": 0.8,
+      "Asphalt033": 2.5,
+      "Ground112": null,
+      "Metal063": null
+    },
+    "blocked_optional_downloads": [
+      "Wood035",
+      "Wood036",
+      "Asphalt021",
+      "Ground106",
+      "Metal021"
+    ],
+    "blocked_note": "Optional archive requests returned HTTP 403; no alternate access or retries attempted."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "cycle": 3,
+  "zone": "Arena",
+  "parent_source": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_02.blend",
+  "parent_sha256": "ae15307fe0ed17e1f17f0fd9c4fd6969eba3c928711b5c64b8a46d7a180c791b",
+  "checkpoint": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_03.blend",
+  "checkpoint_sha256": "4f1f402f4ef2ea4db63c5b80f733e0f31a2c82e5ef8bb2529b19e8bbbf5ece0f",
+  "improvement": {
+    "status": "applied",
+    "changed_actors": [
+      {
+        "actor": "BumperCar_00_Complete",
+        "previous_vertices": 2950,
+        "vertices": 17214,
+        "polygons": 17302
+      },
+      {
+        "actor": "BumperCar_01_Complete",
+        "previous_vertices": 2950,
+        "vertices": 17214,
+        "polygons": 17302
+      },
+      {
+        "actor": "BumperCar_02_Complete",
+        "previous_vertices": 2950,
+        "vertices": 17214,
+        "polygons": 17302
+      },
+      {
+        "actor": "BumperCar_03_Complete",
+        "previous_vertices": 2950,
+        "vertices": 17214,
+        "polygons": 17302
+      },
+      {
+        "actor": "BumperCar_04_Complete",
+        "previous_vertices": 2951,
+        "vertices": 17214,
+        "polygons": 17302
+      },
+      {
+        "actor": "BumperCar_05_Complete",
+        "previous_vertices": 2951,
+        "vertices": 17214,
+        "polygons": 17302
+      },
+      {
+        "actor": "BumperCar_06_Complete",
+        "previous_vertices": 2951,
+        "vertices": 17214,
+        "polygons": 17302
+      }
+    ],
+    "eligible_props_before": 153,
+    "eligible_props_after": 153,
+    "geometry_audit": {
+      "meshes": 7,
+      "vertices": 120498,
+      "polygons": 121114,
+      "zero_area_faces": 0,
+      "zero_area_triangles": 0,
+      "nonfinite_vertices": 0,
+      "degenerate_uv_faces": 0,
+      "invalid_material_indices": 0,
+      "missing_materials": 0,
+      "nonmanifold_edges": 0,
+      "passed": true
+    },
+    "collision_regeneration_required": true,
+    "cockpit_openings_preserved": true,
+    "source_saved": false
+  },
+  "added_objects": 1,
+  "actual_render": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_03_Arena.png",
+  "samples": 128,
+  "review_status": "visually inspected",
+  "unreal_runtime_verified": false,
+  "visual_review": {
+    "improved": "Curved automotive bodies, upholstery seams, lamps and spring pickups remove the prior box-like car silhouettes.",
+    "remaining": "Noisy interim lighting, repeated clean upholstery and distant thin vegetation remain; cockpit collision needs regeneration.",
+    "next_cycle": 4
+  }
+}

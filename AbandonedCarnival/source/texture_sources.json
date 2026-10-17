@@ -1,0 +1,109 @@
+{
+  "provider": "Poly Haven",
+  "license": "CC0 1.0",
+  "license_url": "https://polyhaven.com/license",
+  "license_evidence": "Official license states all assets are licensed CC0 and may be redistributed, including in products for sale.",
+  "api_documentation_url": "https://github.com/Poly-Haven/Public-API/blob/master/README.md",
+  "retrieved_utc": "2026-10-17",
+  "normal_convention": "OpenGL (+Y)",
+  "download_status": "blocked",
+  "blocker": "Python urllib requests to official /files/{slug} endpoints returned HTTP 403 Forbidden. Initial curl reads of asset list and wood file manifest succeeded. No external textures were downloaded.",
+  "assets": [
+    {
+      "category": "wood",
+      "id": "wood_peeling_paint_weathered",
+      "name": "Wood Peeling Paint Weathered",
+      "authors": {
+        "Rob Tuytel": "Processing",
+        "Dimitrios Savva": "Photography"
+      },
+      "source_url": "https://polyhaven.com/a/wood_peeling_paint_weathered",
+      "api_url": "https://api.polyhaven.com/files/wood_peeling_paint_weathered",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_dimensions_mm": [
+        761.9999647140503,
+        762.0000243186951
+      ],
+      "status": "not_downloaded",
+      "maps": {
+        "diff": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_peeling_paint_weathered/wood_peeling_paint_weathered_diff_2k.jpg",
+          "expected_bytes": 3287908,
+          "expected_md5": "068bc6219393fa397ea419e8b399b310",
+          "color_space": "sRGB",
+          "status": "not_downloaded"
+        },
+        "rough": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_peeling_paint_weathered/wood_peeling_paint_weathered_rough_2k.jpg",
+          "expected_bytes": 1291885,
+          "expected_md5": "ed178c55f0247322f4a97e44943bd311",
+          "color_space": "Non-Color",
+          "status": "not_downloaded"
+        },
+        "nor_gl": {
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_peeling_paint_weathered/wood_peeling_paint_weathered_nor_gl_2k.jpg",
+          "expected_bytes": 3817729,
+          "expected_md5": "ac0ac16338d9e4f362a7cb87bf24ef3d",
+          "color_space": "Non-Color",
+          "status": "not_downloaded"
+        }
+      }
+    },
+    {
+      "category": "rustedmetal",
+      "id": "rusty_metal_04",
+      "name": "Rusty Metal 04",
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "source_url": "https://polyhaven.com/a/rusty_metal_04",
+      "api_url": "https://api.polyhaven.com/files/rusty_metal_04",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_dimensions_mm": [
+        2000,
+        2000
+      ],
+      "status": "not_downloaded",
+      "maps": {}
+    },
+    {
+      "category": "asphalt",
+      "id": "asphalt_04",
+      "name": "Asphalt 04",
+      "authors": {
+        "Jenelle van Heerden": "Processing",
+        "Sergej Majboroda": "Photography"
+      },
+      "source_url": "https://polyhaven.com/a/asphalt_04",
+      "api_url": "https://api.polyhaven.com/files/asphalt_04",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_dimensions_mm": [
+        4039.9999618530273,
+        4039.9999618530273
+      ],
+      "status": "not_downloaded",
+      "maps": {}
+    },
+    {
+      "category": "ground",
+      "id": "brown_mud_leaves_01",
+      "name": "Brown Mud Leaves 01",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "source_url": "https://polyhaven.com/a/brown_mud_leaves_01",
+      "api_url": "https://api.polyhaven.com/files/brown_mud_leaves_01",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "physical_dimensions_mm": [
+        1299.9998331069946,
+        1299.9998331069946
+      ],
+      "status": "not_downloaded",
+      "maps": {}
+    }
+  ]
+}

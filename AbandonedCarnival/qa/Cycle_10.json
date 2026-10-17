@@ -1,0 +1,718 @@
+{
+  "cycle": 10,
+  "zone": "Funhouse",
+  "parent_source": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_09.blend",
+  "parent_sha256": "7987dac9d960353db258be16a0a3a33d14f7d6cc061ba2b69cf786de47c5e0e6",
+  "checkpoint": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_10.blend",
+  "checkpoint_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "improvement": {
+    "funhouse_supported_fixtures": {
+      "status": "applied",
+      "root": "FHPL_Reflector_Floods_Root",
+      "mesh_objects_added": 2,
+      "directed_area_lights_added": 2,
+      "triangles_added": 7320,
+      "geometry_uv_validation": "passed",
+      "power_w_each": 120.0,
+      "color_rgb": [
+        1.0,
+        0.91,
+        0.8
+      ],
+      "aperture_diameter_m": 0.38,
+      "beam_spread_degrees": 120,
+      "light_objects": [
+        "FHPL_West_Area",
+        "FHPL_East_Area"
+      ],
+      "geometry_support": "Two physically connected braced sign-post mounts",
+      "existing_materials_modified": 0,
+      "existing_objects_modified": 0,
+      "save_performed": false,
+      "mouth_clear_width_m": 2.5,
+      "rear_exit_maze_and_props_unchanged": true
+    },
+    "ticket_supported_worklight": [
+      "Cycle10 ticket worklight mounting plate",
+      "Cycle10 ticket worklight top",
+      "Cycle10 ticket worklight lower ring",
+      "Cycle10 ticket worklight cage",
+      "Cycle10 ticket worklight cage.001",
+      "Cycle10 ticket worklight cage.002",
+      "Cycle10 ticket worklight cage.003",
+      "Cycle10 ticket worklight fixed supply cable",
+      "Cycle10 ticket worklight opal bulb"
+    ],
+    "existing_fixture_bank_balance": [
+      {
+        "light": "Arena practical bounce",
+        "before_energy": 1100.0,
+        "before_color": [
+          1.0,
+          0.550000011920929,
+          0.25
+        ],
+        "after_energy": 1000,
+        "after_color": [
+          1.0,
+          0.68,
+          0.4
+        ]
+      },
+      {
+        "light": "Carousel practical bounce",
+        "before_energy": 800.0,
+        "before_color": [
+          1.0,
+          0.46000000834465027,
+          0.15000000596046448
+        ],
+        "after_energy": 900,
+        "after_color": [
+          1.0,
+          0.62,
+          0.32
+        ]
+      }
+    ],
+    "evaluated_decoration_cleanup": {
+      "objects": [],
+      "removed_total": 0,
+      "eligible_props_changed": 0
+    },
+    "exposure_unchanged": 0.10000000149011612,
+    "reason": "Cycle4 horses were overly dark/orange, cycle3 rust floor overly orange, cycle5 face/sign underlit. Existing warm/cool night hierarchy retained.",
+    "unreal_lighting_verified": false
+  },
+  "added_objects": 16,
+  "actual_render": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_10_Funhouse.png",
+  "samples": 128,
+  "review_status": "visually inspected; final additional views and source/export audits pending",
+  "unreal_runtime_verified": false,
+  "scene_lighting": {
+    "exposure": 0.10000000149011612,
+    "world_strength": 0.2800000011920929,
+    "lights": [
+      {
+        "name": "Cycle10 ticket worklight practical",
+        "kind": "POINT",
+        "energy": 35.0,
+        "color": [
+          1.0,
+          0.800000011920929,
+          0.5600000023841858
+        ],
+        "position": [
+          10.380000114440918,
+          -20.299999237060547,
+          2.430000066757202
+        ]
+      },
+      {
+        "name": "Midway RING TOSS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -16.30000114440918,
+          -15.0,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway BALL TOSS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -16.299999237060547,
+          -9.0,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway LUCKY STARS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -16.299999237060547,
+          -3.000000238418579,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway CANDY FLOSS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -3.700000762939453,
+          -14.999999046325684,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway FORTUNE warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -3.6999998092651367,
+          -9.0,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Festoon pool",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -23.0,
+          -21.0,
+          4.900000095367432
+        ]
+      },
+      {
+        "name": "Festoon pool.001",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -17.95652198791504,
+          -21.0,
+          4.458353519439697
+        ]
+      },
+      {
+        "name": "Festoon pool.002",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -12.913043022155762,
+          -21.0,
+          4.145297527313232
+        ]
+      },
+      {
+        "name": "Festoon pool.003",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -7.869565010070801,
+          -21.0,
+          4.051981449127197
+        ]
+      },
+      {
+        "name": "Festoon pool.004",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -2.82608699798584,
+          -21.0,
+          4.205575466156006
+        ]
+      },
+      {
+        "name": "Festoon pool.005",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          2.2173912525177,
+          -21.0,
+          4.56135892868042
+        ]
+      },
+      {
+        "name": "Festoon pool.006",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -23.0,
+          -6.0,
+          4.900000095367432
+        ]
+      },
+      {
+        "name": "Festoon pool.007",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -17.95652198791504,
+          -6.0,
+          4.458353519439697
+        ]
+      },
+      {
+        "name": "Festoon pool.008",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -12.913043022155762,
+          -6.0,
+          4.145297527313232
+        ]
+      },
+      {
+        "name": "Festoon pool.009",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -7.869565010070801,
+          -6.0,
+          4.051981449127197
+        ]
+      },
+      {
+        "name": "Festoon pool.010",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -2.82608699798584,
+          -6.0,
+          4.205575466156006
+        ]
+      },
+      {
+        "name": "Festoon pool.011",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          2.2173912525177,
+          -6.0,
+          4.56135892868042
+        ]
+      },
+      {
+        "name": "Festoon pool.012",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -23.0,
+          4.0,
+          4.900000095367432
+        ]
+      },
+      {
+        "name": "Festoon pool.013",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -17.95652198791504,
+          4.0,
+          4.458353519439697
+        ]
+      },
+      {
+        "name": "Festoon pool.014",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -12.913043022155762,
+          4.0,
+          4.145297527313232
+        ]
+      },
+      {
+        "name": "Festoon pool.015",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -7.869565010070801,
+          4.0,
+          4.051981449127197
+        ]
+      },
+      {
+        "name": "Festoon pool.016",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -2.82608699798584,
+          4.0,
+          4.205575466156006
+        ]
+      },
+      {
+        "name": "Festoon pool.017",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          2.2173912525177,
+          4.0,
+          4.56135892868042
+        ]
+      },
+      {
+        "name": "Ticket booth warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          8.0,
+          -23.280000686645508,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Moon key",
+        "kind": "SUN",
+        "energy": 2.0,
+        "color": [
+          0.47999998927116394,
+          0.6499999761581421,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Dusk fill",
+        "kind": "AREA",
+        "energy": 1700.0,
+        "color": [
+          0.3199999928474426,
+          0.47999998927116394,
+          0.75
+        ],
+        "position": [
+          -10.0,
+          -10.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Carousel practical bounce",
+        "kind": "AREA",
+        "energy": 900.0,
+        "color": [
+          1.0,
+          0.6200000047683716,
+          0.3199999928474426
+        ],
+        "position": [
+          0.0,
+          8.0,
+          4.699999809265137
+        ]
+      },
+      {
+        "name": "Arena practical bounce",
+        "kind": "AREA",
+        "energy": 1000.0,
+        "color": [
+          1.0,
+          0.6800000071525574,
+          0.4000000059604645
+        ],
+        "position": [
+          -17.0,
+          12.0,
+          4.599999904632568
+        ]
+      },
+      {
+        "name": "Midway soft practical",
+        "kind": "AREA",
+        "energy": 350.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.28999999165534973
+        ],
+        "position": [
+          -10.0,
+          -9.0,
+          5.5
+        ]
+      },
+      {
+        "name": "Backstage moon fill",
+        "kind": "AREA",
+        "energy": 700.0,
+        "color": [
+          0.44999998807907104,
+          0.6299999952316284,
+          1.0
+        ],
+        "position": [
+          16.0,
+          -4.0,
+          6.0
+        ]
+      },
+      {
+        "name": "Backstage porch practical A",
+        "kind": "POINT",
+        "energy": 65.0,
+        "color": [
+          1.0,
+          0.5199999809265137,
+          0.23000000417232513
+        ],
+        "position": [
+          14.319999694824219,
+          -5.449999809265137,
+          3.0799999237060547
+        ]
+      },
+      {
+        "name": "Backstage porch practical B",
+        "kind": "POINT",
+        "energy": 45.0,
+        "color": [
+          1.0,
+          0.5199999809265137,
+          0.23000000417232513
+        ],
+        "position": [
+          18.979999542236328,
+          -4.849999904632568,
+          3.0799999237060547
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 0",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          11.5,
+          9.100000381469727,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 1",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          20.5,
+          12.199999809265137,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 2",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          11.5,
+          15.300000190734863,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 3",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          20.5,
+          18.100000381469727,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Entrance detail pier practical",
+        "kind": "POINT",
+        "energy": 42.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.23999999463558197
+        ],
+        "position": [
+          -5.449999809265137,
+          -23.170000076293945,
+          3.2300000190734863
+        ]
+      },
+      {
+        "name": "Entrance detail pier practical.001",
+        "kind": "POINT",
+        "energy": 42.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.23999999463558197
+        ],
+        "position": [
+          5.449999809265137,
+          -23.170000076293945,
+          3.2300000190734863
+        ]
+      },
+      {
+        "name": "FHPL_West_Area",
+        "kind": "AREA",
+        "energy": 120.0,
+        "color": [
+          1.0,
+          0.9100000262260437,
+          0.800000011920929
+        ],
+        "position": [
+          12.281900405883789,
+          5.151334285736084,
+          5.57285213470459
+        ]
+      },
+      {
+        "name": "FHPL_East_Area",
+        "kind": "AREA",
+        "energy": 120.0,
+        "color": [
+          1.0,
+          0.9100000262260437,
+          0.800000011920929
+        ],
+        "position": [
+          19.718097686767578,
+          5.151334285736084,
+          5.57285213470459
+        ]
+      }
+    ]
+  },
+  "visual_review": {
+    "improved": "Supported reflector lamps make the sign lettering, face relief and panel construction readable while the entrance stays dark and open. Lamp hardware is physically attached above circulation.",
+    "remaining": "Interim grain remains. Broader final views are needed to inspect the ticket worklight and ride color balance; source/export/collision audits remain separate.",
+    "next_cycle": null
+  }
+}

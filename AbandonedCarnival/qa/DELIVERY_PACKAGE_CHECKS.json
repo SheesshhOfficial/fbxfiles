@@ -1,0 +1,12 @@
+{
+  "source_reassembled_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "source_bytes": 136393382,
+  "part_count": 15,
+  "all_part_hashes_lengths_pass": true,
+  "windows_cmd_actual_crlf": true,
+  "matched_fbx_count": 181,
+  "all_fbx_hashes_pass": true,
+  "v2_import_namespace_pass": true,
+  "matching_material_scene_hashes": true,
+  "unreal_runtime_verified": false
+}

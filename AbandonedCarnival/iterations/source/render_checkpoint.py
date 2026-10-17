@@ -1,0 +1,7 @@
+"""Additional camera evidence from an immutable iteration checkpoint; never saves source."""
+import bpy,sys,os,json,hashlib
+from mathutils import Vector
+R=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))));a=sys.argv[sys.argv.index('--')+1:];cycle=int(a[0]);view=a[1];samples=int(a[2]) if len(a)>2 else 256
+views={'Funhouse':((16,-1.5,2.6),(16,9,3.1),22),'Ground':((-10,-21,1.7),(-12,-17,.3),34),'Overview':((43,-55,43),(0,0,0),38),'CarClose':((-10.5,5.3,1.7),(-14.8,8.9,.9),42),'Maintenance':((16.6,-13.5,2.3),(16.6,-2,1.9),24),'Gate':((0,-29.8,2),(0,-21,3),25),'Midway':((-10,-24,2.3),(-10,-7,2),25),'Ticket':((14.5,-24.6,2.1),(9.7,-20.9,1.5),28)}
+loc,target,lens=views[view];s=bpy.context.scene;d=bpy.data.cameras.new('Evidence '+view);c=bpy.data.objects.new(d.name,d);s.collection.objects.link(c);c.location=loc;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();d.lens=lens;s.camera=c;s.render.resolution_x=1280;s.render.resolution_y=800;s.render.resolution_percentage=100;s.cycles.samples=samples;s.cycles.use_denoising=False;s.render.filepath=R+'/iterations/renders/Cycle_%02d_%s_Evidence.png'%(cycle,view);s.cycles.sample_clamp_indirect=2;s.cycles.sample_clamp_direct=10
+sha=hashlib.sha256(open(bpy.data.filepath,'rb').read()).hexdigest();bpy.ops.render.render(write_still=True);json.dump({'cycle':cycle,'view':view,'source_sha256':sha,'actual_blender_render':True,'samples':samples,'path':s.render.filepath,'source_saved':False},open(R+'/iterations/qa/Cycle_%02d_%s_Evidence.json'%(cycle,view),'w'),indent=2)

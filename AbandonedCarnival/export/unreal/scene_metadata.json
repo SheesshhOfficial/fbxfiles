@@ -1,0 +1,3478 @@
+{
+  "source_blend": "Cycle_10.blend",
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "runtime_verified": false,
+  "actors": [
+    {
+      "source_object": "Cycle10 ticket worklight practical",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1038.0000114440918,
+        2029.9999237060547,
+        243.00000667572021
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.380000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.430000066757202
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 35.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.800000011920929,
+        0.5600000023841858
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 15.000000596046448,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Midway RING TOSS warm spill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1630.000114440918,
+        1500.0,
+        265.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -179.99997950943126
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        -0.9999999403953552,
+        -3.5762786865234375e-07,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.9470718370939721e-07,
+          -1.0,
+          0.0,
+          -16.30000114440918
+        ],
+        [
+          1.0,
+          1.9470718370939721e-07,
+          0.0,
+          -15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 140.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.1899999976158142
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 64.99999761581421,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Midway BALL TOSS warm spill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1629.9999237060547,
+        900.0,
+        265.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -179.99997950943126
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        -0.9999999403953552,
+        -3.5762786865234375e-07,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.9470718370939721e-07,
+          -1.0,
+          0.0,
+          -16.299999237060547
+        ],
+        [
+          1.0,
+          1.9470718370939721e-07,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 140.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.1899999976158142
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 64.99999761581421,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Midway LUCKY STARS warm spill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1629.9999237060547,
+        300.0000238418579,
+        265.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -179.99997950943126
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        -0.9999999403953552,
+        -3.5762786865234375e-07,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.9470718370939721e-07,
+          -1.0,
+          0.0,
+          -16.299999237060547
+        ],
+        [
+          1.0,
+          1.9470718370939721e-07,
+          0.0,
+          -3.000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 140.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.1899999976158142
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 64.99999761581421,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Midway CANDY FLOSS warm spill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -370.0000762939453,
+        1499.9999046325684,
+        265.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -8.537736971404655e-06
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.9999999403953552,
+        -1.4901161193847656e-07,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          -3.700000762939453
+        ],
+        [
+          -1.0,
+          7.549790126404332e-08,
+          0.0,
+          -14.999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 140.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.1899999976158142
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 64.99999761581421,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Midway FORTUNE warm spill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -369.9999809265137,
+        900.0,
+        265.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -8.537736971404655e-06
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.9999999403953552,
+        -1.4901161193847656e-07,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          7.549790126404332e-08,
+          1.0,
+          0.0,
+          -3.6999998092651367
+        ],
+        [
+          -1.0,
+          7.549790126404332e-08,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 140.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.1899999976158142
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 64.99999761581421,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -2300.0,
+        2100.0,
+        490.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -23.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.900000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.001",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1795.652198791504,
+        2100.0,
+        445.8353519439697
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.95652198791504
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.458353519439697
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.002",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1291.3043022155762,
+        2100.0,
+        414.52975273132324
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -12.913043022155762
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.145297527313232
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.003",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -786.9565010070801,
+        2100.0,
+        405.1981449127197
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.869565010070801
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.051981449127197
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.004",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -282.608699798584,
+        2100.0,
+        420.5575466156006
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.82608699798584
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.205575466156006
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.005",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        221.73912525177002,
+        2100.0,
+        456.135892868042
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.2173912525177
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.56135892868042
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.006",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -2300.0,
+        600.0,
+        490.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -23.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.900000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.007",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1795.652198791504,
+        600.0,
+        445.8353519439697
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.95652198791504
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.458353519439697
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.008",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1291.3043022155762,
+        600.0,
+        414.52975273132324
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -12.913043022155762
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.145297527313232
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.009",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -786.9565010070801,
+        600.0,
+        405.1981449127197
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.869565010070801
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.051981449127197
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.010",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -282.608699798584,
+        600.0,
+        420.5575466156006
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.82608699798584
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.205575466156006
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.011",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        221.73912525177002,
+        600.0,
+        456.135892868042
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.2173912525177
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.56135892868042
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.012",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -2300.0,
+        -400.0,
+        490.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -23.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.900000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.013",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1795.652198791504,
+        -400.0,
+        445.8353519439697
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.95652198791504
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.458353519439697
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.014",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1291.3043022155762,
+        -400.0,
+        414.52975273132324
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -12.913043022155762
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.145297527313232
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.015",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -786.9565010070801,
+        -400.0,
+        405.1981449127197
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.869565010070801
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.051981449127197
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.016",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -282.608699798584,
+        -400.0,
+        420.5575466156006
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.82608699798584
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.205575466156006
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Festoon pool.017",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        221.73912525177002,
+        -400.0,
+        456.135892868042
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.2173912525177
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.56135892868042
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 36.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.20999999344348907
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 31.999999284744263,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Ticket booth warm spill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        800.0,
+        2328.000068664551,
+        265.00000953674316
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -23.280000686645508
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 140.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5,
+        0.1899999976158142
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 64.99999761581421,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "PlayerStart_00",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1100.0,
+        2000.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_01",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -980.0000190734863,
+        2000.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_02",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -860.0000381469727,
+        2000.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_03",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -740.0000095367432,
+        2000.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.400000095367432
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_04",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -619.9999809265137,
+        2000.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_05",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1100.0,
+        1800.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_06",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -980.0000190734863,
+        1800.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_07",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -860.0000381469727,
+        1800.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_08",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -740.0000095367432,
+        1800.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.400000095367432
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "PlayerStart_09",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -619.9999809265137,
+        1800.0,
+        100.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "forward_ue": [
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "up_ue": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PlayerStart",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallPlayerStart"
+      ]
+    },
+    {
+      "source_object": "Moon key",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        0.0,
+        -0.0,
+        2000.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -52.2057663219607,
+        -28.027329667163524,
+        -51.47322694535069
+      ],
+      "forward_ue": [
+        0.5409573316574097,
+        -0.2879631817340851,
+        -0.7902167439460754
+      ],
+      "up_ue": [
+        0.06688058376312256,
+        -0.9218558669090271,
+        0.3817181885242462
+      ],
+      "source_matrix_world": [
+        [
+          0.8383866548538208,
+          0.06688059121370316,
+          -0.5409573316574097,
+          0.0
+        ],
+        [
+          -0.25934338569641113,
+          0.9218558669090271,
+          -0.2879631519317627,
+          0.0
+        ],
+        [
+          0.4794255495071411,
+          0.38171815872192383,
+          0.7902166843414307,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "DirectionalLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "SUN",
+      "source_energy": 2.0,
+      "source_energy_unit": "W/m2",
+      "color_linear_rgb": [
+        0.47999998927116394,
+        0.6499999761581421,
+        1.0
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 100.0,
+      "source_angle_degrees": 0.5260000183369693,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Dusk fill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1000.0,
+        1000.0,
+        2000.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 1700.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        0.3199999928474426,
+        0.47999998927116394,
+        0.75
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 2500.0,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Carousel practical bounce",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        0.0,
+        -800.0,
+        469.9999809265137
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 900.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.6200000047683716,
+        0.3199999928474426
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 800.0,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Arena practical bounce",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1700.0,
+        -1200.0,
+        459.99999046325684
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.599999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 1000.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.6800000071525574,
+        0.4000000059604645
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 800.0,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Midway soft practical",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -1000.0,
+        900.0,
+        550.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 350.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.550000011920929,
+        0.28999999165534973
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 1400.0,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Backstage moon fill",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1600.0,
+        400.0,
+        600.0
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          16.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 700.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        0.44999998807907104,
+        0.6299999952316284,
+        1.0
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 900.0,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Backstage porch practical A",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1431.9999694824219,
+        544.9999809265137,
+        307.99999237060547
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          14.319999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -5.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.0799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 65.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5199999809265137,
+        0.23000000417232513
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 21.99999988079071,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Backstage porch practical B",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1897.9999542236328,
+        484.99999046325684,
+        307.99999237060547
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          18.979999542236328
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.849999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.0799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 45.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.5199999809265137,
+        0.23000000417232513
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 21.99999988079071,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Funhouse interior practical 0",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1150.0,
+        -910.0000381469727,
+        284.99999046325684
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.8499999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 22.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.4000000059604645,
+        0.1599999964237213
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 18.000000715255737,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Funhouse interior practical 1",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        2050.0,
+        -1219.9999809265137,
+        284.99999046325684
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.8499999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 22.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.4000000059604645,
+        0.1599999964237213
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 18.000000715255737,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Funhouse interior practical 2",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1150.0,
+        -1530.0000190734863,
+        284.99999046325684
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.8499999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 22.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.4000000059604645,
+        0.1599999964237213
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 18.000000715255737,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Funhouse interior practical 3",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        2050.0,
+        -1810.0000381469727,
+        284.99999046325684
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.8499999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 22.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.4000000059604645,
+        0.1599999964237213
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 18.000000715255737,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Entrance detail pier practical",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        -544.9999809265137,
+        2317.0000076293945,
+        323.00000190734863
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -23.170000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 42.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.550000011920929,
+        0.23999999463558197
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 12.999999523162842,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "Entrance detail pier practical.001",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        544.9999809265137,
+        2317.0000076293945,
+        323.00000190734863
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -90.0,
+        -0.0,
+        -90.0
+      ],
+      "forward_ue": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up_ue": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source_matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -23.170000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.2300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "PointLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "POINT",
+      "source_energy": 42.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.550000011920929,
+        0.23999999463558197
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 12.999999523162842,
+      "source_angle_degrees": 0.0,
+      "area_shape": null,
+      "area_width_cm": 0.0,
+      "area_height_cm": 0.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "FHPL_West_Area",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1228.190040588379,
+        -515.1334285736084,
+        557.285213470459
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -9.081351023038588,
+        -17.592412581505968,
+        -4.054621287263115e-06
+      ],
+      "forward_ue": [
+        0.9412822127342224,
+        -0.2984551191329956,
+        -0.1578366756439209
+      ],
+      "up_ue": [
+        0.15045469999313354,
+        -0.047705188393592834,
+        0.9874652624130249
+      ],
+      "source_matrix_world": [
+        [
+          0.3022436797618866,
+          0.15045471489429474,
+          -0.9412821531295776,
+          12.281900405883789
+        ],
+        [
+          -0.9532306790351868,
+          0.04770514741539955,
+          -0.2984551191329956,
+          5.151334285736084
+        ],
+        [
+          2.4894866612612532e-08,
+          0.9874652624130249,
+          0.15783663094043732,
+          5.57285213470459
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 120.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.9100000262260437,
+        0.800000011920929
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 37.99999952316284,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    },
+    {
+      "source_object": "FHPL_East_Area",
+      "source_blend": "Cycle_10.blend",
+      "location_cm": [
+        1971.8097686767578,
+        -515.1334285736084,
+        557.285213470459
+      ],
+      "rotation_pitch_yaw_roll_deg": [
+        -9.081350346303884,
+        -162.40758516709116,
+        -1.6269663075073814e-05
+      ],
+      "forward_ue": [
+        -0.9412822723388672,
+        -0.2984551787376404,
+        -0.1578366756439209
+      ],
+      "up_ue": [
+        -0.1504548192024231,
+        -0.04770486056804657,
+        0.9874653816223145
+      ],
+      "source_matrix_world": [
+        [
+          0.3022436797618866,
+          -0.15045490860939026,
+          0.9412821531295776,
+          19.718097686767578
+        ],
+        [
+          0.9532306790351868,
+          0.04770492762327194,
+          -0.298455148935318,
+          5.151334285736084
+        ],
+        [
+          2.465748991653527e-07,
+          0.9874652028083801,
+          0.15783675014972687,
+          5.57285213470459
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "class": "RectLight",
+      "tags": [
+        "MoonfallSceneMetadata",
+        "MoonfallSourceLight"
+      ],
+      "source_light_type": "AREA",
+      "source_energy": 120.0,
+      "source_energy_unit": "W",
+      "color_linear_rgb": [
+        1.0,
+        0.9100000262260437,
+        0.800000011920929
+      ],
+      "use_shadow": true,
+      "source_radius_cm": 0.0,
+      "source_angle_degrees": 0.0,
+      "area_shape": "DISK",
+      "area_width_cm": 37.99999952316284,
+      "area_height_cm": 25.0,
+      "spot_outer_half_angle_degrees": 0.0,
+      "spot_blend": 0.0
+    }
+  ],
+  "player_start_count": 10,
+  "light_count": 41,
+  "excluded_source_objects": [],
+  "coordinate_convention": "Position (100x,-100y,100z). Lights use reflected Blender local -Z forward/+Y up; PlayerStart uses reflected local +X forward/+Z up.",
+  "limitations": [
+    "Source energy/color/type retained exactly in metadata. Unreal photometry and exposure differ; importer numeric conversions are only adjustable starting estimates.",
+    "Area disk/ellipse converted to rectangular light approximation; spot blend mapped approximately.",
+    "Blender world, fog/volume, camera, render-only moon/haze and compositing effects excluded.",
+    "Spawn clearance, player orientation, light mobility/performance/shadows and gameplay require Unreal testing."
+  ]
+}

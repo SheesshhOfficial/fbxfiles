@@ -1,0 +1,442 @@
+{
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "source_sha256_after": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "source_unchanged": true,
+  "scope": "Read-only packed image/font availability and exact byte comparison to existing staged files; no unpacking/source save",
+  "expected_file_images": 41,
+  "file_image_count": 41,
+  "expected_image_count_matches": true,
+  "all_images_packed_and_match_staged": true,
+  "all_fonts_available_without_original_path": true,
+  "images": [
+    {
+      "image": "Canvas_normal.png",
+      "original_basename": "Canvas_normal.png",
+      "packed": true,
+      "packed_bytes": 7038,
+      "packed_sha256": "88df250607e5cf92bfdab78d76ada7d7a6b12f376963c8b88787d1fd40323489",
+      "staged_path": "textures/88df250607e5cf92_Canvas_normal.png",
+      "staged_sha256": "88df250607e5cf92bfdab78d76ada7d7a6b12f376963c8b88787d1fd40323489",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "Canvas_roughness.jpg",
+      "original_basename": "Canvas_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 56588,
+      "packed_sha256": "17e4bf291bfeeb66bbac357dcb585791b07ff85ce7938a2b28874ee2345d8181",
+      "staged_path": "textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+      "staged_sha256": "17e4bf291bfeeb66bbac357dcb585791b07ff85ce7938a2b28874ee2345d8181",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CanvasCream_basecolor.jpg",
+      "original_basename": "CanvasCream_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 387371,
+      "packed_sha256": "2f2d724b08729087c28c126230e206b034c263b2afa083f11b46594932608007",
+      "staged_path": "textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+      "staged_sha256": "2f2d724b08729087c28c126230e206b034c263b2afa083f11b46594932608007",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CanvasRed_basecolor.jpg",
+      "original_basename": "CanvasRed_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 216355,
+      "packed_sha256": "dd214586b5305465be8e7086e2a86a3a528e3871f4e29f1154059c1d3ca9effa",
+      "staged_path": "textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+      "staged_sha256": "dd214586b5305465be8e7086e2a86a3a528e3871f4e29f1154059c1d3ca9effa",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "concrete_basecolor.png",
+      "original_basename": "concrete_basecolor.png",
+      "packed": true,
+      "packed_bytes": 1132763,
+      "packed_sha256": "5ebee3f7ec76f22677f8f5b35325bef00d22814603e6567e2431b4c463d7481f",
+      "staged_path": "textures/5ebee3f7ec76f226_concrete_basecolor.png",
+      "staged_sha256": "5ebee3f7ec76f22677f8f5b35325bef00d22814603e6567e2431b4c463d7481f",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "concrete_normal.png",
+      "original_basename": "concrete_normal.png",
+      "packed": true,
+      "packed_bytes": 1606042,
+      "packed_sha256": "84a4005994ea8e791ec55ab3851dc5d996037bdc19d88ef75033a259396bf806",
+      "staged_path": "textures/84a4005994ea8e79_concrete_normal.png",
+      "staged_sha256": "84a4005994ea8e791ec55ab3851dc5d996037bdc19d88ef75033a259396bf806",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "concrete_roughness.png",
+      "original_basename": "concrete_roughness.png",
+      "packed": true,
+      "packed_bytes": 184858,
+      "packed_sha256": "5fa16c4e883787113a6786a9bdbb893c698c894715b7e067395492abdb57c0c8",
+      "staged_path": "textures/5fa16c4e88378711_concrete_roughness.png",
+      "staged_sha256": "5fa16c4e883787113a6786a9bdbb893c698c894715b7e067395492abdb57c0c8",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CorrodedMetal_basecolor.jpg",
+      "original_basename": "CorrodedMetal_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 914548,
+      "packed_sha256": "1cb16ddd9c29b6f15457af365e074625d996163748574c2d49158c5c046fe71b",
+      "staged_path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "staged_sha256": "1cb16ddd9c29b6f15457af365e074625d996163748574c2d49158c5c046fe71b",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CorrodedMetal_normal.jpg",
+      "original_basename": "CorrodedMetal_normal.jpg",
+      "packed": true,
+      "packed_bytes": 70452,
+      "packed_sha256": "24fc9bd5ac5ba383305634a6cf69bae6d0261efcaf39f6baee8a9307f12ead32",
+      "staged_path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "staged_sha256": "24fc9bd5ac5ba383305634a6cf69bae6d0261efcaf39f6baee8a9307f12ead32",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CorrodedMetal_roughness.jpg",
+      "original_basename": "CorrodedMetal_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 563403,
+      "packed_sha256": "f5ff8d398d88ed01a30a75a9fe743e69497eccbb241c45b62011868d98d7f7de",
+      "staged_path": "textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "staged_sha256": "f5ff8d398d88ed01a30a75a9fe743e69497eccbb241c45b62011868d98d7f7de",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CrackedAsphalt_basecolor.jpg",
+      "original_basename": "CrackedAsphalt_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 1314155,
+      "packed_sha256": "e73899614bd0405bbabec659891ccbcfabf970ba469971efad5f5351e2ad69e2",
+      "staged_path": "textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+      "staged_sha256": "e73899614bd0405bbabec659891ccbcfabf970ba469971efad5f5351e2ad69e2",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CrackedAsphalt_normal.jpg",
+      "original_basename": "CrackedAsphalt_normal.jpg",
+      "packed": true,
+      "packed_bytes": 3403673,
+      "packed_sha256": "59954869e6914003a50902e527bccd2804e504f723d2e2d728aafa6d713507ad",
+      "staged_path": "textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+      "staged_sha256": "59954869e6914003a50902e527bccd2804e504f723d2e2d728aafa6d713507ad",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "CrackedAsphalt_roughness.jpg",
+      "original_basename": "CrackedAsphalt_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 1956558,
+      "packed_sha256": "7bd7fa59dea37febb8e06324043e4bc83131ccb5a0e91bda00a3dddda3aa0708",
+      "staged_path": "textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+      "staged_sha256": "7bd7fa59dea37febb8e06324043e4bc83131ccb5a0e91bda00a3dddda3aa0708",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "cream_basecolor.png",
+      "original_basename": "cream_basecolor.png",
+      "packed": true,
+      "packed_bytes": 1145641,
+      "packed_sha256": "cbb5003f3ae169d47435a330f588cdfcf9d12d72238774f3654833a819ffbbf0",
+      "staged_path": "textures/cbb5003f3ae169d4_cream_basecolor.png",
+      "staged_sha256": "cbb5003f3ae169d47435a330f588cdfcf9d12d72238774f3654833a819ffbbf0",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "cream_normal.png",
+      "original_basename": "cream_normal.png",
+      "packed": true,
+      "packed_bytes": 1649514,
+      "packed_sha256": "542a4eda31856ba958225edf5e0cdbeef7bf39c4fcc70590194a0fd4ab12967a",
+      "staged_path": "textures/542a4eda31856ba9_cream_normal.png",
+      "staged_sha256": "542a4eda31856ba958225edf5e0cdbeef7bf39c4fcc70590194a0fd4ab12967a",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "cream_roughness.png",
+      "original_basename": "cream_roughness.png",
+      "packed": true,
+      "packed_bytes": 184353,
+      "packed_sha256": "bb1030b2219abe9365da1c1355d9e6452e0d97a364e5fc931878b6ea6a28501e",
+      "staged_path": "textures/bb1030b2219abe93_cream_roughness.png",
+      "staged_sha256": "bb1030b2219abe9365da1c1355d9e6452e0d97a364e5fc931878b6ea6a28501e",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "Ground112_2K-JPG_Color.jpg",
+      "original_basename": "Ground112_2K-JPG_Color.jpg",
+      "packed": true,
+      "packed_bytes": 6343840,
+      "packed_sha256": "48f82c52972fd9945d9906c806ca12daba0523a9b3e4aaa1def0c76609e6e392",
+      "staged_path": "textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+      "staged_sha256": "48f82c52972fd9945d9906c806ca12daba0523a9b3e4aaa1def0c76609e6e392",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "Ground112_2K-JPG_NormalGL.jpg",
+      "original_basename": "Ground112_2K-JPG_NormalGL.jpg",
+      "packed": true,
+      "packed_bytes": 8172938,
+      "packed_sha256": "91bd18211fea8082adba9785a9efc827d50ef186d78ecb2a0a1c786f075c89f5",
+      "staged_path": "textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+      "staged_sha256": "91bd18211fea8082adba9785a9efc827d50ef186d78ecb2a0a1c786f075c89f5",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "Ground112_2K-JPG_Roughness.jpg",
+      "original_basename": "Ground112_2K-JPG_Roughness.jpg",
+      "packed": true,
+      "packed_bytes": 3460540,
+      "packed_sha256": "e5be2cefe8a72a9a4d295bbfad91df3dc28827d1a5a4db1ff077f5baeecfdd35",
+      "staged_path": "textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+      "staged_sha256": "e5be2cefe8a72a9a4d295bbfad91df3dc28827d1a5a4db1ff077f5baeecfdd35",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "natural_leaf_veins_living.png",
+      "original_basename": "natural_leaf_veins_living.png",
+      "packed": true,
+      "packed_bytes": 87026,
+      "packed_sha256": "79902e6d1c4d0c0f9b61d15af19e808958f7235d010a968c2030a1b015dfff09",
+      "staged_path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+      "staged_sha256": "79902e6d1c4d0c0f9b61d15af19e808958f7235d010a968c2030a1b015dfff09",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintCream_basecolor.jpg",
+      "original_basename": "PaintCream_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 807699,
+      "packed_sha256": "734a7bab5d1b7496a63fef38fbe031c05b049e2089db96288e8178c3110869cc",
+      "staged_path": "textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "staged_sha256": "734a7bab5d1b7496a63fef38fbe031c05b049e2089db96288e8178c3110869cc",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintCream_normal.jpg",
+      "original_basename": "PaintCream_normal.jpg",
+      "packed": true,
+      "packed_bytes": 880518,
+      "packed_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "staged_path": "textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "staged_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintCream_roughness.jpg",
+      "original_basename": "PaintCream_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 515113,
+      "packed_sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "staged_path": "textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "staged_sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintRed_basecolor.jpg",
+      "original_basename": "PaintRed_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 631504,
+      "packed_sha256": "a7023507bf7681e59948ab34f4216132933a4de6e33b1980d90d4350f9936c53",
+      "staged_path": "textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "staged_sha256": "a7023507bf7681e59948ab34f4216132933a4de6e33b1980d90d4350f9936c53",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintRed_normal.jpg",
+      "original_basename": "PaintRed_normal.jpg",
+      "packed": true,
+      "packed_bytes": 880518,
+      "packed_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "staged_path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "staged_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintRed_roughness.jpg",
+      "original_basename": "PaintRed_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 515113,
+      "packed_sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "staged_path": "textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "staged_sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintTeal_basecolor.jpg",
+      "original_basename": "PaintTeal_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 590487,
+      "packed_sha256": "1b6fcec0b1908e6bcd56b396cd2eb17f4475e2fb27d36f1dab087b4f7a4898c5",
+      "staged_path": "textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "staged_sha256": "1b6fcec0b1908e6bcd56b396cd2eb17f4475e2fb27d36f1dab087b4f7a4898c5",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintTeal_normal.jpg",
+      "original_basename": "PaintTeal_normal.jpg",
+      "packed": true,
+      "packed_bytes": 880518,
+      "packed_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "staged_path": "textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "staged_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "PaintTeal_roughness.jpg",
+      "original_basename": "PaintTeal_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 515113,
+      "packed_sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "staged_path": "textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "staged_sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "plush_fabric_basecolor.png",
+      "original_basename": "plush_fabric_basecolor.png",
+      "packed": true,
+      "packed_bytes": 983481,
+      "packed_sha256": "308ea4186e408ab3f8f490b4999452d3621084e48b6d003f00abea132c8172d8",
+      "staged_path": "textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "staged_sha256": "308ea4186e408ab3f8f490b4999452d3621084e48b6d003f00abea132c8172d8",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "plush_fabric_normal.png",
+      "original_basename": "plush_fabric_normal.png",
+      "packed": true,
+      "packed_bytes": 2093620,
+      "packed_sha256": "53b25a790d311f2151eca58e51de135344aafbed605e928d8a170c8498486b87",
+      "staged_path": "textures/53b25a790d311f21_plush_fabric_normal.png",
+      "staged_sha256": "53b25a790d311f2151eca58e51de135344aafbed605e928d8a170c8498486b87",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "red_basecolor.png",
+      "original_basename": "red_basecolor.png",
+      "packed": true,
+      "packed_bytes": 1201144,
+      "packed_sha256": "8624b481ad9f9c925c179c3a6ed033d134269c0f342762c256c81c285634a53c",
+      "staged_path": "textures/8624b481ad9f9c92_red_basecolor.png",
+      "staged_sha256": "8624b481ad9f9c925c179c3a6ed033d134269c0f342762c256c81c285634a53c",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "red_normal.png",
+      "original_basename": "red_normal.png",
+      "packed": true,
+      "packed_bytes": 1559517,
+      "packed_sha256": "212752c281497b12cf5082fac3c854de636e843e0428ef5fc55231f90374b443",
+      "staged_path": "textures/212752c281497b12_red_normal.png",
+      "staged_sha256": "212752c281497b12cf5082fac3c854de636e843e0428ef5fc55231f90374b443",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "red_roughness.png",
+      "original_basename": "red_roughness.png",
+      "packed": true,
+      "packed_bytes": 184969,
+      "packed_sha256": "609dd1021569011a8d2cffbff4b5ca76a830e7bc6fdd54825593769a89519871",
+      "staged_path": "textures/609dd1021569011a_red_roughness.png",
+      "staged_sha256": "609dd1021569011a8d2cffbff4b5ca76a830e7bc6fdd54825593769a89519871",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "teal_basecolor.png",
+      "original_basename": "teal_basecolor.png",
+      "packed": true,
+      "packed_bytes": 1157399,
+      "packed_sha256": "27321abb3209dc27e8cec0cdea2da1a87859c48bcb96d891cdd4a6882b46f172",
+      "staged_path": "textures/27321abb3209dc27_teal_basecolor.png",
+      "staged_sha256": "27321abb3209dc27e8cec0cdea2da1a87859c48bcb96d891cdd4a6882b46f172",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "teal_normal.png",
+      "original_basename": "teal_normal.png",
+      "packed": true,
+      "packed_bytes": 1572532,
+      "packed_sha256": "82e277f966cfb0336dd9c5f0beb2ecee0c84fab3c74f762c8f977915302d0c2e",
+      "staged_path": "textures/82e277f966cfb033_teal_normal.png",
+      "staged_sha256": "82e277f966cfb0336dd9c5f0beb2ecee0c84fab3c74f762c8f977915302d0c2e",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "teal_roughness.png",
+      "original_basename": "teal_roughness.png",
+      "packed": true,
+      "packed_bytes": 184738,
+      "packed_sha256": "c6ed6c064ddefa3eff0093c782070586c26f214a90cbd1157bb573ad8bd1ab35",
+      "staged_path": "textures/c6ed6c064ddefa3e_teal_roughness.png",
+      "staged_sha256": "c6ed6c064ddefa3eff0093c782070586c26f214a90cbd1157bb573ad8bd1ab35",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "torn_ticket.png",
+      "original_basename": "torn_ticket.png",
+      "packed": true,
+      "packed_bytes": 105972,
+      "packed_sha256": "196a30fdcfcfbaa559224733d11e6b96d2349c8787cbb5fc7e86c4b93a232645",
+      "staged_path": "textures/196a30fdcfcfbaa5_torn_ticket.png",
+      "staged_sha256": "196a30fdcfcfbaa559224733d11e6b96d2349c8787cbb5fc7e86c4b93a232645",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "WeatheredWood_basecolor.jpg",
+      "original_basename": "WeatheredWood_basecolor.jpg",
+      "packed": true,
+      "packed_bytes": 696148,
+      "packed_sha256": "1ef20f6692f5cdeed2c8a6d1e587f1351331099a8c4e8b574b60609112302374",
+      "staged_path": "textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "staged_sha256": "1ef20f6692f5cdeed2c8a6d1e587f1351331099a8c4e8b574b60609112302374",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "WeatheredWood_normal.jpg",
+      "original_basename": "WeatheredWood_normal.jpg",
+      "packed": true,
+      "packed_bytes": 880518,
+      "packed_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "staged_path": "textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "staged_sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96",
+      "packed_matches_staged": true
+    },
+    {
+      "image": "WeatheredWood_roughness.jpg",
+      "original_basename": "WeatheredWood_roughness.jpg",
+      "packed": true,
+      "packed_bytes": 800633,
+      "packed_sha256": "c9a297dbc926ebc18601c45937d0bcd170f26c909028d84c49612b6a06a041f9",
+      "staged_path": "textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "staged_sha256": "c9a297dbc926ebc18601c45937d0bcd170f26c909028d84c49612b6a06a041f9",
+      "packed_matches_staged": true
+    }
+  ],
+  "fonts": [
+    {
+      "font": "Bfont Regular",
+      "builtin": true,
+      "packed": false,
+      "packed_bytes": 0,
+      "packed_sha256": null,
+      "available_without_original_path": true
+    },
+    {
+      "font": "DejaVu Serif Bold",
+      "builtin": false,
+      "packed": true,
+      "packed_bytes": 356668,
+      "packed_sha256": "aac3f559445d23f0f567a243f91f3f6ad6cb4b5cafa1521a3479fffe0637f0bd",
+      "available_without_original_path": true
+    }
+  ],
+  "runtime_verified": false
+}

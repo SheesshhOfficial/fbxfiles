@@ -1,0 +1,1942 @@
+{
+  "source_blend": "Cycle_10.blend",
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "runtime_verified": false,
+  "materials": [
+    {
+      "source_name": "Aged tan plush fabric.001",
+      "asset_name": "M_Aged_tan_plush_fabric_001_99561f42",
+      "maps": {
+        "base_color": {
+          "path": "textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/53b25a790d311f21_plush_fabric_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.2800000011920929,
+        0.15000000596046448,
+        0.054999999701976776,
+        1.0
+      ],
+      "roughness": 0.9200000166893005,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Arena burnished steel wear",
+      "asset_name": "M_Arena_burnished_steel_wear_f5dd7542",
+      "maps": {
+        "base_color": {
+          "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.46000000834465027,
+      "metallic": 0.10000000149011612,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied.",
+      "base_color_multiply_linear": [
+        0.5199999809265137,
+        0.6100000143051147,
+        0.6499999761581421
+      ],
+      "base_color_graph_equivalent": "sRGB image decoded to linear RGB, multiplied by linear constant tint; MixRGB MULTIPLY factor 1, clamp off; alpha unused by opaque BaseColor."
+    },
+    {
+      "source_name": "Arena dark aged oil on scanned metal",
+      "asset_name": "M_Arena_dark_aged_oil_on_scanned_metal_15b6df48",
+      "maps": {
+        "base_color": {
+          "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.28999999165534973,
+      "metallic": 0.10000000149011612,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied.",
+      "base_color_multiply_linear": [
+        0.05999999865889549,
+        0.07000000029802322,
+        0.07999999821186066
+      ],
+      "base_color_graph_equivalent": "sRGB image decoded to linear RGB, multiplied by linear constant tint; MixRGB MULTIPLY factor 1, clamp off; alpha unused by opaque BaseColor."
+    },
+    {
+      "source_name": "CanvasCream",
+      "asset_name": "M_CanvasCream_151f7870",
+      "maps": {
+        "base_color": {
+          "path": "textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/88df250607e5cf92_Canvas_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8600000143051147,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "CanvasRed",
+      "asset_name": "M_CanvasRed_1906aa1d",
+      "maps": {
+        "base_color": {
+          "path": "textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/88df250607e5cf92_Canvas_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8600000143051147,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Cycle06 asphalt patch aggregate",
+      "asset_name": "M_Cycle06_asphalt_patch_aggregate_54aa0a21",
+      "maps": {
+        "base_color": {
+          "path": "textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 2.5,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied.",
+      "base_color_multiply_linear": [
+        0.6600000262260437,
+        0.699999988079071,
+        0.6800000071525574
+      ],
+      "base_color_graph_equivalent": "sRGB image decoded to linear RGB, multiplied by linear constant tint; MixRGB MULTIPLY factor 1, clamp off; alpha unused by opaque BaseColor."
+    },
+    {
+      "source_name": "Cycle06 damp asphalt water margins",
+      "asset_name": "M_Cycle06_damp_asphalt_water_margins_8da79c85",
+      "maps": {},
+      "base_color": [
+        0.03500000014901161,
+        0.0430000014603138,
+        0.03799999877810478,
+        1.0
+      ],
+      "roughness": 0.5799999833106995,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Cycle06 damp tar seams",
+      "asset_name": "M_Cycle06_damp_tar_seams_03e67ec9",
+      "maps": {},
+      "base_color": [
+        0.01899999938905239,
+        0.023000000044703484,
+        0.02199999988079071,
+        1.0
+      ],
+      "roughness": 0.41999998688697815,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Cycle06 worn tire rub",
+      "asset_name": "M_Cycle06_worn_tire_rub_b374b301",
+      "maps": {},
+      "base_color": [
+        0.027000000700354576,
+        0.03200000151991844,
+        0.028999999165534973,
+        1.0
+      ],
+      "roughness": 0.8799999952316284,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Dark plush muzzle.001",
+      "asset_name": "M_Dark_plush_muzzle_001_c79f0f8a",
+      "maps": {},
+      "base_color": [
+        0.07500000298023224,
+        0.03799999877810478,
+        0.014000000432133675,
+        1.0
+      ],
+      "roughness": 0.949999988079071,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance aged ticket stock",
+      "asset_name": "M_Entrance_aged_ticket_stock_c655107f",
+      "maps": {},
+      "base_color": [
+        0.4300000071525574,
+        0.3499999940395355,
+        0.20000000298023224,
+        1.0
+      ],
+      "roughness": 0.9599999785423279,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance charcoal enamel",
+      "asset_name": "M_Entrance_charcoal_enamel_2731f909",
+      "maps": {},
+      "base_color": [
+        0.02500000037252903,
+        0.03099999949336052,
+        0.028999999165534973,
+        1.0
+      ],
+      "roughness": 0.6700000166893005,
+      "metallic": 0.20000000298023224,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance dull galvanized metal",
+      "asset_name": "M_Entrance_dull_galvanized_metal_e26824ec",
+      "maps": {},
+      "base_color": [
+        0.1599999964237213,
+        0.18000000715255737,
+        0.17000000178813934,
+        1.0
+      ],
+      "roughness": 0.7300000190734863,
+      "metallic": 0.44999998807907104,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance dusty lamp glass",
+      "asset_name": "M_Entrance_dusty_lamp_glass_de43c3eb",
+      "maps": {},
+      "base_color": [
+        0.36000001430511475,
+        0.20999999344348907,
+        0.08500000089406967,
+        1.0
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.2340000007152554,
+        0.1364999907314779,
+        0.05524999855458734
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance faded ink",
+      "asset_name": "M_Entrance_faded_ink_8bae3054",
+      "maps": {},
+      "base_color": [
+        0.07999999821186066,
+        0.03400000184774399,
+        0.01600000075995922,
+        1.0
+      ],
+      "roughness": 0.9800000190734863,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance recessed lime mortar",
+      "asset_name": "M_Entrance_recessed_lime_mortar_91ce68ca",
+      "maps": {},
+      "base_color": [
+        0.10499999672174454,
+        0.10999999940395355,
+        0.0949999988079071,
+        1.0
+      ],
+      "roughness": 0.9800000190734863,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Entrance recycled carton",
+      "asset_name": "M_Entrance_recycled_carton_e432f0b2",
+      "maps": {},
+      "base_color": [
+        0.1599999964237213,
+        0.10400000214576721,
+        0.054999999701976776,
+        1.0
+      ],
+      "roughness": 0.949999988079071,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "FH_Aged_Silver_Mirror",
+      "asset_name": "M_FH_Aged_Silver_Mirror_733cedff",
+      "maps": {},
+      "base_color": [
+        0.4399999976158142,
+        0.5299999713897705,
+        0.550000011920929,
+        1.0
+      ],
+      "roughness": 0.11500000208616257,
+      "metallic": 1.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Forest leaf \u2022 deep green",
+      "asset_name": "M_Forest_leaf___deep_green_01f8a40d",
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied.",
+      "base_color_multiply_linear": [
+        0.47999998927116394,
+        0.6800000071525574,
+        0.3799999952316284
+      ],
+      "base_color_graph_equivalent": "sRGB image decoded to linear RGB, multiplied by linear constant tint; MixRGB MULTIPLY factor 1, clamp off; alpha unused by opaque BaseColor."
+    },
+    {
+      "source_name": "Forest leaf \u2022 sage light",
+      "asset_name": "M_Forest_leaf___sage_light_6bf77411",
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied.",
+      "base_color_multiply_linear": [
+        0.75,
+        0.9599999785423279,
+        0.6600000262260437
+      ],
+      "base_color_graph_equivalent": "sRGB image decoded to linear RGB, multiplied by linear constant tint; MixRGB MULTIPLY factor 1, clamp off; alpha unused by opaque BaseColor."
+    },
+    {
+      "source_name": "Forest leaf \u2022 warm olive",
+      "asset_name": "M_Forest_leaf___warm_olive_5b18ecd4",
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied.",
+      "base_color_multiply_linear": [
+        0.8999999761581421,
+        0.8299999833106995,
+        0.44999998807907104
+      ],
+      "base_color_graph_equivalent": "sRGB image decoded to linear RGB, multiplied by linear constant tint; MixRGB MULTIPLY factor 1, clamp off; alpha unused by opaque BaseColor."
+    },
+    {
+      "source_name": "Moon surface",
+      "asset_name": "M_Moon_surface_401d2c11",
+      "maps": {},
+      "base_color": [
+        0.6499999761581421,
+        0.7699999809265137,
+        0.8999999761581421,
+        1.0
+      ],
+      "roughness": 0.5,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.9749999642372131,
+        1.1549999713897705,
+        1.3499999642372131
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Natural arching grass blades",
+      "asset_name": "M_Natural_arching_grass_blades_efd29403",
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.07500000298023224,
+        0.10499999672174454,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.800000011920929,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Natural foliage \u2022 tired ochre olive",
+      "asset_name": "M_Natural_foliage___tired_ochre_olive_fe0ca28d",
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [
+        "Base Color graph modulation not baked; direct source image is an approximation.",
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Natural foliage \u2022 veined olive green",
+      "asset_name": "M_Natural_foliage___veined_olive_green_d72cbe76",
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "PaintCream",
+      "asset_name": "M_PaintCream_fd1dce73",
+      "maps": {
+        "base_color": {
+          "path": "textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintCream_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "PaintRed",
+      "asset_name": "M_PaintRed_65c640d0",
+      "maps": {
+        "base_color": {
+          "path": "textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "PaintTeal",
+      "asset_name": "M_PaintTeal_daf68f37",
+      "maps": {
+        "base_color": {
+          "path": "textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Pavement dark crack interiors",
+      "asset_name": "M_Pavement_dark_crack_interiors_af3a8408",
+      "maps": {},
+      "base_color": [
+        0.012000000104308128,
+        0.01600000075995922,
+        0.010999999940395355,
+        1.0
+      ],
+      "roughness": 0.949999988079071,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Perimeter story dry oak litter",
+      "asset_name": "M_Perimeter_story_dry_oak_litter_14f6c5ef",
+      "maps": {},
+      "base_color": [
+        0.13500000536441803,
+        0.07699999958276749,
+        0.027000000700354576,
+        1.0
+      ],
+      "roughness": 0.9399999976158142,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Perimeter story grey exposed heartwood",
+      "asset_name": "M_Perimeter_story_grey_exposed_heartwood_bc84789c",
+      "maps": {},
+      "base_color": [
+        0.20499999821186066,
+        0.18199999630451202,
+        0.13199999928474426,
+        1.0
+      ],
+      "roughness": 0.949999988079071,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | aged charcoal vinyl",
+      "asset_name": "M_Ride_realism___aged_charcoal_vinyl_2a71a0c0",
+      "maps": {},
+      "base_color": [
+        0.03200000151991844,
+        0.03700000047683716,
+        0.03400000184774399,
+        1.0
+      ],
+      "roughness": 0.5099999904632568,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | aged gilt moulding",
+      "asset_name": "M_Ride_realism___aged_gilt_moulding_b5a463f9",
+      "maps": {},
+      "base_color": [
+        0.3400000035762787,
+        0.20499999821186066,
+        0.06700000166893005,
+        1.0
+      ],
+      "roughness": 0.41999998688697815,
+      "metallic": 0.6800000071525574,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | carousel blue trim",
+      "asset_name": "M_Ride_realism___carousel_blue_trim_422d5d24",
+      "maps": {
+        "base_color": {
+          "path": "textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.5899999737739563,
+      "metallic": 0.03999999910593033,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | faded oxblood enamel",
+      "asset_name": "M_Ride_realism___faded_oxblood_enamel_66fa76d5",
+      "maps": {
+        "base_color": {
+          "path": "textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.4399999976158142,
+      "metallic": 0.3199999928474426,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | faded teal enamel",
+      "asset_name": "M_Ride_realism___faded_teal_enamel_82e2b19f",
+      "maps": {
+        "base_color": {
+          "path": "textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.4399999976158142,
+      "metallic": 0.3199999928474426,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | old headlamp glass",
+      "asset_name": "M_Ride_realism___old_headlamp_glass_54b88473",
+      "maps": {
+        "normal": {
+          "path": "textures/542a4eda31856ba9_cream_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.47999998927116394,
+        0.41999998688697815,
+        0.25999999046325684,
+        1.0
+      ],
+      "roughness": 0.20000000298023224,
+      "metallic": 0.11999999731779099,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | saddle burgundy leather",
+      "asset_name": "M_Ride_realism___saddle_burgundy_leather_c8625743",
+      "maps": {
+        "normal": {
+          "path": "textures/db89a6d4ac976986_PaintRed_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.10499999672174454,
+        0.023000000044703484,
+        0.017999999225139618,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | vulcanized bumper rubber",
+      "asset_name": "M_Ride_realism___vulcanized_bumper_rubber_161e5aa9",
+      "maps": {},
+      "base_color": [
+        0.01600000075995922,
+        0.01899999938905239,
+        0.017999999225139618,
+        1.0
+      ],
+      "roughness": 0.7799999713897705,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | warm ochre enamel",
+      "asset_name": "M_Ride_realism___warm_ochre_enamel_86481b1a",
+      "maps": {},
+      "base_color": [
+        0.41999998688697815,
+        0.23499999940395355,
+        0.052000001072883606,
+        1.0
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.27000001072883606,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Ride realism | worn nickel fittings",
+      "asset_name": "M_Ride_realism___worn_nickel_fittings_10c252ba",
+      "maps": {},
+      "base_color": [
+        0.3400000035762787,
+        0.3199999928474426,
+        0.25,
+        1.0
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.800000011920929,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "Scanned cracked paving",
+      "asset_name": "M_Scanned_cracked_paving_15b6108a",
+      "maps": {
+        "base_color": {
+          "path": "textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 2.5,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "black",
+      "asset_name": "M_black_466bc8ce",
+      "maps": {},
+      "base_color": [
+        0.014999999664723873,
+        0.017999999225139618,
+        0.01899999938905239,
+        1.0
+      ],
+      "roughness": 0.5199999809265137,
+      "metallic": 0.10000000149011612,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "bulb",
+      "asset_name": "M_bulb_7ca6c151",
+      "maps": {},
+      "base_color": [
+        1.0,
+        0.44999998807907104,
+        0.11999999731779099,
+        1.0
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        5.0,
+        2.2499999403953552,
+        0.5999999865889549
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "cardboard",
+      "asset_name": "M_cardboard_3702badb",
+      "maps": {},
+      "base_color": [
+        0.1899999976158142,
+        0.11999999731779099,
+        0.05700000002980232,
+        1.0
+      ],
+      "roughness": 1.0,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "chippedwood",
+      "asset_name": "M_chippedwood_e73df148",
+      "maps": {},
+      "base_color": [
+        0.2199999988079071,
+        0.15000000596046448,
+        0.0729999989271164,
+        1.0
+      ],
+      "roughness": 1.0,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "concrete",
+      "asset_name": "M_concrete_aec5c8ea",
+      "maps": {
+        "base_color": {
+          "path": "textures/5ebee3f7ec76f226_concrete_basecolor.png",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/5fa16c4e88378711_concrete_roughness.png",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/84a4005994ea8e79_concrete_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.20000000298023224,
+        0.20999999344348907,
+        0.18000000715255737,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "cream",
+      "asset_name": "M_cream_7bdd161c",
+      "maps": {
+        "base_color": {
+          "path": "textures/cbb5003f3ae169d4_cream_basecolor.png",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/bb1030b2219abe93_cream_roughness.png",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/542a4eda31856ba9_cream_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.6000000238418579,
+        0.5,
+        0.3199999928474426,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.15000000596046448,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "glass",
+      "asset_name": "M_glass_170fd7e8",
+      "maps": {},
+      "base_color": [
+        0.15000000596046448,
+        0.23999999463558197,
+        0.2800000011920929,
+        1.0
+      ],
+      "roughness": 0.20999999344348907,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [
+        "Blender transmission approximated by translucent opacity 1-transmission and constant IOR refraction; no matched absorption, thickness or path-traced transmission."
+      ],
+      "transmission": 0.550000011920929,
+      "ior": 1.4500000476837158,
+      "glass_approximation": true,
+      "opacity_approximation": 0.44999998807907104,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "gold",
+      "asset_name": "M_gold_09feb137",
+      "maps": {},
+      "base_color": [
+        0.5,
+        0.28999999165534973,
+        0.06499999761581421,
+        1.0
+      ],
+      "roughness": 0.3700000047683716,
+      "metallic": 0.699999988079071,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "ground",
+      "asset_name": "M_ground_cd12af96",
+      "maps": {
+        "base_color": {
+          "path": "textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 2.0,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "leaf",
+      "asset_name": "M_leaf_98798241",
+      "maps": {},
+      "base_color": [
+        0.04500000178813934,
+        0.11999999731779099,
+        0.03200000151991844,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "two_sided": true,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "oldpaper",
+      "asset_name": "M_oldpaper_213f85c8",
+      "maps": {},
+      "base_color": [
+        0.41999998688697815,
+        0.36000001430511475,
+        0.23000000417232513,
+        1.0
+      ],
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "paper",
+      "asset_name": "M_paper_950593b1",
+      "maps": {
+        "base_color": {
+          "path": "textures/196a30fdcfcfbaa5_torn_ticket.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "base_color": [
+        0.550000011920929,
+        0.4399999976158142,
+        0.27000001072883606,
+        1.0
+      ],
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "red",
+      "asset_name": "M_red_78988010",
+      "maps": {
+        "base_color": {
+          "path": "textures/8624b481ad9f9c92_red_basecolor.png",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/609dd1021569011a_red_roughness.png",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/212752c281497b12_red_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.4000000059604645,
+        0.029999999329447746,
+        0.019999999552965164,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.3499999940395355,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "rust",
+      "asset_name": "M_rust_7b41f80f",
+      "maps": {
+        "base_color": {
+          "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.10000000149011612,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "teal",
+      "asset_name": "M_teal_03e06c4b",
+      "maps": {
+        "base_color": {
+          "path": "textures/27321abb3209dc27_teal_basecolor.png",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/c6ed6c064ddefa3e_teal_roughness.png",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/82e277f966cfb033_teal_normal.png",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.029999999329447746,
+        0.20000000298023224,
+        0.18000000715255737,
+        1.0
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.4000000059604645,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "wetground",
+      "asset_name": "M_wetground_e6ad95fe",
+      "maps": {},
+      "base_color": [
+        0.014999999664723873,
+        0.02199999988079071,
+        0.01899999938905239,
+        1.0
+      ],
+      "roughness": 0.1899999976158142,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.3329999446868896,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": null,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    },
+    {
+      "source_name": "wood",
+      "asset_name": "M_wood_e8002c16",
+      "maps": {
+        "base_color": {
+          "path": "textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "metallic": 0.0,
+      "two_sided": false,
+      "normal_flip_green": true,
+      "approximations": [],
+      "transmission": 0.0,
+      "ior": 1.5,
+      "glass_approximation": false,
+      "emission_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_tile_m": 0.8,
+      "uv_policy": "Preserve exported UV channel 0; physical tiling is already baked in scene UVs. No second scale applied."
+    }
+  ],
+  "provenance": "ambientCG CC0 scanned Wood092/Asphalt033/Ground112/Metal063 and derived surfaces; source/realistic_asset_sources.json; docs/ASSET_PROVENANCE.md",
+  "limitations": [
+    "Portable BaseColor/Roughness/tangent Normal maps, constant metallic and emission only.",
+    "Procedural noise, dirt, bump, color mixing, transmission and specialized Blender shader behavior are not automatically baked.",
+    "Normal GL textures use Unreal Flip Green Channel; validate lighting in target engine.",
+    "Two-sided foliage enabled by source material name; full subsurface/transmission requires review."
+  ]
+}

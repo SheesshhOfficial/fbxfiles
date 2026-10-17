@@ -1,0 +1,13 @@
+{
+  "cycle": 10,
+  "view": "Funhouse",
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "actual_blender_render": true,
+  "samples": 512,
+  "path": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_10_Funhouse_Evidence.png",
+  "source_saved": false,
+  "visual_review": {
+    "inspected": true,
+    "finding": "Cleaner actual 512-sample render exposes curved sign case, scalloped facade wings and mouth moulding; illumination readable. Residual noise and stylized face remain. No perfect-realism claim."
+  }
+}

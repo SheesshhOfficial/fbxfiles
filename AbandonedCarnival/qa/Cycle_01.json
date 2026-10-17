@@ -1,0 +1,32 @@
+{
+  "cycle": 1,
+  "zone": "Maintenance",
+  "parent_source": "/workspace/scratch/26eeef986c30/CarnivalMap/blender/Moonfall_Carnival_ArtPass.blend",
+  "parent_sha256": "a6db8d9f04eb8f3c6c21c136781d537f6e0afb0ebf9d77a352b31c0a644411f9",
+  "checkpoint": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_01.blend",
+  "checkpoint_sha256": "c6f6395f633a8eb61706e328f19057e36b2d6da369e88c36c977af14646f4621",
+  "improvement": {
+    "change": "Replaced two flat slab roofs with 48-segment formed sheet-metal roofs, curved seams, drip edges and matching end caps; raised vents onto new roof.",
+    "created_primary_meshes": [
+      "Cycle01 caravan A formed barrel roof",
+      "Cycle01 A curved end cap",
+      "Cycle01 A curved end cap.001",
+      "Cycle01 caravan B formed barrel roof",
+      "Cycle01 B curved end cap",
+      "Cycle01 B curved end cap.001"
+    ],
+    "eligible_props_changed": 0,
+    "route_geometry_changed": false,
+    "collision_note": "New curved roof shells require dedicated roof collision review on export; no door/window openings changed."
+  },
+  "added_objects": 155,
+  "actual_render": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_01_Maintenance.png",
+  "samples": 128,
+  "review_status": "visually inspected",
+  "unreal_runtime_verified": false,
+  "visual_review": {
+    "observed_improvement": "Both trailer front silhouettes now have a visible curved crown instead of a thick flat slab. Rolled seams read as thin manufactured metal, and porch/windows remain unobstructed.",
+    "remaining_weakness": "Large flat end panels and rectangular crates remain visually simple; the scene still needs surface-localized wear and full-zone refinements. Review grain is visible.",
+    "next_cycle": "Refine manufactured construction and canvas edges of the five midway booths."
+  }
+}

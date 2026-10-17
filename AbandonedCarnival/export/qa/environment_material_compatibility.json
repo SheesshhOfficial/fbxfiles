@@ -1,0 +1,258 @@
+{
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "scope": "Source graph structure and exported numeric material intent; Unreal shader execution unverified",
+  "runtime_verified": false,
+  "patch_tint_supported": true,
+  "patch_tint_linear": [
+    0.6600000262260437,
+    0.699999988079071,
+    0.6800000071525574
+  ],
+  "supported_multiply_materials": [
+    {
+      "material": "Arena burnished steel wear",
+      "tint_linear": [
+        0.5199999809265137,
+        0.6100000143051147,
+        0.6499999761581421
+      ],
+      "texture": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg"
+    },
+    {
+      "material": "Arena dark aged oil on scanned metal",
+      "tint_linear": [
+        0.05999999865889549,
+        0.07000000029802322,
+        0.07999999821186066
+      ],
+      "texture": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg"
+    },
+    {
+      "material": "Cycle06 asphalt patch aggregate",
+      "tint_linear": [
+        0.6600000262260437,
+        0.699999988079071,
+        0.6800000071525574
+      ],
+      "texture": "textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg"
+    },
+    {
+      "material": "Forest leaf \u2022 deep green",
+      "tint_linear": [
+        0.47999998927116394,
+        0.6800000071525574,
+        0.3799999952316284
+      ],
+      "texture": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png"
+    },
+    {
+      "material": "Forest leaf \u2022 sage light",
+      "tint_linear": [
+        0.75,
+        0.9599999785423279,
+        0.6600000262260437
+      ],
+      "texture": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png"
+    },
+    {
+      "material": "Forest leaf \u2022 warm olive",
+      "tint_linear": [
+        0.8999999761581421,
+        0.8299999833106995,
+        0.44999998807907104
+      ],
+      "texture": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png"
+    }
+  ],
+  "unsupported_modulation_materials": [
+    {
+      "material": "Natural foliage \u2022 tired ochre olive",
+      "reason": "Expected constant factor 1"
+    }
+  ],
+  "method": "Explicit Multiply expression in prepared V2 Unreal material importer; no lossy texture rebake",
+  "materials": [
+    {
+      "source_name": "Arena burnished steel wear",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.46000000834465027,
+      "maps": {
+        "base_color": {
+          "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "approximations": []
+    },
+    {
+      "source_name": "Arena dark aged oil on scanned metal",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.28999999165534973,
+      "maps": {
+        "base_color": {
+          "path": "textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "normal": {
+          "path": "textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "approximations": []
+    },
+    {
+      "source_name": "Cycle06 asphalt patch aggregate",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "maps": {
+        "base_color": {
+          "path": "textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+          "available": true,
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        },
+        "normal": {
+          "path": "textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+          "available": true,
+          "color_space": "Non-Color"
+        }
+      },
+      "approximations": []
+    },
+    {
+      "source_name": "Cycle06 damp asphalt water margins",
+      "base_color": [
+        0.03500000014901161,
+        0.0430000014603138,
+        0.03799999877810478,
+        1.0
+      ],
+      "roughness": 0.5799999833106995,
+      "maps": {},
+      "approximations": []
+    },
+    {
+      "source_name": "Cycle06 damp tar seams",
+      "base_color": [
+        0.01899999938905239,
+        0.023000000044703484,
+        0.02199999988079071,
+        1.0
+      ],
+      "roughness": 0.41999998688697815,
+      "maps": {},
+      "approximations": []
+    },
+    {
+      "source_name": "Cycle06 worn tire rub",
+      "base_color": [
+        0.027000000700354576,
+        0.03200000151991844,
+        0.028999999165534973,
+        1.0
+      ],
+      "roughness": 0.8799999952316284,
+      "maps": {},
+      "approximations": []
+    },
+    {
+      "source_name": "Forest leaf \u2022 deep green",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ]
+    },
+    {
+      "source_name": "Forest leaf \u2022 sage light",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ]
+    },
+    {
+      "source_name": "Forest leaf \u2022 warm olive",
+      "base_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "maps": {
+        "base_color": {
+          "path": "textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+          "available": true,
+          "color_space": "sRGB"
+        }
+      },
+      "approximations": [
+        "Blender bump/procedural normal omitted; requires baking or manual recreation."
+      ]
+    },
+    {
+      "source_name": "wetground",
+      "base_color": [
+        0.014999999664723873,
+        0.02199999988079071,
+        0.01899999938905239,
+        1.0
+      ],
+      "roughness": 0.1899999976158142,
+      "maps": {},
+      "approximations": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "cycle": 2,
+  "zone": "Midway",
+  "parent_source": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_01.blend",
+  "parent_sha256": "c6f6395f633a8eb61706e328f19057e36b2d6da369e88c36c977af14646f4621",
+  "checkpoint": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_02.blend",
+  "checkpoint_sha256": "ae15307fe0ed17e1f17f0fd9c4fd6969eba3c928711b5c64b8a46d7a180c791b",
+  "improvement": {
+    "change": "Five stalls receive board-built counters with rounded nosings, short scalloped woven canvas valances, thin folded eave flashing and visible join fasteners.",
+    "replaced_objects": [
+      "Midway RING TOSS counter",
+      "Midway BALL TOSS counter",
+      "Midway LUCKY STARS counter",
+      "Midway CANDY FLOSS counter",
+      "Midway FORTUNE counter"
+    ],
+    "custom_meshes_added": 100,
+    "eligible_props_changed": 0,
+    "route_note": "No floor obstacles added; canvas bottom stays above2.8m and signs remain exposed."
+  },
+  "added_objects": 146,
+  "actual_render": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_02_Midway.png",
+  "samples": 128,
+  "review_status": "visually inspected",
+  "unreal_runtime_verified": false,
+  "visual_review": {
+    "observed_improvement": "Short scalloped fabric valances read as thin textile beneath the signs; counters show separate boards and rolled nosing instead of a single rectangular slab. The central route remains visibly open.",
+    "remaining_weakness": "The broad route still reads uniformly smooth and the rear tree line is sparse; later ground/perimeter cycles address those. Cars retain simplistic silhouettes in the far arena.",
+    "next_cycle": "Replace bumper-car body and seat silhouettes while preserving each individual eligible actor."
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "scope": "Derived from current V2 raw FBX/source fidelity and Blender FBX reimport reports; no new Blender or Unreal execution",
+  "raw_fbx_source_fidelity_passed": true,
+  "blender_non_normal_checks_passed": true,
+  "blender_reimport_normals_passed": false,
+  "unreal_runtime_verified": false,
+  "asset_count": 43,
+  "affected_asset_count": 24,
+  "total_source_corners": 7981009,
+  "corners_above_strict_normal_tolerance": 4795,
+  "normal_vector_tolerance": 0.002,
+  "normal_angular_tolerance_degrees": 0.1145915781247664,
+  "maximum_normal_angular_error_degrees": 89.33298097848653,
+  "raw_maximum_normal_vector_error": 0.0,
+  "raw_topology_exact": true,
+  "raw_polygon_material_assignments_exact": true,
+  "raw_maximum_uv_error": 0.0,
+  "raw_maximum_vertex_error_cm": 0.0001220703125,
+  "blender_maximum_bounds_error_cm": 6.103515625e-05,
+  "blender_maximum_uv_error": 1.996755599975586e-05,
+  "blender_triangle_corner_and_hull_counts_match": true,
+  "source_geometry_or_topology_changed": false,
+  "affected_assets": [
+    {
+      "asset": "SM_Env_Tile_m3_m2",
+      "mismatched_corners": 10,
+      "maximum_normal_vector_error": 0.004676966181601835,
+      "maximum_normal_angular_error_degrees": 0.2679706673646535,
+      "source_components": {
+        "Perimeter story | foliage west arrival intermediate crown uneve": 10
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m3_m1",
+      "mismatched_corners": 17,
+      "maximum_normal_vector_error": 0.004556214376905343,
+      "maximum_normal_angular_error_degrees": 0.2610520801539814,
+      "source_components": {
+        "Natural forest | 02 bent trunk and branches": 2,
+        "Perimeter story | foliage west leaning hazel uneven connected c": 4,
+        "Perimeter story | foliage west winding intermediate crown uneve": 11
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m3_p1",
+      "mismatched_corners": 4,
+      "maximum_normal_vector_error": 0.003512724678529037,
+      "maximum_normal_angular_error_degrees": 0.2012644021482818,
+      "source_components": {
+        "Perimeter story | foliage west old fork crown uneven connected ": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m3_p2",
+      "mismatched_corners": 14,
+      "maximum_normal_vector_error": 0.003947327789503737,
+      "maximum_normal_angular_error_degrees": 0.22616536952561153,
+      "source_components": {
+        "Natural forest | 07 bent trunk and branches": 4,
+        "Perimeter story | foliage northwest double crown forked trunks": 5,
+        "Perimeter story | foliage northwest double crown uneven connect": 5
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m2_m3",
+      "mismatched_corners": 16,
+      "maximum_normal_vector_error": 0.9999999904737495,
+      "maximum_normal_angular_error_degrees": 59.99999936974834,
+      "source_components": {
+        "Perimeter story | foliage southwest entrance shoulder dense und": 8,
+        "Perimeter story | foliage southwest entrance shoulder rooted wo": 4,
+        "Perimeter story | foliage southern wind-bent elder uneven conne": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m2_m2",
+      "mismatched_corners": 44,
+      "maximum_normal_vector_error": 0.6009401060454016,
+      "maximum_normal_angular_error_degrees": 34.97167555377208,
+      "source_components": {
+        "Art broken paving edge.010": 24,
+        "Cycle02 RING TOSS scalloped canvas valance.002": 6,
+        "Cycle02 RING TOSS scalloped canvas valance.006": 2,
+        "Cycle02 RING TOSS scalloped canvas valance.008": 4,
+        "Cycle02 RING TOSS scalloped canvas valance.010": 2,
+        "Cycle02 RING TOSS scalloped canvas valance.015": 2,
+        "Cycle02 RING TOSS scalloped canvas valance.017": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m2_m1",
+      "mismatched_corners": 60,
+      "maximum_normal_vector_error": 0.6009342779189489,
+      "maximum_normal_angular_error_degrees": 34.971325448979485,
+      "source_components": {
+        "Art broken paving edge.016": 16,
+        "Art broken paving edge.020": 8,
+        "Cycle02 BALL TOSS scalloped canvas valance.006": 8,
+        "Cycle02 BALL TOSS scalloped canvas valance.008": 2,
+        "Cycle02 BALL TOSS scalloped canvas valance.010": 2,
+        "Cycle02 BALL TOSS scalloped canvas valance.012": 2,
+        "Cycle02 BALL TOSS scalloped canvas valance.017": 2,
+        "Cycle02 LUCKY STARS scalloped canvas valance": 4,
+        "Cycle02 LUCKY STARS scalloped canvas valance.004": 2,
+        "Cycle02 LUCKY STARS scalloped canvas valance.006": 2,
+        "Cycle02 LUCKY STARS scalloped canvas valance.007": 4,
+        "Cycle02 LUCKY STARS scalloped canvas valance.009": 2,
+        "Cycle02 LUCKY STARS scalloped canvas valance.014": 2,
+        "Cycle02 LUCKY STARS scalloped canvas valance.016": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m2_p0",
+      "mismatched_corners": 40,
+      "maximum_normal_vector_error": 0.6009163541094463,
+      "maximum_normal_angular_error_degrees": 34.970248739448174,
+      "source_components": {
+        "Art broken paving edge.032": 16,
+        "Art broken paving edge.033": 24
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m2_p2",
+      "mismatched_corners": 7,
+      "maximum_normal_vector_error": 0.004911237149112715,
+      "maximum_normal_angular_error_degrees": 0.2813934436358503,
+      "source_components": {
+        "Perimeter story | foliage north western thicket dense understor": 4,
+        "Perimeter story | foliage north sheltered crown forked trunks": 3
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m1_m2",
+      "mismatched_corners": 120,
+      "maximum_normal_vector_error": 0.6011318283679717,
+      "maximum_normal_angular_error_degrees": 34.98319280542959,
+      "source_components": {
+        "Art broken paving edge.036": 24,
+        "Art broken paving edge.038": 16,
+        "Art broken paving edge.040": 24,
+        "Art broken paving edge.046": 24,
+        "Cycle02 CANDY FLOSS scalloped canvas valance": 2,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.004": 2,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.005": 4,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.006": 4,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.008": 6,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.009": 2,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.012": 4,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.015": 4,
+        "Cycle02 CANDY FLOSS scalloped canvas valance.016": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m1_m1",
+      "mismatched_corners": 64,
+      "maximum_normal_vector_error": 0.6008769971122777,
+      "maximum_normal_angular_error_degrees": 34.967884518072616,
+      "source_components": {
+        "Art broken paving edge.052": 8,
+        "Art broken paving edge.064": 16,
+        "Cracked uneven asphalt surface": 14,
+        "Cycle02 FORTUNE scalloped canvas valance": 2,
+        "Cycle02 FORTUNE scalloped canvas valance.002": 2,
+        "Cycle02 FORTUNE scalloped canvas valance.006": 2,
+        "Cycle02 FORTUNE scalloped canvas valance.008": 4,
+        "Cycle02 FORTUNE scalloped canvas valance.010": 2,
+        "Cycle02 FORTUNE scalloped canvas valance.011": 4,
+        "Cycle02 FORTUNE scalloped canvas valance.014": 4,
+        "Cycle02 FORTUNE scalloped canvas valance.015": 2,
+        "Cycle02 FORTUNE scalloped canvas valance.017": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_m1_p0",
+      "mismatched_corners": 208,
+      "maximum_normal_vector_error": 1.4049070708282143,
+      "maximum_normal_angular_error_degrees": 89.24836890138062,
+      "source_components": {
+        "Carousel | antique mirrored drum panel.003": 32,
+        "Carousel | antique mirrored drum panel.004": 32,
+        "Carousel | antique mirrored drum panel.005": 32,
+        "Carousel | antique mirrored drum panel.006": 32,
+        "Carousel | antique mirrored drum panel.007": 32,
+        "Carousel | antique mirrored drum panel.008": 32,
+        "Art broken paving edge.067": 16
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p0_m2",
+      "mismatched_corners": 20,
+      "maximum_normal_vector_error": 0.002878462724903036,
+      "maximum_normal_angular_error_degrees": 0.1649238225595452,
+      "source_components": {
+        "Entrance detail admission plate text": 20
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p0_m1",
+      "mismatched_corners": 844,
+      "maximum_normal_vector_error": 1.4059514344538002,
+      "maximum_normal_angular_error_degrees": 89.3324729114334,
+      "source_components": {
+        "BY_Caravan_A_Window_Gasket": 24,
+        "BY_Caravan_A_Window_Glass": 24,
+        "BY_Caravan_A_Window_Frame": 76,
+        "BY_Caravan_A_Window_Frame.001": 76,
+        "BY_Caravan_A_Window_Frame.002": 73,
+        "BY_Caravan_A_Window_Frame.003": 73,
+        "BY_Caravan_A_Window_Mullion": 76,
+        "BY_Caravan_A_Window_Gasket.001": 24,
+        "BY_Caravan_A_Window_Glass.001": 24,
+        "BY_Caravan_A_Window_Frame.004": 76,
+        "BY_Caravan_A_Window_Frame.005": 76,
+        "BY_Caravan_A_Window_Frame.006": 73,
+        "BY_Caravan_A_Window_Frame.007": 73,
+        "BY_Caravan_A_Window_Mullion.001": 76
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p0_p0",
+      "mismatched_corners": 176,
+      "maximum_normal_vector_error": 1.4048951925247708,
+      "maximum_normal_angular_error_degrees": 89.24741267608411,
+      "source_components": {
+        "Carousel | antique mirrored drum panel": 32,
+        "Carousel | antique mirrored drum panel.001": 24,
+        "Carousel | antique mirrored drum panel.002": 32,
+        "Carousel | antique mirrored drum panel.009": 32,
+        "Carousel | antique mirrored drum panel.010": 32,
+        "Carousel | antique mirrored drum panel.011": 24
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p0_p2",
+      "mismatched_corners": 7,
+      "maximum_normal_vector_error": 0.003903171260873953,
+      "maximum_normal_angular_error_degrees": 0.22363538192449572,
+      "source_components": {
+        "Perimeter story | foliage north forked elder uneven connected c": 4,
+        "Perimeter story | foliage north uneven crown uneven connected c": 3
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p1_m3",
+      "mismatched_corners": 14,
+      "maximum_normal_vector_error": 0.004115335672108824,
+      "maximum_normal_angular_error_degrees": 0.23579153168177253,
+      "source_components": {
+        "Perimeter story | foliage southeast entrance shoulder dense und": 14
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p1_m1",
+      "mismatched_corners": 2532,
+      "maximum_normal_vector_error": 1.4059577410881878,
+      "maximum_normal_angular_error_degrees": 89.33298097848653,
+      "source_components": {
+        "BY_Caravan_A_Window_Gasket.002": 24,
+        "BY_Caravan_A_Window_Glass.002": 24,
+        "BY_Caravan_A_Window_Frame.008": 76,
+        "BY_Caravan_A_Window_Frame.009": 76,
+        "BY_Caravan_A_Window_Frame.010": 73,
+        "BY_Caravan_A_Window_Frame.011": 73,
+        "BY_Caravan_A_Window_Mullion.002": 76,
+        "BY_Caravan_A_Window_Gasket.003": 24,
+        "BY_Caravan_A_Window_Glass.003": 24,
+        "BY_Caravan_A_Window_Frame.012": 76,
+        "BY_Caravan_A_Window_Frame.013": 76,
+        "BY_Caravan_A_Window_Frame.014": 73,
+        "BY_Caravan_A_Window_Frame.015": 73,
+        "BY_Caravan_A_Window_Mullion.003": 76,
+        "BY_Caravan_B_Window_Gasket": 24,
+        "BY_Caravan_B_Window_Glass": 24,
+        "BY_Caravan_B_Window_Frame": 76,
+        "BY_Caravan_B_Window_Frame.001": 76,
+        "BY_Caravan_B_Window_Frame.002": 73,
+        "BY_Caravan_B_Window_Frame.003": 73,
+        "BY_Caravan_B_Window_Mullion": 76,
+        "BY_Caravan_B_Window_Gasket.001": 24,
+        "BY_Caravan_B_Window_Glass.001": 24,
+        "BY_Caravan_B_Window_Frame.004": 76,
+        "BY_Caravan_B_Window_Frame.005": 76,
+        "BY_Caravan_B_Window_Frame.006": 73,
+        "BY_Caravan_B_Window_Frame.007": 73,
+        "BY_Caravan_B_Window_Mullion.001": 76,
+        "BY_Caravan_B_Window_Gasket.002": 24,
+        "BY_Caravan_B_Window_Glass.002": 24,
+        "BY_Caravan_B_Window_Frame.008": 76,
+        "BY_Caravan_B_Window_Frame.009": 76,
+        "BY_Caravan_B_Window_Frame.010": 73,
+        "BY_Caravan_B_Window_Frame.011": 73,
+        "BY_Caravan_B_Window_Mullion.002": 76,
+        "BY_Caravan_B_Window_Gasket.003": 24,
+        "BY_Caravan_B_Window_Glass.003": 24,
+        "BY_Caravan_B_Window_Frame.012": 76,
+        "BY_Caravan_B_Window_Frame.013": 76,
+        "BY_Caravan_B_Window_Frame.014": 73,
+        "BY_Caravan_B_Window_Frame.015": 73,
+        "BY_Caravan_B_Window_Mullion.003": 76
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p1_p0",
+      "mismatched_corners": 556,
+      "maximum_normal_vector_error": 1.3076702294920002,
+      "maximum_normal_angular_error_degrees": 81.66276218907848,
+      "source_components": {
+        "FH_Spare_Mirror_Glass": 24,
+        "FHR_Scalloped_Valance": 248,
+        "FHR_Manufactured_Sign_Case": 188,
+        "FHR_Pressed_Hair_Fans": 96
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p1_p2",
+      "mismatched_corners": 6,
+      "maximum_normal_vector_error": 0.00403953455110187,
+      "maximum_normal_angular_error_degrees": 0.23144843833969442,
+      "source_components": {
+        "Natural forest | 21 bent trunk and branches": 2,
+        "Perimeter story | foliage north east shoulder crown uneven conn": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p2_m2",
+      "mismatched_corners": 13,
+      "maximum_normal_vector_error": 0.003985971164535615,
+      "maximum_normal_angular_error_degrees": 0.2283794761757976,
+      "source_components": {
+        "Natural forest | 09 bent trunk and branches": 4,
+        "Perimeter story | foliage east arrival leaning crown forked tru": 2,
+        "Perimeter story | foliage east arrival leaning crown uneven con": 5,
+        "Interior understory | foliage east fence sheltered pocket shrub": 2
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p2_p0",
+      "mismatched_corners": 16,
+      "maximum_normal_vector_error": 0.004750891648273962,
+      "maximum_normal_angular_error_degrees": 0.2722062963688145,
+      "source_components": {
+        "Natural forest | 13 bent trunk and branches": 4,
+        "Perimeter story | foliage east service crown uneven connected c": 12
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p2_p1",
+      "mismatched_corners": 4,
+      "maximum_normal_vector_error": 0.00360993323838597,
+      "maximum_normal_angular_error_degrees": 0.206834051191211,
+      "source_components": {
+        "Perimeter story | foliage east bowed saplings uneven connected ": 4
+      }
+    },
+    {
+      "asset": "SM_Env_Tile_p2_p2",
+      "mismatched_corners": 3,
+      "maximum_normal_vector_error": 0.002577717952227283,
+      "maximum_normal_angular_error_degrees": 0.14769240032780315,
+      "source_components": {
+        "Perimeter story | foliage east high fork crown forked trunks": 2,
+        "Perimeter story | foliage east high fork crown uneven connected": 1
+      }
+    }
+  ],
+  "interpretation": "FBX numeric normals match transformed evaluated source exactly. Blender reimport reconstruction differs on listed corners, including foliage and thin-bevel/custom-normal geometry. Raw fidelity does not establish Unreal shading fidelity; strict reimport failure is retained without loosening tolerance. Component counts are positional-candidate attribution from the verifier, not a fresh mesh inspection.",
+  "required_engine_check": "Import source normals and generate tangents; inspect affected meshes in Unreal for shading, normals/tangents and material seams before approving the map. Validate UCX cook/traversal separately. No Unreal execution has been performed.",
+  "evidence": [
+    "qa/environment_raw_fidelity.json",
+    "qa/environment_source_roundtrip.json",
+    "qa/environment_export.json"
+  ]
+}

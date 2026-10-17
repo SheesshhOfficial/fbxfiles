@@ -1,0 +1,177 @@
+{
+  "source_blend_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "all_passed": true,
+  "method": "Independent raw-FBX UCX closed-edge, finite-coordinate, exact-bounds, vertex-budget, file-hash and convex-volume validation. No Unreal execution.",
+  "assets": [
+    {
+      "asset": "SM_CoiledAirHose_0397d7fc33",
+      "ucx_objects": 1,
+      "vertices": 216,
+      "faces": 428,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 3.829703234829468e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_TicketRoll_20a1f05f35",
+      "ucx_objects": 1,
+      "vertices": 124,
+      "faces": 244,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 3.968225730182557e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_TicketRoll_7d54e7e903",
+      "ucx_objects": 1,
+      "vertices": 124,
+      "faces": 244,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 3.968225730182557e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_TicketRoll_554b3a9f72",
+      "ucx_objects": 1,
+      "vertices": 124,
+      "faces": 244,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 5.952403318487508e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_aeb36301a9",
+      "ucx_objects": 1,
+      "vertices": 152,
+      "faces": 300,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_09ae6bae1a",
+      "ucx_objects": 1,
+      "vertices": 152,
+      "faces": 300,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 1.9401519930041468e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_3577593d5f",
+      "ucx_objects": 1,
+      "vertices": 152,
+      "faces": 300,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 1.164090639180195e-15,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "ucx_objects": 1,
+      "vertices": 161,
+      "faces": 318,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "ucx_objects": 1,
+      "vertices": 192,
+      "faces": 380,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 1.2596281641160644e-15,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "ucx_objects": 1,
+      "vertices": 151,
+      "faces": 298,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "ucx_objects": 1,
+      "vertices": 191,
+      "faces": 378,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 4.580453384377441e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "ucx_objects": 1,
+      "vertices": 161,
+      "faces": 318,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 1.1477321731384032e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "ucx_objects": 1,
+      "vertices": 191,
+      "faces": 378,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 6.870680404093073e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "ucx_objects": 1,
+      "vertices": 160,
+      "faces": 316,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 9.181891168685066e-16,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "ucx_objects": 1,
+      "vertices": 153,
+      "faces": 302,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 0.0,
+      "passed": true
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "ucx_objects": 1,
+      "vertices": 151,
+      "faces": 298,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 1.3547534865341922e-15,
+      "passed": true
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_c047ef796e",
+      "ucx_objects": 1,
+      "vertices": 152,
+      "faces": 300,
+      "closed_manifold_edges": true,
+      "max_bounds_error_cm": 0.0,
+      "relative_volume_difference_from_independent_convex_hull": 3.880307350836511e-16,
+      "passed": true
+    }
+  ]
+}

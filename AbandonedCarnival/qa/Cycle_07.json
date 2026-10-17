@@ -1,0 +1,801 @@
+{
+  "cycle": 7,
+  "zone": "Maintenance",
+  "parent_source": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_06.blend",
+  "parent_sha256": "8086345aeedee60ecee0f9607cef241aa239b72a20887ad0d969c5e9106ee8c8",
+  "checkpoint": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_07.blend",
+  "checkpoint_sha256": "0b37803d0888dfde96de15bc940aa6827788db9cefbd1b926c69d460c0788109",
+  "improvement": {
+    "status": "applied",
+    "version": "maintenance_construction_v1",
+    "eligible_props_changed": 12,
+    "trailer_front_caps_changed": 2,
+    "placed_object_names_preserved": true,
+    "route_geometry_changed": false,
+    "bounds_expanded": false,
+    "geometry_validation": [
+      {
+        "name": "BY_Pallet_Low_0",
+        "components": 45,
+        "vertices": 1440,
+        "faces": 1242,
+        "triangles": 2700,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5184,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 0
+      },
+      {
+        "name": "BY_Pallet_Low_1",
+        "components": 45,
+        "vertices": 1440,
+        "faces": 1242,
+        "triangles": 2700,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5184,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 0
+      },
+      {
+        "name": "BY_Pallet_Low_2",
+        "components": 45,
+        "vertices": 1600,
+        "faces": 1402,
+        "triangles": 3020,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5824,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 2
+      },
+      {
+        "name": "BY_Pallet_Stack_0",
+        "components": 45,
+        "vertices": 1440,
+        "faces": 1242,
+        "triangles": 2700,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5184,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 0
+      },
+      {
+        "name": "BY_Pallet_Stack_1",
+        "components": 45,
+        "vertices": 1440,
+        "faces": 1242,
+        "triangles": 2700,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5184,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 0
+      },
+      {
+        "name": "BY_Pallet_Stack_2",
+        "components": 45,
+        "vertices": 1520,
+        "faces": 1322,
+        "triangles": 2860,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5504,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 1
+      },
+      {
+        "name": "BY_Pallet_Stack_3",
+        "components": 45,
+        "vertices": 1440,
+        "faces": 1242,
+        "triangles": 2700,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5184,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 0
+      },
+      {
+        "name": "BY_Pallet_Stack_4",
+        "components": 45,
+        "vertices": 1520,
+        "faces": 1322,
+        "triangles": 2860,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 5504,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "fork_gap_min_width_m": 0.38,
+        "fork_lane_footprints_unchanged": true,
+        "damaged_boards": 1
+      },
+      {
+        "name": "BY_Crate_0",
+        "components": 90,
+        "vertices": 4720,
+        "faces": 4500,
+        "triangles": 9080,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 18080,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true
+      },
+      {
+        "name": "BY_Crate_1",
+        "components": 95,
+        "vertices": 5200,
+        "faces": 4990,
+        "triangles": 10020,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 20000,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true
+      },
+      {
+        "name": "BY_Crate_2",
+        "components": 90,
+        "vertices": 4640,
+        "faces": 4420,
+        "triangles": 8920,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 17760,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true
+      },
+      {
+        "name": "BY_Crate_3",
+        "components": 90,
+        "vertices": 4720,
+        "faces": 4500,
+        "triangles": 9080,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 18080,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true
+      },
+      {
+        "name": "BY_Caravan_A_End_Cap",
+        "components": 39,
+        "vertices": 1648,
+        "faces": 1454,
+        "triangles": 3140,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 6048,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "preserved_end_wall_envelope": true
+      },
+      {
+        "name": "BY_Caravan_B_End_Cap",
+        "components": 50,
+        "vertices": 2656,
+        "faces": 2484,
+        "triangles": 5112,
+        "degenerate_faces": 0,
+        "degenerate_triangles": 0,
+        "uv_loops": 10080,
+        "material_indices_valid": true,
+        "bounds_not_expanded": true,
+        "preserved_end_wall_envelope": true
+      }
+    ],
+    "change": "Replaced solid maintenance crates with thin-board skins, internal joinery, load skids and grounded nails; replaced thick pallet planks with 28 mm deck stock and sparse localized damage; formed two trailer end skins with shallow seams, edge folds, a selective repair and a recessed vent.",
+    "collision_note": "Collision regeneration REQUIRED for all twelve changed eligible props and the two changed static caps. Regenerate per-component hulls; do not bridge pallet fork lanes or hollow crate interiors. No Blueprint changes. Unreal runtime verification remains pending."
+  },
+  "added_objects": 2,
+  "actual_render": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_07_Maintenance.png",
+  "samples": 128,
+  "review_status": "visually inspected",
+  "unreal_runtime_verified": false,
+  "scene_lighting": {
+    "exposure": 0.10000000149011612,
+    "world_strength": 0.2800000011920929,
+    "lights": [
+      {
+        "name": "Midway RING TOSS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -16.30000114440918,
+          -15.0,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway BALL TOSS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -16.299999237060547,
+          -9.0,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway LUCKY STARS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -16.299999237060547,
+          -3.000000238418579,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway CANDY FLOSS warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -3.700000762939453,
+          -14.999999046325684,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Midway FORTUNE warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          -3.6999998092651367,
+          -9.0,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Festoon pool",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -23.0,
+          -21.0,
+          4.900000095367432
+        ]
+      },
+      {
+        "name": "Festoon pool.001",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -17.95652198791504,
+          -21.0,
+          4.458353519439697
+        ]
+      },
+      {
+        "name": "Festoon pool.002",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -12.913043022155762,
+          -21.0,
+          4.145297527313232
+        ]
+      },
+      {
+        "name": "Festoon pool.003",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -7.869565010070801,
+          -21.0,
+          4.051981449127197
+        ]
+      },
+      {
+        "name": "Festoon pool.004",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -2.82608699798584,
+          -21.0,
+          4.205575466156006
+        ]
+      },
+      {
+        "name": "Festoon pool.005",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          2.2173912525177,
+          -21.0,
+          4.56135892868042
+        ]
+      },
+      {
+        "name": "Festoon pool.006",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -23.0,
+          -6.0,
+          4.900000095367432
+        ]
+      },
+      {
+        "name": "Festoon pool.007",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -17.95652198791504,
+          -6.0,
+          4.458353519439697
+        ]
+      },
+      {
+        "name": "Festoon pool.008",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -12.913043022155762,
+          -6.0,
+          4.145297527313232
+        ]
+      },
+      {
+        "name": "Festoon pool.009",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -7.869565010070801,
+          -6.0,
+          4.051981449127197
+        ]
+      },
+      {
+        "name": "Festoon pool.010",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -2.82608699798584,
+          -6.0,
+          4.205575466156006
+        ]
+      },
+      {
+        "name": "Festoon pool.011",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          2.2173912525177,
+          -6.0,
+          4.56135892868042
+        ]
+      },
+      {
+        "name": "Festoon pool.012",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -23.0,
+          4.0,
+          4.900000095367432
+        ]
+      },
+      {
+        "name": "Festoon pool.013",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -17.95652198791504,
+          4.0,
+          4.458353519439697
+        ]
+      },
+      {
+        "name": "Festoon pool.014",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -12.913043022155762,
+          4.0,
+          4.145297527313232
+        ]
+      },
+      {
+        "name": "Festoon pool.015",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -7.869565010070801,
+          4.0,
+          4.051981449127197
+        ]
+      },
+      {
+        "name": "Festoon pool.016",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          -2.82608699798584,
+          4.0,
+          4.205575466156006
+        ]
+      },
+      {
+        "name": "Festoon pool.017",
+        "kind": "POINT",
+        "energy": 36.0,
+        "color": [
+          1.0,
+          0.5,
+          0.20999999344348907
+        ],
+        "position": [
+          2.2173912525177,
+          4.0,
+          4.56135892868042
+        ]
+      },
+      {
+        "name": "Ticket booth warm spill",
+        "kind": "POINT",
+        "energy": 140.0,
+        "color": [
+          1.0,
+          0.5,
+          0.1899999976158142
+        ],
+        "position": [
+          8.0,
+          -23.280000686645508,
+          2.6500000953674316
+        ]
+      },
+      {
+        "name": "Moon key",
+        "kind": "SUN",
+        "energy": 2.0,
+        "color": [
+          0.47999998927116394,
+          0.6499999761581421,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Dusk fill",
+        "kind": "AREA",
+        "energy": 1700.0,
+        "color": [
+          0.3199999928474426,
+          0.47999998927116394,
+          0.75
+        ],
+        "position": [
+          -10.0,
+          -10.0,
+          20.0
+        ]
+      },
+      {
+        "name": "Carousel practical bounce",
+        "kind": "AREA",
+        "energy": 800.0,
+        "color": [
+          1.0,
+          0.46000000834465027,
+          0.15000000596046448
+        ],
+        "position": [
+          0.0,
+          8.0,
+          4.699999809265137
+        ]
+      },
+      {
+        "name": "Arena practical bounce",
+        "kind": "AREA",
+        "energy": 1100.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.25
+        ],
+        "position": [
+          -17.0,
+          12.0,
+          4.599999904632568
+        ]
+      },
+      {
+        "name": "Midway soft practical",
+        "kind": "AREA",
+        "energy": 350.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.28999999165534973
+        ],
+        "position": [
+          -10.0,
+          -9.0,
+          5.5
+        ]
+      },
+      {
+        "name": "Backstage moon fill",
+        "kind": "AREA",
+        "energy": 700.0,
+        "color": [
+          0.44999998807907104,
+          0.6299999952316284,
+          1.0
+        ],
+        "position": [
+          16.0,
+          -4.0,
+          6.0
+        ]
+      },
+      {
+        "name": "Backstage porch practical A",
+        "kind": "POINT",
+        "energy": 65.0,
+        "color": [
+          1.0,
+          0.5199999809265137,
+          0.23000000417232513
+        ],
+        "position": [
+          14.319999694824219,
+          -5.449999809265137,
+          3.0799999237060547
+        ]
+      },
+      {
+        "name": "Backstage porch practical B",
+        "kind": "POINT",
+        "energy": 45.0,
+        "color": [
+          1.0,
+          0.5199999809265137,
+          0.23000000417232513
+        ],
+        "position": [
+          18.979999542236328,
+          -4.849999904632568,
+          3.0799999237060547
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 0",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          11.5,
+          9.100000381469727,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 1",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          20.5,
+          12.199999809265137,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 2",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          11.5,
+          15.300000190734863,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Funhouse interior practical 3",
+        "kind": "POINT",
+        "energy": 22.0,
+        "color": [
+          1.0,
+          0.4000000059604645,
+          0.1599999964237213
+        ],
+        "position": [
+          20.5,
+          18.100000381469727,
+          2.8499999046325684
+        ]
+      },
+      {
+        "name": "Entrance detail pier practical",
+        "kind": "POINT",
+        "energy": 42.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.23999999463558197
+        ],
+        "position": [
+          -5.449999809265137,
+          -23.170000076293945,
+          3.2300000190734863
+        ]
+      },
+      {
+        "name": "Entrance detail pier practical.001",
+        "kind": "POINT",
+        "energy": 42.0,
+        "color": [
+          1.0,
+          0.550000011920929,
+          0.23999999463558197
+        ],
+        "position": [
+          5.449999809265137,
+          -23.170000076293945,
+          3.2300000190734863
+        ]
+      }
+    ]
+  },
+  "visual_review": {
+    "improved": "Crate frames are thinner and board-built; pallet decks show actual thin stock and fork gaps. Trailer ends now have panel joins, local repair and louver detailing beneath curved roof crowns.",
+    "remaining": "Dense foreground prop staging still requires an Unreal capsule and trace test. Dark timber hides some selective damage at this preview exposure.",
+    "next_cycle": 8
+  }
+}

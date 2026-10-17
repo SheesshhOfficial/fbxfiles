@@ -1,0 +1,82 @@
+{
+  "output": "blender/Moonfall_Carnival_Refined.blend",
+  "bytes": 136393382,
+  "sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "parts": [
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part01",
+      "bytes": 9437184,
+      "sha256": "d616ec50f8c675656aa0b01fe693a76427f9441b32fba78c678754766dc3eb2a"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part02",
+      "bytes": 9437184,
+      "sha256": "f75ed82fd6bdf9e0003e811a0b455a37aeda94940fea1f188b7f230a86daadaf"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part03",
+      "bytes": 9437184,
+      "sha256": "d4005d42d0e1eb365b600d6b66ae568209ed3f4b7312010ba345036bff7b4441"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part04",
+      "bytes": 9437184,
+      "sha256": "097e2ebea82168483229f3a8928b8d5971f6c0f28ffa3fb75dcd214db1dd92e4"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part05",
+      "bytes": 9437184,
+      "sha256": "8b823407f5b4cf0a17a43c5b59aeb8f6af547f62f8507392ed7abde80ccd5782"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part06",
+      "bytes": 9437184,
+      "sha256": "454786b8ce1ec73694c62653da5ac7ab73178436ce2a3bbca583a96c030183b5"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part07",
+      "bytes": 9437184,
+      "sha256": "6dc627d2681a0f99ac5bdcbb12de36d229abde33f7a52ded531f39efbf2adb76"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part08",
+      "bytes": 9437184,
+      "sha256": "ce3d4358212c01d21430bbcac7ea0a86f39362859d2bb857809f05b123a09d19"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part09",
+      "bytes": 9437184,
+      "sha256": "4e5fac9d2710f501e6861bade6d5248db6f6bf97610f53a5d89fbbefdd78ec80"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part10",
+      "bytes": 9437184,
+      "sha256": "773f24f39022e889062e4c735db452fb35ceaa420ffc787df4ca89ebdf7e0d54"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part11",
+      "bytes": 9437184,
+      "sha256": "7bfb5606e9c07304c8efd6800ff2b5759c78e8bd9906dd3dd532a476cba61b70"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part12",
+      "bytes": 9437184,
+      "sha256": "d2e92904e3029214a6f0de51fa0047d30ca4a1f4c302710b17b5702e6f00ac91"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part13",
+      "bytes": 9437184,
+      "sha256": "9444509cea68bd944a239a989a712673c61c30c288d602c48af3c89f38ec0321"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part14",
+      "bytes": 9437184,
+      "sha256": "b25e512b6eb1a80b681e24d6dda93028e49127256f33bf1562647fd83eac7fe5"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part15",
+      "bytes": 4272806,
+      "sha256": "642b3c139cf5105a36e1f7ec8092dc26dd4e7198c8758dc79df58a7974e41103"
+    }
+  ]
+}

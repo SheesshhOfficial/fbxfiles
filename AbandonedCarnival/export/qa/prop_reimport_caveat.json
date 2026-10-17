@@ -1,0 +1,83 @@
+{
+  "source_blend_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "status": "Known Blender normal-reconstruction caveat; failing QA preserved",
+  "prop_raw_fidelity_all_passed": true,
+  "prop_roundtrip_all_passed": false,
+  "prop_canonical_assets": 138,
+  "prop_failed_assets": 2,
+  "prop_failed_placed_actors": 2,
+  "prop_failed_corner_count": null,
+  "missing_detail": "The original prop roundtrip report records per-asset maxima, not corner indices or counts. No new Blender process was run.",
+  "unchanged_normal_vector_threshold": 0.001,
+  "affected_assets": [
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "placed_source_objects": [
+        "BY_Pallet_Low_2"
+      ],
+      "max_normal_vector_error": 0.002808491577722425,
+      "unchanged_normal_vector_threshold": 0.001,
+      "threshold_multiple": 2.8084915777224246,
+      "equivalent_unit_vector_angle_degrees": 0.16091476708636773,
+      "source_asset_corner_count": 5824,
+      "failed_corner_count": null,
+      "failed_corner_indices": null,
+      "raw_source_normal_vector_error": 0.0,
+      "raw_source_fidelity_passed": true,
+      "other_roundtrip_checks": {
+        "render_meshes": 1,
+        "collision_meshes": 9,
+        "expected_collision_meshes": 9,
+        "max_bounds_error_cm": 0.0,
+        "has_uv": true,
+        "material_slot_count": 2,
+        "expected_material_slot_count": 2,
+        "custom_prop_tag": true
+      },
+      "roundtrip_passed": false
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "placed_source_objects": [
+        "BY_Pallet_Stack_4"
+      ],
+      "max_normal_vector_error": 0.002808491577722425,
+      "unchanged_normal_vector_threshold": 0.001,
+      "threshold_multiple": 2.8084915777224246,
+      "equivalent_unit_vector_angle_degrees": 0.16091476708636773,
+      "source_asset_corner_count": 5504,
+      "failed_corner_count": null,
+      "failed_corner_indices": null,
+      "raw_source_normal_vector_error": 0.0,
+      "raw_source_fidelity_passed": true,
+      "other_roundtrip_checks": {
+        "render_meshes": 1,
+        "collision_meshes": 9,
+        "expected_collision_meshes": 9,
+        "max_bounds_error_cm": 0.0,
+        "has_uv": true,
+        "material_slot_count": 2,
+        "expected_material_slot_count": 2,
+        "custom_prop_tag": true
+      },
+      "roundtrip_passed": false
+    }
+  ],
+  "observed_boundary": "Frozen evaluated source normals exactly match raw FBX payload. The separately imported Blender meshes differ beyond threshold on these two assets.",
+  "interpretation": "The discrepancy occurs along Blender FBX import/normal reconstruction. It is consistent with Blender custom-normal representation/reconstruction, but these aggregate reports do not prove the precise internal cause or identify individual offending corners.",
+  "source_geometry_context": "Both affected pallets are the maintenance builder bowed-deck variants (indices 2 and 7). Attribution of mismatched normals to those specific boards remains unconfirmed without per-corner inspection.",
+  "environment_reimport_context": {
+    "all_passed": false,
+    "failed_tiles": 24,
+    "tile_count": 43,
+    "normal_mismatch_corners": 4795,
+    "total_tested_corners": 7981009,
+    "max_normal_vector_error": 1.4059577410881878,
+    "normal_vector_threshold": 0.002,
+    "raw_fidelity_all_passed": true
+  },
+  "actions_taken": "Read existing reports and source code; added this caveat and final documentation. No source, FBX, importer, thresholds or original QA results changed.",
+  "release_boundary": "Raw export fidelity passes; Blender reimport normals are not a clean pass. Review affected assets and environment shading in Unreal before accepting the package for production.",
+  "unreal_runtime_verified": false,
+  "chaos_cooking_verified": false
+}

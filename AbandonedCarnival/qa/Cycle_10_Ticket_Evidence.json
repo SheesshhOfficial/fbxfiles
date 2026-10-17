@@ -1,0 +1,9 @@
+{
+  "cycle": 10,
+  "view": "Ticket",
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "actual_blender_render": true,
+  "samples": 512,
+  "path": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_10_Ticket_Evidence.png",
+  "source_saved": false
+}

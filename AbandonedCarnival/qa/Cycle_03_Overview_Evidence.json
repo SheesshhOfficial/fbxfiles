@@ -1,0 +1,9 @@
+{
+  "cycle": 3,
+  "view": "Overview",
+  "source_sha256": "4f1f402f4ef2ea4db63c5b80f733e0f31a2c82e5ef8bb2529b19e8bbbf5ece0f",
+  "actual_blender_render": true,
+  "samples": 128,
+  "path": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/renders/Cycle_03_Overview_Evidence.png",
+  "source_saved": false
+}

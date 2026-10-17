@@ -1,0 +1,3970 @@
+{
+  "source_blend_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "all_passed": true,
+  "fbx_assets": 138,
+  "texture_references": 566,
+  "checks": [
+    {
+      "asset": "SM_CoiledAirHose_0397d7fc33",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_CoiledAirHose_0397d7fc33",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_CoiledAirHose_0397d7fc33",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MechanicToolCase_83d66197c4",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MechanicToolCase_83d66197c4",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MechanicToolCase_83d66197c4",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MechanicToolCase_83d66197c4",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MechanicToolCase_83d66197c4",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MechanicToolCase_83d66197c4",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_0f11186085",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_d19e00ddde",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableWorkLamp_6e72b28d2a",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_63bea31b99",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_63bea31b99",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_63bea31b99",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_63bea31b99",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_63bea31b99",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_63bea31b99",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_d18b332276",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_d18b332276",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_d18b332276",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_d18b332276",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_d18b332276",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PumpOilCan_d18b332276",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_3fda72a502",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_3fda72a502",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_3fda72a502",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_3fda72a502",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_3fda72a502",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_3fda72a502",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_1c914ed02d",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_1c914ed02d",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_1c914ed02d",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_1c914ed02d",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_1c914ed02d",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_SafetyCone_1c914ed02d",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_0a13ff8545",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_0a13ff8545",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_0a13ff8545",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_6e09bea363",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_6e09bea363",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_6e09bea363",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_f1b66abf99",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_f1b66abf99",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_f1b66abf99",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_00c7465432",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_00c7465432",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_WheelChock_00c7465432",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_3e7d84b590",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_3e7d84b590",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_3e7d84b590",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_821e3b165e",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_821e3b165e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_821e3b165e",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_53c56a2d28",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_53c56a2d28",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_53c56a2d28",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_173671a9b7",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_173671a9b7",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_173671a9b7",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_1de1c2e7f6",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_1de1c2e7f6",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_1de1c2e7f6",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_154c6a4fd4",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_154c6a4fd4",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_154c6a4fd4",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_d315b80d6e",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_d315b80d6e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenWoodenCrate_d315b80d6e",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_d29fda1852",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_d29fda1852",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_d29fda1852",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_d29fda1852",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_d29fda1852",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_d29fda1852",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_8b7f442aee",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_8b7f442aee",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_8b7f442aee",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_8b7f442aee",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_8b7f442aee",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_8b7f442aee",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_0d68bca7f8",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_0d68bca7f8",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_0d68bca7f8",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_0d68bca7f8",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_0d68bca7f8",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_0d68bca7f8",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_920c7beccb",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_920c7beccb",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_920c7beccb",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_920c7beccb",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_920c7beccb",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_timber_shipping_crate_920c7beccb",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_portable_generator_75f054d380",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_portable_generator_75f054d380",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_portable_generator_75f054d380",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_364c150107",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_364c150107",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_364c150107",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_364c150107",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_364c150107",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_364c150107",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_c9060ccd17",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_c9060ccd17",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_c9060ccd17",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_c9060ccd17",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_c9060ccd17",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_c9060ccd17",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_244700516e",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_0e57c928de",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_0e57c928de",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_0e57c928de",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_0e57c928de",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_0e57c928de",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_0e57c928de",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d1ca341603",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d1ca341603",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d1ca341603",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d1ca341603",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d1ca341603",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d1ca341603",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d10a9a1582",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d10a9a1582",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d10a9a1582",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d10a9a1582",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d10a9a1582",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_d10a9a1582",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_9aa2a2d067",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_9aa2a2d067",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_9aa2a2d067",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_9aa2a2d067",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_9aa2a2d067",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_9aa2a2d067",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_wooden_pallet_540b8fba44",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/8624b481ad9f9c92_red_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/212752c281497b12_red_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/609dd1021569011a_red_roughness.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/27321abb3209dc27_teal_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/82e277f966cfb033_teal_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_bb9121368b",
+      "relative_texture_path": "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/8624b481ad9f9c92_red_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/212752c281497b12_red_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/609dd1021569011a_red_roughness.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/27321abb3209dc27_teal_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/82e277f966cfb033_teal_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_retired_ride_bench_53f58312d4",
+      "relative_texture_path": "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_566477cf32",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_566477cf32",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_566477cf32",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_566477cf32",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_e4a8973245",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_e4a8973245",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_e4a8973245",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_e4a8973245",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_aa25262571",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_aa25262571",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_aa25262571",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_aa25262571",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_aa25262571",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_aa25262571",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_8c0ab62bb2",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_8c0ab62bb2",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_8c0ab62bb2",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_8c0ab62bb2",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_edb548fa5e",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_edb548fa5e",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_edb548fa5e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_edb548fa5e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_d830442ef7",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_d830442ef7",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_d830442ef7",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_d830442ef7",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_d830442ef7",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_d830442ef7",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_fd8fc5462e",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_fd8fc5462e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_fd8fc5462e",
+      "relative_texture_path": "../../textures/542a4eda31856ba9_cream_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_BumperCar_fd8fc5462e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_CashTin_c029708d8c",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_CashTin_c029708d8c",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_CashTin_c029708d8c",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_7b8413b098",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_7b8413b098",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_7b8413b098",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_7b8413b098",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_7b8413b098",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_7b8413b098",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_e1f082f4e7",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_e1f082f4e7",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_e1f082f4e7",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_e1f082f4e7",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_e1f082f4e7",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TicketStool_e1f082f4e7",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_GalvanizedWasteBin_711d884c0f",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_GalvanizedWasteBin_711d884c0f",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_GalvanizedWasteBin_711d884c0f",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_6ad461f42e",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_6ad461f42e",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_6ad461f42e",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_42de1a898a",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_42de1a898a",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_42de1a898a",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_8e70e84240",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_8e70e84240",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_8e70e84240",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_0f1225d245",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_0f1225d245",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_0f1225d245",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_3c6798bf01",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_3c6798bf01",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_3c6798bf01",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_6bab70f976",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_6bab70f976",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_6bab70f976",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_9673a3e0a8",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_9673a3e0a8",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_9673a3e0a8",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_0f6879ac72",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_0f6879ac72",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_0f6879ac72",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_7adfe5d511",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_7adfe5d511",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_9bafddc131",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_9bafddc131",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_46c6506730",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_46c6506730",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_30b9cd0f30",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_30b9cd0f30",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_41c017bde5",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_41c017bde5",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_c8dff94f70",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_c8dff94f70",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_a6adc272f0",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_a6adc272f0",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_cf570e2e32",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_cf570e2e32",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_cf570e2e32",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_aad2daf73d",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_aad2daf73d",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_aad2daf73d",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_9af9de3d1b",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_9af9de3d1b",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_9af9de3d1b",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_497ac102f3",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_497ac102f3",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_497ac102f3",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_65db92b5d2",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_65db92b5d2",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_65db92b5d2",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_bcbc4cefd7",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_bcbc4cefd7",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_bcbc4cefd7",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_e8b18d6cf8",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_e8b18d6cf8",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_e8b18d6cf8",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_73ece9d384",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_73ece9d384",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_73ece9d384",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_6e40bdb6c4",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_6e40bdb6c4",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_6e40bdb6c4",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_5d5807c9f9",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_5d5807c9f9",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_5d5807c9f9",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_49a996bcfe",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_49a996bcfe",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_0b6cbc3c4b",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_0b6cbc3c4b",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_26e2fbc9c4",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_26e2fbc9c4",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_3d5c67ddf9",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_3d5c67ddf9",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_6c7a6ae8ae",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_6c7a6ae8ae",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_2bb59517e9",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_2bb59517e9",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_0a958efc22",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_0a958efc22",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_ca8b1e8789",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_ca8b1e8789",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_ca8b1e8789",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_12f7e4d56d",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_12f7e4d56d",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_12f7e4d56d",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_e74cdbb2a6",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_e74cdbb2a6",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_e74cdbb2a6",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_f9ea75bad9",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_f9ea75bad9",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_f9ea75bad9",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_82c645aeef",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_82c645aeef",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_82c645aeef",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_c18fcec220",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_c18fcec220",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_c18fcec220",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_43f28bee84",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_43f28bee84",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_43f28bee84",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_d283cddf6b",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_d283cddf6b",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Bottle_d283cddf6b",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_47f7ed5d89",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_47f7ed5d89",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_a07b6da92e",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_a07b6da92e",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_42d0279239",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_42d0279239",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_2faaaba610",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_2faaaba610",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_eac60aef57",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_eac60aef57",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_d86017e668",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_d86017e668",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_7486c44da1",
+      "relative_texture_path": "../../textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_TeddyPrize_7486c44da1",
+      "relative_texture_path": "../../textures/53b25a790d311f21_plush_fabric_normal.png",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_aeb36301a9",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_aeb36301a9",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_aeb36301a9",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_09ae6bae1a",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_09ae6bae1a",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_09ae6bae1a",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_3577593d5f",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_3577593d5f",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_3577593d5f",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_9a41080fac",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_9a41080fac",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_9a41080fac",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_9a41080fac",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_9a41080fac",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_9a41080fac",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a62baea36c",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a62baea36c",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a62baea36c",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a62baea36c",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a62baea36c",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a62baea36c",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a7e6ae7d91",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a7e6ae7d91",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a7e6ae7d91",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a7e6ae7d91",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a7e6ae7d91",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PortableCableReel_a7e6ae7d91",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_5e843cd5a5",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_5e843cd5a5",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_5e843cd5a5",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_5e843cd5a5",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_5e843cd5a5",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_5e843cd5a5",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_1036b562f6",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_1036b562f6",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_1036b562f6",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_1036b562f6",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_1036b562f6",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_1036b562f6",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_b32dc09e3d",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_b32dc09e3d",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_b32dc09e3d",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_b32dc09e3d",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_b32dc09e3d",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_b32dc09e3d",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_f35ec71141",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_f35ec71141",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_f35ec71141",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_f35ec71141",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_f35ec71141",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_f35ec71141",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_6039a2b4a4",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_6039a2b4a4",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_6039a2b4a4",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_6039a2b4a4",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_6039a2b4a4",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_6039a2b4a4",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_13f5829daa",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_13f5829daa",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_13f5829daa",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_13f5829daa",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_13f5829daa",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MachineOilCan_13f5829daa",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_6cdcf9574c",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_9d3c94ba77",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_2672910275",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_573f613a87",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_f66506cfe7",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Open_915abff987",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_048ffc736a",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_ddc79d1173",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_PaintCan_Closed_fb36c9f709",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_82c21b683b",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_82c21b683b",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_82c21b683b",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_82c21b683b",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_82c21b683b",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_MetalFuelContainer_82c21b683b",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_a064e40056",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_86f831e45e",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_86f831e45e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_86f831e45e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_86f831e45e",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_86f831e45e",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_86f831e45e",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_20d6fff596",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_20d6fff596",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_20d6fff596",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_20d6fff596",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_20d6fff596",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenToolbox_20d6fff596",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_9c4da52123",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_9c4da52123",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_9c4da52123",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_9c4da52123",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_9c4da52123",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_9c4da52123",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_5f6f66f535",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_5f6f66f535",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_5f6f66f535",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_5f6f66f535",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_5f6f66f535",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ClosedToolCase_5f6f66f535",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_c047ef796e",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_c047ef796e",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_OpenMaintenanceBucket_c047ef796e",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ConfectioneryJar_bcc42a8e41",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_b52006231e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_ToffeeTin_fc1051075e",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_FortuneCardDeck_8d11e86443",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_FortuneCardDeck_8d11e86443",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_FortuneCardDeck_8d11e86443",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_FortuneCardDeck_8d11e86443",
+      "relative_texture_path": "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_FortuneCardDeck_8d11e86443",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_FortuneCardDeck_8d11e86443",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_KeepsakeBox_c2068c7ed1",
+      "relative_texture_path": "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_KeepsakeBox_c2068c7ed1",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_KeepsakeBox_c2068c7ed1",
+      "relative_texture_path": "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_KeepsakeBox_c2068c7ed1",
+      "relative_texture_path": "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_KeepsakeBox_c2068c7ed1",
+      "relative_texture_path": "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_KeepsakeBox_c2068c7ed1",
+      "relative_texture_path": "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_dee624b30b",
+      "relative_texture_path": "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_dee624b30b",
+      "relative_texture_path": "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    },
+    {
+      "asset": "SM_Barrel_dee624b30b",
+      "relative_texture_path": "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "exists": true,
+      "inside_package_textures": true,
+      "embedded_payload_bytes": 0
+    }
+  ]
+}

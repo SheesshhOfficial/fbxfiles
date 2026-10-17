@@ -1,0 +1,12 @@
+{
+  "source": "/workspace/scratch/26eeef986c30/CarnivalMap/iterations/Cycle_10.blend",
+  "sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "bytes": 136393382,
+  "cycles_visually_reviewed": 10,
+  "gameplay_props": 153,
+  "player_starts": 10,
+  "visible_evaluated_triangles": 3535197,
+  "packed_images": 41,
+  "approved_for_separate_export": true,
+  "unreal_runtime_verified": false
+}

@@ -1,0 +1,67 @@
+{
+  "all_ten_sequential_checkpoints_verified": true,
+  "cycles": [
+    {
+      "cycle": 1,
+      "source_sha256": "c6f6395f633a8eb61706e328f19057e36b2d6da369e88c36c977af14646f4621",
+      "render": "Cycle_01_Maintenance.png",
+      "review_status": "visually inspected"
+    },
+    {
+      "cycle": 2,
+      "source_sha256": "ae15307fe0ed17e1f17f0fd9c4fd6969eba3c928711b5c64b8a46d7a180c791b",
+      "render": "Cycle_02_Midway.png",
+      "review_status": "visually inspected"
+    },
+    {
+      "cycle": 3,
+      "source_sha256": "4f1f402f4ef2ea4db63c5b80f733e0f31a2c82e5ef8bb2529b19e8bbbf5ece0f",
+      "render": "Cycle_03_Arena.png",
+      "review_status": "visually inspected"
+    },
+    {
+      "cycle": 4,
+      "source_sha256": "9309fd69942290e1acb593b94d87c712581d7ff7ff30468902a9c7d478c28d2b",
+      "render": "Cycle_04_Carousel.png",
+      "review_status": "visually inspected"
+    },
+    {
+      "cycle": 5,
+      "source_sha256": "16e9d74ba4ba588a4d04f7690e5dfd693beb7f7e377d6916f75806a492d8e048",
+      "render": "Cycle_05_Funhouse.png",
+      "review_status": "visually inspected"
+    },
+    {
+      "cycle": 6,
+      "source_sha256": "8086345aeedee60ecee0f9607cef241aa239b72a20887ad0d969c5e9106ee8c8",
+      "render": "Cycle_06_Ground.png",
+      "review_status": "visually inspected after revision"
+    },
+    {
+      "cycle": 7,
+      "source_sha256": "0b37803d0888dfde96de15bc940aa6827788db9cefbd1b926c69d460c0788109",
+      "render": "Cycle_07_Maintenance.png",
+      "review_status": "visually inspected"
+    },
+    {
+      "cycle": 8,
+      "source_sha256": "55b52bf3f70ec5cd43c5c9365544a4a065e17977ae2b926438bd4dd1d7cee907",
+      "render": "Cycle_08_Overview.png",
+      "review_status": "visually inspected after revision"
+    },
+    {
+      "cycle": 9,
+      "source_sha256": "7987dac9d960353db258be16a0a3a33d14f7d6cc061ba2b69cf786de47c5e0e6",
+      "render": "Cycle_09_Ticket.png",
+      "review_status": "visually inspected after camera correction"
+    },
+    {
+      "cycle": 10,
+      "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+      "render": "Cycle_10_Funhouse.png",
+      "review_status": "visually inspected; final additional views and source/export audits pending"
+    }
+  ],
+  "source_preserved": true,
+  "unreal_runtime_verified": false
+}

@@ -1,0 +1,3272 @@
+{
+  "source_blend_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "all_passed": true,
+  "placed_actors": 19,
+  "placed_hulls": 160,
+  "all_153_actor_identities_preserved": true,
+  "source_untouched": true,
+  "actors": [
+    {
+      "source_object": "BY_Crate_0",
+      "asset_name": "SM_timber_shipping_crate_d29fda1852",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.0,
+            -4.76837158203125e-07,
+            -0.0004999935626983643
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "end join nail -1 -1 0",
+          "end join nail -1 -1 1",
+          "end join nail -1 -1 2",
+          "end join nail -1 -1 3",
+          "end join nail -1 -1 4",
+          "end join nail -1 1 0",
+          "end join nail -1 1 1",
+          "end join nail -1 1 2",
+          "end join nail -1 1 3",
+          "end join nail -1 1 4",
+          "front join nail -1 -1 0",
+          "front join nail -1 -1 1",
+          "front join nail -1 -1 2",
+          "front join nail -1 -1 3",
+          "front join nail -1 -1 4",
+          "front join nail -1 1 0",
+          "front join nail -1 1 1",
+          "front join nail -1 1 2",
+          "front join nail -1 1 3",
+          "front join nail -1 1 4",
+          "end join nail 1 -1 0",
+          "end join nail 1 -1 1",
+          "end join nail 1 -1 2",
+          "end join nail 1 -1 3",
+          "end join nail 1 -1 4",
+          "end join nail 1 1 0",
+          "end join nail 1 1 1",
+          "end join nail 1 1 2",
+          "end join nail 1 1 3",
+          "end join nail 1 1 4",
+          "front join nail 1 -1 0",
+          "front join nail 1 -1 1",
+          "front join nail 1 -1 2",
+          "front join nail 1 -1 3",
+          "front join nail 1 -1 4",
+          "front join nail 1 1 0",
+          "front join nail 1 1 1",
+          "front join nail 1 1 2",
+          "front join nail 1 1 3",
+          "front join nail 1 1 4",
+          "lid nail 0 -1",
+          "lid nail 0 1",
+          "lid nail 1 -1",
+          "lid nail 1 1",
+          "lid nail 2 -1",
+          "lid nail 2 1",
+          "lid nail 3 -1",
+          "lid nail 3 1",
+          "lid nail 4 -1",
+          "lid nail 4 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 40,
+        "crate_policy": "Four independent side slabs, lid, floor and two skids; sub-centimetre plank seams filled, central cavity never enclosed by one solid hull.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.5320000052452087,
+            -0.5420004725456238,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.5320000052452087,
+            0.5419995188713074,
+            0.4740000069141388
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.531000018119812,
+            -0.541500449180603,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.531000018119812,
+            0.5414994955062866,
+            0.4740000069141388
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "front/back shell -1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.610876476022473e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell -1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1785410167963274e-12,
+          "passed": true
+        },
+        {
+          "part": "front/back shell 1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.5890992815449983e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell 1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.7662302152272023e-12,
+          "passed": true
+        },
+        {
+          "part": "floor",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.412474528669399e-13,
+          "passed": true
+        },
+        {
+          "part": "lid",
+          "vertices": 108,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.7776879342766014e-11,
+          "passed": true
+        },
+        {
+          "part": "load skid 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.440677639483308e-12,
+          "passed": true
+        },
+        {
+          "part": "load skid 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.797778472651573e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Crate_1",
+      "asset_name": "SM_timber_shipping_crate_8b7f442aee",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.0,
+            4.76837158203125e-07,
+            -0.0004999935626983643
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "end join nail -1 -1 0",
+          "end join nail -1 -1 1",
+          "end join nail -1 -1 2",
+          "end join nail -1 -1 3",
+          "end join nail -1 -1 4",
+          "end join nail -1 1 0",
+          "end join nail -1 1 1",
+          "end join nail -1 1 2",
+          "end join nail -1 1 3",
+          "end join nail -1 1 4",
+          "front join nail -1 -1 0",
+          "front join nail -1 -1 1",
+          "front join nail -1 -1 2",
+          "front join nail -1 -1 3",
+          "front join nail -1 -1 4",
+          "front join nail -1 1 0",
+          "front join nail -1 1 1",
+          "front join nail -1 1 2",
+          "front join nail -1 1 3",
+          "front join nail -1 1 4",
+          "end join nail 1 -1 0",
+          "end join nail 1 -1 1",
+          "end join nail 1 -1 2",
+          "end join nail 1 -1 3",
+          "end join nail 1 -1 4",
+          "end join nail 1 1 0",
+          "end join nail 1 1 1",
+          "end join nail 1 1 2",
+          "end join nail 1 1 3",
+          "end join nail 1 1 4",
+          "front join nail 1 -1 0",
+          "front join nail 1 -1 1",
+          "front join nail 1 -1 2",
+          "front join nail 1 -1 3",
+          "front join nail 1 -1 4",
+          "front join nail 1 1 0",
+          "front join nail 1 1 1",
+          "front join nail 1 1 2",
+          "front join nail 1 1 3",
+          "front join nail 1 1 4",
+          "lid nail 0 -1",
+          "lid nail 0 1",
+          "lid nail 1 -1",
+          "lid nail 1 1",
+          "lid nail 2 -1",
+          "lid nail 2 1",
+          "lid nail 3 -1",
+          "lid nail 3 1",
+          "lid nail 4 -1",
+          "lid nail 4 1",
+          "packing band face",
+          "packing band face",
+          "packing band return",
+          "packing band return",
+          "folded steel band buckle"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 40,
+        "crate_policy": "Four independent side slabs, lid, floor and two skids; sub-centimetre plank seams filled, central cavity never enclosed by one solid hull.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.5320000052452087,
+            -0.5419995188713074,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.5320000052452087,
+            0.5420004725456238,
+            0.4740000069141388
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.531000018119812,
+            -0.5414994955062866,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.531000018119812,
+            0.541500449180603,
+            0.4740000069141388
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "front/back shell -1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.0590416854520601e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell -1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.113428253437414e-12,
+          "passed": true
+        },
+        {
+          "part": "front/back shell 1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.235293514248657e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell 1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.798228487506441e-12,
+          "passed": true
+        },
+        {
+          "part": "floor",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.2009242305855499e-13,
+          "passed": true
+        },
+        {
+          "part": "lid",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.935451146405593e-13,
+          "passed": true
+        },
+        {
+          "part": "load skid 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.803854862161596e-12,
+          "passed": true
+        },
+        {
+          "part": "load skid 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.800695139616384e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Crate_2",
+      "asset_name": "SM_timber_shipping_crate_0d68bca7f8",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            9.5367431640625e-07,
+            2.9802322387695312e-08,
+            -0.0004999935626983643
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "end join nail -1 -1 0",
+          "end join nail -1 -1 1",
+          "end join nail -1 -1 2",
+          "end join nail -1 -1 3",
+          "end join nail -1 -1 4",
+          "end join nail -1 1 0",
+          "end join nail -1 1 1",
+          "end join nail -1 1 2",
+          "end join nail -1 1 3",
+          "end join nail -1 1 4",
+          "front join nail -1 -1 0",
+          "front join nail -1 -1 1",
+          "front join nail -1 -1 2",
+          "front join nail -1 -1 3",
+          "front join nail -1 -1 4",
+          "front join nail -1 1 0",
+          "front join nail -1 1 1",
+          "front join nail -1 1 2",
+          "front join nail -1 1 3",
+          "front join nail -1 1 4",
+          "end join nail 1 -1 0",
+          "end join nail 1 -1 1",
+          "end join nail 1 -1 2",
+          "end join nail 1 -1 3",
+          "end join nail 1 -1 4",
+          "end join nail 1 1 0",
+          "end join nail 1 1 1",
+          "end join nail 1 1 2",
+          "end join nail 1 1 3",
+          "end join nail 1 1 4",
+          "front join nail 1 -1 0",
+          "front join nail 1 -1 1",
+          "front join nail 1 -1 2",
+          "front join nail 1 -1 3",
+          "front join nail 1 -1 4",
+          "front join nail 1 1 0",
+          "front join nail 1 1 1",
+          "front join nail 1 1 2",
+          "front join nail 1 1 3",
+          "front join nail 1 1 4",
+          "lid nail 0 -1",
+          "lid nail 0 1",
+          "lid nail 1 -1",
+          "lid nail 1 1",
+          "lid nail 2 -1",
+          "lid nail 2 1",
+          "lid nail 3 -1",
+          "lid nail 3 1",
+          "lid nail 4 -1",
+          "lid nail 4 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 40,
+        "crate_policy": "Four independent side slabs, lid, floor and two skids; sub-centimetre plank seams filled, central cavity never enclosed by one solid hull.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.5319990515708923,
+            -0.5419999957084656,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.5320009589195251,
+            0.5420000553131104,
+            0.4740000069141388
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.5309990644454956,
+            -0.5414999723434448,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.5310009717941284,
+            0.5415000319480896,
+            0.4740000069141388
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "front/back shell -1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.475739031091358e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell -1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9515224597183041e-13,
+          "passed": true
+        },
+        {
+          "part": "front/back shell 1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.381453375916416e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell 1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.179146970498504e-13,
+          "passed": true
+        },
+        {
+          "part": "floor",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.969550906140375e-16,
+          "passed": true
+        },
+        {
+          "part": "lid",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.96955090614037e-16,
+          "passed": true
+        },
+        {
+          "part": "load skid 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.795590500369886e-12,
+          "passed": true
+        },
+        {
+          "part": "load skid 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.803246750620666e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Crate_3",
+      "asset_name": "SM_timber_shipping_crate_920c7beccb",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            9.5367431640625e-07,
+            0.0,
+            -0.0004999935626983643
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "end join nail -1 -1 0",
+          "end join nail -1 -1 1",
+          "end join nail -1 -1 2",
+          "end join nail -1 -1 3",
+          "end join nail -1 -1 4",
+          "end join nail -1 1 0",
+          "end join nail -1 1 1",
+          "end join nail -1 1 2",
+          "end join nail -1 1 3",
+          "end join nail -1 1 4",
+          "front join nail -1 -1 0",
+          "front join nail -1 -1 1",
+          "front join nail -1 -1 2",
+          "front join nail -1 -1 3",
+          "front join nail -1 -1 4",
+          "front join nail -1 1 0",
+          "front join nail -1 1 1",
+          "front join nail -1 1 2",
+          "front join nail -1 1 3",
+          "front join nail -1 1 4",
+          "end join nail 1 -1 0",
+          "end join nail 1 -1 1",
+          "end join nail 1 -1 2",
+          "end join nail 1 -1 3",
+          "end join nail 1 -1 4",
+          "end join nail 1 1 0",
+          "end join nail 1 1 1",
+          "end join nail 1 1 2",
+          "end join nail 1 1 3",
+          "end join nail 1 1 4",
+          "front join nail 1 -1 0",
+          "front join nail 1 -1 1",
+          "front join nail 1 -1 2",
+          "front join nail 1 -1 3",
+          "front join nail 1 -1 4",
+          "front join nail 1 1 0",
+          "front join nail 1 1 1",
+          "front join nail 1 1 2",
+          "front join nail 1 1 3",
+          "front join nail 1 1 4",
+          "lid nail 0 -1",
+          "lid nail 0 1",
+          "lid nail 1 -1",
+          "lid nail 1 1",
+          "lid nail 2 -1",
+          "lid nail 2 1",
+          "lid nail 3 -1",
+          "lid nail 3 1",
+          "lid nail 4 -1",
+          "lid nail 4 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 40,
+        "crate_policy": "Four independent side slabs, lid, floor and two skids; sub-centimetre plank seams filled, central cavity never enclosed by one solid hull.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.5319990515708923,
+            -0.5419999957084656,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.5320009589195251,
+            0.5419999957084656,
+            0.4740000069141388
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.5309990644454956,
+            -0.5414999723434448,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.5310009717941284,
+            0.5414999723434448,
+            0.4740000069141388
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "front/back shell -1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.146956609280692e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell -1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.022108525697769e-13,
+          "passed": true
+        },
+        {
+          "part": "front/back shell 1",
+          "vertices": 132,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.669407533630142e-11,
+          "passed": true
+        },
+        {
+          "part": "end shell 1",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 9.556693569153312e-13,
+          "passed": true
+        },
+        {
+          "part": "floor",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.328258393361509e-16,
+          "passed": true
+        },
+        {
+          "part": "lid",
+          "vertices": 100,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.992387590042261e-15,
+          "passed": true
+        },
+        {
+          "part": "load skid 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.808594256665569e-12,
+          "passed": true
+        },
+        {
+          "part": "load skid 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.811753979122921e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Low_0",
+      "asset_name": "SM_wooden_pallet_364c150107",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.023349998950958253
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.597781116062423e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.199927965242265e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4660597765408117e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9774378322447362e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1913307225926346e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6465533319695041e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1835059047419325e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.402733591439878e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9768901666708136e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Low_1",
+      "asset_name": "SM_wooden_pallet_c9060ccd17",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.02334998404979706
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.02334998404979706
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.02334998404979706
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.02334998404979706
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.02334998404979706
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.02334998404979706
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14969997107982635
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14969997107982635
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.798890965021507e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.1985288396626177e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4668996575286584e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.7510693988607976e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.5932382296747366e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.3997493083763667e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 9.565578649340845e-15,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1208790376521682e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.7507042884773818e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Low_2",
+      "asset_name": "SM_wooden_pallet_244700516e",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.023349998950958253
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.597781116062423e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.199927965242265e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4660597765408117e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 122,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 9.740407712140076e-11,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1913307225926346e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6465533319695041e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1835059047419325e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 136,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.289669954772453e-10,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9768901666708136e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Stack_0",
+      "asset_name": "SM_wooden_pallet_0e57c928de",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.023349998950958253
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.597781116062423e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.199927965242265e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4660597765408117e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9774378322447362e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1913307225926346e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6465533319695041e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1835059047419325e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.402733591439878e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9768901666708136e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Stack_1",
+      "asset_name": "SM_wooden_pallet_d1ca341603",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.02334998404979706
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.02334998404979706
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.02334998404979706
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.02334998404979706
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.02334998404979706
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.02334998404979706
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14969997107982635
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14969997107982635
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.798890965021507e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.1985288396626177e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4668996575286584e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.7510693988607976e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.5932382296747366e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.3997493083763667e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 9.565578649340845e-15,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1208790376521682e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.7507042884773818e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Stack_2",
+      "asset_name": "SM_wooden_pallet_d10a9a1582",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.023349998950958253
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.597781116062423e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.199927965242265e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4660597765408117e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9774378322447362e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1913307225926346e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6465533319695041e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 120,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.3536546200173625e-11,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.402733591439878e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9768901666708136e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Stack_3",
+      "asset_name": "SM_wooden_pallet_9aa2a2d067",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.023349998950958253
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.597781116062423e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.199927965242265e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4660597765408117e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9774378322447362e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1913307225926346e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6465533319695041e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1835059047419325e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.402733591439878e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9768901666708136e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BY_Pallet_Stack_4",
+      "asset_name": "SM_wooden_pallet_540b8fba44",
+      "expected_hulls": 9,
+      "exported_hulls": 9,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "opening_guard_points_local_m": [
+          [
+            0.2500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.2500000111758709,
+            0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            -0.35,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.0,
+            0.023349998950958253
+          ],
+          [
+            0.7500000111758709,
+            0.35,
+            0.023349998950958253
+          ]
+        ],
+        "opening_guard_points_clear": true,
+        "omitted_decorative_parts": [
+          "deck nail 0 0 -1",
+          "deck nail 0 0 1",
+          "deck nail 0 1 -1",
+          "deck nail 0 1 1",
+          "deck nail 0 2 -1",
+          "deck nail 0 2 1",
+          "deck nail 1 0 -1",
+          "deck nail 1 0 1",
+          "deck nail 1 1 -1",
+          "deck nail 1 1 1",
+          "deck nail 1 2 -1",
+          "deck nail 1 2 1",
+          "deck nail 2 0 -1",
+          "deck nail 2 0 1",
+          "deck nail 2 1 -1",
+          "deck nail 2 1 1",
+          "deck nail 2 2 -1",
+          "deck nail 2 2 1",
+          "deck nail 3 0 -1",
+          "deck nail 3 0 1",
+          "deck nail 3 1 -1",
+          "deck nail 3 1 1",
+          "deck nail 3 2 -1",
+          "deck nail 3 2 1",
+          "deck nail 4 0 -1",
+          "deck nail 4 0 1",
+          "deck nail 4 1 -1",
+          "deck nail 4 1 1",
+          "deck nail 4 2 -1",
+          "deck nail 4 2 1",
+          "deck nail 5 0 -1",
+          "deck nail 5 0 1",
+          "deck nail 5 1 -1",
+          "deck nail 5 1 1",
+          "deck nail 5 2 -1",
+          "deck nail 5 2 1"
+        ],
+        "structural_face_ranges_verified": true,
+        "whole_prop_hull": false,
+        "structural_pieces_before_merge": 9,
+        "crate_policy": "Separate deck boards and stringers; fork lanes unbridged.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.10000000149011612,
+            -0.574999988079071,
+            -0.07500000298023224
+          ],
+          "max": [
+            1.100000023841858,
+            0.574999988079071,
+            0.14970000088214874
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "load-bearing stringer 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.597781116062423e-16,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.199927965242265e-13,
+          "passed": true
+        },
+        {
+          "part": "load-bearing stringer 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.4660597765408117e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 0",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9774378322447362e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 1",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1913307225926346e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 2",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6465533319695041e-12,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 3",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.1835059047419325e-13,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 4",
+          "vertices": 136,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.289669954772453e-10,
+          "passed": true
+        },
+        {
+          "part": "28mm deck board 5",
+          "vertices": 96,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.9768901666708136e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_00_Complete",
+      "asset_name": "SM_BumperCar_566477cf32",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -1.3106918334960938,
+            -0.9183260202407837,
+            0.09399999678134918
+          ],
+          "max": [
+            1.3106918334960938,
+            0.9183260202407837,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -1.3040016889572144,
+            -0.9081566333770752,
+            0.10499999672174454
+          ],
+          "max": [
+            1.3040016889572144,
+            0.9081566333770752,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 9.13772262010381e-16,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.583152954549071e-10,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.367869435772961e-16,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 8.961800615707304e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.7746207680323436e-16,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.571083679909512e-09,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_01_Complete",
+      "asset_name": "SM_BumperCar_e4a8973245",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -1.3106918334960938,
+            -0.9183260202407837,
+            0.09399999678134918
+          ],
+          "max": [
+            1.3106918334960938,
+            0.9183260202407837,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -1.3040016889572144,
+            -0.9081566333770752,
+            0.10499999672174454
+          ],
+          "max": [
+            1.3040016889572144,
+            0.9081566333770752,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.426645982538931e-16,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.5810940495607283e-16,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.6790672190976125e-16,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.58315631268506e-10,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 9.209836794716201e-16,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.5605144616306583e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.571083467868995e-09,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_02_Complete",
+      "asset_name": "SM_BumperCar_aa25262571",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -1.011720061302185,
+            -1.2420004606246948,
+            0.09399999678134918
+          ],
+          "max": [
+            1.011720061302185,
+            1.2420004606246948,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -1.0027741193771362,
+            -1.2310642004013062,
+            0.10499999672174454
+          ],
+          "max": [
+            1.0027741193771362,
+            1.2310642004013062,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.4266462522810444e-16,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.5810940007276616e-16,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 4.363787885277128e-09,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 16,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.358134748355503e-16,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.0261646209760372e-15,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 6.401286692711908e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.8873103844959785e-16,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.2305108552147029e-08,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_03_Complete",
+      "asset_name": "SM_BumperCar_8c0ab62bb2",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -1.3005973100662231,
+            -0.9329426288604736,
+            0.09399999678134918
+          ],
+          "max": [
+            1.3005973100662231,
+            0.9329426288604736,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -1.2957665920257568,
+            -0.924895167350769,
+            0.10499999672174454
+          ],
+          "max": [
+            1.2957665920257568,
+            0.924895167350769,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.142215416751166e-16,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.581094087703058e-16,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.7747026689178497e-09,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.105180975720659e-15,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.2802572356298722e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.8873105180215835e-16,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.476508118013534e-09,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_04_Complete",
+      "asset_name": "SM_BumperCar_edb548fa5e",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -0.9437286853790283,
+            -1.2925602197647095,
+            0.09399999678134918
+          ],
+          "max": [
+            0.9437286853790283,
+            1.2925602197647095,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -0.9356934428215027,
+            -1.2886441946029663,
+            0.10499999672174454
+          ],
+          "max": [
+            0.9356934428215027,
+            1.2886441946029663,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 8.760490572580922e-10,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 16,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.0641792166929043e-08,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.6839358828768644e-16,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 7.68154318863732e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.6350937335702732e-09,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_05_Complete",
+      "asset_name": "SM_BumperCar_d830442ef7",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -1.0791066884994507,
+            -1.1852340698242188,
+            0.09399999678134918
+          ],
+          "max": [
+            1.0791066884994507,
+            1.1852340698242188,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -1.065111517906189,
+            -1.1770578622817993,
+            0.10499999672174454
+          ],
+          "max": [
+            1.065111517906189,
+            1.1770578622817993,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.4266459593478878e-16,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 8.360948830917501e-10,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.358134730742311e-16,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.8419679353436544e-16,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.560514386835181e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.3294408031369127e-08,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "source_object": "BumperCar_06_Complete",
+      "asset_name": "SM_BumperCar_fd8fc5462e",
+      "expected_hulls": 8,
+      "exported_hulls": 8,
+      "source_world_matrix_exact": true,
+      "recipe_guard_qa": {
+        "unheaded_free_cockpit_probe_points_m": [
+          [
+            -0.35,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0,
+            0.78
+          ],
+          [
+            0.15,
+            0,
+            0.78
+          ],
+          [
+            -0.15,
+            0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            -0.25,
+            0.83
+          ],
+          [
+            -0.15,
+            0,
+            1.15
+          ]
+        ],
+        "cockpit_probe_points_clear": true,
+        "omitted_collision": "Decorative rivets, trim, lamps, steering wheel/spokes, seat stitching, electrical pickup pole/springs.",
+        "source_local_bounds_m": {
+          "min": [
+            -1.2848459482192993,
+            -0.9554054737091064,
+            0.09399999678134918
+          ],
+          "max": [
+            1.2848459482192993,
+            0.9554054737091064,
+            3.822000026702881
+          ]
+        },
+        "proxy_local_bounds_m": {
+          "min": [
+            -1.2804229259490967,
+            -0.9456939697265625,
+            0.10499999672174454
+          ],
+          "max": [
+            1.2804229259490967,
+            0.9456939697265625,
+            1.1981102228164673
+          ]
+        },
+        "max_aabb_extension_m": 0.0,
+        "aabb_tolerance_m": 0.005
+      },
+      "hulls": [
+        {
+          "part": "low bumper and undertray",
+          "vertices": 48,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 2.284430582762183e-16,
+          "passed": true
+        },
+        {
+          "part": "solid front hood",
+          "vertices": 14,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "right side body",
+          "vertices": 12,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.3581336155989884e-16,
+          "passed": true
+        },
+        {
+          "part": "left side body",
+          "vertices": 16,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.407843701826306e-08,
+          "passed": true
+        },
+        {
+          "part": "rear body below backrest",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 3.683936971038464e-16,
+          "passed": true
+        },
+        {
+          "part": "foot tray",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 5.121028532621165e-16,
+          "passed": true
+        },
+        {
+          "part": "seat cushion",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 0.0,
+          "passed": true
+        },
+        {
+          "part": "seat back and upholstery",
+          "vertices": 8,
+          "max_vertex_error_cm": 0.0,
+          "faces_exact": true,
+          "closed_manifold_edges": true,
+          "relative_convex_volume_error": 1.692361394167579e-08,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "unreal_runtime_verified": false
+}

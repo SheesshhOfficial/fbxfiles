@@ -1,0 +1,783 @@
+{
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "fbx_count": 43,
+  "all_paths_resolve": true,
+  "shared_texture_dependency": "Preserve complete textures tree, including nested realistic and derived folders. Images are not embedded.",
+  "files": [
+    {
+      "fbx": "SM_Env_Tile_m3_m4.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m3_m3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m3_m2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m3_m1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m3_p0.fbx",
+      "relative_texture_paths": [
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m3_p1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m3_p2.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_m4.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_m3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_m2.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_m1.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_p0.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_p1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m2_p2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_m4.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_m3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_m2.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_m1.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_p0.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_p1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_p2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_m1_p3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_m4.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_m3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_m2.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+        "../../textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_m1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_p0.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+        "../../textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintRed_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_p1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p0_p2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_m4.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_m3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_m2.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_m1.fbx",
+      "relative_texture_paths": [
+        "../../textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/88df250607e5cf92_Canvas_normal.png",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+        "../../textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_p0.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/542a4eda31856ba9_cream_normal.png",
+        "../../textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/bb1030b2219abe93_cream_roughness.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/cbb5003f3ae169d4_cream_basecolor.png",
+        "../../textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+        "../../textures/db89a6d4ac976986_PaintCream_normal.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_p1.fbx",
+      "relative_texture_paths": [
+        "../../textures/196a30fdcfcfbaa5_torn_ticket.png",
+        "../../textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/212752c281497b12_red_normal.png",
+        "../../textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+        "../../textures/27321abb3209dc27_teal_basecolor.png",
+        "../../textures/5ebee3f7ec76f226_concrete_basecolor.png",
+        "../../textures/5fa16c4e88378711_concrete_roughness.png",
+        "../../textures/609dd1021569011a_red_roughness.png",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/82e277f966cfb033_teal_normal.png",
+        "../../textures/84a4005994ea8e79_concrete_normal.png",
+        "../../textures/8624b481ad9f9c92_red_basecolor.png",
+        "../../textures/c6ed6c064ddefa3e_teal_roughness.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+        "../../textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p1_p2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_m4.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_m3.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_m2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_m1.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_p0.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_p1.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    },
+    {
+      "fbx": "SM_Env_Tile_p2_p2.fbx",
+      "relative_texture_paths": [
+        "../../textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+        "../../textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+        "../../textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+        "../../textures/db89a6d4ac976986_WeatheredWood_normal.jpg"
+      ],
+      "all_paths_resolve": true
+    }
+  ]
+}

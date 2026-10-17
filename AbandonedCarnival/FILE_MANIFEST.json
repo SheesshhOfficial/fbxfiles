@@ -1,0 +1,2193 @@
+{
+  "scope": "All staged deliverable files except this manifest itself; local staging is not publication",
+  "source_sha256": "2d4f00dbf3704895a79ea30287dfa93ac7d0ad87f6e03e0e1ea163888418ca1a",
+  "file_count": 437,
+  "total_bytes": 371845546,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2710,
+      "sha256": "9069d32e44e4edd4dbaa53f3356489fe21ed5ef7063de647a7591c576d1be108"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part01",
+      "bytes": 9437184,
+      "sha256": "d616ec50f8c675656aa0b01fe693a76427f9441b32fba78c678754766dc3eb2a"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part02",
+      "bytes": 9437184,
+      "sha256": "f75ed82fd6bdf9e0003e811a0b455a37aeda94940fea1f188b7f230a86daadaf"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part03",
+      "bytes": 9437184,
+      "sha256": "d4005d42d0e1eb365b600d6b66ae568209ed3f4b7312010ba345036bff7b4441"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part04",
+      "bytes": 9437184,
+      "sha256": "097e2ebea82168483229f3a8928b8d5971f6c0f28ffa3fb75dcd214db1dd92e4"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part05",
+      "bytes": 9437184,
+      "sha256": "8b823407f5b4cf0a17a43c5b59aeb8f6af547f62f8507392ed7abde80ccd5782"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part06",
+      "bytes": 9437184,
+      "sha256": "454786b8ce1ec73694c62653da5ac7ab73178436ce2a3bbca583a96c030183b5"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part07",
+      "bytes": 9437184,
+      "sha256": "6dc627d2681a0f99ac5bdcbb12de36d229abde33f7a52ded531f39efbf2adb76"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part08",
+      "bytes": 9437184,
+      "sha256": "ce3d4358212c01d21430bbcac7ea0a86f39362859d2bb857809f05b123a09d19"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part09",
+      "bytes": 9437184,
+      "sha256": "4e5fac9d2710f501e6861bade6d5248db6f6bf97610f53a5d89fbbefdd78ec80"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part10",
+      "bytes": 9437184,
+      "sha256": "773f24f39022e889062e4c735db452fb35ceaa420ffc787df4ca89ebdf7e0d54"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part11",
+      "bytes": 9437184,
+      "sha256": "7bfb5606e9c07304c8efd6800ff2b5759c78e8bd9906dd3dd532a476cba61b70"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part12",
+      "bytes": 9437184,
+      "sha256": "d2e92904e3029214a6f0de51fa0047d30ca4a1f4c302710b17b5702e6f00ac91"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part13",
+      "bytes": 9437184,
+      "sha256": "9444509cea68bd944a239a989a712673c61c30c288d602c48af3c89f38ec0321"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part14",
+      "bytes": 9437184,
+      "sha256": "b25e512b6eb1a80b681e24d6dda93028e49127256f33bf1562647fd83eac7fe5"
+    },
+    {
+      "path": "blender/Moonfall_Carnival_Refined.blend.part15",
+      "bytes": 4272806,
+      "sha256": "642b3c139cf5105a36e1f7ec8092dc26dd4e7198c8758dc79df58a7974e41103"
+    },
+    {
+      "path": "blender/source_parts.json",
+      "bytes": 2936,
+      "sha256": "07a257a4d5926df70ec69000a96797150475ece10e6694fd28bd9c38604199a2"
+    },
+    {
+      "path": "docs/ASSET_PROVENANCE.md",
+      "bytes": 2931,
+      "sha256": "f981f1d3a52cccca4112e9bdbdd46eb859c1125d323154e274358eb2f813c052"
+    },
+    {
+      "path": "docs/COLLISION_BUDGET.md",
+      "bytes": 3059,
+      "sha256": "10b86cee683b1d314e5ff054b41aecc9af6e6c836603d832a5476a1b6e7658be"
+    },
+    {
+      "path": "docs/DELIVERY.md",
+      "bytes": 2024,
+      "sha256": "e75cb9c249eaafb2a67ad8b51de9d4a33d3423148ec179b5113550eb5303533f"
+    },
+    {
+      "path": "docs/DejaVu_Font_License.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "docs/FINAL_QA_SUMMARY.md",
+      "bytes": 3337,
+      "sha256": "545b7a7efaedbfea89bc2334b8ba890b7252957c915520ef72f81367e8c6184f"
+    },
+    {
+      "path": "docs/REFINED_PROP_COLLISION_CONTRACT.md",
+      "bytes": 5711,
+      "sha256": "f8892748cc2ab6684429463a29ba5a06c86caec4013c286b6e3e644f3fee2840"
+    },
+    {
+      "path": "docs/TEN_PASS_CHANGELOG.md",
+      "bytes": 4126,
+      "sha256": "38a8f1b2a78c8c812ab7dba8a48c057e9005bf0ff9f5e052e392e4abf11eb06e"
+    },
+    {
+      "path": "docs/UNREAL_ACCEPTANCE_CHECKLIST.md",
+      "bytes": 5161,
+      "sha256": "959b09d7dcbc4e953f8128ad280bd5d8d114c78658e204310e5bf73a991f312f"
+    },
+    {
+      "path": "export/qa/environment_export.json",
+      "bytes": 1133954,
+      "sha256": "b9c329e3a9de4af28bb613b08888b5f43f46a244b1030270f1794b32651e9170"
+    },
+    {
+      "path": "export/qa/environment_material_compatibility.json",
+      "bytes": 7003,
+      "sha256": "535fc1bdf4d690beb5e7bd6e37e115268f99478e85a29d73d8ce29ceb7c4d08a"
+    },
+    {
+      "path": "export/qa/environment_raw_fidelity.json",
+      "bytes": 22219,
+      "sha256": "a0207c17526209c30b418c690a90c993ef2ba5a0ea372a5e96aa13fbacd71a83"
+    },
+    {
+      "path": "export/qa/environment_reimport_caveat.json",
+      "bytes": 15888,
+      "sha256": "471ba177488dfef35210f7bcad5f14bb6339e97324cd039519afa2cc58e1e844"
+    },
+    {
+      "path": "export/qa/environment_source_roundtrip.json",
+      "bytes": 409683,
+      "sha256": "766cd046906feece70bd07772a036bccb860ce6634ea5d7f873a409c8e20e247"
+    },
+    {
+      "path": "export/qa/environment_texture_paths.json",
+      "bytes": 40362,
+      "sha256": "c2720f1a54fdfbddd0d51dc0f3c56220af1540a4ed7f55b635b0415eb9f0a2f8"
+    },
+    {
+      "path": "export/qa/prop_collision_optimization.json",
+      "bytes": 32227,
+      "sha256": "4c2eee34d8a174a91e3a7af317c51fdfa87f12546681506e14210281374e634c"
+    },
+    {
+      "path": "export/qa/prop_collision_proxy_fbx.json",
+      "bytes": 5465,
+      "sha256": "104e5f166fd38a7a9a8c9444643b1be04de99e530b5a534b0ba9273177b8c82b"
+    },
+    {
+      "path": "export/qa/prop_export_report.json",
+      "bytes": 620461,
+      "sha256": "60ddaf6daf4177d689c8eec4e33cd5e884b460125a88bbd9744bf3c6930ad072"
+    },
+    {
+      "path": "export/qa/prop_fbx_roundtrip.json",
+      "bytes": 56222,
+      "sha256": "ba816d54ee4808989df3aa91893907179b4ca4e2bbeab476250bcf2a23f6b97a"
+    },
+    {
+      "path": "export/qa/prop_fidelity.json",
+      "bytes": 58218,
+      "sha256": "e987801cf1f05a290328ed478f377e66bc9d7bebecaf5bc4ba81273a8e0c5f01"
+    },
+    {
+      "path": "export/qa/prop_refined_collision.json",
+      "bytes": 46469,
+      "sha256": "1f13bdaa46caa50a3a88b61927c3fbec3285cbc7b54480f0604a4323d05913b1"
+    },
+    {
+      "path": "export/qa/prop_refined_collision_fbx.json",
+      "bytes": 94573,
+      "sha256": "c41d2b4e5c34564e2d8614ad7d3f936f83d8c32ccfbe930f358776cb40b72e99"
+    },
+    {
+      "path": "export/qa/prop_reimport_caveat.json",
+      "bytes": 3823,
+      "sha256": "5f0d82cccfb5da3d9d93dcb07310e58dc7aa78e2bccb4645859c9b2747ed559a"
+    },
+    {
+      "path": "export/qa/prop_texture_paths.json",
+      "bytes": 138814,
+      "sha256": "859af4cc9902d6fca11fb54b5bed2d5e0fcd6dd19b636e3b751c7d1c977d1372"
+    },
+    {
+      "path": "export/qa/source_portability.json",
+      "bytes": 19548,
+      "sha256": "5efebd1e82111a03a844e92fcd7a0074753ba5dc40421d9a98d8304f4fc2d2b0"
+    },
+    {
+      "path": "export/textures/17e4bf291bfeeb66_Canvas_roughness.jpg",
+      "bytes": 56588,
+      "sha256": "17e4bf291bfeeb66bbac357dcb585791b07ff85ce7938a2b28874ee2345d8181"
+    },
+    {
+      "path": "export/textures/196a30fdcfcfbaa5_torn_ticket.png",
+      "bytes": 105972,
+      "sha256": "196a30fdcfcfbaa559224733d11e6b96d2349c8787cbb5fc7e86c4b93a232645"
+    },
+    {
+      "path": "export/textures/1b6fcec0b1908e6b_PaintTeal_basecolor.jpg",
+      "bytes": 590487,
+      "sha256": "1b6fcec0b1908e6bcd56b396cd2eb17f4475e2fb27d36f1dab087b4f7a4898c5"
+    },
+    {
+      "path": "export/textures/1cb16ddd9c29b6f1_CorrodedMetal_basecolor.jpg",
+      "bytes": 914548,
+      "sha256": "1cb16ddd9c29b6f15457af365e074625d996163748574c2d49158c5c046fe71b"
+    },
+    {
+      "path": "export/textures/1ef20f6692f5cdee_WeatheredWood_basecolor.jpg",
+      "bytes": 696148,
+      "sha256": "1ef20f6692f5cdeed2c8a6d1e587f1351331099a8c4e8b574b60609112302374"
+    },
+    {
+      "path": "export/textures/212752c281497b12_red_normal.png",
+      "bytes": 1559517,
+      "sha256": "212752c281497b12cf5082fac3c854de636e843e0428ef5fc55231f90374b443"
+    },
+    {
+      "path": "export/textures/24fc9bd5ac5ba383_CorrodedMetal_normal.jpg",
+      "bytes": 70452,
+      "sha256": "24fc9bd5ac5ba383305634a6cf69bae6d0261efcaf39f6baee8a9307f12ead32"
+    },
+    {
+      "path": "export/textures/27321abb3209dc27_teal_basecolor.png",
+      "bytes": 1157399,
+      "sha256": "27321abb3209dc27e8cec0cdea2da1a87859c48bcb96d891cdd4a6882b46f172"
+    },
+    {
+      "path": "export/textures/2f2d724b08729087_CanvasCream_basecolor.jpg",
+      "bytes": 387371,
+      "sha256": "2f2d724b08729087c28c126230e206b034c263b2afa083f11b46594932608007"
+    },
+    {
+      "path": "export/textures/308ea4186e408ab3_plush_fabric_basecolor.png",
+      "bytes": 983481,
+      "sha256": "308ea4186e408ab3f8f490b4999452d3621084e48b6d003f00abea132c8172d8"
+    },
+    {
+      "path": "export/textures/48f82c52972fd994_Ground112_2K-JPG_Color.jpg",
+      "bytes": 6343840,
+      "sha256": "48f82c52972fd9945d9906c806ca12daba0523a9b3e4aaa1def0c76609e6e392"
+    },
+    {
+      "path": "export/textures/53b25a790d311f21_plush_fabric_normal.png",
+      "bytes": 2093620,
+      "sha256": "53b25a790d311f2151eca58e51de135344aafbed605e928d8a170c8498486b87"
+    },
+    {
+      "path": "export/textures/542a4eda31856ba9_cream_normal.png",
+      "bytes": 1649514,
+      "sha256": "542a4eda31856ba958225edf5e0cdbeef7bf39c4fcc70590194a0fd4ab12967a"
+    },
+    {
+      "path": "export/textures/59954869e6914003_CrackedAsphalt_normal.jpg",
+      "bytes": 3403673,
+      "sha256": "59954869e6914003a50902e527bccd2804e504f723d2e2d728aafa6d713507ad"
+    },
+    {
+      "path": "export/textures/5ebee3f7ec76f226_concrete_basecolor.png",
+      "bytes": 1132763,
+      "sha256": "5ebee3f7ec76f22677f8f5b35325bef00d22814603e6567e2431b4c463d7481f"
+    },
+    {
+      "path": "export/textures/5fa16c4e88378711_concrete_roughness.png",
+      "bytes": 184858,
+      "sha256": "5fa16c4e883787113a6786a9bdbb893c698c894715b7e067395492abdb57c0c8"
+    },
+    {
+      "path": "export/textures/609dd1021569011a_red_roughness.png",
+      "bytes": 184969,
+      "sha256": "609dd1021569011a8d2cffbff4b5ca76a830e7bc6fdd54825593769a89519871"
+    },
+    {
+      "path": "export/textures/734a7bab5d1b7496_PaintCream_basecolor.jpg",
+      "bytes": 807699,
+      "sha256": "734a7bab5d1b7496a63fef38fbe031c05b049e2089db96288e8178c3110869cc"
+    },
+    {
+      "path": "export/textures/79902e6d1c4d0c0f_natural_leaf_veins_living.png",
+      "bytes": 87026,
+      "sha256": "79902e6d1c4d0c0f9b61d15af19e808958f7235d010a968c2030a1b015dfff09"
+    },
+    {
+      "path": "export/textures/7bd7fa59dea37feb_CrackedAsphalt_roughness.jpg",
+      "bytes": 1956558,
+      "sha256": "7bd7fa59dea37febb8e06324043e4bc83131ccb5a0e91bda00a3dddda3aa0708"
+    },
+    {
+      "path": "export/textures/82e277f966cfb033_teal_normal.png",
+      "bytes": 1572532,
+      "sha256": "82e277f966cfb0336dd9c5f0beb2ecee0c84fab3c74f762c8f977915302d0c2e"
+    },
+    {
+      "path": "export/textures/84a4005994ea8e79_concrete_normal.png",
+      "bytes": 1606042,
+      "sha256": "84a4005994ea8e791ec55ab3851dc5d996037bdc19d88ef75033a259396bf806"
+    },
+    {
+      "path": "export/textures/8624b481ad9f9c92_red_basecolor.png",
+      "bytes": 1201144,
+      "sha256": "8624b481ad9f9c925c179c3a6ed033d134269c0f342762c256c81c285634a53c"
+    },
+    {
+      "path": "export/textures/88df250607e5cf92_Canvas_normal.png",
+      "bytes": 7038,
+      "sha256": "88df250607e5cf92bfdab78d76ada7d7a6b12f376963c8b88787d1fd40323489"
+    },
+    {
+      "path": "export/textures/91bd18211fea8082_Ground112_2K-JPG_NormalGL.jpg",
+      "bytes": 8172938,
+      "sha256": "91bd18211fea8082adba9785a9efc827d50ef186d78ecb2a0a1c786f075c89f5"
+    },
+    {
+      "path": "export/textures/a7023507bf7681e5_PaintRed_basecolor.jpg",
+      "bytes": 631504,
+      "sha256": "a7023507bf7681e59948ab34f4216132933a4de6e33b1980d90d4350f9936c53"
+    },
+    {
+      "path": "export/textures/bb1030b2219abe93_cream_roughness.png",
+      "bytes": 184353,
+      "sha256": "bb1030b2219abe9365da1c1355d9e6452e0d97a364e5fc931878b6ea6a28501e"
+    },
+    {
+      "path": "export/textures/c6ed6c064ddefa3e_teal_roughness.png",
+      "bytes": 184738,
+      "sha256": "c6ed6c064ddefa3eff0093c782070586c26f214a90cbd1157bb573ad8bd1ab35"
+    },
+    {
+      "path": "export/textures/c9a297dbc926ebc1_WeatheredWood_roughness.jpg",
+      "bytes": 800633,
+      "sha256": "c9a297dbc926ebc18601c45937d0bcd170f26c909028d84c49612b6a06a041f9"
+    },
+    {
+      "path": "export/textures/cbb5003f3ae169d4_cream_basecolor.png",
+      "bytes": 1145641,
+      "sha256": "cbb5003f3ae169d47435a330f588cdfcf9d12d72238774f3654833a819ffbbf0"
+    },
+    {
+      "path": "export/textures/d77f26d293e4a90c_PaintCream_roughness.jpg",
+      "bytes": 515113,
+      "sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e"
+    },
+    {
+      "path": "export/textures/d77f26d293e4a90c_PaintRed_roughness.jpg",
+      "bytes": 515113,
+      "sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e"
+    },
+    {
+      "path": "export/textures/d77f26d293e4a90c_PaintTeal_roughness.jpg",
+      "bytes": 515113,
+      "sha256": "d77f26d293e4a90c880c473dedcf9ab4145bf16cd6004c05efab7ea31bc9e54e"
+    },
+    {
+      "path": "export/textures/db89a6d4ac976986_PaintCream_normal.jpg",
+      "bytes": 880518,
+      "sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96"
+    },
+    {
+      "path": "export/textures/db89a6d4ac976986_PaintRed_normal.jpg",
+      "bytes": 880518,
+      "sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96"
+    },
+    {
+      "path": "export/textures/db89a6d4ac976986_PaintTeal_normal.jpg",
+      "bytes": 880518,
+      "sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96"
+    },
+    {
+      "path": "export/textures/db89a6d4ac976986_WeatheredWood_normal.jpg",
+      "bytes": 880518,
+      "sha256": "db89a6d4ac976986c6d4c0b69c788f0897b65c60a51c6859f89c0a518932be96"
+    },
+    {
+      "path": "export/textures/dd214586b5305465_CanvasRed_basecolor.jpg",
+      "bytes": 216355,
+      "sha256": "dd214586b5305465be8e7086e2a86a3a528e3871f4e29f1154059c1d3ca9effa"
+    },
+    {
+      "path": "export/textures/e5be2cefe8a72a9a_Ground112_2K-JPG_Roughness.jpg",
+      "bytes": 3460540,
+      "sha256": "e5be2cefe8a72a9a4d295bbfad91df3dc28827d1a5a4db1ff077f5baeecfdd35"
+    },
+    {
+      "path": "export/textures/e73899614bd0405b_CrackedAsphalt_basecolor.jpg",
+      "bytes": 1314155,
+      "sha256": "e73899614bd0405bbabec659891ccbcfabf970ba469971efad5f5351e2ad69e2"
+    },
+    {
+      "path": "export/textures/f5ff8d398d88ed01_CorrodedMetal_roughness.jpg",
+      "bytes": 563403,
+      "sha256": "f5ff8d398d88ed01a30a75a9fe743e69497eccbb241c45b62011868d98d7f7de"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_m1.fbx",
+      "bytes": 4207772,
+      "sha256": "0f309ca6aec9eba75e591accab6fe2a1cfc7d780b5251239ce381abc361692de"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_m2.fbx",
+      "bytes": 4701180,
+      "sha256": "ec8228926b6da2e1d19c1750f7542bb40528415de8471d31284f483aca03a82f"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_m3.fbx",
+      "bytes": 1027916,
+      "sha256": "78b4862e2f7ba6ae906f9f104973fabe3a00843a5c8cbefe73216e0314f20912"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_m4.fbx",
+      "bytes": 927740,
+      "sha256": "17376579274e72e5bb71d17b4411cf57514bbe04638ab5b1bd479e05ea4d07d7"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_p0.fbx",
+      "bytes": 8805580,
+      "sha256": "441cca296943681d8533f01058d8695b0011b3dac977efb23f20377a2e785175"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_p1.fbx",
+      "bytes": 658828,
+      "sha256": "1e742f6212217744190d888c7ce8529c79d26871fa2e9a59f7b6707928d0a73e"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_p2.fbx",
+      "bytes": 6301628,
+      "sha256": "b675669c7513a2d76a8f52aa3d42f8f2045045da9f977369084fe69f582981fa"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m1_p3.fbx",
+      "bytes": 118156,
+      "sha256": "b68325deda97aee4f28667bfae73d6de46615417c8682f69a4bd9810d1e3a901"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_m1.fbx",
+      "bytes": 6525196,
+      "sha256": "372e3ad38ae9cc37267a14641da6a40d3e41f4124c673989270247fcfecaccca"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_m2.fbx",
+      "bytes": 3714876,
+      "sha256": "0d2e1cdef6b57a50215fda67bccbd66594c969ee4841177ec704327b8c6f467b"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_m3.fbx",
+      "bytes": 1428156,
+      "sha256": "7ea6c55c1fb017c208b1b5784ca8e883b1b299438d76a75f409c9d8eba0b19e3"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_m4.fbx",
+      "bytes": 930508,
+      "sha256": "901615560622f3248b683edc26fd0d8385e9e3bb3648a5aceca1d7e513719936"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_p0.fbx",
+      "bytes": 1393996,
+      "sha256": "02392566bef4caf92b871a819e6d8086530225561305779944d56bc9735e2706"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_p1.fbx",
+      "bytes": 780540,
+      "sha256": "ffd6382e749682e89b3274deea70661084c48677dd5edfdc4d8415d721ab2514"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m2_p2.fbx",
+      "bytes": 3847068,
+      "sha256": "e56c02c9bd21a595559bcf34014108a4beeb3deddb098acbb4f18713605f512b"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_m1.fbx",
+      "bytes": 7907452,
+      "sha256": "b71bf42fc97ed95b76e1fa0dffd5ed95306056ba249107f4121fc5a66ef16583"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_m2.fbx",
+      "bytes": 7788988,
+      "sha256": "1676c57b78d399796d7ccfe26a95917b0ffc3352946abe6e291a480080fe61ff"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_m3.fbx",
+      "bytes": 38668,
+      "sha256": "20cdba6e85813860f24058f70e7727e0bccd962bd8124a5adb144f422c895404"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_m4.fbx",
+      "bytes": 818476,
+      "sha256": "8df9d09dad13bd7d60467ebf8b2bcf1270265e30fc81bb41b9b24e7d8d8e63f6"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_p0.fbx",
+      "bytes": 6160348,
+      "sha256": "30bbc70358c0e9e0dc9a6b4977647d312b848542bde5fd2b06d3222f60ef7b64"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_p1.fbx",
+      "bytes": 4364796,
+      "sha256": "eecfe751b5dc18056f144ff9203831a16e56f45f548508ada474f909b8207243"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_m3_p2.fbx",
+      "bytes": 5701340,
+      "sha256": "5a1387424cb5a1b825343b2ab79b56e8b4c4923f019d8c6ba7d86b77d22fdd80"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_m1.fbx",
+      "bytes": 967100,
+      "sha256": "14314819185ffc571ea83be63fa7539b1048cd73d2775616db04b812ab6ce350"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_m2.fbx",
+      "bytes": 3496092,
+      "sha256": "899a61b69f4c001eea826961fb4ff5747d768f19537b005fbc18ca429829d367"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_m3.fbx",
+      "bytes": 1099164,
+      "sha256": "0e90c46387aac75ab4f73bc34b921a90708c73646816579176f39255d1225eb1"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_m4.fbx",
+      "bytes": 1695644,
+      "sha256": "4c751cdaab549c7a7492b168fec10148e21a98179ebe26fb4e812d2234016e32"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_p0.fbx",
+      "bytes": 8674364,
+      "sha256": "3442633011c9ea2e85ab1614ce39854cbf4eca25839799bf132902a369745cc6"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_p1.fbx",
+      "bytes": 1016204,
+      "sha256": "bb846f7bd4a45de0ed9761d8ca8659cbaed5945169e29a0dd97ffb9a2381854d"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p0_p2.fbx",
+      "bytes": 4220892,
+      "sha256": "f063c9fad7892379c52933ad4f0d4769dad7adca56ecb1db5bca7d7656d1eb68"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_m1.fbx",
+      "bytes": 2298268,
+      "sha256": "a898ba4bdb5ab52bfbea3fdfd54a7334083c3846f13205d156022c5af1650fec"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_m2.fbx",
+      "bytes": 431772,
+      "sha256": "fed5733b9b8a8591743071ea930420ee2e3c768ae66336d7ad1d5f6a61be94ee"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_m3.fbx",
+      "bytes": 1019244,
+      "sha256": "bc2dde695b8e6d829839c9bb1b9b2f56bb5fc7d66e6c4659a33d64af29cb724a"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_m4.fbx",
+      "bytes": 880460,
+      "sha256": "05590a271b2212c9395d1a154c410e6da9c8c27398e6966a5056758dac081431"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_p0.fbx",
+      "bytes": 2806108,
+      "sha256": "8cc8df2893db3775abaec254ab47dbbe9f2b3c67078320446839051fe5f7a0b8"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_p1.fbx",
+      "bytes": 1373212,
+      "sha256": "2f6dc637c77909a6fb74391de57473450d6ea042a2ede20ead37edd6e8a330fb"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p1_p2.fbx",
+      "bytes": 5729564,
+      "sha256": "46039175b36d8db7ecec33713ce9d0d913d532f4e8d2e29b173787b5cbdb742d"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_m1.fbx",
+      "bytes": 2530284,
+      "sha256": "a30ef69f7a612b0d528483bd078e5a80c3e29f8157720eba940b83f67e6032fa"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_m2.fbx",
+      "bytes": 3266220,
+      "sha256": "f98e898f28136e86e2ed335a6814e45ff5d9cd2ecf3ef33b9544fae1c146c426"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_m3.fbx",
+      "bytes": 56044,
+      "sha256": "c93016463b3ddeed45faa53654a7447ed82fad347eaffb01875aed9b61f8c89a"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_m4.fbx",
+      "bytes": 881340,
+      "sha256": "ccb9a5c25503a821aad0be2c3135579daf42f5da8fe1bb45276e27c63f127acc"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_p0.fbx",
+      "bytes": 2301100,
+      "sha256": "193f50086418c18e9e9ae3189da9b064fc5341ed24569b8c571c722a296782b6"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_p1.fbx",
+      "bytes": 2995292,
+      "sha256": "9e3ea0196237fd2da6cf6df35b2eb798781b0a065b2c9b2eb8ff0e220103643a"
+    },
+    {
+      "path": "export/unreal/environment/SM_Env_Tile_p2_p2.fbx",
+      "bytes": 1231820,
+      "sha256": "ea55097694af192fbcb19f86926af5daec77db61a045369c986139b4342027d8"
+    },
+    {
+      "path": "export/unreal/environment_manifest.json",
+      "bytes": 443183,
+      "sha256": "a62d47609ddae4b9463e459d66ad142adad261c8e93fdd66c9c2ae838ef67c55"
+    },
+    {
+      "path": "export/unreal/import_carnival.py",
+      "bytes": 1213,
+      "sha256": "aeae36cb7c941d18ff23705305c657da378ab0d4755dc33831c7a24de12ee8f9"
+    },
+    {
+      "path": "export/unreal/import_environment.py",
+      "bytes": 5069,
+      "sha256": "53c7e982d8e1fcca82355ed016edce61291d0499f9dbd39e91a9c69b18e3fe38"
+    },
+    {
+      "path": "export/unreal/import_materials.py",
+      "bytes": 6084,
+      "sha256": "f30b9c3bafe1d50a5018a67b6ae4653525ad9ad761cc5534f9d5a0fa5fa50dde"
+    },
+    {
+      "path": "export/unreal/import_props.py",
+      "bytes": 5434,
+      "sha256": "380bbe3511d55e5eb1e8b1691d7fef48ccf1d4a413321ef7fce4ec6d53fedde7"
+    },
+    {
+      "path": "export/unreal/import_scene_metadata.py",
+      "bytes": 3472,
+      "sha256": "96a00adda3d24737d0ddbc1698255886555603b6e2f71a69e2167c0b5e072dfe"
+    },
+    {
+      "path": "export/unreal/material_manifest.json",
+      "bytes": 56933,
+      "sha256": "7b4624bf35618733783f8b13b9d7a376890a4dbed795b0177f4ff574739caaa2"
+    },
+    {
+      "path": "export/unreal/prop_placements.json",
+      "bytes": 342889,
+      "sha256": "715847bfceb05802d9157311b68ab862949ee4a96017925c2efda45de7214523"
+    },
+    {
+      "path": "export/unreal/props/SM_Barrel_6ad461f42e.fbx",
+      "bytes": 53900,
+      "sha256": "dac52e6c4214477a2357adc543d363fa7b44f2483daa57722ddd9b50e21c5901"
+    },
+    {
+      "path": "export/unreal/props/SM_Barrel_9af9de3d1b.fbx",
+      "bytes": 54172,
+      "sha256": "2873df8006d3da4adc236d8cb1547d9aaee5e311fe47fe33d5b8b45b4456ca98"
+    },
+    {
+      "path": "export/unreal/props/SM_Barrel_aad2daf73d.fbx",
+      "bytes": 54380,
+      "sha256": "f1045364942633249c40745691a135563d1bfff92c0cfd448a17a41a88583e2a"
+    },
+    {
+      "path": "export/unreal/props/SM_Barrel_ca8b1e8789.fbx",
+      "bytes": 54300,
+      "sha256": "c9edd558e3f5582dc205ada1f6b7125944036121b81aa1566fc37e8e99faa205"
+    },
+    {
+      "path": "export/unreal/props/SM_Barrel_cf570e2e32.fbx",
+      "bytes": 54396,
+      "sha256": "f444aa140b73435589899c7ca028663a968b8ccac17467823e1a515d347c3aef"
+    },
+    {
+      "path": "export/unreal/props/SM_Barrel_dee624b30b.fbx",
+      "bytes": 52716,
+      "sha256": "f59b51014ebc86a9f82bd656961e5f89bd3662192fb8e75fe58342a6cae7042d"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_0f1225d245.fbx",
+      "bytes": 48156,
+      "sha256": "30958b6599d3206a4d6bc2126e15222c60165e69c7ede24a07001b1644ad4175"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_0f6879ac72.fbx",
+      "bytes": 48124,
+      "sha256": "dab9424f76b138063a6a2df726d53b669a44204410205274dd2c5c0d1c57926a"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_12f7e4d56d.fbx",
+      "bytes": 48108,
+      "sha256": "f615f1e08fdc13c3dc9820d9895f085d2ef880f1ef9dcc616e6ed98baae8d00b"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_3c6798bf01.fbx",
+      "bytes": 48220,
+      "sha256": "7b91294b18be3dba12641cbcd4ac3d7b7789a41ee25a4a34e2aaab31363beb0c"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_42de1a898a.fbx",
+      "bytes": 47996,
+      "sha256": "0815bdd8e63d863f4a69dfc23fd764840ce2ac6623871ef971e3c818a83dd670"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_43f28bee84.fbx",
+      "bytes": 48124,
+      "sha256": "b0cf42116b467fa219713742d666a48cad064dc1f3223ca81167305c703fef0a"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_497ac102f3.fbx",
+      "bytes": 48108,
+      "sha256": "438374942af09949fe9840088822b36bdb745be91b3a278e7db0f690fc23634c"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_5d5807c9f9.fbx",
+      "bytes": 48124,
+      "sha256": "d0ba3df370453ee5818b863e2492460612eefcab34a7649d5b82a929b88e8d05"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_65db92b5d2.fbx",
+      "bytes": 48028,
+      "sha256": "c5998113398494e8209601cbb94aa77cbd38d11a994bb1fb26a0aebd42e683f5"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_6bab70f976.fbx",
+      "bytes": 48124,
+      "sha256": "ce53f6aecac23dd212a01b8fbb951e01e8929e61dbfa63c391d761dcd9b4dfdb"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_6e40bdb6c4.fbx",
+      "bytes": 48188,
+      "sha256": "b70a167ea9becfa9dbc14e7744d38661e3ceb57fda2c9126a2eac9785cb3455c"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_73ece9d384.fbx",
+      "bytes": 48108,
+      "sha256": "97012724a26babaae4b9e3fb1f1bcb626ad1537f53fd2cbc671b1a6b7adccb69"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_82c645aeef.fbx",
+      "bytes": 48012,
+      "sha256": "67d9efb601403ced0bb224e298098498aa0887b92ae70fef10353e07eb80909a"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_8e70e84240.fbx",
+      "bytes": 48124,
+      "sha256": "da8884b23020b9175a6f6c85b2acad44f3feef1014f59c5f8e57b11e547e0aa0"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_9673a3e0a8.fbx",
+      "bytes": 48060,
+      "sha256": "76892209bfe200f0955fe0525df6ba267c85b6954469375ab5a4c49588d0d08d"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_bcbc4cefd7.fbx",
+      "bytes": 48220,
+      "sha256": "becb3ab1d9799871c64486b80576fab699e1b7bff92b06f9d73ff6de268f5021"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_c18fcec220.fbx",
+      "bytes": 48092,
+      "sha256": "6202952e2c34e9526c8056fb70f31f77773089ee7b09343bb7819540fd9c8c92"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_d283cddf6b.fbx",
+      "bytes": 48028,
+      "sha256": "d6a98e3d2fc56cf3ee0307e7d4700ba66ffe33777156440fd1449fd979d6a16d"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_e74cdbb2a6.fbx",
+      "bytes": 48076,
+      "sha256": "3e93e817bbc8f2ef27f902f43f9e792afce87ce7c2f7c827387fa2b545a25e0e"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_e8b18d6cf8.fbx",
+      "bytes": 48092,
+      "sha256": "b2a08873ea3fac429e623aff306084bc64c977b02033a4b3a5a33ab325e6fc1e"
+    },
+    {
+      "path": "export/unreal/props/SM_Bottle_f9ea75bad9.fbx",
+      "bytes": 48156,
+      "sha256": "6723574291c5d2f55a5fd331f623cc32bb4c3fc53821dee059b0f4b4256620fe"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_566477cf32.fbx",
+      "bytes": 1339868,
+      "sha256": "c2cec0066bb3639fb79f1f90ed42ca056844e838d7e1365cda5779041a86531e"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_8c0ab62bb2.fbx",
+      "bytes": 1342956,
+      "sha256": "c7902d5cd3321891d64503c8094c095a6f99fd58107cb47251a622f9872a98e0"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_aa25262571.fbx",
+      "bytes": 1346156,
+      "sha256": "87348bef686ada7ed15c0cda09dd7abdf3a380689b6f23459ca52ebc221c402d"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_d830442ef7.fbx",
+      "bytes": 1345580,
+      "sha256": "345587c523209bfa459ae99d7743d95649aa70ee0e686de97e5deafb683962ff"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_e4a8973245.fbx",
+      "bytes": 1339020,
+      "sha256": "3a4899c0c18095e17298ce23b13d54c81ebb8027b0781d103f02f44e3ca66a00"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_edb548fa5e.fbx",
+      "bytes": 1341836,
+      "sha256": "9bda4ba9572c6c4983aa7d60b9dd68d1819c69ad01d7323b84a818e66088fa52"
+    },
+    {
+      "path": "export/unreal/props/SM_BumperCar_fd8fc5462e.fbx",
+      "bytes": 1339964,
+      "sha256": "232936fd27059e38cd315219b8e2ade4d217ac8f6059472177ec30aa417651e6"
+    },
+    {
+      "path": "export/unreal/props/SM_CashTin_c029708d8c.fbx",
+      "bytes": 35548,
+      "sha256": "6f694b80ebe309b0d7e4a36a0d28819805a2e18e4984d33031635477cebff201"
+    },
+    {
+      "path": "export/unreal/props/SM_ClosedToolCase_5f6f66f535.fbx",
+      "bytes": 135148,
+      "sha256": "180317aae14ec7847d0f198224cc4d9bf5dc5e2219573911934b1b05008c47f2"
+    },
+    {
+      "path": "export/unreal/props/SM_ClosedToolCase_86f831e45e.fbx",
+      "bytes": 123836,
+      "sha256": "0275c4d5e8e799be770ba4951d2d6040864904b30d13c176ee7e4acc280acc5f"
+    },
+    {
+      "path": "export/unreal/props/SM_ClosedToolCase_9c4da52123.fbx",
+      "bytes": 135452,
+      "sha256": "8161b4380801b51a82c3c7bf26f7be5b2c9e81db7c30cb2cf142ede053d61777"
+    },
+    {
+      "path": "export/unreal/props/SM_CoiledAirHose_0397d7fc33.fbx",
+      "bytes": 77692,
+      "sha256": "149457686de5a7079070fd78dce6aa9040ed7d15085d376741217557ee3b4406"
+    },
+    {
+      "path": "export/unreal/props/SM_ConfectioneryJar_bcc42a8e41.fbx",
+      "bytes": 62796,
+      "sha256": "fddea5532e92d33528f32830e2008e8b1b5cb5f6c4bdec308bb53412da1c1cb9"
+    },
+    {
+      "path": "export/unreal/props/SM_FortuneCardDeck_8d11e86443.fbx",
+      "bytes": 34076,
+      "sha256": "b8553ded3ad804a2be2d7bfba158b410addb0cc1d8137a4bc4a5cbd899b30de6"
+    },
+    {
+      "path": "export/unreal/props/SM_GalvanizedWasteBin_711d884c0f.fbx",
+      "bytes": 101420,
+      "sha256": "6c40efc7d355dea8fbaf26b3fda5fca7e4e90340ef226018490e83790004c878"
+    },
+    {
+      "path": "export/unreal/props/SM_KeepsakeBox_c2068c7ed1.fbx",
+      "bytes": 34156,
+      "sha256": "89a40310c70cb2c9c4e711250ae89c383d6f70c421c5c6f5d524f02b14c9ae5e"
+    },
+    {
+      "path": "export/unreal/props/SM_LiddedPaperCup_65a36c5fc2.fbx",
+      "bytes": 32620,
+      "sha256": "af53ebe738c6e547904d7ab6a795a841b13546ef3cf1076347e843bacad0de7d"
+    },
+    {
+      "path": "export/unreal/props/SM_LiddedPaperCup_82b96d0685.fbx",
+      "bytes": 32476,
+      "sha256": "45a9bd3c1b8198e305971287a5ee74c1e3a8e994a2fbc7a31bf0f5445477d422"
+    },
+    {
+      "path": "export/unreal/props/SM_MachineOilCan_13f5829daa.fbx",
+      "bytes": 44348,
+      "sha256": "b0bb02a5e76fe0e0dbaaede5e3ae9629316e1769a6da9d3e4c573ec36aa1b2cf"
+    },
+    {
+      "path": "export/unreal/props/SM_MachineOilCan_6039a2b4a4.fbx",
+      "bytes": 45372,
+      "sha256": "f31461f144e069e3e8189237773ce5c4774d00294b66c661466fad86e752d7fc"
+    },
+    {
+      "path": "export/unreal/props/SM_MachineOilCan_b32dc09e3d.fbx",
+      "bytes": 43484,
+      "sha256": "6918f1781d60d3b24355b0f53883eaf886b8d975ef80fca12444ddf0a292ef0d"
+    },
+    {
+      "path": "export/unreal/props/SM_MachineOilCan_f35ec71141.fbx",
+      "bytes": 44988,
+      "sha256": "a4e172b30fc19ea41ad7f3566b37fb8e6d1f6d05825dafa35f37a543c28ff667"
+    },
+    {
+      "path": "export/unreal/props/SM_MechanicToolCase_83d66197c4.fbx",
+      "bytes": 86492,
+      "sha256": "360172821effa50678b73c55f126d9bcc1759d133b288075ac2c46f7abe5caa9"
+    },
+    {
+      "path": "export/unreal/props/SM_MetalFuelContainer_1036b562f6.fbx",
+      "bytes": 91388,
+      "sha256": "8cf18e54aa557f7345c032042fa8c1ada851a6a0b64820d9b9b186183547201b"
+    },
+    {
+      "path": "export/unreal/props/SM_MetalFuelContainer_5e843cd5a5.fbx",
+      "bytes": 91804,
+      "sha256": "bab0e4609245bfc3e7a406bc1f81206744b59fb06d00bf644a2ac65c4bb9f176"
+    },
+    {
+      "path": "export/unreal/props/SM_MetalFuelContainer_82c21b683b.fbx",
+      "bytes": 86204,
+      "sha256": "af20ea9da9fe959e5336b5a47bae2782061aef62b2d3f2da28b055340a1f633a"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenCardboardCarton_0fcd3724fd.fbx",
+      "bytes": 30268,
+      "sha256": "f54421c66b00010144b16963f40a317c9d3e152860850fda4378efb465db5280"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenCardboardCarton_18c1d14ec1.fbx",
+      "bytes": 30332,
+      "sha256": "25f049d11470be85565693590de3374d61bbffff3efe0c4b41e04cc12518db0e"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenCardboardCarton_448326c8dc.fbx",
+      "bytes": 30380,
+      "sha256": "f37779d59d59bd09ca8c7162140fba539632b139a88ba86bdef6e9ccb71d0c29"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenCardboardCarton_ac03ac6e5b.fbx",
+      "bytes": 30380,
+      "sha256": "50a90a755b748fd2d9296954942833d70318ed3d3954d2af9b4c85948031d81a"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenCardboardCarton_d9bae1352a.fbx",
+      "bytes": 30300,
+      "sha256": "5526c90651e9877ba89c760bf96da85b3e7f3eb63e5065f37a627e1faefc699d"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenMaintenanceBucket_09ae6bae1a.fbx",
+      "bytes": 55532,
+      "sha256": "9f419990e520257cba1257a3ff3781774e2ee8c374757f4846b245f73fadafc3"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenMaintenanceBucket_3577593d5f.fbx",
+      "bytes": 55404,
+      "sha256": "7cc479f1fb4c9a7c0e0c80b95510b02ffa3c479056c88b10ca8a7e93f6ab7626"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenMaintenanceBucket_aeb36301a9.fbx",
+      "bytes": 55372,
+      "sha256": "2281d9973d1e01f32e9794d9d45b733674aa34c369c0d4a9ed74b44edfd58306"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenMaintenanceBucket_c047ef796e.fbx",
+      "bytes": 52092,
+      "sha256": "d1a6a8ece60b1a67c6499bc56d4ef23f5183b93d1e4b85bf7540fad8f38f3856"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenToolbox_20d6fff596.fbx",
+      "bytes": 158204,
+      "sha256": "2116c4da8873ed9967f93a93d16e2baa5ad1b1ffcf99f93b2d70845c035318de"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenToolbox_a064e40056.fbx",
+      "bytes": 149148,
+      "sha256": "53b36db83da8b53be26a65daa1afdd11b74a51f2e24e2826597f082864660bcd"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_154c6a4fd4.fbx",
+      "bytes": 71676,
+      "sha256": "ebeddcd1f7477356140a7752a5e65e4632fc299e0a7e676a85ce0aeaf1a1fa43"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_173671a9b7.fbx",
+      "bytes": 71692,
+      "sha256": "a78db5ed4f2e5f7dd3da2f0a9728d14dd5492289c82ba2b377b700b5d99a42c8"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_1de1c2e7f6.fbx",
+      "bytes": 71676,
+      "sha256": "c7e78f195d0c55490214307a1ec5d9cebcd4a4910d68088717d4926f01902ebc"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_3e7d84b590.fbx",
+      "bytes": 71804,
+      "sha256": "69a0d714508481642fa582c3a3254af4c232b821602b319f1989787763a4cb56"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_53c56a2d28.fbx",
+      "bytes": 71804,
+      "sha256": "981f28541c8908720b7936167035418b12118d15294e50ffa5b93db9389ae6b2"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_821e3b165e.fbx",
+      "bytes": 71724,
+      "sha256": "297025d54c07e1ad91b7661f0201fc12248f875a82565213cfabefa06980359e"
+    },
+    {
+      "path": "export/unreal/props/SM_OpenWoodenCrate_d315b80d6e.fbx",
+      "bytes": 71692,
+      "sha256": "751bcb319531ef5a8d7dbb6a4a2dc6c94cf090900c1a82ffafe8f72b65207d54"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Closed_048ffc736a.fbx",
+      "bytes": 61580,
+      "sha256": "6bab7a74eaa643437fe05e84f78746dcf4bea655e2c72713fcbf76178f8dc20a"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Closed_2672910275.fbx",
+      "bytes": 62300,
+      "sha256": "7979d242614023859a1c84811a474e3a5fb7860bb69ecc6ce460aa06ce2db497"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Closed_6cdcf9574c.fbx",
+      "bytes": 57532,
+      "sha256": "bc4903618aeffa0b9e590ae77f2752ed4737e7ee63c737956d6042b3871dd954"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Closed_ddc79d1173.fbx",
+      "bytes": 61852,
+      "sha256": "cbcbabd2fa24fddd413b50b4662ae02bee0c776427bec4cdfa36e2c83adc5dac"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Closed_f66506cfe7.fbx",
+      "bytes": 61932,
+      "sha256": "bbb15931ff0a4837a731970e4491d587a977b6a7661464ad7bbecb52e064208d"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Closed_fb36c9f709.fbx",
+      "bytes": 61068,
+      "sha256": "37e072981545b004ce061e5e74a7b8f66299924700bbd039dfdd68c78338bb8b"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Open_573f613a87.fbx",
+      "bytes": 63484,
+      "sha256": "06904bc3a8304642ebd12adadef3faa6fc53649a5a25fc5cf6e8ed3ebacfb34a"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Open_915abff987.fbx",
+      "bytes": 68620,
+      "sha256": "966776c9b2e77781c37835218d76aa6ee462f1e3013d36acf4f93504bf3a5220"
+    },
+    {
+      "path": "export/unreal/props/SM_PaintCan_Open_9d3c94ba77.fbx",
+      "bytes": 64780,
+      "sha256": "ec1b8de2c372b9ce125ce0f2bbca6366885b64b1d435f57945340437a9759319"
+    },
+    {
+      "path": "export/unreal/props/SM_PortableCableReel_9a41080fac.fbx",
+      "bytes": 149324,
+      "sha256": "7318d82fe31b097c5fd2a7aeaead5ce65e83db6b9783754406ab25736e141d64"
+    },
+    {
+      "path": "export/unreal/props/SM_PortableCableReel_a62baea36c.fbx",
+      "bytes": 149292,
+      "sha256": "d4179bc7d15a5e91a2b89ec2788c17350749de7c20f63aeb68b38b07f0ebea7e"
+    },
+    {
+      "path": "export/unreal/props/SM_PortableCableReel_a7e6ae7d91.fbx",
+      "bytes": 137244,
+      "sha256": "3096437d47ae78605f7d0cfbdbd4433f3db751edb1c2babbae9724dc112a4ad6"
+    },
+    {
+      "path": "export/unreal/props/SM_PortableWorkLamp_0f11186085.fbx",
+      "bytes": 75676,
+      "sha256": "ddcd923d3c771474dc592a2e3fbcdff89003f156927fa17b67907df6f247b8a0"
+    },
+    {
+      "path": "export/unreal/props/SM_PortableWorkLamp_6e72b28d2a.fbx",
+      "bytes": 76092,
+      "sha256": "eda8308f8e2f0da8fc48f603264f007ba9f95f012f49f6bbd88cb44d0af8e691"
+    },
+    {
+      "path": "export/unreal/props/SM_PortableWorkLamp_d19e00ddde.fbx",
+      "bytes": 76204,
+      "sha256": "cc3e6d8df38faa56b18fdfb16fcefedc62c5bf8907a6b228b6511d884d996e68"
+    },
+    {
+      "path": "export/unreal/props/SM_PumpOilCan_63bea31b99.fbx",
+      "bytes": 67900,
+      "sha256": "869b948bdf65f5ccc96a166385a28264d5e27e9b10328270b803c2fb64ef3df7"
+    },
+    {
+      "path": "export/unreal/props/SM_PumpOilCan_d18b332276.fbx",
+      "bytes": 67548,
+      "sha256": "6c56bebfe2939bd85de43d71d02bd45d6f30ecaf6831134b62844c87feef7340"
+    },
+    {
+      "path": "export/unreal/props/SM_SafetyCone_1c914ed02d.fbx",
+      "bytes": 48956,
+      "sha256": "f892ed91ff6fe0b64ac14f4ed1fe2fc218e1331526ff65f3dca5d17e887438c3"
+    },
+    {
+      "path": "export/unreal/props/SM_SafetyCone_3fda72a502.fbx",
+      "bytes": 48780,
+      "sha256": "0f5836b9e190243e96e7002444ff647fc390a7fb8871d2e85a5012d5b8a5a3dd"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_0a958efc22.fbx",
+      "bytes": 160828,
+      "sha256": "c6a5efa2cf7c360f1db4a615d426f72575c5b40099cc9bbd3785b40e891cc892"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_0b6cbc3c4b.fbx",
+      "bytes": 160780,
+      "sha256": "3a188f1ae10a615741658e0163fc1cf293dfab0f05c2ba124ba5dfcd291cd908"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_26e2fbc9c4.fbx",
+      "bytes": 160700,
+      "sha256": "bb67844684bf634928dc68ca954e782c8955618a108395c9f5c1864220ca7c0d"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_2bb59517e9.fbx",
+      "bytes": 161308,
+      "sha256": "b5fa793ec4e37bbaff6fe285f8f2f01031fd4cdbc7a618812abbcdb3ecf6b51b"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_2faaaba610.fbx",
+      "bytes": 160060,
+      "sha256": "ea9d64ee9f73c67798067553a3867602c3c24723f59cd346c922cab3b2b1be50"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_30b9cd0f30.fbx",
+      "bytes": 161276,
+      "sha256": "94fd9ebecd90047bd3c71d2fc782bace8129e11e512e425a7e24d8668aa85cb9"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_3d5c67ddf9.fbx",
+      "bytes": 159996,
+      "sha256": "673fee10bb10e241530b82e79d5183b812bd0f0c9bf610c5ba41d3dea67355ca"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_41c017bde5.fbx",
+      "bytes": 160780,
+      "sha256": "d13a21ef6a7b3d585647ec71b06acacd915c7aea12d7dc03b26e99058c57bf38"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_42d0279239.fbx",
+      "bytes": 161388,
+      "sha256": "6273aa15b4f28d56813db4cc07d5d9e5165d31838445ca8ad6ceffd24ac6f4f8"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_46c6506730.fbx",
+      "bytes": 161052,
+      "sha256": "a08386b58d8892d3792c50298912436eb6acb5abf7bfb1a1666141fcf7b63e8e"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_47f7ed5d89.fbx",
+      "bytes": 160876,
+      "sha256": "078ece67425bc5a2fe94df95db1f638024f3fcf298b62b3447f73566ae30078f"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_49a996bcfe.fbx",
+      "bytes": 160732,
+      "sha256": "1d742f17f5a9833ef51e0688eceeed4e993b5f658371c6550946b77178d17446"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_6c7a6ae8ae.fbx",
+      "bytes": 160828,
+      "sha256": "82b1feba2e8cc5b8fc40792fab5d49f20aa4fc34eaa20a5380cb99cf746057c9"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_7486c44da1.fbx",
+      "bytes": 160844,
+      "sha256": "66c04da4b68457242c0ed368b9b57a446c5847e53568318c03441a9575dceaf2"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_7adfe5d511.fbx",
+      "bytes": 161324,
+      "sha256": "5ac12ae59a302f315fc0b7626df3b21f73741b4f72787f23d5a1313cd67b0dc0"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_9bafddc131.fbx",
+      "bytes": 160524,
+      "sha256": "7f1d0ecf1b8b93027749103d9afabd4766cbbc42a6dd867fa54114378c25d30d"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_a07b6da92e.fbx",
+      "bytes": 160924,
+      "sha256": "a3031e7ce2544d65e307f94f58a55e6ffe06ce6abed06fa403c6b980891a5195"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_a6adc272f0.fbx",
+      "bytes": 161164,
+      "sha256": "e4c03afd14d0e5d47eb237af8952bb3d1e3efe8dfc3a628cf7ab9f5926268bb8"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_c8dff94f70.fbx",
+      "bytes": 160652,
+      "sha256": "eacb6d1ed63ffd6fd0109f6379207d8190b546448d17cb2186538ae4cd7ed769"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_d86017e668.fbx",
+      "bytes": 161260,
+      "sha256": "5da3c5ad14e46f073b2ca7b98cb17a5e363cc6311c4a60c7f317a02276205bab"
+    },
+    {
+      "path": "export/unreal/props/SM_TeddyPrize_eac60aef57.fbx",
+      "bytes": 161388,
+      "sha256": "c05947ce3addf0dee497df2fc62679c081f6d4f6eaf26c1ec73df33bfe7aed79"
+    },
+    {
+      "path": "export/unreal/props/SM_TicketCarton_fc58db6787.fbx",
+      "bytes": 33420,
+      "sha256": "440490ae24e555e05e50baa2272d240116812bbe8b2fbe96c1349e069b45b50e"
+    },
+    {
+      "path": "export/unreal/props/SM_TicketRoll_20a1f05f35.fbx",
+      "bytes": 52460,
+      "sha256": "b88e7353520879321ce7cc9f0ca0040446083cc72c06068cee4b368511da8e70"
+    },
+    {
+      "path": "export/unreal/props/SM_TicketRoll_554b3a9f72.fbx",
+      "bytes": 52204,
+      "sha256": "5031bf96a581226b3ddd9aff9ef3e6581499c02c4288c21e4000735453a2e9cc"
+    },
+    {
+      "path": "export/unreal/props/SM_TicketRoll_7d54e7e903.fbx",
+      "bytes": 52444,
+      "sha256": "dbf78c67d780e1346a9e0705e8480f7c88238c1f271f68333e6d56fdd167d4bf"
+    },
+    {
+      "path": "export/unreal/props/SM_TicketStool_7b8413b098.fbx",
+      "bytes": 44364,
+      "sha256": "4e9e2f0b321a0b445b463b4603cbef024c600f6a6384811d98df398942345d7e"
+    },
+    {
+      "path": "export/unreal/props/SM_TicketStool_e1f082f4e7.fbx",
+      "bytes": 44300,
+      "sha256": "3ddf27be23fbe1946ae1350df274b05a9c3a440f9adc74bdc9a09eb43b9e46b3"
+    },
+    {
+      "path": "export/unreal/props/SM_ToffeeTin_b52006231e.fbx",
+      "bytes": 48668,
+      "sha256": "2cf8a6d824b2b6c4b125a2703ee2c6856b4162082cf2275c5a3160f21aca2945"
+    },
+    {
+      "path": "export/unreal/props/SM_ToffeeTin_fc1051075e.fbx",
+      "bytes": 48604,
+      "sha256": "224e156409e9a3f353713c76be31a8c070369dd7486f3d54179613f349459456"
+    },
+    {
+      "path": "export/unreal/props/SM_WheelChock_00c7465432.fbx",
+      "bytes": 23932,
+      "sha256": "1e35e392680ed023308282c76941729280df68d719412e0b141dac4d92df2578"
+    },
+    {
+      "path": "export/unreal/props/SM_WheelChock_0a13ff8545.fbx",
+      "bytes": 23932,
+      "sha256": "ccb1dd9bc1d2447d944c037d48088cfe3afce8e22d3c3ed5d524a91d403e4ffc"
+    },
+    {
+      "path": "export/unreal/props/SM_WheelChock_6e09bea363.fbx",
+      "bytes": 23932,
+      "sha256": "38ab55b21df658452c93a8c70e6d3894f089e57c44e09dee4317959efb30f7c1"
+    },
+    {
+      "path": "export/unreal/props/SM_WheelChock_f1b66abf99.fbx",
+      "bytes": 23932,
+      "sha256": "725119c5098f4169c7102033b92c526fde5800f33d60606b61d4eedab5220c37"
+    },
+    {
+      "path": "export/unreal/props/SM_portable_generator_75f054d380.fbx",
+      "bytes": 102716,
+      "sha256": "7cb98d49d98ae7e9f68173f3b2f1f7934b207b35dd5737a416a80a5f0b845053"
+    },
+    {
+      "path": "export/unreal/props/SM_retired_ride_bench_53f58312d4.fbx",
+      "bytes": 77900,
+      "sha256": "0270c77170befbdb5c13f27ad7a8d09bdd65a7b0fcd3fb0fc4054bb5bf916136"
+    },
+    {
+      "path": "export/unreal/props/SM_retired_ride_bench_bb9121368b.fbx",
+      "bytes": 77916,
+      "sha256": "213c448527bff4cde1ff720f925a09855710f9518b337d9865dcad93672e8123"
+    },
+    {
+      "path": "export/unreal/props/SM_timber_shipping_crate_0d68bca7f8.fbx",
+      "bytes": 257372,
+      "sha256": "c52111dd6f909f90282ee10c6a7245a6a168317cb6ecd2ecc51ffc2e984b87e8"
+    },
+    {
+      "path": "export/unreal/props/SM_timber_shipping_crate_8b7f442aee.fbx",
+      "bytes": 279196,
+      "sha256": "28393224fe3c99ebca832fabd8bde6b2d47d99287e71ea691ab17b54ec5ec225"
+    },
+    {
+      "path": "export/unreal/props/SM_timber_shipping_crate_920c7beccb.fbx",
+      "bytes": 259564,
+      "sha256": "fa1fc73783bfa5b745e04a9f45a7f7106f9d40156ac9a8df373b17016d1d3808"
+    },
+    {
+      "path": "export/unreal/props/SM_timber_shipping_crate_d29fda1852.fbx",
+      "bytes": 260572,
+      "sha256": "57a3d968a619b0778dac63a90c9e13fe9745878e98777228e81284f0b5902a7e"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_0e57c928de.fbx",
+      "bytes": 130988,
+      "sha256": "5243e25bd75ea830e206ef33106128135e74a56b3f9bae33c08ac8356c15c384"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_244700516e.fbx",
+      "bytes": 142828,
+      "sha256": "3a75274214328a035f8d708dc32f875bf35711f483b9853698dbc24857e10644"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_364c150107.fbx",
+      "bytes": 131100,
+      "sha256": "0ede2aa51ed4a6ec7b17dd249ef3418fa9a87aac0ffebce4a3fae1f6c2de748e"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_540b8fba44.fbx",
+      "bytes": 137676,
+      "sha256": "7ad711486c0b90933ad0c32cdbe55343395c4e6bd4efd1ad6f149cd8a2f4fde1"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_9aa2a2d067.fbx",
+      "bytes": 130860,
+      "sha256": "418fa56856b7c78fb8598436e777ec2041046ea2ac840c0d3e9e99ee8c8afb9e"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_c9060ccd17.fbx",
+      "bytes": 130636,
+      "sha256": "30fb418db55b36708d04a2624505cbe514a8673cef7f8b047177ba7b9651e6c9"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_d10a9a1582.fbx",
+      "bytes": 135900,
+      "sha256": "1b6c10789cd5c8f7e2b0ac2511b993dbeee2834f9def5af9e0149bd87a97730a"
+    },
+    {
+      "path": "export/unreal/props/SM_wooden_pallet_d1ca341603.fbx",
+      "bytes": 130492,
+      "sha256": "e8ab582351ab80c1d0294b51eac9a7a3d0431449889ab34ab0ae2b5c8dace782"
+    },
+    {
+      "path": "export/unreal/scene_metadata.json",
+      "bytes": 67935,
+      "sha256": "d313224e9b6279ae82b9d3c96a6d6e7ccab674eaa1f8e4f07769f1e9ff49c1ba"
+    },
+    {
+      "path": "iterations/source/EXPORT_PROPS_V2.md",
+      "bytes": 6570,
+      "sha256": "2849f872f1bd30e15cf415a61d834a894114796a5bd9e5ab9a544fc1d245fef7"
+    },
+    {
+      "path": "iterations/source/EXPORT_V2.md",
+      "bytes": 10984,
+      "sha256": "e3f55a6c0f069a5051143700615f8eea76809891cd255f9df29cd22a99538a3e"
+    },
+    {
+      "path": "iterations/source/audit_delivery_package.py",
+      "bytes": 2507,
+      "sha256": "97117061ea1cfb8afa2ef938ee29d6d5e25c2b0d66d0344a51cf7fc50feeace2"
+    },
+    {
+      "path": "iterations/source/audit_iteration.py",
+      "bytes": 11118,
+      "sha256": "1af47a13e1cacaa46fcd84af439b428cfc4ba7b1b7976f1bf70f3cfb50f0501f"
+    },
+    {
+      "path": "iterations/source/cleanup_iteration_decorations.py",
+      "bytes": 2694,
+      "sha256": "59586a7c517c95cda40ce87fb0afb0dc19400443217606331386ef1b67d7ef28"
+    },
+    {
+      "path": "iterations/source/cycle_01_trailers.py",
+      "bytes": 3344,
+      "sha256": "32b6f44ca24417e2b4896e6c7c102fd9df3db5b96b8cdc910b4d45ffec3886d2"
+    },
+    {
+      "path": "iterations/source/cycle_02_booths.py",
+      "bytes": 3185,
+      "sha256": "32597d2eb7610289e10320a5986281ded10ac7012e3d802ba8874e8d66d5cbd8"
+    },
+    {
+      "path": "iterations/source/cycle_06_ground.py",
+      "bytes": 5480,
+      "sha256": "6bdefcdf537e6a63fc7a92d0555b89286927cec5bf93f4f5727f4809ca18cbcc"
+    },
+    {
+      "path": "iterations/source/cycle_08_growth.py",
+      "bytes": 1188,
+      "sha256": "305a579abf9bcca00363073a74a10d4bf2cd2cadf00eecea596853116a58bb2d"
+    },
+    {
+      "path": "iterations/source/cycle_09_story.py",
+      "bytes": 3573,
+      "sha256": "aad6419089dcc1534445f9d27044a3f329e5bca2cf6151a2e83efcf7169b5d3b"
+    },
+    {
+      "path": "iterations/source/cycle_10_lighting.py",
+      "bytes": 2668,
+      "sha256": "2f49cd88532df3ca8c6c8cd51a51c80e9a82dfc8f39cb099a50b200338299e34"
+    },
+    {
+      "path": "iterations/source/export_environment_v2.py",
+      "bytes": 15145,
+      "sha256": "1ee7b683cad9318ec9bb6ff7150e6792fb99d137e8e33dc1d4fb28a2992ada44"
+    },
+    {
+      "path": "iterations/source/export_material_manifest_v2.py",
+      "bytes": 4669,
+      "sha256": "e3480e3aafa0b2abb25ae203aef1727eddd2ac27bb37a6c314abbfb84bb49d89"
+    },
+    {
+      "path": "iterations/source/export_props_v2.py",
+      "bytes": 22199,
+      "sha256": "636358236273aac9d0bdaccf69bde6c7643732e12b456f23a15a470fbbaa1a99"
+    },
+    {
+      "path": "iterations/source/import_carnival_v2_template.py",
+      "bytes": 1213,
+      "sha256": "aeae36cb7c941d18ff23705305c657da378ab0d4755dc33831c7a24de12ee8f9"
+    },
+    {
+      "path": "iterations/source/import_materials_v2.py",
+      "bytes": 6084,
+      "sha256": "f30b9c3bafe1d50a5018a67b6ae4653525ad9ad761cc5534f9d5a0fa5fa50dde"
+    },
+    {
+      "path": "iterations/source/import_props_v2_template.py",
+      "bytes": 5434,
+      "sha256": "380bbe3511d55e5eb1e8b1691d7fef48ccf1d4a413321ef7fce4ec6d53fedde7"
+    },
+    {
+      "path": "iterations/source/preflight_dressing.py",
+      "bytes": 1019,
+      "sha256": "91f6e7cea20d006432ffe8c7759af086e918a34f30e45b88cc1dcda12cb785d4"
+    },
+    {
+      "path": "iterations/source/prepare_refined_prop_collision_v2.py",
+      "bytes": 10711,
+      "sha256": "e50430bbaa7371cc83984c83bd37dfb5c06a1b8ff0897154076b5c2e8d24bd62"
+    },
+    {
+      "path": "iterations/source/refresh_material_manifest_v2.py",
+      "bytes": 3619,
+      "sha256": "bb1d29a586ea5215bfdfcec7d0a032dcfa7532f1fe7835b8780e559956500ef4"
+    },
+    {
+      "path": "iterations/source/render_checkpoint.py",
+      "bytes": 1573,
+      "sha256": "28692f709363646ad2619c38552471827a425533176d793b85feeede44806cf0"
+    },
+    {
+      "path": "iterations/source/run_cycle.py",
+      "bytes": 2599,
+      "sha256": "51add9e2a87c70b4cbf50b97023a4f0b9f4e6cc931861e4a36309eec0aba08af"
+    },
+    {
+      "path": "iterations/source/summarize_environment_caveat_v2.py",
+      "bytes": 3714,
+      "sha256": "a41277d7d6b2985c81589237e8bbb7a20755b992390dcf2b8cd29b39d29b788d"
+    },
+    {
+      "path": "iterations/source/test_v2_all_material_tints.py",
+      "bytes": 2396,
+      "sha256": "e757f0e0105a2e616919eaaeaf09d8c8a9e664654324ad0d0d6521fb329ecbd1"
+    },
+    {
+      "path": "iterations/source/test_v2_import_namespaces.py",
+      "bytes": 1515,
+      "sha256": "87baa39995f6ab00067e6a392ffdcc3123feb06c1619b2acba65914be391e91b"
+    },
+    {
+      "path": "iterations/source/test_v2_material_tint.py",
+      "bytes": 2996,
+      "sha256": "a7e0d7d18a3dfddb23fa3afc3dadbc734c04031596f7c4e258ad26495550b908"
+    },
+    {
+      "path": "iterations/source/test_v2_roof_proxy.py",
+      "bytes": 1626,
+      "sha256": "6c339016fc584b06ae5cdc5603aa130ad1cd7ae3b30b4b63e970e7b1e51ec048"
+    },
+    {
+      "path": "iterations/source/test_v2_texture_staging.py",
+      "bytes": 1952,
+      "sha256": "5bf9d13dea07228b01f73573aef6256f3b332219d8d7d8e9e7b6376615a09aed"
+    },
+    {
+      "path": "iterations/source/v2_texture_staging.py",
+      "bytes": 1529,
+      "sha256": "5a14abde662035125cb3e778621521ad90ac4e919eb6322f4b55f1637a8844e1"
+    },
+    {
+      "path": "iterations/source/validate_refined_recipes.py",
+      "bytes": 536,
+      "sha256": "bd67cea90527bc6c531474ef306cc1cd13a8a73062f46cd88feb6d1f09aab82b"
+    },
+    {
+      "path": "iterations/source/verify_environment_raw_fidelity_v2.py",
+      "bytes": 3949,
+      "sha256": "37e264bc4c4d3515f3a1cd4f92470000103410d5c5bb29cfc98cb910fbdfde05"
+    },
+    {
+      "path": "iterations/source/verify_environment_source_roundtrip_v2.py",
+      "bytes": 6417,
+      "sha256": "dc20cf1875628898495749798dcd44024f198587b0210f383c6bac2331391928"
+    },
+    {
+      "path": "iterations/source/verify_environment_texture_paths_v2.py",
+      "bytes": 971,
+      "sha256": "d6c9d37fbd0aea71507d8078e0de856a888504bd4459404a1bd0ddc17ca1780e"
+    },
+    {
+      "path": "iterations/source/verify_prop_collision_proxies_v2.py",
+      "bytes": 2969,
+      "sha256": "dbd008ab0a7a2ef0da8f22d71700521bfa984eb3ddfbf19c417f74033d869518"
+    },
+    {
+      "path": "iterations/source/verify_prop_exports_v2.py",
+      "bytes": 3451,
+      "sha256": "f9eeb16d0a66e8537dfbec4035403fa6de794663c1a70356550861e5763bb435"
+    },
+    {
+      "path": "iterations/source/verify_prop_fidelity_v2.py",
+      "bytes": 4501,
+      "sha256": "6d4f200090701c721cf5361dc35a54643f4e66da7b26950743f6672e155b4894"
+    },
+    {
+      "path": "iterations/source/verify_prop_texture_paths_v2.py",
+      "bytes": 1719,
+      "sha256": "2343f3811c5346999fc5504eba2d4c7a2506b4707f0b06f441413fc22432873b"
+    },
+    {
+      "path": "iterations/source/verify_refined_prop_collision_v2.py",
+      "bytes": 4487,
+      "sha256": "77e3c656bc0d392b8a2cb3c3324588e289998889e52cefb6b341509a52c7c7d3"
+    },
+    {
+      "path": "qa/Cycle_01.json",
+      "bytes": 1834,
+      "sha256": "5d139629362cdbf85ca46e7f11bebc9e2011131545c8dc46ebea4a7fb208ef34"
+    },
+    {
+      "path": "qa/Cycle_02.json",
+      "bytes": 1763,
+      "sha256": "3cb89496fdc784a4a70ab0e558e130d75f28bdf09c3f3c6c0cab33a98685884a"
+    },
+    {
+      "path": "qa/Cycle_03.json",
+      "bytes": 2565,
+      "sha256": "e31817ca7c27ad68ee172d9276a45171a99a61192cab437c5d301b4062d1fc73"
+    },
+    {
+      "path": "qa/Cycle_03_CarClose_Evidence.json",
+      "bytes": 308,
+      "sha256": "22f19597240466532328237b4a287538b421e16b23d5ffdbbd1d10426f8ce64c"
+    },
+    {
+      "path": "qa/Cycle_03_Overview_Evidence.json",
+      "bytes": 308,
+      "sha256": "e831d93d16acdec0a1abfb3c3bb795dc2a03af110abcc7e1c3f4b16fb979e05a"
+    },
+    {
+      "path": "qa/Cycle_04.json",
+      "bytes": 13465,
+      "sha256": "aa55d80764d6d9c3689ca227e9f19d90eeed7ed8aa5f102a22bbad67aa294f58"
+    },
+    {
+      "path": "qa/Cycle_05.json",
+      "bytes": 13152,
+      "sha256": "26aa6dbe576d6563528cb273b526885ba9f4861371443f8b7b266c1371b0be27"
+    },
+    {
+      "path": "qa/Cycle_06.json",
+      "bytes": 13556,
+      "sha256": "2402ba681f294facb5a97ffb71e3e93ce995a04651a8cf1df7ab214191024d4c"
+    },
+    {
+      "path": "qa/Cycle_07.json",
+      "bytes": 19198,
+      "sha256": "0504ae0795adbf38bf26b14bc5c0946a960c662d8cd94aaf8efacfa7a870a4a0"
+    },
+    {
+      "path": "qa/Cycle_08.json",
+      "bytes": 20381,
+      "sha256": "04caebc29b9c013c8add46e00bfd976e9c270abeb3443dab23a2e67d6230f65b"
+    },
+    {
+      "path": "qa/Cycle_09.json",
+      "bytes": 13587,
+      "sha256": "d420a735c2da78580147c8be2719ba39d5310a83a58d193e3e0b98e52360f7f5"
+    },
+    {
+      "path": "qa/Cycle_10.json",
+      "bytes": 16120,
+      "sha256": "0619facfb6a181ff3d07eb95b034529ff3c3b5d4dcee73afacc4f2f4c497abb9"
+    },
+    {
+      "path": "qa/Cycle_10_Funhouse_Evidence.json",
+      "bytes": 567,
+      "sha256": "750c1083abe0074cbd8f8122abad876bfe897164d79148a8ccc3cf82ae4357e5"
+    },
+    {
+      "path": "qa/Cycle_10_Maintenance_Evidence.json",
+      "bytes": 315,
+      "sha256": "bdf7f3a30cdd4950d1acb36cf22d940118f72d222126be8b6aa7a38046254ca2"
+    },
+    {
+      "path": "qa/Cycle_10_Ticket_Evidence.json",
+      "bytes": 305,
+      "sha256": "abe912fb0101336196d4b9acc1b849b040212ccf2a5dc1c0d59803a4266fec74"
+    },
+    {
+      "path": "qa/DELIVERY_PACKAGE_CHECKS.json",
+      "bytes": 398,
+      "sha256": "1eb7635acd1be4195eddaaaa62e08dbe26706ec12671b7cc68d803e1ac2f2c6b"
+    },
+    {
+      "path": "qa/Frozen_Source.json",
+      "bytes": 412,
+      "sha256": "67df90c11217baddc95241052f764ec5e29052e46dd30d553b8cffabed0b742b"
+    },
+    {
+      "path": "qa/PYTHON_SYNTAX.json",
+      "bytes": 108,
+      "sha256": "d4f3650fc02d9a231becf3e29cb12357749496ebe0faf7db8d842aca5af81980"
+    },
+    {
+      "path": "qa/Ten_Cycle_Chain_Verification.json",
+      "bytes": 2314,
+      "sha256": "f6d62a74be029530ef7ccc564b2299814f01eb82843d79597e934b974dcd0377"
+    },
+    {
+      "path": "qa/current_geometry_audit.json",
+      "bytes": 93813,
+      "sha256": "7a2745caff95977e26dd723c284fac685be0d2a60e8e81fe6a5cbd93ecdd8911"
+    },
+    {
+      "path": "qa/maintenance_construction_final_validation.json",
+      "bytes": 5993,
+      "sha256": "2c9e8c2fd4198a7cf3be778da03b23493817bc69dc3cfa08e11ed126f5d2688d"
+    },
+    {
+      "path": "qa/refined_collision_recipe_validation.json",
+      "bytes": 3515862,
+      "sha256": "2f28f3ffcb50b32a130604829131aa2467201b2cdb0d3438428f26ff7927e97f"
+    },
+    {
+      "path": "renders/Cycle_01_Maintenance.png",
+      "bytes": 1608431,
+      "sha256": "b885f91977fc9d7c27619fcb6db9ea3551486bf36f8e136c8029c8cd91b122ee"
+    },
+    {
+      "path": "renders/Cycle_02_Midway.png",
+      "bytes": 1632586,
+      "sha256": "36b013677f6b473c3a227e524c445d7e5baff8e7e004d7c235733b05a22c5f45"
+    },
+    {
+      "path": "renders/Cycle_03_Arena.png",
+      "bytes": 1729117,
+      "sha256": "2225f934b88a203b4f1179d6c4186a02880d20dbb1f41bf0fdebc7083472ad76"
+    },
+    {
+      "path": "renders/Cycle_03_CarClose_Evidence.png",
+      "bytes": 2125472,
+      "sha256": "cec0a0188cb4e8cc7169be52cfc15119ca1c8725ce2a893f8eb882a5606f3e1b"
+    },
+    {
+      "path": "renders/Cycle_03_Overview_Evidence.png",
+      "bytes": 2155042,
+      "sha256": "83a54ddaf85aaffc486207950469048738815fc5f93c7527dd1ce9869a1df564"
+    },
+    {
+      "path": "renders/Cycle_04_Carousel.png",
+      "bytes": 1774890,
+      "sha256": "587dee1609a1431f02db36a81f37674306bcfd301c57359ec3c5371f3fe540da"
+    },
+    {
+      "path": "renders/Cycle_05_Funhouse.png",
+      "bytes": 1603340,
+      "sha256": "d6543a8908e72e0cb05fc8001ddb1056f9abf1157b094f4c891aa135d1091333"
+    },
+    {
+      "path": "renders/Cycle_06_Gate.png",
+      "bytes": 1621693,
+      "sha256": "59377af57416f0d7c680ab7a4455cc714c8ac546b0f5c8f29c7977b7113c13a8"
+    },
+    {
+      "path": "renders/Cycle_06_Ground.png",
+      "bytes": 1568609,
+      "sha256": "8a60ab54dbcdb169b5c8be93c1d8706d85b3355be818a8bb395539ac3438d81b"
+    },
+    {
+      "path": "renders/Cycle_07_Maintenance.png",
+      "bytes": 1614783,
+      "sha256": "72d93533db21a7d2af93e0fe0d4144070a7eb374c990e777fbf00ee6fc3f5572"
+    },
+    {
+      "path": "renders/Cycle_08_Overview.png",
+      "bytes": 1626332,
+      "sha256": "ebf335bcc940bf55272818635367e0deb3aebf27c997e442da30cd4ca4112dbe"
+    },
+    {
+      "path": "renders/Cycle_09_Ticket.png",
+      "bytes": 1663914,
+      "sha256": "50a575198aa12a5d8afdb272ae90b7667de81509ca8bf69dc9c77deea5b6890a"
+    },
+    {
+      "path": "renders/Cycle_10_Funhouse.png",
+      "bytes": 1714893,
+      "sha256": "f5dbcc3f5f4729d97676382c6677d4248e47bd686a73a0e2f38d66ed7f115c25"
+    },
+    {
+      "path": "renders/Cycle_10_Funhouse_Evidence.png",
+      "bytes": 2149466,
+      "sha256": "8bbe36ac8f733a2d7e1ac298e40c5db3f3f1ed58d3c3751205ccf75c54eaba35"
+    },
+    {
+      "path": "renders/Cycle_10_Maintenance_Evidence.png",
+      "bytes": 2056947,
+      "sha256": "74d95b3b8a71faa75eca4335171e823fb613ff9622ec06a56786e1151afc328c"
+    },
+    {
+      "path": "renders/Cycle_10_Ticket_Evidence.png",
+      "bytes": 2093579,
+      "sha256": "eab15dac7bddbec44db7613c6724914a723f464b438cb5d95e2a2d57ab0a4256"
+    },
+    {
+      "path": "source/Reassemble_Blender_Windows.cmd",
+      "bytes": 2019,
+      "sha256": "7def3827971ec7850703f2a7ae6d9acb2ec0c30336febf6d63222981582288b8"
+    },
+    {
+      "path": "source/apply_arena_refinement.py",
+      "bytes": 382,
+      "sha256": "d92798fedf0c18c9739e28702246b68d38cff5388fddb7a0cc395f9d00da7dad"
+    },
+    {
+      "path": "source/apply_backstage_refinement.py",
+      "bytes": 389,
+      "sha256": "e81ae7f972974dfbc4ee67508707e9095a07209b413432cd59534850d24dd777"
+    },
+    {
+      "path": "source/apply_scanned_surfaces.py",
+      "bytes": 3886,
+      "sha256": "1eeffdef1ca2a32f6a431fc3a57180525266e1291956b19373afd161da531a32"
+    },
+    {
+      "path": "source/apply_ticket_refinement.py",
+      "bytes": 391,
+      "sha256": "c3a227c2f9a503af653429a456546660d8b0bc8d3670c8130d204923aca44b01"
+    },
+    {
+      "path": "source/assemble_artpass_props.py",
+      "bytes": 1348,
+      "sha256": "e6bb125bc7293d3da2a7d70e488053dfb7410bd5dd6b912a19c8f34ec34f0901"
+    },
+    {
+      "path": "source/assemble_props.py",
+      "bytes": 1930,
+      "sha256": "d93b96789637741be5d230c2436ed0188429815f26ceb5ea363be45d2c385536"
+    },
+    {
+      "path": "source/audit_artpass_geometry.py",
+      "bytes": 11130,
+      "sha256": "7dbde71daf61982d0a47894ac9f110a7d8aacac8027e44c9338168360332f94a"
+    },
+    {
+      "path": "source/audit_geometry.py",
+      "bytes": 5775,
+      "sha256": "1a036e79268dcfac8285a87a93dc359a356870213091fa9b9ffc0319c08d0200"
+    },
+    {
+      "path": "source/backstage.py",
+      "bytes": 14624,
+      "sha256": "32670847e983dfe1113c7889d63e7f010d45ab912f0893441003bc5a762438f1"
+    },
+    {
+      "path": "source/build_carnival.py",
+      "bytes": 15123,
+      "sha256": "2a0dd39d95ea357deb2bf633a78dee75c29fccf5f3798e505660f222eb8264a8"
+    },
+    {
+      "path": "source/capture_precleanup_materials.py",
+      "bytes": 303,
+      "sha256": "25f82e76f459c55181f5aafa0d99cfef88f1193b35da60f167aaa8914f4af909"
+    },
+    {
+      "path": "source/clean_evaluated_decorations.py",
+      "bytes": 3105,
+      "sha256": "2e1b29afcb0943958d234186c3718414b9877d28499a2129c66883bf0a5e666f"
+    },
+    {
+      "path": "source/cleanup_scene.py",
+      "bytes": 1912,
+      "sha256": "fb4a4a07eba8c81547877692bc446a56d38d9347e1afb2a455361bc543a88cf9"
+    },
+    {
+      "path": "source/derive_canvas_surfaces.py",
+      "bytes": 1090,
+      "sha256": "18d9d545f6c93c82f90f4bd153529dc73b143bfa5dc3c026d1cea3fc94028c03"
+    },
+    {
+      "path": "source/derive_weathered_surfaces.py",
+      "bytes": 2976,
+      "sha256": "5361cf18c3aa415bae987bcf78774ced04dca7e8f02d9d67a84443dedc7e4158"
+    },
+    {
+      "path": "source/detail_midway_signage.py",
+      "bytes": 2314,
+      "sha256": "c3ad497be652ffe681e031b7fcfcd3047027825ba491e6a7c81ae8c205902e1f"
+    },
+    {
+      "path": "source/export_environment.py",
+      "bytes": 10980,
+      "sha256": "009798689564fb9c4e1c20f9048647b634d94307ecabbce80ab909511573e889"
+    },
+    {
+      "path": "source/export_material_manifest.py",
+      "bytes": 4285,
+      "sha256": "e954d1756a7396d141cdd8414592eba2737f9e9fadc37d0a24f5a6082fad917f"
+    },
+    {
+      "path": "source/export_props.py",
+      "bytes": 16840,
+      "sha256": "2e76ad926894558e435d17cbbfd91e58dc4fdabcdc575139df78e1fe14209119"
+    },
+    {
+      "path": "source/export_scene_metadata.py",
+      "bytes": 3548,
+      "sha256": "34a31563b95eae3580d30f9dafbdea1e224322124c2266844a6533f4dbaf5604"
+    },
+    {
+      "path": "source/fast_geometry.py",
+      "bytes": 2634,
+      "sha256": "52fcc721ce4622d8b00716d4ab1b7fcb61fb0b1b5188f9716c55989b88a92c0b"
+    },
+    {
+      "path": "source/fbx_exact_normals.py",
+      "bytes": 2192,
+      "sha256": "33a23d1f93a4aae4edf378e3bc6d876a992de785e3101a34db2b933807a14579"
+    },
+    {
+      "path": "source/finalize_review_source.py",
+      "bytes": 899,
+      "sha256": "41c7c789cbe6df7c469d965f3c0b5dbd3c350436ad671081d44fe573ab5c32ce"
+    },
+    {
+      "path": "source/fix_bottle_uv_seam.py",
+      "bytes": 722,
+      "sha256": "9f3e09706016528022f7f9a1ec5bfcd0e93803d57351cbd5862c34b7c40f5a38"
+    },
+    {
+      "path": "source/fix_funhouse_notice_triangles.py",
+      "bytes": 1057,
+      "sha256": "14ac9ebb3ce7dfe0d04b0a4ed8dc331aa2b537b2c8c6382bee258da81f4f1903"
+    },
+    {
+      "path": "source/fix_refinement_uvs.py",
+      "bytes": 994,
+      "sha256": "94db29e20799bf954e2ba2bcad995070f8ba4bbe967a1fa7b10e53b84db9be3c"
+    },
+    {
+      "path": "source/integrate_natural_forest.py",
+      "bytes": 279,
+      "sha256": "1e736d7e6d8ec9b2a79e639b24e9ee32502a95a66c164a06f4045fe43224466a"
+    },
+    {
+      "path": "source/integrate_natural_vegetation.py",
+      "bytes": 683,
+      "sha256": "063a96d4aff02ea9b5704427155553b1e6e4e390501fb1639fbb4b191a9a7388"
+    },
+    {
+      "path": "source/make_ground_damage.py",
+      "bytes": 2102,
+      "sha256": "9eb18a9210f8349fea5ccd0426525bedc1c47160fe9bd520d69357b8dbcb6d40"
+    },
+    {
+      "path": "source/make_textures.py",
+      "bytes": 2050,
+      "sha256": "6a240eb6f85d5ddd5ac909e8f3ef80da6b6f35464415c09925e1ae4590500ccb"
+    },
+    {
+      "path": "source/midway_artpass.py",
+      "bytes": 6875,
+      "sha256": "6cb3eed0ffb7305bc31a2d28863af999ddab9d6616a42b3506735e00980c29eb"
+    },
+    {
+      "path": "source/natural_forest.py",
+      "bytes": 7641,
+      "sha256": "390d587ad9252f21feaadd08e238e1b080210454749b98e669564a880305e0e2"
+    },
+    {
+      "path": "source/natural_vegetation.py",
+      "bytes": 8955,
+      "sha256": "ffab34360abf517c0e2f6254f77b281a6738d0c341e9b3b1c0a8562247747c23"
+    },
+    {
+      "path": "source/optimize_vegetation_vertices.py",
+      "bytes": 1597,
+      "sha256": "731e1780a1c4e9d5b51fbaa9487e94b14a1f7f4937172a9d93d095f322d9360d"
+    },
+    {
+      "path": "source/package_delivery.py",
+      "bytes": 5022,
+      "sha256": "42997576fd45d95cee669dd09d6026751a0e95248a1999bc3fb255d6fb6d2f6e"
+    },
+    {
+      "path": "source/pavement_cells.json",
+      "bytes": 131463,
+      "sha256": "a451dcde34264670f58ee48c8a8a565cb466ec99a7a6bbf1691218eee2e84562"
+    },
+    {
+      "path": "source/polish_scene.py",
+      "bytes": 4479,
+      "sha256": "48953c3709ca61df2656562eb691ed6351ba99f009c5cfbc4df049c447578ca9"
+    },
+    {
+      "path": "source/prepare_refined_prop_collision.py",
+      "bytes": 10711,
+      "sha256": "e50430bbaa7371cc83984c83bd37dfb5c06a1b8ff0897154076b5c2e8d24bd62"
+    },
+    {
+      "path": "source/realistic_asset_sources.json",
+      "bytes": 10600,
+      "sha256": "11be99f42226ad96ecca5e0adc5e066befc8085d5a84888d3bf40ef3a3314f90"
+    },
+    {
+      "path": "source/reassemble_blender.ps1",
+      "bytes": 1742,
+      "sha256": "dec0af2d8374baa21597bc1e6119956b64a89ad44fc4371674b3f79a5ee1613e"
+    },
+    {
+      "path": "source/reassemble_blender.py",
+      "bytes": 1992,
+      "sha256": "c23e417b6ec3ed654072a86c4a9c6d780a5c9681e12c51ee310198593c95657c"
+    },
+    {
+      "path": "source/rebuild_all.sh",
+      "bytes": 635,
+      "sha256": "9d849fe5874e7829e8e0dfa288407f28b160468c2b13f235220c2b1c9f3ff78f"
+    },
+    {
+      "path": "source/rebuild_artpass.sh",
+      "bytes": 1335,
+      "sha256": "8d57f7bc3369e980ae5111004069c41a59784a0d4691bb9aea05890d3dabe7aa"
+    },
+    {
+      "path": "source/refine_arena_safety_signs.py",
+      "bytes": 1274,
+      "sha256": "a86dae3796280a241da51e82c9eeee8e4f85ed00d698da37f0837aa03c03cb20"
+    },
+    {
+      "path": "source/refine_backstage_funhouse.py",
+      "bytes": 18625,
+      "sha256": "7d7a3b6569af70297b8d9fe0f45995405e4cc4501f059e038bf9677f55f68894"
+    },
+    {
+      "path": "source/refine_backstage_lighting.py",
+      "bytes": 1215,
+      "sha256": "f2b33ee44fd80fa8b9ac7be5de83c9f58f6828e1e310b34666d929fc6fad9f69"
+    },
+    {
+      "path": "source/refine_bumper_arena.py",
+      "bytes": 16415,
+      "sha256": "4b6dd951c1c601df64ca275f4e8c0c9dc3602e7a9e934f4f90dfcc26037b5e28"
+    },
+    {
+      "path": "source/refine_carousel_materials.py",
+      "bytes": 1938,
+      "sha256": "b4a7ba69f7d61eb5b7d86d33230c99caa4f4cd68a539a88ca84477a09b89be81"
+    },
+    {
+      "path": "source/refine_continuous_asphalt.py",
+      "bytes": 1977,
+      "sha256": "803ff5eabdc6a0cbf56eba010dd43b54f722349b07479203eebd234803235f39"
+    },
+    {
+      "path": "source/refine_entrance_verges.py",
+      "bytes": 1469,
+      "sha256": "a773245e547baf6bc091e1eddd45e12e71dd2ef9e210bb3e96f9d32f0e101cfa"
+    },
+    {
+      "path": "source/refine_funhouse_practical_lighting.py",
+      "bytes": 14265,
+      "sha256": "8f822f6aa5a99e1fc1069be7c3395c92023b4908fc0eeb93d74dbfbdc1ed5a1a"
+    },
+    {
+      "path": "source/refine_funhouse_realism.py",
+      "bytes": 18601,
+      "sha256": "c6614091de0b41dd92f684f4f020d37d77e8a7558ca8689bd7296b56c905c8ae"
+    },
+    {
+      "path": "source/refine_funhouse_roof.py",
+      "bytes": 2372,
+      "sha256": "68abe74a508507df2035618e0c3492e62b5a8f625d6f8b74f66a1cc848564706"
+    },
+    {
+      "path": "source/refine_ground_atmosphere.py",
+      "bytes": 4016,
+      "sha256": "26e2fdb24e800af4fffde55ffbaf4b14c4574fb2237d4078f4db31726fada455"
+    },
+    {
+      "path": "source/refine_hero_props.py",
+      "bytes": 3473,
+      "sha256": "f96f01c4311c3fd9b7274eca4c739df9315e5453e88fa0fe7df0e62c855125ed"
+    },
+    {
+      "path": "source/refine_interior_understory.py",
+      "bytes": 9664,
+      "sha256": "b69ddc65c746768660b190a5aca530473a3556ac80d5331e7194974733007b8a"
+    },
+    {
+      "path": "source/refine_leaf_materials.py",
+      "bytes": 963,
+      "sha256": "e7c1e259f214f41fe0a3e88e604812883245ce0fcc43fd82061efd816ad4b73c"
+    },
+    {
+      "path": "source/refine_maintenance_construction.py",
+      "bytes": 21283,
+      "sha256": "a2ad9c4f4f4b16f67fa1ffc20e33394ddb8be4bfe491025b7a61c32a00d8bd05"
+    },
+    {
+      "path": "source/refine_map_grasses.py",
+      "bytes": 1872,
+      "sha256": "abfc01947a315094094c5715312105228c175606eea8306ebf6ccb74f4e01ee7"
+    },
+    {
+      "path": "source/refine_pavement_cracks.py",
+      "bytes": 857,
+      "sha256": "19c4b901f2080d6182e56781cc4038f30e048c59ee664e5099dc00f00bc55ca4"
+    },
+    {
+      "path": "source/refine_perimeter_story.py",
+      "bytes": 15766,
+      "sha256": "da87f4d299ac50bc6c60704efc738bcff8ea40b3e6b640f7edf40f57b17b79c0"
+    },
+    {
+      "path": "source/refine_render_transport.py",
+      "bytes": 919,
+      "sha256": "a5060c22dcd16a8c2e52eab657be841eabd34106f1084815757f1095f6076d69"
+    },
+    {
+      "path": "source/refine_ride_realism.py",
+      "bytes": 24967,
+      "sha256": "3b34b7cd5fbf8747f93cee68023d348b032e89fd286f95a70e1510b03d93bebc"
+    },
+    {
+      "path": "source/refine_themed_midway_props.py",
+      "bytes": 2857,
+      "sha256": "35b9fc1ee389c2d0e62b6e97bda85df5dc4c1221b1a0fd14deac17147417c751"
+    },
+    {
+      "path": "source/refine_ticket_entrance.py",
+      "bytes": 24409,
+      "sha256": "4881d567498694193b9b875e8808efc22e419c2547e3933a1d50d5a18511f1e4"
+    },
+    {
+      "path": "source/render_artpass.py",
+      "bytes": 858,
+      "sha256": "d11d39b94fc1e4953d2339992dab6cda0673ac382469f6b6d4ed52f8779c795b"
+    },
+    {
+      "path": "source/render_atmosphere_review.py",
+      "bytes": 552,
+      "sha256": "9a0c97224000b1c3f0702f517d821e79bc5c815b034bed48dd80118c8b6b0cee"
+    },
+    {
+      "path": "source/render_final_midway.py",
+      "bytes": 1020,
+      "sha256": "d914d795fab948f0a6a64b4ce23b03b6cb2ac3fb8dd5f2bcab29b76a8812be4d"
+    },
+    {
+      "path": "source/render_hero_maintenance.py",
+      "bytes": 1801,
+      "sha256": "172d3e9506641bf5755ee084eb9f94e8e053de9fc0f15d29d402b6284580a51a"
+    },
+    {
+      "path": "source/render_zone_review.py",
+      "bytes": 1557,
+      "sha256": "bdac8cbb824c05debda40dc64cd2b78eee5de395d77442f8b12fffd477d36c82"
+    },
+    {
+      "path": "source/repair_cleanup_materials_uv.py",
+      "bytes": 1416,
+      "sha256": "bd091b26b31f05d74b8a661d83ea6c57c5e393776caebde4afb9b4aabf6e5ece"
+    },
+    {
+      "path": "source/repair_environment_exact_normals.py",
+      "bytes": 2923,
+      "sha256": "c5ce8917db612c70dcbfb35f23cdae7e783172f66376fe543accf7ce855a252f"
+    },
+    {
+      "path": "source/report_collision_budget.py",
+      "bytes": 3966,
+      "sha256": "90186d358dde1e246bfd4cc1478acf2b5c22227e0ce814091d1b5791a7dd2de0"
+    },
+    {
+      "path": "source/restore_prop_smooth_normals.py",
+      "bytes": 712,
+      "sha256": "09469198c0ab93ab4aa9c1de01214cb1163d6a941bb6a16418f3a424fb4e05bd"
+    },
+    {
+      "path": "source/review_scene.py",
+      "bytes": 1606,
+      "sha256": "db453fff62f3b633364bd5af427a0363877bfbf581670efe927eb902da8662ce"
+    },
+    {
+      "path": "source/rides.py",
+      "bytes": 16839,
+      "sha256": "9e773f7d9f55ac96636f4da8b891a521e931330f24e4babcc55dce9e0d11a576"
+    },
+    {
+      "path": "source/test_environment_normals.py",
+      "bytes": 4045,
+      "sha256": "d9d63fe8d8634f78c2b668c76e67948498a2b871a629b65cc7976231b4a74dbc"
+    },
+    {
+      "path": "source/test_prop_corner_normals.py",
+      "bytes": 2914,
+      "sha256": "7a9be7e349da0f7eaf2b426ef4d3f0a8f036de4639ca577d0d1966c6c8457ec7"
+    },
+    {
+      "path": "source/test_prop_material_integration.py",
+      "bytes": 3182,
+      "sha256": "dd8e7039f96bceb78b9b6d479fa4ce30505c548e4ed15ca1b1833d3f683d66da"
+    },
+    {
+      "path": "source/texture_sources.json",
+      "bytes": 3934,
+      "sha256": "6646c27f6d6c717ed17a24678768ab0f3f0c3fa5837db717571f10a97cd1abb4"
+    },
+    {
+      "path": "source/verify_environment_raw_fidelity.py",
+      "bytes": 3940,
+      "sha256": "15959c7c6d93995a8b8aba09c085e650966d903f417167ed7e1e966384a8c019"
+    },
+    {
+      "path": "source/verify_environment_roundtrip.py",
+      "bytes": 2106,
+      "sha256": "a7b342c1ed5a7f509d2658ba492f4b00fbf27afdd5eb9c58936a8667c328fec3"
+    },
+    {
+      "path": "source/verify_environment_source_roundtrip.py",
+      "bytes": 6408,
+      "sha256": "71a984c0d726da6f313c8feefeff1e58c6f17dece4dcfecbc9225cf28c31c32c"
+    },
+    {
+      "path": "source/verify_environment_texture_paths.py",
+      "bytes": 962,
+      "sha256": "b6908932c720f90d2fd0722e82a15f4823d169eff0da163b32c6c847ad200e2e"
+    },
+    {
+      "path": "source/verify_prop_collision_proxies.py",
+      "bytes": 2602,
+      "sha256": "d192e52af1ade44f3ad4bfc7985ab7ad9b9e56ce60543ef234cd6539c515f922"
+    },
+    {
+      "path": "source/verify_prop_exports.py",
+      "bytes": 3084,
+      "sha256": "d84f825f787a94d141cfffd1b01dfb217f3b48e824e23bf0e183cd25d10008cb"
+    },
+    {
+      "path": "source/verify_prop_fidelity.py",
+      "bytes": 4108,
+      "sha256": "80088c009b9dce3bd06f7c9f968cc63ab972a3a1afe404d2465c9925fc75a75a"
+    },
+    {
+      "path": "source/verify_prop_texture_paths.py",
+      "bytes": 1352,
+      "sha256": "7be23610810011bf7fc231ee125e0c15c9fcc7a176cc6e68d76423d81e38f034"
+    }
+  ]
+}
