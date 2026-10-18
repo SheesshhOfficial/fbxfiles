@@ -343,6 +343,10 @@ StaticMeshActor.get_actor_rotation=lambda self:getattr(self,'rotation',Rotator()
 StaticMeshActor.set_actor_rotation=lambda self,rotation,teleport_physics=False:setattr(self,'rotation',rotation) or True
 StaticMeshActor.get_actor_transform=lambda self:Transform(location=self.location,rotation=self.get_actor_rotation(),scale=self.scale)
 StaticMeshActor.get_component_by_class=lambda self,cls:self.props['static_mesh_component'] if isinstance(self.props['static_mesh_component'],cls) else None
+def _actor_components_by_class(self, cls):
+    components = self.props.get('components', [self.props['static_mesh_component']])
+    return [component for component in components if isinstance(component, cls)]
+StaticMeshActor.get_components_by_class = _actor_components_by_class
 PointLightComponent.get_light_color=lambda self:self.props['light_color']
 PointLightComponent.set_attenuation_radius=lambda self,value:self.props.__setitem__('attenuation_radius',value)
 PointLightComponent.set_source_radius=lambda self,value:self.props.__setitem__('source_radius',value)

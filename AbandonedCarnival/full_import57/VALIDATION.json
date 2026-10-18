@@ -1,16 +1,15 @@
 {
-  "schema": "carnival-full-import57-validation-v3-slot-resume",
-  "date_utc": "2026-10-17",
-  "status": "NATIVE_AXIS_CONFIRMED_SLOT_RECOVERY_OFFLINE_VERIFIED_NATIVE_RESUME_PENDING",
+  "schema": "carnival-full-import57-validation-v4-restart-recovery",
+  "date_utc": "2026-10-18",
+  "status": "RESTART_RECOVERY_OFFLINE_VERIFIED_NATIVE_EXECUTION_PENDING",
   "unreal_target": "5.7.4",
   "offline_mock_tests": {
-    "total": 109,
-    "passed_with_frozen_source": 109,
+    "total": 154,
+    "passed": 153,
     "failed": 0,
-    "portable_without_source": {
-      "passed": 108,
-      "skipped_optional_integration": 1
-    },
+    "skipped_optional_real_source_integration": 1,
+    "skip_reason": "Original frozen art package is absent in the current execution workspace; no source-fidelity retest claimed.",
+    "prior_revision_real_source_tests_passed": 109,
     "command": "python -B -m unittest discover -s tests -v",
     "optional_source_environment_variable": "CARNIVAL_PACKAGE_ROOT"
   },
@@ -261,5 +260,38 @@
     ],
     "material_graph_retraversal": "NOT_PERFORMED_EXISTING_GRAPHS_PRESERVED",
     "native_resume": "NOT_RUN"
+  },
+  "native_restart_inventory": {
+    "log_lines": 179,
+    "unique_assets": 168,
+    "props": 67,
+    "environment": 1,
+    "materials": 59,
+    "textures": 41,
+    "maps": 0,
+    "preflight": "FULL_PREFLIGHT_BLOCKED: existing namespace; clean-work and Play gates passed at observation time",
+    "live_resume": "FULL_RESUME_BLOCKED before mutation because original temporary world no longer exists",
+    "execution": "Restart recovery not yet executed in Unreal"
+  },
+  "restart_recovery": {
+    "entrypoint": "resume_after_restart(package_root)",
+    "success": "FULL_RESTART_RESUME_CREATED_UNSAVED",
+    "scope": "Exact saved168-asset checkpoint only; verify before creating new unsaved map.",
+    "native_execution": "NOT_RUN",
+    "new_regression_tests": 45,
+    "guards": [
+      "Clean maps/content and no Play before asset checks and immediately before map creation",
+      "Same previous editor world after checkpoint validation",
+      "No existing full-map actors or any checkpoint-mesh component in current world",
+      "Exact168inventory and168nonempty physical savedpackages",
+      "Existing mesh bounds/UV/hulls/build/source/materialassignments",
+      "Texture provenance/settings and materialsettings",
+      "Fresh returned world active, unsaved, empty and different",
+      "Preserve original saved map and168assets; import only113missing meshes"
+    ],
+    "remaining_limits": [
+      "Existing material graph contents not independently fingerprinted; preserved without rebuild.",
+      "Native rendering, complete import and gameplay remain unverified."
+    ]
   }
 }

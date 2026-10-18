@@ -15,6 +15,18 @@ The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left u
 
 All original FBX, texture and metadata files are checked against the pinned original FILE_MANIFEST. The original source's 15 parts are verified by their hashes and their combined source hash. JSON/Python pins permit only CRLF-to-LF normalization; binary hashes remain exact. Additional importer files do not require changing the frozen FILE_MANIFEST.
 
+## Continue the saved checkpoint after restarting Unreal
+
+If Unreal was restarted and the 168 partial assets were saved, use the explicit restart entry point below. Keep the existing assets. Stop Play/Simulate and manually save any wanted open map/content edits first. This path refuses dirty work and verifies the exact saved checkpoint before creating a new empty unsaved level; it does not discard the current map or overwrite any asset.
+
+```python
+import sys,json,importlib; sys.dont_write_bytecode=True; root=r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0,root+r"\full_import57"); import carnival_full_import57 as f; f=importlib.reload(f); full_report=f.resume_after_restart(root); print(json.dumps({k:full_report.get(k) for k in ("status","world_path","counts","validation","errors")},indent=2))
+```
+
+The saved namespace must contain exactly 41 textures, 59 materials and 68 meshes from the known teddy-slot checkpoint. Source/cache bytes, mesh bounds/slots/UV/collision/build settings, texture provenance/settings and existing material assignments are checked before any new level or import. Changed/missing/extra assets or unexpected disk files fail closed. Existing material graphs are preserved, with graph contents and rendered appearance still unverified.
+
+Expected success is `FULL_RESTART_RESUME_CREATED_UNSAVED`. A blocked check reports `FULL_RESTART_RESUME_BLOCKED`; an interruption after map creation or continuation reports `FULL_RESTART_RESUME_FAILED_PARTIAL`. After validation, this command creates a fresh empty unsaved level, reuses the 168 assets, imports the 113 missing meshes and places the scene. It leaves the previous saved level and assets intact. The old `resume_full` remains limited to its original live temporary world; do not change its guard to bypass restart checks. On a failure, share the output rather than rerunning or deleting assets.
+
 ## Resume the verified second-attempt checkpoint
 
 The second run created 41 textures, 59 materials and 68 meshes, then stopped on the first teddy because Unreal changed `.001` to `_001` while retaining spaces in imported material-slot names. The axis correction worked; this was an overly narrow name validator. No actors were created.

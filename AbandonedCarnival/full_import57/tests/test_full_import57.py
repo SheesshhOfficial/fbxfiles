@@ -1187,6 +1187,517 @@ class MockEngineTests(unittest.TestCase):
         self.assertEqual(f.resume_full(self.tmp.name)['status'], 'FULL_RESUME_CREATED_UNSAVED')
         self.assert_resume_blocked()
 
+class RestartRecoveryTests(unittest.TestCase):
+    """Restart recovery contract, with fake saved packages and unrelated saved map.
+
+    These files are portable persistence fixtures, not valid Unreal packages.
+    They establish guard/order policy only, not native loading or durability.
+    """
+    @classmethod
+    def setUpClass(cls):
+        cls.c, cls.m = f._vendors()
+
+    def setUp(self):
+        MockEngineTests.setUp(self)
+
+    def resume_checkpoint(self):
+        return MockEngineTests.resume_checkpoint(self)
+
+    def resume_mesh(self, name=None):
+        return MockEngineTests.resume_mesh(self, name)
+
+    def restart_checkpoint(self):
+        self.resume_checkpoint()
+        self.saved_packages = {}
+        for package in self.u.assets:
+            path = Path(self.u.content_dir) / (package.removeprefix('/Game/') + '.uasset')
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(('fake saved checkpoint package: ' + package).encode())
+            self.saved_packages[package] = path
+        self.u.dirty_maps = []
+        self.u.dirty_content = []
+        self.u.world.path = '/Game/ExistingUserMap.ExistingUserMap'
+        actor = g.StaticMeshActor()
+        actor.path = self.u.world.path + ':ExistingUserActor'
+        actor.props['tags'] = ['UnrelatedUserTag']
+        actor.label = 'Keep this existing saved actor'
+        self.u.actors.append(actor)
+        return actor
+
+    def file_snapshot(self):
+        result = {}
+        for root in (self.u.content_dir, self.u.saved_dir):
+            for path in Path(root).rglob('*'):
+                if path.is_symlink():
+                    result[str(path)] = ('symlink', os.readlink(path))
+                elif path.is_file():
+                    result[str(path)] = ('file', path.read_bytes(), path.stat().st_mtime_ns)
+        return result
+
+    def assert_restart_blocked(self, expected=None):
+        self.u.events.clear()
+        before_assets = dict(self.u.assets)
+        before_actors = list(self.u.actors)
+        before_world = self.u.world
+        before_files = self.file_snapshot()
+        before_assignments = {path: list(obj.materials) for path, obj in self.u.assets.items()
+                              if isinstance(obj, g.StaticMesh)}
+        with self.assertRaises(f.FullImportError) as caught:
+            f.resume_after_restart(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_BLOCKED', report)
+        self.assertFalse(report['mutation_started'])
+        self.assertFalse(report['partial'])
+        self.assertEqual(report['saves_performed'], 0)
+        if expected:
+            self.assertRegex(' '.join(report['errors']), expected)
+        self.assertEqual(self.u.events, [])
+        self.assertEqual(self.u.assets, before_assets)
+        self.assertEqual(self.u.actors, before_actors)
+        self.assertIs(self.u.world, before_world)
+        self.assertEqual(self.file_snapshot(), before_files)
+        self.assertEqual({path: list(obj.materials) for path, obj in self.u.assets.items()
+                          if isinstance(obj, g.StaticMesh)}, before_assignments)
+        return report
+
+    def test_restart_reuses_saved_checkpoint_in_new_world_and_preserves_old_actors(self):
+        actor = self.restart_checkpoint()
+        old_world, old_actor_list = self.u.world, self.u.actors
+        old_actor_props = dict(actor.props)
+        old_files = self.file_snapshot()
+        existing = dict(self.u.assets)
+        completed = [self.resume_mesh(item['asset_name']) for item in self.p['assets'][:65]]
+        old_setters = [list(mesh.material_set_calls) for mesh in completed]
+        report = f.resume_after_restart(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED', report)
+        self.assertEqual(report['mode'], 'resume_after_restart')
+        self.assertIsNot(self.u.world, old_world)
+        self.assertFalse(self.u.world.path.startswith('/Game/'))
+        self.assertEqual(old_world.path, '/Game/ExistingUserMap.ExistingUserMap')
+        self.assertEqual(old_actor_list, [actor])
+        self.assertEqual(actor.props, old_actor_props)
+        self.assertEqual(actor.label, 'Keep this existing saved actor')
+        self.assertNotIn(actor, self.u.actors)
+        self.assertTrue(all(self.u.assets[path] is obj for path, obj in existing.items()))
+        self.assertEqual(len(self.u.assets), 281)
+        self.assertEqual(len(self.u.actors), 247)
+        self.assertEqual(len(report['reused_assets']), 168)
+        self.assertEqual(len(report['reused_mesh_checks']), 68)
+        self.assertEqual(len(report['meshes']), 113)
+        self.assertEqual(report['textures'], [])
+        self.assertEqual(report['materials'], [])
+        self.assertEqual({row['name'] for row in report['completed_assignment_changes']},
+                         set(f.SENTINELS) | {f.RESUME_FAILED_MESH})
+        self.assertTrue(all(row['status'] == 'ASSIGNED_UNSAVED' for row in report['completed_assignment_changes']))
+        self.assertEqual([mesh.material_set_calls for mesh in completed], old_setters)
+        self.assertEqual(self.u.events[0], 'new_blank_map')
+        self.assertEqual(self.u.events.count('new_blank_map'), 1)
+        self.assertEqual(self.u.events.count('import_mesh'), 113)
+        self.assertEqual(len(self.u.import_tasks), 113)
+        for task in self.u.import_tasks:
+            self.assertIsInstance(task.props['factory'], g.FbxFactory)
+            for key in ('save', 'replace_existing', 'replace_existing_settings'):
+                self.assertIs(task.props[key], False)
+        for forbidden in ('import_texture', 'create_material', 'create_material_expression',
+                          'connect_material_property', 'connect_material_expressions', 'request_shader_compile'):
+            self.assertNotIn(forbidden, self.u.events)
+        self.assertFalse(any('save' in e or 'delete' in e or 'destroy' in e for e in self.u.events))
+        self.assertEqual({path: self.file_snapshot()[path] for path in old_files}, old_files)
+        self.assertEqual(report['saves_performed'], 0)
+        self.assertFalse(report['visual_pass'])
+        self.assertEqual(report['shader_compilation'], 'NOT_VERIFIED')
+        self.assertIn('NOT_PERFORMED', report['material_graph_retraversal'])
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+
+    def test_restart_checks_all_168_assets_and_68_caches_before_new_map(self):
+        self.restart_checkpoint()
+        counters = dict(material=0, texture=0, mesh=0, cache=0, sentinel=0)
+        def counted(kind, original):
+            def call(*args, **kwargs):
+                counters[kind] += 1
+                return original(*args, **kwargs)
+            return call
+        real_new = self.u.EditorLoadingAndSavingUtils.new_blank_map
+        def observed_new(save_existing_map):
+            self.assertEqual(counters, dict(material=59, texture=41, mesh=68, cache=68, sentinel=2))
+            self.assertEqual(self.u.events, [])
+            self.assertIs(save_existing_map, False)
+            return real_new(save_existing_map)
+        with patch.object(f, '_check_reused_material', side_effect=counted('material', f._check_reused_material)), \
+             patch.object(f, '_check_reused_texture', side_effect=counted('texture', f._check_reused_texture)), \
+             patch.object(f, '_validate_mesh', side_effect=counted('mesh', f._validate_mesh)), \
+             patch.object(f, '_derived_source', side_effect=counted('cache', f._derived_source)), \
+             patch.object(f, '_signed_landmark_probe', side_effect=counted('sentinel', f._signed_landmark_probe)), \
+             patch.object(self.u.EditorLoadingAndSavingUtils, 'new_blank_map', side_effect=observed_new):
+            report = f.resume_after_restart(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED')
+
+    def test_restart_accepts_native_defaults_only_on_three_pending_meshes(self):
+        self.restart_checkpoint()
+        for name in (*f.SENTINELS, f.RESUME_FAILED_MESH):
+            mesh = self.resume_mesh(name)
+            mesh.materials[:] = [self.u.default_material] * len(mesh.materials)
+        self.assertEqual(f.resume_after_restart(self.tmp.name)['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED')
+
+    def test_restart_blocks_unsaved_checkpoint_packages_even_with_clean_fake_dirty_lists(self):
+        self.resume_checkpoint()
+        self.u.dirty_maps = []
+        self.u.dirty_content = []
+        self.assert_restart_blocked('[Ss]av|[Pp]ersist|[Pp]hysical|[Uu]asset')
+
+    def test_restart_blocks_one_missing_saved_package_of_each_asset_type(self):
+        self.restart_checkpoint()
+        for cls in (g.StaticMesh, g.Material, g.Texture2D):
+            package = next(path for path, obj in self.u.assets.items() if isinstance(obj, cls))
+            path = self.saved_packages[package]
+            original = path.read_bytes()
+            path.unlink()
+            with self.subTest(asset_type=cls.__name__):
+                self.assert_restart_blocked('[Ss]av|[Pp]ersist|[Pp]hysical|[Uu]asset')
+            path.write_bytes(original)
+
+    def test_restart_sidecars_cannot_substitute_for_saved_uasset(self):
+        self.restart_checkpoint()
+        path = next(iter(self.saved_packages.values()))
+        raw = path.read_bytes()
+        path.unlink()
+        path.with_suffix('.uexp').write_bytes(raw)
+        path.with_suffix('.ubulk').write_bytes(raw)
+        self.assert_restart_blocked('[Ss]av|[Pp]ersist|[Pp]hysical|[Uu]asset')
+
+    def test_restart_allows_sidecars_for_registered_saved_assets(self):
+        self.restart_checkpoint()
+        path = next(iter(self.saved_packages.values()))
+        path.with_suffix('.uexp').write_bytes(b'owned fake sidecar')
+        path.with_suffix('.ubulk').write_bytes(b'owned fake bulk data')
+        self.assertEqual(f.resume_after_restart(self.tmp.name)['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED')
+
+    def test_restart_blocks_dirty_current_map_even_if_it_is_old_failure_world(self):
+        self.restart_checkpoint()
+        self.u.world.path = f.RESUME_WORLD
+        package = g.Obj(); package.path = f.RESUME_WORLD.split('.')[0]
+        self.u.dirty_maps = [package]
+        self.assert_restart_blocked('[Dd]irty|[Cc]lean|[Ss]ave')
+
+    def test_restart_blocks_dirty_checkpoint_content(self):
+        self.restart_checkpoint()
+        package = g.Obj(); package.path = next(iter(self.u.assets))
+        self.u.dirty_content = [package]
+        self.assert_restart_blocked('[Dd]irty|[Cc]lean|[Ss]ave')
+
+    def test_restart_blocks_unrelated_dirty_content(self):
+        self.restart_checkpoint()
+        package = g.Obj(); package.path = '/Game/UserWork/Material'
+        self.u.dirty_content = [package]
+        self.assert_restart_blocked('[Dd]irty|[Cc]lean|[Ss]ave')
+
+    def test_restart_blocks_play_world(self):
+        self.restart_checkpoint()
+        self.u.game_world = g.World()
+        self.assert_restart_blocked('[Pp]lay|[Ss]imulate|PIE')
+
+    def test_restart_blocks_absent_editor_world(self):
+        self.restart_checkpoint()
+        self.u.world = None
+        self.assert_restart_blocked('[Ww]orld|[Mm]ap')
+
+    def test_restart_blocks_existing_full_import_tag(self):
+        actor = self.restart_checkpoint()
+        actor.props['tags'].append(f.TAG)
+        self.assert_restart_blocked('[Aa]ctor|[Ss]cene|[Dd]uplicate|[Tt]ag')
+
+    def test_restart_blocks_existing_full_actor_identity_without_primary_tag(self):
+        actor = self.restart_checkpoint()
+        actor.props['tags'].append('Full57Id=prop:ExistingObject')
+        self.assert_restart_blocked('[Aa]ctor|[Ss]cene|[Dd]uplicate|[Ii]dentity')
+
+    def test_restart_blocks_existing_untagged_actor_using_namespace_mesh(self):
+        actor = self.restart_checkpoint()
+        actor.props['static_mesh_component'].props['static_mesh'] = self.resume_mesh()
+        self.assert_restart_blocked('[Aa]ctor|[Ss]cene|[Dd]uplicate|[Mm]esh')
+
+    def test_restart_blocks_namespace_mesh_in_second_actor_component(self):
+        actor = self.restart_checkpoint()
+        unrelated = actor.props['static_mesh_component']
+        extra = g.StaticMeshComponent()
+        extra.props['static_mesh'] = self.resume_mesh()
+        actor.props['components'] = [unrelated, extra]
+        self.assert_restart_blocked('[Aa]ctor|[Ss]cene|[Dd]uplicate|[Mm]esh')
+
+    def test_restart_blocks_missing_multi_component_inspection_api(self):
+        self.restart_checkpoint()
+        with patch.object(self.u.Actor, 'get_components_by_class', None):
+            self.assert_restart_blocked('get_components_by_class')
+
+    def test_restart_blocks_empty_saved_package(self):
+        self.restart_checkpoint()
+        next(iter(self.saved_packages.values())).write_bytes(b'')
+        self.assert_restart_blocked('[Ee]mpty|[Pp]hysical|[Uu]asset')
+
+    def test_restart_blocks_duplicate_case_variant_package(self):
+        self.restart_checkpoint()
+        path = next(iter(self.saved_packages.values()))
+        duplicate = path.with_name(path.stem.swapcase() + '.UaSsEt')
+        duplicate.write_bytes(b'duplicate case-variant package')
+        self.assert_restart_blocked('[Dd]uplicate|[Aa]mbiguous|[Cc]ase')
+
+    def test_restart_blocks_current_map_within_owned_namespace(self):
+        self.restart_checkpoint()
+        self.u.world.path = f.MAP_PATH + '.AbandonedCarnivalFull57'
+        self.assert_restart_blocked('[Cc]urrent|[Mm]ap|[Nn]amespace')
+
+    def test_restart_allows_unrelated_mesh_actor_without_namespace_prefix_confusion(self):
+        actor = self.restart_checkpoint()
+        foreign = g.Obj(); foreign.path = f.DEST + '_Other/Props/Keep.Keep'
+        actor.props['static_mesh_component'].props['static_mesh'] = foreign
+        self.assertEqual(f.resume_after_restart(self.tmp.name)['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED')
+        self.assertIs(actor.props['static_mesh_component'].props['static_mesh'], foreign)
+
+    def test_restart_blocks_extra_registered_namespace_asset(self):
+        self.restart_checkpoint()
+        obj = g.Obj(); obj.path = f.DEST + '/Props/Untracked.Untracked'
+        self.u.assets[obj.path.split('.')[0]] = obj
+        self.assert_restart_blocked('[Ii]nventory|[Cc]heckpoint|[Aa]sset')
+
+    def test_restart_blocks_missing_registered_asset_despite_saved_package(self):
+        self.restart_checkpoint()
+        self.u.assets.pop(next(iter(self.u.assets)))
+        self.assert_restart_blocked('[Ii]nventory|[Cc]heckpoint|[Aa]sset')
+
+    def test_restart_blocks_unregistered_physical_mesh(self):
+        self.restart_checkpoint()
+        item = self.p['assets'][66]
+        path = Path(self.u.content_dir) / (f._asset_path(item).removeprefix('/Game/') + '.uasset')
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b'foreign file must not be overwritten')
+        self.assert_restart_blocked('[Uu]nregistered|[Uu]nexpected|[Pp]hysical')
+
+    def test_restart_blocks_unexpected_physical_map(self):
+        self.restart_checkpoint()
+        path = Path(self.u.content_dir) / f.DEST.removeprefix('/Game/') / 'Maps' / 'UserMap.umap'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b'existing map must not be overwritten')
+        self.assert_restart_blocked('[Uu]nregistered|[Uu]nexpected|[Pp]hysical')
+
+    def test_restart_blocks_symlinked_saved_package(self):
+        self.restart_checkpoint()
+        path = next(iter(self.saved_packages.values()))
+        target = Path(self.tmp.name) / 'fake_external.uasset'
+        target.write_bytes(path.read_bytes())
+        path.unlink(); path.symlink_to(target)
+        self.assert_restart_blocked('[Ss]ymlink|[Ll]ink|[Uu]nsafe')
+
+    def test_restart_blocks_nested_namespace_directory_symlink(self):
+        self.restart_checkpoint()
+        target = Path(self.tmp.name) / 'outside_namespace'; target.mkdir()
+        link = Path(self.u.content_dir) / f.DEST.removeprefix('/Game/') / 'Linked'
+        link.symlink_to(target, target_is_directory=True)
+        self.assert_restart_blocked('[Ss]ymlink|[Ll]ink|[Uu]nsafe')
+
+    def test_restart_blocks_missing_cache_before_map_and_never_recreates_it(self):
+        self.restart_checkpoint()
+        path = Path(self.resume_mesh().props['asset_import_data'].filename)
+        path.unlink()
+        self.assert_restart_blocked('[Cc]ache|[Dd]erived|recreate')
+        self.assertFalse(path.exists())
+
+    def test_restart_blocks_changed_cache_before_map_without_overwrite(self):
+        self.restart_checkpoint()
+        path = Path(self.resume_mesh().props['asset_import_data'].filename)
+        path.write_bytes(b'changed derived file')
+        self.assert_restart_blocked('[Cc]ache|[Dd]erived|[Oo]verwrite|[Hh]ash')
+        self.assertEqual(path.read_bytes(), b'changed derived file')
+
+    def test_restart_blocks_changed_original_source_before_map(self):
+        self.restart_checkpoint()
+        Path(self.p['assets'][0]['source_path']).write_bytes(b'changed original source')
+        self.assert_restart_blocked('[Ss]ource|[Cc]hanged|[Hh]ash')
+
+    def test_restart_blocks_wrong_reused_asset_type_before_map(self):
+        self.restart_checkpoint()
+        path = next(path for path, obj in self.u.assets.items() if isinstance(obj, g.StaticMesh))
+        wrong = g.Obj(); wrong.path = self.u.assets[path].path
+        self.u.assets[path] = wrong
+        self.assert_restart_blocked('[Ii]dentity|[Tt]ype|[Mm]esh')
+
+    def test_restart_blocks_completed_assignment_drift_before_map(self):
+        self.restart_checkpoint()
+        self.resume_mesh().materials[0] = None
+        self.assert_restart_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_restart_blocks_pending_assignment_drift_before_map(self):
+        self.restart_checkpoint()
+        foreign = g.MaterialInterface(); foreign.path = '/Game/UserWork/Material.Material'
+        self.resume_mesh(f.RESUME_FAILED_MESH).materials[0] = foreign
+        self.assert_restart_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_restart_blocks_geometry_collision_uv_slots_build_and_import_setting_drift(self):
+        self.restart_checkpoint()
+        mesh = self.resume_mesh()
+        changes = [
+            ('bounds', mesh.item['bounds_cm']['max'], 0, mesh.item['bounds_cm']['max'][0] + 50),
+            ('uv', mesh.__dict__, 'uv', 0),
+            ('slot', mesh.props['static_materials'][0].props, 'imported_material_slot_name', 'WrongSource'),
+            ('build', mesh.build.props, 'use_full_precision_u_vs', False),
+            ('import', mesh.props['asset_import_data'].props, 'import_uniform_scale', 2.),
+            ('collision', mesh.props['body_setup'].props, 'collision_trace_flag', 'COMPLEX_AS_SIMPLE'),
+        ]
+        # Select a real boolean build field and flip it instead of relying on spelling/defaults.
+        key = next(key for key, value in self.c.BUILD_FIELDS.items() if isinstance(value, bool))
+        changes[3] = ('build', mesh.build.props, key, not mesh.build.props[key])
+        for label, container, key, wrong in changes:
+            original = container[key]
+            container[key] = wrong
+            with self.subTest(drift=label):
+                self.assert_restart_blocked()
+            self.assertEqual(container[key], wrong)
+            container[key] = original
+
+    def test_restart_blocks_mesh_import_provenance_drift_before_map(self):
+        self.restart_checkpoint()
+        mesh = self.resume_mesh()
+        mesh.props['asset_import_data'].filename = mesh.item['source_path']
+        self.assert_restart_blocked('[Ss]ource|[Pp]rovenance')
+
+    def test_restart_blocks_texture_policy_and_source_drift_before_map(self):
+        self.restart_checkpoint()
+        tex = next(obj for obj in self.u.assets.values() if isinstance(obj, g.Texture2D))
+        tex.props['virtual_texture_streaming'] = True
+        self.assert_restart_blocked('[Tt]exture|[Ss]etting')
+        tex.props['virtual_texture_streaming'] = False
+        tex.props['asset_import_data'].filename = str(Path(self.tmp.name) / 'wrong_texture.png')
+        self.assert_restart_blocked('[Tt]exture|[Ss]ource')
+
+    def test_restart_blocks_material_and_glass_policy_drift_before_map(self):
+        self.restart_checkpoint()
+        mat = next(obj for obj in self.u.assets.values() if isinstance(obj, g.Material))
+        original = mat.props['two_sided']
+        mat.props['two_sided'] = not original
+        self.assert_restart_blocked('[Mm]aterial|[Ss]ided')
+        mat.props['two_sided'] = original
+        glass = next(obj for obj in self.u.assets.values()
+                     if isinstance(obj, g.Material) and obj.props['blend_mode'] == 'TRANSLUCENT')
+        glass.props['refraction_method'] = 'PIXEL_NORMAL_OFFSET'
+        self.assert_restart_blocked('[Mm]aterial|[Rr]efraction|[Gg]lass')
+
+    def test_restart_rechecks_dirty_map_immediately_before_new_map(self):
+        self.restart_checkpoint()
+        real_guard = f._restart_guard
+        def changed_after_validation(*args, **kwargs):
+            state = real_guard(*args, **kwargs)
+            package = g.Obj(); package.path = self.u.world.path.split('.')[0]
+            self.u.dirty_maps = [package]
+            return state
+        with patch.object(f, '_restart_guard', side_effect=changed_after_validation):
+            self.assert_restart_blocked('[Dd]irty|[Cc]lean|[Ss]ave')
+
+    def test_restart_rechecks_dirty_content_immediately_before_new_map(self):
+        self.restart_checkpoint()
+        real_guard = f._restart_guard
+        def changed_after_validation(*args, **kwargs):
+            state = real_guard(*args, **kwargs)
+            package = g.Obj(); package.path = next(iter(self.u.assets))
+            self.u.dirty_content = [package]
+            return state
+        with patch.object(f, '_restart_guard', side_effect=changed_after_validation):
+            self.assert_restart_blocked('[Dd]irty|[Cc]lean|[Ss]ave')
+
+    def test_restart_rechecks_world_identity_immediately_before_new_map(self):
+        self.restart_checkpoint()
+        real_guard = f._restart_guard
+        new_world = g.World(); new_world.path = '/Game/NewUserWorld.NewUserWorld'
+        def changed_after_validation(*args, **kwargs):
+            state = real_guard(*args, **kwargs)
+            self.u.world = new_world
+            return state
+        with patch.object(f, '_restart_guard', side_effect=changed_after_validation):
+            with self.assertRaises(f.FullImportError) as caught:
+                f.resume_after_restart(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_BLOCKED', report)
+        self.assertFalse(report['mutation_started'])
+        self.assertEqual(self.u.events, [])
+        self.assertIs(self.u.world, new_world)
+
+    def test_restart_new_map_failure_is_partial_and_does_not_start_imports(self):
+        self.restart_checkpoint()
+        before = dict(self.u.assets)
+        def fail_new_map(save_existing_map):
+            self.assertIs(save_existing_map, False)
+            self.u.events.append('new_blank_map')
+            raise RuntimeError('injected map creation failure')
+        with patch.object(self.u.EditorLoadingAndSavingUtils, 'new_blank_map', side_effect=fail_new_map):
+            with self.assertRaises(f.FullImportError) as caught:
+                f.resume_after_restart(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_FAILED_PARTIAL', report)
+        self.assertTrue(report['mutation_started'])
+        self.assertTrue(report['partial'])
+        self.assertEqual(self.u.events, ['new_blank_map'])
+        self.assertEqual(self.u.assets, before)
+        self.assertEqual(report['saves_performed'], 0)
+
+    def test_restart_refuses_same_saved_or_nonempty_returned_map(self):
+        self.restart_checkpoint()
+        old = self.u.world
+        def same_map(_):
+            self.u.events.append('new_blank_map')
+            return old
+        def saved_map(_):
+            self.u.events.append('new_blank_map')
+            self.u.world = g.World(); self.u.world.path = '/Game/Other.Other'
+            self.u.actors = []
+            return self.u.world
+        def nonempty_map(_):
+            self.u.events.append('new_blank_map')
+            self.u.world = g.World(); self.u.world.path = '/Temp/Fresh.Fresh'
+            self.u.actors = [g.StaticMeshActor()]
+            return self.u.world
+        for scenario in (same_map, saved_map, nonempty_map):
+            with self.subTest(scenario=scenario.__name__):
+                self.u.world = old
+                self.u.actors = []
+                self.u.events.clear()
+                with patch.object(self.u.EditorLoadingAndSavingUtils, 'new_blank_map', side_effect=scenario):
+                    with self.assertRaises(f.FullImportError) as caught:
+                        f.resume_after_restart(self.tmp.name)
+                self.assertEqual(caught.exception.report['status'], 'FULL_RESTART_RESUME_FAILED_PARTIAL')
+                self.assertTrue(caught.exception.report['mutation_started'])
+                self.assertEqual(self.u.events, ['new_blank_map'])
+                self.assertEqual(len(self.u.assets), 168)
+
+    def test_restart_import_failure_leaves_old_map_and_reused_assets_intact(self):
+        actor = self.restart_checkpoint()
+        old_world, old_actors = self.u.world, self.u.actors
+        existing = dict(self.u.assets)
+        self.u.raise_after_import = True
+        with self.assertRaises(f.FullImportError) as caught:
+            f.resume_after_restart(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_FAILED_PARTIAL', report)
+        self.assertTrue(report['mutation_started'])
+        self.assertTrue(report['partial'])
+        self.assertIsNot(self.u.world, old_world)
+        self.assertEqual(old_actors, [actor])
+        self.assertEqual(len(self.u.assets), 169)
+        self.assertTrue(all(self.u.assets[path] is obj for path, obj in existing.items()))
+        self.assertEqual(self.u.actors, [])
+        self.assertEqual(self.u.events.count('new_blank_map'), 1)
+        self.assertEqual(self.u.events.count('import_mesh'), 1)
+        self.assertFalse(any('save' in e or 'delete' in e or 'destroy' in e for e in self.u.events))
+
+    def test_restart_cannot_repeat_after_successful_scene_placement(self):
+        self.restart_checkpoint()
+        self.assertEqual(f.resume_after_restart(self.tmp.name)['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED')
+        self.assert_restart_blocked()
+
+    def test_restart_changes_do_not_relax_live_resume_world_contract(self):
+        self.restart_checkpoint()
+        with self.assertRaises(f.FullImportError) as caught:
+            f.resume_full(self.tmp.name)
+        self.assertEqual(caught.exception.report['status'], 'FULL_RESUME_BLOCKED')
+        self.assertEqual(self.u.events, [])
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

@@ -1,7 +1,8 @@
 """Full frozen carnival UE5.7.4 import into a new unsaved world/namespace.
 
 No module-import side effects. preflight/validate are read-only. import_full is
-explicit mutation. resume_full is an explicit, single-checkpoint recovery only.
+explicit mutation. resume_full and resume_after_restart are explicit,
+single-checkpoint recoveries only.
 No saving, deletion, replacement, fallback or automatic resume.
 """
 from __future__ import annotations
@@ -913,16 +914,18 @@ def _resume_inventory(p,m):
     return meshes,assigned,pending,paths
 
 
-def _resume_physical_guard(u,paths):
+def _resume_physical_guard(u,paths,require_saved=False):
     """Reject unregistered on-disk targets and every owned-namespace symlink."""
     content=Path(str(u.Paths.convert_relative_path_to_full(u.Paths.project_content_dir())))
     require(content.is_absolute() and content.is_dir() and not content.is_symlink(),"Cannot verify physical Content directory for resume")
     name=DEST.removeprefix("/Game/")
     roots=[x for x in content.iterdir() if x.name.casefold()==name.casefold()]
     require(len(roots)<=1,"Ambiguous physical namespace case variants")
-    if not roots:return dict(files_checked=0)
+    if not roots:
+        require(not require_saved,"Saved checkpoint .uasset files are missing")
+        return dict(files_checked=0,saved_packages_checked=0)
     root=roots[0];require(not root.is_symlink() and root.is_dir(),"Unsafe physical resume namespace")
-    allowed={x.casefold() for x in paths};pending=[root];count=0
+    allowed={x.casefold() for x in paths};pending=[root];count=0;saved=set()
     while pending:
         directory=pending.pop()
         for child in directory.iterdir():
@@ -932,8 +935,41 @@ def _resume_physical_guard(u,paths):
             package=DEST+"/"+child.relative_to(root).with_suffix("").as_posix()
             require(child.suffix.casefold() in (".uasset",".uexp",".ubulk") and package.casefold() in allowed,
                     "Unregistered or unexpected physical asset target blocks resume: "+str(child))
+            if child.suffix.casefold()==".uasset":
+                require(package.casefold() not in saved,"Duplicate physical checkpoint package case variants")
+                require(child.stat().st_size>0,"Empty physical checkpoint .uasset file")
+                saved.add(package.casefold())
             count+=1
-    return dict(files_checked=count)
+    require(not require_saved or saved==allowed,"Saved checkpoint .uasset files are missing")
+    return dict(files_checked=count,saved_packages_checked=len(saved))
+
+
+def _checkpoint_state(u,c,m,p,require_saved=False):
+    """Read-only validation common to both explicit checkpoint recoveries."""
+    items,assigned,pending,paths=_resume_inventory(p,m)
+    actual=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
+    require(len(actual)==168 and set(actual)=={_object_path(x) for x in paths},
+            "Resume namespace inventory differs from the exact 168-asset checkpoint")
+    _cache_root(u);physical=_resume_physical_guard(u,paths,require_saved=require_saved)
+    materials={a["source_name"]:_check_reused_material(u,m,a) for a in p["materials"]}
+    textures={(t["path"],t["usage"]):_check_reused_texture(u,c,m,t) for t in p["textures"]}
+    default=u.load_asset("/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial")
+    require(isinstance(default,u.MaterialInterface),"Cannot verify native default material")
+    meshes={};checks=[]
+    for name,item in items.items():
+        u.log("[CarnivalFull57] Verify reused mesh %d/68: %s"%(len(meshes)+1,name))
+        path=_asset_path(item);mesh=u.load_asset(path)
+        require(isinstance(mesh,u.StaticMesh) and mesh.get_path_name()==_object_path(path),"Reused mesh identity/type differs: "+name)
+        derived=_derived_source(u,c,item,write=False);checked=_validate_mesh(u,c,mesh,derived)
+        if name in SENTINELS:checked["signed_geometry_probe"]=_signed_landmark_probe(u,c,mesh,derived)
+        for slot,source in enumerate(item["materials"]):
+            current=mesh.get_material(slot)
+            if name in assigned:require(current==materials[source],"Completed mesh material assignment differs: "+name)
+            else:require(current is None or current==default,"Unexpected material on unassigned checkpoint mesh: "+name)
+        checked["assignment_state"]="VERIFIED_COMPLETED" if name in assigned else "VERIFIED_NATIVE_DEFAULTS"
+        checks.append(checked);meshes[name]=mesh
+    return dict(meshes=meshes,materials=materials,textures=textures,assigned=assigned,pending=pending,
+                checks=checks,default=default,physical=physical)
 
 
 def _resume_guard(u,c,m,p):
@@ -954,26 +990,35 @@ def _resume_guard(u,c,m,p):
     dirty_content=[str(x.get_path_name()) for x in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
     require(all(x==RESUME_WORLD.split(".")[0] for x in dirty_maps),"Unrelated dirty map blocks resume")
     require(all(x in paths for x in dirty_content),"Unrelated dirty content blocks resume")
-    _cache_root(u);physical=_resume_physical_guard(u,paths)
-    materials={a["source_name"]:_check_reused_material(u,m,a) for a in p["materials"]}
-    textures={(t["path"],t["usage"]):_check_reused_texture(u,c,m,t) for t in p["textures"]}
-    default=u.load_asset("/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial")
-    require(isinstance(default,u.MaterialInterface),"Cannot verify native default material")
-    meshes={};checks=[]
-    for name,item in items.items():
-        u.log("[CarnivalFull57] Verify reused mesh %d/68: %s"%(len(meshes)+1,name))
-        path=_asset_path(item);mesh=u.load_asset(path)
-        require(isinstance(mesh,u.StaticMesh) and mesh.get_path_name()==_object_path(path),"Reused mesh identity/type differs: "+name)
-        derived=_derived_source(u,c,item,write=False);checked=_validate_mesh(u,c,mesh,derived)
-        if name in SENTINELS:checked["signed_geometry_probe"]=_signed_landmark_probe(u,c,mesh,derived)
-        for slot,source in enumerate(item["materials"]):
-            current=mesh.get_material(slot)
-            if name in assigned:require(current==materials[source],"Completed mesh material assignment differs: "+name)
-            else:require(current is None or current==default,"Unexpected material on unassigned checkpoint mesh: "+name)
-        checked["assignment_state"]="VERIFIED_COMPLETED" if name in assigned else "VERIFIED_NATIVE_DEFAULTS"
-        checks.append(checked);meshes[name]=mesh
-    return dict(world=world,meshes=meshes,materials=materials,textures=textures,assigned=assigned,pending=pending,
-                checks=checks,dirty_maps=dirty_maps,dirty_content=dirty_content,default=default,physical=physical)
+    state=_checkpoint_state(u,c,m,p)
+    state.update(world=world,dirty_maps=dirty_maps,dirty_content=dirty_content)
+    return state
+
+
+def _restart_editor_guard(u):
+    """Require a clean editor before leaving its current map; never save it."""
+    require(not u.EditorLoadingAndSavingUtils.get_dirty_map_packages(),"Save/discard dirty maps yourself before restart recovery")
+    require(not u.EditorLoadingAndSavingUtils.get_dirty_content_packages(),"Save/discard dirty content yourself before restart recovery")
+    editor=u.get_editor_subsystem(u.UnrealEditorSubsystem)
+    require(editor.get_game_world() is None,"Stop Play/Simulate before restart recovery")
+    world=editor.get_editor_world()
+    require(world is not None and isinstance(world,u.World),"No valid current editor world for restart recovery")
+    require(not world.get_path_name().split(".")[0].startswith(DEST+"/"),"Current map belongs to the full-import namespace; inspect it before restart recovery")
+    require(callable(getattr(u.Actor,"get_components_by_class",None)),"Missing Actor.get_components_by_class for restart checkpoint guard")
+    for actor in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors():
+        tags=[str(t) for t in actor.get_editor_property("tags")]
+        require(TAG not in tags and not any(t.startswith("Full57Id=") for t in tags),"Existing full-import actor blocks restart recovery")
+        for component in actor.get_components_by_class(u.StaticMeshComponent):
+            mesh=component.get_editor_property("static_mesh")
+            require(mesh is None or not mesh.get_path_name().startswith(DEST+"/"),"Current map contains a checkpoint mesh actor; inspect it before restart recovery")
+    return world
+
+
+def _restart_guard(u,c,m,p):
+    world=_restart_editor_guard(u)
+    state=_checkpoint_state(u,c,m,p,require_saved=True)
+    state.update(world=world,dirty_maps=[],dirty_content=[])
+    return state
 
 
 def resume_full(package_root):
@@ -984,14 +1029,47 @@ def resume_full(package_root):
     creates a new map, recreates existing assets, saves, deletes or overwrites.
     A different/advanced partial checkpoint is blocked and requires review.
     """
-    r=_report("resume_full");r["resume_checkpoint"]=dict(RESUME_CHECKPOINT)
+    return _run_resume(package_root,restart=False)
+
+
+def resume_after_restart(package_root):
+    """EXPLICIT recovery of the exact saved 168-asset checkpoint after restart.
+
+    All existing assets, sources, caches, settings and assignments are checked
+    before creating a fresh unsaved blank map. The previous clean map is not
+    modified or saved by this helper. Existing material graphs are preserved.
+    Dirty work, missing saved assets, differing inventory or any unsafe target
+    blocks recovery before map/asset mutation. No saving/deletion/overwrite.
+    """
+    return _run_resume(package_root,restart=True)
+
+
+def _run_resume(package_root,restart):
+    mode="resume_after_restart" if restart else "resume_full"
+    status_prefix="FULL_RESTART_RESUME" if restart else "FULL_RESUME"
+    r=_report(mode);r["resume_checkpoint"]=dict(RESUME_CHECKPOINT)
     r["material_graph_retraversal"]="NOT_PERFORMED_EXISTING_GRAPHS_PRESERVED"
     r["material_graph_evidence"]="Original native construction ledger completed 59 graphs; current graph contents are not independently fingerprinted."
     r["reused_assets"]=[];r["completed_assignment_changes"]=[]
     try:
         c,m,p=plan(package_root);u=importlib.import_module("unreal");r["engine_version"]=_api(u,c,m)
         r.update(source_sha256=p["source_sha256"],verified_file_count=len(p["verified_files"]),normalized_json_files=p["normalized_json_files"])
-        c._options(u);state=_resume_guard(u,c,m,p);world=state["world"]
+        c._options(u);state=(_restart_guard if restart else _resume_guard)(u,c,m,p);world=state["world"]
+        if restart:
+            r["previous_world"]=world.get_path_name()
+            # Validation may load/compile assets. Recheck clean work and world
+            # identity immediately before the only map switch in this recovery.
+            require(_restart_editor_guard(u)==world,"Editor world changed during restart checkpoint validation")
+            r.update(mutation_started=True,stage="new_blank_map")
+            fresh=u.EditorLoadingAndSavingUtils.new_blank_map(False)
+            require(fresh is not None and isinstance(fresh,u.World) and fresh!=world and
+                    not fresh.get_path_name().startswith("/Game/") and
+                    u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()==fresh,
+                    "Fresh unsaved restart-recovery map creation failed")
+            world=fresh
+            require(all(str(a.get_class().get_name()) in ("WorldSettings","Brush")
+                        for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()),
+                    "Fresh restart-recovery map contains unexpected authored actors")
         r.update(world_path=world.get_path_name(),reused_mesh_checks=state["checks"],dirty_maps=state["dirty_maps"],dirty_content=state["dirty_content"],physical_namespace_check=state["physical"])
         r["reused_assets"]=[x.get_path_name() for group in (state["meshes"],state["materials"],state["textures"]) for x in group.values()]
         meshes=state["meshes"];materials=state["materials"];assets={a["asset_name"]:a for a in p["assets"]}
@@ -1021,7 +1099,7 @@ def resume_full(package_root):
         for i,row in enumerate(p["metadata"],1):progress("metadata actor",i,51,row["source_object"]);_spawn_metadata(u,c,row,r)
         r["stage"]="read_only_validation";r["validation"]=_validate_current(u,c,m,p)
         require(r["validation"]["passed"],"Post-resume structural validation failed: "+repr(r["validation"]["errors"]))
-        r.update(status="FULL_RESUME_CREATED_UNSAVED",partial=False,stage="complete")
+        r.update(status=status_prefix+"_CREATED_UNSAVED",partial=False,stage="complete")
         u.log("[CarnivalFull57] Resume complete: reused 168 assets, created 113 meshes and 247 actors. No save performed.")
         return r
     except Exception as exc:
@@ -1030,7 +1108,7 @@ def resume_full(package_root):
                 r["namespace_assets_on_failure"]=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
                 r["current_actor_paths_on_failure"]=[x.get_path_name() for x in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors()]
             except Exception as snapshot:r["snapshot_error"]=str(snapshot)
-        r.update(status="FULL_RESUME_FAILED_PARTIAL" if r["mutation_started"] else "FULL_RESUME_BLOCKED",partial=r["mutation_started"],errors=[str(exc)],
+        r.update(status=status_prefix+"_FAILED_PARTIAL" if r["mutation_started"] else status_prefix+"_BLOCKED",partial=r["mutation_started"],errors=[str(exc)],
                  recovery="No save, deletion, replacement or cleanup was attempted. Preserve this state and report the ledger; do not retry a different partial checkpoint.")
         raise FullImportError(r) from exc
 
