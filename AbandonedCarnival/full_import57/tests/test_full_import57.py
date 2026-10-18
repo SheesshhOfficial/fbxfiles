@@ -35,6 +35,19 @@ def load(name, path):
 f = load('full_import_under_test', HERE.parent / 'carnival_full_import57.py')
 g = load('full_import_mock_unreal', HERE / 'mock_unreal.py')
 FIXTURE = json.loads((HERE / 'full_plan_fixture.json').read_text())
+NATIVE_ENV_MESH = 'SM_Env_Tile_m3_m2'
+NATIVE_ENV_WORLD = '/Temp/Untitled_1.Untitled'
+NATIVE_ENV_SLOTS = [
+    'wood', 'Natural arching grass blades', 'Perimeter story dry oak litter',
+    'Natural foliage • veined olive green', 'Natural foliage • tired ochre olive',
+    'Forest leaf • deep green', 'Forest leaf • warm olive', 'Forest leaf • sage light',
+]
+
+
+def native_environment_slots(mesh):
+    if mesh.item['asset_name'] == NATIVE_ENV_MESH:
+        mesh.props['static_materials'] = [g.Obj(imported_material_slot_name=name) for name in NATIVE_ENV_SLOTS]
+
 
 
 class ContractTests(unittest.TestCase):
@@ -103,8 +116,57 @@ class ContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, '[Aa]mbigu|[Cc]ollision'):
             f._check_slot_names(['A_B'], ['A_B'], universe=['A.B', 'A_B'])
 
-    def test_repeated_same_source_slots_are_not_ambiguous(self):
-        f._check_slot_names(['A_B', 'A_B'], ['A.B', 'A.B'], universe=['A.B', 'A.B'])
+    def test_repeated_same_source_slots_are_rejected(self):
+        with self.assertRaisesRegex(ValueError, '[Dd]uplicat|[Uu]nique|[Bb]iject'):
+            f._check_slot_names(['A_B', 'A_B'], ['A.B', 'A.B'], universe=['A.B', 'A.B'])
+
+    def test_all_frozen_mesh_source_slots_are_unique(self):
+        for item in FIXTURE['assets']:
+            self.assertEqual(len(item['materials']), len(set(item['materials'])), item['asset_name'])
+
+    def test_slot_bijection_returns_actual_order_without_mutating_inputs(self):
+        sources = ['A.B', 'Space Name', 'Leaf • green']
+        actual = ['Leaf___green', 'A_B', 'Space Name']
+        before = copy.deepcopy((actual, sources))
+        resolved = f._check_slot_names(actual, sources, universe=sources + ['Other'])
+        self.assertEqual(resolved, ['Leaf • green', 'A.B', 'Space Name'])
+        self.assertEqual((actual, sources), before)
+        self.assertIsNot(resolved, sources)
+
+    def test_slot_bijection_rejects_missing_duplicate_extra_and_unknown(self):
+        sources = ['A.B', 'Space Name', 'Leaf • green']
+        for actual in (['A_B', 'Space Name'],
+                       ['A_B', 'A.B', 'Leaf • green'],
+                       ['A_B', 'Space Name', 'Leaf • green', 'Other'],
+                       ['A_B', 'Space Name', 'Unknown'],
+                       ['A_B', 'Space Name', 'Other']):
+            with self.subTest(actual=actual):
+                with self.assertRaises(ValueError):
+                    f._check_slot_names(actual, sources, universe=sources + ['Other'])
+
+    def test_native_environment_slot_permutation_is_exact_bijection(self):
+        sources = next(a['materials'] for a in FIXTURE['assets'] if a['asset_name'] == NATIVE_ENV_MESH)
+        self.assertEqual(len(sources), 8)
+        self.assertEqual(sources[-1], 'Perimeter story dry oak litter')
+        self.assertNotEqual(NATIVE_ENV_SLOTS, sources)
+        self.assertEqual(f._check_slot_names(NATIVE_ENV_SLOTS, sources,
+                         universe=[a['source_name'] for a in FIXTURE['materials']]), NATIVE_ENV_SLOTS)
+
+    def test_only_two_exact_checkpoint_descriptors_define_inventory(self):
+        _, materials = f._vendors()
+        self.assertEqual(len(f.RESUME_CHECKPOINTS), 2)
+        for checkpoint, counts in zip(f.RESUME_CHECKPOINTS, ((168, 68, 65, 3, 113), (241, 141, 137, 4, 40))):
+            with self.subTest(checkpoint=checkpoint['id']):
+                meshes, assigned, pending, paths = f._resume_inventory(FIXTURE, materials, checkpoint)
+                self.assertEqual((len(paths), len(meshes), len(assigned), len(pending),
+                                  len(FIXTURE['assets']) - len(meshes)), counts)
+                self.assertEqual(assigned | pending, set(meshes))
+                self.assertEqual(assigned & pending, set())
+        self.assertEqual(f._resume_inventory(FIXTURE, materials),
+                         f._resume_inventory(FIXTURE, materials, f.RESUME_CHECKPOINTS[0]))
+        invented = dict(f.RESUME_CHECKPOINTS[1], existing_prefix_count=142)
+        with self.assertRaisesRegex(ValueError, '[Uu]nsupported|[Cc]heckpoint'):
+            f._resume_inventory(FIXTURE, materials, invented)
 
     @unittest.skipUnless(os.environ.get('CARNIVAL_PACKAGE_ROOT'), 'optional real pinned-source integration; set CARNIVAL_PACKAGE_ROOT')
     def test_real_frozen_package(self):
@@ -579,13 +641,65 @@ class MockEngineTests(unittest.TestCase):
         _, report = self.mesh(item)
         self.assertEqual(report['meshes'][0]['imported_material_slot_names'], names)
 
-    def test_known_slot_aliases_still_require_exact_slot_order(self):
+    def test_known_slot_aliases_resolve_reordered_source_slots(self):
         item = self.teddy_item()
+        before = copy.deepcopy(item)
         names = [name.replace('.', '_') for name in item['materials']]
         names[0], names[2] = names[2], names[0]
         self.set_imported_slot_names(names)
-        with self.assertRaisesRegex(Exception, '[Ss]lot|[Mm]aterial'):
-            self.mesh(item)
+        _, report = self.mesh(item)
+        self.assertEqual(report['meshes'][0]['imported_material_slot_names'], names)
+        self.assertEqual(report['meshes'][0]['source_materials'], item['materials'])
+        self.assertEqual(report['meshes'][0]['slot_source_materials'], list(reversed(item['materials'])))
+        self.assertEqual(item, before)
+
+    def test_native_environment_permutation_import_reports_source_and_slot_order(self):
+        item = next(a for a in self.p['assets'] if a['asset_name'] == NATIVE_ENV_MESH)
+        before = copy.deepcopy(item)
+        self.u.import_mutator = native_environment_slots
+        mesh, report = self.mesh(item)
+        row = report['meshes'][0]
+        self.assertEqual(row['imported_material_slot_names'], NATIVE_ENV_SLOTS)
+        self.assertEqual(row['source_materials'], item['materials'])
+        self.assertEqual(row['slot_source_materials'], NATIVE_ENV_SLOTS)
+        self.assertEqual(row['slot_source_indices'], [0, 1, 7, 2, 3, 4, 5, 6])
+        self.assertEqual(f._mesh_material_sources(mesh, item), NATIVE_ENV_SLOTS)
+        self.assertEqual(item, before)
+
+    def test_native_environment_permutation_fresh_assignments_and_readonly_validation(self):
+        before = copy.deepcopy(self.p)
+        self.u.import_mutator = native_environment_slots
+        self.import_success()
+        mesh = self.resume_mesh(NATIVE_ENV_MESH)
+        materials = {item['source_name']: self.u.load_asset(self.m.MATS + '/' + item['asset_name'])
+                     for item in self.p['materials']}
+        self.assertEqual(mesh.materials, [materials[name] for name in NATIVE_ENV_SLOTS])
+        self.assertEqual([index for index, _ in mesh.material_set_calls], list(range(8)))
+        self.assertEqual(self.p, before)
+        self.u.events.clear()
+        old_setters = list(mesh.material_set_calls)
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+        self.assertEqual(mesh.material_set_calls, old_setters)
+        self.assertEqual(self.u.events, [])
+        # Source-array order is deliberately wrong for this imported permutation.
+        item = next(a for a in self.p['assets'] if a['asset_name'] == NATIVE_ENV_MESH)
+        mesh.materials[:] = [materials[name] for name in item['materials']]
+        report = f.validate(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_STRUCTURE_MISMATCH')
+        self.assertIn('Material slot assignment', ' '.join(report['validation']['errors']))
+        self.assertEqual(self.u.events, [])
+
+    def test_native_environment_permutation_rejects_malformed_actual_slots(self):
+        item = next(a for a in self.p['assets'] if a['asset_name'] == NATIVE_ENV_MESH)
+        cases = [NATIVE_ENV_SLOTS[:-1], NATIVE_ENV_SLOTS + ['Other'],
+                 NATIVE_ENV_SLOTS[:-1] + [NATIVE_ENV_SLOTS[0]],
+                 NATIVE_ENV_SLOTS[:-1] + ['Unknown leaf']]
+        for names in cases:
+            with self.subTest(names=names):
+                self.u.assets.clear()
+                self.set_imported_slot_names(names)
+                with self.assertRaisesRegex(ValueError, '[Ss]lot|[Mm]aterial|[Dd]uplicat'):
+                    self.mesh(item)
 
     def test_slot_alias_does_not_accept_case_suffix_or_partial_normalization(self):
         item = self.teddy_item()
@@ -908,6 +1022,47 @@ class MockEngineTests(unittest.TestCase):
         self.u.import_tasks.clear()
         return caught.exception.report
 
+    def resume_environment_checkpoint(self):
+        """Replay the first recovery until the native eight-slot tile boundary."""
+        self.resume_checkpoint()
+        self.u.import_mutator = native_environment_slots
+        real_import = f._import_mesh
+        def stop_after_environment(u, core, item, report):
+            mesh = real_import(u, core, item, report)
+            if item['asset_name'] == NATIVE_ENV_MESH:
+                raise ValueError('injected historical environment slot-order checkpoint')
+            return mesh
+        with patch.object(f, '_import_mesh', side_effect=stop_after_environment):
+            with self.assertRaises(f.FullImportError) as caught:
+                f.resume_full(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESUME_FAILED_PARTIAL', report)
+        self.assertEqual(len(self.u.assets), 241)
+        meshes = [obj for obj in self.u.assets.values() if isinstance(obj, g.StaticMesh)]
+        self.assertEqual(len(meshes), 141)
+        self.assertEqual(sum(obj.item['kind'] == 'props' for obj in meshes), 138)
+        self.assertEqual(sum(obj.item['kind'] == 'environment' for obj in meshes), 3)
+        self.assertEqual({obj.item['asset_name'] for obj in meshes},
+                         {item['asset_name'] for item in self.p['assets'][:141]})
+        self.assertEqual(self.u.actors, [])
+        self.u.world.path = NATIVE_ENV_WORLD
+        dirty_map = g.Obj(); dirty_map.path = NATIVE_ENV_WORLD.split('.')[0]
+        self.u.dirty_maps = [dirty_map]
+        self.u.dirty_content = []
+        for path in self.u.assets:
+            package = g.Obj(); package.path = path
+            self.u.dirty_content.append(package)
+        pending = set(f.SENTINELS) | {f.RESUME_FAILED_MESH, NATIVE_ENV_MESH}
+        for name in pending:
+            mesh = self.resume_mesh(name)
+            self.assertTrue(all(material is None for material in mesh.materials))
+            mesh.materials[:] = [self.u.world_grid_material] * len(mesh.materials)
+        self.assertEqual(sum(all(isinstance(material, g.Material) for material in obj.materials)
+                             for obj in meshes), 137)
+        self.u.events.clear()
+        self.u.import_tasks.clear()
+        return report
+
     def resume_mesh(self, name=None):
         name = name or self.p['assets'][0]['asset_name']
         return next(o for o in self.u.assets.values() if isinstance(o, g.StaticMesh) and o.item['asset_name'] == name)
@@ -1205,6 +1360,162 @@ class MockEngineTests(unittest.TestCase):
         self.assertEqual(f.resume_full(self.tmp.name)['status'], 'FULL_RESUME_CREATED_UNSAVED')
         self.assert_resume_blocked()
 
+class EnvironmentCheckpointTests(unittest.TestCase):
+    """Exact second checkpoint and imported-slot-order regression coverage."""
+    @classmethod
+    def setUpClass(cls):
+        cls.c, cls.m = f._vendors()
+
+    setUp = MockEngineTests.setUp
+    resume_checkpoint = MockEngineTests.resume_checkpoint
+    resume_mesh = MockEngineTests.resume_mesh
+    resume_environment_checkpoint = MockEngineTests.resume_environment_checkpoint
+    assert_resume_blocked = MockEngineTests.assert_resume_blocked
+
+    def pending_names(self):
+        return set(f.SENTINELS) | {f.RESUME_FAILED_MESH, NATIVE_ENV_MESH}
+
+    def test_environment_checkpoint_reuses_241_imports_40_and_completes_only_four(self):
+        self.resume_environment_checkpoint()
+        existing = dict(self.u.assets)
+        world = self.u.world
+        before_plan = copy.deepcopy(self.p)
+        completed = [obj for obj in self.u.assets.values() if isinstance(obj, g.StaticMesh)
+                     and obj.item['asset_name'] not in self.pending_names()]
+        self.assertEqual(len(completed), 137)
+        old_assignments = [list(mesh.materials) for mesh in completed]
+        old_setters = [list(mesh.material_set_calls) for mesh in completed]
+        old_files = {str(path): (path.read_bytes(), path.stat().st_mtime_ns)
+                     for path in Path(self.u.saved_dir).rglob('*') if path.is_file()}
+        report = f.resume_full(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
+        self.assertIs(self.u.world, world)
+        self.assertEqual(report['world_path'], NATIVE_ENV_WORLD)
+        self.assertEqual(report['resume_checkpoint'], f.RESUME_CHECKPOINTS[1])
+        self.assertTrue(all(self.u.assets[path] is obj for path, obj in existing.items()))
+        self.assertEqual(len(report['reused_assets']), 241)
+        self.assertEqual(len(report['reused_mesh_checks']), 141)
+        self.assertEqual(len(report['meshes']), 40)
+        self.assertEqual(len(self.u.assets), 281)
+        self.assertEqual(len(self.u.actors), 247)
+        self.assertEqual(report['textures'], [])
+        self.assertEqual(report['materials'], [])
+        self.assertEqual({row['name'] for row in report['completed_assignment_changes']}, self.pending_names())
+        self.assertTrue(all(slot['previous'] == self.u.world_grid_material.path
+                            for row in report['completed_assignment_changes'] for slot in row['slots']))
+        self.assertEqual([mesh.materials for mesh in completed], old_assignments)
+        self.assertEqual([mesh.material_set_calls for mesh in completed], old_setters)
+        self.assertEqual(self.u.events.count('import_mesh'), 40)
+        self.assertEqual(len(self.u.import_tasks), 40)
+        self.assertEqual({task.props['destination_name'] for task in self.u.import_tasks},
+                         {item['asset_name'] for item in self.p['assets'][141:]})
+        self.assertTrue(all(item['kind'] == 'environment' for item in self.p['assets'][141:]))
+        for task in self.u.import_tasks:
+            self.assertIsInstance(task.props['factory'], g.FbxFactory)
+            for key in ('save', 'replace_existing', 'replace_existing_settings'):
+                self.assertIs(task.props[key], False)
+        for forbidden in ('import_texture', 'create_material', 'create_material_expression',
+                          'connect_material_property', 'connect_material_expressions',
+                          'request_shader_compile', 'new_blank_map'):
+            self.assertNotIn(forbidden, self.u.events)
+        self.assertEqual({path: (Path(path).read_bytes(), Path(path).stat().st_mtime_ns)
+                          for path in old_files}, old_files)
+        self.assertEqual(self.p, before_plan)
+        tile = self.resume_mesh(NATIVE_ENV_MESH)
+        materials = {item['source_name']: self.u.load_asset(self.m.MATS + '/' + item['asset_name'])
+                     for item in self.p['materials']}
+        self.assertEqual(tile.materials, [materials[name] for name in NATIVE_ENV_SLOTS])
+        self.assertEqual(report['saves_performed'], 0)
+        self.assertFalse(report['visual_pass'])
+        self.assertEqual(report['shader_compilation'], 'NOT_VERIFIED')
+        self.u.events.clear()
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+        self.assertEqual(self.u.events, [])
+
+    def test_environment_checkpoint_rejects_other_worlds_and_unrelated_dirty_work(self):
+        self.resume_environment_checkpoint()
+        for path in (f.RESUME_WORLD, '/Temp/Untitled.Untitled', '/Game/Other.Other'):
+            with self.subTest(world=path):
+                self.u.world.path = path
+                self.assert_resume_blocked('[Ww]orld|[Cc]heckpoint')
+        self.u.world.path = NATIVE_ENV_WORLD
+        for attr, path in (('dirty_maps', '/Game/UserWork'),
+                           ('dirty_content', '/Game/UserWork/Material')):
+            with self.subTest(dirty=attr):
+                other = g.Obj(); other.path = path
+                getattr(self.u, attr).append(other)
+                self.assert_resume_blocked('[Dd]irty')
+                getattr(self.u, attr).pop()
+
+    def test_environment_checkpoint_requires_exact_registry_set_even_with_same_count(self):
+        self.resume_environment_checkpoint()
+        for cls in (g.StaticMesh, g.Material, g.Texture2D):
+            path = next(path for path, obj in self.u.assets.items() if isinstance(obj, cls))
+            obj = self.u.assets.pop(path)
+            with self.subTest(missing=cls.__name__):
+                self.assert_resume_blocked('[Ii]nventory|[Aa]sset|[Cc]heckpoint')
+            self.u.assets[path] = obj
+        path = next(path for path, obj in self.u.assets.items() if isinstance(obj, g.StaticMesh))
+        obj = self.u.assets.pop(path)
+        foreign = g.Obj(); foreign.path = f.DEST + '/Environment/Unexpected.Unexpected'
+        self.u.assets[foreign.path.split('.')[0]] = foreign
+        self.assertEqual(len(self.u.assets), 241)
+        self.assert_resume_blocked('[Ii]nventory|[Aa]sset|[Cc]heckpoint')
+        self.u.assets.pop(foreign.path.split('.')[0]); self.u.assets[path] = obj
+        self.u.assets[foreign.path.split('.')[0]] = foreign
+        self.assert_resume_blocked('[Ii]nventory|[Aa]sset|[Cc]heckpoint')
+
+    def test_environment_checkpoint_verifies_permuted_completed_assignments_without_setters(self):
+        self.resume_environment_checkpoint()
+        item = next(item for item in self.p['assets'][:65] if len(item['materials']) > 1)
+        mesh = self.resume_mesh(item['asset_name'])
+        mesh.props['static_materials'].reverse()
+        mesh.materials.reverse()
+        before_setters = list(mesh.material_set_calls)
+        before_slots = list(mesh.props['static_materials'])
+        before_plan = copy.deepcopy(self.p)
+        report = f.resume_full(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
+        row = next(row for row in report['reused_mesh_checks'] if row['name'] == item['asset_name'])
+        self.assertEqual(row['source_materials'], item['materials'])
+        self.assertEqual(row['slot_source_materials'], list(reversed(item['materials'])))
+        self.assertEqual(row['assignment_state'], 'VERIFIED_COMPLETED')
+        self.assertEqual(mesh.material_set_calls, before_setters)
+        self.assertEqual(mesh.props['static_materials'], before_slots)
+        self.assertEqual(self.p, before_plan)
+
+    def test_environment_checkpoint_rejects_source_order_assignments_on_permuted_completed_mesh(self):
+        self.resume_environment_checkpoint()
+        item = next(item for item in self.p['assets'][:65] if len(item['materials']) > 1)
+        mesh = self.resume_mesh(item['asset_name'])
+        mesh.props['static_materials'].reverse()
+        self.assert_resume_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_environment_checkpoint_missing_imports_use_actual_permuted_slot_order(self):
+        self.resume_environment_checkpoint()
+        item = self.p['assets'][141]
+        self.assertGreater(len(item['materials']), 1)
+        names = list(reversed(item['materials']))
+        def reverse_missing(mesh):
+            if mesh.item['asset_name'] == item['asset_name']:
+                mesh.props['static_materials'] = [g.Obj(imported_material_slot_name=name) for name in names]
+        self.u.import_mutator = reverse_missing
+        report = f.resume_full(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
+        mesh = self.resume_mesh(item['asset_name'])
+        materials = {row['source_name']: self.u.load_asset(self.m.MATS + '/' + row['asset_name'])
+                     for row in self.p['materials']}
+        self.assertEqual(mesh.materials, [materials[name] for name in names])
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+
+    def test_environment_checkpoint_rejects_unknown_material_on_pending_tile(self):
+        self.resume_environment_checkpoint()
+        tile = self.resume_mesh(NATIVE_ENV_MESH)
+        foreign = g.MaterialInterface(); foreign.path = '/Game/UserWork/Material.Material'
+        tile.materials[2] = foreign
+        self.assert_resume_blocked('[Aa]ssign|[Mm]aterial')
+
+
 class RestartRecoveryTests(unittest.TestCase):
     """Restart recovery contract, with fake saved packages and unrelated saved map.
 
@@ -1224,8 +1535,11 @@ class RestartRecoveryTests(unittest.TestCase):
     def resume_mesh(self, name=None):
         return MockEngineTests.resume_mesh(self, name)
 
-    def restart_checkpoint(self):
-        self.resume_checkpoint()
+    def restart_checkpoint(self, environment=False):
+        if environment:
+            MockEngineTests.resume_environment_checkpoint(self)
+        else:
+            self.resume_checkpoint()
         self.saved_packages = {}
         for package in self.u.assets:
             path = Path(self.u.content_dir) / (package.removeprefix('/Game/') + '.uasset')
@@ -1326,6 +1640,78 @@ class RestartRecoveryTests(unittest.TestCase):
         self.assertEqual(report['shader_compilation'], 'NOT_VERIFIED')
         self.assertIn('NOT_PERFORMED', report['material_graph_retraversal'])
         self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+
+    def test_restart_environment_checkpoint_checks_241_assets_before_new_map_and_reuses_them(self):
+        actor = self.restart_checkpoint(environment=True)
+        old_world, old_actors, old_files = self.u.world, self.u.actors, self.file_snapshot()
+        old_actor_props = copy.copy(actor.props)
+        existing = dict(self.u.assets)
+        pending = set(f.SENTINELS) | {f.RESUME_FAILED_MESH, NATIVE_ENV_MESH}
+        completed = [obj for obj in self.u.assets.values() if isinstance(obj, g.StaticMesh)
+                     and obj.item['asset_name'] not in pending]
+        old_setters = [list(mesh.material_set_calls) for mesh in completed]
+        counters = dict(material=0, texture=0, mesh=0, cache=0, sentinel=0)
+        def counted(kind, original):
+            def call(*args, **kwargs):
+                counters[kind] += 1
+                return original(*args, **kwargs)
+            return call
+        real_new = self.u.EditorLoadingAndSavingUtils.new_blank_map
+        def observed_new(save_existing_map):
+            self.assertEqual(counters, dict(material=59, texture=41, mesh=141, cache=141, sentinel=2))
+            self.assertEqual(self.u.events, [])
+            self.assertIs(save_existing_map, False)
+            return real_new(save_existing_map)
+        with patch.object(f, '_check_reused_material', side_effect=counted('material', f._check_reused_material)), \
+             patch.object(f, '_check_reused_texture', side_effect=counted('texture', f._check_reused_texture)), \
+             patch.object(f, '_validate_mesh', side_effect=counted('mesh', f._validate_mesh)), \
+             patch.object(f, '_derived_source', side_effect=counted('cache', f._derived_source)), \
+             patch.object(f, '_signed_landmark_probe', side_effect=counted('sentinel', f._signed_landmark_probe)), \
+             patch.object(self.u.EditorLoadingAndSavingUtils, 'new_blank_map', side_effect=observed_new):
+            report = f.resume_after_restart(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED', report)
+        self.assertEqual(report['resume_checkpoint'], f.RESUME_CHECKPOINTS[1])
+        self.assertEqual(report['physical_namespace_check']['saved_packages_checked'], 241)
+        self.assertIsNot(self.u.world, old_world)
+        self.assertEqual(old_actors, [actor])
+        self.assertEqual(actor.props, old_actor_props)
+        self.assertTrue(all(self.u.assets[path] is obj for path, obj in existing.items()))
+        self.assertEqual({path: self.file_snapshot()[path] for path in old_files}, old_files)
+        self.assertEqual(len(report['reused_assets']), 241)
+        self.assertEqual(len(report['reused_mesh_checks']), 141)
+        self.assertEqual(len(report['meshes']), 40)
+        self.assertEqual(len(self.u.assets), 281)
+        self.assertEqual(len(self.u.actors), 247)
+        self.assertEqual([mesh.material_set_calls for mesh in completed], old_setters)
+        self.assertEqual({row['name'] for row in report['completed_assignment_changes']}, pending)
+        self.assertEqual(self.u.events[0], 'new_blank_map')
+        self.assertEqual(self.u.events.count('new_blank_map'), 1)
+        self.assertEqual(self.u.events.count('import_mesh'), 40)
+        for forbidden in ('import_texture', 'create_material', 'create_material_expression',
+                          'connect_material_property', 'connect_material_expressions', 'request_shader_compile'):
+            self.assertNotIn(forbidden, self.u.events)
+        self.assertFalse(any('save' in event or 'delete' in event or 'destroy' in event for event in self.u.events))
+        self.u.events.clear()
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+        self.assertEqual(self.u.events, [])
+
+    def test_restart_environment_checkpoint_requires_saved_packages_and_clean_editor(self):
+        self.restart_checkpoint(environment=True)
+        for cls in (g.StaticMesh, g.Material, g.Texture2D):
+            package = next(path for path, obj in self.u.assets.items() if isinstance(obj, cls))
+            path = self.saved_packages[package]
+            saved = path.read_bytes()
+            path.unlink()
+            with self.subTest(missing=cls.__name__):
+                self.assert_restart_blocked('[Ss]aved|[Mm]issing|[Pp]ackage')
+            path.write_bytes(saved)
+        for attr, path in (('dirty_maps', '/Game/ExistingUserMap'),
+                           ('dirty_content', next(iter(self.u.assets)))):
+            with self.subTest(dirty=attr):
+                obj = g.Obj(); obj.path = path
+                getattr(self.u, attr).append(obj)
+                self.assert_restart_blocked('[Dd]irty')
+                getattr(self.u, attr).clear()
 
     def test_restart_checks_all_168_assets_and_68_caches_before_new_map(self):
         self.restart_checkpoint()

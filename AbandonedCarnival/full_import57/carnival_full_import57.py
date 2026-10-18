@@ -31,6 +31,24 @@ RESUME_CHECKPOINT = dict(id="native_teddy_slot_failure_20261017_220639",
     creation_ledger_projection_sha256="bd57a669a3bb5e06a0bdbd5f4b07a04d79842c03d3d326584ab333b02862565f",
     textures=41,materials=59,meshes=68,assigned_meshes=65,unassigned_meshes=3,authored_actors=0,
     source_error="Aged tan plush fabric_001 != Aged tan plush fabric.001")
+# Only these two observed inventories are recoverable. They are not arbitrary
+# prefixes, and normal import_full still refuses every existing namespace.
+RESUME_ENV_WORLD = "/Temp/Untitled_1.Untitled"
+RESUME_ENV_FAILED_MESH = "SM_Env_Tile_m3_m2"
+RESUME_ENV_CHECKPOINT = dict(id="native_environment_slot_failure_20261018_072100",
+    # Compact sorted JSON of schema/mode/status/namespace/world_path/stage/source_sha256,
+    # reused_assets, new_meshes(name,status,actual), inventory, actors and assignment ledger.
+    creation_ledger_projection_sha256="852cdb52ac3570d935c74553b8ae9a812665f49f3f91ef28b4fcd6fead07bca2",
+    textures=41,materials=59,meshes=141,assigned_meshes=137,unassigned_meshes=4,authored_actors=0,
+    source_error="Imported slot permutation [0,1,7,2,3,4,5,6]; all eight source names present")
+RESUME_CHECKPOINTS = (
+    dict(RESUME_CHECKPOINT,world_path=RESUME_WORLD,failed_mesh=RESUME_FAILED_MESH,
+         existing_prefix_count=66,extra_meshes=SENTINELS,
+         pending_meshes=SENTINELS+(RESUME_FAILED_MESH,),asset_count=168,missing_meshes=113),
+    dict(RESUME_ENV_CHECKPOINT,world_path=RESUME_ENV_WORLD,failed_mesh=RESUME_ENV_FAILED_MESH,
+         existing_prefix_count=141,extra_meshes=(),
+         pending_meshes=SENTINELS+(RESUME_FAILED_MESH,RESUME_ENV_FAILED_MESH),asset_count=241,missing_meshes=40),
+)
 COUNTS = dict(mesh_assets=181, prop_assets=138, prop_actors=153, environment_assets=43,
               environment_actors=43, materials=59, textures=41, player_starts=10, lights=41, authored_actors=247)
 VENDORS = {"carnival_calibration57.py": "5575273cce7f485930e73f363821d9294b62e374919639b7169cead28af74171",
@@ -631,13 +649,28 @@ def _slot_aliases(source):
 
 
 def _check_slot_names(actual,sources,universe=None):
+    """Return the source identity for each actual slot; require a full bijection."""
     require(len(actual)==len(sources),"Material-slot count mismatch")
+    require(len(set(sources))==len(sources),"Duplicate source material slots are unsupported/ambiguous")
     owners={}
     for source in set(sources)|set(universe or ()):
         for alias in _slot_aliases(source): owners.setdefault(alias,set()).add(source)
-    for got,want in zip(actual,sources):
-        require(got in _slot_aliases(want),"Imported material-slot name/order mismatch: "+got+" != "+want)
-        require(owners[got]=={want},"Ambiguous imported material-slot alias collision: "+got)
+    resolved=[]
+    for got in actual:
+        require(got in owners,"Unknown imported material-slot name: "+got)
+        require(len(owners[got])==1,"Ambiguous imported material-slot alias collision: "+got)
+        source=next(iter(owners[got]))
+        require(source in sources,"Imported material slot is outside the expected source set: "+got)
+        resolved.append(source)
+    require(len(set(resolved))==len(resolved),"Duplicate resolved imported material-slot source")
+    require(set(resolved)==set(sources),"Missing or unexpected imported material-slot source identities")
+    return resolved
+
+
+def _mesh_material_sources(mesh,item):
+    names=[str(slot.get_editor_property("imported_material_slot_name"))
+           for slot in mesh.get_editor_property("static_materials")]
+    return _check_slot_names(names,item["materials"],item.get("material_name_universe"))
 
 
 def _validate_mesh(u,c,mesh,item):
@@ -645,12 +678,15 @@ def _validate_mesh(u,c,mesh,item):
     require(isinstance(mesh,u.StaticMesh),"Expected StaticMesh: "+item["asset_name"])
     slots=mesh.get_editor_property("static_materials")
     names=[str(slot.get_editor_property("imported_material_slot_name")) for slot in slots]
-    _check_slot_names(names,item["materials"],item.get("material_name_universe"))
+    mapped=_check_slot_names(names,item["materials"],item.get("material_name_universe"))
     # The original vendor now sees the already strictly verified actual spelling.
     # No mesh/slot/source metadata is changed, and all its other gates still run.
     result=c._validate_mesh(u,mesh,dict(item,materials=names))
     result["source_materials"]=list(item["materials"])
-    result["slot_name_policy"]="ORDERED_UNAMBIGUOUS_SOURCE_DOT_OR_LEGACY_ASCII"
+    result["slot_source_materials"]=mapped
+    result["slot_source_indices"]=[item["materials"].index(name) for name in mapped]
+    result["slot_name_policy"]="COMPLETE_UNAMBIGUOUS_SOURCE_NAME_BIJECTION"
+    result["material_face_fidelity"]="NOT_VERIFIED_BY_SLOT_NAME_MAPPING"
     return result
 
 
@@ -843,7 +879,7 @@ def import_full(package_root):
             progress("mesh",i,181,a["asset_name"])
             mesh=meshes.get(a["asset_name"])
             if mesh is None:mesh=_import_mesh(u,c,a,r)
-            for slot,name in enumerate(a["materials"]):mesh.set_material(slot,materials[name]);require(mesh.get_material(slot)==materials[name],"Full material assignment failed")
+            for slot,name in enumerate(_mesh_material_sources(mesh,a)):mesh.set_material(slot,materials[name]);require(mesh.get_material(slot)==materials[name],"Full material assignment failed")
             meshes[a["asset_name"]]=mesh
         for i,pmt in enumerate(p["placements"],1):
             progress("mesh actor",i,196,pmt["source_object"]);_spawn_mesh(u,c,assets[pmt["asset_name"]],meshes[pmt["asset_name"]],pmt,r)
@@ -899,19 +935,31 @@ def _check_reused_texture(u,c,m,record):
     return tex
 
 
-def _resume_inventory(p,m):
-    failed=[i for i,a in enumerate(p["assets"]) if a["asset_name"]==RESUME_FAILED_MESH]
-    require(failed==[65],"Pinned recovery mesh order differs")
-    assigned={a["asset_name"] for a in p["assets"][:65]}
-    pending=set(SENTINELS)|{RESUME_FAILED_MESH}
-    names=assigned|pending;require(len(assigned)==65 and len(names)==68,"Recovery checkpoint mesh count differs")
+def _resume_inventory(p,m,checkpoint=None):
+    checkpoint=checkpoint or RESUME_CHECKPOINTS[0]
+    require(checkpoint in RESUME_CHECKPOINTS,"Unsupported recovery checkpoint descriptor")
+    stop=checkpoint["existing_prefix_count"]
+    require(p["assets"][stop-1]["asset_name"]==checkpoint["failed_mesh"],"Pinned recovery mesh order differs")
+    names={a["asset_name"] for a in p["assets"][:stop]}|set(checkpoint["extra_meshes"])
+    pending=set(checkpoint["pending_meshes"]);assigned=names-pending
+    require(pending<=names and len(assigned)==checkpoint["assigned_meshes"] and
+            len(pending)==checkpoint["unassigned_meshes"] and len(names)==checkpoint["meshes"],"Recovery checkpoint mesh count differs")
     meshes={a["asset_name"]:a for a in p["assets"] if a["asset_name"] in names}
-    require(len(meshes)==68,"Recovery checkpoint mesh missing from source")
+    require(len(meshes)==checkpoint["meshes"],"Recovery checkpoint mesh missing from source")
     paths={_asset_path(a) for a in meshes.values()}
     paths.update(m.TEX+"/"+t["asset_name"] for t in p["textures"])
     paths.update(m.MATS+"/"+a["asset_name"] for a in p["materials"])
-    require(len(paths)==168,"Recovery checkpoint asset count differs")
+    require(len(paths)==checkpoint["asset_count"],"Recovery checkpoint asset count differs")
     return meshes,assigned,pending,paths
+
+
+def _select_checkpoint(u,m,p):
+    actual=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
+    for checkpoint in RESUME_CHECKPOINTS:
+        _,_,_,paths=_resume_inventory(p,m,checkpoint)
+        if len(actual)==checkpoint["asset_count"] and set(actual)=={_object_path(x) for x in paths}:
+            return checkpoint
+    raise ValueError("Resume namespace inventory differs from both exact supported checkpoints (168 or 241 assets)")
 
 
 def _resume_physical_guard(u,paths,require_saved=False):
@@ -945,7 +993,7 @@ def _resume_physical_guard(u,paths,require_saved=False):
 
 
 def _pending_native_defaults(u):
-    """Exact accepted fallback objects for the three unassigned meshes."""
+    """Exact accepted fallback objects for the checkpoint's unassigned meshes."""
     paths=("/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial",
            "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial")
     defaults={path:u.load_asset(path) for path in paths}
@@ -960,52 +1008,51 @@ def _pending_material_allowed(current,defaults):
                                   for path,material in defaults.items())
 
 
-def _checkpoint_state(u,c,m,p,require_saved=False):
+def _checkpoint_state(u,c,m,p,require_saved=False,checkpoint=None):
     """Read-only validation common to both explicit checkpoint recoveries."""
-    items,assigned,pending,paths=_resume_inventory(p,m)
+    checkpoint=checkpoint or _select_checkpoint(u,m,p)
+    items,assigned,pending,paths=_resume_inventory(p,m,checkpoint)
     actual=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
-    require(len(actual)==168 and set(actual)=={_object_path(x) for x in paths},
-            "Resume namespace inventory differs from the exact 168-asset checkpoint")
+    require(len(actual)==checkpoint["asset_count"] and set(actual)=={_object_path(x) for x in paths},
+            "Resume namespace inventory changed from the selected exact checkpoint")
     _cache_root(u);physical=_resume_physical_guard(u,paths,require_saved=require_saved)
     materials={a["source_name"]:_check_reused_material(u,m,a) for a in p["materials"]}
     textures={(t["path"],t["usage"]):_check_reused_texture(u,c,m,t) for t in p["textures"]}
     defaults=_pending_native_defaults(u)
     meshes={};checks=[]
     for name,item in items.items():
-        u.log("[CarnivalFull57] Verify reused mesh %d/68: %s"%(len(meshes)+1,name))
+        u.log("[CarnivalFull57] Verify reused mesh %d/%d: %s"%(len(meshes)+1,checkpoint["meshes"],name))
         path=_asset_path(item);mesh=u.load_asset(path)
         require(isinstance(mesh,u.StaticMesh) and mesh.get_path_name()==_object_path(path),"Reused mesh identity/type differs: "+name)
         derived=_derived_source(u,c,item,write=False);checked=_validate_mesh(u,c,mesh,derived)
         if name in SENTINELS:checked["signed_geometry_probe"]=_signed_landmark_probe(u,c,mesh,derived)
-        for slot,source in enumerate(item["materials"]):
+        for slot,source in enumerate(_mesh_material_sources(mesh,item)):
             current=mesh.get_material(slot)
             if name in assigned:require(current==materials[source],"Completed mesh material assignment differs: "+name)
             else:require(_pending_material_allowed(current,defaults),"Unexpected material on unassigned checkpoint mesh: "+name)
         checked["assignment_state"]="VERIFIED_COMPLETED" if name in assigned else "VERIFIED_NATIVE_DEFAULTS"
         checks.append(checked);meshes[name]=mesh
     return dict(meshes=meshes,materials=materials,textures=textures,assigned=assigned,pending=pending,
-                checks=checks,pending_defaults=defaults,physical=physical)
+                checks=checks,pending_defaults=defaults,physical=physical,checkpoint=dict(checkpoint))
 
 
 def _resume_guard(u,c,m,p):
-    """Read-only, single known checkpoint. No generic resume/repair/replacement."""
+    """Read-only, exact observed checkpoint. No generic resume/repair/replacement."""
     editor=u.get_editor_subsystem(u.UnrealEditorSubsystem)
     require(editor.get_game_world() is None,"Stop Play/Simulate before resume")
+    checkpoint=_select_checkpoint(u,m,p)
     world=editor.get_editor_world()
-    require(world is not None and isinstance(world,u.World) and world.get_path_name()==RESUME_WORLD,
-            "Resume requires the same empty failure world "+RESUME_WORLD)
+    require(world is not None and isinstance(world,u.World) and world.get_path_name()==checkpoint["world_path"],
+            "Resume requires the same empty failure world "+checkpoint["world_path"])
     actors=list(u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors())
     require(all(str(a.get_class().get_name()) in ("WorldSettings","Brush") for a in actors),
             "Resume requires zero authored actors; no actor-stage resume is supported")
-    items,assigned,pending,paths=_resume_inventory(p,m)
-    actual=[str(x) for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)]
-    require(len(actual)==168 and set(actual)=={_object_path(x) for x in paths},
-            "Resume namespace inventory differs from the exact 168-asset checkpoint")
+    items,assigned,pending,paths=_resume_inventory(p,m,checkpoint)
     dirty_maps=[str(x.get_path_name()) for x in u.EditorLoadingAndSavingUtils.get_dirty_map_packages()]
     dirty_content=[str(x.get_path_name()) for x in u.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
-    require(all(x==RESUME_WORLD.split(".")[0] for x in dirty_maps),"Unrelated dirty map blocks resume")
+    require(all(x==checkpoint["world_path"].split(".")[0] for x in dirty_maps),"Unrelated dirty map blocks resume")
     require(all(x in paths for x in dirty_content),"Unrelated dirty content blocks resume")
-    state=_checkpoint_state(u,c,m,p)
+    state=_checkpoint_state(u,c,m,p,checkpoint=checkpoint)
     state.update(world=world,dirty_maps=dirty_maps,dirty_content=dirty_content)
     return state
 
@@ -1037,7 +1084,7 @@ def _restart_guard(u,c,m,p):
 
 
 def resume_full(package_root):
-    """EXPLICIT recovery only for the unchanged, empty, 168-asset Teddy checkpoint.
+    """EXPLICIT recovery only for one of the two unchanged, empty checkpoints.
 
     Rechecks every reusable asset before mutation. Preserves existing material
     graphs without claiming graph retraversal or a visual/shader pass. Never
@@ -1048,7 +1095,7 @@ def resume_full(package_root):
 
 
 def resume_after_restart(package_root):
-    """EXPLICIT recovery of the exact saved 168-asset checkpoint after restart.
+    """EXPLICIT recovery of an exact supported saved checkpoint after restart.
 
     All existing assets, sources, caches, settings and assignments are checked
     before creating a fresh unsaved blank map. The previous clean map is not
@@ -1062,7 +1109,7 @@ def resume_after_restart(package_root):
 def _run_resume(package_root,restart):
     mode="resume_after_restart" if restart else "resume_full"
     status_prefix="FULL_RESTART_RESUME" if restart else "FULL_RESUME"
-    r=_report(mode);r["resume_checkpoint"]=dict(RESUME_CHECKPOINT)
+    r=_report(mode);r["resume_checkpoint"]=None
     r["material_graph_retraversal"]="NOT_PERFORMED_EXISTING_GRAPHS_PRESERVED"
     r["material_graph_evidence"]="Original native construction ledger completed 59 graphs; current graph contents are not independently fingerprinted."
     r["reused_assets"]=[];r["completed_assignment_changes"]=[]
@@ -1070,6 +1117,7 @@ def _run_resume(package_root,restart):
         c,m,p=plan(package_root);u=importlib.import_module("unreal");r["engine_version"]=_api(u,c,m)
         r.update(source_sha256=p["source_sha256"],verified_file_count=len(p["verified_files"]),normalized_json_files=p["normalized_json_files"])
         c._options(u);state=(_restart_guard if restart else _resume_guard)(u,c,m,p);world=state["world"]
+        checkpoint=state["checkpoint"];r["resume_checkpoint"]=dict(checkpoint)
         if restart:
             r["previous_world"]=world.get_path_name()
             # Validation may load/compile assets. Recheck clean work and world
@@ -1092,18 +1140,18 @@ def _run_resume(package_root,restart):
             require(u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()==world,"Editor world changed during resume; stopping without cleanup")
             r["stage"]=kind+":"+name;u.log("[CarnivalFull57] %s %d/%d: %s"%(kind,index,total,name))
         missing=[a for a in p["assets"] if a["asset_name"] not in meshes]
-        require(len(missing)==113,"Recovery missing-mesh count differs")
+        require(len(missing)==checkpoint["missing_meshes"],"Recovery missing-mesh count differs")
         # All reusable assets and assignments passed before the first mutation.
         for i,a in enumerate(missing,1):
-            progress("resume missing mesh",i,113,a["asset_name"]);r["mutation_started"]=True
+            progress("resume missing mesh",i,len(missing),a["asset_name"]);r["mutation_started"]=True
             mesh=_import_mesh(u,c,a,r)
-            for slot,source in enumerate(a["materials"]):
+            for slot,source in enumerate(_mesh_material_sources(mesh,a)):
                 mesh.set_material(slot,materials[source]);require(mesh.get_material(slot)==materials[source],"New mesh material assignment failed")
             meshes[a["asset_name"]]=mesh
         for i,name in enumerate(sorted(state["pending"]),1):
-            progress("complete pending assignments",i,3,name);mesh=meshes[name]
+            progress("complete pending assignments",i,len(state["pending"]),name);mesh=meshes[name]
             entry=dict(name=name,status="ATTEMPTED",slots=[]);r["completed_assignment_changes"].append(entry)
-            for slot,source in enumerate(assets[name]["materials"]):
+            for slot,source in enumerate(_mesh_material_sources(mesh,assets[name])):
                 before=mesh.get_material(slot)
                 require(_pending_material_allowed(before,state["pending_defaults"]),"Pending mesh material changed during resume: "+name)
                 entry["slots"].append(dict(slot=slot,previous=before.get_path_name() if before else None,target=materials[source].get_path_name()))
@@ -1115,7 +1163,7 @@ def _run_resume(package_root,restart):
         r["stage"]="read_only_validation";r["validation"]=_validate_current(u,c,m,p)
         require(r["validation"]["passed"],"Post-resume structural validation failed: "+repr(r["validation"]["errors"]))
         r.update(status=status_prefix+"_CREATED_UNSAVED",partial=False,stage="complete")
-        u.log("[CarnivalFull57] Resume complete: reused 168 assets, created 113 meshes and 247 actors. No save performed.")
+        u.log("[CarnivalFull57] Resume complete: reused %d assets, created %d meshes and 247 actors. No save performed."%(checkpoint["asset_count"],len(missing)))
         return r
     except Exception as exc:
         if r["mutation_started"]:
@@ -1159,7 +1207,7 @@ def _validate_current(u,c,m,p):
         path=DEST+("/Props/" if a["kind"]=="props" else "/Environment/")+a["asset_name"];expected_assets.add(path)
         def check(a=a,path=path):
             mesh=u.load_asset(path);derived=_derived_source(u,c,a,write=False);_validate_mesh(u,c,mesh,derived)
-            for slot,name in enumerate(a["materials"]):require(name in material_objects and mesh.get_material(slot)==material_objects[name],"Material slot assignment differs")
+            for slot,name in enumerate(_mesh_material_sources(mesh,a)):require(name in material_objects and mesh.get_material(slot)==material_objects[name],"Material slot assignment differs")
             out["checked_meshes"]+=1
         attempt(path,check)
     actual={str(x).split(".")[0] for x in u.EditorAssetLibrary.list_assets(DEST,recursive=True,include_folder=False)}

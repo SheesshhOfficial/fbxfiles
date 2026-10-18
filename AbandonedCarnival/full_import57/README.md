@@ -2,7 +2,7 @@
 
 This corrected importer creates a new, unsaved world and `/Game/AbandonedCarnivalFull57_Corrected`. The earlier full attempt stopped on the first asymmetric tile: its Y bounds were reflected, and a later read confirmed the reflection persisted after compilation. The three earlier calibration props had symmetric Y bounds, so their passing bounds checks did not establish handedness. The corrected axis transport has now passed two asymmetric native Unreal sentinels, including signed MeshDescription landmarks with zero error. The full scene has not yet completed import or visual/gameplay review.
 
-The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left untouched. Do not rerun the old importer or delete those assets automatically. This revision uses a separate namespace and retains the original source FBXs, Blender source and the calibration map. A strict wrapper around the unchanged vendored validator now recognizes the observed legacy dot-to-underscore spelling while preserving strict order and rejecting ambiguous aliases.
+The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left untouched. Do not rerun the old importer or delete those assets automatically. This revision uses a separate namespace and retains the original source FBXs, Blender source and the calibration map. A strict wrapper around the unchanged vendored validator now recognizes the observed legacy dot-to-underscore spelling while preserving an exact bijective source-material set and rejecting ambiguous aliases.
 
 ## Exact scope
 
@@ -15,19 +15,33 @@ The original 101 partial assets under `/Game/AbandonedCarnivalFull57` are left u
 
 All original FBX, texture and metadata files are checked against the pinned original FILE_MANIFEST. The original source's 15 parts are verified by their hashes and their combined source hash. JSON/Python pins permit only CRLF-to-LF normalization; binary hashes remain exact. Additional importer files do not require changing the frozen FILE_MANIFEST.
 
+## Continue the current 241-asset environment checkpoint
+
+The latest native run validated the previous 168 assets and imported 73 more meshes, then stopped on `SM_Env_Tile_m3_m2`. Unreal retained all eight material names but changed their slot order. No actors were created. The new validator requires an exact, unambiguous one-to-one mapping of imported slot names to the source material set; it assigns each material to the corresponding actual slot index, without rearranging mesh sections or accepting missing/duplicate/unknown names.
+
+Keep the current empty `/Temp/Untitled_1.Untitled` level open, stop Play and preserve all assets. Do not rerun a fresh import or delete anything. After pulling this update, run:
+
+```python
+import importlib,json; f=importlib.reload(f); full_report=f.resume_full(root); print(json.dumps({k:full_report.get(k) for k in ("status","world_path","counts","validation","errors")},indent=2))
+```
+
+This uses the existing `f` module and `root` path from the current session. It verifies the exact 241-asset checkpoint: 41 textures, 59 materials and 141 meshes, with 137 completed assignments and four pending placeholder meshes. It imports only the remaining 40 environment meshes, completes the pending assignments, then creates the 247 actors. Expected success: `FULL_RESUME_CREATED_UNSAVED`. If anything fails, preserve the state and share the report. After success, inspect and manually save to `/Game/AbandonedCarnivalFull57_Corrected/Maps/AbandonedCarnivalFull57`.
+
+Only two exact checkpoint inventories are supported: the original 168-asset teddy checkpoint and this 241-asset environment checkpoint. Live recovery requires each checkpoint's matching empty temporary world. If Unreal has been restarted, save wanted work and use `resume_after_restart(root)` instead; it requires every checkpoint asset saved and validates before creating a new empty world. This is not a generic resume for arbitrary partial progress.
+
 ## Continue the saved checkpoint after restarting Unreal
 
-If Unreal was restarted and the 168 partial assets were saved, use the explicit restart entry point below. Keep the existing assets. Stop Play/Simulate and manually save any wanted open map/content edits first. This path refuses dirty work and verifies the exact saved checkpoint before creating a new empty unsaved level; it does not discard the current map or overwrite any asset.
+If Unreal was restarted and all assets of either supported partial checkpoint were saved, use the explicit restart entry point below. Keep the existing assets. Stop Play/Simulate and manually save any wanted open map/content edits first. This path refuses dirty work and verifies the exact saved checkpoint before creating a new empty unsaved level; it does not discard the current map or overwrite any asset.
 
 ```python
 import sys,json,importlib; sys.dont_write_bytecode=True; root=r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0,root+r"\full_import57"); import carnival_full_import57 as f; f=importlib.reload(f); full_report=f.resume_after_restart(root); print(json.dumps({k:full_report.get(k) for k in ("status","world_path","counts","validation","errors")},indent=2))
 ```
 
-The saved namespace must contain exactly 41 textures, 59 materials and 68 meshes from the known teddy-slot checkpoint. Source/cache bytes, mesh bounds/slots/UV/collision/build settings, texture provenance/settings and existing material assignments are checked before any new level or import. Changed/missing/extra assets or unexpected disk files fail closed. Existing material graphs are preserved, with graph contents and rendered appearance still unverified.
+The saved namespace must match either the exact original 168-asset checkpoint (41 textures, 59 materials, 68 meshes) or the exact 241-asset environment checkpoint (41 textures, 59 materials, 141 meshes). Source/cache bytes, mesh bounds/slots/UV/collision/build settings, texture provenance/settings and existing material assignments are checked before any new level or import. Changed/missing/extra assets or unexpected disk files fail closed. Existing material graphs are preserved, with graph contents and rendered appearance still unverified.
 
-Expected success is `FULL_RESTART_RESUME_CREATED_UNSAVED`. A blocked check reports `FULL_RESTART_RESUME_BLOCKED`; an interruption after map creation or continuation reports `FULL_RESTART_RESUME_FAILED_PARTIAL`. After validation, this command creates a fresh empty unsaved level, reuses the 168 assets, imports the 113 missing meshes and places the scene. It leaves the previous saved level and assets intact. The old `resume_full` remains limited to its original live temporary world; do not change its guard to bypass restart checks. On a failure, share the output rather than rerunning or deleting assets.
+Expected success is `FULL_RESTART_RESUME_CREATED_UNSAVED`. A blocked check reports `FULL_RESTART_RESUME_BLOCKED`; an interruption after map creation or continuation reports `FULL_RESTART_RESUME_FAILED_PARTIAL`. After validation, this command creates a fresh empty unsaved level, reuses the verified checkpoint assets, imports only the missing meshes (113 or 40), and places the scene. It leaves the previous saved level and assets intact. The old `resume_full` remains limited to its original live temporary world; do not change its guard to bypass restart checks. On a failure, share the output rather than rerunning or deleting assets.
 
-## Resume the verified second-attempt checkpoint
+## Original 168-asset checkpoint recovery (historical stage)
 
 The second run created 41 textures, 59 materials and 68 meshes, then stopped on the first teddy because Unreal changed `.001` to `_001` while retaining spaces in imported material-slot names. The axis correction worked; this was an overly narrow name validator. No actors were created.
 
@@ -67,7 +81,7 @@ The optional preflight is also repeated internally. This complete one-line comma
 import sys, json, importlib; sys.dont_write_bytecode = True; root = r"G:\Unity Projects\Generated\fbxfiles\AbandonedCarnival"; sys.path.insert(0, root + r"\full_import57"); import carnival_full_import57 as f; f = importlib.reload(f); full_report = f.import_full(root); print(json.dumps({k: full_report.get(k) for k in ("status", "world_path", "counts", "validation", "errors")}, indent=2))
 ```
 
-The importer creates a **fresh blank unsaved map** and first imports two asymmetric geometry sentinels: `SM_Env_Tile_m3_m4` (zero hulls) and `SM_OpenToolbox_20d6fff596` (21 hulls). Both must pass unchanged source bounds, UV, material-slot and UCX checks **before** any texture/material creation. Where documented MeshDescription getters are available, signed source-vertex landmarks are checked too; unavailable optional bindings are reported, not invented. It then automatically continues with textures, materials and the remaining 179 meshes. The Output Log reports each stage/count. Tasks remain sequential. Actual returned asset paths, legacy importer provenance, verified derived source filenames, texture settings, ordered slots, UV counts, centimetre bounds and exact UCX counts are checked. No auto-generated or complex-as-simple replacement collision is used. All solid actors block Pawn and Visibility; zero-hull decoration has collision disabled. These are structural settings, not a gameplay test.
+The importer creates a **fresh blank unsaved map** and first imports two asymmetric geometry sentinels: `SM_Env_Tile_m3_m4` (zero hulls) and `SM_OpenToolbox_20d6fff596` (21 hulls). Both must pass unchanged source bounds, UV, material-slot and UCX checks **before** any texture/material creation. Where documented MeshDescription getters are available, signed source-vertex landmarks are checked too; unavailable optional bindings are reported, not invented. It then automatically continues with textures, materials and the remaining 179 meshes. The Output Log reports each stage/count. Tasks remain sequential. Actual returned asset paths, legacy importer provenance, verified derived source filenames, texture settings, bijectively resolved slots, UV counts, centimetre bounds and exact UCX counts are checked. No auto-generated or complex-as-simple replacement collision is used. All solid actors block Pawn and Visibility; zero-hull decoration has collision disabled. These are structural settings, not a gameplay test.
 
 Success is `FULL_IMPORT_CREATED_UNSAVED`. Wait for Unreal's background compilation, inspect the log and scene, then manually Save As:
 
@@ -137,3 +151,7 @@ The two support helpers are vendored unchanged and their hashes are checked at r
 ## Observed native placeholder correction
 
 The native diagnostic showed every slot on the three pending meshes referenced `/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial`. Importing with material creation disabled does not imply None or `/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial`. Recovery now accepts only those two exact engine placeholder objects (or None) on these three known pending meshes, rechecking immediately before assignment. Arbitrary engine/project materials are still rejected, and all 65 completed mesh assignments must remain exact. This correction follows observed native paths; final recovery execution and appearance remain unverified.
+
+## Native material-slot permutation evidence
+
+For `SM_Env_Tile_m3_m2`, native Unreal slots were `[wood, Natural arching grass blades, Perimeter story dry oak litter, Natural foliage • veined olive green, Natural foliage • tired ochre olive, Forest leaf • deep green, Forest leaf • warm olive, Forest leaf • sage light]`. All eight references were WorldGridMaterial. The source connected-material order differs, despite the importer pinning `reorder_material_to_fbx_order=True`. The precise engine ordering cause is not established; the verified source polygon first-use order does not explain this permutation. Mapping relies on the unique names and complete material set, never on an assumed engine ordering algorithm.

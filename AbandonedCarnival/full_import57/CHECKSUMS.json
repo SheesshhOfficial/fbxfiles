@@ -4,13 +4,13 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 16924,
-      "sha256": "65fd541b7685f0d4846aaca45169a144eff94f9ba29ad70a63f227688fb64d00"
+      "bytes": 19803,
+      "sha256": "64ee880d450fda3449d8bee58a6e6868522f7dd25d5014e533ff8809cd0e5bbf"
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 13235,
-      "sha256": "95912781610cd8f9d811334d188bfe0e499a752ae7004692f90e917b73927e4d"
+      "bytes": 14600,
+      "sha256": "a7aec252e77db591e635d464bc88ad8c9dbb7c924f1898cb37536aaab3c77f00"
     },
     {
       "path": "_support/carnival_material_stage57.py",
@@ -24,8 +24,8 @@
     },
     {
       "path": "carnival_full_import57.py",
-      "bytes": 82050,
-      "sha256": "165faea5f832696e9da316816e8a878f73c2ca3f58939364b4e4c301c63cb03d"
+      "bytes": 85477,
+      "sha256": "ffd17f5ae4f81ce1f19cd173b98b9cfcfa26203d40952d6d2ca08d4dd1f3ba00"
     },
     {
       "path": "tests/full_plan_fixture.json",
@@ -39,8 +39,8 @@
     },
     {
       "path": "tests/test_full_import57.py",
-      "bytes": 97212,
-      "sha256": "8f2a400d547d1f514324eb7fa2784f38bd6fea8a379112a67604c994b85e3e2a"
+      "bytes": 120346,
+      "sha256": "380480da3d14802c3b4094925bdc37daccc2b6da4b10774f787c8ca815ef123f"
     }
   ]
 }
