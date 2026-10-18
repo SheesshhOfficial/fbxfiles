@@ -981,6 +981,24 @@ class MockEngineTests(unittest.TestCase):
         report = f.resume_full(self.tmp.name)
         self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
 
+    def test_resume_accepts_world_grid_only_for_three_pending_meshes(self):
+        self.resume_checkpoint()
+        completed = [self.resume_mesh(item['asset_name']) for item in self.p['assets'][:65]]
+        old_assignments = [list(mesh.materials) for mesh in completed]
+        old_setters = [list(mesh.material_set_calls) for mesh in completed]
+        for name in (*f.SENTINELS, f.RESUME_FAILED_MESH):
+            mesh = self.resume_mesh(name)
+            mesh.materials[:] = [self.u.world_grid_material] * len(mesh.materials)
+        report = f.resume_full(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESUME_CREATED_UNSAVED', report)
+        self.assertEqual([mesh.materials for mesh in completed], old_assignments)
+        self.assertEqual([mesh.material_set_calls for mesh in completed], old_setters)
+        self.assertEqual({row['name'] for row in report['completed_assignment_changes']},
+                         set(f.SENTINELS) | {f.RESUME_FAILED_MESH})
+        self.assertTrue(all(slot['previous'] == self.u.world_grid_material.path
+                            for row in report['completed_assignment_changes'] for slot in row['slots']))
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+
     def test_resume_normal_import_still_refuses_checkpoint(self):
         self.resume_checkpoint()
         with self.assertRaises(f.FullImportError) as caught:
@@ -1338,6 +1356,88 @@ class RestartRecoveryTests(unittest.TestCase):
             mesh = self.resume_mesh(name)
             mesh.materials[:] = [self.u.default_material] * len(mesh.materials)
         self.assertEqual(f.resume_after_restart(self.tmp.name)['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED')
+
+    def test_restart_accepts_world_grid_only_on_three_pending_meshes(self):
+        self.restart_checkpoint()
+        completed = [self.resume_mesh(item['asset_name']) for item in self.p['assets'][:65]]
+        old_assignments = [list(mesh.materials) for mesh in completed]
+        old_setters = [list(mesh.material_set_calls) for mesh in completed]
+        for name in (*f.SENTINELS, f.RESUME_FAILED_MESH):
+            mesh = self.resume_mesh(name)
+            mesh.materials[:] = [self.u.world_grid_material] * len(mesh.materials)
+        report = f.resume_after_restart(self.tmp.name)
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_CREATED_UNSAVED', report)
+        self.assertEqual([mesh.materials for mesh in completed], old_assignments)
+        self.assertEqual([mesh.material_set_calls for mesh in completed], old_setters)
+        self.assertEqual({row['name'] for row in report['completed_assignment_changes']},
+                         set(f.SENTINELS) | {f.RESUME_FAILED_MESH})
+        self.assertTrue(all(slot['previous'] == self.u.world_grid_material.path
+                            for row in report['completed_assignment_changes'] for slot in row['slots']))
+        self.assertEqual(f.validate(self.tmp.name)['status'], 'FULL_STRUCTURE_PASS')
+
+    def test_restart_blocks_unknown_engine_material_on_pending_mesh(self):
+        self.restart_checkpoint()
+        for path in ('/Engine/EngineMaterials/OtherMaterial.OtherMaterial',
+                     '/Game/UserWork/WorldGridMaterial.WorldGridMaterial'):
+            with self.subTest(path=path):
+                unknown = g.MaterialInterface(); unknown.path = path
+                self.assertIsNone(self.u.load_asset(path))
+                self.resume_mesh(f.RESUME_FAILED_MESH).materials[0] = unknown
+                self.assert_restart_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_restart_blocks_same_path_different_object_on_pending_mesh(self):
+        self.restart_checkpoint()
+        mesh = self.resume_mesh(f.RESUME_FAILED_MESH)
+        for native in (self.u.default_material, self.u.world_grid_material):
+            with self.subTest(path=native.path):
+                spoof = g.MaterialInterface(); spoof.path = native.path
+                self.assertIs(self.u.load_asset(spoof.path), native)
+                self.assertIsNot(spoof, native)
+                mesh.materials[0] = spoof
+                self.assert_restart_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_restart_blocks_unverified_native_material_loads(self):
+        self.restart_checkpoint()
+        for native in (self.u.default_material, self.u.world_grid_material):
+            wrong_type = g.Obj(); wrong_type.path = native.path
+            wrong_path = g.MaterialInterface(); wrong_path.path = '/Engine/EngineMaterials/Other.Other'
+            for replacement in (None, wrong_type, wrong_path):
+                with self.subTest(path=native.path, replacement=replacement):
+                    with patch.dict(self.u.engine_materials, {native.path: replacement}):
+                        self.assert_restart_blocked('[Nn]ative|[Dd]efault|[Mm]aterial')
+
+    def test_restart_blocks_native_defaults_on_completed_mesh(self):
+        self.restart_checkpoint()
+        mesh = self.resume_mesh()
+        for native in (self.u.default_material, self.u.world_grid_material):
+            with self.subTest(path=native.path):
+                mesh.materials[0] = native
+                self.assert_restart_blocked('[Aa]ssign|[Mm]aterial')
+
+    def test_restart_preserves_pending_material_changed_during_missing_imports(self):
+        self.restart_checkpoint()
+        pending = [self.resume_mesh(name) for name in sorted((*f.SENTINELS, f.RESUME_FAILED_MESH))]
+        for mesh in pending:
+            mesh.materials[:] = [self.u.world_grid_material] * len(mesh.materials)
+        old_setters = [list(mesh.material_set_calls) for mesh in pending]
+        changed_mesh = pending[0]
+        foreign = g.MaterialInterface(); foreign.path = '/Game/UserWork/Material.Material'
+        def change_pending_during_import(_):
+            changed_mesh.materials[0] = foreign
+        self.u.import_mutator = change_pending_during_import
+        with self.assertRaises(f.FullImportError) as caught:
+            f.resume_after_restart(self.tmp.name)
+        report = caught.exception.report
+        self.assertEqual(report['status'], 'FULL_RESTART_RESUME_FAILED_PARTIAL', report)
+        self.assertTrue(report['mutation_started'])
+        self.assertTrue(report['partial'])
+        self.assertRegex(' '.join(report['errors']), '[Pp]ending.*[Mm]aterial.*changed')
+        self.assertIs(changed_mesh.materials[0], foreign)
+        self.assertEqual([mesh.material_set_calls for mesh in pending], old_setters)
+        self.assertEqual(self.u.events.count('import_mesh'), 113)
+        self.assertEqual(self.u.actors, [])
+        self.assertEqual(report['saves_performed'], 0)
+        self.assertFalse(any('save' in e or 'delete' in e or 'destroy' in e for e in self.u.events))
 
     def test_restart_blocks_unsaved_checkpoint_packages_even_with_clean_fake_dirty_lists(self):
         self.resume_checkpoint()

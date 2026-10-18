@@ -944,6 +944,22 @@ def _resume_physical_guard(u,paths,require_saved=False):
     return dict(files_checked=count,saved_packages_checked=len(saved))
 
 
+def _pending_native_defaults(u):
+    """Exact accepted fallback objects for the three unassigned meshes."""
+    paths=("/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial",
+           "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial")
+    defaults={path:u.load_asset(path) for path in paths}
+    for path,material in defaults.items():
+        require(isinstance(material,u.MaterialInterface) and material.get_path_name()==path,
+                "Cannot verify exact native default material: "+path)
+    return defaults
+
+
+def _pending_material_allowed(current,defaults):
+    return current is None or any(current==material and current.get_path_name()==path
+                                  for path,material in defaults.items())
+
+
 def _checkpoint_state(u,c,m,p,require_saved=False):
     """Read-only validation common to both explicit checkpoint recoveries."""
     items,assigned,pending,paths=_resume_inventory(p,m)
@@ -953,8 +969,7 @@ def _checkpoint_state(u,c,m,p,require_saved=False):
     _cache_root(u);physical=_resume_physical_guard(u,paths,require_saved=require_saved)
     materials={a["source_name"]:_check_reused_material(u,m,a) for a in p["materials"]}
     textures={(t["path"],t["usage"]):_check_reused_texture(u,c,m,t) for t in p["textures"]}
-    default=u.load_asset("/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial")
-    require(isinstance(default,u.MaterialInterface),"Cannot verify native default material")
+    defaults=_pending_native_defaults(u)
     meshes={};checks=[]
     for name,item in items.items():
         u.log("[CarnivalFull57] Verify reused mesh %d/68: %s"%(len(meshes)+1,name))
@@ -965,11 +980,11 @@ def _checkpoint_state(u,c,m,p,require_saved=False):
         for slot,source in enumerate(item["materials"]):
             current=mesh.get_material(slot)
             if name in assigned:require(current==materials[source],"Completed mesh material assignment differs: "+name)
-            else:require(current is None or current==default,"Unexpected material on unassigned checkpoint mesh: "+name)
+            else:require(_pending_material_allowed(current,defaults),"Unexpected material on unassigned checkpoint mesh: "+name)
         checked["assignment_state"]="VERIFIED_COMPLETED" if name in assigned else "VERIFIED_NATIVE_DEFAULTS"
         checks.append(checked);meshes[name]=mesh
     return dict(meshes=meshes,materials=materials,textures=textures,assigned=assigned,pending=pending,
-                checks=checks,default=default,physical=physical)
+                checks=checks,pending_defaults=defaults,physical=physical)
 
 
 def _resume_guard(u,c,m,p):
@@ -1090,7 +1105,7 @@ def _run_resume(package_root,restart):
             entry=dict(name=name,status="ATTEMPTED",slots=[]);r["completed_assignment_changes"].append(entry)
             for slot,source in enumerate(assets[name]["materials"]):
                 before=mesh.get_material(slot)
-                require(before is None or before==state["default"],"Pending mesh material changed during resume: "+name)
+                require(_pending_material_allowed(before,state["pending_defaults"]),"Pending mesh material changed during resume: "+name)
                 entry["slots"].append(dict(slot=slot,previous=before.get_path_name() if before else None,target=materials[source].get_path_name()))
                 mesh.set_material(slot,materials[source]);require(mesh.get_material(slot)==materials[source],"Pending mesh material assignment failed")
             entry["status"]="ASSIGNED_UNSAVED"

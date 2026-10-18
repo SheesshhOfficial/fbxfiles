@@ -1,11 +1,11 @@
 {
   "schema": "carnival-full-import57-validation-v4-restart-recovery",
   "date_utc": "2026-10-18",
-  "status": "RESTART_RECOVERY_OFFLINE_VERIFIED_NATIVE_EXECUTION_PENDING",
+  "status": "OBSERVED_WORLDGRID_PLACEHOLDER_CORRECTION_OFFLINE_VERIFIED_NATIVE_EXECUTION_PENDING",
   "unreal_target": "5.7.4",
   "offline_mock_tests": {
-    "total": 154,
-    "passed": 153,
+    "total": 161,
+    "passed": 160,
     "failed": 0,
     "skipped_optional_real_source_integration": 1,
     "skip_reason": "Original frozen art package is absent in the current execution workspace; no source-fidelity retest claimed.",
@@ -293,5 +293,16 @@
       "Existing material graph contents not independently fingerprinted; preserved without rebuild.",
       "Native rendering, complete import and gameplay remain unverified."
     ]
+  },
+  "native_pending_material_diagnostic": {
+    "pending_meshes": 3,
+    "slots": 12,
+    "observed_material_path": "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial",
+    "all_slots_same": true,
+    "prior_block": "FULL_RESTART_RESUME_BLOCKED before mutation",
+    "policy": "Only exact loaded engine DefaultMaterial/WorldGridMaterial or None on the three pending checkpoint meshes, with immediate preassignment recheck;65completed assignments unchanged.",
+    "source": "User native read-only slot diagnostic, 2026-10-18",
+    "native_execution_after_fix": "NOT_RUN",
+    "new_regression_tests": 7
   }
 }

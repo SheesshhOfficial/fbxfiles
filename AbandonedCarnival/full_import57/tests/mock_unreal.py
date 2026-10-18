@@ -142,6 +142,10 @@ def fake_engine(contract, core):
     u.existing_namespace = False
     u.import_mutator = None
     u.default_material = MaterialInterface()
+    u.default_material.path = "/Engine/EngineMaterials/DefaultMaterial.DefaultMaterial"
+    u.world_grid_material = MaterialInterface()
+    u.world_grid_material.path = "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    u.engine_materials = {material.path: material for material in (u.default_material, u.world_grid_material)}
     u.world = World()
     u.world.path = "/Game/Previous.Previous"
     u.game_world = None
@@ -237,7 +241,7 @@ def fake_engine(contract, core):
         setattr(u, name, cls)
     u.get_default_object = lambda cls: cls()
     u.get_editor_subsystem = lambda cls: cls()
-    u.load_asset = lambda path: u.default_material
+    u.load_asset = lambda path: u.engine_materials.get(path)
     return u
 
 
@@ -395,7 +399,7 @@ def full_engine(plan, core):
         @staticmethod
         def list_assets(path,**kwargs):return [asset.get_path_name() for key,asset in u.assets.items() if key.startswith(path+'/')]
     u.EditorAssetLibrary=Library
-    u.load_asset=lambda path:u.default_material if path.startswith('/Engine/') else u.assets.get(path.split('.')[0])
+    u.load_asset=lambda path:u.engine_materials.get(path) if path.startswith('/Engine/') else u.assets.get(path.split('.')[0])
     class Tools:
         def import_asset_tasks(self,tasks):
             assert len(tasks)==1,'Imports must be sequential'
