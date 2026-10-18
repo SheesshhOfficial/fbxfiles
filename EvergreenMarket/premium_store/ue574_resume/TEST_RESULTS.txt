@@ -1,0 +1,40 @@
+test_ast_has_no_mutators_files_network_or_dynamic_eval (test_independent_preflight.IndependentReview.test_ast_has_no_mutators_files_network_or_dynamic_eval) ... ok
+test_changed_dirty_after_not_complete (test_independent_preflight.IndependentReview.test_changed_dirty_after_not_complete) ... ok
+test_empty_tag_identity_is_malformed (test_independent_preflight.IndependentReview.test_empty_tag_identity_is_malformed) ... ok
+test_exact_engine_version (test_independent_preflight.IndependentReview.test_exact_engine_version) ... ok
+test_happy_snapshot_does_not_mutate (test_independent_preflight.IndependentReview.test_happy_snapshot_does_not_mutate) ... ok
+test_max_items_rejects_bool_zero_and_excess (test_independent_preflight.IndependentReview.test_max_items_rejects_bool_zero_and_excess) ... ok
+test_negative_convex_collision_result_is_unavailable (test_independent_preflight.IndependentReview.test_negative_convex_collision_result_is_unavailable) ... ok
+test_negative_simple_collision_result_is_unavailable (test_independent_preflight.IndependentReview.test_negative_simple_collision_result_is_unavailable) ... ok
+test_negative_uv_result_is_unavailable (test_independent_preflight.IndependentReview.test_negative_uv_result_is_unavailable) ... ok
+test_optional_apis_missing_report_unknown (test_independent_preflight.IndependentReview.test_optional_apis_missing_report_unknown) ... ok
+test_read_allowlist_rejects_mutation_before_call (test_independent_preflight.IndependentReview.test_read_allowlist_rejects_mutation_before_call) ... ok
+test_unknown_dirty_after_not_complete (test_independent_preflight.IndependentReview.test_unknown_dirty_after_not_complete) ... ok
+test_wrong_map_does_not_enumerate_actors (test_independent_preflight.IndependentReview.test_wrong_map_does_not_enumerate_actors) ... ok
+test_bad_limits_rejected_before_reads (test_preflight.PreflightTests.test_bad_limits_rejected_before_reads) ... ok
+test_blueprint_derived_actor_flagged (test_preflight.PreflightTests.test_blueprint_derived_actor_flagged) ... ok
+test_carnival_pie_not_inspected (test_preflight.PreflightTests.test_carnival_pie_not_inspected) ... ok
+test_correct_read_only_shelf_snapshot (test_preflight.PreflightTests.test_correct_read_only_shelf_snapshot) ... ok
+test_dirty_work_retained_and_reported (test_preflight.PreflightTests.test_dirty_work_retained_and_reported) ... ok
+test_duplicate_placement_and_canonical_conflict (test_preflight.PreflightTests.test_duplicate_placement_and_canonical_conflict) ... ok
+test_exact_version (test_preflight.PreflightTests.test_exact_version) ... ok
+test_fake_mutation_guard_is_live (test_preflight.PreflightTests.test_fake_mutation_guard_is_live) ... ok
+test_floor_known_can_fridge_representatives (test_preflight.PreflightTests.test_floor_known_can_fridge_representatives) ... ok
+test_import_is_inert_and_no_file_io (test_preflight.PreflightTests.test_import_is_inert_and_no_file_io) ... ok
+test_missing_body_is_unknown_not_zero (test_preflight.PreflightTests.test_missing_body_is_unknown_not_zero) ... ok
+test_missing_dirty_and_registry_are_unknown (test_preflight.PreflightTests.test_missing_dirty_and_registry_are_unknown) ... ok
+test_missing_owner_and_invalid_phase (test_preflight.PreflightTests.test_missing_owner_and_invalid_phase) ... ok
+test_missing_world (test_preflight.PreflightTests.test_missing_world) ... ok
+test_negative_subsystem_counts_are_unknown (test_preflight.PreflightTests.test_negative_subsystem_counts_are_unknown) ... ok
+test_output_caps_do_not_cap_actor_inspection (test_preflight.PreflightTests.test_output_caps_do_not_cap_actor_inspection) ... ok
+test_pie_actual_cone_capsule_role_and_no_trace (test_preflight.PreflightTests.test_pie_actual_cone_capsule_role_and_no_trace) ... ok
+test_pie_without_player_does_not_infer_pawn (test_preflight.PreflightTests.test_pie_without_player_does_not_infer_pawn) ... ok
+test_read_gate_forbids_mutators (test_preflight.PreflightTests.test_read_gate_forbids_mutators) ... ok
+test_registry_can_be_disabled_and_never_loads_assets (test_preflight.PreflightTests.test_registry_can_be_disabled_and_never_loads_assets) ... ok
+test_uvrepair_variant_is_observed (test_preflight.PreflightTests.test_uvrepair_variant_is_observed) ... ok
+test_wrong_map_skips_all_editor_and_runtime_pawn_reads (test_preflight.PreflightTests.test_wrong_map_skips_all_editor_and_runtime_pawn_reads) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.028s
+
+OK

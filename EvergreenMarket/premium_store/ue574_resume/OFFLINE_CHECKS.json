@@ -1,0 +1,10 @@
+{
+  "status": "OFFLINE_ONLY_PASS",
+  "engine_execution": "NOT_RUN",
+  "module_sha256": "361fde7cdfbc01a4d6962216037ed59877b6a4cbab5cd884ef5549612ce7d331",
+  "builder_tests": 22,
+  "independent_tests": 13,
+  "source": "Published v3 repository, reconstructed 2026-10-18; not recovered attachment bytes",
+  "project_mutations": false,
+  "next_step": "Run only inspect() in the current editor; report current map/state before planning any map copy."
+}

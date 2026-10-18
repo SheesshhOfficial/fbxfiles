@@ -1,0 +1,58 @@
+{
+  "repo": "SheesshhOfficial/fbxfiles",
+  "head": "ae938af1ff729fb83874f2844bc0d7dbc91fce3d",
+  "original_publication": "fbf65a7bfcfda6c0ea3484d7b1879756defbd2fb",
+  "recovered_from": "published GitHub only; no Library files accessed",
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob_sha": "dc90d9ea873f2a1fa5969d9b52814ec56b44f4f4",
+      "sha256": "c0535c5488796ff7e19101e92ac3a9e05fd4c9c1291fb0e77e283be732f3e720"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "git_blob_sha": "65554311087fe5b79ef411f73a4c0ac136176a9d",
+      "sha256": "262a42e5ddd74d6f1015a250d79dc8bfd2f18be67d8201d3000e90bc8ee95ba7"
+    },
+    {
+      "path": "FINAL_QA_SUMMARY.json",
+      "git_blob_sha": "5ee94ebb3270de37e523a15d7eac2d6557d1b143",
+      "sha256": "5ba4a2e9d5f57f7de4805201d6aeb18e996cd352c6ab6e0fba9fc53949e44ac7"
+    },
+    {
+      "path": "importer/optical_profiles.json",
+      "git_blob_sha": "6dd7b314bd84bd19e9e8bc75d246dd2ccdb8c0e8",
+      "sha256": "4b87059de455c3e78afe8bc269ee12ec5877db98746a92eed327dcb453114d6d"
+    },
+    {
+      "path": "importer/materials.py",
+      "git_blob_sha": "eb5689a6aa50c65d0a38bb4804ce020b7bf977d1",
+      "sha256": "4b6b9ca3549008a0b3ddb238c454e7f8a1c6f6cdef611c23eedc212d8e60ae82"
+    },
+    {
+      "path": "importer/emission_profiles.json",
+      "git_blob_sha": "1805fff08fc12cbe707ed207c60ab7e76c260be5",
+      "sha256": "10046c3ae2206ae8589c51c9f7f5e13b49264ea1510fe6ee0973de368e0f7be8"
+    },
+    {
+      "path": "importer/sample_review_template.json",
+      "git_blob_sha": "1e554455b2257a4d2a7fda3cef3022ba6a511b6f",
+      "sha256": "c0bfa21f5a52ffa57345727b4b56ff27e298585a2a7801604649780b568b16c3"
+    },
+    {
+      "path": "importer/store_importer.py",
+      "git_blob_sha": "6b63e42389fb32fb56f318671ebfc96237c8c59e",
+      "sha256": "81436281e12ae10dd31e4b9da17b5ecec2e6442d3f9fb43c12eb39d22a7dbd92"
+    },
+    {
+      "path": "importer/tests/test_material_graph.py",
+      "git_blob_sha": "7565843951dbcae2f93ce8b8e5ca9edf74e53a21",
+      "sha256": "02ab4e7712dfc21ce8dbdff786fef3e3e73918602e6e1f4a75373441ee02f0b0"
+    },
+    {
+      "path": "importer/tests/test_importer.py",
+      "git_blob_sha": "33471a465f4a27b608b340760576b49e90d8893f",
+      "sha256": "43b2c5a4e4c51529dd31291c8ec5603b577056545f724729318bc10d51be378e"
+    }
+  ]
+}
